@@ -72,7 +72,7 @@ function BannerItem(
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="relative block overflow-y-hidden w-full"
+      class="block relative w-full overflow-y-hidden"
     >
       {action && (
         <div
@@ -83,14 +83,14 @@ function BannerItem(
             "sm:left-40 sm:items-start sm:max-w-96",
           )}
         >
-          <span class="text-7xl font-bold text-base-100">
+          <span class="font-bold text-7xl text-base-100">
             {action.title}
           </span>
-          <span class="font-normal text-base text-base-100 pt-4 pb-12">
+          <span class="pt-4 pb-12 font-normal text-base text-base-100">
             {action.subTitle}
           </span>
           <button
-            class="btn btn-primary btn-outline border-0 bg-base-100 min-w-[180px]"
+            class="border-0 bg-base-100 min-w-[180px] btn btn-outline btn-primary"
             aria-label={action.label}
           >
             {action.label}
@@ -113,7 +113,7 @@ function BannerItem(
           height={600}
         />
         <img
-          class="object-cover w-full h-full"
+          class="w-full h-full object-cover"
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}
@@ -138,27 +138,27 @@ function Carousel({ images = [], preload, interval }: Props) {
       )}
     >
       <div class="col-span-full row-span-full">
-        <Slider class="carousel carousel-center w-full gap-6">
+        <Slider class="gap-6 w-full carousel carousel-center">
           {images.map((image, index) => (
-            <Slider.Item index={index} class="carousel-item w-full">
+            <Slider.Item index={index} class="w-full carousel-item">
               <BannerItem image={image} lcp={index === 0 && preload} />
             </Slider.Item>
           ))}
         </Slider>
       </div>
 
-      <div class="hidden sm:flex items-center justify-center z-10 col-start-1 row-start-2">
+      <div class="z-10 sm:flex justify-center items-center hidden col-start-1 row-start-2">
         <Slider.PrevButton
-          class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
+          class="btn btn-circle btn-neutral btn-outline btn-sm no-animation"
           disabled={false}
         >
           <Icon id="chevron-right" class="rotate-180" />
         </Slider.PrevButton>
       </div>
 
-      <div class="hidden sm:flex items-center justify-center z-10 col-start-3 row-start-2">
+      <div class="z-10 sm:flex justify-center items-center hidden col-start-3 row-start-2">
         <Slider.NextButton
-          class="btn btn-neutral btn-outline btn-circle no-animation btn-sm"
+          class="btn btn-circle btn-neutral btn-outline btn-sm no-animation"
           disabled={false}
         >
           <Icon id="chevron-right" />
@@ -180,6 +180,7 @@ function Carousel({ images = [], preload, interval }: Props) {
                 "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
               )}
             >
+              <div>alow</div>
             </Slider.Dot>
           </li>
         ))}

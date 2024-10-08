@@ -11,6 +11,10 @@ export interface Banner {
   title?: string;
   /** @description text to be rendered on top of the image */
   subtitle?: string;
+  /**@description Width da imagem */
+  desktopWidth: number;
+  /**@description Height da imagem */
+  desktopHeight: number;
   image: {
     /** @description Image for big screens */
     desktop: ImageWidget;
@@ -53,7 +57,7 @@ function Banner(props: SectionProps<ReturnType<typeof loader>>) {
         />
         <Source
           src={image.desktop}
-          width={1440}
+          width={1920}
           height={200}
           media="(min-width: 767px)"
         />
