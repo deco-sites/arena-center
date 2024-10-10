@@ -8,6 +8,12 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Carousel.tsx"
+      }
+    },
+    {
       "__resolveType": "site/sections/GreaterBanner.tsx",
       "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
       "width": 1225,
@@ -106,6 +112,22 @@
         }
       ],
       "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "count": 10,
+          "wildcard": true,
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": []
+        },
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS"
+      }
     },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
