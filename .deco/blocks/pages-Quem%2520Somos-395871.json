@@ -24,6 +24,23 @@
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1c1e2821-fa6d-4ea4-89f7-f7bf14dbac6c/familia.png"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/CenteredText.tsx",
+      "text": [
+        {
+          "mainTitle": "Nossa visão",
+          "paragraph": "<p style=\"text-align: justify\"><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis. In lectus tempus sagittis vitae enim semper purus nulla. Massa sit lectus eget donec aliquam massa tincidunt.</span></p>"
+        },
+        {
+          "mainTitle": "Nossa missão",
+          "paragraph": "<p style=\"text-align: justify\"><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis. In lectus tempus sagittis vitae enim semper purus nulla. Massa sit lectus eget donec aliquam massa tincidunt.</span></p>"
+        },
+        {
+          "mainTitle": "Nossa visão",
+          "paragraph": "<p style=\"text-align: justify\"><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis. In lectus tempus sagittis vitae enim semper purus nulla. Massa sit lectus eget donec aliquam massa tincidunt.</span></p>"
+        }
+      ]
     }
   ],
   "seo": {
