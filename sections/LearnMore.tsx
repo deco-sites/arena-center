@@ -25,6 +25,7 @@ export default function LearnMore({ mainTitle, learnMore }: Props) {
         {learnMore.map((learnMore) => (
           <div class="flex flex-col gap-2 px-4 md:px-0 items-center text-center">
             <Image
+            class="w-full"
               src={learnMore.image}
               width={395}
               height={184}
