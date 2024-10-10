@@ -20,12 +20,14 @@ export interface Props {
 export default function LearnMore({ mainTitle, learnMore }: Props) {
   return (
     <div class="flex flex-col gap-4 items-center mt-8 text-neutral mx-auto max-w-[1440px]">
-      <p class="font-light text-2xl text-center text-primary md:text-base-content">{mainTitle}</p>
+      <p class="font-light text-2xl text-center text-primary md:text-base-content">
+        {mainTitle}
+      </p>
       <div class="flex flex-col md:flex-row md::flex-row gap-8 md:gap-2">
         {learnMore.map((learnMore) => (
           <div class="flex flex-col gap-2 px-4 md:px-0 items-center text-center">
             <Image
-            class="w-full"
+              class="w-full"
               src={learnMore.image}
               width={395}
               height={184}
