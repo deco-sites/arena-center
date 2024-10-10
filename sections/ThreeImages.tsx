@@ -1,56 +1,75 @@
 import Image from "apps/website/components/Image.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-
-export interface FirstImage {
+import { useDevice } from "@deco/deco/hooks";
+export interface Image {
   desktop: ImageWidget;
-  width: number;
-  height: number;
-  mobile?: ImageWidget;
-}
-export interface SecondImage {
-  desktop: ImageWidget;
-  width: number;
-  height: number;
-  mobile?: ImageWidget;
-}
-
-export interface ThirdImage {
-  desktop: ImageWidget;
-  width: number;
-  height: number;
-  mobile?: ImageWidget;
+  mobile: ImageWidget;
+  link?: string;
 }
 
 export interface Props {
-  firstImage: FirstImage;
-  secondImage: SecondImage;
-  thirdImage: ThirdImage;
+  /**
+   * @maximum 3
+   */
+  img: Image[];
 }
 
-export default function ({ firstImage, secondImage, thirdImage }: Props) {
-  return (
-    <div class="flex gap-2 pt-8 px-10">
-      <div class="">
-        <Image
-          src={firstImage.desktop}
-          width={firstImage.width}
-          height={firstImage.height}
-          loading={"lazy"}
-        />
+export default function ({ img }: Props) {
+  const device = useDevice();
+  if (device !== "desktop") {
+    return (
+      <div class="flex gap-3 px-3 overflow-auto max-w-[1440px] w-full mx-auto pt-8">
+        {img.map((item) => (
+          <div class="relative">
+            <a href={item.link} class="w-[80vw] block lg:w-auto">
+              <Image
+                src={item.mobile}
+                width={321}
+                height={307}
+                loading={"lazy"}
+              />
+            </a>
+          </div>
+        ))}
       </div>
-      <div class="flex flex-col gap-2">
-        <Image
-          src={secondImage.desktop}
-          width={secondImage.width}
-          height={secondImage.height}
-          loading={"lazy"}
-        />
-        <Image
-          src={thirdImage.desktop}
-          width={thirdImage.width}
-          height={thirdImage.height}
-          loading={"lazy"}
-        />
+    );
+  }
+  return (
+    <div class="flex gap-2 px-10 overflow-auto lg:overflow-visible max-w-[1440px] w-full mx-auto pt-8">
+      <div class="relative lg:overflow-hidden">
+        <a href={img[0].link} class="w-[80vw] block lg:w-auto">
+          <Image
+            class="lg:hover:scale-110 duration-200"
+            src={img[0].desktop}
+            width={596}
+            height={569}
+            loading={"lazy"}
+          />
+        </a>
+      </div>
+      <div class="flex lg:flex-col gap-2">
+        <div class="relative overflow-hidden w-[80vw] lg:w-auto">
+          <a href={img[1].link}>
+            <Image
+              class="lg:hover:scale-110 duration-200"
+              src={img[1].desktop}
+              width={712}
+              height={281}
+              loading={"lazy"}
+            />
+          </a>
+        </div>
+        <div class="relative overflow-hidden w-[80vw] lg:w-auto">
+          <a href={img[2].link}>
+            <Image
+              class="lg:hover:scale-110  duration-200"
+              src={img[2].desktop}
+              width={712}
+              height={281}
+              loading={"lazy"}
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
