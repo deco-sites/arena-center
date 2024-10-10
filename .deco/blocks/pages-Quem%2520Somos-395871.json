@@ -1,0 +1,50 @@
+{
+  "name": "Quem Somos",
+  "path": "/quem-somos",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "site/sections/GreaterBanner.tsx",
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9d9003ed-0705-43dd-8ea5-201a4a4969ad/quem-somos-banner.png",
+      "width": 1440,
+      "height": 200
+    },
+    {
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
+        {
+          "placement": "right",
+          "label": "A NOSSA HISTÓRIA É ESCRITA JUNTO COM A SUA !",
+          "description": "<p><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Lorem ipsum dolor sit amet consectetur. Id justo purus mi commodo. Nulla donec dignissim lacus dis senectus tincidunt suspendisse. In ornare vitae mauris elit sapien. Posuere enim lectus ligula aenean fringilla risus arcu sit. Lobortis volutpat magna leo interdum. Velit vitae quisque nulla etiam at. Senectus consequat nullam luctus habitasse enim ipsum diam mi cursus. Id enim ultrices condimentum lacus nulla feugiat at nunc venenatis.</span><br><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Laoreet aliquam fermentum lectus elementum ipsum consequat massa a quisque. Id rutrum amet velit sed. Ac pulvinar diam vitae mattis id. Tempus varius tempor arcu enim ultrices diam sollicitudin arcu. Augue nisl luctus orci mauris a nunc dignissim morbi vel. Vitae sit eget eget in. Nibh orci elementum est ipsum sed dolor egestas. Justo gravida ultricies integer id. Eget in tristique scelerisque sed diam.</span><br><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Risus faucibus enim senectus ac felis pellentesque. Non amet hac bibendum nunc sed lectus lectus vestibulum sem. Mattis feugiat consectetur volutpat in nullam sed bibendum velit a. Bibendum egestas ut ut eget tortor risus phasellus pharetra cras. Leo mattis nam pretium amet dui nunc sit nibh elit. Velit arcu congue integer velit sit augue at proin. Et lacus eros vel hendrerit ac. Diam semper tortor orci non ultricies urna urna scelerisque orci. Nibh scelerisque aliquam est adipiscing tristique bibendum.</span><br><span style=\"font-size: 10pt;\" data-mce-style=\"font-size: 10pt;\">Sit adipiscing elit ultrices feugiat. Posuere pellentesque massa turpis id faucibus. Faucibus hac leo habitasse porttitor dui id et. Sodales est libero donec ac lorem eget. Ullamcorper rhoncus suspendisse tristique velit lorem. Condimentum eu et malesuada volutpat vel nibh odio cursus. Habitasse nisl lectus ut scelerisque. Viverra pellentesque dolor elit facilisis bibendum in blandit. Elementum aliquam non placerat lectus. Tincidunt aliquam sed varius diam sem. Ullamcorper vitae risus ut hac venenatis fames.</span></p>",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1c1e2821-fa6d-4ea4-89f7-f7bf14dbac6c/familia.png"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/CenteredText.tsx",
+      "text": [
+        {
+          "mainTitle": "Nossa visão",
+          "paragraph": "<p style=\"text-align: justify\"><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis. In lectus tempus sagittis vitae enim semper purus nulla. Massa sit lectus eget donec aliquam massa tincidunt.</span></p>"
+        },
+        {
+          "mainTitle": "Nossa missão",
+          "paragraph": "<p style=\"text-align: justify\"><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis. In lectus tempus sagittis vitae enim semper purus nulla. Massa sit lectus eget donec aliquam massa tincidunt.</span></p>"
+        },
+        {
+          "mainTitle": "Nossa visão",
+          "paragraph": "<p style=\"text-align: justify\"><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis. In lectus tempus sagittis vitae enim semper purus nulla. Massa sit lectus eget donec aliquam massa tincidunt.</span></p>"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

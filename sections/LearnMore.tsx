@@ -10,8 +10,6 @@ export interface LearnMore {
   paragraph: string;
   cta: string;
   link: string;
-  width: number;
-  height: number;
 }
 
 export interface Props {
@@ -19,23 +17,27 @@ export interface Props {
   learnMore: LearnMore[];
 }
 
-export default function ({ mainTitle, learnMore }: Props) {
+export default function LearnMore({ mainTitle, learnMore }: Props) {
   return (
-    <div class="flex flex-col items-center pt-8 text-neutral">
-      <p class="pb-4 font-light text-2xl text-center">{mainTitle}</p>
-      <div class="flex gap-2">
+    <div class="flex flex-col gap-4 items-center md:mt-8 mt-10 text-neutral px-6 mx-auto max-w-[1440px]">
+      <p class="font-light text-2xl text-center text-primary md:text-base-content">
+        {mainTitle}
+      </p>
+      <div class="flex flex-col md:flex-row md::flex-row gap-8 md:gap-2">
         {learnMore.map((learnMore) => (
-          <div class="flex flex-col items-center text-center">
+          <div class="flex flex-col gap-2 px-4 md:px-0 items-center text-center">
             <Image
               class="w-full"
               src={learnMore.image}
-              width={learnMore.width}
-              height={learnMore.height}
+              width={395}
+              height={184}
               alt={learnMore.title}
               loading={"lazy"}
             />
-            <p class="pt-4">{learnMore.title}</p>
-            <p class="px-4 pt-2 pb-3 text-[10px]">{learnMore.paragraph}</p>
+            <p class="pt-4 text-lg">
+              {learnMore.title}
+            </p>
+            <p class="px-4 pt-2 pb-3 text-[12px]">{learnMore.paragraph}</p>
             <a
               href={learnMore.link}
               class="border-neutral px-[67px] py-2 border rounded-lg font-semibold text-xs"

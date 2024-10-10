@@ -16,34 +16,37 @@ interface Props {
   categoryItems?: CategoryItems[];
 }
 
-function CategorySlider({ categoryItems }: Props) {
+function CategorySlider({ categoryItems, itemListName }: Props) {
   const id = useId();
 
   return (
-    <>
+    <div class="mx-auto max-w-[1440px] flex flex-col gap-2 mt-8 px-0 md:px-6">
+      <p class="text-accent-content md:text-primary text-lg font-semibold text-center">
+        {itemListName}
+      </p>
       <div
         id={id}
-        class="grid grid-rows-1"
+        class="grid grid-rows-1 w-full max-w-[1440px]"
         style={{
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-span-3 col-start-1 row-span-1 row-start-1">
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 sm:gap-10 w-full">
+        <div class="col-span-3 col-start-1 row-span-1 row-start-1 px-6 md:px-0">
+          <Slider class="carousel carousel-center sm:carousel-end gap-2 w-full">
             {categoryItems?.map((item, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
                   "carousel-item",
-                  "first:pl-5 first:sm:pl-0",
-                  "last:pr-5 last:sm:pr-0",
+                  "first:pl-0 first:sm:pl-0",
+                  "last:pr-0 last:sm:pr-0",
                 )}
               >
                 <div class="bg-secondary-content">
                   <a href={item.link}>
                     <Image
                       src={item.image}
-                      width={294}
+                      width={295}
                       height={305}
                       class="w-[287px] sm:w-[300px]"
                     />
@@ -54,7 +57,6 @@ function CategorySlider({ categoryItems }: Props) {
             ))}
           </Slider>
         </div>
-
         <div class="relative bottom-[15%] z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center">
           <Slider.PrevButton class="sm:flex hidden disabled:invisible btn btn-circle btn-outline btn-sm no-animation">
             <Icon id="chevron-right" class="rotate-180" />
@@ -68,7 +70,7 @@ function CategorySlider({ categoryItems }: Props) {
         </div>
       </div>
       <Slider.JS rootId={id} />
-    </>
+    </div>
   );
 }
 

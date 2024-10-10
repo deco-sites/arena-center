@@ -19,22 +19,26 @@
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/0925d19b-074e-4d74-85d7-f191ee9836d5/cama.svg",
           "title": "Lorem ipsum.",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies."
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies."
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
-          "title": "Lorem ipsum"
+          "title": "Lorem ipsum",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies."
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         }
       ]
     },
@@ -77,47 +81,22 @@
       "categoryItems": [
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
+          "paragraph": "Sala de Jantar",
           "link": "/"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/801ed0d0-8519-4f9b-8e4d-6869d90602aa/cama2.png",
+          "paragraph": "Quarto",
           "link": "/"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1c5c2d6e-5bc5-4e2e-bab6-8dfafabeae60/sala.png",
+          "paragraph": "Sala de estar",
           "link": "/"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/3832191e-1b3f-4307-bbba-0f06bee49264/garrafa.png",
+          "paragraph": "Decoração",
           "link": "/"
         },
         {
@@ -126,35 +105,7 @@
           "link": "/"
         }
       ],
-      "itemListName": "test"
-    },
-    {
-      "__resolveType": "site/sections/ThreeImages.tsx",
-      "firstImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
-        "width": 2384,
-        "height": 2276,
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png"
-      },
-      "secondImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9ec85fac-08ef-40ed-9087-369677b9ca60/cama-desarrumada.png",
-        "width": 2384,
-        "height": 1124
-      },
-      "thirdImage": {
-        "width": 2384,
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
-        "height": 1124
-      }
-    },
-    {
-      "__resolveType": "site/sections/WideBanner.tsx",
-      "images": {
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png",
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png"
-      },
-      "alt": "Banner promoção",
-      "href": "/"
+      "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
     },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
@@ -190,24 +141,46 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Newsletter/Newsletter.tsx",
-        "label": "Sign up",
-        "placeholder": "Email address",
-        "empty": {
-          "title": "Get top deals, latest trends, and more.",
-          "description": "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here."
+      "__resolveType": "site/sections/ThreeImages.tsx",
+      "firstImage": {
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
+        "width": 2384,
+        "height": 2276,
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png"
+      },
+      "secondImage": {
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png",
+        "width": 2384,
+        "height": 1124
+      },
+      "thirdImage": {
+        "width": 2384,
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
+        "height": 1124
+      },
+      "img": [
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png"
         },
-        "success": {
-          "title": "Thank you for subscribing!",
-          "description": "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!"
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png"
         },
-        "failed": {
-          "title": "Oops!. Something went wrong!",
-          "description": "Something went wrong. Please try again. If the problem persists, please contact us."
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png"
         }
-      }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/WideBanner.tsx",
+      "images": {
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png",
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png"
+      },
+      "alt": "Banner promoção",
+      "href": "/"
     },
     {
       "__resolveType": "site/sections/LearnMore.tsx",
@@ -243,10 +216,212 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "Footer"
-      }
+      "__resolveType": "site/sections/Footer/Footer.tsx",
+      "links": [
+        {
+          "children": [
+            {
+              "title": "Sobre o Arena Center",
+              "href": "#"
+            },
+            {
+              "title": "Nossas Lojas",
+              "href": "#"
+            },
+            {
+              "title": "Política de Privacidade e Segurança",
+              "href": "#"
+            },
+            {
+              "title": "Política Troca e Devolução",
+              "href": "#"
+            },
+            {
+              "title": "Trabalhe conosco",
+              "href": "#"
+            },
+            {
+              "title": "Sustentabilidade",
+              "href": "#"
+            },
+            {
+              "title": "Termos de uso",
+              "href": "#"
+            },
+            {
+              "title": "Mapa do site",
+              "href": "#"
+            }
+          ],
+          "title": "Institucional",
+          "href": "#"
+        },
+        {
+          "children": [
+            {
+              "title": "Central de Atendimento",
+              "href": "#"
+            },
+            {
+              "title": "Meus Pedidos",
+              "href": "#"
+            },
+            {
+              "title": "Fale Conosco",
+              "href": "#"
+            },
+            {
+              "title": "Ajuda",
+              "href": "#"
+            },
+            {
+              "title": "FAQ"
+            }
+          ],
+          "title": "Atendimento",
+          "href": "#"
+        },
+        {
+          "children": [
+            {
+              "title": "Lista de Presentes",
+              "href": "#"
+            },
+            {
+              "title": "Vendas Corporativas (B2B)",
+              "href": "#"
+            },
+            {
+              "title": "Parceirias Arquitetos",
+              "href": "#"
+            }
+          ],
+          "title": "Serviços",
+          "href": "#"
+        },
+        {
+          "children": [
+            {
+              "title": "Regras do Cashback",
+              "href": "#"
+            }
+          ],
+          "href": "#",
+          "title": "CashBack"
+        },
+        {
+          "children": [
+            {
+              "title": "Informações de Preços, Promoções, Validade"
+            },
+            {
+              "title": "Informações sobre divergência de preço ente o site, Loja e Anúncios"
+            }
+          ],
+          "title": "Informações"
+        }
+      ],
+      "social": [
+        {
+          "alt": "facebook",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/66137259-6bdb-4322-bed1-a2593560934c"
+        },
+        {
+          "alt": "Instagram",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e71ae7f3-0f51-4185-af0a-fca08ebe4451"
+        },
+        {
+          "alt": "Pinterest",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4becba39-fc08-4df2-bb5d-5e843f375deb"
+        },
+        {
+          "alt": "X",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
+        }
+      ],
+      "paymentMethods": [
+        {
+          "alt": "Paypal",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/7d858621-469e-4528-91b5-8c79fc413162"
+        },
+        {
+          "alt": "Mastercard",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88ab870c-4256-44b4-8da3-3cefe0436e87"
+        },
+        {
+          "alt": "Maestro",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb"
+        },
+        {
+          "alt": "Google Pay",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/ccddc66e-baa8-4b44-a52c-ea48d8e111b5"
+        },
+        {
+          "alt": "Elo",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb"
+        },
+        {
+          "alt": "Diners",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/20bb8e66-5495-4f92-a6d0-4967a66f3a44"
+        },
+        {
+          "alt": "Apple Pay",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d4227ed7-333d-49b8-b3e2-35719f606640"
+        },
+        {
+          "alt": "Amex",
+          "href": "#",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/023472cf-782d-4a22-82d9-ecdf18466d96"
+        },
+        {
+          "alt": "Visa",
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/2d213fd6-2754-4e92-a6f1-03825f71c7af"
+        }
+      ],
+      "policies": [
+        {
+          "title": "Privacy Policy",
+          "href": "#"
+        },
+        {
+          "title": "Terms and Conditions",
+          "href": "#"
+        },
+        {
+          "title": "Cookies Policy",
+          "href": "#"
+        }
+      ],
+      "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/47fedbc9-f224-40f9-a2f6-beb8eabe627b/tec3.svg",
+      "aboutUs": {
+        "0": {
+          "Title": "Arena Center",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut.",
+          "title": "Arena M"
+        },
+        "title": "Arena Center",
+        "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut."
+      },
+      "contact": [
+        {
+          "text": "titulo",
+          "children": [
+            {
+              "children": []
+            }
+          ],
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/07da4c42-3426-498f-b36c-573000465814/whatsapp.svg"
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
