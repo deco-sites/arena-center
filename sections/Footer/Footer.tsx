@@ -40,7 +40,7 @@ function Footer({
 }: Props) {
   return (
     <footer
-      class="px-5 sm:px-0 mt-5 sm:mt-10"
+      class="px-5 sm:px-0 mt-10 sm:mt-11"
       style={{ backgroundColor: "#EFF0F0" }}
     >
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">

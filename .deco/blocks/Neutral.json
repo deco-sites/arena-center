@@ -37,6 +37,8 @@
   "mode": "dark",
   "complementaryColors": {
     "base-200": "#000000",
-    "secondary-content": "#FFEBD3"
+    "secondary-content": "#FFEBD3",
+    "primary-content": "#ffffff",
+    "tertiary-content": "#6C6D70"
   }
 }
