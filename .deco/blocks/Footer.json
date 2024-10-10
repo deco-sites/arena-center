@@ -5,19 +5,35 @@
       "title": "Our Company",
       "children": [
         {
-          "title": "About us",
+          "title": "Sobre o Arena Center",
           "href": "#"
         },
         {
-          "title": "Our blog",
+          "title": "Nossas Lojas",
           "href": "#"
         },
         {
-          "title": "Stores",
+          "title": "Política de Privacidade e Segurança",
           "href": "#"
         },
         {
-          "title": "Work with us",
+          "title": "Política Troca e Devolução",
+          "href": "#"
+        },
+        {
+          "href": "#",
+          "title": "Trabalhe conosco"
+        },
+        {
+          "href": "#",
+          "title": "Sustentabilidade"
+        },
+        {
+          "title": "Termos de uso",
+          "href": "#"
+        },
+        {
+          "title": "Mapa do site",
           "href": "#"
         }
       ],

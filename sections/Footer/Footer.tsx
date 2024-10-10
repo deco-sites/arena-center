@@ -6,13 +6,20 @@ import Section from "../../components/ui/Section.tsx";
 /** @titleBy title */
 interface Item {
   title: string;
-  href: string;
+  href?: string;
 }
 
 /** @titleBy title */
 interface Link extends Item {
   children: Item[];
+  icon?: ImageWidget;
 }
+/**@title title */
+interface AboutUs {
+  title?: string;
+  paragraph?: string;
+}
+
 
 /** @titleBy alt */
 interface Social {
@@ -22,6 +29,7 @@ interface Social {
 }
 
 interface Props {
+  aboutUs: AboutUs;
   links?: Link[];
   social?: Social[];
   paymentMethods?: Social[];
@@ -37,20 +45,24 @@ function Footer({
   paymentMethods = [],
   logo,
   trademark,
+  aboutUs,
 }: Props) {
   return (
     <footer
-      class="px-5 sm:px-0 mt-10 sm:mt-11"
-      style={{ backgroundColor: "#EFF0F0" }}
+      class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content"
     >
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
+          <div class="flex flex-col gap-4">
+            <p class="text-base font-semibold">{aboutUs.title}</p>
+            <p>{aboutUs.paragraph}</p>
+          </div>
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
               <a class="text-base font-semibold" href={href}>{title}</a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href }) => (
-                  <li>
+                  <li class="flex">
                     <a class="text-sm font-medium text-base-400" href={href}>
                       {title}
                     </a>
