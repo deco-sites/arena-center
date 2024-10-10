@@ -35,37 +35,37 @@ export default function ({ img }: Props) {
     );
   }
   return (
-    <div class="flex gap-2 px-10 overflow-auto lg:overflow-visible max-w-[1440px] w-full mx-auto pt-8">
+    <div class="flex gap-2 px-6 overflow-auto lg:overflow-visible max-w-[1440px] w-full mx-auto mt-8">
       <div class="relative lg:overflow-hidden">
-        <a href={img[0].link} class="w-[80vw] block lg:w-auto">
+        <a href={img[0].link} class=" block">
           <Image
-            class="lg:hover:scale-110 duration-200"
+            class="lg:hover:scale-110 duration-200 w-full"
             src={img[0].desktop}
             width={596}
-            height={569}
+            height={578}
             loading={"lazy"}
           />
         </a>
       </div>
       <div class="flex lg:flex-col gap-2">
-        <div class="relative overflow-hidden w-[80vw] lg:w-auto">
+        <div class="relative overflow-hidden">
           <a href={img[1].link}>
             <Image
-              class="lg:hover:scale-110 duration-200"
+              class="lg:hover:scale-110 duration-200 w-full"
               src={img[1].desktop}
-              width={712}
-              height={281}
+              width={596}
+              height={285}
               loading={"lazy"}
             />
           </a>
         </div>
-        <div class="relative overflow-hidden w-[80vw] lg:w-auto">
+        <div class="relative overflow-hidden">
           <a href={img[2].link}>
             <Image
-              class="lg:hover:scale-110  duration-200"
+              class="lg:hover:scale-110  duration-200 w-full"
               src={img[2].desktop}
-              width={712}
-              height={281}
+              width={596}
+              height={285}
               loading={"lazy"}
             />
           </a>

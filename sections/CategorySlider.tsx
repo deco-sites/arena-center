@@ -20,8 +20,8 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
   const id = useId();
 
   return (
-    <div class="mx-auto max-w-[1440px] flex flex-col gap-4 mt-8">
-      <p class="text-accent-content text-lg font-semibold text-center">{itemListName}</p>
+    <div class="mx-auto max-w-[1440px] flex flex-col gap-2 mt-8 px-6">
+      <p class="text-accent-content md:text-primary text-lg font-semibold text-center">{itemListName}</p>
       <div
         id={id}
         class="grid grid-rows-1 w-full max-w-[1440px]"
@@ -30,7 +30,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
         }}
       >
         <div class="col-span-3 col-start-1 row-span-1 row-start-1">
-          <Slider class="carousel carousel-center sm:carousel-end gap-5 sm:gap-10 w-full">
+          <Slider class="carousel carousel-center sm:carousel-end gap-2 w-full">
             {categoryItems?.map((item, index) => (
               <Slider.Item
                 index={index}
@@ -44,8 +44,8 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
                   <a href={item.link}>
                     <Image
                       src={item.image}
-                      width={352}
-                      height={366}
+                      width={295}
+                      height={305}
                       class="w-[287px] sm:w-[300px]"
                     />
                     <p class="pt-[5px] pb-[7px] pl-[9px]">{item.paragraph}</p>

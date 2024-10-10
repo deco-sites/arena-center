@@ -4660,10 +4660,6 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 0px;
   padding-right: 0px;
 }
-.px-10 {
-  padding-left: 2.5rem;
-  padding-right: 2.5rem;
-}
 .px-16 {
   padding-left: 4rem;
   padding-right: 4rem;
@@ -6014,6 +6010,11 @@ details.collapse summary::-webkit-details-marker {
   .md\:text-base-content {
     --tw-text-opacity: 1;
     color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
+  }
+
+  .md\:text-primary {
+    --tw-text-opacity: 1;
+    color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
   }
 }
 

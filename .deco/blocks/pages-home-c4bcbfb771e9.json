@@ -105,7 +105,40 @@
           "link": "/"
         }
       ],
-      "itemListName": "OS MAIS VENDIDOS"
+      "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "discount": "50%",
+          "href": "/",
+          "width": 564,
+          "height": 705
+        },
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "discount": "30%",
+          "href": "/",
+          "width": 564,
+          "height": 705
+        },
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "discount": "30%",
+          "href": "/",
+          "width": 564,
+          "height": 705
+        },
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "discount": "30%",
+          "href": "/",
+          "width": 564,
+          "height": 705
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/ThreeImages.tsx",
@@ -148,39 +181,6 @@
       },
       "alt": "Banner promoção",
       "href": "/"
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
-          "discount": "50%",
-          "href": "/",
-          "width": 564,
-          "height": 705
-        },
-        {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
-          "discount": "30%",
-          "href": "/",
-          "width": 564,
-          "height": 705
-        },
-        {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
-          "discount": "30%",
-          "href": "/",
-          "width": 564,
-          "height": 705
-        },
-        {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
-          "discount": "30%",
-          "href": "/",
-          "width": 564,
-          "height": 705
-        }
-      ]
     },
     {
       "__resolveType": "site/sections/LearnMore.tsx",
