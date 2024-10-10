@@ -21,7 +21,9 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
 
   return (
     <div class="mx-auto max-w-[1440px] flex flex-col gap-2 mt-8 px-0 md:px-6">
-      <p class="text-accent-content md:text-primary text-lg font-semibold text-center">{itemListName}</p>
+      <p class="text-accent-content md:text-primary text-lg font-semibold text-center">
+        {itemListName}
+      </p>
       <div
         id={id}
         class="grid grid-rows-1 w-full max-w-[1440px]"

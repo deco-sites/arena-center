@@ -20,7 +20,6 @@ interface AboutUs {
   paragraph?: string;
 }
 
-
 /** @titleBy alt */
 interface Social {
   alt?: string;
@@ -48,9 +47,7 @@ function Footer({
   aboutUs,
 }: Props) {
   return (
-    <footer
-      class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content"
-    >
+    <footer class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content">
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
           <div class="flex flex-col gap-4">
