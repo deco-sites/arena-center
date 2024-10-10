@@ -23,7 +23,7 @@ export interface Props {
 
 function Banner({ images, href, alt }: Props) {
   return (
-    <a class="relative bg-base-200 mx-auto w-screen" href={href}>
+    <a class="relative bg-base-200 mx-auto w-screen hidden md:block" href={href}>
       <Picture>
         <Source media="(max-width: 640px)" src={images.mobile} width={390} />
         <Source

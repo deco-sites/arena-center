@@ -20,7 +20,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
   const id = useId();
 
   return (
-    <div class="mx-auto max-w-[1440px] flex flex-col gap-2 mt-8 px-6">
+    <div class="mx-auto max-w-[1440px] flex flex-col gap-2 mt-8 px-0 md:px-6">
       <p class="text-accent-content md:text-primary text-lg font-semibold text-center">{itemListName}</p>
       <div
         id={id}
@@ -29,15 +29,15 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-span-3 col-start-1 row-span-1 row-start-1">
+        <div class="col-span-3 col-start-1 row-span-1 row-start-1 px-6 md:px-0">
           <Slider class="carousel carousel-center sm:carousel-end gap-2 w-full">
             {categoryItems?.map((item, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
                   "carousel-item",
-                  "first:pl-5 first:sm:pl-0",
-                  "last:pr-5 last:sm:pr-0",
+                  "first:pl-0 first:sm:pl-0",
+                  "last:pr-0 last:sm:pr-0",
                 )}
               >
                 <div class="bg-secondary-content">

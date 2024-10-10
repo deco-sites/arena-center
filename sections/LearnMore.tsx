@@ -19,7 +19,7 @@ export interface Props {
 
 export default function LearnMore({ mainTitle, learnMore }: Props) {
   return (
-    <div class="flex flex-col gap-4 items-center mt-8 text-neutral px-6 mx-auto max-w-[1440px]">
+    <div class="flex flex-col gap-4 items-center md:mt-8 mt-10 text-neutral px-6 mx-auto max-w-[1440px]">
       <p class="font-light text-2xl text-center text-primary md:text-base-content">
         {mainTitle}
       </p>

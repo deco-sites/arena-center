@@ -3840,6 +3840,9 @@ details.collapse summary::-webkit-details-marker {
 .mt-6 {
   margin-top: 1.5rem;
 }
+.mt-7 {
+  margin-top: 1.75rem;
+}
 .mt-8 {
   margin-top: 2rem;
 }
@@ -4807,9 +4810,6 @@ details.collapse summary::-webkit-details-marker {
 .pt-6 {
   padding-top: 1.5rem;
 }
-.pt-8 {
-  padding-top: 2rem;
-}
 .pt-\[5px\] {
   padding-top: 5px;
 }
@@ -5450,12 +5450,20 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 1rem;
 }
 
+.first\:pl-0:first-child {
+  padding-left: 0px;
+}
+
 .first\:pl-5:first-child {
   padding-left: 1.25rem;
 }
 
 .last\:mr-4:last-child {
   margin-right: 1rem;
+}
+
+.last\:pr-0:last-child {
+  padding-right: 0px;
 }
 
 .last\:pr-5:last-child {
@@ -5909,6 +5917,14 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 1.25rem;
   }
 
+  .md\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .md\:block {
+    display: block;
+  }
+
   .md\:max-w-\[1440px\] {
     max-width: 1440px;
   }
@@ -5962,6 +5978,11 @@ details.collapse summary::-webkit-details-marker {
   .md\:px-0 {
     padding-left: 0px;
     padding-right: 0px;
+  }
+
+  .md\:px-6 {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
   }
 
   .md\:px-\[60px\] {
