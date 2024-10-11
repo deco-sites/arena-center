@@ -120,14 +120,13 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 10,
-          "wildcard": true,
-          "sort": "newest",
-          "tags": [],
-          "typeTags": [],
-          "ids": []
+          "count": 10
         },
+<<<<<<< HEAD
         "title": "A MELHOR SELEÇÃO DE PRODUTOS"
+=======
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS!"
+>>>>>>> 2214032858d803e54125a1e3dccc716bfa92968e
       }
     },
     {
