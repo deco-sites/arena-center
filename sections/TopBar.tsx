@@ -47,10 +47,11 @@ export default function TopBar({ content }: Props) {
             <div class="flex justify-center items-center w-[50px] h-[50px]">
               {item.mobileImage && (
                 <Image
-                  class="lg:w-[94px] w-full lg:h-[50px] flex-shrink-0 object-contain"
+                  class="lg:w-[34px] w-full lg:h-[50px] flex-shrink-0 object-contain"
+
                   src={item.mobileImage}
                   alt={item.title}
-                  width={94}
+                  width={34}
                   height={34}
                 />
               )}

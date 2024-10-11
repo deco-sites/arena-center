@@ -6126,6 +6126,10 @@ details.collapse summary::-webkit-details-marker {
     width: 1440px;
   }
 
+  .lg\:w-\[34px\] {
+    width: 34px;
+  }
+
   .lg\:w-\[450px\] {
     width: 450px;
   }
