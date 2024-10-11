@@ -48,7 +48,6 @@ export default function TopBar({ content }: Props) {
               {item.mobileImage && (
                 <Image
                   class="lg:w-[34px] w-full lg:h-[50px] flex-shrink-0 object-contain"
-
                   src={item.mobileImage}
                   alt={item.title}
                   width={34}
