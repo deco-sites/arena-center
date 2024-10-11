@@ -1,7 +1,7 @@
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import PoweredByDeco from "apps/website/components/PoweredByDeco.tsx";
 import Section from "../../components/ui/Section.tsx";
+import Newsletter from "../Newsletter/Newsletter.tsx";
 
 /** @titleBy title */
 interface Item {
@@ -48,6 +48,7 @@ function Footer({
 }: Props) {
   return (
     <footer class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content">
+      <Newsletter />
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
           <div class="flex flex-col gap-4">
@@ -119,11 +120,6 @@ function Footer({
               <img loading="lazy" src={logo} />
             </div>
             <span class="text-xs font-normal text-base-400">{trademark}</span>
-          </div>
-
-          <div class="flex flex-nowrap items-center justify-center gap-4">
-            <span class="text-sm font-normal text-base-400">Powered by</span>
-            <PoweredByDeco />
           </div>
         </div>
       </div>

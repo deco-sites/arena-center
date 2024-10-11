@@ -5,7 +5,7 @@ import { clx } from "../../sdk/clx.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { useComponent } from "../Component.tsx";
 import { type SectionProps } from "@deco/deco";
-interface NoticeProps {
+export interface NoticeProps {
   title?: string;
   description?: string;
 }
@@ -73,7 +73,7 @@ function Newsletter({
 }: SectionProps<typeof loader, typeof action>) {
   if (status === "success" || status === "failed") {
     return (
-      <Section.Container class="bg-base-200">
+      <Section.Container class="bg-primary">
         <div class="p-14 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
           <Icon
             size={80}
@@ -86,7 +86,7 @@ function Newsletter({
     );
   }
   return (
-    <Section.Container class="bg-base-200">
+    <Section.Container class="bg-primary">
       <div class="p-14 grid grid-flow-row sm:grid-cols-2 gap-10 sm:gap-20 place-items-center">
         <Notice {...empty} />
 
