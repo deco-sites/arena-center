@@ -136,15 +136,9 @@
         "title": "OS MAIS VENDIDOS"
 =======
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 10,
-          "wildcard": true,
-          "sort": "newest",
-          "tags": [],
-          "typeTags": [],
-          "ids": []
+          "count": 10
         },
-        "title": "A MELHOR SELEÇÃO DE PRODUTOS"
->>>>>>> 43569b98694730cdd4cef4c24faf334f43fb0114
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS!"
       }
     },
     {
