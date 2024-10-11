@@ -8,6 +8,7 @@
       }
     },
     {
+<<<<<<< HEAD
       "__resolveType": "site/sections/Images/Carousel.tsx",
       "images": [
         {
@@ -16,6 +17,18 @@
           "alt": "Wolf"
         }
       ]
+=======
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Carousel.tsx"
+      }
+    },
+    {
+      "__resolveType": "site/sections/GreaterBanner.tsx",
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
+      "width": 1225,
+      "height": 522
+>>>>>>> 43569b98694730cdd4cef4c24faf334f43fb0114
     },
     {
       "__resolveType": "site/sections/TopBar.tsx",
@@ -117,9 +130,21 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
+<<<<<<< HEAD
           "__resolveType": "Product List Loader"
         },
         "title": "OS MAIS VENDIDOS"
+=======
+          "__resolveType": "vnda/loaders/productList.ts",
+          "count": 10,
+          "wildcard": true,
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": []
+        },
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS"
+>>>>>>> 43569b98694730cdd4cef4c24faf334f43fb0114
       }
     },
     {
