@@ -47,17 +47,17 @@ export default function TopBar({ content }: Props) {
             <div class="flex justify-center items-center w-[50px] h-[50px]">
               {item.mobileImage && (
                 <Image
-                  class="lg:w-[94px] w-full lg:h-[50px] flex-shrink-0 object-contain"
+                  class="lg:w-[34px] w-full lg:h-[50px] flex-shrink-0 object-contain"
                   src={item.mobileImage}
                   alt={item.title}
-                  width={94}
+                  width={34}
                   height={34}
                 />
               )}
             </div>
             <div class="ml-6 w-[200px] text-base text-primary-content">
-              <p class="mb-2 font-semibold text-xs">{item.title}</p>
-              <p class="font-light text-xs">{item.subtitle}</p>
+              <p class="mb-2 font-normal text-xs">{item.title}</p>
+              <p class="font-extralight text-xs">{item.subtitle}</p>
             </div>
           </a>
         ))}
@@ -84,8 +84,8 @@ export default function TopBar({ content }: Props) {
             )}
           </div>
           <div class="ml-6 w-[200px] text-base text-primary-content lg:text-secondary">
-            <p class="mb-2 font-semibold text-xs">{item.title}</p>
-            <p class="font-light text-xs">{item.subtitle}</p>
+            <p class="mb-2 text-xs">{item.title}</p>
+            <p class="font-extralight text-xs">{item.subtitle}</p>
           </div>
         </a>
       ))}

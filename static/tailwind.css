@@ -4119,6 +4119,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-7xl {
   max-width: 80rem;
 }
+.max-w-\[1300px\] {
+  max-width: 1300px;
+}
 .max-w-\[139px\] {
   max-width: 139px;
 }
@@ -6121,6 +6124,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-\[1440px\] {
     width: 1440px;
+  }
+
+  .lg\:w-\[34px\] {
+    width: 34px;
   }
 
   .lg\:w-\[450px\] {

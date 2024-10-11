@@ -31,7 +31,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-span-3 col-start-1 row-span-1 row-start-1 px-6 md:px-0">
+        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 px-6 md:px-0 max-w-[1300px]">
           <Slider class="carousel carousel-center sm:carousel-end gap-2 w-full">
             {categoryItems?.map((item, index) => (
               <Slider.Item
@@ -50,7 +50,9 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
                       height={305}
                       class="w-[287px] sm:w-[300px]"
                     />
-                    <p class="pt-[5px] pb-[7px] pl-[9px]">{item.paragraph}</p>
+                    <p class="pt-[5px] text-xs pb-[7px] pl-[9px]">
+                      {item.paragraph}
+                    </p>
                   </a>
                 </div>
               </Slider.Item>
@@ -58,14 +60,14 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           </Slider>
         </div>
         <div class="relative bottom-[15%] z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center">
-          <Slider.PrevButton class="sm:flex hidden disabled:invisible btn btn-circle btn-outline btn-sm no-animation">
-            <Icon id="chevron-right" class="rotate-180" />
+          <Slider.PrevButton class="sm:flex hidden disabled:invisible no-animation">
+            <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
 
         <div class="relative bottom-[15%] z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center">
-          <Slider.NextButton class="sm:flex hidden disabled:invisible btn btn-circle btn-outline btn-sm no-animation">
-            <Icon id="chevron-right" />
+          <Slider.NextButton class="sm:flex hidden disabled:invisible no-animation">
+            <Icon id="chevron-right" class="text-accent-content" />
           </Slider.NextButton>
         </div>
       </div>

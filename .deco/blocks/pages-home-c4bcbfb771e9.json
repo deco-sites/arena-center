@@ -8,10 +8,14 @@
       }
     },
     {
-      "__resolveType": "site/sections/GreaterBanner.tsx",
-      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-      "width": 1225,
-      "height": 522
+      "__resolveType": "site/sections/Images/Carousel.tsx",
+      "images": [
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/48475062-46da-401d-b0c2-766697d1c636/image.png",
+          "alt": "Wolf"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/TopBar.tsx",
@@ -19,14 +23,15 @@
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/0925d19b-074e-4d74-85d7-f191ee9836d5/cama.svg",
           "title": "Lorem ipsum.",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
+          "greaterIcon": true
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/067df0fe-8f5b-438d-8f2d-9cfcd5bc68d9/Vector-(1).png"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
@@ -108,6 +113,16 @@
       "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "Product List Loader"
+        },
+        "title": "OS MAIS VENDIDOS"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
@@ -139,6 +154,16 @@
           "height": 705
         }
       ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "Product List Loader"
+        },
+        "title": "ESCOLHA POR AMBIENTE"
+      }
     },
     {
       "__resolveType": "site/sections/ThreeImages.tsx",
@@ -181,6 +206,16 @@
       },
       "alt": "Banner promoção",
       "href": "/"
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "Product List Loader"
+        },
+        "title": "PROMOÇÕES IMPERDÍVEIS"
+      }
     },
     {
       "__resolveType": "site/sections/LearnMore.tsx",
