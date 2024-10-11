@@ -37,7 +37,9 @@ export default function LearnMore({ mainTitle, learnMore }: Props) {
             <p class="pt-4 text-lg font-extralight">
               {learnMore.title}
             </p>
-            <p class="px-4 pt-2 pb-3 font-extralight text-[12px]">{learnMore.paragraph}</p>
+            <p class="px-4 pt-2 pb-3 font-extralight text-[12px]">
+              {learnMore.paragraph}
+            </p>
             <a
               href={learnMore.link}
               class="border-neutral px-[67px] py-2 border rounded-lg font-semibold text-xs"
