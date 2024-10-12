@@ -29,19 +29,19 @@
     "@zaubrik/djwt": "jsr:@zaubrik/djwt@^3.0.2",
     "fast-json-patch": "npm:fast-json-patch@^3.1.1",
     "https://esm.sh/*preact-render-to-string@6.3.1": "npm:preact-render-to-string@6.4.2",
-    "@deco/deco": "jsr:@deco/deco@1.102.3",
+    "@deco/deco": "jsr:@deco/deco@1.105.2",
     "simple-git": "npm:simple-git@^3.25.0",
     "std/": "https://deno.land/std@0.190.0/",
-    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.102.3/",
-    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.59.16/",
+    "deco/": "https://cdn.jsdelivr.net/gh/deco-cx/deco@1.105.2/",
+    "apps/": "https://cdn.jsdelivr.net/gh/deco-cx/apps@0.62.4/",
     "@preact/signals": "https://esm.sh/*@preact/signals@1.2.2",
     "@preact/signals-core": "https://esm.sh/*@preact/signals-core@1.5.1",
     "daisyui": "npm:daisyui@4.6.0",
-    "@deco/dev": "jsr:@deco/dev@1.102.0",
+    "@deco/dev": "jsr:@deco/dev@1.105.2",
     "site": "./"
   },
   "tasks": {
-    "start": "deno run -A --unstable-http --env https://deco.cx/run -- deno task dev",
+    "start": "deno run -Ar --unstable-http --env https://deco.cx/run -- deno task dev",
     "gen": "deno run -A dev.ts --gen-only",
     "play": "USE_LOCAL_STORAGE_ONLY=true deno task start",
     "component": "deno eval 'import \"deco/scripts/component.ts\"'",
@@ -80,7 +80,7 @@
       ]
     }
   },
-  "nodeModulesDir": false,
+  "nodeModulesDir": true,
   "compilerOptions": {
     "jsx": "react-jsx",
     "jsxImportSource": "preact"
