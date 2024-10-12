@@ -11,7 +11,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
   return (
     <li
-      class="group flex items-center pr-5"
+      class="group flex items-center "
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
       <a

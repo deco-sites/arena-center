@@ -120,9 +120,10 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 10
+          "count": 5
         },
-        "title": "A MELHOR SELEÇÃO DE PRODUTOS!"
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
+        "cta": "/"
       }
     },
     {
