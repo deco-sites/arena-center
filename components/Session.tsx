@@ -107,6 +107,13 @@ const sdk = () => {
         });
         input.value = encodeURIComponent(JSON.stringify(platformProps));
         button.click();
+
+        // const checkbox = document.getElementById(
+        //   "minicart-drawer"
+        // ) as HTMLInputElement;
+        // if (checkbox) {
+        //   checkbox.checked = true;
+        // }
         return true;
       },
       subscribe: (cb, opts) => {
@@ -279,7 +286,7 @@ export default function Session(
         id={MINICART_DRAWER_ID}
         class="drawer-end z-50"
         aside={
-          <Drawer.Aside title="My Bag" drawer={MINICART_DRAWER_ID}>
+          <Drawer.Aside title="Carrinho" drawer={MINICART_DRAWER_ID}>
             <div
               class="h-full flex flex-col bg-base-100 items-center justify-center overflow-auto"
               style={{

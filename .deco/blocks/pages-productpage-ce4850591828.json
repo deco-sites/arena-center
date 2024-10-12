@@ -1,6 +1,6 @@
 {
   "name": "Product Page",
-  "path": "/products/:slug",
+  "path": "/produto/:slug",
   "default": {
     "possiblePaths": []
   },
@@ -38,25 +38,12 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "title": "You may also like",
         "products": {
-          "__resolveType": "shopify/loaders/ProductList.ts",
-          "props": {
-            "sort": "",
-            "query": "a",
-            "count": 9
-          },
-          "filters": {
-            "tags": [],
-            "productTypes": [],
-            "productVendors": [],
-            "variantOptions": []
-          }
+          "__resolveType": "vnda/loaders/productList.ts",
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": []
         }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
       }
     },
     {

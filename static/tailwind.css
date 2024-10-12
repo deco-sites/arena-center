@@ -5694,15 +5694,6 @@ details.collapse summary::-webkit-details-marker {
   color: var(--fallback-er,oklch(var(--er)/var(--tw-text-opacity))) !important;
 }
 
-.disabled\:\!text-secondary:disabled {
-  --tw-text-opacity: 1 !important;
-  color: var(--fallback-s,oklch(var(--s)/var(--tw-text-opacity))) !important;
-}
-
-.disabled\:\!opacity-50:disabled {
-  opacity: 0.5 !important;
-}
-
 .disabled\:\!opacity-75:disabled {
   opacity: 0.75 !important;
 }
@@ -5753,10 +5744,6 @@ details.collapse summary::-webkit-details-marker {
 
 .peer:checked ~ .peer-checked\:flex {
   display: flex;
-}
-
-.peer:checked ~ .peer-checked\:hidden {
-  display: none;
 }
 
 .group[data-painted] .group-data-\[painted\]\:bg-white {

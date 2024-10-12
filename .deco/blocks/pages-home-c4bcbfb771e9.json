@@ -14,12 +14,6 @@
       }
     },
     {
-      "__resolveType": "site/sections/GreaterBanner.tsx",
-      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-      "width": 1225,
-      "height": 522
-    },
-    {
       "__resolveType": "site/sections/TopBar.tsx",
       "content": [
         {
@@ -120,10 +114,13 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 5
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
         },
-        "title": "A MELHOR SELEÇÃO DE PRODUTOS",
-        "cta": "/"
+        "title": "ESCOLHA POR AMBIENTE"
       }
     },
     {
@@ -164,7 +161,12 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "Product List Loader"
+          "__resolveType": "vnda/loaders/productList.ts",
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
         },
         "title": "ESCOLHA POR AMBIENTE"
       }
@@ -216,7 +218,12 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "Product List Loader"
+          "__resolveType": "vnda/loaders/productList.ts",
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
         },
         "title": "PROMOÇÕES IMPERDÍVEIS"
       }
