@@ -222,6 +222,29 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+        "title": "escolha os seus produtos por ambiente",
+        "cta": "/",
+        "tabs": [
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "count": 5,
+              "sort": "newest",
+              "tags": [
+                "cozinha"
+              ],
+              "typeTags": [],
+              "ids": []
+            },
+            "title": "Quarto"
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "site/sections/LearnMore.tsx",
       "mainTitle": "serviços exclusivos da arena center",
       "learnMore": [
