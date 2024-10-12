@@ -13,7 +13,7 @@
         {
           "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
           "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/48475062-46da-401d-b0c2-766697d1c636/image.png",
-          "alt": "Wolf"
+          "alt": "a"
         }
       ]
     },
@@ -25,24 +25,25 @@
           "title": "Lorem ipsum.",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
-          "greaterIcon": true
+          "greaterIcon": false
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/067df0fe-8f5b-438d-8f2d-9cfcd5bc68d9/Vector-(1).png"
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
+          "greaterIcon": false
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
           "title": "Lorem ipsum",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         }
       ]
@@ -288,8 +289,7 @@
               "href": "#"
             }
           ],
-          "title": "Institucional",
-          "href": "#"
+          "title": "Institucional"
         },
         {
           "children": [
@@ -313,8 +313,7 @@
               "title": "FAQ"
             }
           ],
-          "title": "Atendimento",
-          "href": "#"
+          "title": "Atendimento"
         },
         {
           "children": [
@@ -354,6 +353,30 @@
             }
           ],
           "title": "Informações"
+        },
+        {
+          "children": [
+            {
+              "title": "47 9 9856 - 6816",
+              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a8a85b79-a318-48e3-8365-75794cebe0c1/whatsapp.svg"
+            },
+            {
+              "title": "47 9 9856 - 6816",
+              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/bad2fcf0-e077-4217-9cae-568a119d8dc9/telefone2.svg"
+            },
+            {
+              "title": "contato@gmail.com.br",
+              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/09e6efed-97a4-43bd-bba5-02e505c6afda/mail.svg"
+            },
+            {
+              "title": "Horário de Atendimento"
+            },
+            {
+              "title": "Segunda a Sexta das 8:00 às 18:00",
+              "bold": true
+            }
+          ],
+          "title": "Contato"
         }
       ],
       "social": [

@@ -37,7 +37,7 @@ export default function LearnMore({ mainTitle, learnMore }: Props) {
             <p class="pt-4 text-lg font-extralight">
               {learnMore.title}
             </p>
-            <p class="px-4 pt-2 pb-3 font-extralight text-[12px]">
+            <p class="px-4 pt-2 pb-3 font-light text-[12px]">
               {learnMore.paragraph}
             </p>
             <a

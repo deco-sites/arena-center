@@ -12,6 +12,8 @@ import Drawer from "../ui/Drawer.tsx";
 import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
+import ProductListButtons from "../product/ProductListButtons.tsx";
+
 export interface Layout {
   /**
    * @title Pagination
