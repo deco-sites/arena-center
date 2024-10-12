@@ -205,8 +205,8 @@ function ProductCard({
               "btn",
               "btn-outline justify-center border-neutral-content !text-sm !font-medium px-0 no-animation w-full",
               "hover:!bg-primary",
-              "disabled:!bg-transparent disabled:!opacity-50",
-              "btn-secondary hover:!text-base-100 disabled:!text-secondary"
+              
+              "hover:!text-base-100"
             )}
           />
         ) : (
@@ -220,7 +220,7 @@ function ProductCard({
               "btn-error hover:!text-error disabled:!text-error"
             )}
           >
-            Sold out
+            Fora de estoque
           </a>
         )}
       </div>

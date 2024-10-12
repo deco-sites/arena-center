@@ -53,12 +53,15 @@
   "commerce": {
     "platform": "other"
   },
-  "platform": "shopify",
+  "platform": "vnda",
   "__resolveType": "site/apps/site.ts",
   "firstByteThresholdMS": false,
   "abTesting": {
     "replaces": [],
     "includeScriptsToHead": {
+      "includes": []
+    },
+    "includeScriptsToBody": {
       "includes": []
     }
   },
