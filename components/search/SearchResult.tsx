@@ -12,8 +12,8 @@ import Drawer from "../ui/Drawer.tsx";
 import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
-import ProductListButtons from "../product/ProductListButtons.tsx";
-
+import { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
 export interface Layout {
   /**
    * @title Pagination
@@ -21,6 +21,11 @@ export interface Layout {
    */
   pagination?: "show-more" | "pagination";
 }
+
+export interface Button {
+  icone: ImageWidget;
+}
+
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
@@ -29,7 +34,22 @@ export interface Props {
   startingPage?: 0 | 1;
   /** @hidden */
   partial?: "hideMore" | "hideLess";
+  /**@maximum 3 */
+  buttons: Button[];
 }
+
+const gradeButtonsClick = (
+  itemsPerLine: "2" | "3" | "4",
+  idContainer: string,
+) => {
+  const containerDiv = document.getElementById(idContainer) as HTMLElement;
+  const parentDiv = containerDiv.querySelector(
+    ".productsParentDiv",
+  ) as HTMLElement;
+  parentDiv.style.gridTemplateColumns =
+    `repeat(${itemsPerLine}, minmax(0, 1fr))`;
+};
+
 function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-10">
@@ -50,7 +70,9 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
   }
   return url;
 };
-function PageResult(props: SectionProps<typeof loader>) {
+function PageResult(
+  props: SectionProps<typeof loader>,
+) {
   const { layout, startingPage = 0, url, partial } = props;
   const page = props.page!;
   const { products, pageInfo } = page;
@@ -88,14 +110,14 @@ function PageResult(props: SectionProps<typeof loader>) {
           <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
         </a>
       </div>
-
       <div
         data-product-list
         class={clx(
           "grid items-center",
-          "grid-cols-2 gap-2",
-          "sm:grid-cols-4 sm:gap-10",
+          "md:grid-cols-4 gap-2",
+          "sm:grid-cols-1 sm:gap-10",
           "w-full",
+          "productsParentDiv",
         )}
       >
         {products?.map((product, index) => (
@@ -104,7 +126,7 @@ function PageResult(props: SectionProps<typeof loader>) {
             product={product}
             preload={index === 0}
             index={offset + index}
-            class="h-full min-w-[160px] max-w-[300px]"
+            class="h-full min-w-[160px] w-full"
           />
         ))}
       </div>
@@ -276,6 +298,50 @@ function Result(props: SectionProps<typeof loader>) {
                       {results}
                       <div>
                         {sortBy}
+                      </div>
+                      <div class="flex justify-end">
+                        <button
+                          class="p-8"
+                          hx-on:click={useScript(
+                            gradeButtonsClick,
+                            "2",
+                            container,
+                          )}
+                        >
+                          <Image
+                            src={props.buttons[0].icone}
+                            width={24}
+                            height={24}
+                          />
+                        </button>
+                        <button
+                          class="p-8"
+                          hx-on:click={useScript(
+                            gradeButtonsClick,
+                            "3",
+                            container,
+                          )}
+                        >
+                          <Image
+                            src={props.buttons[1].icone}
+                            width={24}
+                            height={24}
+                          />
+                        </button>
+                        <button
+                          class="p-8"
+                          hx-on:click={useScript(
+                            gradeButtonsClick,
+                            "4",
+                            container,
+                          )}
+                        >
+                          <Image
+                            src={props.buttons[2].icone}
+                            width={24}
+                            height={24}
+                          />
+                        </button>
                       </div>
                     </div>
                   )}
