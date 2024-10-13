@@ -95,7 +95,7 @@ function AddToCartButton(props: Props) {
       {/* <input type="checkbox" class="hidden peer" /> */}
 
       <button
-        class={clx("flex-grow ", _class?.toString())}
+        class={clx("flex-grow uppercase", _class?.toString())}
         hx-on:click={useScript(onClick)}
         disabled={false}
       >
