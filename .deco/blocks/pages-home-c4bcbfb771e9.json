@@ -10,18 +10,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-<<<<<<< HEAD
-        "__resolveType": "site/sections/Images/Carousel.tsx",
-        "images": [
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png",
-            "alt": "alt"
-          }
-        ]
-=======
         "__resolveType": "site/sections/Images/Carousel.tsx"
->>>>>>> 1c8560d8860ec94a5f9fc6abc5bc64474081e2e9
       }
     },
     {
@@ -121,22 +110,18 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-<<<<<<< HEAD
           "count": 4
         },
         "cta": "/",
-        "title": "A MELHOR SELEÇÃO DE PRODUTOS!"
-=======
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
           "sort": "newest",
           "tags": [],
           "typeTags": [],
           "ids": [],
           "count": 10
         },
-        "title": "ESCOLHA POR AMBIENTE"
->>>>>>> 1c8560d8860ec94a5f9fc6abc5bc64474081e2e9
-      }
-    },
+        "title": "OS MAIS VENDIDOS"
+      },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
@@ -240,6 +225,29 @@
           "count": 10
         },
         "title": "PROMOÇÕES IMPERDÍVEIS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+        "title": "escolha os seus produtos por ambiente",
+        "cta": "/",
+        "tabs": [
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "count": 5,
+              "sort": "newest",
+              "tags": [
+                "cozinha"
+              ],
+              "typeTags": [],
+              "ids": []
+            },
+            "title": "Quarto"
+          }
+        ]
       }
     },
     {
