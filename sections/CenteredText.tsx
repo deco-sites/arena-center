@@ -1,5 +1,3 @@
-import { HTMLWidget } from "apps/admin/widgets.ts";
-
 export interface Text {
   /**
    * @title Titulo Principal

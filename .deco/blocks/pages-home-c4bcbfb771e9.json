@@ -21,24 +21,25 @@
           "title": "Lorem ipsum.",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
-          "greaterIcon": true
+          "greaterIcon": false
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/067df0fe-8f5b-438d-8f2d-9cfcd5bc68d9/Vector-(1).png"
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
+          "greaterIcon": false
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
           "title": "Lorem ipsum",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         }
       ]
@@ -99,11 +100,6 @@
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/3832191e-1b3f-4307-bbba-0f06bee49264/garrafa.png",
           "paragraph": "Decoração",
           "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
         }
       ],
       "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
@@ -114,15 +110,18 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
+          "count": 4
+        },
+        "cta": "/",
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
           "sort": "newest",
           "tags": [],
           "typeTags": [],
           "ids": [],
           "count": 10
         },
-        "title": "ESCOLHA POR AMBIENTE"
-      }
-    },
+        "title": "OS MAIS VENDIDOS"
+      },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
@@ -252,6 +251,29 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+        "title": "escolha os seus produtos por ambiente",
+        "cta": "/",
+        "tabs": [
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "count": 5,
+              "sort": "newest",
+              "tags": [
+                "cozinha"
+              ],
+              "typeTags": [],
+              "ids": []
+            },
+            "title": "Quarto"
+          }
+        ]
+      }
+    },
+    {
       "__resolveType": "site/sections/LearnMore.tsx",
       "mainTitle": "serviços exclusivos da arena center",
       "learnMore": [
@@ -322,8 +344,7 @@
               "href": "#"
             }
           ],
-          "title": "Institucional",
-          "href": "#"
+          "title": "Institucional"
         },
         {
           "children": [
@@ -347,8 +368,7 @@
               "title": "FAQ"
             }
           ],
-          "title": "Atendimento",
-          "href": "#"
+          "title": "Atendimento"
         },
         {
           "children": [
@@ -388,28 +408,57 @@
             }
           ],
           "title": "Informações"
+        },
+        {
+          "children": [
+            {
+              "title": "47 9 9856 - 6816",
+              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a8a85b79-a318-48e3-8365-75794cebe0c1/whatsapp.svg"
+            },
+            {
+              "title": "47 9 9856 - 6816",
+              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/bad2fcf0-e077-4217-9cae-568a119d8dc9/telefone2.svg"
+            },
+            {
+              "title": "contato@gmail.com.br",
+              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/09e6efed-97a4-43bd-bba5-02e505c6afda/mail.svg"
+            },
+            {
+              "title": "Horário de Atendimento"
+            },
+            {
+              "title": "Segunda a Sexta das 8:00 às 18:00",
+              "bold": true
+            }
+          ],
+          "title": "Contato"
         }
       ],
       "social": [
         {
           "alt": "facebook",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/66137259-6bdb-4322-bed1-a2593560934c"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/83df025d-08fe-4d87-ab28-7384d01167d6/Facebook.png"
         },
         {
           "alt": "Instagram",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e71ae7f3-0f51-4185-af0a-fca08ebe4451"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fdc04ac9-e843-4eb8-b329-ec9c8151ff2e/Instagram.png"
         },
         {
-          "alt": "Pinterest",
+          "alt": "Linkedin",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4becba39-fc08-4df2-bb5d-5e843f375deb"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/672ef1d2-b036-481f-a9e0-c5a6f3c8c61d/LinkedIn.png"
         },
         {
-          "alt": "X",
+          "alt": "tiktok",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f7bfaaac-4801-476d-99b9-88e4c69f660d/Tik-Tok.png"
+        },
+        {
+          "alt": "twitter",
+          "href": "#",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/bafd929f-2649-4e63-a073-2535c8ff45e7/Twitter.png"
         }
       ],
       "paymentMethods": [
@@ -489,6 +538,13 @@
             }
           ],
           "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/07da4c42-3426-498f-b36c-573000465814/whatsapp.svg"
+        }
+      ],
+      "socialTitle": "Permaneça conectado",
+      "apps": [
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7ae30aac-ad82-4daf-b909-38fc11f07934/App-Apple.png",
+          "link": "/"
         }
       ]
     }

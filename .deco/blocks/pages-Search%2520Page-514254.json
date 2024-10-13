@@ -53,7 +53,29 @@
           "variant": "aside",
           "pagination": "show-more"
         },
-        "startingPage": 1
+        "startingPage": 1,
+        "button": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/49d34224-85e1-448b-80ba-24361df54712/4blocks.svg"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d070e980-9aeb-4ead-9a1f-e6e64a76b8a2/6blocks.svg"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/628f2b43-2164-499b-bf9c-27eaefc78ae6/8blocks.svg"
+          }
+        ],
+        "buttons": [
+          {
+            "icone": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/49d34224-85e1-448b-80ba-24361df54712/4blocks.svg"
+          },
+          {
+            "icone": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d070e980-9aeb-4ead-9a1f-e6e64a76b8a2/6blocks.svg"
+          },
+          {
+            "icone": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/628f2b43-2164-499b-bf9c-27eaefc78ae6/8blocks.svg"
+          }
+        ]
       }
     },
     {

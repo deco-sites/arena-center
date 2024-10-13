@@ -76,6 +76,7 @@ const sdk = () => {
           // deno-lint-ignore no-explicit-any
           (item as any).item_id === itemId
         );
+        console.log({input, item})
         if (!input || !item) {
           return false;
         }
