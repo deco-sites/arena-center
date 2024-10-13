@@ -108,12 +108,12 @@ const sdk = () => {
         input.value = encodeURIComponent(JSON.stringify(platformProps));
         button.click();
 
-        // const checkbox = document.getElementById(
-        //   "minicart-drawer"
-        // ) as HTMLInputElement;
-        // if (checkbox) {
-        //   checkbox.checked = true;
-        // }
+        const checkbox = document.getElementById(
+          "minicart-drawer"
+        ) as HTMLInputElement;
+        if (checkbox) {
+          checkbox.checked = true;
+        }
         return true;
       },
       subscribe: (cb, opts) => {
@@ -240,16 +240,14 @@ export const action = async (
   _req: Request,
   ctx: AppContext,
 ) => {
-  const [minicart, wishlist, user] = await Promise.all([
+  const [minicart] = await Promise.all([
     ctx.invoke("site/loaders/minicart.ts"),
-    ctx.invoke("site/loaders/wishlist.ts"),
-    ctx.invoke("site/loaders/user.ts"),
+    
   ]);
   return {
     mode: "eager",
     minicart,
-    wishlist,
-    user,
+   
   };
 };
 export const loader = (_props: unknown, _req: Request, _ctx: AppContext) => {

@@ -869,6 +869,11 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
+.carousel-vertical {
+  flex-direction: column;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
 .carousel-item {
   box-sizing: content-box;
   display: flex;
@@ -3814,6 +3819,9 @@ details.collapse summary::-webkit-details-marker {
 .mb-2 {
   margin-bottom: 0.5rem;
 }
+.mb-4 {
+  margin-bottom: 1rem;
+}
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -3943,6 +3951,9 @@ details.collapse summary::-webkit-details-marker {
 .h-8 {
   height: 2rem;
 }
+.h-9 {
+  height: 2.25rem;
+}
 .h-\[10px\] {
   height: 10px;
 }
@@ -3972,6 +3983,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[52px\] {
   height: 52px;
+}
+.h-\[666px\] {
+  height: 666px;
+}
+.h-\[809px\] {
+  height: 809px;
 }
 .h-\[88px\] {
   height: 88px;
@@ -4058,9 +4075,6 @@ details.collapse summary::-webkit-details-marker {
 .w-44 {
   width: 11rem;
 }
-.w-48 {
-  width: 12rem;
-}
 .w-6 {
   width: 1.5rem;
 }
@@ -4073,11 +4087,17 @@ details.collapse summary::-webkit-details-marker {
 .w-\[10px\] {
   width: 10px;
 }
+.w-\[161px\] {
+  width: 161px;
+}
 .w-\[193px\] {
   width: 193px;
 }
 .w-\[200px\] {
   width: 200px;
+}
+.w-\[280px\] {
+  width: 280px;
 }
 .w-\[287px\] {
   width: 287px;
@@ -4114,6 +4134,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[522px\] {
   width: 522px;
+}
+.w-\[596px\] {
+  width: 596px;
 }
 .w-\[800px\] {
   width: 800px;
@@ -4639,6 +4662,10 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-a,oklch(var(--a)/var(--tw-bg-opacity)));
 }
+.bg-accent-content {
+  --tw-bg-opacity: 1;
+  background-color: var(--fallback-ac,oklch(var(--ac)/var(--tw-bg-opacity)));
+}
 .bg-base-100 {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-bg-opacity)));
@@ -4694,6 +4721,9 @@ details.collapse summary::-webkit-details-marker {
 .bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+.bg-opacity-10 {
+  --tw-bg-opacity: 0.1;
 }
 .bg-opacity-15 {
   --tw-bg-opacity: 0.15;
@@ -4771,6 +4801,10 @@ details.collapse summary::-webkit-details-marker {
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
+}
+.px-11 {
+  padding-left: 2.75rem;
+  padding-right: 2.75rem;
 }
 .px-14 {
   padding-left: 3.5rem;
@@ -6002,11 +6036,6 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:text-start {
     text-align: start;
-  }
-
-  .sm\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
   }
 
   .sm\:text-\[20px\] {

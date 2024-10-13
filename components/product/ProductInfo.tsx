@@ -10,12 +10,21 @@ import WishlistButton from "../wishlist/WishlistButton.tsx";
 import AddToCartButton from "./AddToCartButton.tsx";
 import OutOfStock from "./OutOfStock.tsx";
 import ProductSelector from "./ProductVariantSelector.tsx";
+import { ImageWidget } from "apps/admin/widgets.ts";
+import Image from "apps/website/components/Image.tsx";
+
+/** title {{{title}}} */
+export interface IconItem {
+  icon: ImageWidget;
+  title: string;
+}
 
 interface Props {
   page: ProductDetailsPage | null;
+  icons?: IconItem[];
 }
 
-function ProductInfo({ page }: Props) {
+function ProductInfo({ page, icons }: Props) {
   const id = useId();
 
   if (page === null) {
@@ -27,16 +36,12 @@ function ProductInfo({ page }: Props) {
   const description = product.description || isVariantOf?.description;
   const title = isVariantOf?.name ?? product.name;
 
-  const {
-    price = 0,
-    listPrice,
-    seller = "1",
-    availability,
-  } = useOffer(offers);
+  const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
 
-  const percent = listPrice && price
-    ? Math.round(((listPrice - price) / listPrice) * 100)
-    : 0;
+  const percent =
+    listPrice && price
+      ? Math.round(((listPrice - price) / listPrice) * 100)
+      : 0;
 
   const breadcrumb = {
     ...breadcrumbList,
@@ -64,11 +69,12 @@ function ProductInfo({ page }: Props) {
   });
 
   //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
-  const hasValidVariants = isVariantOf?.hasVariant?.some(
-    (variant) =>
-      variant?.name?.toLowerCase() !== "title" &&
-      variant?.name?.toLowerCase() !== "default title",
-  ) ?? false;
+  const hasValidVariants =
+    isVariantOf?.hasVariant?.some(
+      (variant) =>
+        variant?.name?.toLowerCase() !== "title" &&
+        variant?.name?.toLowerCase() !== "default title"
+    ) ?? false;
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
@@ -77,24 +83,25 @@ function ProductInfo({ page }: Props) {
         class={clx(
           "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
           percent < 1 && "opacity-0",
-          "w-fit",
+          "w-fit"
         )}
       >
         {percent} % off
       </span>
 
       {/* Product Name */}
-      <span class={clx("text-3xl font-semibold", "pt-4")}>
-        {title}
-      </span>
+      <span class={clx("text-2xl font-light")}>{title}</span>
+
+      {/* Product id */}
+      <span class={clx("text-[10px] font-light")}>{productID}</span>
 
       {/* Prices */}
       <div class="flex gap-3 pt-1">
-        <span class="text-3xl font-semibold text-base-400">
-          {formatPrice(price, offers?.priceCurrency)}
-        </span>
         <span class="line-through text-sm font-medium text-gray-400">
           {formatPrice(listPrice, offers?.priceCurrency)}
+        </span>
+        <span class="text-md font-semibold text-secondary">
+          {formatPrice(price, offers?.priceCurrency)}
         </span>
       </div>
 
@@ -107,20 +114,26 @@ function ProductInfo({ page }: Props) {
 
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
-        {availability === "https://schema.org/InStock"
-          ? (
-            <>
-              <AddToCartButton
-                item={item}
-                seller={seller}
-                product={product}
-                class="btn btn-primary no-animation"
-                disabled={false}
-              />
-              <WishlistButton item={item} />
-            </>
-          )
-          : <OutOfStock productID={productID} />}
+        {availability === "https://schema.org/InStock" ? (
+          <>
+            <AddToCartButton
+              item={item}
+              seller={seller}
+              product={product}
+              class="btn btn-secondary no-animation  w-full h-8 min-h-0"
+              disabled={false}
+            />
+            <AddToCartButton
+              item={item}
+              seller={seller}
+              product={product}
+              class="btn btn-secondary no-animation btn-outline w-full h-8 min-h-0"
+              disabled={false}
+            />
+          </>
+        ) : (
+          <OutOfStock productID={productID} />
+        )}
       </div>
 
       {/* Shipping Simulation */}
@@ -130,8 +143,19 @@ function ProductInfo({ page }: Props) {
         />
       </div>
 
+      {/* Garanty Icons */}
+      <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
+        {icons &&
+          icons.map((item) => (
+            <div class="flex items-center flex-col gap-3 ">
+              <Image src={item.icon} width={31} height={31} alt={item.title} />
+              <p class="text-accent-content text-[12px]">{item.title}</p>
+            </div>
+          ))}
+      </div>
+
       {/* Description card */}
-      <div class="mt-4 sm:mt-6">
+      {/* <div class="mt-4 sm:mt-6">
         <span class="text-sm">
           {description && (
             <details>
@@ -143,7 +167,7 @@ function ProductInfo({ page }: Props) {
             </details>
           )}
         </span>
-      </div>
+      </div> */}
     </div>
   );
 }

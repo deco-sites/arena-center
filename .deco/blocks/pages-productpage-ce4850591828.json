@@ -29,7 +29,17 @@
         "__resolveType": "site/sections/Product/ProductDetails.tsx",
         "page": {
           "__resolveType": "PDP Loader"
-        }
+        },
+        "icons": [
+          {
+            "title": "7 dias para devolução",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2482cd9b-023a-4451-878a-626adabc2a7e/return.svg"
+          },
+          {
+            "title": "Devolução gratuita",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ee5fb850-33b5-4d0d-af08-580bd76e4b85/garanty.svg"
+          }
+        ]
       }
     },
     {
@@ -42,7 +52,8 @@
           "sort": "newest",
           "tags": [],
           "typeTags": [],
-          "ids": []
+          "ids": [],
+          "count": 10
         }
       }
     },
