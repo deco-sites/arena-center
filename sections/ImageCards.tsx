@@ -4,7 +4,7 @@ import Image from "apps/website/components/Image.tsx";
 export interface Cards {
   src: ImageWidget;
   discount: string;
-  href: string;
+  href?: string;
 }
 
 export interface Props {

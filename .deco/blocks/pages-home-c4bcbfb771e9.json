@@ -107,11 +107,6 @@
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/3832191e-1b3f-4307-bbba-0f06bee49264/garrafa.png",
           "paragraph": "Decoração",
           "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
         }
       ],
       "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
@@ -490,7 +485,13 @@
           "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/07da4c42-3426-498f-b36c-573000465814/whatsapp.svg"
         }
       ],
-      "socialTitle": "Permaneça conectado"
+      "socialTitle": "Permaneça conectado",
+      "apps": [
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7ae30aac-ad82-4daf-b909-38fc11f07934/App-Apple.png",
+          "link": "/"
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

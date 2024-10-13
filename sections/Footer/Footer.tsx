@@ -19,7 +19,7 @@ interface Link extends Item {
 interface AboutUs {
   title?: string;
   /**
-   * @format rich-text
+   * @format text-area
    */
   paragraph: string;
 }
@@ -63,12 +63,12 @@ function Footer({
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
           <div class="flex flex-col gap-4">
-            <p class="text-base font-semibold">{aboutUs.title}</p>
-            <div dangerouslySetInnerHTML={{ __html: aboutUs.paragraph }} />
+            <p class="text-base font-medium">{aboutUs.title}</p>
+            <p>{aboutUs.paragraph}</p>
           </div>
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
-              <a class="text-base font-semibold" href={href}>{title}</a>
+              <a class="text-base font-medium" href={href}>{title}</a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href, icon, bold }) => (
                   <li class="flex gap-1">
@@ -82,7 +82,7 @@ function Footer({
                       )}
                     <a
                       class={`text-xs ${
-                        bold ? "font-semibold" : "font-normal"
+                        bold ? "font-medium" : "font-normal"
                       }`}
                       href={href}
                     >
@@ -95,23 +95,22 @@ function Footer({
           ))}
             
           <div class="flex flex-col w-32">
-            <div class="flex">
               <p class="text-base font-semibold">{socialTitle}</p>
-              {social.map(({ image, href, alt }) => (
-                <div class="w-6">
-                  <a href={href}>
-                    <Image
-                      class="w-full flex-shrink-0"
-                      src={image}
-                      alt={alt}
-                      loading="lazy"
-                      width={24}
-                      height={24}
-                    />
-                  </a>
-                </div>
-              ))}
-            </div>
+              <div class="flex">
+                {social.map(({ image, href, alt }) => (
+                  <div class="w-12">
+                    <a href={href}>
+                      <Image
+                        src={image}
+                        alt={alt}
+                        loading="lazy"
+                        width={32}
+                        height={32}
+                      />
+                    </a>
+                  </div>
+                ))}
+              </div>
             {apps.map((itens) => (
                 <a href={itens.link}>
                   <Image
@@ -149,7 +148,7 @@ function Footer({
           <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
             {policies.map(({ title, href }) => (
               <li>
-                <a class="text-xs font-medium" href={href}>
+                <a class="text-[10px] font-medium" href={href}>
                   {title}
                 </a>
               </li>

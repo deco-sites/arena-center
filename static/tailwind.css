@@ -4236,9 +4236,6 @@ details.collapse summary::-webkit-details-marker {
 .flex-shrink {
   flex-shrink: 1;
 }
-.flex-shrink-0 {
-  flex-shrink: 0;
-}
 .shrink-0 {
   flex-shrink: 0;
 }
