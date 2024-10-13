@@ -31,10 +31,16 @@ interface Social {
   image: ImageWidget;
 }
 
+interface Apps {
+  icon: ImageWidget;
+  link: string;
+}
 interface Props {
   aboutUs: AboutUs;
   links?: Link[];
+  socialTitle: string;
   social?: Social[];
+  apps: Apps[];
   paymentMethods?: Social[];
   policies?: Item[];
   logo?: ImageWidget;
@@ -49,6 +55,8 @@ function Footer({
   logo,
   trademark,
   aboutUs,
+  socialTitle,
+  apps,
 }: Props) {
   return (
     <footer class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content">
@@ -85,20 +93,34 @@ function Footer({
               </ul>
             </li>
           ))}
-          <div class="flex w-32">
-            {social.map(({ image, href, alt }) => (
-              <div class="w-6">
-                <a href={href}>
+            
+          <div class="flex flex-col w-32">
+            <div class="flex">
+              <p class="text-base font-semibold">{socialTitle}</p>
+              {social.map(({ image, href, alt }) => (
+                <div class="w-6">
+                  <a href={href}>
+                    <Image
+                      class="w-full flex-shrink-0"
+                      src={image}
+                      alt={alt}
+                      loading="lazy"
+                      width={24}
+                      height={24}
+                    />
+                  </a>
+                </div>
+              ))}
+            </div>
+            {apps.map((itens) => (
+                <a href={itens.link}>
                   <Image
-                    class="w-full flex-shrink-0"
-                    src={image}
-                    alt={alt}
-                    loading="lazy"
-                    width={24}
-                    height={24}
+                  src={itens.icon}
+                  width={65}
+                  height={20}
+                  alt={itens.link}
                   />
                 </a>
-              </div>
             ))}
           </div>
         </ul>

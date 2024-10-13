@@ -388,22 +388,27 @@
         {
           "alt": "facebook",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/66137259-6bdb-4322-bed1-a2593560934c"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/83df025d-08fe-4d87-ab28-7384d01167d6/Facebook.png"
         },
         {
           "alt": "Instagram",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e71ae7f3-0f51-4185-af0a-fca08ebe4451"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fdc04ac9-e843-4eb8-b329-ec9c8151ff2e/Instagram.png"
         },
         {
-          "alt": "Pinterest",
+          "alt": "Linkedin",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/4becba39-fc08-4df2-bb5d-5e843f375deb"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/672ef1d2-b036-481f-a9e0-c5a6f3c8c61d/LinkedIn.png"
         },
         {
-          "alt": "X",
+          "alt": "tiktok",
           "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/179a9ee9-3813-47b8-96eb-11e0c5558ede"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f7bfaaac-4801-476d-99b9-88e4c69f660d/Tik-Tok.png"
+        },
+        {
+          "alt": "twitter",
+          "href": "#",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/bafd929f-2649-4e63-a073-2535c8ff45e7/Twitter.png"
         }
       ],
       "paymentMethods": [
@@ -484,7 +489,8 @@
           ],
           "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/07da4c42-3426-498f-b36c-573000465814/whatsapp.svg"
         }
-      ]
+      ],
+      "socialTitle": "Permaneça conectado"
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
