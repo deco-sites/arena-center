@@ -69,7 +69,7 @@ export default function GallerySlider(props: Props) {
                 </Slider.Item>
               ))}
             </Slider>
-
+{/* 
             <Slider.PrevButton
               class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
               disabled
@@ -82,7 +82,7 @@ export default function GallerySlider(props: Props) {
               disabled={images.length < 2}
             >
               <Icon id="chevron-right" />
-            </Slider.NextButton>
+            </Slider.NextButton> */}
 
             <div class="absolute top-2 right-2 bg-base-100 rounded-full">
               <label class="btn btn-ghost hidden sm:inline-flex" for={zoomId}>
