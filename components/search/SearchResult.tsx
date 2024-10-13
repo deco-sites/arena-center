@@ -310,8 +310,8 @@ function Result(props: SectionProps<typeof loader>) {
                         >
                           <Image
                             src={props.buttons[0].icone}
-                            width={24}
-                            height={24}
+                            width={16}
+                            height={16}
                           />
                         </button>
                         <button
@@ -324,8 +324,8 @@ function Result(props: SectionProps<typeof loader>) {
                         >
                           <Image
                             src={props.buttons[1].icone}
-                            width={24}
-                            height={24}
+                            width={25}
+                            height={16}
                           />
                         </button>
                         <button
@@ -338,8 +338,8 @@ function Result(props: SectionProps<typeof loader>) {
                         >
                           <Image
                             src={props.buttons[2].icone}
-                            width={24}
-                            height={24}
+                            width={36}
+                            height={16}
                           />
                         </button>
                       </div>

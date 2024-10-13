@@ -26,8 +26,8 @@ interface Props {
   class?: string;
 }
 
-const WIDTH = 287;
-const HEIGHT = 287;
+const WIDTH = 295;
+const HEIGHT = 378;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 function ProductCard({
@@ -75,13 +75,13 @@ function ProductCard({
   return (
     <div
       {...event}
-      class={clx("card card-compact group text-sm", _class)}
+      class={clx("card card-compact group text-sm w-[295px] h-[498px]", _class)}
     >
       <figure
         class={clx(
-          "relative bg-base-200",
+          "relative bg-base-100 w-[295px] h-[378px]",
           "rounded border border-transparent",
-          "group-hover:border-primary",
+          "group-hover:border-primary"
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
@@ -92,22 +92,21 @@ function ProductCard({
           class={clx(
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
-            "w-full",
-            !inStock && "opacity-70",
+            "w-[295px]",
+            !inStock && "opacity-70"
           )}
         >
           <Image
             src={front.url!}
             alt={front.alternateName}
-            width={WIDTH}
-            height={HEIGHT}
-            style={{ aspectRatio: ASPECT_RATIO }}
+            width={295}
+            height={378}
+            //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
-              "object-cover",
-              "rounded w-full",
-              "col-span-full row-span-full",
+              "object-contain",
+              "rounded w-[295px]",
+              "col-span-full row-span-full"
             )}
-            sizes="(max-width: 640px) 50vw, 20vw"
             preload={preload}
             loading={preload ? "eager" : "lazy"}
             decoding="async"
@@ -115,70 +114,69 @@ function ProductCard({
           <Image
             src={back?.url ?? front.url!}
             alt={back?.alternateName ?? front.alternateName}
-            width={WIDTH}
-            height={HEIGHT}
-            style={{ aspectRatio: ASPECT_RATIO }}
+            width={295}
+            height={378}
+            //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
-              "object-cover",
-              "rounded w-full",
+              "object-contain",
+              "rounded w-[295px]",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100",
+              "transition-opacity opacity-0 lg:group-hover:opacity-100"
             )}
-            sizes="(max-width: 640px) 50vw, 20vw"
             loading="lazy"
             decoding="async"
           />
         </a>
 
         {/* Wishlist button */}
-        <div class="absolute top-0 left-0 w-full flex items-center justify-between">
-          {/* Notify Me */}
+        {/* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
+         
           <span
             class={clx(
               "text-sm/4 font-normal text-black bg-error bg-opacity-15 text-center rounded-badge px-2 py-1",
-              inStock && "opacity-0",
+              inStock && "opacity-0"
             )}
           >
             Notify me
           </span>
+          </div> */}
 
-          {/* Discounts */}
-          <span
-            class={clx(
-              "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
-              (percent < 1 || !inStock) && "opacity-0",
-            )}
-          >
-            {percent} % off
-          </span>
-        </div>
+        {/* Discounts */}
+        <span
+          class={clx(
+            "absolute top-2 left-2",
+            "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
+            (percent < 1 || !inStock) && "opacity-0"
+          )}
+        >
+          {percent} % off
+        </span>
 
-        <div class="absolute bottom-0 right-0">
+        {/* <div class="absolute bottom-0 right-0">
           <WishlistButton item={item} variant="icon" />
-        </div>
+        </div> */}
       </figure>
 
-      <a href={relativeUrl} class="pt-5">
-        <span class="font-medium">
-          {title}
-        </span>
+      <a href={relativeUrl} class="pt-4">
+        <span class="font-medium text-sm">{title}</span>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (
-            <span class="line-through font-normal text-gray-400">
+            <span class="line-through font-normal text-gray-600 text-[10px]">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-medium text-base-400">
+          <span class="font-semibold text-secondary text-[12px]">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
       </a>
 
       {/* SKU Selector */}
-      {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
+      {/* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
         <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
-          {variants.map(([value, link]) => [value, relative(link)] as const)
+          {variants
+            .map(([value, link]) => [value, relative(link)] as const)
             .map(([value, link]) => (
               <li>
                 <a href={link} class="cursor-pointer">
@@ -193,40 +191,38 @@ function ProductCard({
               </li>
             ))}
         </ul>
-      )}
+      )} */}
 
       <div class="flex-grow" />
 
       <div>
-        {inStock
-          ? (
-            <AddToCartButton
-              product={product}
-              seller={seller}
-              item={item}
-              class={clx(
-                "btn",
-                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full",
-                "hover:!bg-transparent",
-                "disabled:!bg-transparent disabled:!opacity-50",
-                "btn-primary hover:!text-primary disabled:!text-primary",
-              )}
-            />
-          )
-          : (
-            <a
-              href={relativeUrl}
-              class={clx(
-                "btn",
-                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full",
-                "hover:!bg-transparent",
-                "disabled:!bg-transparent disabled:!opacity-75",
-                "btn-error hover:!text-error disabled:!text-error",
-              )}
-            >
-              Sold out
-            </a>
-          )}
+        {inStock ? (
+          <AddToCartButton
+            product={product}
+            seller={seller}
+            item={item}
+            class={clx(
+              "btn",
+              "btn-outline justify-center border-neutral-content !text-sm !font-medium px-0 no-animation w-full",
+              "hover:!bg-primary",
+              
+              "hover:!text-base-100"
+            )}
+          />
+        ) : (
+          <a
+            href={relativeUrl}
+            class={clx(
+              "btn",
+              "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full h-29",
+              "hover:!bg-transparent",
+              "disabled:!bg-transparent disabled:!opacity-75",
+              "btn-error hover:!text-error disabled:!text-error"
+            )}
+          >
+            Fora de estoque
+          </a>
+        )}
       </div>
     </div>
   );

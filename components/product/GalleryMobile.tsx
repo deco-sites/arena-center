@@ -48,14 +48,14 @@ export default function GallerySlider(props: Props) {
         {/* Image Slider */}
         <div class="col-start-1 col-span-1 sm:col-start-2">
           <div class="relative h-min flex-grow">
-            <Slider class="carousel carousel-vertical gap-2 w-[596px] h-[809px]">
+            <Slider class="carousel carousel-center gap-6 w-full">
               {images.map((img, index) => (
                 <Slider.Item
                   index={index}
-                  class="carousel-item w-full h-[666px]"
+                  class="carousel-item w-full"
                 >
                   <Image
-                    class="w-full bg-base-100"
+                    class="w-full"
                     sizes="(max-width: 640px) 100vw, 40vw"
                     style={{ aspectRatio: ASPECT_RATIO }}
                     src={img.url!}
@@ -69,7 +69,7 @@ export default function GallerySlider(props: Props) {
                 </Slider.Item>
               ))}
             </Slider>
-{/* 
+
             <Slider.PrevButton
               class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
               disabled
@@ -82,7 +82,7 @@ export default function GallerySlider(props: Props) {
               disabled={images.length < 2}
             >
               <Icon id="chevron-right" />
-            </Slider.NextButton> */}
+            </Slider.NextButton>
 
             <div class="absolute top-2 right-2 bg-base-100 rounded-full">
               <label class="btn btn-ghost hidden sm:inline-flex" for={zoomId}>
@@ -101,7 +101,7 @@ export default function GallerySlider(props: Props) {
               "gap-2",
               "max-w-full",
               "overflow-x-auto",
-              "sm:overflow-y-auto"
+              "sm:overflow-y-auto",
             )}
             style={{ maxHeight: "600px" }}
           >
@@ -128,7 +128,7 @@ export default function GallerySlider(props: Props) {
         id={zoomId}
         images={images}
         width={700}
-        height={Math.trunc((700 * HEIGHT) / WIDTH)}
+        height={Math.trunc(700 * HEIGHT / WIDTH)}
       />
     </>
   );

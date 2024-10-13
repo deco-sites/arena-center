@@ -34,19 +34,19 @@ const onChange = () => {
 const onLoad = (id: string) => {
   window.STOREFRONT.CART.subscribe((sdk) => {
     const container = document.getElementById(id);
-    const checkbox = container?.querySelector<HTMLInputElement>(
-      'input[type="checkbox"]',
-    );
+    // const checkbox = container?.querySelector<HTMLInputElement>(
+    //   'input[type="checkbox"]',
+    // );
     const input = container?.querySelector<HTMLInputElement>(
       'input[type="number"]',
     );
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 0;
-    if (!input || !checkbox) {
-      return;
-    }
-    input.value = quantity.toString();
-    checkbox.checked = quantity > 0;
+    // if (!input || !checkbox) {
+    //   return;
+    // }
+    // input.value = quantity.toString();
+    // checkbox.checked = quantity > 0;
     // enable interactivity
     container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) =>
       node.disabled = false
@@ -54,21 +54,16 @@ const onLoad = (id: string) => {
     container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) =>
       node.disabled = false
     );
+    return;
   });
 };
 const useAddToCart = ({ product, seller }: Props) => {
   const platform = usePlatform();
   const { additionalProperty = [], isVariantOf, productID } = product;
   const productGroupID = isVariantOf?.productGroupID;
-  if (platform === "vtex") {
-    return {
-      allowedOutdatedData: ["paymentData"],
-      orderItems: [{ quantity: 1, seller: seller, id: productID }],
-    };
-  }
-  if (platform === "shopify") {
-    return { lines: { merchandiseId: productID } };
-  }
+
+  console.log(platform)
+
   if (platform === "vnda") {
     return {
       quantity: 1,
@@ -78,63 +73,44 @@ const useAddToCart = ({ product, seller }: Props) => {
       ),
     };
   }
-  if (platform === "wake") {
-    return {
-      productVariantId: Number(productID),
-      quantity: 1,
-    };
-  }
-  if (platform === "nuvemshop") {
-    return {
-      quantity: 1,
-      itemId: Number(productGroupID),
-      add_to_cart_enhanced: "1",
-      attributes: Object.fromEntries(
-        additionalProperty.map(({ name, value }) => [name, value]),
-      ),
-    };
-  }
-  if (platform === "linx") {
-    return {
-      ProductID: productGroupID,
-      SkuID: productID,
-      Quantity: 1,
-    };
-  }
-  return null;
+
+  
+ 
 };
 function AddToCartButton(props: Props) {
   const { product, item, class: _class } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
+
+  
   return (
     <div
       id={id}
       class="flex"
       data-item-id={product.productID}
       data-cart-item={encodeURIComponent(
-        JSON.stringify({ item, platformProps }),
+        JSON.stringify({ item, platformProps })
       )}
     >
-      <input type="checkbox" class="hidden peer" />
+      {/* <input type="checkbox" class="hidden peer" /> */}
 
       <button
-        disabled
-        class={clx("flex-grow peer-checked:hidden", _class?.toString())}
+        class={clx("flex-grow uppercase", _class?.toString())}
         hx-on:click={useScript(onClick)}
+        disabled={false}
       >
-        Add to Cart
+        Comprar
       </button>
 
       {/* Quantity Input */}
-      <div class="flex-grow hidden peer-checked:flex">
+      {/* <div class="flex-grow hidden peer-checked:flex">
         <QuantitySelector
           disabled
           min={0}
           max={100}
           hx-on:change={useScript(onChange)}
         />
-      </div>
+      </div> */}
 
       <script
         type="module"

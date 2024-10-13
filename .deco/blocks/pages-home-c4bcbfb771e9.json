@@ -10,6 +10,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+<<<<<<< HEAD
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
@@ -18,6 +19,9 @@
             "alt": "alt"
           }
         ]
+=======
+        "__resolveType": "site/sections/Images/Carousel.tsx"
+>>>>>>> 1c8560d8860ec94a5f9fc6abc5bc64474081e2e9
       }
     },
     {
@@ -117,10 +121,20 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
+<<<<<<< HEAD
           "count": 4
         },
         "cta": "/",
         "title": "A MELHOR SELEÇÃO DE PRODUTOS!"
+=======
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
+        },
+        "title": "ESCOLHA POR AMBIENTE"
+>>>>>>> 1c8560d8860ec94a5f9fc6abc5bc64474081e2e9
       }
     },
     {
@@ -161,7 +175,12 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "Product List Loader"
+          "__resolveType": "vnda/loaders/productList.ts",
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
         },
         "title": "ESCOLHA POR AMBIENTE"
       }
@@ -213,9 +232,37 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "Product List Loader"
+          "__resolveType": "vnda/loaders/productList.ts",
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
         },
         "title": "PROMOÇÕES IMPERDÍVEIS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+        "title": "escolha os seus produtos por ambiente",
+        "cta": "/",
+        "tabs": [
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "count": 5,
+              "sort": "newest",
+              "tags": [
+                "cozinha"
+              ],
+              "typeTags": [],
+              "ids": []
+            },
+            "title": "Quarto"
+          }
+        ]
       }
     },
     {

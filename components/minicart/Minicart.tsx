@@ -73,10 +73,10 @@ export function ErrorFallback() {
     <div class="flex flex-col flex-grow justify-center items-center overflow-hidden w-full gap-2">
       <div class="flex flex-col gap-1 p-6 justify-center items-center">
         <span class="font-semibold">
-          Error while updating cart
+          Erro ao carregar o carrinho
         </span>
         <span class="text-sm text-center">
-          Click in the button below to retry or refresh the page
+          Clique no botão abaixo ou recarregue a página
         </span>
       </div>
 
@@ -86,7 +86,7 @@ export function ErrorFallback() {
         hx-swap="outerHTML"
         hx-target="closest div"
       >
-        Retry
+        Recarregar
       </button>
     </div>
   );
@@ -158,26 +158,26 @@ export default function Cart(
           {count === 0
             ? (
               <div class="flex flex-col gap-6">
-                <span class="font-medium text-2xl">Your bag is empty</span>
+                <span class="font-medium text-2xl">Seu carrinho está vazio</span>
                 <label
                   for={MINICART_DRAWER_ID}
                   class="btn btn-outline no-animation"
                 >
-                  Choose products
+                  Escolha alguns produtos
                 </label>
               </div>
             )
             : (
               <>
                 {/* Free Shipping Bar */}
-                <div class="px-2 py-4 w-full">
+                {/* <div class="px-2 py-4 w-full">
                   <FreeShippingProgressBar
                     total={total}
                     locale={locale}
                     currency={currency}
                     target={freeShippingTarget}
                   />
-                </div>
+                </div> */}
 
                 {/* Cart Items */}
                 <ul

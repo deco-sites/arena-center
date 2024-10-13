@@ -56,8 +56,7 @@ export interface SectionProps {
 type Props = Omit<SectionProps, "alert">;
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
   <>
-    {
-      /* <Modal id={SEARCHBAR_POPUP_ID}>
+    {/* <Modal id={SEARCHBAR_POPUP_ID}>
       <div
         class="absolute top-0 bg-base-100 container"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
@@ -70,8 +69,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           <Searchbar {...searchbar} />
         )}
       </div>
-    </Modal> */
-    }
+    </Modal> */}
 
     <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
       <div class="grid grid-cols-3 place-items-center ">
@@ -86,8 +84,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           </a>
         </div>
 
-        {
-          /* <label
+        {/* <label
           for={SEARCHBAR_POPUP_ID}
           class="input input-bordered flex items-center gap-2 w-full"
           aria-label="search icon button"
@@ -96,8 +93,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           <span class="text-base-400 truncate">
             Search products, brands...
           </span>
-        </label> */
-        }
+        </label> */}
         <Searchbar {...searchbar} />
 
         <div class="flex gap-4 place-self-end pr-14">
@@ -107,7 +103,9 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
       </div>
 
       <ul class="flex justify-between text-accent-content border-y border-gray-300 h-11 max-w-[1444px] px-14">
-        {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
+        {navItems?.slice(0, 10).map((item) => (
+          <NavItem item={item} />
+        ))}
       </ul>
     </div>
   </>
@@ -188,14 +186,14 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       >
         <Icon id="search" />
       </label>
-      <User />
+      <User/>
       <Bag />
     </div>
   </>
 );
 function Header({
   alerts = [],
-  contacts = [],
+  contacts=[],
   logo = {
     src:
       "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
@@ -215,7 +213,7 @@ function Header({
       }}
     >
       <div class="bg-base-100 fixed w-full z-40">
-        {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
+        {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts}/>}
         {device === "desktop"
           ? <Desktop logo={logo} {...props} />
           : <Mobile logo={logo} {...props} />}

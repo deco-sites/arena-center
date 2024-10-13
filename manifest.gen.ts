@@ -37,8 +37,8 @@ import * as $$$$$$19 from "./sections/Links/LinkTree.tsx";
 import * as $$$$$$20 from "./sections/Miscellaneous/CampaignTimer.tsx";
 import * as $$$$$$21 from "./sections/Miscellaneous/CookieConsent.tsx";
 import * as $$$$$$22 from "./sections/Newsletter/Newsletter.tsx";
-import * as $$$$$$23 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$24 from "./sections/Product/ProductListButtons.tsx";
+import * as $$$$$$23 from "./sections/Product/BuyTogether.tsx";
+import * as $$$$$$24 from "./sections/Product/ProductDetails.tsx";
 import * as $$$$$$25 from "./sections/Product/ProductShelf.tsx";
 import * as $$$$$$26 from "./sections/Product/ProductShelfTabbed.tsx";
 import * as $$$$$$27 from "./sections/Product/SearchResult.tsx";
@@ -85,8 +85,8 @@ const manifest = {
     "site/sections/Miscellaneous/CampaignTimer.tsx": $$$$$$20,
     "site/sections/Miscellaneous/CookieConsent.tsx": $$$$$$21,
     "site/sections/Newsletter/Newsletter.tsx": $$$$$$22,
-    "site/sections/Product/ProductDetails.tsx": $$$$$$23,
-    "site/sections/Product/ProductListButtons.tsx": $$$$$$24,
+    "site/sections/Product/BuyTogether.tsx": $$$$$$23,
+    "site/sections/Product/ProductDetails.tsx": $$$$$$24,
     "site/sections/Product/ProductShelf.tsx": $$$$$$25,
     "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$26,
     "site/sections/Product/SearchResult.tsx": $$$$$$27,

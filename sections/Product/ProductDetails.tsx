@@ -4,13 +4,19 @@ import ProductInfo from "../../components/product/ProductInfo.tsx";
 import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
 import Section from "../../components/ui/Section.tsx";
 import { clx } from "../../sdk/clx.ts";
+import type { IconItem } from "../../components/product/ProductInfo.tsx";
 
 export interface Props {
-  /** @title Integration */
+  /** @title Integração */
   page: ProductDetailsPage | null;
+  /** @title icones de informação
+   *  @description tamanho do icone largura 31px altura 31px
+   * @maxItems 2
+   */
+  icons?: IconItem[]; 
 }
 
-export default function ProductDetails({ page }: Props) {
+export default function ProductDetails({ page, icons }: Props) {
   /**
    * Rendered when a not found is returned by any of the loaders run on this page
    */
@@ -28,7 +34,7 @@ export default function ProductDetails({ page }: Props) {
   }
 
   return (
-    <div class="container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0">
+    <div class="container flex flex-col gap-4 sm:gap-5 max-w-[1440px] py-4 sm:py-5 px-5 sm:px-0">
       <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
 
       <div
@@ -42,7 +48,7 @@ export default function ProductDetails({ page }: Props) {
           <ImageGallerySlider page={page} />
         </div>
         <div class="sm:col-span-2">
-          <ProductInfo page={page} />
+          <ProductInfo page={page} icons={ icons} />
         </div>
       </div>
     </div>

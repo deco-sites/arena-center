@@ -1,6 +1,6 @@
 {
   "name": "Product Page",
-  "path": "/products/:slug",
+  "path": "/produto/:slug",
   "default": {
     "possiblePaths": []
   },
@@ -29,7 +29,17 @@
         "__resolveType": "site/sections/Product/ProductDetails.tsx",
         "page": {
           "__resolveType": "PDP Loader"
-        }
+        },
+        "icons": [
+          {
+            "title": "7 dias para devolução",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2482cd9b-023a-4451-878a-626adabc2a7e/return.svg"
+          },
+          {
+            "title": "Devolução gratuita",
+            "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ee5fb850-33b5-4d0d-af08-580bd76e4b85/garanty.svg"
+          }
+        ]
       }
     },
     {
@@ -38,25 +48,13 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "title": "You may also like",
         "products": {
-          "__resolveType": "shopify/loaders/ProductList.ts",
-          "props": {
-            "sort": "",
-            "query": "a",
-            "count": 9
-          },
-          "filters": {
-            "tags": [],
-            "productTypes": [],
-            "productVendors": [],
-            "variantOptions": []
-          }
+          "__resolveType": "vnda/loaders/productList.ts",
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
         }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Newsletter/Newsletter.tsx"
       }
     },
     {
