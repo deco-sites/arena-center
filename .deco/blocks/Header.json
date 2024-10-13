@@ -1,20 +1,72 @@
 {
   "__resolveType": "site/sections/Header/Header.tsx",
   "searchbar": {
-    "placeholder": "What are you looking for?",
+    "placeholder": "Digite o produto ou marca que você deseja",
     "loader": {
       "__resolveType": "resolved",
       "data": null
     }
   },
   "alerts": [
-    "<p>Get 10% off today: <strong>NEW10</strong></p>"
+    {
+      "0": "<",
+      "1": "p",
+      "2": ">",
+      "3": "G",
+      "4": "e",
+      "5": "t",
+      "6": " ",
+      "7": "1",
+      "8": "0",
+      "9": "%",
+      "10": " ",
+      "11": "o",
+      "12": "f",
+      "13": "f",
+      "14": " ",
+      "15": "t",
+      "16": "o",
+      "17": "d",
+      "18": "a",
+      "19": "y",
+      "20": ":",
+      "21": " ",
+      "22": "<",
+      "23": "s",
+      "24": "t",
+      "25": "r",
+      "26": "o",
+      "27": "n",
+      "28": "g",
+      "29": ">",
+      "30": "N",
+      "31": "E",
+      "32": "W",
+      "33": "1",
+      "34": "0",
+      "35": "<",
+      "36": "/",
+      "37": "s",
+      "38": "t",
+      "39": "r",
+      "40": "o",
+      "41": "n",
+      "42": "g",
+      "43": ">",
+      "44": "<",
+      "45": "/",
+      "46": "p",
+      "47": ">",
+      "title": "GANHE 10% OFF + FRETE GRÁTIS",
+      "cupom": "arena10",
+      "subtitle": "Lorem ipsum dolor sit amet consectetur."
+    }
   ],
   "logo": {
-    "src": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/ed9f7e80-86a8-4b72-9809-2e4e2e5f0e53",
-    "alt": "Deco Storefront",
-    "width": 160,
-    "height": 40
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d3b65f86-eb83-45da-9693-af221172fe2e/arena-center.svg",
+    "alt": "Arena Center Logo",
+    "width": 205,
+    "height": 34
   },
   "navItems": [
     {
@@ -65,5 +117,21 @@
       "children": []
     }
   ],
-  "loading": "eager"
+  "loading": "eager",
+  "contacts": [
+    {
+      "contact": "whatsapp",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/363b9f44-b710-4683-8943-6968a473fd44/Logo-Wpp-header.svg",
+      "title": "Compre pelo WhatsApp",
+      "subtitle": "Não Perca ofertas exclusivas para membros",
+      "number": 0
+    },
+    {
+      "contact": "atendimento",
+      "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/38548f0a-4c92-45fe-b94d-3c6dc3ccbabd/Vector.svg",
+      "title": "Compre pelo televendas",
+      "subtitle": "Sua compra humanizada",
+      "number": 0
+    }
+  ]
 }

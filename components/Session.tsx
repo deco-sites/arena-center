@@ -76,6 +76,7 @@ const sdk = () => {
           // deno-lint-ignore no-explicit-any
           (item as any).item_id === itemId
         );
+        console.log({input, item})
         if (!input || !item) {
           return false;
         }
@@ -233,16 +234,12 @@ export const action = async (
   _req: Request,
   ctx: AppContext,
 ) => {
-  const [minicart, wishlist, user] = await Promise.all([
+  const [minicart] = await Promise.all([
     ctx.invoke("site/loaders/minicart.ts"),
-    ctx.invoke("site/loaders/wishlist.ts"),
-    ctx.invoke("site/loaders/user.ts"),
   ]);
   return {
     mode: "eager",
     minicart,
-    wishlist,
-    user,
   };
 };
 export const loader = (_props: unknown, _req: Request, _ctx: AppContext) => {

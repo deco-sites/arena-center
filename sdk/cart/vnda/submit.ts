@@ -6,7 +6,6 @@ const actions: CartSubmitActions<AppContext> = {
   addToCart: async ({ addToCart }, _req, ctx) => {
     const response = await ctx.invoke(
       "vnda/actions/cart/addItem.ts",
-      // @ts-expect-error I don't know how to fix this
       addToCart,
     );
 
@@ -21,10 +20,9 @@ const actions: CartSubmitActions<AppContext> = {
       ) ?? -1;
 
     const props = {
-      itemId: cart?.orderForm?.items?.[index]?.id,
+      itemId: `${cart?.orderForm?.items?.[index]?.id}`,
       quantity: items[index],
     };
-
     if (
       typeof props.itemId !== "string" ||
       typeof props.quantity !== "number"
@@ -38,7 +36,6 @@ const actions: CartSubmitActions<AppContext> = {
       "vnda/actions/cart/updateItem.ts",
       props,
     );
-
     return cartFrom(response);
   },
   setCoupon: () => {

@@ -20,6 +20,7 @@ import { Props as SuggestionProps } from "./Suggestions.tsx";
 import { useScript } from "@deco/deco/hooks";
 import { asResolved } from "@deco/deco";
 import { type Resolved } from "@deco/deco";
+import Image from "apps/website/components/Image.tsx";
 // When user clicks on the search button, navigate it to
 export const ACTION = "/s";
 // Querystring param used when navigating the user
@@ -59,50 +60,44 @@ const script = (formId: string, name: string, popupId: string) => {
     }
   });
 };
-const Suggestions = import.meta.resolve("./Suggestions.tsx");
+
 export default function Searchbar(
   { placeholder = "What are you looking for?", loader }: SearchbarProps,
 ) {
   const slot = useId();
   return (
     <div
-      class="w-full grid gap-8 px-4 py-6"
+      class="w-[407px] h-8 border border-gray-200 bg-gray-100 rounded"
       style={{ gridTemplateRows: "min-content auto" }}
     >
       <form id={SEARCHBAR_INPUT_FORM_ID} action={ACTION} class="join">
         <button
           type="submit"
-          class="btn join-item btn-square no-animation"
+          class=" join-item ml-2 "
           aria-label="Search"
           for={SEARCHBAR_INPUT_FORM_ID}
           tabIndex={-1}
         >
           <span class="loading loading-spinner loading-xs hidden [.htmx-request_&]:inline" />
-          <Icon id="search" class="inline [.htmx-request_&]:hidden" />
+          <Image
+            id="search"
+            src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2737a7a2-66a0-45ef-aff9-ae6065f16919/search.svg"
+            alt="icone de pesquisa"
+            width={20}
+            height={20}
+          />
         </button>
         <input
-          autoFocus
           tabIndex={0}
-          class="input input-bordered join-item flex-grow"
+          class="input  join-item bg-gray-100 min-h-0 h-7 placeholder:text-[10px] w-96"
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"
           hx-target={`#${slot}`}
-          hx-post={loader && useComponent<SuggestionProps>(Suggestions, {
-            loader: asResolved(loader),
-          })}
           hx-trigger={`input changed delay:300ms, ${NAME}`}
           hx-indicator={`#${SEARCHBAR_INPUT_FORM_ID}`}
           hx-swap="innerHTML"
         />
-        <label
-          type="button"
-          class="join-item btn btn-ghost btn-square hidden sm:inline-flex no-animation"
-          for={SEARCHBAR_POPUP_ID}
-          aria-label="Toggle searchbar"
-        >
-          <Icon id="close" />
-        </label>
       </form>
 
       {/* Suggestions slot */}

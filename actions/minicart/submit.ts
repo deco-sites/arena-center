@@ -76,13 +76,13 @@ async function action(
   const { setQuantity, setCoupon, addToCart } = actions[usePlatform()];
 
   const form = cartFrom(await req.formData());
-
+  console.log(form)
   const handler = form.action === "set-coupon"
     ? setCoupon
     : form.action === "add-to-cart"
     ? addToCart
     : setQuantity;
-
+  console.log(handler)
   if (!handler) {
     throw new Error(`Unsupported action on platform ${usePlatform()}`);
   }

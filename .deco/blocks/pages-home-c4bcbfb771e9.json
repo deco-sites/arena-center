@@ -8,14 +8,17 @@
       }
     },
     {
-      "__resolveType": "site/sections/Images/Carousel.tsx",
-      "images": [
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/48475062-46da-401d-b0c2-766697d1c636/image.png",
-          "alt": "a"
-        }
-      ]
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Carousel.tsx",
+        "images": [
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png",
+            "alt": "alt"
+          }
+        ]
+      }
     },
     {
       "__resolveType": "site/sections/TopBar.tsx",
@@ -118,9 +121,11 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "Product List Loader"
+          "__resolveType": "vnda/loaders/productList.ts",
+          "count": 4
         },
-        "title": "OS MAIS VENDIDOS"
+        "cta": "/",
+        "title": "A MELHOR SELEÇÃO DE PRODUTOS!"
       }
     },
     {

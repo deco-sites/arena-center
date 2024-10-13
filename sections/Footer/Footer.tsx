@@ -19,7 +19,7 @@ interface Link extends Item {
 interface AboutUs {
   title?: string;
   /**
-   *@format rich-text
+   * @format rich-text
    */
   paragraph: string;
 }
@@ -65,13 +65,19 @@ function Footer({
                 {children.map(({ title, href, icon, bold }) => (
                   <li class="flex gap-1">
                     {icon &&
-                    <Image
-                    src={icon}
-                    width={22}
-                    height={22}
-                    />
-                    }
-                    <a class={`text-xs ${bold ? 'font-semibold' : 'font-normal'}`} href={href}>
+                      (
+                        <Image
+                          src={icon}
+                          width={22}
+                          height={22}
+                        />
+                      )}
+                    <a
+                      class={`text-xs ${
+                        bold ? "font-semibold" : "font-normal"
+                      }`}
+                      href={href}
+                    >
                       {title}
                     </a>
                   </li>
@@ -79,26 +85,26 @@ function Footer({
               </ul>
             </li>
           ))}
-          <div>
+          <div class="flex w-32">
             {social.map(({ image, href, alt }) => (
-                <li>
-                  <a href={href}>
-                    <Image
-                      src={image}
-                      alt={alt}
-                      loading="lazy"
-                      width={24}
-                      height={24}
-                    />
-                  </a>
-                </li>
-              ))}
+              <div class="w-6">
+                <a href={href}>
+                  <Image
+                    class="w-full flex-shrink-0"
+                    src={image}
+                    alt={alt}
+                    loading="lazy"
+                    width={24}
+                    height={24}
+                  />
+                </a>
+              </div>
+            ))}
           </div>
         </ul>
 
         <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
           <ul class="flex gap-4">
-            
           </ul>
           <ul class="flex flex-wrap gap-2">
             {paymentMethods.map(({ image, alt }) => (

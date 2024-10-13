@@ -1,11 +1,10 @@
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Video from "apps/website/components/Video.tsx";
-import { useDevice } from "deco/hooks/useDevice.ts";
 import Icon from "../../components/ui/Icon.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { useId } from "../../sdk/useId.ts";
-
+import { useDevice } from "@deco/deco/hooks";
 /**
  * @titleBy alt
  */
@@ -14,9 +13,7 @@ export interface Banner {
    * @title Contéudo do Banner
    */
   bannerType?: "video" | "imagem";
-
   lcp?: boolean;
-
   /** @description Texto alternativo e "promotion_name" no Data Layer */
   alt: string;
   /**
@@ -31,55 +28,40 @@ export interface Banner {
    * @title Link
    * @description Link de redirecionamento */
   href?: string;
-
   /** @description Imagem ou vídeo para desktop */
   desktop?: DesktopBanner;
-
   /** @description Imagem ou vídeo para mobile */
   mobile?: MobileBanner;
-
   /** @title Parametros de Data Layer */
   params?: DataLayerParams;
 }
-
 export interface DesktopBanner {
   /** @description se for usar GIFs, prefira usar vídeos */
-
   /** @title Vídeo*/
   video?: string;
-
   /** @title Imagem*/
   image?: ImageWidget;
-
   /** @title Largura*/
   width?: number;
-
   /** @title Altura*/
   height?: number;
 }
-
 export interface MobileBanner {
   /** @description se for usar GIFs, prefira usar vídeos */
-
   /** @title Vídeo*/
   video?: string;
-
   /** @title Imagem*/
   image?: ImageWidget;
-
   /** @title Largura*/
   width?: number;
-
   /** @title Altura*/
   height?: number;
 }
-
 type DataLayerParams = {
   promotion_id: string;
   creative_name: string;
   creative_slot: string;
 };
-
 export interface Autoplay {
   /** @description Ativar ou desativar o autoplay */
   activate?: boolean;
@@ -89,7 +71,6 @@ export interface Autoplay {
    */
   interval?: number;
 }
-
 export interface Props {
   banners?: Banner[];
   /**
@@ -112,11 +93,7 @@ export interface Props {
    */
   autoplay?: Autoplay;
 }
-
-function BannerItem({
-  banner,
-  device,
-}: {
+function BannerItem({ banner, device }: {
   banner: Banner;
   device: string;
 }) {
@@ -189,17 +166,12 @@ function BannerItem({
           )}
       </Picture>
     );
-
   return (
-    <a
-      href={banner.href ?? "#"}
-      class="relative w-full overflow-y-hidden"
-    >
+    <a href={banner.href ?? "#"} class="relative w-full overflow-y-hidden">
       {source}
     </a>
   );
 }
-
 function Dots({ banners, autoplay }: Props) {
   return (
     <>
@@ -231,7 +203,6 @@ function Dots({ banners, autoplay }: Props) {
     </>
   );
 }
-
 function Buttons() {
   return (
     <>
@@ -258,11 +229,9 @@ function Buttons() {
     </>
   );
 }
-
 function BannerCarousel(props: Props) {
   const id = useId();
   const { banners, autoplay } = { ...props };
-
   return (
     <div
       id={id}
@@ -272,10 +241,7 @@ function BannerCarousel(props: Props) {
         {banners?.map((banner, index) => {
           return (
             <Slider.Item index={index} class="w-full carousel-item">
-              <BannerItem
-                banner={banner}
-                device={useDevice()}
-              />
+              <BannerItem banner={banner} device={useDevice()} />
             </Slider.Item>
           );
         })}
@@ -290,5 +256,4 @@ function BannerCarousel(props: Props) {
     </div>
   );
 }
-
 export default BannerCarousel;

@@ -12,7 +12,7 @@
     "secondary": "#171717",
     "tertiary": "#404040",
     "neutral": "#1E1E1E",
-    "success": "#008060",
+    "success": "#EAE9E9",
     "warning": "#ffc453",
     "error": "#d82c0d",
     "info": "#2e72d2"
@@ -67,6 +67,7 @@
     "base-200": "#000000",
     "secondary-content": "#FFEBD3",
     "primary-content": "#ffffff",
-    "tertiary-content": "#6C6D70"
+    "tertiary-content": "#6C6D70",
+    "neutral-content": "#EAE9E9"
   }
 }
