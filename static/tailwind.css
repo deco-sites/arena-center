@@ -4308,14 +4308,14 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[480px\] {
   max-width: 480px;
 }
+.max-w-\[500px\] {
+  max-width: 500px;
+}
 .max-w-\[522px\] {
   max-width: 522px;
 }
 .max-w-\[640px\] {
   max-width: 640px;
-}
-.max-w-\[695px\] {
-  max-width: 695px;
 }
 .max-w-\[80px\] {
   max-width: 80px;
@@ -5274,6 +5274,10 @@ details.collapse summary::-webkit-details-marker {
 .text-neutral {
   --tw-text-opacity: 1;
   color: var(--fallback-n,oklch(var(--n)/var(--tw-text-opacity)));
+}
+.text-neutral-content {
+  --tw-text-opacity: 1;
+  color: var(--fallback-nc,oklch(var(--nc)/var(--tw-text-opacity)));
 }
 .text-primary {
   --tw-text-opacity: 1;
@@ -6527,10 +6531,6 @@ details.collapse summary::-webkit-details-marker {
 
   .xl\:w-\[581px\] {
     width: 581px;
-  }
-
-  .xl\:w-\[695px\] {
-    width: 695px;
   }
 }
 
