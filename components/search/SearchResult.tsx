@@ -71,8 +71,7 @@ function PageResult(
     props: { partial: "hideLess" },
   });
   const infinite = layout?.pagination !== "pagination";
-  console.log("testeeee",products);
-  
+
   return (
     <div class="grid grid-flow-row grid-cols-1 place-items-center">
       <div
@@ -270,9 +269,14 @@ function Result(props: SectionProps<typeof loader>) {
               <div class="grid place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
                 {device === "desktop" && (
                   <aside class="place-self-start flex flex-col gap-9">
-                    {/* <span class="text-base font-semibold h-12 flex items-center">
+
+
+                    {
+                      /* <span class="text-base font-semibold h-12 flex items-center">
                       Filters
-                    </span> */}
+                    </span> */
+                    }
+
 
                     <Filters filters={filters} />
                   </aside>
@@ -322,7 +326,7 @@ function Result(props: SectionProps<typeof loader>) {
                             />
                           </label>
                         </div>
-                        
+
                         <div>
                           <input
                             type="radio"
