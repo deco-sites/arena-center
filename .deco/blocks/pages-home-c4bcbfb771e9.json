@@ -10,6 +10,7 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+<<<<<<< HEAD
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
@@ -18,6 +19,9 @@
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png"
           }
         ]
+=======
+        "__resolveType": "site/sections/Images/Carousel.tsx"
+>>>>>>> b4ae3d2feade6507db173fbc2d46d3927353a8d0
       }
     },
     {
@@ -125,6 +129,7 @@
         },
         "cta": "/",
         "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
+<<<<<<< HEAD
         "sort": "newest",
         "tags": [],
         "typeTags": [],
@@ -132,6 +137,16 @@
       },
       "title": "OS MAIS VENDIDOS"
     },
+=======
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
+        },
+        "title": "OS MAIS VENDIDOS"
+      },
+>>>>>>> b4ae3d2feade6507db173fbc2d46d3927353a8d0
     {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
@@ -239,6 +254,55 @@
       }
     },
     {
+<<<<<<< HEAD
+=======
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+        "title": "escolha os seus produtos por ambiente",
+        "cta": "/",
+        "tabs": [
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "count": 5,
+              "sort": "newest",
+              "tags": [
+                "cozinha"
+              ],
+              "typeTags": [],
+              "ids": []
+            },
+            "title": "Quarto"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
+        "title": "escolha os seus produtos por ambiente",
+        "cta": "/",
+        "tabs": [
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "count": 5,
+              "sort": "newest",
+              "tags": [
+                "cozinha"
+              ],
+              "typeTags": [],
+              "ids": []
+            },
+            "title": "Quarto"
+          }
+        ]
+      }
+    },
+    {
+>>>>>>> b4ae3d2feade6507db173fbc2d46d3927353a8d0
       "__resolveType": "site/sections/LearnMore.tsx",
       "mainTitle": "serviços exclusivos da arena center",
       "learnMore": [
