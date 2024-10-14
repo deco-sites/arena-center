@@ -5,6 +5,7 @@ import { clx } from "../../sdk/clx.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { useComponent } from "../Component.tsx";
 import { type SectionProps } from "@deco/deco";
+
 export interface NoticeProps {
   title?: string;
   description?: string;
@@ -41,10 +42,12 @@ function Notice({ title, description }: {
   description?: string;
 }) {
   return (
-    <div class="flex flex-col justify-center items-center sm:items-start gap-4">
-      <span class="text-3xl font-semibold text-center sm:text-start">
-        {title}
-      </span>
+    <div class="w-full max-w-[1200px]">
+      <div class="flex flex-col justify-center text-center items-center sm:items-start gap-4">
+        <span class="text-2xl font-semibold text-center sm:text-start">
+          {title}
+        </span>
+      </div>
       <span class="text-sm font-normal text-base-400 text-center sm:text-start">
         {description}
       </span>
@@ -74,7 +77,7 @@ function Newsletter({
   if (status === "success" || status === "failed") {
     return (
       <Section.Container class="bg-primary">
-        <div class="p-14 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
+        <div class="p-2 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
           <Icon
             size={80}
             class={clx(status === "success" ? "text-success" : "text-error")}
@@ -87,7 +90,7 @@ function Newsletter({
   }
   return (
     <Section.Container class="bg-primary">
-      <div class="p-14 grid grid-flow-row sm:grid-cols-2 gap-10 sm:gap-20 place-items-center">
+      <div class="p-14 flex flex-col pb-1 place-items-center">
         <Notice {...empty} />
 
         <form
