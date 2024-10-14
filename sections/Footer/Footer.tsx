@@ -83,12 +83,12 @@ function Footer({
       <Newsletter {...newsletterProps} />
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 max-w-[180px]">
             <p class="text-xs font-medium">{aboutUs.title}</p>
             <p class="text-[10px]">{aboutUs.paragraph}</p>
           </div>
           {links.map(({ title, href, children }) => (
-            <li class="flex flex-col gap-4">
+            <li class="flex flex-col gap-4 max-w-[205px]">
               <a class="text-xs font-medium" href={href}>{title}</a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href, icon, bold }) => (

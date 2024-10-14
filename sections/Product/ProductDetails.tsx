@@ -2,13 +2,18 @@ import { ProductDetailsPage } from "apps/commerce/types.ts";
 import ImageGallerySlider from "../../components/product/Gallery.tsx";
 import ProductInfo from "../../components/product/ProductInfo.tsx";
 import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
-import Section from "../../components/ui/Section.tsx";
+import SectionUi from "../../components/ui/Section.tsx";
 import { clx } from "../../sdk/clx.ts";
-import type { IconItem } from "../../components/product/ProductInfo.tsx";
+import type { IconItem } from "../../components/product/BuyTogetherComponent.tsx";
+import type { Section } from "deco/blocks/section.ts";
+import BuyTogetherComponent from "../../components/product/BuyTogetherComponent.tsx";
+import type { Product } from "apps/commerce/types.ts";
 
 export interface Props {
   /** @title Integração */
   page: ProductDetailsPage | null;
+  products: Product[] | null;
+  sections?: Section[];
   /** @title icones de informação
    *  @description tamanho do icone largura 31px altura 31px
    * @maxItems 2
@@ -16,7 +21,7 @@ export interface Props {
   icons?: IconItem[];
 }
 
-export default function ProductDetails({ page, icons }: Props) {
+export default function ProductDetails({ page, icons, products }: Props) {
   /**
    * Rendered when a not found is returned by any of the loaders run on this page
    */
@@ -48,11 +53,12 @@ export default function ProductDetails({ page, icons }: Props) {
           <ImageGallerySlider page={page} />
         </div>
         <div class="sm:col-span-2">
-          <ProductInfo page={page} icons={icons} />
+          <ProductInfo page={page} />
+          <BuyTogetherComponent page={page} products={products} icons={icons} />
         </div>
       </div>
     </div>
   );
 }
 
-export const LoadingFallback = () => <Section.Placeholder height="635px" />;
+export const LoadingFallback = () => <SectionUi.Placeholder height="635px" />;

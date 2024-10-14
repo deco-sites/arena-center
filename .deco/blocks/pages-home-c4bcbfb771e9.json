@@ -128,7 +128,8 @@
         "sort": "newest",
         "tags": [],
         "typeTags": [],
-        "ids": []
+        "ids": [],
+        "count": 10
       },
       "title": "OS MAIS VENDIDOS"
     },
