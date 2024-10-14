@@ -40,35 +40,19 @@ import * as $$$$$$22 from "./sections/Newsletter/Newsletter.tsx";
 import * as $$$$$$23 from "./sections/Product/BuyTogether.tsx";
 import * as $$$$$$24 from "./sections/Product/ProductDescription.tsx";
 import * as $$$$$$25 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$26 from "./sections/Product/ProductListButtons.tsx";
-import * as $$$$$$27 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$28 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$29 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$30 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$31 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$32 from "./sections/Session.tsx";
-import * as $$$$$$33 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$34 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$35 from "./sections/TextWithImage.tsx";
-import * as $$$$$$36 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$37 from "./sections/ThreeImages.tsx";
-import * as $$$$$$38 from "./sections/TopBar.tsx";
-import * as $$$$$$39 from "./sections/WideBanner.tsx";
-import * as $$$$$$23 from "./sections/Product/BuyTogether.tsx";
-import * as $$$$$$24 from "./sections/Product/ProductDetails.tsx";
-import * as $$$$$$25 from "./sections/Product/ProductShelf.tsx";
-import * as $$$$$$26 from "./sections/Product/ProductShelfTabbed.tsx";
-import * as $$$$$$27 from "./sections/Product/SearchResult.tsx";
-import * as $$$$$$28 from "./sections/Product/ShelfWithImage.tsx";
-import * as $$$$$$29 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$30 from "./sections/Session.tsx";
-import * as $$$$$$31 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$32 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$33 from "./sections/TextWithImage.tsx";
-import * as $$$$$$34 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$35 from "./sections/ThreeImages.tsx";
-import * as $$$$$$36 from "./sections/TopBar.tsx";
-import * as $$$$$$37 from "./sections/WideBanner.tsx";
+import * as $$$$$$26 from "./sections/Product/ProductShelf.tsx";
+import * as $$$$$$27 from "./sections/Product/ProductShelfTabbed.tsx";
+import * as $$$$$$28 from "./sections/Product/SearchResult.tsx";
+import * as $$$$$$29 from "./sections/Product/ShelfWithImage.tsx";
+import * as $$$$$$30 from "./sections/Product/Wishlist.tsx";
+import * as $$$$$$31 from "./sections/Session.tsx";
+import * as $$$$$$32 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$33 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$34 from "./sections/TextWithImage.tsx";
+import * as $$$$$$35 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$36 from "./sections/ThreeImages.tsx";
+import * as $$$$$$37 from "./sections/TopBar.tsx";
+import * as $$$$$$38 from "./sections/WideBanner.tsx";
 
 const manifest = {
   "loaders": {
@@ -105,35 +89,19 @@ const manifest = {
     "site/sections/Product/BuyTogether.tsx": $$$$$$23,
     "site/sections/Product/ProductDescription.tsx": $$$$$$24,
     "site/sections/Product/ProductDetails.tsx": $$$$$$25,
-    "site/sections/Product/ProductListButtons.tsx": $$$$$$26,
-    "site/sections/Product/ProductShelf.tsx": $$$$$$27,
-    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$28,
-    "site/sections/Product/SearchResult.tsx": $$$$$$29,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$30,
-    "site/sections/Product/Wishlist.tsx": $$$$$$31,
-    "site/sections/Session.tsx": $$$$$$32,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$33,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$34,
-    "site/sections/TextWithImage.tsx": $$$$$$35,
-    "site/sections/Theme/Theme.tsx": $$$$$$36,
-    "site/sections/ThreeImages.tsx": $$$$$$37,
-    "site/sections/TopBar.tsx": $$$$$$38,
-    "site/sections/WideBanner.tsx": $$$$$$39,
-    "site/sections/Product/BuyTogether.tsx": $$$$$$23,
-    "site/sections/Product/ProductDetails.tsx": $$$$$$24,
-    "site/sections/Product/ProductShelf.tsx": $$$$$$25,
-    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$26,
-    "site/sections/Product/SearchResult.tsx": $$$$$$27,
-    "site/sections/Product/ShelfWithImage.tsx": $$$$$$28,
-    "site/sections/Product/Wishlist.tsx": $$$$$$29,
-    "site/sections/Session.tsx": $$$$$$30,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$31,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$32,
-    "site/sections/TextWithImage.tsx": $$$$$$33,
-    "site/sections/Theme/Theme.tsx": $$$$$$34,
-    "site/sections/ThreeImages.tsx": $$$$$$35,
-    "site/sections/TopBar.tsx": $$$$$$36,
-    "site/sections/WideBanner.tsx": $$$$$$37,
+    "site/sections/Product/ProductShelf.tsx": $$$$$$26,
+    "site/sections/Product/ProductShelfTabbed.tsx": $$$$$$27,
+    "site/sections/Product/SearchResult.tsx": $$$$$$28,
+    "site/sections/Product/ShelfWithImage.tsx": $$$$$$29,
+    "site/sections/Product/Wishlist.tsx": $$$$$$30,
+    "site/sections/Session.tsx": $$$$$$31,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$32,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$33,
+    "site/sections/TextWithImage.tsx": $$$$$$34,
+    "site/sections/Theme/Theme.tsx": $$$$$$35,
+    "site/sections/ThreeImages.tsx": $$$$$$36,
+    "site/sections/TopBar.tsx": $$$$$$37,
+    "site/sections/WideBanner.tsx": $$$$$$38,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,
