@@ -39,14 +39,27 @@
             "title": "Devolução gratuita",
             "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ee5fb850-33b5-4d0d-af08-580bd76e4b85/garanty.svg"
           }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "You may also like",
+        ],
+        "sections": [
+          {
+            "__resolveType": "site/sections/Product/BuyTogether.tsx",
+            "page": {
+              "__resolveType": "vnda/loaders/productDetailsPage.ts",
+              "slug": {
+                "__resolveType": "website/functions/requestToParam.ts",
+                "param": "slug"
+              }
+            },
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [],
+              "typeTags": [],
+              "ids": [],
+              "count": 10
+            }
+          }
+        ],
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "sort": "newest",
@@ -55,6 +68,34 @@
           "ids": [],
           "count": 10
         }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductDescription.tsx",
+        "page": {
+          "__resolveType": "vnda/loaders/productDetailsPage.ts",
+          "slug": {
+            "__resolveType": "website/functions/requestToParam.ts",
+            "param": "slug"
+          }
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "sort": "newest",
+          "tags": [],
+          "typeTags": [],
+          "ids": [],
+          "count": 10
+        },
+        "title": "You may also like"
       }
     },
     {

@@ -72,7 +72,7 @@ export default function Searchbar(
     >
       <form id={SEARCHBAR_INPUT_FORM_ID} action={ACTION} class="join">
         <button
-          type="submit" 
+          type="submit"
           class=" join-item ml-2 "
           aria-label="Search"
           for={SEARCHBAR_INPUT_FORM_ID}
@@ -111,7 +111,7 @@ export default function Searchbar(
             script,
             SEARCHBAR_INPUT_FORM_ID,
             NAME,
-            SEARCHBAR_POPUP_ID
+            SEARCHBAR_POPUP_ID,
           ),
         }}
       />

@@ -17,23 +17,20 @@ interface Props {
   /** Preload card image */
   preload?: boolean;
 
-  /** @description used for analytics event */
-  itemListName?: string;
-
   /** @description index of the product card in the list */
   index?: number;
 
   class?: string;
 }
 
-const WIDTH = 295;
-const HEIGHT = 378;
+const WIDTH = 287;
+const HEIGHT = 287;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
-function ProductCard({
+function ProductCardBuyTogether({
   product,
   preload,
-  itemListName,
+
   index,
   class: _class,
 }: Props) {
@@ -50,8 +47,8 @@ function ProductCard({
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
-  const percent = listPrice && price
-    ? Math.round(((listPrice - price) / listPrice) * 100)
+  const percent = listPrice && offers?.lowPrice
+    ? Math.round(((listPrice - offers?.lowPrice) / listPrice) * 100)
     : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
@@ -62,7 +59,6 @@ function ProductCard({
     event: {
       name: "select_item" as const,
       params: {
-        item_list_name: itemListName,
         items: [item],
       },
     },
@@ -75,13 +71,16 @@ function ProductCard({
   return (
     <div
       {...event}
-      class={clx("card card-compact group text-sm w-[295px] h-[498px]", _class)}
+      class={clx(
+        "card card-compact group text-[10px] hover:shadow-lg p-2  ",
+        _class,
+      )}
     >
       <figure
         class={clx(
-          "relative bg-base-100 w-[295px] h-[378px]",
-          "rounded border border-transparent",
-          "group-hover:border-primary",
+          "relative bg-base-100",
+          "rounded border border-primary  w-[143px]",
+          "mx-auto",
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
@@ -90,21 +89,21 @@ function ProductCard({
           href={relativeUrl}
           aria-label="view product"
           class={clx(
-            "absolute top-0 left-0",
+            "absolute top-0 left-0 m-auto ",
             "grid grid-cols-1 grid-rows-1",
-            "w-[295px]",
+            "w-full bg-base-100",
             !inStock && "opacity-70",
           )}
         >
           <Image
             src={front.url!}
             alt={front.alternateName}
-            width={295}
-            height={378}
-            //style={{ aspectRatio: ASPECT_RATIO }}
+            width={143}
+            height={183}
+            style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
-              "rounded w-[295px]",
+              "rounded",
               "col-span-full row-span-full",
             )}
             preload={preload}
@@ -114,64 +113,44 @@ function ProductCard({
           <Image
             src={back?.url ?? front.url!}
             alt={back?.alternateName ?? front.alternateName}
-            width={295}
-            height={378}
-            //style={{ aspectRatio: ASPECT_RATIO }}
+            width={143}
+            height={183}
+            style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
-              "rounded w-[295px]",
+              "rounded",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100",
+              "transition-opacity opacity-0 lg:group-hover:opacity-100 border border-primary",
             )}
             loading="lazy"
             decoding="async"
           />
         </a>
 
-        {/* Wishlist button */}
-        {
-          /* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
-
-          <span
-            class={clx(
-              "text-sm/4 font-normal text-black bg-error bg-opacity-15 text-center rounded-badge px-2 py-1",
-              inStock && "opacity-0"
-            )}
-          >
-            Notify me
-          </span>
-          </div> */
-        }
-
-        {/* Discounts */}
-        <span
+        <div
           class={clx(
-            "absolute top-2 left-2",
-            "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-            (percent < 1 || !inStock) && "opacity-0",
+            "text-[10px] font-semibold text-base-100 bg-primary text-center rounded-badge w-[48px] h-[20px] uppercase",
+            "absolute top-1 left-1 flex flex-col items-center justify-center",
+            (percent < 1 || !inStock) && "opacity-1",
           )}
         >
-          {percent} % off
-        </span>
-
-        {
-          /* <div class="absolute bottom-0 right-0">
-          <WishlistButton item={item} variant="icon" />
-        </div> */
-        }
+          <span>10% off</span>
+        </div>
       </figure>
 
-      <a href={relativeUrl} class="pt-4">
-        <span class="font-medium text-sm">{title}</span>
+      <a href={relativeUrl} class="pt-5 flex flex-col items-center">
+        <span class="font-medium text-sm text-secondary text-center h-16">
+          {title}
+        </span>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (
-            <span class="line-through font-normal text-gray-600 text-[10px]">
+            <span class="line-through font-normal text-gray-400">
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-semibold text-secondary text-[12px]">
-            {formatPrice(price, offers?.priceCurrency)}
+          <span class="font-bold text-[12px] text-secondary">
+            {formatPrice(offers?.lowPrice, offers?.priceCurrency)}
           </span>
         </div>
       </a>
@@ -179,7 +158,7 @@ function ProductCard({
       {/* SKU Selector */}
       {
         /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
-        <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
+        <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto border border-primary">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
             .map(([value, link]) => (
@@ -199,40 +178,46 @@ function ProductCard({
       )} */
       }
 
-      <div class="flex-grow" />
+      {/* <div class="flex-grow pt-5" /> */}
 
-      <div>
-        {inStock
-          ? (
-            <AddToCartButton
-              product={product}
-              seller={seller}
-              item={item}
-              class={clx(
-                "btn",
-                "btn-outline justify-center border-neutral-content !text-sm !font-medium px-0 no-animation w-full",
-                "hover:!bg-primary",
-                "hover:!text-base-100",
-              )}
-            />
-          )
-          : (
-            <a
-              href={relativeUrl}
-              class={clx(
-                "btn",
-                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full h-29",
-                "hover:!bg-transparent",
-                "disabled:!bg-transparent disabled:!opacity-75",
-                "btn-error hover:!text-error disabled:!text-error",
-              )}
-            >
-              Fora de estoque
-            </a>
-          )}
-      </div>
+      {
+        /* <div>
+        {inStock ? (
+          <AddToCartButton
+            product={product}
+            seller={seller}
+            item={item}
+            class={clx("btn btn-primary no-animation w-full")}
+            icon={""}
+          />
+        ) : (
+          <a
+            href={relativeUrl}
+            class={clx(
+              "btn",
+              "btn-outline justify-center  !text-[12px] !font-medium px-0 no-animation w-full",
+              "text-center border border-secondary btn-secondary min-h-0 h-[26px]"
+            )}
+          >
+            Fora de estoque
+          </a>
+        )}
+      </div> */
+      }
+
+      {
+        /* <div>
+        <a
+          href={relativeUrl}
+          aria-label="view product"
+          class="btn btn-outline btn-primary h-[26px] min-h-0 w-full mt-2 font-medium text-[12px]"
+        >
+          Ver mais
+        </a>
+      </div> */
+      }
     </div>
   );
 }
 
-export default ProductCard;
+export default ProductCardBuyTogether;

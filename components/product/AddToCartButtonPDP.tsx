@@ -17,8 +17,13 @@ const onClick = () => {
   const { item, platformProps } = JSON.parse(
     decodeURIComponent(container.getAttribute("data-cart-item")!),
   );
+  const totalValue = document.getElementById(
+    "productDetailValue",
+  ) as HTMLInputElement;
+  platformProps.quantity = totalValue.valueAsNumber;
   window.STOREFRONT.CART.addToCart(item, platformProps);
 };
+
 const onChange = () => {
   const input = event!.currentTarget as HTMLInputElement;
   const productID = input!
@@ -62,8 +67,6 @@ const useAddToCart = ({ product, seller }: Props) => {
   const { additionalProperty = [], isVariantOf, productID } = product;
   const productGroupID = isVariantOf?.productGroupID;
 
-  console.log(platform);
-
   if (platform === "vnda") {
     return {
       quantity: 1,
@@ -80,40 +83,69 @@ function AddToCartButton(props: Props) {
   const id = useId();
 
   return (
-    <div
-      id={id}
-      class="flex"
-      data-item-id={product.productID}
-      data-cart-item={encodeURIComponent(
-        JSON.stringify({ item, platformProps }),
-      )}
-    >
-      {/* <input type="checkbox" class="hidden peer" /> */}
-
-      <button
-        class={clx("flex-grow uppercase", _class?.toString())}
-        hx-on:click={useScript(onClick)}
-        disabled={false}
-      >
-        Comprar
-      </button>
-
+    <div>
       {/* Quantity Input */}
-      {
-        /* <div class="flex-grow hidden peer-checked:flex">
+      <div class=" z-1">
         <QuantitySelector
-          disabled
           min={0}
           max={100}
+          value={1}
           hx-on:change={useScript(onChange)}
+          id={"productDetailValue"}
         />
-      </div> */
-      }
+      </div>
+      <div
+        id={id}
+        class="flex mt-6  "
+        data-item-id={product.productID}
+        data-cart-item={encodeURIComponent(
+          JSON.stringify({ item, platformProps }),
+        )}
+      >
+        {/* <input type="checkbox" class="hidden peer" /> */}
 
-      <script
-        type="module"
-        dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
-      />
+        <button
+          class={clx(
+            "flex-grow uppercase btn btn-secondary min-h-0 h-7 !text-base-100 bg-secondary",
+            _class?.toString(),
+          )}
+          hx-on:click={useScript(onClick)}
+          disabled={false}
+        >
+          comprar
+        </button>
+
+        <script
+          type="module"
+          dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+        />
+      </div>
+      <div
+        id={id}
+        class="flex mt-2"
+        data-item-id={product.productID}
+        data-cart-item={encodeURIComponent(
+          JSON.stringify({ item, platformProps }),
+        )}
+      >
+        {/* <input type="checkbox" class="hidden peer" /> */}
+
+        <button
+          class={clx(
+            "flex-grow uppercase btn btn-outline no-animation w-full",
+            _class?.toString(),
+          )}
+          hx-on:click={useScript(onClick)}
+          disabled={false}
+        >
+          Adicionar ao carrinho
+        </button>
+
+        <script
+          type="module"
+          dangerouslySetInnerHTML={{ __html: useScript(onLoad, id) }}
+        />
+      </div>
     </div>
   );
 }

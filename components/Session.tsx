@@ -110,7 +110,7 @@ const sdk = () => {
         button.click();
 
         const checkbox = document.getElementById(
-          "minicart-drawer"
+          "minicart-drawer",
         ) as HTMLInputElement;
         if (checkbox) {
           checkbox.checked = true;
@@ -243,12 +243,10 @@ export const action = async (
 ) => {
   const [minicart] = await Promise.all([
     ctx.invoke("site/loaders/minicart.ts"),
-    
   ]);
   return {
     mode: "eager",
     minicart,
-   
   };
 };
 export const loader = (_props: unknown, _req: Request, _ctx: AppContext) => {

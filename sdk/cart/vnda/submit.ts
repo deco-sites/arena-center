@@ -7,7 +7,7 @@ const actions: CartSubmitActions<AppContext> = {
     const response = await ctx.invoke(
       "vnda/actions/cart/addItem.ts",
       // @ts-expect-error I don't know how to fix this
-      addToCart
+      addToCart,
     );
 
     return cartFrom(response);
@@ -15,10 +15,9 @@ const actions: CartSubmitActions<AppContext> = {
   setQuantity: async ({ items, platformCart }, _req, ctx) => {
     const cart = platformCart as Cart;
 
-    const index =
-      cart?.orderForm?.items?.findIndex(
-        (product, index) => product?.quantity !== items[index]
-      ) ?? -1;
+    const index = cart?.orderForm?.items?.findIndex(
+      (product, index) => product?.quantity !== items[index],
+    ) ?? -1;
 
     const props = {
       itemId: `${cart?.orderForm?.items?.[index]?.id}`,
@@ -29,7 +28,7 @@ const actions: CartSubmitActions<AppContext> = {
       typeof props.quantity !== "number"
     ) {
       throw new Error(
-        "Unreachable code. This is probably a bug. Please report it to the developers."
+        "Unreachable code. This is probably a bug. Please report it to the developers.",
       );
     }
 

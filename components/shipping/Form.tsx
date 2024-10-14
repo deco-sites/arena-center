@@ -20,7 +20,7 @@ export default function Form({ items }: Props) {
             height={17}
             alt="icone de um caminhão de entrega"
           />
-          <p class="font-semibold">Calcule o frete</p>
+          <p class="ml-2 font-semibold">Calcule o frete</p>
         </div>
 
         <span class="text-[#616B6B] text-[10px] pt-2 ">
@@ -29,7 +29,7 @@ export default function Form({ items }: Props) {
       </div>
 
       <form
-        class="relative join mb-4"
+        class="relative join mb-1"
         hx-target={`#${slot}`}
         hx-swap="innerHTML"
         hx-sync="this:replace"
