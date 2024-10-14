@@ -12,18 +12,12 @@ import Drawer from "../ui/Drawer.tsx";
 import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
-import { ImageWidget } from "apps/admin/widgets.ts";
-import Image from "apps/website/components/Image.tsx";
 export interface Layout {
   /**
    * @title Pagination
    * @description Format of the pagination
    */
   pagination?: "show-more" | "pagination";
-}
-
-export interface Button {
-  icone: ImageWidget;
 }
 
 export interface Props {
@@ -35,20 +29,8 @@ export interface Props {
   /** @hidden */
   partial?: "hideMore" | "hideLess";
   /**@maximum 3 */
-  buttons: Button[];
 }
 
-const gradeButtonsClick = (
-  itemsPerLine: "2" | "3" | "4",
-  idContainer: string,
-) => {
-  const containerDiv = document.getElementById(idContainer) as HTMLElement;
-  const parentDiv = containerDiv.querySelector(
-    ".productsParentDiv",
-  ) as HTMLElement;
-  parentDiv.style.gridTemplateColumns =
-    `repeat(${itemsPerLine}, minmax(0, 1fr))`;
-};
 
 function NotFound() {
   return (
@@ -113,9 +95,12 @@ function PageResult(
       <div
         data-product-list
         class={clx(
+          "group-has-[#grid-2:checked]/items:grid-cols-2",
+          "group-has-[#grid-3:checked]/items:grid-cols-3",
+          "group-has-[#grid-4:checked]/items:grid-cols-4",
           "grid items-center",
-          "md:grid-cols-4 gap-2",
-          "sm:grid-cols-1 sm:gap-10",
+          "gap-2",
+          "sm:gap-10",
           "w-full",
           "productsParentDiv",
         )}
@@ -292,56 +277,71 @@ function Result(props: SectionProps<typeof loader>) {
                   </aside>
                 )}
 
-                <div class="flex flex-col gap-9">
+                <div class="flex flex-col gap-9 group/items">
                   {device === "desktop" && (
                     <div class="flex justify-between items-center">
                       {results}
                       <div>
                         {sortBy}
                       </div>
-                      <div class="flex justify-end">
-                        <button
-                          class="p-8"
-                          hx-on:click={useScript(
-                            gradeButtonsClick,
-                            "2",
-                            container,
-                          )}
-                        >
-                          <Image
-                            src={props.buttons[0].icone}
+                      <div class="flex justify-end items-center gap-3">
+                        <div>
+                          <input
+                            type="radio"
+                            id="grid-2"
+                            name="grid"
+                            class="peer hidden"
+                          />
+                          <label
+                            for="grid-2"
+                            class="flex cursor-pointer text-gray-400 items-center justify-center peer-checked:text-primary"
+                          >
+                            <Icon
+                            id="grid2"
                             width={16}
                             height={16}
+                            />
+                          </label>
+                        </div>
+                        <div>
+                          <input
+                            type="radio"
+                            id="grid-3"
+                            name="grid"
+                            class="peer hidden"
                           />
-                        </button>
-                        <button
-                          class="p-8"
-                          hx-on:click={useScript(
-                            gradeButtonsClick,
-                            "3",
-                            container,
-                          )}
-                        >
-                          <Image
-                            src={props.buttons[1].icone}
-                            width={25}
-                            height={16}
+                          <label
+                            for="grid-3"
+                            class="flex text-gray-400 cursor-pointer items-center justify-center peer-checked:text-primary"
+                          >
+                            <Icon
+                                                        id="grid3"
+                                                        width={25}
+                                                        height={16}
+                                                        />
+                          </label>
+                        </div>
+                        <div>
+                          <input
+                            type="radio"
+                            id="grid-4"
+                            name="grid"
+                            checked
+                            class="peer hidden"
                           />
-                        </button>
-                        <button
-                          class="p-8"
-                          hx-on:click={useScript(
-                            gradeButtonsClick,
-                            "4",
-                            container,
-                          )}
-                        >
-                          <Image
-                            src={props.buttons[2].icone}
-                            width={36}
-                            height={16}
-                          />
-                        </button>
+                          <label
+                            for="grid-4"
+                            class="flex cursor-pointer items-center justify-center text-gray-400 peer-checked:text-primary"
+                          >
+                                                        <Icon
+                                                        id="grid4"
+                                                        width={34}
+                                                        height={15}
+                                                        />
+                            <div>
+                            </div>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   )}

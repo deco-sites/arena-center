@@ -114,14 +114,14 @@
         },
         "cta": "/",
         "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
-          "sort": "newest",
-          "tags": [],
-          "typeTags": [],
-          "ids": [],
-          "count": 10
-        },
-        "title": "OS MAIS VENDIDOS"
+        "sort": "newest",
+        "tags": [],
+        "typeTags": [],
+        "ids": [],
+        "count": 10
       },
+      "title": "OS MAIS VENDIDOS"
+    },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
@@ -463,18 +463,13 @@
       ],
       "paymentMethods": [
         {
-          "alt": "Paypal",
-          "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/7d858621-469e-4528-91b5-8c79fc413162"
-        },
-        {
-          "alt": "Mastercard",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/88ab870c-4256-44b4-8da3-3cefe0436e87"
+          "alt": "mastercard",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a3c91402-5e8b-4e0c-b46a-8f72f55dec28/LogosMastercard.png"
         },
         {
           "alt": "Maestro",
-          "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb",
+          "href": "#"
         },
         {
           "alt": "Google Pay",
@@ -482,8 +477,8 @@
         },
         {
           "alt": "Elo",
-          "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb"
+          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb",
+          "href": "#"
         },
         {
           "alt": "Diners",
@@ -544,6 +539,10 @@
       "apps": [
         {
           "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7ae30aac-ad82-4daf-b909-38fc11f07934/App-Apple.png",
+          "link": "/"
+        },
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7f2172d6-e540-4f46-8ff7-aa34df0c942c/App-android.png",
           "link": "/"
         }
       ]

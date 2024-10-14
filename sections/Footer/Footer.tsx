@@ -63,12 +63,12 @@ function Footer({
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
           <div class="flex flex-col gap-4">
-            <p class="text-base font-medium">{aboutUs.title}</p>
-            <p>{aboutUs.paragraph}</p>
+            <p class="text-xs font-medium">{aboutUs.title}</p>
+            <p class="text-[10px]">{aboutUs.paragraph}</p>
           </div>
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
-              <a class="text-base font-medium" href={href}>{title}</a>
+              <a class="text-xs font-medium" href={href}>{title}</a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href, icon, bold }) => (
                   <li class="flex gap-1">
@@ -81,7 +81,7 @@ function Footer({
                         />
                       )}
                     <a
-                      class={`text-xs ${
+                      class={`text-[10px] ${
                         bold ? "font-medium" : "font-normal"
                       }`}
                       href={href}
@@ -93,34 +93,51 @@ function Footer({
               </ul>
             </li>
           ))}
-            
-          <div class="flex flex-col w-32">
-              <p class="text-base font-semibold">{socialTitle}</p>
+          <div class="flex flex-col gap-2">
+              <p class="text-xs font-medium">{socialTitle}</p>
               <div class="flex">
                 {social.map(({ image, href, alt }) => (
-                  <div class="w-12">
+                  <div class="">
                     <a href={href}>
                       <Image
                         src={image}
                         alt={alt}
                         loading="lazy"
-                        width={32}
-                        height={32}
+                        width={22}
+                        height={22}
                       />
                     </a>
                   </div>
                 ))}
               </div>
-            {apps.map((itens) => (
-                <a href={itens.link}>
+            <div class="flex justify-center">
+              {apps.map((itens) => (
+                  <a href={itens.link}>
+                    <Image
+                    src={itens.icon}
+                    width={63}
+                    height={18}
+                    alt={itens.link}
+                    />
+                  </a>
+              ))}
+            </div>
+            <div class="flex">
+            {paymentMethods.map(({ image, alt }) => (
+              <li class="h-8 w-10 gap-1 flex justify-center items-center">
+                <div class="bg-white ">
                   <Image
-                  src={itens.icon}
-                  width={65}
-                  height={20}
-                  alt={itens.link}
+                  class="object-contain"
+                    src={image}
+                    alt={alt}
+                    width={30}
+                    height={19}
+                    loading="lazy"
                   />
-                </a>
+                </div>
+              </li>
             ))}
+            </div>
           </div>
         </ul>
 
@@ -128,17 +145,7 @@ function Footer({
           <ul class="flex gap-4">
           </ul>
           <ul class="flex flex-wrap gap-2">
-            {paymentMethods.map(({ image, alt }) => (
-              <li class="h-8 w-10 border border-base-100 rounded flex justify-center items-center">
-                <Image
-                  src={image}
-                  alt={alt}
-                  width={20}
-                  height={20}
-                  loading="lazy"
-                />
-              </li>
-            ))}
+            
           </ul>
         </div>
 

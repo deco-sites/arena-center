@@ -4606,10 +4606,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-border-opacity: 1;
   border-color: rgb(201 207 207 / var(--tw-border-opacity));
 }
-.border-base-100 {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-border-opacity)));
-}
 .border-base-200 {
   --tw-border-opacity: 1;
   border-color: var(--fallback-b2,oklch(var(--b2)/var(--tw-border-opacity)));
@@ -5774,6 +5770,23 @@ details.collapse summary::-webkit-details-marker {
   display: flex;
 }
 
+.peer:checked ~ .peer-checked\:text-primary {
+  --tw-text-opacity: 1;
+  color: var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)));
+}
+
+.group\/items:has(#grid-2:checked) .group-has-\[\#grid-2\:checked\]\/items\:grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.group\/items:has(#grid-3:checked) .group-has-\[\#grid-3\:checked\]\/items\:grid-cols-3 {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.group\/items:has(#grid-4:checked) .group-has-\[\#grid-4\:checked\]\/items\:grid-cols-4 {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
 .group[data-painted] .group-data-\[painted\]\:bg-white {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -5898,10 +5911,6 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:grid-flow-col {
     grid-auto-flow: column;
-  }
-
-  .sm\:grid-cols-1 {
-    grid-template-columns: repeat(1, minmax(0, 1fr));
   }
 
   .sm\:grid-cols-2 {
@@ -6092,10 +6101,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:flex-row {
