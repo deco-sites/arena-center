@@ -17,10 +17,10 @@ const onClick = () => {
   const { item, platformProps } = JSON.parse(
     decodeURIComponent(container.getAttribute("data-cart-item")!),
   );
-    const totalValue = document.getElementById(
-      "productDetailValue"
-    ) as HTMLInputElement;
-    platformProps.quantity = totalValue.valueAsNumber;
+  const totalValue = document.getElementById(
+    "productDetailValue",
+  ) as HTMLInputElement;
+  platformProps.quantity = totalValue.valueAsNumber;
   window.STOREFRONT.CART.addToCart(item, platformProps);
 };
 
@@ -67,8 +67,6 @@ const useAddToCart = ({ product, seller }: Props) => {
   const { additionalProperty = [], isVariantOf, productID } = product;
   const productGroupID = isVariantOf?.productGroupID;
 
-
-
   if (platform === "vnda") {
     return {
       quantity: 1,
@@ -78,16 +76,12 @@ const useAddToCart = ({ product, seller }: Props) => {
       ),
     };
   }
-
-  
- 
 };
 function AddToCartButton(props: Props) {
   const { product, item, class: _class } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
 
-  
   return (
     <div>
       {/* Quantity Input */}
@@ -105,7 +99,7 @@ function AddToCartButton(props: Props) {
         class="flex mt-6  "
         data-item-id={product.productID}
         data-cart-item={encodeURIComponent(
-          JSON.stringify({ item, platformProps })
+          JSON.stringify({ item, platformProps }),
         )}
       >
         {/* <input type="checkbox" class="hidden peer" /> */}
@@ -113,7 +107,7 @@ function AddToCartButton(props: Props) {
         <button
           class={clx(
             "flex-grow uppercase btn btn-secondary min-h-0 h-7 !text-base-100 bg-secondary",
-            _class?.toString()
+            _class?.toString(),
           )}
           hx-on:click={useScript(onClick)}
           disabled={false}
@@ -131,7 +125,7 @@ function AddToCartButton(props: Props) {
         class="flex mt-2"
         data-item-id={product.productID}
         data-cart-item={encodeURIComponent(
-          JSON.stringify({ item, platformProps })
+          JSON.stringify({ item, platformProps }),
         )}
       >
         {/* <input type="checkbox" class="hidden peer" /> */}
@@ -139,7 +133,7 @@ function AddToCartButton(props: Props) {
         <button
           class={clx(
             "flex-grow uppercase btn btn-outline no-animation w-full",
-            _class?.toString()
+            _class?.toString(),
           )}
           hx-on:click={useScript(onClick)}
           disabled={false}

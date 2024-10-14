@@ -5,13 +5,13 @@ interface Props {
 }
 
 function ProductDescription({ page }: Props) {
-    if (page === null) {
-      throw new Error("Missing Product Description Page Info");
-    }
+  if (page === null) {
+    throw new Error("Missing Product Description Page Info");
+  }
 
-    const { product } = page;
-    const { isVariantOf } = product;
-    const description = product.description || isVariantOf?.description;
+  const { product } = page;
+  const { isVariantOf } = product;
+  const description = product.description || isVariantOf?.description;
   //const title = isVariantOf?.name ?? product.name;
 
   function processDescription(description: string) {
@@ -20,7 +20,7 @@ function ProductDescription({ page }: Props) {
 
     return description;
   }
-  
+
   return (
     <div class="mt-12">
       <div class="max-w-[1096px] mx-auto px-11">

@@ -158,7 +158,9 @@ export default function Cart(
           {count === 0
             ? (
               <div class="flex flex-col gap-6">
-                <span class="font-medium text-2xl">Seu carrinho está vazio</span>
+                <span class="font-medium text-2xl">
+                  Seu carrinho está vazio
+                </span>
                 <label
                   for={MINICART_DRAWER_ID}
                   class="btn btn-outline no-animation"
@@ -170,14 +172,16 @@ export default function Cart(
             : (
               <>
                 {/* Free Shipping Bar */}
-                {/* <div class="px-2 py-4 w-full">
+                {
+                  /* <div class="px-2 py-4 w-full">
                   <FreeShippingProgressBar
                     total={total}
                     locale={locale}
                     currency={currency}
                     target={freeShippingTarget}
                   />
-                </div> */}
+                </div> */
+                }
 
                 {/* Cart Items */}
                 <ul

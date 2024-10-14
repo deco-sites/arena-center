@@ -81,7 +81,7 @@ function ProductCard({
         class={clx(
           "relative bg-base-100 w-[295px] h-[378px]",
           "rounded border border-transparent",
-          "group-hover:border-primary"
+          "group-hover:border-primary",
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
@@ -93,7 +93,7 @@ function ProductCard({
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
             "w-[295px]",
-            !inStock && "opacity-70"
+            !inStock && "opacity-70",
           )}
         >
           <Image
@@ -105,7 +105,7 @@ function ProductCard({
             class={clx(
               "object-contain",
               "rounded w-[295px]",
-              "col-span-full row-span-full"
+              "col-span-full row-span-full",
             )}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -121,7 +121,7 @@ function ProductCard({
               "object-contain",
               "rounded w-[295px]",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100"
+              "transition-opacity opacity-0 lg:group-hover:opacity-100",
             )}
             loading="lazy"
             decoding="async"
@@ -129,8 +129,9 @@ function ProductCard({
         </a>
 
         {/* Wishlist button */}
-        {/* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
-         
+        {
+          /* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
+
           <span
             class={clx(
               "text-sm/4 font-normal text-black bg-error bg-opacity-15 text-center rounded-badge px-2 py-1",
@@ -139,22 +140,25 @@ function ProductCard({
           >
             Notify me
           </span>
-          </div> */}
+          </div> */
+        }
 
         {/* Discounts */}
         <span
           class={clx(
             "absolute top-2 left-2",
             "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-            (percent < 1 || !inStock) && "opacity-0"
+            (percent < 1 || !inStock) && "opacity-0",
           )}
         >
           {percent} % off
         </span>
 
-        {/* <div class="absolute bottom-0 right-0">
+        {
+          /* <div class="absolute bottom-0 right-0">
           <WishlistButton item={item} variant="icon" />
-        </div> */}
+        </div> */
+        }
       </figure>
 
       <a href={relativeUrl} class="pt-4">
@@ -173,7 +177,8 @@ function ProductCard({
       </a>
 
       {/* SKU Selector */}
-      {/* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
+      {
+        /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
         <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
@@ -191,38 +196,40 @@ function ProductCard({
               </li>
             ))}
         </ul>
-      )} */}
+      )} */
+      }
 
       <div class="flex-grow" />
 
       <div>
-        {inStock ? (
-          <AddToCartButton
-            product={product}
-            seller={seller}
-            item={item}
-            class={clx(
-              "btn",
-              "btn-outline justify-center border-neutral-content !text-sm !font-medium px-0 no-animation w-full",
-              "hover:!bg-primary",
-              
-              "hover:!text-base-100"
-            )}
-          />
-        ) : (
-          <a
-            href={relativeUrl}
-            class={clx(
-              "btn",
-              "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full h-29",
-              "hover:!bg-transparent",
-              "disabled:!bg-transparent disabled:!opacity-75",
-              "btn-error hover:!text-error disabled:!text-error"
-            )}
-          >
-            Fora de estoque
-          </a>
-        )}
+        {inStock
+          ? (
+            <AddToCartButton
+              product={product}
+              seller={seller}
+              item={item}
+              class={clx(
+                "btn",
+                "btn-outline justify-center border-neutral-content !text-sm !font-medium px-0 no-animation w-full",
+                "hover:!bg-primary",
+                "hover:!text-base-100",
+              )}
+            />
+          )
+          : (
+            <a
+              href={relativeUrl}
+              class={clx(
+                "btn",
+                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full h-29",
+                "hover:!bg-transparent",
+                "disabled:!bg-transparent disabled:!opacity-75",
+                "btn-error hover:!text-error disabled:!text-error",
+              )}
+            >
+              Fora de estoque
+            </a>
+          )}
       </div>
     </div>
   );

@@ -62,7 +62,7 @@ const useAddToCart = ({ product, seller }: Props) => {
   const { additionalProperty = [], isVariantOf, productID } = product;
   const productGroupID = isVariantOf?.productGroupID;
 
-  console.log(platform)
+  console.log(platform);
 
   if (platform === "vnda") {
     return {
@@ -73,23 +73,19 @@ const useAddToCart = ({ product, seller }: Props) => {
       ),
     };
   }
-
-  
- 
 };
 function AddToCartButton(props: Props) {
   const { product, item, class: _class } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
 
-  
   return (
     <div
       id={id}
       class="flex"
       data-item-id={product.productID}
       data-cart-item={encodeURIComponent(
-        JSON.stringify({ item, platformProps })
+        JSON.stringify({ item, platformProps }),
       )}
     >
       {/* <input type="checkbox" class="hidden peer" /> */}
@@ -103,14 +99,16 @@ function AddToCartButton(props: Props) {
       </button>
 
       {/* Quantity Input */}
-      {/* <div class="flex-grow hidden peer-checked:flex">
+      {
+        /* <div class="flex-grow hidden peer-checked:flex">
         <QuantitySelector
           disabled
           min={0}
           max={100}
           hx-on:change={useScript(onChange)}
         />
-      </div> */}
+      </div> */
+      }
 
       <script
         type="module"

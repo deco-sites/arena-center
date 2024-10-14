@@ -31,14 +31,14 @@ function QuantitySelector(
         class={clx(
           "flex-grow join-item  bg-gray-200 h-6 min-h-0",
           "flex justify-center items-center",
-          "has-[:invalid]:tooltip has-[:invalid]:tooltip-error has-[:invalid]:tooltip-open has-[:invalid]:tooltip-bottom"
+          "has-[:invalid]:tooltip has-[:invalid]:tooltip-error has-[:invalid]:tooltip-open has-[:invalid]:tooltip-bottom",
         )}
       >
         <input
           id={id}
           class={clx(
             " text-[10px] text-center flex-grow [appearance:textfield]  bg-gray-200 h-6 min-h-0",
-            "invalid:input-error"
+            "invalid:input-error",
           )}
           disabled={disabled}
           inputMode="numeric"

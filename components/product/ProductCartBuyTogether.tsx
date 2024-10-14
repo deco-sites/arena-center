@@ -73,14 +73,14 @@ function ProductCardBuyTogether({
       {...event}
       class={clx(
         "card card-compact group text-[10px] hover:shadow-lg p-2  ",
-        _class
+        _class,
       )}
     >
       <figure
         class={clx(
           "relative bg-base-100",
           "rounded border border-primary  w-[143px]",
-          "mx-auto"
+          "mx-auto",
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
@@ -92,7 +92,7 @@ function ProductCardBuyTogether({
             "absolute top-0 left-0 m-auto ",
             "grid grid-cols-1 grid-rows-1",
             "w-full bg-base-100",
-            !inStock && "opacity-70"
+            !inStock && "opacity-70",
           )}
         >
           <Image
@@ -104,7 +104,7 @@ function ProductCardBuyTogether({
             class={clx(
               "object-contain",
               "rounded",
-              "col-span-full row-span-full"
+              "col-span-full row-span-full",
             )}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -120,7 +120,7 @@ function ProductCardBuyTogether({
               "object-contain",
               "rounded",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100 border border-primary"
+              "transition-opacity opacity-0 lg:group-hover:opacity-100 border border-primary",
             )}
             loading="lazy"
             decoding="async"
@@ -131,11 +131,10 @@ function ProductCardBuyTogether({
           class={clx(
             "text-[10px] font-semibold text-base-100 bg-primary text-center rounded-badge w-[48px] h-[20px] uppercase",
             "absolute top-1 left-1 flex flex-col items-center justify-center",
-            (percent < 1 || !inStock) && "opacity-1"
+            (percent < 1 || !inStock) && "opacity-1",
           )}
         >
           <span>10% off</span>
-          
         </div>
       </figure>
 
@@ -157,7 +156,8 @@ function ProductCardBuyTogether({
       </a>
 
       {/* SKU Selector */}
-      {/* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
+      {
+        /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
         <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto border border-primary">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
@@ -175,11 +175,13 @@ function ProductCardBuyTogether({
               </li>
             ))}
         </ul>
-      )} */}
+      )} */
+      }
 
       {/* <div class="flex-grow pt-5" /> */}
 
-      {/* <div>
+      {
+        /* <div>
         {inStock ? (
           <AddToCartButton
             product={product}
@@ -200,9 +202,11 @@ function ProductCardBuyTogether({
             Fora de estoque
           </a>
         )}
-      </div> */}
+      </div> */
+      }
 
-      {/* <div>
+      {
+        /* <div>
         <a
           href={relativeUrl}
           aria-label="view product"
@@ -210,7 +214,8 @@ function ProductCardBuyTogether({
         >
           Ver mais
         </a>
-      </div> */}
+      </div> */
+      }
     </div>
   );
 }
