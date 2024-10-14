@@ -111,10 +111,7 @@ function ProductInfo({ page }: Props) {
         {availability === "https://schema.org/InStock"
           ? (
             <>
-
-  
               <AddToCartButtonPDP
-
                 item={item}
                 seller={seller}
                 product={product}
@@ -124,18 +121,20 @@ function ProductInfo({ page }: Props) {
             </>
           )
           : <OutOfStock productID={productID} />}
-
       </div>
 
       {/* Shipping Simulation */}
-      {/* <div class="mt-8">
+      {
+        /* <div class="mt-8">
         <ShippingSimulationForm
           items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
         />
-      </div> */}
+      </div> */
+      }
 
       {/* Garanty Icons */}
-      {/* <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
+      {
+        /* <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
         {icons &&
           icons.map((item) => (
             <div class="flex items-center flex-col gap-3 ">
@@ -144,7 +143,8 @@ function ProductInfo({ page }: Props) {
             </div>
           ))}
 
-      </div> */}
+      </div> */
+      }
 
       {/* Description card */}
       {
