@@ -1,7 +1,8 @@
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import Section from "../../components/ui/Section.tsx";
-import Newsletter from "../Newsletter/Newsletter.tsx";
+import Newsletter  from "../Newsletter/Newsletter.tsx";
+import { Props as NewsletterProps } from "../Newsletter/Newsletter.tsx"
 
 /** @titleBy title */
 interface Item {
@@ -23,52 +24,72 @@ interface AboutUs {
    */
   paragraph: string;
 }
-
 /** @titleBy alt */
-interface Social {
+export interface SocialItem {
   alt?: string;
   href?: string;
   image: ImageWidget;
+}
+
+/** @titleBy alt */
+interface Social {
+  socialTitle: string;
+  socialItems: SocialItem[];
+}
+
+/** @titleBy alt */
+export interface Methods {
+  /**@title icone da bandeira */
+  img: ImageWidget;
+  alt: string;
+}
+/** @titleBy paymentTitle */
+export interface PaymentMethod {
+  /**@title Titulo da forma de pagamento */
+  paymentTitle: string;
+  payment: Methods[];
 }
 
 interface Apps {
   icon: ImageWidget;
   link: string;
 }
+
 interface Props {
   aboutUs: AboutUs;
   links?: Link[];
-  socialTitle: string;
-  social?: Social[];
+  social?: Social;
   apps: Apps[];
-  paymentMethods?: Social[];
+  paymentMethods: PaymentMethod[];
   policies?: Item[];
   logo?: ImageWidget;
   trademark?: string;
+  newsletterProps: NewsletterProps;
 }
 
 function Footer({
   links = [],
-  social = [],
+  social,
   policies = [],
   paymentMethods = [],
   logo,
   trademark,
   aboutUs,
-  socialTitle,
   apps,
+  newsletterProps,
 }: Props) {
   return (
     <footer class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content">
+      <Newsletter {...newsletterProps}/>
       <div class="container flex flex-col gap-5 sm:gap-10 py-10">
         <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
           <div class="flex flex-col gap-4">
-            <p class="text-base font-medium">{aboutUs.title}</p>
-            <p>{aboutUs.paragraph}</p>
+            <p class="text-xs font-medium">{aboutUs.title}</p>
+            <p class="text-[10px]">{aboutUs.paragraph}</p>
           </div>
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4">
-              <a class="text-base font-medium" href={href}>{title}</a>
+              <a class="text-xs font-medium" href={href}>{title}</a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href, icon, bold }) => (
                   <li class="flex gap-1">
@@ -81,7 +102,7 @@ function Footer({
                         />
                       )}
                     <a
-                      class={`text-xs ${
+                      class={`text-[10px] ${
                         bold ? "font-medium" : "font-normal"
                       }`}
                       href={href}
@@ -93,34 +114,55 @@ function Footer({
               </ul>
             </li>
           ))}
-            
-          <div class="flex flex-col w-32">
-              <p class="text-base font-semibold">{socialTitle}</p>
-              <div class="flex">
-                {social.map(({ image, href, alt }) => (
-                  <div class="w-12">
+          <div class="flex flex-col gap-4">
+              <p class="text-xs font-medium">{social?.socialTitle}</p>
+              <div class="flex justify-around">
+                {social?.socialItems.map(({ image, href, alt }) => (
+                  <div class="">
                     <a href={href}>
                       <Image
                         src={image}
                         alt={alt}
                         loading="lazy"
-                        width={32}
-                        height={32}
+                        width={22}
+                        height={22}
                       />
                     </a>
                   </div>
                 ))}
               </div>
-            {apps.map((itens) => (
-                <a href={itens.link}>
+            <div class="flex justify-between">
+              {apps.map((itens) => (
+                  <a href={itens.link}>
+                    <Image
+                    src={itens.icon}
+                    width={63}
+                    height={18}
+                    alt={itens.link}
+                    />
+                  </a>
+              ))}
+            </div>
+              {paymentMethods.map((test) =>(
+                <div class="flex gap-1 flex-wrap w-[165px]  justify-center items-center">
+                  <p class="text-xs w-full font-bold text-center">{test.paymentTitle}</p>
+                  {test.payment.map(({ img, alt }) => (
+              <li>
+                <div class="bg-white flex-row flex justify-center items-center p-1 w-7 h-4">
                   <Image
-                  src={itens.icon}
-                  width={65}
-                  height={20}
-                  alt={itens.link}
+                  class="object-contain w-full h-full bg-white"
+                    src={img}
+                    alt={alt}
+                    fit="contain"
+                    width={26}
+                    height={16}
+                    loading="lazy"
                   />
-                </a>
+                </div>
+              </li>
             ))}
+                </div>
+              ))}
           </div>
         </ul>
 
@@ -128,39 +170,23 @@ function Footer({
           <ul class="flex gap-4">
           </ul>
           <ul class="flex flex-wrap gap-2">
-            {paymentMethods.map(({ image, alt }) => (
-              <li class="h-8 w-10 border border-base-100 rounded flex justify-center items-center">
-                <Image
-                  src={image}
-                  alt={alt}
-                  width={20}
-                  height={20}
-                  loading="lazy"
-                />
-              </li>
-            ))}
+            
           </ul>
         </div>
-
-        <hr class="w-full text-base-400" />
-
-        <div class="grid grid-flow-row sm:grid-flow-col gap-8">
-          <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
+        <div class="w-full gap-8">
+          <ul class="flex flex-col gap-8 text-center justify-center items-center">
             {policies.map(({ title, href }) => (
-              <li>
+              <li class="w-full">
                 <a class="text-[10px] font-medium" href={href}>
                   {title}
                 </a>
               </li>
             ))}
-          </ul>
-
-          <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
-            <div>
-              <img loading="lazy" src={logo} />
-            </div>
+                      <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
             <span class="text-xs font-normal text-base-400">{trademark}</span>
+              <img loading="lazy" src={logo} />
           </div>
+          </ul>
         </div>
       </div>
     </footer>

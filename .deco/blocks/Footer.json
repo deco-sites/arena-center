@@ -180,5 +180,9 @@
   ],
   "logo": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/f1faab73-e4ff-4037-b7c4-5d02bd0b1209",
   "trademark": "TM & © 2023 Deco Storefront, Inc.",
-  "aboutUs": {}
+  "aboutUs": {
+    "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut.",
+    "title": "Arena center"
+  },
+  "apps": []
 }
