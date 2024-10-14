@@ -180,7 +180,7 @@ function Carousel({ images = [], preload, interval }: Props) {
                 "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
               )}
             >
-              <div>alow</div>
+              <></>
             </Slider.Dot>
           </li>
         ))}
