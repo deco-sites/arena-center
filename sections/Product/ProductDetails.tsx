@@ -19,7 +19,6 @@ export interface Props {
    * @maxItems 2
    */
   icons?: IconItem[];
-  icons?: IconItem[];
 }
 
 export default function ProductDetails({ page, icons, products }: Props) {
@@ -47,19 +46,15 @@ export default function ProductDetails({ page, icons, products }: Props) {
         class={clx(
           "container grid",
           "grid-cols-1 gap-2 py-0",
-          "sm:grid-cols-5 sm:gap-6",
+          "sm:grid-cols-5 sm:gap-6"
         )}
       >
         <div class="sm:col-span-3">
           <ImageGallerySlider page={page} />
         </div>
         <div class="sm:col-span-2">
-<<<<<<< HEAD
-          <ProductInfo page={page} icons={ icons} />
-=======
           <ProductInfo page={page} />
           <BuyTogetherComponent page={page} products={products} icons={icons} />
->>>>>>> fc11cda (merge)
         </div>
       </div>
     </div>

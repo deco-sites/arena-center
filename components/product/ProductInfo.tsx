@@ -111,22 +111,10 @@ function ProductInfo({ page }: Props) {
         {availability === "https://schema.org/InStock"
           ? (
             <>
-<<<<<<< HEAD
-<<<<<<< HEAD
+
+  
               <AddToCartButtonPDP
-=======
-              <AddToCartButton
-                item={item}
-                seller={seller}
-                product={product}
-                class="btn btn-secondary no-animation  w-full h-8 min-h-0"
-                disabled={false}
-              />
-              <AddToCartButton
->>>>>>> 9c9922b (eslint fix)
-=======
-              <AddToCartButtonPDP
->>>>>>> fc11cda (merge)
+
                 item={item}
                 seller={seller}
                 product={product}
@@ -136,20 +124,18 @@ function ProductInfo({ page }: Props) {
             </>
           )
           : <OutOfStock productID={productID} />}
-<<<<<<< HEAD
-=======
+
       </div>
 
-<<<<<<< HEAD
       {/* Shipping Simulation */}
-      <div class="mt-8">
+      {/* <div class="mt-8">
         <ShippingSimulationForm
           items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
         />
-      </div>
+      </div> */}
 
       {/* Garanty Icons */}
-      <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
+      {/* <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
         {icons &&
           icons.map((item) => (
             <div class="flex items-center flex-col gap-3 ">
@@ -157,11 +143,9 @@ function ProductInfo({ page }: Props) {
               <p class="text-accent-content text-[12px]">{item.title}</p>
             </div>
           ))}
->>>>>>> 9c9922b (eslint fix)
-      </div>
 
-=======
->>>>>>> fc11cda (merge)
+      </div> */}
+
       {/* Description card */}
       {
         /* <div class="mt-4 sm:mt-6">
