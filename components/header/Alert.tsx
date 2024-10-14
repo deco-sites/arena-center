@@ -34,7 +34,7 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
   const id = useId();
 
   return (
-    <div id={id} class=" w-screen bg-neutral-content flex flex-col ">
+    <div id={id} class=" w-screen bg-gray-300 flex flex-col ">
       <div class="flex justify-center">
         <Slider class="carousel carousel-center  gap-6  text-accent">
           {alerts.map((alert, index) => (
