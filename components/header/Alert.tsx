@@ -40,7 +40,7 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
           {alerts.map((alert, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item  flex items-center justify-center mx-auto w-[800px]"
+              class="carousel-item  flex items-center justify-center mx-auto lg:w-[800px]"
             >
               <span
                 class="px-5 py-2 text-center text-base font-bold text-accent-content"
@@ -64,7 +64,7 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
             </Slider.Item>
           ))}
         </Slider>
-        <div class="flex gap-6">
+        <div class="hidden md:flex gap-6">
           {contacts &&
             contacts.map((contact) => (
               <a
