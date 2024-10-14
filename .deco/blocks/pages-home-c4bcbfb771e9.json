@@ -117,8 +117,12 @@
         "sort": "newest",
         "tags": [],
         "typeTags": [],
+<<<<<<< HEAD
         "ids": [],
         "count": 10
+=======
+        "ids": []
+>>>>>>> 9c9922b (eslint fix)
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -225,52 +229,6 @@
           "count": 10
         },
         "title": "PROMOÇÕES IMPERDÍVEIS"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-        "title": "escolha os seus produtos por ambiente",
-        "cta": "/",
-        "tabs": [
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "count": 5,
-              "sort": "newest",
-              "tags": [
-                "cozinha"
-              ],
-              "typeTags": [],
-              "ids": []
-            },
-            "title": "Quarto"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-        "title": "escolha os seus produtos por ambiente",
-        "cta": "/",
-        "tabs": [
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "count": 5,
-              "sort": "newest",
-              "tags": [
-                "cozinha"
-              ],
-              "typeTags": [],
-              "ids": []
-            },
-            "title": "Quarto"
-          }
-        ]
       }
     },
     {

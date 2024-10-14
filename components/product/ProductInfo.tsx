@@ -111,7 +111,18 @@ function ProductInfo({ page }: Props) {
         {availability === "https://schema.org/InStock"
           ? (
             <>
+<<<<<<< HEAD
               <AddToCartButtonPDP
+=======
+              <AddToCartButton
+                item={item}
+                seller={seller}
+                product={product}
+                class="btn btn-secondary no-animation  w-full h-8 min-h-0"
+                disabled={false}
+              />
+              <AddToCartButton
+>>>>>>> 9c9922b (eslint fix)
                 item={item}
                 seller={seller}
                 product={product}
@@ -121,6 +132,27 @@ function ProductInfo({ page }: Props) {
             </>
           )
           : <OutOfStock productID={productID} />}
+<<<<<<< HEAD
+=======
+      </div>
+
+      {/* Shipping Simulation */}
+      <div class="mt-8">
+        <ShippingSimulationForm
+          items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
+        />
+      </div>
+
+      {/* Garanty Icons */}
+      <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
+        {icons &&
+          icons.map((item) => (
+            <div class="flex items-center flex-col gap-3 ">
+              <Image src={item.icon} width={31} height={31} alt={item.title} />
+              <p class="text-accent-content text-[12px]">{item.title}</p>
+            </div>
+          ))}
+>>>>>>> 9c9922b (eslint fix)
       </div>
 
       {/* Description card */}

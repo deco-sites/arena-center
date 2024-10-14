@@ -31,7 +31,6 @@ export interface Props {
   /**@maximum 3 */
 }
 
-
 function NotFound() {
   return (
     <div class="w-full flex justify-center items-center py-10">
@@ -297,9 +296,9 @@ function Result(props: SectionProps<typeof loader>) {
                             class="flex cursor-pointer text-gray-400 items-center justify-center peer-checked:text-primary"
                           >
                             <Icon
-                            id="grid2"
-                            width={16}
-                            height={16}
+                              id="grid2"
+                              width={16}
+                              height={16}
                             />
                           </label>
                         </div>
@@ -315,10 +314,10 @@ function Result(props: SectionProps<typeof loader>) {
                             class="flex text-gray-400 cursor-pointer items-center justify-center peer-checked:text-primary"
                           >
                             <Icon
-                                                        id="grid3"
-                                                        width={25}
-                                                        height={16}
-                                                        />
+                              id="grid3"
+                              width={25}
+                              height={16}
+                            />
                           </label>
                         </div>
                         <div>
@@ -333,11 +332,11 @@ function Result(props: SectionProps<typeof loader>) {
                             for="grid-4"
                             class="flex cursor-pointer items-center justify-center text-gray-400 peer-checked:text-primary"
                           >
-                                                        <Icon
-                                                        id="grid4"
-                                                        width={34}
-                                                        height={15}
-                                                        />
+                            <Icon
+                              id="grid4"
+                              width={34}
+                              height={15}
+                            />
                             <div>
                             </div>
                           </label>

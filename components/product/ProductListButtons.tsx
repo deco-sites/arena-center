@@ -3,10 +3,7 @@ import Image from "apps/website/components/Image.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
 import { useId } from "../../sdk/useId.ts";
 
-
-
 export interface Props {
-
 }
 
 const gradeButtonsClick = (itemsPerLine: 2 | 3 | 4, id: string) => {
@@ -21,9 +18,6 @@ const gradeButtonsClick = (itemsPerLine: 2 | 3 | 4, id: string) => {
   );
 };
 
-
 export default function ProductListButtons() {
-  return (
-    <div>áaaa</div>
-  );
+  return <div>áaaa</div>;
 }
