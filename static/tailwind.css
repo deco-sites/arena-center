@@ -4253,6 +4253,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[1096px\] {
   max-width: 1096px;
+<<<<<<< HEAD
+=======
+}
+.max-w-\[1200px\] {
+  max-width: 1200px;
+>>>>>>> fc11cda (merge)
 }
 .max-w-\[1300px\] {
   max-width: 1300px;
@@ -4266,8 +4272,14 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1444px\] {
   max-width: 1444px;
 }
+.max-w-\[180px\] {
+  max-width: 180px;
+}
 .max-w-\[200px\] {
   max-width: 200px;
+}
+.max-w-\[205px\] {
+  max-width: 205px;
 }
 .max-w-\[2px\] {
   max-width: 2px;

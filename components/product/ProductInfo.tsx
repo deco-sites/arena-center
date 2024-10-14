@@ -112,6 +112,7 @@ function ProductInfo({ page }: Props) {
           ? (
             <>
 <<<<<<< HEAD
+<<<<<<< HEAD
               <AddToCartButtonPDP
 =======
               <AddToCartButton
@@ -123,6 +124,9 @@ function ProductInfo({ page }: Props) {
               />
               <AddToCartButton
 >>>>>>> 9c9922b (eslint fix)
+=======
+              <AddToCartButtonPDP
+>>>>>>> fc11cda (merge)
                 item={item}
                 seller={seller}
                 product={product}
@@ -136,6 +140,7 @@ function ProductInfo({ page }: Props) {
 =======
       </div>
 
+<<<<<<< HEAD
       {/* Shipping Simulation */}
       <div class="mt-8">
         <ShippingSimulationForm
@@ -155,6 +160,8 @@ function ProductInfo({ page }: Props) {
 >>>>>>> 9c9922b (eslint fix)
       </div>
 
+=======
+>>>>>>> fc11cda (merge)
       {/* Description card */}
       {
         /* <div class="mt-4 sm:mt-6">

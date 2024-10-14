@@ -296,10 +296,28 @@ function Result(props: SectionProps<typeof loader>) {
                             class="flex cursor-pointer text-gray-400 items-center justify-center peer-checked:text-primary"
                           >
                             <Icon
-                              id="grid2"
-                              width={16}
-                              height={16}
+                            id="grid2"
+                            width={16}
+                            height={16}
                             />
+                          </label>
+                        </div>
+                        <div>
+                          <input
+                            type="radio"
+                            id="grid-3"
+                            name="grid"
+                            class="peer hidden"
+                          />
+                          <label
+                            for="grid-3"
+                            class="flex text-gray-400 cursor-pointer items-center justify-center peer-checked:text-primary"
+                          >
+                            <Icon
+                                                        id="grid3"
+                                                        width={25}
+                                                        height={16}
+                                                        />
                           </label>
                         </div>
                         <div>

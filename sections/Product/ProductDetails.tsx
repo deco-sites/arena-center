@@ -54,7 +54,12 @@ export default function ProductDetails({ page, icons, products }: Props) {
           <ImageGallerySlider page={page} />
         </div>
         <div class="sm:col-span-2">
+<<<<<<< HEAD
           <ProductInfo page={page} icons={ icons} />
+=======
+          <ProductInfo page={page} />
+          <BuyTogetherComponent page={page} products={products} icons={icons} />
+>>>>>>> fc11cda (merge)
         </div>
       </div>
     </div>

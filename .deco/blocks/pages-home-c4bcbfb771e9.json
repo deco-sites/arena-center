@@ -125,11 +125,16 @@
         "tags": [],
         "typeTags": [],
 <<<<<<< HEAD
+<<<<<<< HEAD
         "ids": [],
         "count": 10
 =======
         "ids": []
 >>>>>>> 9c9922b (eslint fix)
+=======
+        "ids": [],
+        "count": 10
+>>>>>>> fc11cda (merge)
       },
       "title": "OS MAIS VENDIDOS"
     },
