@@ -38,10 +38,9 @@ function ProductInfo({ page, icons }: Props) {
 
   const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
 
-  const percent =
-    listPrice && price
-      ? Math.round(((listPrice - price) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && price
+    ? Math.round(((listPrice - price) / listPrice) * 100)
+    : 0;
 
   const breadcrumb = {
     ...breadcrumbList,
@@ -69,12 +68,11 @@ function ProductInfo({ page, icons }: Props) {
   });
 
   //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
-  const hasValidVariants =
-    isVariantOf?.hasVariant?.some(
-      (variant) =>
-        variant?.name?.toLowerCase() !== "title" &&
-        variant?.name?.toLowerCase() !== "default title"
-    ) ?? false;
+  const hasValidVariants = isVariantOf?.hasVariant?.some(
+    (variant) =>
+      variant?.name?.toLowerCase() !== "title" &&
+      variant?.name?.toLowerCase() !== "default title",
+  ) ?? false;
 
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
@@ -83,7 +81,7 @@ function ProductInfo({ page, icons }: Props) {
         class={clx(
           "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
           percent < 1 && "opacity-0",
-          "w-fit"
+          "w-fit",
         )}
       >
         {percent} % off
@@ -114,26 +112,26 @@ function ProductInfo({ page, icons }: Props) {
 
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
-        {availability === "https://schema.org/InStock" ? (
-          <>
-            <AddToCartButton
-              item={item}
-              seller={seller}
-              product={product}
-              class="btn btn-secondary no-animation  w-full h-8 min-h-0"
-              disabled={false}
-            />
-            <AddToCartButton
-              item={item}
-              seller={seller}
-              product={product}
-              class="btn btn-secondary no-animation btn-outline w-full h-8 min-h-0"
-              disabled={false}
-            />
-          </>
-        ) : (
-          <OutOfStock productID={productID} />
-        )}
+        {availability === "https://schema.org/InStock"
+          ? (
+            <>
+              <AddToCartButton
+                item={item}
+                seller={seller}
+                product={product}
+                class="btn btn-secondary no-animation  w-full h-8 min-h-0"
+                disabled={false}
+              />
+              <AddToCartButton
+                item={item}
+                seller={seller}
+                product={product}
+                class="btn btn-secondary no-animation btn-outline w-full h-8 min-h-0"
+                disabled={false}
+              />
+            </>
+          )
+          : <OutOfStock productID={productID} />}
       </div>
 
       {/* Shipping Simulation */}
@@ -155,7 +153,8 @@ function ProductInfo({ page, icons }: Props) {
       </div>
 
       {/* Description card */}
-      {/* <div class="mt-4 sm:mt-6">
+      {
+        /* <div class="mt-4 sm:mt-6">
         <span class="text-sm">
           {description && (
             <details>
@@ -167,7 +166,8 @@ function ProductInfo({ page, icons }: Props) {
             </details>
           )}
         </span>
-      </div> */}
+      </div> */
+      }
     </div>
   );
 }

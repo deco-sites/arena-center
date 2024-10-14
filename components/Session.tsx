@@ -76,7 +76,7 @@ const sdk = () => {
           // deno-lint-ignore no-explicit-any
           (item as any).item_id === itemId
         );
-        console.log({input, item})
+        console.log({ input, item });
         if (!input || !item) {
           return false;
         }
@@ -110,7 +110,7 @@ const sdk = () => {
         button.click();
 
         const checkbox = document.getElementById(
-          "minicart-drawer"
+          "minicart-drawer",
         ) as HTMLInputElement;
         if (checkbox) {
           checkbox.checked = true;
@@ -243,12 +243,10 @@ export const action = async (
 ) => {
   const [minicart] = await Promise.all([
     ctx.invoke("site/loaders/minicart.ts"),
-    
   ]);
   return {
     mode: "eager",
     minicart,
-   
   };
 };
 export const loader = (_props: unknown, _req: Request, _ctx: AppContext) => {

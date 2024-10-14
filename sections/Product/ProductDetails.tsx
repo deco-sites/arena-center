@@ -13,7 +13,7 @@ export interface Props {
    *  @description tamanho do icone largura 31px altura 31px
    * @maxItems 2
    */
-  icons?: IconItem[]; 
+  icons?: IconItem[];
 }
 
 export default function ProductDetails({ page, icons }: Props) {
@@ -48,7 +48,7 @@ export default function ProductDetails({ page, icons }: Props) {
           <ImageGallerySlider page={page} />
         </div>
         <div class="sm:col-span-2">
-          <ProductInfo page={page} icons={ icons} />
+          <ProductInfo page={page} icons={icons} />
         </div>
       </div>
     </div>

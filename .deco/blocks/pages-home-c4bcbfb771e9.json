@@ -125,13 +125,13 @@
         },
         "cta": "/",
         "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
-          "sort": "newest",
-          "tags": [],
-          "typeTags": [],
-          "ids": []
-        },
-        "title": "OS MAIS VENDIDOS"
+        "sort": "newest",
+        "tags": [],
+        "typeTags": [],
+        "ids": []
       },
+      "title": "OS MAIS VENDIDOS"
+    },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
@@ -236,52 +236,6 @@
           "count": 4
         },
         "title": "PROMOÇÕES IMPERDÍVEIS"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-        "title": "escolha os seus produtos por ambiente",
-        "cta": "/",
-        "tabs": [
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "count": 5,
-              "sort": "newest",
-              "tags": [
-                "cozinha"
-              ],
-              "typeTags": [],
-              "ids": []
-            },
-            "title": "Quarto"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelfTabbed.tsx",
-        "title": "escolha os seus produtos por ambiente",
-        "cta": "/",
-        "tabs": [
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "count": 5,
-              "sort": "newest",
-              "tags": [
-                "cozinha"
-              ],
-              "typeTags": [],
-              "ids": []
-            },
-            "title": "Quarto"
-          }
-        ]
       }
     },
     {
