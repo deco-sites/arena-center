@@ -42,9 +42,9 @@ export default function Services({
               PLACEMENT[service.placement]
             } text-left items-center justify-center px-10`}
           >
-            <div class=" xl:w-[695px] xl:h-[495px] lg:w-[495px]  w-[324px] h-[295px] ">
+            <div class="xl:h-[495px] lg:w-[495px]  w-[324px] h-[295px] ">
               <Image
-                class="w-full h-full object-cover p-2 max-w-[695px]"
+                class="w-full h-full object-contain p-2"
                 src={service.image}
                 alt={service.label}
                 decoding="async"
@@ -54,7 +54,7 @@ export default function Services({
               />
             </div>
             <div class="xl:w-[581px] lg:w-[450px] text-xs flex items-start flex-col lg:mx-0">
-              <p class="text-primary text-2xl font-bold uppercase">
+              <p class="text-neutral-content text-2xl font-bold uppercase">
                 {service.label}
               </p>
               <p

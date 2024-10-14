@@ -24,40 +24,59 @@ interface AboutUs {
    */
   paragraph: string;
 }
-
 /** @titleBy alt */
-interface Social {
+export interface SocialItem {
   alt?: string;
   href?: string;
   image: ImageWidget;
+}
+
+/** @titleBy alt */
+interface Social {
+  socialTitle: string;
+  socialItems: SocialItem[];
+}
+
+/** @titleBy alt */
+export interface Methods {
+  /**@title icone da bandeira */
+  img: ImageWidget;
+  alt: string;
+}
+/** @titleBy paymentTitle */
+export interface PaymentMethod {
+  /**@title Titulo da forma de pagamento */
+  paymentTitle: string;
+  payment: Methods[];
 }
 
 interface Apps {
   icon: ImageWidget;
   link: string;
 }
+
 interface Props {
   aboutUs: AboutUs;
   links?: Link[];
-  socialTitle: string;
-  social?: Social[];
+  social?: Social;
   apps: Apps[];
-  paymentMethods?: Social[];
+  paymentMethods: PaymentMethod[];
   policies?: Item[];
   logo?: ImageWidget;
   trademark?: string;
+  newsletterProps: NewsletterProps;
 }
 
 function Footer({
   links = [],
-  social = [],
+  social,
   policies = [],
   paymentMethods = [],
   logo,
   trademark,
   aboutUs,
-  socialTitle,
   apps,
+  newsletterProps,
 }: Props) {
   return (
     <footer class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content">
@@ -155,13 +174,10 @@ function Footer({
           <ul class="flex flex-wrap gap-2">
           </ul>
         </div>
-
-        <hr class="w-full text-base-400" />
-
-        <div class="grid grid-flow-row sm:grid-flow-col gap-8">
-          <ul class="flex flex-col sm:flex-row gap-2 sm:gap-4 sm:items-center">
+        <div class="w-full gap-8">
+          <ul class="flex flex-col gap-8 text-center justify-center items-center">
             {policies.map(({ title, href }) => (
-              <li>
+              <li class="w-full">
                 <a class="text-[10px] font-medium" href={href}>
                   {title}
                 </a>

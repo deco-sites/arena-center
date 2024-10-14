@@ -28,25 +28,24 @@
           "title": "Lorem ipsum.",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
-          "greaterIcon": false
+          "greaterIcon": true
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
-          "greaterIcon": false
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/067df0fe-8f5b-438d-8f2d-9cfcd5bc68d9/Vector-(1).png"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
           "title": "Lorem ipsum",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         }
       ]
@@ -106,6 +105,11 @@
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/3832191e-1b3f-4307-bbba-0f06bee49264/garrafa.png",
           "paragraph": "Decoração",
+          "link": "/"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
+          "paragraph": "test",
           "link": "/"
         }
       ],
@@ -177,11 +181,12 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
+          "count": 4,
+          "wildcard": false,
           "sort": "newest",
           "tags": [],
           "typeTags": [],
-          "ids": [],
-          "count": 10
+          "ids": []
         },
         "title": "ESCOLHA POR AMBIENTE"
       }
@@ -238,7 +243,7 @@
           "tags": [],
           "typeTags": [],
           "ids": [],
-          "count": 10
+          "count": 4
         },
         "title": "PROMOÇÕES IMPERDÍVEIS"
       }
@@ -314,7 +319,8 @@
               "href": "#"
             }
           ],
-          "title": "Institucional"
+          "title": "Institucional",
+          "href": "#"
         },
         {
           "children": [
@@ -338,7 +344,8 @@
               "title": "FAQ"
             }
           ],
-          "title": "Atendimento"
+          "title": "Atendimento",
+          "href": "#"
         },
         {
           "children": [
@@ -378,109 +385,141 @@
             }
           ],
           "title": "Informações"
-        },
-        {
-          "children": [
-            {
-              "title": "47 9 9856 - 6816",
-              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a8a85b79-a318-48e3-8365-75794cebe0c1/whatsapp.svg"
-            },
-            {
-              "title": "47 9 9856 - 6816",
-              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/bad2fcf0-e077-4217-9cae-568a119d8dc9/telefone2.svg"
-            },
-            {
-              "title": "contato@gmail.com.br",
-              "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/09e6efed-97a4-43bd-bba5-02e505c6afda/mail.svg"
-            },
-            {
-              "title": "Horário de Atendimento"
-            },
-            {
-              "title": "Segunda a Sexta das 8:00 às 18:00",
-              "bold": true
-            }
-          ],
-          "title": "Contato"
         }
       ],
-      "social": [
-        {
+      "social": {
+        "0": {
           "alt": "facebook",
           "href": "#",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/83df025d-08fe-4d87-ab28-7384d01167d6/Facebook.png"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c11384e4-73ce-44b0-9239-6acd2b467cd0/Facebook-(1).png"
         },
-        {
+        "1": {
           "alt": "Instagram",
           "href": "#",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fdc04ac9-e843-4eb8-b329-ec9c8151ff2e/Instagram.png"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/61ca5b80-f920-4f33-8850-3ebcfea8d044/Instagram-(1).png"
         },
-        {
+        "2": {
           "alt": "Linkedin",
           "href": "#",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/672ef1d2-b036-481f-a9e0-c5a6f3c8c61d/LinkedIn.png"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c4e04399-4aab-40ec-a3f4-31d6336566dc/LinkedIn-(1).png"
         },
-        {
-          "alt": "tiktok",
-          "href": "#",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f7bfaaac-4801-476d-99b9-88e4c69f660d/Tik-Tok.png"
-        },
-        {
+        "3": {
           "alt": "twitter",
           "href": "#",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/bafd929f-2649-4e63-a073-2535c8ff45e7/Twitter.png"
-        }
-      ],
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c404f3e5-7cd2-4f81-af31-ced4806a4102/Twitter-(1).png"
+        },
+        "socialItems": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c11384e4-73ce-44b0-9239-6acd2b467cd0/Facebook-(1).png",
+            "alt": "facebook"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/61ca5b80-f920-4f33-8850-3ebcfea8d044/Instagram-(1).png",
+            "alt": "instagram"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c4e04399-4aab-40ec-a3f4-31d6336566dc/LinkedIn-(1).png",
+            "alt": "linkedin"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c404f3e5-7cd2-4f81-af31-ced4806a4102/Twitter-(1).png",
+            "alt": "twitter"
+          }
+        ],
+        "socialTitle": "Permaneça conectado"
+      },
       "paymentMethods": [
         {
-          "alt": "mastercard",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a3c91402-5e8b-4e0c-b46a-8f72f55dec28/LogosMastercard.png"
+          "payment": [
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a3c91402-5e8b-4e0c-b46a-8f72f55dec28/LogosMastercard.png",
+              "alt": "mastercard"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/30f98da4-f1c1-464c-ac8c-d8edc722ad1d/LogosVisa.png",
+              "alt": "visa"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5018d59a-5ba7-4cfc-8d2c-cdcb88e1ed1e/hiper.png",
+              "alt": "hiper"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fcfc1078-bfe5-44a2-9596-b7085e611ff7/elo.png",
+              "alt": "elo"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ba659bc8-9a12-4d63-a8f6-39cc29c14a26/diiner.png",
+              "alt": "Diners"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/efec2904-4f59-4bb3-97b8-e0480cefa296/SoroCred.jpg",
+              "alt": "soroCred"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/668a1f99-01db-419a-9ab6-cf7fe6b9350d/ameriicansvg.svg",
+              "alt": "american express"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/cdc7ddf9-dbca-415b-8db8-5808152acedf/LogosHipercard.png",
+              "alt": "hipercard"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/77382630-48f3-4390-aa70-72d3edbf6ce8/jcb.jpg",
+              "alt": "jcb"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7fd85362-e232-4763-b9a0-8deaba3389f8/banes.png",
+              "alt": "banes"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ab5a8aaf-38d2-4421-9b4a-58490095d03b/cabal.png",
+              "alt": "bal"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/672dcdca-047b-40a6-bd14-8830909562ae/mais.png",
+              "alt": "mais!"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/e569a2d8-1549-4c2a-8641-5029b1987fe6/Credz.png",
+              "alt": "Credz"
+            }
+          ],
+          "paymentTitle": "Cartões de crédito"
         },
         {
-          "alt": "Maestro",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/e94aaf80-25f5-4e23-8708-14d78ffdebbb",
-          "href": "#"
+          "payment": [
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a3c91402-5e8b-4e0c-b46a-8f72f55dec28/LogosMastercard.png",
+              "alt": "mastercard"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/30f98da4-f1c1-464c-ac8c-d8edc722ad1d/LogosVisa.png",
+              "alt": "visa"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fcfc1078-bfe5-44a2-9596-b7085e611ff7/elo.png",
+              "alt": "Elo"
+            }
+          ],
+          "paymentTitle": "Cartões de Débito"
         },
         {
-          "alt": "Google Pay",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/ccddc66e-baa8-4b44-a52c-ea48d8e111b5"
-        },
-        {
-          "alt": "Elo",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/11f90dd4-91b5-4b60-9304-f8a7a9be84eb",
-          "href": "#"
-        },
-        {
-          "alt": "Diners",
-          "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/20bb8e66-5495-4f92-a6d0-4967a66f3a44"
-        },
-        {
-          "alt": "Apple Pay",
-          "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/d4227ed7-333d-49b8-b3e2-35719f606640"
-        },
-        {
-          "alt": "Amex",
-          "href": "#",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/023472cf-782d-4a22-82d9-ecdf18466d96"
-        },
-        {
-          "alt": "Visa",
-          "image": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2177/2d213fd6-2754-4e92-a6f1-03825f71c7af"
+          "payment": [
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/631174e0-fa01-493b-9587-64e7daf86bfb/pix2x.png.png",
+              "alt": "pix"
+            },
+            {
+              "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/64c2fb38-a5d8-4607-bd1c-739d817f22e5/boleto.png",
+              "alt": "boleto"
+            }
+          ],
+          "paymentTitle": "Outros"
         }
       ],
       "policies": [
         {
-          "title": "Privacy Policy",
-          "href": "#"
-        },
-        {
-          "title": "Terms and Conditions",
-          "href": "#"
-        },
-        {
-          "title": "Cookies Policy",
+          "title": "Arena Center Distribuidora de Utilidades LTDA  |  CNPJ 08.267.363/0001-08  |  Av. Ayrton Senna - Jacarepaguá, Rio de Janeiro - RJ, 22775-005",
           "href": "#"
         }
       ],
@@ -515,7 +554,40 @@
           "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7f2172d6-e540-4f46-8ff7-aa34df0c942c/App-android.png",
           "link": "/"
         }
-      ]
+      ],
+      "trademark": "Copyright  LOREN IPSUM - 2024. Todos os direitos reservados.",
+      "newsletter": {
+        "empty": {
+          "title": "Assine nossa newsletter",
+          "description": "escrição"
+        },
+        "label": "Assine nossa newsletter",
+        "placeholder": "digite seu email"
+      },
+      "newsletterProps": {
+        "placeholder": "digite seu email",
+        "label": "enviar",
+        "empty": {
+          "title": "Assine nossa newsletter",
+          "description": "Fique por dentro de nossas novidades e descontos"
+        }
+      },
+      "newsLetter": {
+        "empty": {
+          "title": "titulo",
+          "description": "descrição"
+        },
+        "success": {
+          "title": "sucesso",
+          "description": "sucesso"
+        },
+        "failed": {
+          "title": "alha",
+          "description": "falha"
+        },
+        "label": "teste",
+        "placeholder": "placeholder"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx",
