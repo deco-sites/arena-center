@@ -14,7 +14,7 @@
         "images": [
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-            "alt": "pessoas",
+            "alt": "teste",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png"
           }
         ]
@@ -128,7 +128,6 @@
         "sort": "newest",
         "tags": [],
         "typeTags": [],
-
         "ids": [],
         "count": 10
       },
@@ -173,12 +172,11 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 4,
-          "wildcard": false,
           "sort": "newest",
           "tags": [],
           "typeTags": [],
-          "ids": []
+          "ids": [],
+          "count": 4
         },
         "title": "ESCOLHA POR AMBIENTE"
       }
