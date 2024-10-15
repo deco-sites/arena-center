@@ -54,7 +54,7 @@ export default function Services({
               />
             </div>
             <div class="xl:w-[581px] lg:w-[450px] text-xs flex items-start flex-col lg:mx-0">
-              <p class="text-neutral-content text-2xl font-bold uppercase">
+              <p class="text-primary text-2xl font-bold uppercase">
                 {service.label}
               </p>
               <p
