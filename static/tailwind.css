@@ -3662,6 +3662,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-\[15\%\] {
   bottom: 15%;
 }
+.bottom-\[25\%\] {
+  bottom: 25%;
+}
 .left-0 {
   left: 0px;
 }
@@ -3787,6 +3790,10 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 2.75rem;
   margin-right: 2.75rem;
 }
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -3830,6 +3837,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .mb-5 {
   margin-bottom: 1.25rem;
@@ -3890,9 +3900,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-9 {
-  margin-top: 2.25rem;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -4392,6 +4399,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .list-disc {
   list-style-type: disc;
+}
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
 }
 .auto-cols-max {
   grid-auto-columns: max-content;
@@ -4908,10 +4919,6 @@ details.collapse summary::-webkit-details-marker {
 .px-60 {
   padding-left: 15rem;
   padding-right: 15rem;
-}
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -6022,11 +6029,6 @@ details.collapse summary::-webkit-details-marker {
     max-width: 488px;
   }
 
-  .sm\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
-  }
-
   .sm\:grid-flow-col {
     grid-auto-flow: column;
   }
@@ -6239,10 +6241,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
   }
 
   .md\:items-center {
@@ -6463,6 +6461,10 @@ details.collapse summary::-webkit-details-marker {
     flex: 100px;
   }
 
+  .lg\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -6493,6 +6495,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 
   .lg\:gap-16 {

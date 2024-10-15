@@ -54,7 +54,11 @@ interface Apps {
   icon: ImageWidget;
   link: string;
 }
-
+interface Logos {
+  img: ImageWidget;
+  href: string;
+  alt: string;
+}
 interface Props {
   aboutUs: AboutUs;
   links?: Link[];
@@ -62,7 +66,7 @@ interface Props {
   apps: Apps[];
   paymentMethods: PaymentMethod[];
   policies?: Item[];
-  logo?: ImageWidget;
+  logo: Logos[];
   trademark?: string;
   newsletterProps: NewsletterProps;
 }
@@ -80,9 +84,9 @@ function Footer({
 }: Props) {
   return (
     <footer class="px-5 sm:px-0 mt-10 w-full sm:mt-11 bg-primary text-primary-content">
-      <div class="flex flex-col max-w-[1440px] mx-auto gap-5 sm:gap-10 py-10">
+      <div class="flex flex-col max-w-[1440px] mx-auto gap-5 py-10">
       <Newsletter {...newsletterProps} />
-        <ul class="grid grid-flow-row w-full mx-auto sm:grid-flow-col sm:columns-2 gap-6 px-4">
+        <ul class="grid grid-flow-row lg:grid-flow-col w-full justify-around mx-auto columns-2 gap-6 px-4">
           <li class="flex flex-col gap-4 col-start-1 col-end-3 w-full md:w-[180px]">
             <p class="text-xs font-medium">{aboutUs.title}</p>
             <p class="text-[10px]">{aboutUs.paragraph}</p>
@@ -116,7 +120,7 @@ function Footer({
           ))}
           <div class="flex flex-col gap-4">
             <p class="text-xs font-medium">{social?.socialTitle}</p>
-            <div class="flex justify-around">
+            <div class="flex md:justify-center lg:justify-around">
               {social?.socialItems.map(({ image, href, alt }) => (
                 <div class="">
                   <a href={href}>
@@ -167,7 +171,7 @@ function Footer({
             ))}
           </div>
         </ul>
-
+        <div class="mx-12"> <span class="text-xs font-normal text-base-400">{trademark}</span></div>
         <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
           <ul class="flex gap-4">
           </ul>
@@ -183,9 +187,20 @@ function Footer({
                 </a>
               </li>
             ))}
-            <div class="flex flex-nowrap items-center justify-between sm:justify-center gap-4">
-              <span class="text-xs font-normal text-base-400">{trademark}</span>
-              <img loading="lazy" src={logo} />
+            <div class="flex flex-col flex-nowrap items-center justify-between sm:justify-center gap-4">
+             
+              <div class="flex items-center justify-center gap-4">
+                {logo.map((item)=>(
+                  <a href={item.href} target="_blank">
+                    <Image
+                    class="object-contain"
+                    src={item.img}
+                    width={57}
+                    height={24}
+                    loading="lazy" />
+                  </a>
+                ))}
+              </div>
             </div>
           </ul>
         </div>
