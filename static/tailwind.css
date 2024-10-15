@@ -3662,6 +3662,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-\[15\%\] {
   bottom: 15%;
 }
+.bottom-\[25\%\] {
+  bottom: 25%;
+}
 .left-0 {
   left: 0px;
 }
@@ -3890,9 +3893,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-8 {
   margin-top: 2rem;
-}
-.mt-9 {
-  margin-top: 2.25rem;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -4392,6 +4392,10 @@ details.collapse summary::-webkit-details-marker {
 }
 .list-disc {
   list-style-type: disc;
+}
+.columns-2 {
+  -moz-columns: 2;
+       columns: 2;
 }
 .auto-cols-max {
   grid-auto-columns: max-content;
@@ -6022,11 +6026,6 @@ details.collapse summary::-webkit-details-marker {
     max-width: 488px;
   }
 
-  .sm\:columns-2 {
-    -moz-columns: 2;
-         columns: 2;
-  }
-
   .sm\:grid-flow-col {
     grid-auto-flow: column;
   }
@@ -6463,6 +6462,10 @@ details.collapse summary::-webkit-details-marker {
     flex: 100px;
   }
 
+  .lg\:grid-flow-col {
+    grid-auto-flow: column;
+  }
+
   .lg\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -6493,6 +6496,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:justify-center {
     justify-content: center;
+  }
+
+  .lg\:justify-around {
+    justify-content: space-around;
   }
 
   .lg\:gap-16 {

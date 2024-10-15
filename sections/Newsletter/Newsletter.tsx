@@ -20,7 +20,7 @@ export interface Props {
   label?: string;
   /** @description Input placeholder */
   placeholder?: string;
-  /** @hide true */
+  /** @ignore true */
   status?: "success" | "failed";
   logo: ImageWidget;
   consentText: string;
@@ -83,33 +83,27 @@ function Newsletter({
   if (status === "success" || status === "failed") {
     return (
       <div class="bg-primary flex gap-4 sm:gap-6 w-full py-5 sm:py-10">
-          <Image
-          src={logo}
-          width={150}
-          height={150}
-          />
         <div class="p-2 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
           <Icon
             size={80}
             class={clx(status === "success" ? "text-success" : "text-error")}
             id={status === "success" ? "check-circle" : "error"}
           />
-          {/* <Notice {...status === "success" ? success : failed} /> */}
+          <Notice {...status === "success" ? success : failed} />
         </div>
       </div>
     );
   }
   return (
     <div class="bg-primary flex flex-col md:flex-row gap-8 items-center md:items-start md:gap-4 sm:gap-6 w-80% md:px-10 max-w-[1440px] py-5 sm:py-10">
-              <Image
-              class="object-contain"
-        src={logo}
-        width={240}
-        height={40}
+        <Image
+          class="object-contain"
+          src={logo}
+          width={240}
+          height={40}
         />
       <div class="flex flex-col pb-1 w-full max-w-[570px] mx-auto">
-        {/* <Notice {...empty} /> */}
-
+        <Notice {...empty} />
         <form
           hx-target="closest section"
           hx-swap="outerHTML"

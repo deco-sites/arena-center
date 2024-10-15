@@ -82,7 +82,7 @@ function Footer({
     <footer class="px-5 sm:px-0 mt-10 w-full sm:mt-11 bg-primary text-primary-content">
       <div class="flex flex-col max-w-[1440px] mx-auto gap-5 sm:gap-10 py-10">
       <Newsletter {...newsletterProps} />
-        <ul class="grid grid-flow-row w-full mx-auto sm:grid-flow-col sm:columns-2 gap-6 px-4">
+        <ul class="grid grid-flow-row lg:grid-flow-col w-full justify-around mx-auto columns-2 gap-6 px-4">
           <li class="flex flex-col gap-4 col-start-1 col-end-3 w-full md:w-[180px]">
             <p class="text-xs font-medium">{aboutUs.title}</p>
             <p class="text-[10px]">{aboutUs.paragraph}</p>
@@ -116,7 +116,7 @@ function Footer({
           ))}
           <div class="flex flex-col gap-4">
             <p class="text-xs font-medium">{social?.socialTitle}</p>
-            <div class="flex justify-around">
+            <div class="flex md:justify-center lg:justify-around">
               {social?.socialItems.map(({ image, href, alt }) => (
                 <div class="">
                   <a href={href}>
