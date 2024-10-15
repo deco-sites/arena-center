@@ -79,14 +79,14 @@ function Footer({
   newsletterProps,
 }: Props) {
   return (
-    <footer class="px-5 sm:px-0 mt-10 sm:mt-11 bg-primary text-primary-content">
+    <footer class="px-5 sm:px-0 mt-10 w-full sm:mt-11 bg-primary text-primary-content">
+      <div class="flex flex-col max-w-[1440px] mx-auto gap-5 sm:gap-10 py-10">
       <Newsletter {...newsletterProps} />
-      <div class="container flex flex-col gap-5 sm:gap-10 py-10">
-        <ul class="grid grid-flow-row sm:grid-flow-col gap-6 ">
-          <div class="flex flex-col gap-4 max-w-[180px]">
+        <ul class="grid grid-flow-row w-full mx-auto sm:grid-flow-col sm:columns-2 gap-6 px-4">
+          <li class="flex flex-col gap-4 col-start-1 col-end-3 w-full md:w-[180px]">
             <p class="text-xs font-medium">{aboutUs.title}</p>
             <p class="text-[10px]">{aboutUs.paragraph}</p>
-          </div>
+          </li>
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4 max-w-[205px]">
               <a class="text-xs font-medium" href={href}>{title}</a>
@@ -150,7 +150,7 @@ function Footer({
                 </p>
                 {test.payment.map(({ img, alt }) => (
                   <li>
-                    <div class="bg-white flex-row flex justify-center items-center p-1 w-7 h-4">
+                    <div class="bg-white flex-row flex justify-center p-1 items-center w-8 h-5">
                       <Image
                         class="object-contain w-full h-full bg-white"
                         src={img}

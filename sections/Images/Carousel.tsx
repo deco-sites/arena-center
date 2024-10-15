@@ -135,6 +135,8 @@ function Carousel({ images = [], preload, interval }: Props) {
         "grid-cols-[32px_1fr_32px] min-h-[660px]",
         "sm:grid-cols-[112px_1fr_112px] sm:min-h-min",
         "w-screen",
+        "max-w-[1440px]",
+        "mx-auto",
       )}
     >
       <div class="col-span-full row-span-full">
