@@ -71,6 +71,7 @@ function PageResult(
     props: { partial: "hideLess" },
   });
   const infinite = layout?.pagination !== "pagination";
+
   return (
     <div class="grid grid-flow-row grid-cols-1 place-items-center">
       <div
@@ -218,7 +219,7 @@ function Result(props: SectionProps<typeof loader>) {
   });
   const results = (
     <span class="text-sm font-normal">
-      {page.pageInfo.recordPerPage} of {page.pageInfo.records} results
+      Exibindo {page.pageInfo.recordPerPage} de {page.pageInfo.records} itens
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
@@ -268,9 +269,14 @@ function Result(props: SectionProps<typeof loader>) {
               <div class="grid place-items-center grid-cols-1 sm:grid-cols-[250px_1fr]">
                 {device === "desktop" && (
                   <aside class="place-self-start flex flex-col gap-9">
-                    <span class="text-base font-semibold h-12 flex items-center">
+
+
+                    {
+                      /* <span class="text-base font-semibold h-12 flex items-center">
                       Filters
-                    </span>
+                    </span> */
+                    }
+
 
                     <Filters filters={filters} />
                   </aside>
@@ -296,28 +302,10 @@ function Result(props: SectionProps<typeof loader>) {
                             class="flex cursor-pointer text-gray-400 items-center justify-center peer-checked:text-primary"
                           >
                             <Icon
-                            id="grid2"
-                            width={16}
-                            height={16}
+                              id="grid2"
+                              width={16}
+                              height={16}
                             />
-                          </label>
-                        </div>
-                        <div>
-                          <input
-                            type="radio"
-                            id="grid-3"
-                            name="grid"
-                            class="peer hidden"
-                          />
-                          <label
-                            for="grid-3"
-                            class="flex text-gray-400 cursor-pointer items-center justify-center peer-checked:text-primary"
-                          >
-                            <Icon
-                                                        id="grid3"
-                                                        width={25}
-                                                        height={16}
-                                                        />
                           </label>
                         </div>
                         <div>
@@ -338,6 +326,7 @@ function Result(props: SectionProps<typeof loader>) {
                             />
                           </label>
                         </div>
+
                         <div>
                           <input
                             type="radio"

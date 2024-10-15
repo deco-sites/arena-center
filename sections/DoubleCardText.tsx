@@ -1,14 +1,14 @@
 export interface InfoSectionProps {
-    title: string;
-      /**
+  title: string;
+  /**
    * @title Paragrafo
    * @type text-area
    */
-    text: string;
+  text: string;
 }
 
 export interface Props {
-    infoSectionProps: InfoSectionProps[];
+  infoSectionProps: InfoSectionProps[];
 }
 
 export default function DoubleCardText({ infoSectionProps }: Props) {
@@ -21,5 +21,5 @@ export default function DoubleCardText({ infoSectionProps }: Props) {
                 </div>
             ))};
         </div>
-    )
+  );
 }
