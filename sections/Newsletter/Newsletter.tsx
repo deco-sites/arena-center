@@ -46,9 +46,9 @@ function Notice({ title, description }: {
   description?: string;
 }) {
   return (
-    <div class="w-full max-w-[1200px]">
+    <div class="w-full max-w-[1200px] pb-1">
       <div class="flex flex-col justify-center mx-auto items-center text-center gap-4">
-        <p class="text-[22px] font-semibold text-center sm:text-start">
+        <p class="text-[22px] mb-4 font-medium text-center sm:text-start">
           {title}
         </p>
       </div>
@@ -95,7 +95,7 @@ function Newsletter({
     );
   }
   return (
-    <div class="bg-primary flex flex-col md:flex-row gap-8 items-center md:items-start md:gap-4 sm:gap-6 w-80% md:px-10 max-w-[1440px] py-5 sm:py-10">
+    <div class="bg-primary flex flex-col md:flex-row gap-8 items-center md:gap-4 sm:gap-6 w-80% md:px-10 max-w-[1440px] py-5 sm:py-10">
         <Image
           class="object-contain"
           src={logo}
@@ -116,7 +116,7 @@ function Newsletter({
             type="text"
             placeholder={placeholder}
           />
-          <button class="bg-accent-content mx-auto h-5 text-primary-content text-xs px-7 rounded-lg" type="submit">
+          <button class="bg-accent-content mx-auto h-5 text-primary-content text-xs px-8 rounded-lg" type="submit">
             <span class="[.htmx-request_&]:hidden inline">
               {label}
             </span>

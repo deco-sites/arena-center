@@ -550,7 +550,6 @@
         },
         "consentText": "Ao se inscrever, você está aceitando nossa Política de Privacidade."
       },
-      "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/47fedbc9-f224-40f9-a2f6-beb8eabe627b/tec3.svg",
       "trademark": "Copyright  LOREN IPSUM - 2024. Todos os direitos reservados.",
       "contact": [
         {
@@ -587,7 +586,17 @@
         },
         "label": "teste",
         "placeholder": "placeholder"
-      }
+      },
+      "logo": [
+        {
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b0ace67c-e6a2-42ad-a8d2-a34c6e897515/image.svg",
+          "href": "deco.cx"
+        },
+        {
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/85cfff4c-5123-4e46-b9e1-042ab88e4830/tec3.svg",
+          "href": "https://tec3commerce.com.br/"
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

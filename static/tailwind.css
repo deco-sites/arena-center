@@ -3790,6 +3790,10 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 2.75rem;
   margin-right: 2.75rem;
 }
+.mx-12 {
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
 .mx-4 {
   margin-left: 1rem;
   margin-right: 1rem;
@@ -3833,6 +3837,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mb-2 {
   margin-bottom: 0.5rem;
+}
+.mb-4 {
+  margin-bottom: 1rem;
 }
 .mb-5 {
   margin-bottom: 1.25rem;
@@ -4912,10 +4919,6 @@ details.collapse summary::-webkit-details-marker {
 .px-60 {
   padding-left: 15rem;
   padding-right: 15rem;
-}
-.px-7 {
-  padding-left: 1.75rem;
-  padding-right: 1.75rem;
 }
 .px-8 {
   padding-left: 2rem;
@@ -6238,10 +6241,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:items-start {
-    align-items: flex-start;
   }
 
   .md\:items-center {
