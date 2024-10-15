@@ -46,14 +46,15 @@ import * as $$$$$$28 from "./sections/Product/ProductShelfTabbed.tsx";
 import * as $$$$$$29 from "./sections/Product/SearchResult.tsx";
 import * as $$$$$$30 from "./sections/Product/ShelfWithImage.tsx";
 import * as $$$$$$31 from "./sections/Product/Wishlist.tsx";
-import * as $$$$$$32 from "./sections/Session.tsx";
-import * as $$$$$$33 from "./sections/Social/InstagramPosts.tsx";
-import * as $$$$$$34 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$35 from "./sections/TextWithImage.tsx";
-import * as $$$$$$36 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$37 from "./sections/ThreeImages.tsx";
-import * as $$$$$$38 from "./sections/TopBar.tsx";
-import * as $$$$$$39 from "./sections/WideBanner.tsx";
+import * as $$$$$$32 from "./sections/SearchText.tsx";
+import * as $$$$$$33 from "./sections/Session.tsx";
+import * as $$$$$$34 from "./sections/Social/InstagramPosts.tsx";
+import * as $$$$$$35 from "./sections/Social/WhatsApp.tsx";
+import * as $$$$$$36 from "./sections/TextWithImage.tsx";
+import * as $$$$$$37 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$38 from "./sections/ThreeImages.tsx";
+import * as $$$$$$39 from "./sections/TopBar.tsx";
+import * as $$$$$$40 from "./sections/WideBanner.tsx";
 
 const manifest = {
   "loaders": {
@@ -96,14 +97,15 @@ const manifest = {
     "site/sections/Product/SearchResult.tsx": $$$$$$29,
     "site/sections/Product/ShelfWithImage.tsx": $$$$$$30,
     "site/sections/Product/Wishlist.tsx": $$$$$$31,
-    "site/sections/Session.tsx": $$$$$$32,
-    "site/sections/Social/InstagramPosts.tsx": $$$$$$33,
-    "site/sections/Social/WhatsApp.tsx": $$$$$$34,
-    "site/sections/TextWithImage.tsx": $$$$$$35,
-    "site/sections/Theme/Theme.tsx": $$$$$$36,
-    "site/sections/ThreeImages.tsx": $$$$$$37,
-    "site/sections/TopBar.tsx": $$$$$$38,
-    "site/sections/WideBanner.tsx": $$$$$$39,
+    "site/sections/SearchText.tsx": $$$$$$32,
+    "site/sections/Session.tsx": $$$$$$33,
+    "site/sections/Social/InstagramPosts.tsx": $$$$$$34,
+    "site/sections/Social/WhatsApp.tsx": $$$$$$35,
+    "site/sections/TextWithImage.tsx": $$$$$$36,
+    "site/sections/Theme/Theme.tsx": $$$$$$37,
+    "site/sections/ThreeImages.tsx": $$$$$$38,
+    "site/sections/TopBar.tsx": $$$$$$39,
+    "site/sections/WideBanner.tsx": $$$$$$40,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,
