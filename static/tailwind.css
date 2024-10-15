@@ -3677,9 +3677,6 @@ details.collapse summary::-webkit-details-marker {
 .left-4 {
   left: 1rem;
 }
-.left-8 {
-  left: 2rem;
-}
 .right-0 {
   right: 0px;
 }
@@ -3839,9 +3836,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .ml-1 {
   margin-left: 0.25rem;
-}
-.ml-14 {
-  margin-left: 3.5rem;
 }
 .ml-2 {
   margin-left: 0.5rem;
@@ -4126,6 +4120,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[10px\] {
   width: 10px;
 }
+.w-\[130px\] {
+  width: 130px;
+}
 .w-\[143px\] {
   width: 143px;
 }
@@ -4137,9 +4134,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[165px\] {
   width: 165px;
-}
-.w-\[193px\] {
-  width: 193px;
 }
 .w-\[200px\] {
   width: 200px;
@@ -4843,6 +4837,9 @@ details.collapse summary::-webkit-details-marker {
 .object-scale-down {
   -o-object-fit: scale-down;
      object-fit: scale-down;
+}
+.p-0 {
+  padding: 0px;
 }
 .p-1 {
   padding: 0.25rem;
@@ -6352,6 +6349,14 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 1024px) {
 
+  .lg\:left-4 {
+    left: 1rem;
+  }
+
+  .lg\:top-0 {
+    top: 0px;
+  }
+
   .lg\:mx-0 {
     margin-left: 0px;
     margin-right: 0px;
@@ -6362,12 +6367,24 @@ details.collapse summary::-webkit-details-marker {
     margin-right: auto;
   }
 
+  .lg\:ml-14 {
+    margin-left: 3.5rem;
+  }
+
+  .lg\:ml-3 {
+    margin-left: 0.75rem;
+  }
+
   .lg\:mt-6 {
     margin-top: 1.5rem;
   }
 
   .lg\:block {
     display: block;
+  }
+
+  .lg\:flex {
+    display: flex;
   }
 
   .lg\:grid {
@@ -6390,8 +6407,16 @@ details.collapse summary::-webkit-details-marker {
     width: 33.333333%;
   }
 
+  .lg\:w-24 {
+    width: 6rem;
+  }
+
   .lg\:w-\[1440px\] {
     width: 1440px;
+  }
+
+  .lg\:w-\[193px\] {
+    width: 193px;
   }
 
   .lg\:w-\[450px\] {
@@ -6474,6 +6499,10 @@ details.collapse summary::-webkit-details-marker {
     gap: 4rem;
   }
 
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
   .lg\:overflow-hidden {
     overflow: hidden;
   }
@@ -6489,6 +6518,16 @@ details.collapse summary::-webkit-details-marker {
   .lg\:bg-primary-content {
     --tw-bg-opacity: 1;
     background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
+  }
+
+  .lg\:px-2 {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+
+  .lg\:px-5 {
+    padding-left: 1.25rem;
+    padding-right: 1.25rem;
   }
 
   .lg\:px-8 {
@@ -6528,8 +6567,22 @@ details.collapse summary::-webkit-details-marker {
     line-height: 2.25rem;
   }
 
+  .lg\:text-\[14px\] {
+    font-size: 14px;
+  }
+
   .lg\:text-\[20px\] {
     font-size: 20px;
+  }
+
+  .lg\:text-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+
+  .lg\:text-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
   }
 
   .lg\:text-xl {
