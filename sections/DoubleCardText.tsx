@@ -19,9 +19,7 @@ export default function DoubleCardText({ infoSectionProps }: Props) {
                     <p class="text-primary text-2xl text-center items-start">{item.title}</p>
                     <p class="text-xs text-accent-content block max-w-[500px]">{item.text}</p>
                 </div>
-            ))}
+            ))};
         </div>
-      ))}
-    </div>
   );
 }
