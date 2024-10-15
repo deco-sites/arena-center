@@ -41,64 +41,64 @@ export async function action(props: Props, req: Request, ctx: AppContext) {
 export function loader(props: Props) {
   return { ...props, status: undefined };
 }
-// function Notice({ title, description }: {
-//   title?: string;
-//   description?: string;
-// }) {
-//   return (
-//     <div class="w-full max-w-[1200px]">
-//       <div class="flex flex-col justify-center mx-auto items-center text-center gap-4">
-//         <p class="text-[22px] font-semibold text-center sm:text-start">
-//           {title}
-//         </p>
-//       </div>
-//       <span class="text-xs font-normal text-base-400 text-center sm:text-start">
-//         {description}
-//       </span>
-//     </div>
-//   );
-// }
+function Notice({ title, description }: {
+  title?: string;
+  description?: string;
+}) {
+  return (
+    <div class="w-full max-w-[1200px]">
+      <div class="flex flex-col justify-center mx-auto items-center text-center gap-4">
+        <p class="text-[22px] font-semibold text-center sm:text-start">
+          {title}
+        </p>
+      </div>
+      <span class="text-xs font-normal text-base-400 text-center sm:text-start">
+        {description}
+      </span>
+    </div>
+  );
+}
 function Newsletter({
-  // empty = {
-  //   title: "Get top deals, latest trends, and more.",
-  //   description:
-  //     "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here.",
-  // },
-  // success = {
-  //   title: "Thank you for subscribing!",
-  //   description:
-  //     "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!",
-  // },
-  // failed = {
-  //   title: "Oops. Something went wrong!",
-  //   description:
-  //     "Something went wrong. Please try again. If the problem persists, please contact us.",
-  // },
+  empty = {
+    title: "Get top deals, latest trends, and more.",
+    description:
+      "Receive our news and promotions in advance. Enjoy and get 10% off your first purchase. For more information click here.",
+  },
+  success = {
+    title: "Thank you for subscribing!",
+    description:
+      "You’re now signed up to receive the latest news, trends, and exclusive promotions directly to your inbox. Stay tuned!",
+  },
+  failed = {
+    title: "Oops. Something went wrong!",
+    description:
+      "Something went wrong. Please try again. If the problem persists, please contact us.",
+  },
   label = "Sign up",
   placeholder = "Enter your email address",
-  // status,
+  status,
   logo,
   consentText,
 }: SectionProps<typeof loader, typeof action>) {
-  // if (status === "success" || status === "failed") {
-  //   return (
-  //     <div class="bg-primary flex gap-4 sm:gap-6 w-full py-5 sm:py-10">
-  //         <Image
-  //         src={logo}
-  //         width={150}
-  //         height={150}
-  //         />
-  //       <div class="p-2 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
-  //         <Icon
-  //           size={80}
-  //           class={clx(status === "success" ? "text-success" : "text-error")}
-  //           id={status === "success" ? "check-circle" : "error"}
-  //         />
-  //         {/* <Notice {...status === "success" ? success : failed} /> */}
-  //       </div>
-  //     </div>
-  //   );
-  // }
+  if (status === "success" || status === "failed") {
+    return (
+      <div class="bg-primary flex gap-4 sm:gap-6 w-full py-5 sm:py-10">
+          <Image
+          src={logo}
+          width={150}
+          height={150}
+          />
+        <div class="p-2 flex flex-col sm:flex-row items-center justify-center gap-5 sm:gap-10">
+          <Icon
+            size={80}
+            class={clx(status === "success" ? "text-success" : "text-error")}
+            id={status === "success" ? "check-circle" : "error"}
+          />
+          {/* <Notice {...status === "success" ? success : failed} /> */}
+        </div>
+      </div>
+    );
+  }
   return (
     <div class="bg-primary flex flex-col md:flex-row gap-8 items-center md:items-start md:gap-4 sm:gap-6 w-80% md:px-10 max-w-[1440px] py-5 sm:py-10">
               <Image

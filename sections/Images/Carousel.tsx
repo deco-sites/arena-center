@@ -169,8 +169,8 @@ function Carousel({ images = [], preload, interval }: Props) {
 
       <ul
         class={clx(
-          "col-span-full row-start-4 z-10",
-          "carousel justify-center gap-3",
+          // "col-span-full row-start-4 z-10",
+          // "carousel justify-center gap-3",
         )}
       >
         {images.map((_, index) => (

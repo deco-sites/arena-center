@@ -34,7 +34,7 @@
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/067df0fe-8f5b-438d-8f2d-9cfcd5bc68d9/Vector-(1).png"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/164d6f6c-ad4c-4196-800e-993aef070be3/teste.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
@@ -128,7 +128,6 @@
         "sort": "newest",
         "tags": [],
         "typeTags": [],
-
         "ids": [],
         "count": 10
       },
