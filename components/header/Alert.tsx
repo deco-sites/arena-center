@@ -43,21 +43,23 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
               class="carousel-item  flex items-center justify-center mx-auto lg:w-[800px]"
             >
               <span
-                class="px-5 py-2 text-center text-base font-bold text-accent-content"
+                class="px-2 lg:px-5 py-2 text-center lg:text-base font-bold text-accent-content text-[12px]"
                 dangerouslySetInnerHTML={{ __html: alert.title }}
               />
 
               {alert.cupom && (
-                <div class="flex ml-14 w-[193px] h-6 bg-gray-300 rounded-lg ">
-                  <p class="text-base-100 font-bold bg-primary w-24 h-6 text-center rounded-lg ">
-                    CUPOM
+                <div class="flex ml-2 lg:ml-14 lg:w-[193px] w-[130px] h-6 bg-gray-200 rounded-lg ">
+                  <p class="flex items-center justify-center text-base-100 font-bold bg-primary w-16 lg:w-24 h-6 text-center rounded-lg text-[12px] lg:text-[14px]">
+                    <span class="top-1">CUPOM</span>
                   </p>
-                  <span class="text-primary ml-3 font-bold">{alert.cupom}</span>
+                  <p class="flex items-center justify-center text-primary ml-1 lg:ml-3 font-bold text-[12px] lg:text-sm">
+                    <span>{alert.cupom}</span>
+                  </p>
                 </div>
               )}
 
               {alert.subtitle && (
-                <p class="text-[10px] w-32 font-light ml-4 text-accent-content">
+                <p class="hidden md:flex text-[10px] w-32 font-light ml-4 text-accent-content">
                   {alert.subtitle}
                 </p>
               )}

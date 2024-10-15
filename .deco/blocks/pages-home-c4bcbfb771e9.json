@@ -14,7 +14,7 @@
         "images": [
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-            "alt": "pessoas",
+            "alt": "teste",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png"
           }
         ]
@@ -128,7 +128,6 @@
         "sort": "newest",
         "tags": [],
         "typeTags": [],
-
         "ids": [],
         "count": 10
       },
@@ -173,12 +172,11 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 4,
-          "wildcard": false,
           "sort": "newest",
           "tags": [],
           "typeTags": [],
-          "ids": []
+          "ids": [],
+          "count": 4
         },
         "title": "ESCOLHA POR AMBIENTE"
       }
@@ -275,6 +273,15 @@
     },
     {
       "__resolveType": "site/sections/Footer/Footer.tsx",
+      "aboutUs": {
+        "0": {
+          "Title": "Arena Center",
+          "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut.",
+          "title": "Arena M"
+        },
+        "title": "Arena Center",
+        "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut."
+      },
       "links": [
         {
           "children": [
@@ -420,6 +427,16 @@
         ],
         "socialTitle": "Permaneça conectado"
       },
+      "apps": [
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7ae30aac-ad82-4daf-b909-38fc11f07934/App-Apple.png",
+          "link": "/"
+        },
+        {
+          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7f2172d6-e540-4f46-8ff7-aa34df0c942c/App-android.png",
+          "link": "/"
+        }
+      ],
       "paymentMethods": [
         {
           "payment": [
@@ -515,16 +532,25 @@
           "href": "#"
         }
       ],
-      "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/47fedbc9-f224-40f9-a2f6-beb8eabe627b/tec3.svg",
-      "aboutUs": {
-        "0": {
-          "Title": "Arena Center",
-          "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut.",
-          "title": "Arena M"
+      "newsletterProps": {
+        "status": "success",
+        "placeholder": "digite seu email",
+        "label": "enviar",
+        "empty": {
+          "title": "Assine nossa newsletter",
+          "description": "Fique por dentro de nossas novidades e descontos",
+          "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
         },
-        "title": "Arena Center",
-        "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut."
+        "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
+        "success": {
+          "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
+        },
+        "failed": {
+          "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
+        },
+        "consentText": "Ao se inscrever, você está aceitando nossa Política de Privacidade."
       },
+      "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/47fedbc9-f224-40f9-a2f6-beb8eabe627b/tec3.svg",
       "contact": [
         {
           "text": "titulo",
@@ -537,16 +563,6 @@
         }
       ],
       "socialTitle": "Permaneça conectado",
-      "apps": [
-        {
-          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7ae30aac-ad82-4daf-b909-38fc11f07934/App-Apple.png",
-          "link": "/"
-        },
-        {
-          "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7f2172d6-e540-4f46-8ff7-aa34df0c942c/App-android.png",
-          "link": "/"
-        }
-      ],
       "trademark": "Copyright  LOREN IPSUM - 2024. Todos os direitos reservados.",
       "newsletter": {
         "empty": {
@@ -555,14 +571,6 @@
         },
         "label": "Assine nossa newsletter",
         "placeholder": "digite seu email"
-      },
-      "newsletterProps": {
-        "placeholder": "digite seu email",
-        "label": "enviar",
-        "empty": {
-          "title": "Assine nossa newsletter",
-          "description": "Fique por dentro de nossas novidades e descontos"
-        }
       },
       "newsLetter": {
         "empty": {

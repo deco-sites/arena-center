@@ -13,7 +13,7 @@ export interface Props {
 
 export default function (props: Props) {
   return (
-    <div class="flex flex-row gap-10 md:gap-4 text-white max-w-[1440px] overflow-auto lg:overflow-visible mt-16 lg:mt-6 mx-auto px-6 md:justify-center">
+    <div class="flex flex-row gap-10 md:gap-4 text-white w-full max-w-[1440px] overflow-auto lg:overflow-visible mt-16 lg:mt-6 mx-auto px-6 md:justify-center">
       {props.images &&
         props.images.map((card) => (
           <a href={card.href}>
