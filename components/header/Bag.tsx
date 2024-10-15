@@ -29,10 +29,10 @@ function Bag() {
       >
         <span
           id={id}
-          class="hidden indicator-item badge badge-primary badge-sm left-8"
+          class="hidden indicator-item badge badge-primary badge-sm lg:left-4 top-2 lg:top-0"
         />
 
-        <div class="btn btn-ghost no-animation  text-secondary hover:border-primary flex flex-col">
+        <div class="btn btn-ghost no-animation  text-secondary hover:border-primary flex flex-col min-h-0 p-0 lg:px-2">
           <Image
             id="shopping_bag"
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
@@ -40,7 +40,7 @@ function Bag() {
             width={20}
             height={20}
           />
-          <p class="text-[10px] text-accent-content">Carrinho</p>
+          <p class="hidden lg:flex text-[10px] text-accent-content">Carrinho</p>
         </div>
       </label>
       <script
