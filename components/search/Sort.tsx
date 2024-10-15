@@ -21,6 +21,7 @@ const labels: Record<string, string> = {
   "release:desc": "Lançamento",
   "discount:desc": "Maior desconto",
 };
+
 function Sort({ sortOptions, url }: Props) {
   const current = getUrl(
     url,

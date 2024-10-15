@@ -123,6 +123,29 @@ function ProductInfo({ page }: Props) {
           : <OutOfStock productID={productID} />}
       </div>
 
+      {/* Shipping Simulation */}
+      {
+        /* <div class="mt-8">
+        <ShippingSimulationForm
+          items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
+        />
+      </div> */
+      }
+
+      {/* Garanty Icons */}
+      {
+        /* <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
+        {icons &&
+          icons.map((item) => (
+            <div class="flex items-center flex-col gap-3 ">
+              <Image src={item.icon} width={31} height={31} alt={item.title} />
+              <p class="text-accent-content text-[12px]">{item.title}</p>
+            </div>
+          ))}
+
+      </div> */
+      }
+
       {/* Description card */}
       {
         /* <div class="mt-4 sm:mt-6">
