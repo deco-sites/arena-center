@@ -2,6 +2,7 @@ import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import ProductCardSearch from "../../components/product/ProductCardSearch.tsx";
 import Filters from "../../components/search/Filters.tsx";
+import FiltersMobile from "../../components/search/FiltersMobile.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
@@ -12,6 +13,7 @@ import Drawer from "../ui/Drawer.tsx";
 import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
+
 export interface Layout {
   /**
    * @title Pagination
@@ -38,6 +40,7 @@ function NotFound() {
     </div>
   );
 }
+
 const useUrlRebased = (overrides: string | undefined, base: string) => {
   let url: string | undefined = undefined;
   if (overrides) {
@@ -51,6 +54,7 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
   }
   return url;
 };
+
 function PageResult(props: SectionProps<typeof loader>) {
   const { layout, startingPage = 0, url, partial } = props;
   const page = props.page!;
@@ -157,6 +161,7 @@ function PageResult(props: SectionProps<typeof loader>) {
     </div>
   );
 }
+
 const setPageQuerystring = (page: string, id: string) => {
   const element = document
     .getElementById(id)
@@ -180,6 +185,7 @@ const setPageQuerystring = (page: string, id: string) => {
     history.replaceState({ prevPage }, "", url.href);
   }).observe(element);
 };
+
 function Result(props: SectionProps<typeof loader>) {
   const container = useId();
   const controls = useId();
@@ -218,6 +224,7 @@ function Result(props: SectionProps<typeof loader>) {
   const sortBy = sortOptions.length > 0 && (
     <Sort sortOptions={sortOptions} url={url} />
   );
+
   return (
     <>
       <div
@@ -242,26 +249,22 @@ function Result(props: SectionProps<typeof loader>) {
                       </label>
                     </div>
                     <div class="flex-grow overflow-auto">
-                      <Filters filters={filters} />
+                      <FiltersMobile filters={filters} />
                     </div>
                   </div>
                 }
               >
-                <div class="flex sm:hidden justify-between items-end">
-                  <div class="flex flex-col">
-                    {results}
-                    {sortBy}
-                  </div>
-
+                <div class="flex sm:hidden justify-between items-center">
                   <label class="btn btn-ghost" for={controls}>
                     Filters
                   </label>
+                  <div class="flex flex-col">{sortBy}</div>
                 </div>
               </Drawer>
             )}
             <div class="group/items ">
               {device === "desktop" && (
-                <div class="flex justify-between gap-3 mt-5">
+                <div class="flex flex-col lg:flex-row justify-between gap-3 mt-5">
                   <div class="z-30">
                     <Filters filters={filters} />
                   </div>
@@ -296,7 +299,6 @@ function Result(props: SectionProps<typeof loader>) {
                           <Icon id="grid3" width={25} height={16} />
                         </label>
                       </div>
-
                       <div>
                         <input
                           type="radio"
@@ -310,7 +312,6 @@ function Result(props: SectionProps<typeof loader>) {
                           class="flex cursor-pointer items-center justify-center text-gray-400 peer-checked:text-primary"
                         >
                           <Icon id="grid4" width={34} height={15} />
-                          <div></div>
                         </label>
                       </div>
                     </div>
@@ -340,16 +341,19 @@ function Result(props: SectionProps<typeof loader>) {
     </>
   );
 }
+
 function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
   if (!page) {
     return <NotFound />;
   }
   return <Result {...props} page={page} />;
 }
+
 export const loader = (props: Props, req: Request) => {
   return {
     ...props,
     url: req.url,
   };
 };
+
 export default SearchResult;
