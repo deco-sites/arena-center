@@ -3795,10 +3795,6 @@ details.collapse summary::-webkit-details-marker {
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
-.mx-11 {
-  margin-left: 2.75rem;
-  margin-right: 2.75rem;
-}
 .mx-12 {
   margin-left: 3rem;
   margin-right: 3rem;
@@ -4203,6 +4199,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[363px\] {
   width: 363px;
+}
+.w-\[394px\] {
+  width: 394px;
 }
 .w-\[400px\] {
   width: 400px;
