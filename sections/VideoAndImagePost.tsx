@@ -84,7 +84,7 @@ const NewsPost = ({
 }: GroupNews) => (
   <div class="flex flex-col items-center gap-9 text-center">
     <div class="flex flex-col items-center">
-      <div class="sm:w-[351px] sm:h-[218px] w-[316px] h-[217px] rounded-xl flex items-center justify-center border border-accent">
+      <div class="sm:w-[351px] sm:h-[218px] w-[316px] h-[217px] rounded-xl flex items-center justify-center">
         {image
           ? (
             <Image
@@ -106,11 +106,11 @@ const NewsPost = ({
             </div>
           )}
       </div>
-      <div class="flex flex-col text-primary w-[316px]">
-        <h3 class="text-2xl font-semibold text-center py-[28px]">
+      <div class="flex flex-col items-start text-primary w-[316px]">
+        <h3 class="text-base font-bold py-[28px]">
           {titleNews}
         </h3>
-        <p class="text-base lg:text-2xl pb-[18px]  ">{subtitleNews}</p>
+        <p class="text-[#737373] text-xs pb-[18px] ">{subtitleNews}</p>
         <p class="text-[12px] h-[92px] overflow-y-auto">{post}</p>
       </div>
     </div>
@@ -125,10 +125,10 @@ export default function NewsPosts(props: Props) {
   };
 
   return (
-    <div class="w-full container px-4 py-8 flex flex-col gap-[104px] lg:gap-20 lg:py-10 lg:px-0 lg:w-[1300px]">
-      <h2 class="font-bold text-2xl text-center text-primary">{title}</h2>
+    <div class="w-full container px-4 py-8 flex flex-col mt-8 gap-[104px] lg:gap-2 lg:py-10 lg:px-0 lg:w-[1300px]">
+      <h2 class="font-bold px-10 text-2xl text-start text-primary">{title}</h2>
       {layout?.variation === "Grid" && (
-        <div class="flex flex-col lg:flex-row flex-wrap gap-10 md:max-h-[940px] max-h-[450px] overflow-x-auto">
+        <div class="flex flex-col mx-auto lg:justify-center lg:flex-row flex-wrap gap-10 md:max-h-[940px] max-h-[450px] overflow-hidden overflow-x-auto">
           {news?.map(({ video, image, titleNews, post, subtitleNews }) => (
             <NewsPost
               key={titleNews} // Add a unique key for each NewsPost

@@ -25,11 +25,11 @@ function Banner({ images, href, alt }: Props) {
   return (
     <a class="relative mx-auto w-screen hidden md:block" href={href}>
       <Picture>
-        <Source media="(max-width: 640px)" src={images.mobile} width={390} />
+        <Source media="(max-width: 640px)" src={images.mobile || images.desktop} width={390} />
         <Source
           media="(min-width: 640px)"
           src={images.desktop}
-          width={1200}
+          width={1440}
           height={176}
           loading={"lazy"}
         />
@@ -37,7 +37,7 @@ function Banner({ images, href, alt }: Props) {
           src={images.desktop}
           alt={alt}
           loading={"lazy"}
-          class=" w-screen  max-w-[1440px] px-6 mt-2 h-auto object-cover mx-auto"
+          class=" w-full  max-w-[1440px] px-6 mt-2 h-auto object-cover mx-auto"
         />
       </Picture>
     </a>

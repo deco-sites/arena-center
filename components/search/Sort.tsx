@@ -12,7 +12,7 @@ const getUrl = (href: string, value: string) => {
   return url.href;
 };
 const labels: Record<string, string> = {
-  "relevance:desc": "Relevância",
+  "relevance:desc": "Ordenar por",
   "price:desc": "Maior Preço",
   "price:asc": "Menor Preço",
   "orders:desc": "Mais vendidos",
@@ -33,10 +33,12 @@ function Sort({ sortOptions, url }: Props) {
   }));
   return (
     <>
-      <label for="sort" class="sr-only">Sort by</label>
+      <label for="sort" class="sr-only">
+        Sort by
+      </label>
       <select
         name="sort"
-        class="select w-full max-w-sm rounded-lg"
+        class="select w-[193px] h-6 rounded-md border border-secondary  min-h-0 text-[10px]"
         hx-on:change={useScript(() => {
           const select = event!.currentTarget as HTMLSelectElement;
           window.location.href = select.value;
@@ -48,7 +50,7 @@ function Sort({ sortOptions, url }: Props) {
             value={value}
             selected={value === current}
           >
-            {label}
+            {label === "Relevância" ? "Ordenar por" : label}
           </option>
         ))}
       </select>
