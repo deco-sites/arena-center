@@ -34,7 +34,7 @@
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/067df0fe-8f5b-438d-8f2d-9cfcd5bc68d9/Vector-(1).png"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/164d6f6c-ad4c-4196-800e-993aef070be3/teste.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
@@ -279,15 +279,15 @@
           "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut.",
           "title": "Arena M"
         },
-        "title": "Arena Center",
-        "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut."
+        "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. Ac netus sagittis cursus eros arcu pharetra lobortis nunc suscipit. Non diam mi id ut.",
+        "title": "Arena Center"
       },
       "links": [
         {
           "children": [
             {
-              "title": "Sobre o Arena Center",
-              "href": "#"
+              "href": "#",
+              "title": "Sobre o Arena Center"
             },
             {
               "title": "Nossas Lojas",
@@ -302,12 +302,12 @@
               "href": "#"
             },
             {
-              "title": "Trabalhe conosco",
-              "href": "#"
+              "href": "#",
+              "title": "Trabalhe conosco"
             },
             {
-              "title": "Sustentabilidade",
-              "href": "#"
+              "href": "#",
+              "title": "Sustentabilidade"
             },
             {
               "title": "Termos de uso",
@@ -371,8 +371,8 @@
               "href": "#"
             }
           ],
-          "href": "#",
-          "title": "CashBack"
+          "title": "CashBack",
+          "href": "#"
         },
         {
           "children": [
@@ -533,24 +533,24 @@
         }
       ],
       "newsletterProps": {
-        "status": "success",
         "placeholder": "digite seu email",
         "label": "enviar",
         "empty": {
+          "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
           "title": "Assine nossa newsletter",
-          "description": "Fique por dentro de nossas novidades e descontos",
-          "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
+          "description": "Fique por dentro de nossas novidades e descontos"
         },
         "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
         "success": {
           "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
         },
         "failed": {
-          "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
+          "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
+          "title": "Falha"
         },
         "consentText": "Ao se inscrever, você está aceitando nossa Política de Privacidade."
       },
-      "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/47fedbc9-f224-40f9-a2f6-beb8eabe627b/tec3.svg",
+      "trademark": "Copyright  LOREN IPSUM - 2024. Todos os direitos reservados.",
       "contact": [
         {
           "text": "titulo",
@@ -563,7 +563,6 @@
         }
       ],
       "socialTitle": "Permaneça conectado",
-      "trademark": "Copyright  LOREN IPSUM - 2024. Todos os direitos reservados.",
       "newsletter": {
         "empty": {
           "title": "Assine nossa newsletter",
@@ -587,7 +586,17 @@
         },
         "label": "teste",
         "placeholder": "placeholder"
-      }
+      },
+      "logo": [
+        {
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b0ace67c-e6a2-42ad-a8d2-a34c6e897515/image.svg",
+          "href": "deco.cx"
+        },
+        {
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/85cfff4c-5123-4e46-b9e1-042ab88e4830/tec3.svg",
+          "href": "https://tec3commerce.com.br/"
+        }
+      ]
     }
   ],
   "__resolveType": "website/pages/Page.tsx",

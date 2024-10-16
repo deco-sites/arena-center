@@ -265,8 +265,6 @@
     "placeholder": "digite seu email",
     "label": "enviar",
     "empty": {
-      "title": "Assine nossa newsletter",
-      "description": "Fique por dentro de nossas novidades e descontos",
       "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
     },
     "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
@@ -274,7 +272,8 @@
       "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
     },
     "failed": {
-      "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png"
+      "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
+      "title": "Falha"
     },
     "consentText": "Ao se inscrever, você está aceitando nossa Política de Privacidade.",
     "status": "success"
