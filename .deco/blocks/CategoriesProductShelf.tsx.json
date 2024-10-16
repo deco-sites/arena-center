@@ -1,0 +1,19 @@
+{
+  "__resolveType": "site/sections/Product/ShelfWithImage.tsx",
+  "section": {
+    "__resolveType": "site/sections/Product/ProductShelf.tsx",
+    "products": {
+      "__resolveType": "vnda/loaders/productList.ts",
+      "count": 10,
+      "sort": "newest",
+      "tags": [
+        "decoracao"
+      ],
+      "typeTags": [],
+      "ids": []
+    }
+  },
+  "image": {
+    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/48475062-46da-401d-b0c2-766697d1c636/image.png"
+  }
+}

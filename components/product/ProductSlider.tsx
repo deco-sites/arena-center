@@ -17,7 +17,7 @@ function ProductSlider({ products, itemListName }: Props) {
     <>
       <div
         id={id}
-        class="grid grid-rows-1 mx-11"
+        class="grid grid-rows-1 px-11 "
         style={{
           gridTemplateColumns: "min-content 1fr min-content",
         }}
@@ -30,7 +30,7 @@ function ProductSlider({ products, itemListName }: Props) {
                 class={clx(
                   "carousel-item",
                   "first:pl-5 first:sm:pl-0",
-                  "last:pr-5 last:sm:pr-0",
+                  "last:pr-5 last:sm:pr-0"
                 )}
               >
                 <ProductCard

@@ -169,16 +169,62 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "sort": "newest",
-          "tags": [],
-          "typeTags": [],
-          "ids": [],
-          "count": 4
+        "__resolveType": "site/sections/CategoriesProdutctsShelf.tsx",
+        "section": [
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Product/ProductShelf.tsx",
+              "products": {
+                "__resolveType": "vnda/loaders/productList.ts",
+                "sort": "newest",
+                "tags": [
+                  "decoracao"
+                ],
+                "typeTags": [],
+                "ids": [],
+                "count": 6
+              }
+            }
+          },
+          {
+            "__resolveType": "website/sections/Rendering/Lazy.tsx",
+            "section": {
+              "__resolveType": "site/sections/Product/ProductShelf.tsx"
+            }
+          }
+        ],
+        "image": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4f1996af-e46a-4883-a212-65043d8e4b2c/categoryShelf.png",
+          "href": "/",
+          "alt": "teste"
         },
-        "title": "ESCOLHA POR AMBIENTE"
+        "products1": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "count": 10,
+          "sort": "newest",
+          "tags": [
+            "decoracao"
+          ],
+          "typeTags": [],
+          "ids": []
+        },
+        "title": "escolha os seus produtos por ambiente",
+        "productList": [
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "decoracao"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 10
+            },
+            "title": "Decoração"
+          }
+        ]
       }
     },
     {
