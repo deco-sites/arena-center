@@ -171,7 +171,6 @@ function Footer({
             ))}
           </div>
         </ul>
-        <div class="mx-12"> <span class="text-xs font-normal text-base-400">{trademark}</span></div>
         <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
           <ul class="flex gap-4">
           </ul>
@@ -205,6 +204,7 @@ function Footer({
           </ul>
         </div>
       </div>
+      <div class="mx-12 pb-4"> <span class="text-xs font-normal text-base-400">{trademark}</span></div>
     </footer>
   );
 }

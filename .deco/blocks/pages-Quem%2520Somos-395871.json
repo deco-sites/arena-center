@@ -9,10 +9,14 @@
       }
     },
     {
-      "__resolveType": "site/sections/GreaterBanner.tsx",
-      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9d9003ed-0705-43dd-8ea5-201a4a4969ad/quem-somos-banner.png",
-      "width": 1440,
-      "height": 200
+      "__resolveType": "site/sections/Images/Carousel.tsx",
+      "images": [
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9d9003ed-0705-43dd-8ea5-201a4a4969ad/quem-somos-banner.png",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9d9003ed-0705-43dd-8ea5-201a4a4969ad/quem-somos-banner.png",
+          "alt": "arena center"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/TextWithImage.tsx",
@@ -46,14 +50,68 @@
       "__resolveType": "site/sections/DoubleCardText.tsx",
       "infoSectionProps": [
         {
-          "text": "Lorem ipsum dolor sit amet consectetur. Id justo purus mi commodo. Nulla donec dignissim lacus dis senectus tincidunt suspendisse. In ornare vitae mauris elit sapien. Posuere enim lectus ligula aenean fringilla risus arcu sit. Lobortis volutpat magna leo interdum. Velit vitae quisque nulla etiam at. Senectus consequat nullam luctus habitasse enim ipsum diam mi cursus. Id enim ultrices condimentum lacus nulla feugiat at nunc venenatis. Laoreet aliquam fermentum lectus elementum ipsum consequat massa a quisque. Id rutrum amet velit sed. Ac pulvinar diam vitae mattis id. Tempus varius tempor arcu enim ultrices diam sollicitudin arcu. Augue nisl luctus orci mauris a nunc dignissim morbi vel. Vitae sit eget eget in. Nibh orci elementum est ipsum sed dolor egestas. Justo gravida ultricies integer id. Eget in tristique scelerisque sed diam. Risus faucibus enim senectus ac felis pellentesque. Non amet hac bibendum nunc sed lectus lectus vestibulum sem. Mattis feugiat consectetur volutpat in nullam sed bibendum velit a. Bibendum egestas ut ut eget tortor risus phasellus pharetra cras. Leo mattis nam pretium amet dui nunc sit nibh elit. Velit arcu congue integer velit sit augue at proin. Et lacus eros vel hendrerit ac. Diam semper tortor orci non ultricies urna urna scelerisque orci. Nibh scelerisque aliquam est adipiscing tristique bibendum. Sit adipiscing elit ultrices feugiat. Posuere pellentesque massa turpis id faucibus. Faucibus hac leo habitasse porttitor dui id et. Sodales est libero donec ac lorem eget. Ullamcorper rhoncus suspendisse tristique velit lorem. Condimentum eu et malesuada volutpat vel nibh odio cursus. Habitasse nisl lectus ut scelerisque. Viverra pellentesque dolor elit facilisis bibendum in blandit. Elementum aliquam non placerat lectus. Tincidunt aliquam sed varius diam sem. Ullamcorper vitae risus ut hac venenatis fames. ",
+          "text": "<p><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Id justo purus mi commodo. Nulla donec dignissim lacus dis senectus tincidunt suspendisse. In ornare vitae mauris elit sapien. Posuere enim lectus ligula aenean fringilla risus arcu sit. Lobortis volutpat magna leo interdum. Velit vitae quisque nulla etiam at. Senectus consequat nullam luctus habitasse enim ipsum diam mi cursus. Id enim ultrices condimentum lacus nulla feugiat at nunc venenatis. Laoreet aliquam fermentum lectus elementum ipsum consequat massa a quisque. Id rutrum amet velit sed. Ac pulvinar diam vitae mattis id. Tempus varius tempor arcu enim ultrices diam sollicitudin arcu. Augue nisl luctus orci mauris a nunc dignissim morbi vel. Vitae sit eget eget in. Nibh orci elementum est ipsum sed dolor egestas. Justo gravida ultricies integer id. Eget in tristique scelerisque sed diam. Risus faucibus enim senectus ac felis pellentesque. Non amet hac bibendum nunc sed lectus lectus vestibulum sem. Mattis feugiat consectetur volutpat in nullam sed bibendum velit a. Bibendum egestas ut ut eget tortor risus phasellus pharetra cras. Leo mattis nam pretium amet dui nunc sit nibh elit. Velit arcu congue integer velit sit augue at proin. Et lacus eros vel hendrerit ac. Diam semper tortor orci non ultricies urna urna scelerisque orci. Nibh scelerisque aliquam est adipiscing tristique bibendum. Sit adipiscing elit ultrices feugiat. Posuere pellentesque massa turpis id faucibus. Faucibus hac leo habitasse porttitor dui id et. Sodales est libero donec ac lorem eget. Ullamcorper rhoncus suspendisse tristique velit lorem. Condimentum eu et malesuada volutpat vel nibh odio cursus. Habitasse nisl lectus ut scelerisque. Viverra pellentesque dolor elit facilisis bibendum in blandit. Elementum aliquam non placerat lectus. Tincidunt aliquam sed varius diam sem. Ullamcorper vitae risus ut hac venenatis fames.</span></p>",
           "title": "A essência de uma empresa de sucesso"
         },
         {
           "title": "Seu lar, do seu jeito",
-          "text": "Lorem ipsum dolor sit amet consectetur. Id justo purus mi commodo. Nulla donec dignissim lacus dis senectus tincidunt suspendisse. In ornare vitae mauris elit sapien. Posuere enim lectus ligula aenean fringilla risus arcu sit. Lobortis volutpat magna leo interdum. Velit vitae quisque nulla etiam at. Senectus consequat nullam luctus habitasse enim ipsum diam mi cursus. Id enim ultrices condimentum lacus nulla feugiat at nunc venenatis. Laoreet aliquam fermentum lectus elementum ipsum consequat massa a quisque. Id rutrum amet velit sed. Ac pulvinar diam vitae mattis id. Tempus varius tempor arcu enim ultrices diam sollicitudin arcu. Augue nisl luctus orci mauris a nunc dignissim morbi vel. Vitae sit eget eget in. Nibh orci elementum est ipsum sed dolor egestas. Justo gravida ultricies integer id. Eget in tristique scelerisque sed diam. Risus faucibus enim senectus ac felis pellentesque. Non amet hac bibendum nunc sed lectus lectus vestibulum sem. Mattis feugiat consectetur volutpat in nullam sed bibendum velit a. Bibendum egestas ut ut eget tortor risus phasellus pharetra cras. Leo mattis nam pretium amet dui nunc sit nibh elit. Velit arcu congue integer velit sit augue at proin. Et lacus eros vel hendrerit ac. Diam semper tortor orci non ultricies urna urna scelerisque orci. Nibh scelerisque aliquam est adipiscing tristique bibendum. Sit adipiscing elit ultrices feugiat. Posuere pellentesque massa turpis id faucibus. Faucibus hac leo habitasse porttitor dui id et. Sodales est libero donec ac lorem eget. Ullamcorper rhoncus suspendisse tristique velit lorem. Condimentum eu et malesuada volutpat vel nibh odio cursus. Habitasse nisl lectus ut scelerisque. Viverra pellentesque dolor elit facilisis bibendum in blandit. Elementum aliquam non placerat lectus. Tincidunt aliquam sed varius diam sem. Ullamcorper vitae risus ut hac venenatis fames. "
+          "text": "<p><span style=\"font-size: 8pt\">Lorem ipsum dolor sit amet consectetur. Id justo purus mi commodo. Nulla donec dignissim lacus dis senectus tincidunt suspendisse. In ornare vitae mauris elit sapien. Posuere enim lectus ligula aenean fringilla risus arcu sit. Lobortis volutpat magna leo interdum. Velit vitae quisque nulla etiam at. Senectus consequat nullam luctus habitasse enim ipsum diam mi cursus. Id enim ultrices condimentum lacus nulla feugiat at nunc venenatis. Laoreet aliquam fermentum lectus elementum ipsum consequat massa a quisque. Id rutrum amet velit sed. Ac pulvinar diam vitae mattis id. Tempus varius tempor arcu enim ultrices diam sollicitudin arcu. Augue nisl luctus orci mauris a nunc dignissim morbi vel. Vitae sit eget eget in. Nibh orci elementum est ipsum sed dolor egestas. Justo gravida ultricies integer id. Eget in tristique scelerisque sed diam. Risus faucibus enim senectus ac felis pellentesque. Non amet hac bibendum nunc sed lectus lectus vestibulum sem. Mattis feugiat consectetur volutpat in nullam sed bibendum velit a. Bibendum egestas ut ut eget tortor risus phasellus pharetra cras. Leo mattis nam pretium amet dui nunc sit nibh elit. Velit arcu congue integer velit sit augue at proin. Et lacus eros vel hendrerit ac. Diam semper tortor orci non ultricies urna urna scelerisque orci. Nibh scelerisque aliquam est adipiscing tristique bibendum. Sit adipiscing elit ultrices feugiat. Posuere pellentesque massa turpis id faucibus. Faucibus hac leo habitasse porttitor dui id et. Sodales est libero donec ac lorem eget. Ullamcorper rhoncus suspendisse tristique velit lorem. Condimentum eu et malesuada volutpat vel nibh odio cursus. Habitasse nisl lectus ut scelerisque. Viverra pellentesque dolor elit facilisis bibendum in blandit. Elementum aliquam non placerat lectus. Tincidunt aliquam sed varius diam sem. Ullamcorper vitae risus ut hac venenatis fames.</span></p>"
         }
       ]
+    },
+    {
+      "__resolveType": "site/sections/VideoAndImagePost.tsx",
+      "title": "Nossos eventos e ações na mídia",
+      "news": [
+        {
+          "titleNews": "Título 1: Loren Ipsum",
+          "subtitleNews": "Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis.  ",
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+          }
+        },
+        {
+          "titleNews": "Título 1: Loren Ipsum",
+          "subtitleNews": "Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis.  ",
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+          }
+        },
+        {
+          "titleNews": "Título 1: Loren Ipsum",
+          "subtitleNews": "Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis.  ",
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+          }
+        },
+        {
+          "titleNews": "Título 1: Loren Ipsum",
+          "subtitleNews": "Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis.  ",
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+          }
+        },
+        {
+          "titleNews": "Título 1: Loren Ipsum",
+          "subtitleNews": "Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis.  ",
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+          }
+        },
+        {
+          "titleNews": "Título 1: Loren Ipsum",
+          "subtitleNews": "Lorem ipsum dolor sit amet consectetur. Lectus sagittis sed non ultricies sollicitudin natoque fames. Imperdiet sed et pharetra amet. Mattis vulputate egestas volutpat ut et commodo. Non libero eget vulputate pretium non quis.  ",
+          "image": {
+            "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+          }
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "AC-Footer"
+      }
     }
   ],
   "seo": {
