@@ -76,13 +76,13 @@ function ProductCard({
     <div
       {...event}
       class={clx(
-        "card card-compact group text-sm min-w-[295px] min-h-[498px]",
+        "card card-compact group text-sm min-w-[145px] min-h-[258px]",
         _class
       )}
     >
       <figure
         class={clx(
-          "relative bg-base-100  min-w-[295px] min-h-[498px]",
+          "relative bg-base-100  min-w-[145px] min-h-[258px]",
           "rounded border border-transparent",
           "group-hover:border-primary"
         )}

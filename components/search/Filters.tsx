@@ -79,13 +79,13 @@ function FilterValues({ key, values }: FilterToggle) {
 
 function Filters({ filters, categoryList }: Props) {
   return (
-    <div class="flex gap-3">
+    <div class="flex gap-3 ">
       <div class="relative">
         <input type="checkbox" id="category-toggle" class="peer hidden" />
 
         <label
           for="category-toggle"
-          class="select w-[193px] h-6 rounded-md border border-secondary  min-h-0 text-[10px]"
+          class="select w-[193px] h-6 rounded-md border border-secondary  min-h-0 text-[10px] "
         >
           Categoria
         </label>
@@ -111,7 +111,7 @@ function Filters({ filters, categoryList }: Props) {
 
         <label
           for="subcategory-toggle"
-          class="select w-[193px] h-6 rounded-md border border-secondary  min-h-0 text-[10px]"
+          class="select w-[193px] h-6 rounded-md border border-secondary  min-h-0 text-[10px] "
         >
           Subcategoria
         </label>
@@ -137,7 +137,7 @@ function Filters({ filters, categoryList }: Props) {
 
         <label
           for="price-toggle"
-          class="select w-[193px] h-6 rounded-md border border-secondary  min-h-0 text-[10px]"
+          class="select w-[193px] h-6 rounded-md border border-secondary  min-h-0 text-[10px] "
         >
           Preço
         </label>
