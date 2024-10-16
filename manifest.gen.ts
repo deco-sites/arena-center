@@ -53,7 +53,8 @@ import * as $$$$$$35 from "./sections/TextWithImage.tsx";
 import * as $$$$$$36 from "./sections/Theme/Theme.tsx";
 import * as $$$$$$37 from "./sections/ThreeImages.tsx";
 import * as $$$$$$38 from "./sections/TopBar.tsx";
-import * as $$$$$$39 from "./sections/WideBanner.tsx";
+import * as $$$$$$39 from "./sections/VideoAndImagePost.tsx";
+import * as $$$$$$40 from "./sections/WideBanner.tsx";
 
 const manifest = {
   "loaders": {
@@ -103,7 +104,8 @@ const manifest = {
     "site/sections/Theme/Theme.tsx": $$$$$$36,
     "site/sections/ThreeImages.tsx": $$$$$$37,
     "site/sections/TopBar.tsx": $$$$$$38,
-    "site/sections/WideBanner.tsx": $$$$$$39,
+    "site/sections/VideoAndImagePost.tsx": $$$$$$39,
+    "site/sections/WideBanner.tsx": $$$$$$40,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,
