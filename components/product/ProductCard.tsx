@@ -210,7 +210,7 @@ function ProductCard({
               item={item}
               class={clx(
                 "btn",
-                "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full",
+                "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full min-h-0 h-7",
                 "hover:!bg-primary",
                 "hover:!text-base-100",
               )}
@@ -221,7 +221,7 @@ function ProductCard({
               href={relativeUrl}
               class={clx(
                 "btn",
-                "btn-outline justify-start border-none !text-sm !font-medium px-0 no-animation w-full h-29",
+                "btn-outline justify-start border-none text-center !text-sm !font-medium px-0 no-animation w-full h-29",
                 "hover:!bg-transparent",
                 "disabled:!bg-transparent disabled:!opacity-75",
                 "btn-error hover:!text-error disabled:!text-error",
