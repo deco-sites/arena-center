@@ -30,7 +30,7 @@ export interface TopItem {
 interface Props {
   /**
    * @title Conteudo
-   * @maximum 4 */
+   * @maxItem 4 */
   content: TopItem[];
 }
 
@@ -38,12 +38,12 @@ export default function TopBar({ content }: Props) {
   const device = useDevice();
   if (device !== "desktop") {
     return (
-      <div class="flex items-center overflow-auto mx-auto bg-primary w-screen px-4 md:max-w-[1440px] py-3 h-auto">
+      <div class="flex items-center overflow-auto mx-auto bg-primary w-screen px-4 md:max-w-[1440px]  h-auto">
         {content.map((item) => (
           <a
             href={item.href}
             target="blank"
-            class="flex items-center w-full mr-7 md:mr-0 ml-6 h-[100px]"
+            class="flex items-center w-full md:mr-0 ml-6 h-[100px]"
           >
             <div class="flex justify-center items-center w-[90px] h-[73px]">
               {item.mobileImage && (
@@ -56,7 +56,7 @@ export default function TopBar({ content }: Props) {
                 />
               )}
             </div>
-            <div class="ml-6 w-[240px] px-2 text-base text-primary-content">
+            <div class="w-[240px] px-2 text-base text-primary-content">
               <p class="font-normal text-xs">{item.title}</p>
               <p class="font-extralight text-xs">{item.subtitle}</p>
             </div>
@@ -66,7 +66,7 @@ export default function TopBar({ content }: Props) {
     );
   }
   return (
-    <div class="flex md:justify-around items-center mx-auto mt-5 bg-primary lg:bg-primary-content w-screen md:max-w-[1440px] h-auto md:overflow-hidden">
+    <div class="flex md:justify-around items-center mx-auto bg-primary lg:bg-primary-content w-screen md:max-w-[1440px] h-auto md:overflow-hidden">
       {content.map((item) => (
         <a
           href={item.href}
@@ -76,15 +76,15 @@ export default function TopBar({ content }: Props) {
           <div class="flex justify-center items-center">
             {item.image && (
               <Image
-                class="lg:w-[94px] w-full lg:h-[34px] object-contain text-primary-content lg:text-secondary"
+                class="lg:w-[34px] w-full lg:h-[34px] object-contain text-primary-content lg:text-secondary"
                 src={item.image}
                 alt={item.title}
-                width={item.greaterIcon ? 94 : 34}
+                width={34}
                 height={34}
               />
             )}
           </div>
-          <div class="ml-6 w-[200px] text-base text-primary-content lg:text-secondary">
+          <div class="ml-3 w-[200px] text-base text-primary-content lg:text-secondary">
             <p class="text-[10px]">{item.title}</p>
             <p class="font-extralight text-[10px]">{item.subtitle}</p>
           </div>

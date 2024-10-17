@@ -30,7 +30,7 @@
       "__resolveType": "site/sections/TopBar.tsx",
       "content": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/0925d19b-074e-4d74-85d7-f191ee9836d5/cama.svg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
           "title": "Lorem ipsum.",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
@@ -39,19 +39,19 @@
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/164d6f6c-ad4c-4196-800e-993aef070be3/teste.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "title": "Lorem ipsum",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
           "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur lacus nibh vivamus ornare enim ultricies.",
+          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
         }
       ]

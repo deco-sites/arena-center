@@ -6539,6 +6539,10 @@ details.collapse summary::-webkit-details-marker {
     width: 193px;
   }
 
+  .lg\:w-\[34px\] {
+    width: 34px;
+  }
+
   .lg\:w-\[495px\] {
     width: 495px;
   }
@@ -6553,10 +6557,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-\[800px\] {
     width: 800px;
-  }
-
-  .lg\:w-\[94px\] {
-    width: 94px;
   }
 
   .lg\:w-auto {
