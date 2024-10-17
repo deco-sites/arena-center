@@ -103,6 +103,12 @@
       "section": {
         "__resolveType": "AC-Footer"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "AC-whatsapp"
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"

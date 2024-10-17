@@ -7,6 +7,8 @@ import ProductSlider from "../components/product/ProductSlider.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { useOffer } from "../sdk/useOffer.ts";
 import { useSendEvent } from "../sdk/useSendEvent.ts";
+import { useSection } from "@deco/deco/hooks";
+import { useComponent } from "../sections/Component.tsx";
 
 /** @titleby title */
 export interface ProductCategoryList {
@@ -23,12 +25,14 @@ export interface Props {
     href?: string;
   };
   title: string;
+  index: number;
 }
-function CategoriesProductsShelf({ productList, image,title }: Props) {
-
- 
 
   
+
+function CategoriesProductsShelf({ productList, image, title, index = 0 }: Props) {
+  
+  const products = productList[index].products ; 
   //  const viewItemListEvent = useSendEvent({
   //    on: "view",
   //    event: {
@@ -45,10 +49,17 @@ function CategoriesProductsShelf({ productList, image,title }: Props) {
   //      },
   //    },
   //  });
+
   return (
     <div class="container max-w-[1440px] mx-auto mt-10 px-11">
       <div>
-        <p>{ title }</p>
+        <p>{title}</p>
+        {productList.map((item, index) => (
+          <button class="btn" hx-get={useSection({props: {index}})} hx-target="closest section" hx-swap="outerHTML"
+          >
+            {item.title}
+          </button>
+        ))}
       </div>
       <div class="flex">
         <div class=" w-[394px] h-[498px] ">
@@ -63,15 +74,16 @@ function CategoriesProductsShelf({ productList, image,title }: Props) {
             />
           </a>
         </div>
-        <div>
-          {productList[0].products && (
-            <ProductSlider products={productList[0].products} />
+        <div class="flex max-w-[calc(100%_-_394px)]" id="product-slider-container">
+          {products && (
+            <ProductSlider products={products } />
           )}
-            
         </div>
       </div>
+  
     </div>
   );
 }
+
 export const LoadingFallback = () => <S.Placeholder height="640px" />;
 export default CategoriesProductsShelf;
