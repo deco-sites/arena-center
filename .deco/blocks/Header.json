@@ -57,7 +57,7 @@
       "45": "/",
       "46": "p",
       "47": ">",
-      "title": "GANHE 10% OFF + FRETE GRÁTIS",
+      "title": "GANHE 50% OFF + FRETE GRÁTIS",
       "cupom": "arena10",
       "subtitle": "Lorem ipsum dolor sit amet consectetur."
     }
@@ -89,9 +89,29 @@
           "url": "/ultimos"
         }
       ],
-      "@type": "SiteNavigationElement",
-      "url": "/lancamentos",
-      "name": "Lançamentos"
+      "url": "/deals",
+      "name": "Deals",
+      "@type": "SiteNavigationElement"
+    },
+    {
+      "url": "/natal",
+      "name": "Natal",
+      "children": [
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "name": "Arvores Grandes",
+              "url": "/natal/arvore-de-natal/arvores-grandes"
+            }
+          ],
+          "name": "Arvore de Natal",
+          "url": "/natal/arvore-de-natal"
+        }
+      ],
+      "image": []
     },
     {
       "@type": "SiteNavigationElement",
@@ -118,10 +138,10 @@
       "children": []
     },
     {
-      "@type": "SiteNavigationElement",
-      "name": "Mesa Posta",
+      "url": "/men",
+      "name": "Men",
       "children": [],
-      "url": "/"
+      "@type": "SiteNavigationElement"
     },
     {
       "children": [],
@@ -131,15 +151,13 @@
     },
     {
       "children": [],
-      "image": [],
-      "name": "Natal",
-      "url": "/"
+      "@type": "SiteNavigationElement",
+      "url": "/activities",
+      "name": "Activities"
     },
     {
       "children": [],
-      "image": [],
-      "name": "Sale",
-      "url": "/"
+      "image": []
     }
   ],
   "loading": "eager",
