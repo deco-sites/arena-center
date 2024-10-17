@@ -16,8 +16,15 @@
     },
     {
       "__resolveType": "site/sections/Product/ProductShelf.tsx",
-      "title": "Oh no! You are offline!",
-      "products": null,
+      "title": "Promoções Imperdíveis",
+      "products": {
+        "__resolveType": "vnda/loaders/productList.ts",
+        "sort": "newest",
+        "tags": [],
+        "typeTags": [],
+        "ids": [],
+        "count": 10
+      },
       "description": "Maybe take some time to explore"
     },
     {

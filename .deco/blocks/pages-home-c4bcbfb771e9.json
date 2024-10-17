@@ -10,6 +10,12 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "AC-whatsapp"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
@@ -121,7 +127,7 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 4
+          "count": 10
         },
         "cta": "/",
         "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
@@ -195,7 +201,7 @@
           }
         ],
         "image": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4f1996af-e46a-4883-a212-65043d8e4b2c/categoryShelf.png",
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png",
           "href": "/",
           "alt": "teste"
         },
@@ -223,6 +229,19 @@
               "count": 10
             },
             "title": "Decoração"
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "sala"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 10
+            },
+            "title": "Sala"
           }
         ]
       }

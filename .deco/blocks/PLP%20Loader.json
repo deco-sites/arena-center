@@ -1,7 +1,18 @@
 {
   "data": {
-    "__resolveType": "shopify/loaders/ProductListingPage.ts",
-    "count": 12
+    "__resolveType": "vnda/loaders/productListingPage.ts",
+    "count": 16,
+    "tags": [],
+    "filterOperator": {
+      "type_tags": "and",
+      "property1": "and",
+      "property2": "and",
+      "property3": "and"
+    },
+    "slug": {
+      "__resolveType": "website/functions/requestToParam.ts",
+      "param": "slug"
+    }
   },
   "extensions": [],
   "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"

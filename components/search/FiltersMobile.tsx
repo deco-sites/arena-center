@@ -27,6 +27,8 @@ const isToggle = (filter: Filter): filter is FilterToggle =>
 
 function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
   const startsWithLetter = /^[a-zA-Z]/.test(label);
+
+  
   return (
     <a href={url} rel="nofollow" class="flex items-center gap-2">
       <div aria-checked={selected} class="checkbox" />

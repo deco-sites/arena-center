@@ -162,7 +162,7 @@ function ProductCard({
       </figure>
 
       <a href={relativeUrl} class="pt-4">
-        <span class="font-medium text-sm">{title}</span>
+        <span class="font-base text-sm">{title}</span>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (
@@ -170,7 +170,7 @@ function ProductCard({
               {formatPrice(listPrice, offers?.priceCurrency)}
             </span>
           )}
-          <span class="font-semibold text-secondary text-[12px]">
+          <span class="font-semibold text-secondary text-[14px]">
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
@@ -210,7 +210,7 @@ function ProductCard({
               item={item}
               class={clx(
                 "btn",
-                "btn-outline justify-center border-neutral-content !text-sm !font-medium px-0 no-animation w-full",
+                "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full",
                 "hover:!bg-primary",
                 "hover:!text-base-100",
               )}

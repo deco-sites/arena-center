@@ -350,6 +350,7 @@ function SearchResult({ page, ...props }: SectionProps<typeof loader>) {
 }
 
 export const loader = (props: Props, req: Request) => {
+
   return {
     ...props,
     url: req.url,
