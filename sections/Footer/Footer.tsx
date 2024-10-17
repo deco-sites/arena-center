@@ -85,7 +85,7 @@ function Footer({
   return (
     <footer class="px-5 sm:px-0 mt-10 w-full sm:mt-11 bg-primary text-primary-content">
       <div class="flex flex-col max-w-[1440px] mx-auto gap-5 py-10">
-      <Newsletter {...newsletterProps} />
+        <Newsletter {...newsletterProps} />
         <ul class="grid grid-flow-row lg:grid-flow-col w-full justify-around mx-auto columns-2 gap-6 px-4">
           <li class="flex flex-col gap-4 col-start-1 col-end-3 w-full md:w-[180px]">
             <p class="text-xs font-medium">{aboutUs.title}</p>
@@ -93,18 +93,13 @@ function Footer({
           </li>
           {links.map(({ title, href, children }) => (
             <li class="flex flex-col gap-4 max-w-[205px]">
-              <a class="text-xs font-medium" href={href}>{title}</a>
+              <a class="text-xs font-medium" href={href}>
+                {title}
+              </a>
               <ul class="flex flex-col gap-2">
                 {children.map(({ title, href, icon, bold }) => (
                   <li class="flex gap-1">
-                    {icon &&
-                      (
-                        <Image
-                          src={icon}
-                          width={22}
-                          height={22}
-                        />
-                      )}
+                    {icon && <Image src={icon} width={22} height={22} />}
                     <a
                       class={`text-[10px] ${
                         bold ? "font-medium" : "font-normal"
@@ -172,10 +167,8 @@ function Footer({
           </div>
         </ul>
         <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
-          <ul class="flex gap-4">
-          </ul>
-          <ul class="flex flex-wrap gap-2">
-          </ul>
+          <ul class="flex gap-4"></ul>
+          <ul class="flex flex-wrap gap-2"></ul>
         </div>
         <div class="w-full gap-8">
           <ul class="flex flex-col gap-8 text-center justify-center items-center">
@@ -186,17 +179,21 @@ function Footer({
                 </a>
               </li>
             ))}
+            <div class="mx-12 pb-4 flex justify-start w-full">
+              {" "}
+              <span class="text-[10px] font-normal text-base-400">{trademark}</span>
+            </div>
             <div class="flex flex-col flex-nowrap items-center justify-between sm:justify-center gap-4">
-             
               <div class="flex items-center justify-center gap-4">
-                {logo.map((item)=>(
+                {logo.map((item) => (
                   <a href={item.href} target="_blank">
                     <Image
-                    class="object-contain"
-                    src={item.img}
-                    width={57}
-                    height={24}
-                    loading="lazy" />
+                      class="object-contain"
+                      src={item.img}
+                      width={57}
+                      height={24}
+                      loading="lazy"
+                    />
                   </a>
                 ))}
               </div>
@@ -204,7 +201,6 @@ function Footer({
           </ul>
         </div>
       </div>
-      <div class="mx-12 pb-4"> <span class="text-xs font-normal text-base-400">{trademark}</span></div>
     </footer>
   );
 }
