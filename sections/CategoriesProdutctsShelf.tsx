@@ -52,14 +52,20 @@ function CategoriesProductsShelf({ productList, image, title, index = 0 }: Props
 
   return (
     <div class="container max-w-[1440px] mx-auto mt-10 px-11">
-      <div>
-        <p>{title}</p>
-        {productList.map((item, index) => (
-          <button class="btn" hx-get={useSection({props: {index}})} hx-target="closest section" hx-swap="outerHTML"
-          >
-            {item.title}
-          </button>
-        ))}
+      <div class="flex items-center mb-3">
+        <p class="font-medium uppercase px-2 lg:mr-4">{title}</p>
+        <div class=" flex gap-8">
+          {productList.map((item, index) => (
+            <button
+              class=" bg-gray-200 text-center text-accent-content uppercase border-none hover:bg-primary hover:text-base-100 p-2 rounded"
+              hx-get={useSection({ props: { index } })}
+              hx-target="closest section"
+              hx-swap="outerHTML"
+            >
+              {item.title}
+            </button>
+          ))}
+        </div>
       </div>
       <div class="flex">
         <div class=" w-[394px] h-[498px] ">
@@ -74,13 +80,13 @@ function CategoriesProductsShelf({ productList, image, title, index = 0 }: Props
             />
           </a>
         </div>
-        <div class="flex max-w-[calc(100%_-_394px)]" id="product-slider-container">
-          {products && (
-            <ProductSlider products={products } />
-          )}
+        <div
+          class="flex max-w-[calc(100%_-_394px)]"
+          id="product-slider-container"
+        >
+          {products && <ProductSlider products={products} />}
         </div>
       </div>
-  
     </div>
   );
 }
