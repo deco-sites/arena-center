@@ -14,17 +14,14 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/Carousel.tsx",
-        "images": [
-          {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-            "alt": "teste",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png"
-          }
-        ]
-      }
+      "__resolveType": "site/sections/Images/Carousel.tsx",
+      "images": [
+        {
+          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
+          "alt": "teste",
+          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/TopBar.tsx",
@@ -40,19 +37,19 @@
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
           "title": "Lorem ipsum",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/164d6f6c-ad4c-4196-800e-993aef070be3/teste.svg"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8b96a6d8-5929-43f5-b6f0-e057ade4642d/caixabranca.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
           "title": "Lorem ipsum",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/01297a00-3d0c-4556-b237-8ab26d843d3d/calendariobranco.svg"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
           "title": "Lorem ipsum",
           "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d11c8aa0-543f-4ff6-9ab9-5598395c70c8/searchbranco.svg"
         }
       ]
     },
@@ -143,32 +140,36 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png",
           "discount": "50%",
           "href": "/",
           "width": 564,
-          "height": 705
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
-          "height": 705
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
-          "height": 705
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fbc19f3c-4399-4228-98be-f856b0a75d02/mesa.png",
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
-          "height": 705
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         }
       ]
     },
