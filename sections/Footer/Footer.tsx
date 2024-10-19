@@ -3,6 +3,8 @@ import Image from "apps/website/components/Image.tsx";
 import Section from "../../components/ui/Section.tsx";
 import Newsletter from "../Newsletter/Newsletter.tsx";
 import { Props as NewsletterProps } from "../Newsletter/Newsletter.tsx";
+import Icon from "../../components/ui/Icon.tsx";
+import { useScript } from "deco/hooks/useScript.ts";
 
 /** @titleBy title */
 interface Item {
@@ -83,7 +85,24 @@ function Footer({
   newsletterProps,
 }: Props) {
   return (
-    <footer class="px-5 sm:px-0 mt-10 w-full sm:mt-11 bg-primary text-primary-content">
+    <footer class="px-5 sm:px-0 mt-16 w-full bg-primary text-primary-content">
+      <div class="absolute -mt-[65px] flex flex-col right-0 mr-4">
+        <button
+          class="p-2 rounded-full bg-primary"
+          id="scrollTopBtn"
+          hx-get="#"
+          hx-trigger="click"
+          hx-swap="none"
+          hx-on="click: window.scrollTo({ top: 0, behavior: 'smooth' })"
+        >
+          <Icon
+            id="chevron-right"
+            class="rotate-[270deg]"
+            size={22}
+          />
+        </button>
+        <p class="text-primary text-center text-xs">TOPO</p>
+      </div>
       <div class="flex flex-col max-w-[1440px] mx-auto gap-5 py-10">
         <Newsletter {...newsletterProps} />
         <ul class="grid grid-flow-row lg:grid-flow-col w-full justify-around mx-auto columns-2 gap-6 px-4">
@@ -181,7 +200,9 @@ function Footer({
             ))}
             <div class="mx-12 pb-4 flex justify-start w-full">
               {" "}
-              <span class="text-[10px] font-normal text-base-400">{trademark}</span>
+              <span class="text-[10px] font-normal text-base-400">
+                {trademark}
+              </span>
             </div>
             <div class="flex flex-col flex-nowrap items-center justify-between sm:justify-center gap-4">
               <div class="flex items-center justify-center gap-4">
