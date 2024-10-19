@@ -59,13 +59,13 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
             ))}
           </Slider>
         </div>
-        <div class="relative bottom-[25%] z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center">
+        <div class="relative bottom-[7%] z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center">
           <Slider.PrevButton class="sm:flex hidden disabled:invisible no-animation">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
 
-        <div class="relative bottom-[25%] z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center">
+        <div class="relative bottom-[7%] z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center">
           <Slider.NextButton class="sm:flex hidden disabled:invisible no-animation">
             <Icon id="chevron-right" class="text-accent-content" />
           </Slider.NextButton>
