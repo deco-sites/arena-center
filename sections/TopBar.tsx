@@ -6,9 +6,8 @@ import { useDevice } from "@deco/deco/hooks";
 export interface TopItem {
   /**
    * @title Imagem
-   * @description Tamanho da imagem (largura: 50px, altura: 50px) */
+   * @description Tamanho da imagem (largura: 32px, altura: 32px) */
   image: ImageWidget;
-  greaterIcon?: boolean;
   /**
    * @title Imagem Mobile
    * @description Tamanho da imagem (largura: 50px, altura: 50px) */
@@ -23,6 +22,7 @@ export interface TopItem {
   title: string;
   /**
    * @title Subtitulo
+   * @maximum 73
    */
   subtitle?: string;
 }
@@ -51,8 +51,8 @@ export default function TopBar({ content }: Props) {
                   class="object-contain w-full h-full"
                   src={item.mobileImage}
                   alt={item.title}
-                  width={item.greaterIcon ? 90 : 34}
-                  height={34}
+                  width={32}
+                  height={32}
                 />
               )}
             </div>
@@ -79,8 +79,8 @@ export default function TopBar({ content }: Props) {
                 class="lg:w-[34px] w-full lg:h-[34px] object-contain text-primary-content lg:text-secondary"
                 src={item.image}
                 alt={item.title}
-                width={34}
-                height={34}
+                width={32}
+                height={32}
               />
             )}
           </div>
