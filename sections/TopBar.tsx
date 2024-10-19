@@ -22,7 +22,7 @@ export interface TopItem {
   title: string;
   /**
    * @title Subtitulo
-   * @maximum 73
+   * @maxLength 73
    */
   subtitle?: string;
 }
