@@ -16,9 +16,9 @@ import * as $$$3 from "./loaders/user.ts";
 import * as $$$4 from "./loaders/wishlist.ts";
 import * as $$$$$$0 from "./sections/Animation/Animation.tsx";
 import * as $$$$$$1 from "./sections/CategoriesProdutctsShelf.tsx";
-import * as $$$$$$3 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$4 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$2 from "./sections/CategorySlider.tsx";
+import * as $$$$$$2 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$3 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$4 from "./sections/CategorySlider.tsx";
 import * as $$$$$$5 from "./sections/CenteredText.tsx";
 import * as $$$$$$6 from "./sections/Component.tsx";
 import * as $$$$$$7 from "./sections/Content/Faq.tsx";
@@ -51,12 +51,13 @@ import * as $$$$$$33 from "./sections/SearchText.tsx";
 import * as $$$$$$34 from "./sections/Session.tsx";
 import * as $$$$$$35 from "./sections/Social/InstagramPosts.tsx";
 import * as $$$$$$36 from "./sections/Social/WhatsApp.tsx";
-import * as $$$$$$37 from "./sections/TextWithImage.tsx";
-import * as $$$$$$38 from "./sections/Theme/Theme.tsx";
-import * as $$$$$$39 from "./sections/ThreeImages.tsx";
-import * as $$$$$$40 from "./sections/TopBar.tsx";
-import * as $$$$$$41 from "./sections/VideoAndImagePost.tsx";
-import * as $$$$$$42 from "./sections/WideBanner.tsx";
+import * as $$$$$$37 from "./sections/TextInformations.tsx";
+import * as $$$$$$38 from "./sections/TextWithImage.tsx";
+import * as $$$$$$39 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$40 from "./sections/ThreeImages.tsx";
+import * as $$$$$$41 from "./sections/TopBar.tsx";
+import * as $$$$$$42 from "./sections/VideoAndImagePost.tsx";
+import * as $$$$$$43 from "./sections/WideBanner.tsx";
 
 const manifest = {
   "loaders": {
@@ -69,9 +70,9 @@ const manifest = {
   "sections": {
     "site/sections/Animation/Animation.tsx": $$$$$$0,
     "site/sections/CategoriesProdutctsShelf.tsx": $$$$$$1,
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$3,
-    "site/sections/Category/CategoryGrid.tsx": $$$$$$4,
-    "site/sections/CategorySlider.tsx": $$$$$$2,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$2,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$3,
+    "site/sections/CategorySlider.tsx": $$$$$$4,
     "site/sections/CenteredText.tsx": $$$$$$5,
     "site/sections/Component.tsx": $$$$$$6,
     "site/sections/Content/Faq.tsx": $$$$$$7,
@@ -104,12 +105,13 @@ const manifest = {
     "site/sections/Session.tsx": $$$$$$34,
     "site/sections/Social/InstagramPosts.tsx": $$$$$$35,
     "site/sections/Social/WhatsApp.tsx": $$$$$$36,
-    "site/sections/TextWithImage.tsx": $$$$$$37,
-    "site/sections/Theme/Theme.tsx": $$$$$$38,
-    "site/sections/ThreeImages.tsx": $$$$$$39,
-    "site/sections/TopBar.tsx": $$$$$$40,
-    "site/sections/VideoAndImagePost.tsx": $$$$$$41,
-    "site/sections/WideBanner.tsx": $$$$$$42,
+    "site/sections/TextInformations.tsx": $$$$$$37,
+    "site/sections/TextWithImage.tsx": $$$$$$38,
+    "site/sections/Theme/Theme.tsx": $$$$$$39,
+    "site/sections/ThreeImages.tsx": $$$$$$40,
+    "site/sections/TopBar.tsx": $$$$$$41,
+    "site/sections/VideoAndImagePost.tsx": $$$$$$42,
+    "site/sections/WideBanner.tsx": $$$$$$43,
   },
   "actions": {
     "site/actions/minicart/submit.ts": $$$$$$$$$0,
