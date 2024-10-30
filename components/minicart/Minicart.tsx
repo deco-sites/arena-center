@@ -206,7 +206,7 @@ export default function Cart(
                   <div class="border-t border-base-200 py-2 flex flex-col">
                     {discounts > 0 && (
                       <div class="flex justify-between items-center px-4">
-                        <span class="text-sm">Discounts</span>
+                        <span class="text-sm">Desconto</span>
                         <span class="text-sm">
                           {formatPrice(discounts, currency, locale)}
                         </span>
@@ -232,8 +232,8 @@ export default function Cart(
                         {formatPrice(total, currency, locale)}
                       </output>
                     </div>
-                    <span class="text-sm text-base-300">
-                      Fees and shipping will be calculated at checkout
+                    <span class="text-sm text-gray-500">
+                      O frete será calculado no checkout
                     </span>
                   </div>
 
@@ -244,7 +244,7 @@ export default function Cart(
                       hx-on:click={useScript(sendBeginCheckoutEvent)}
                     >
                       <span class="[.htmx-request_&]:hidden">
-                        Begin Checkout
+                        Finalizar Compra
                       </span>
                       <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
                     </a>

@@ -12,7 +12,7 @@ export interface Props {
 }
 
 const WIDTH = 820;
-const HEIGHT = 615;
+const HEIGHT = 820;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 /**

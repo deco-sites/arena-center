@@ -4030,8 +4030,8 @@ details.collapse summary::-webkit-details-marker {
 .h-\[26px\] {
   height: 26px;
 }
-.h-\[378px\] {
-  height: 378px;
+.h-\[295px\] {
+  height: 295px;
 }
 .h-\[398px\] {
   height: 398px;
@@ -4102,6 +4102,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-\[100px\] {
   min-height: 100px;
+}
+.min-h-\[145px\] {
+  min-height: 145px;
 }
 .min-h-\[157px\] {
   min-height: 157px;
@@ -5345,10 +5348,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-text-opacity: 1;
   color: var(--fallback-b2,oklch(var(--b2)/var(--tw-text-opacity)));
 }
-.text-base-300 {
-  --tw-text-opacity: 1;
-  color: var(--fallback-b3,oklch(var(--b3)/var(--tw-text-opacity)));
-}
 .text-base-content {
   --tw-text-opacity: 1;
   color: var(--fallback-bc,oklch(var(--bc)/var(--tw-text-opacity)));
@@ -5364,6 +5363,10 @@ details.collapse summary::-webkit-details-marker {
 .text-gray-400 {
   --tw-text-opacity: 1;
   color: rgb(156 163 175 / var(--tw-text-opacity));
+}
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 .text-gray-600 {
   --tw-text-opacity: 1;

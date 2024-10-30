@@ -3,11 +3,11 @@ import Image from "apps/website/components/Image.tsx";
 
 export interface Cards {
   src: ImageWidget;
-  discount: string;
   href?: string;
 }
 
 export interface Props {
+  /** @maxItem 4 */
   images?: Cards[];
 }
 
@@ -24,11 +24,11 @@ export default function (props: Props) {
                 width={294}
                 height={368}
               />
-              <div class="bg-primary text-center lg:pb-[57px] lg:w-auto overflow-auto lg:overflow-visible rounded-full lg:rounded-none py-10 lg:pt-3 px-16">
+              {/* <div class="bg-primary text-center lg:pb-[57px] lg:w-auto overflow-auto lg:overflow-visible rounded-full lg:rounded-none py-10 lg:pt-3 px-16">
                 <p class="font-extralight text-2xl">até</p>
                 <p class="text-[73px] font-bold">{card.discount}</p>
                 <p class="text-5xl">OFF</p>
-              </div>
+              </div> */}
             </div>
           </a>
         ))}

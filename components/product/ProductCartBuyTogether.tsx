@@ -99,7 +99,7 @@ function ProductCardBuyTogether({
             src={front.url!}
             alt={front.alternateName}
             width={143}
-            height={183}
+            height={143}
             style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
@@ -114,7 +114,7 @@ function ProductCardBuyTogether({
             src={back?.url ?? front.url!}
             alt={back?.alternateName ?? front.alternateName}
             width={143}
-            height={183}
+            height={143}
             style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",

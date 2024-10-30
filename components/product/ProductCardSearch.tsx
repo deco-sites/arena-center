@@ -27,7 +27,7 @@ interface Props {
 }
 
 const WIDTH = 295;
-const HEIGHT = 378;
+const HEIGHT = 295;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 function ProductCard({
@@ -82,7 +82,7 @@ function ProductCard({
     >
       <figure
         class={clx(
-          "relative bg-base-100  min-w-[145px] min-h-[258px]",
+          "relative bg-base-100  min-w-[145px] min-h-[145px]",
           "rounded border border-transparent",
           "group-hover:border-primary"
         )}
@@ -103,7 +103,7 @@ function ProductCard({
             src={front.url!}
             alt={front.alternateName}
             width={295}
-            height={378}
+            height={295}
             style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
@@ -118,11 +118,11 @@ function ProductCard({
             src={back?.url ?? front.url!}
             alt={back?.alternateName ?? front.alternateName}
             width={295}
-            height={378}
+            height={295}
             style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
-              "rounded w-full",
+              "rounded w-full h-auto",
               "col-span-full row-span-full",
               "transition-opacity opacity-0 lg:group-hover:opacity-100"
             )}

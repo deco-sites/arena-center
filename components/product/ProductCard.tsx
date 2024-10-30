@@ -79,7 +79,7 @@ function ProductCard({
     >
       <figure
         class={clx(
-          "relative bg-base-100 w-[295px] h-[378px]",
+          "relative bg-base-100 w-[295px] h-[295px]",
           "rounded border border-transparent",
           "group-hover:border-primary",
         )}
@@ -100,7 +100,7 @@ function ProductCard({
             src={front.url!}
             alt={front.alternateName}
             width={295}
-            height={378}
+            height={295}
             //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
@@ -115,7 +115,7 @@ function ProductCard({
             src={back?.url ?? front.url!}
             alt={back?.alternateName ?? front.alternateName}
             width={295}
-            height={378}
+            height={295}
             //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
