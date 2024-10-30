@@ -52,7 +52,7 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
       );
     })
     : undefined;
-  console.log("pdp", pdpProductTag, secondProduct);
+  
   const totalPrice = offers &&
     secondProduct &&
     offers.lowPrice + (secondProduct.offers?.lowPrice || 0);

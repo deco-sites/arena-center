@@ -15,7 +15,7 @@ const onClick = () => {
   const button = event?.currentTarget as HTMLButtonElement | null;
   const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
   const { item, platformProps } = JSON.parse(
-    decodeURIComponent(container.getAttribute("data-cart-item")!),
+    decodeURIComponent(container.getAttribute("data-cart-item")!)
   );
   window.STOREFRONT.CART.addToCart(item, platformProps);
 };
@@ -38,7 +38,7 @@ const onLoad = (id: string) => {
     //   'input[type="checkbox"]',
     // );
     const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]',
+      'input[type="number"]'
     );
     const itemID = container?.getAttribute("data-item-id")!;
     const quantity = sdk.getQuantity(itemID) || 0;
@@ -48,12 +48,12 @@ const onLoad = (id: string) => {
     // input.value = quantity.toString();
     // checkbox.checked = quantity > 0;
     // enable interactivity
-    container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) =>
-      node.disabled = false
-    );
-    container?.querySelectorAll<HTMLButtonElement>("input").forEach((node) =>
-      node.disabled = false
-    );
+    container
+      ?.querySelectorAll<HTMLButtonElement>("button")
+      .forEach((node) => (node.disabled = false));
+    container
+      ?.querySelectorAll<HTMLButtonElement>("input")
+      .forEach((node) => (node.disabled = false));
     return;
   });
 };
@@ -62,14 +62,12 @@ const useAddToCart = ({ product, seller }: Props) => {
   const { additionalProperty = [], isVariantOf, productID } = product;
   const productGroupID = isVariantOf?.productGroupID;
 
-  console.log(platform);
-
   if (platform === "vnda") {
     return {
       quantity: 1,
       itemId: productID,
       attributes: Object.fromEntries(
-        additionalProperty.map(({ name, value }) => [name, value]),
+        additionalProperty.map(({ name, value }) => [name, value])
       ),
     };
   }
@@ -85,7 +83,7 @@ function AddToCartButton(props: Props) {
       class="flex"
       data-item-id={product.productID}
       data-cart-item={encodeURIComponent(
-        JSON.stringify({ item, platformProps }),
+        JSON.stringify({ item, platformProps })
       )}
     >
       {/* <input type="checkbox" class="hidden peer" /> */}
@@ -99,16 +97,14 @@ function AddToCartButton(props: Props) {
       </button>
 
       {/* Quantity Input */}
-      {
-        /* <div class="flex-grow hidden peer-checked:flex">
+      {/* <div class="flex-grow hidden peer-checked:flex">
         <QuantitySelector
           disabled
           min={0}
           max={100}
           hx-on:change={useScript(onChange)}
         />
-      </div> */
-      }
+      </div> */}
 
       <script
         type="module"

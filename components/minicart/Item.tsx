@@ -21,7 +21,7 @@ const removeItemHandler = () => {
     ?.closest("fieldset")
     ?.getAttribute("data-item-id");
   if (typeof itemID === "string") {
-    console.log(itemID);
+  
     window.STOREFRONT.CART.setQuantity(itemID, 0);
   }
 };

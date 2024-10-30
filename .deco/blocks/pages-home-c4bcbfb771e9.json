@@ -229,7 +229,12 @@
               "ids": [],
               "count": 10
             },
-            "title": "Decoração"
+            "title": "Decoração",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png",
+              "alt": "decoracao",
+              "href": "/"
+            }
           },
           {
             "products": {
@@ -242,7 +247,10 @@
               "ids": [],
               "count": 10
             },
-            "title": "Sala"
+            "title": "Sala",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png"
+            }
           }
         ]
       }
