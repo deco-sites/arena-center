@@ -14,14 +14,22 @@
       }
     },
     {
-      "__resolveType": "site/sections/Images/Carousel.tsx",
-      "images": [
-        {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-          "alt": "teste",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png"
-        }
-      ]
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Carousel.tsx",
+        "images": [
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png",
+            "alt": "Prato e talheres com um fundo bege"
+          },
+          {
+            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
+            "alt": "promocao arena center",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+          }
+        ]
+      }
     },
     {
       "__resolveType": "site/sections/TopBar.tsx",
@@ -93,11 +101,11 @@
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
           "paragraph": "Sala de Jantar",
-          "link": "/"
+          "link": "/sala-de-jantar"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/801ed0d0-8519-4f9b-8e4d-6869d90602aa/cama2.png",
-          "paragraph": "Quarto",
+          "paragraph": "Quarto ",
           "link": "/"
         },
         {
@@ -124,15 +132,21 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 10
+          "count": 12,
+          "tags": [
+            "decoracao"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest"
         },
-        "cta": "/",
         "title": "A MELHOR SELEÇÃO DE PRODUTOS!",
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
-        "count": 10
+        "count": 10,
+        "cta": "/decoracao"
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -247,12 +261,36 @@
               "ids": [],
               "count": 10
             },
-            "title": "Sala",
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png"
-            }
+            "title": "Sala"
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "banheiro"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 12
+            },
+            "title": "banheiro"
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "cozinha"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 12
+            },
+            "title": "cozinha"
           }
-        ]
+        ],
+        "index": 0
       }
     },
     {
@@ -307,7 +345,8 @@
           "tags": [],
           "typeTags": [],
           "ids": [],
-          "count": 4
+          "count": 4,
+          "wildcard": false
         },
         "title": "PROMOÇÕES IMPERDÍVEIS"
       }

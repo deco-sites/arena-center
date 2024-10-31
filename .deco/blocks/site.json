@@ -7,7 +7,7 @@
     "noIndexing": false,
     "description": "Build profitable websites with deco.cx",
     "titleTemplate": "%s |",
-    "descriptionTemplate": "%s | deco.cx",
+    "descriptionTemplate": "%s |",
     "favicon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/236a6202-0d92-4027-86cf-a9dc3693713a/logo.png"
   },
   "theme": {
