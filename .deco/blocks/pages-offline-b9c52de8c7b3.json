@@ -19,7 +19,7 @@
       "title": "Promoções Imperdíveis",
       "products": {
         "__resolveType": "vnda/loaders/productList.ts",
-        "sort": "newest",
+        "sort": "lowest_price",
         "tags": [],
         "typeTags": [],
         "ids": [],
