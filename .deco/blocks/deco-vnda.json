@@ -1,7 +1,7 @@
 {
   "__resolveType": "site/apps/deco/vnda.ts",
   "account": "lojaarenacenter",
-  "publicUrl": "www.lojaarenacenter.com.br",
+  "publicUrl": "www.arenacenterloja.com.br",
   "authToken": {
     "__resolveType": "website/loaders/secret.ts",
     "encrypted": "7f143a3f855c13cefd5a29bb96914a3132cfb84bcc1252d00e53bf9508b67a45",
