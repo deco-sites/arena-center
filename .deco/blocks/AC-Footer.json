@@ -13,36 +13,32 @@
     {
       "children": [
         {
-          "href": "#",
+          "href": "/sobre-nos",
           "title": "Sobre o Arena Center"
         },
         {
           "title": "Nossas Lojas",
-          "href": "#"
+          "href": "/nossas-lojas"
         },
         {
           "title": "Política de Privacidade e Segurança",
-          "href": "#"
+          "href": "/politica-de-privacidade-e-seguranca"
         },
         {
-          "title": "Política Troca e Devolução",
-          "href": "#"
+          "title": "Política de Troca e Devolução",
+          "href": "/politica-de-troca-e-devolucao"
         },
         {
-          "href": "#",
+          "href": "/trabalhe-conosco",
           "title": "Trabalhe conosco"
         },
         {
-          "href": "#",
+          "href": "/sustentabilidade",
           "title": "Sustentabilidade"
         },
         {
           "title": "Termos de uso",
-          "href": "#"
-        },
-        {
-          "title": "Mapa do site",
-          "href": "#"
+          "href": "/termos-de-uso"
         }
       ],
       "title": "Institucional",
@@ -52,7 +48,7 @@
       "children": [
         {
           "title": "Central de Atendimento",
-          "href": "#"
+          "href": "/central-de-atendimento"
         },
         {
           "title": "Meus Pedidos",
@@ -89,7 +85,7 @@
         }
       ],
       "title": "Serviços",
-      "href": "#"
+      "href": "/servicos"
     },
     {
       "children": [
@@ -99,7 +95,7 @@
         }
       ],
       "title": "CashBack",
-      "href": "#"
+      "href": "/cashback"
     },
     {
       "children": [
@@ -110,7 +106,8 @@
           "title": "Informações sobre divergência de preço ente o site, Loja e Anúncios"
         }
       ],
-      "title": "Informações"
+      "title": "Informações",
+      "href": "/informacoes"
     }
   ],
   "social": {
@@ -137,15 +134,13 @@
     "socialItems": [
       {
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c11384e4-73ce-44b0-9239-6acd2b467cd0/Facebook-(1).png",
-        "alt": "facebook"
+        "alt": "facebook",
+        "href": "https://www.facebook.com/arenacenteroficial/"
       },
       {
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/61ca5b80-f920-4f33-8850-3ebcfea8d044/Instagram-(1).png",
-        "alt": "instagram"
-      },
-      {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c4e04399-4aab-40ec-a3f4-31d6336566dc/LinkedIn-(1).png",
-        "alt": "linkedin"
+        "alt": "instagram",
+        "href": "https://www.instagram.com/arenacenteroficial/"
       },
       {
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c404f3e5-7cd2-4f81-af31-ced4806a4102/Twitter-(1).png",
