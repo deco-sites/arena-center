@@ -5270,9 +5270,6 @@ details.collapse summary::-webkit-details-marker {
 .leading-5 {
   line-height: 1.25rem;
 }
-.leading-6 {
-  line-height: 1.5rem;
-}
 .leading-\[1\.125rem\] {
   line-height: 1.125rem;
 }
@@ -5512,6 +5509,10 @@ details.collapse summary::-webkit-details-marker {
 
 .group:disabled .group-disabled\:animate-progress {
   animation: progress-frame ease normal
+}
+
+.reset_styles > * {
+  all: revert;
 }
 
 @keyframes progress-frame {
