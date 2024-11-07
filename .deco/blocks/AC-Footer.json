@@ -22,7 +22,7 @@
         },
         {
           "title": "Política de Privacidade e Segurança",
-          "href": "/politica-de-privacidade-e-seguranca"
+          "href": "/privacidade-e-seguranca"
         },
         {
           "title": "Política de Troca e Devolução",
@@ -60,10 +60,7 @@
         },
         {
           "title": "Ajuda",
-          "href": "#"
-        },
-        {
-          "title": "FAQ"
+          "href": "/ajuda-e-faq"
         }
       ],
       "title": "Atendimento",

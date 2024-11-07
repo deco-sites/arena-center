@@ -1,0 +1,30 @@
+{
+  "name": "Sustenbilidade",
+  "path": "/sustentabilidade",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/TextInformations.tsx",
+        "title": "Sustentabilidade",
+        "conteudo": "<h4>Nosso Compromisso com o Futuro</h4><p>Na <strong>Arena Center</strong>, acreditamos que um futuro sustentável começa com ações no presente. Estamos comprometidos em promover práticas que respeitem o meio ambiente e tragam um impacto positivo para a sociedade. Conheça as iniciativas que adotamos para contribuir com um mundo mais sustentável.</p><hr><h4>1. <strong>Materiais e Produtos Sustentáveis</strong></h4><p>Trabalhamos com fornecedores que compartilham nossa visão de sustentabilidade, priorizando materiais de origem responsável, recicláveis e biodegradáveis. Sempre que possível, buscamos alternativas mais ecológicas para minimizar o impacto de nossa operação.</p><hr><h4>2. <strong>Embalagens Eco-friendly</strong></h4><p>Sabemos que cada detalhe conta, e nossas embalagens refletem isso. Optamos por embalagens recicláveis e, em alguns casos, reutilizáveis, para reduzir o desperdício e incentivar o descarte consciente. Convidamos você a reutilizar ou reciclar nossos materiais de embalagem.</p><hr><h4>3. <strong>Logística Sustentável</strong></h4><p>Para reduzir nossa pegada de carbono, implementamos práticas de logística verde, incluindo a otimização de rotas e parcerias com transportadoras que utilizam tecnologias menos poluentes. Estamos em constante busca de soluções que possam diminuir o impacto ambiental do transporte de nossos produtos.</p><hr><h4>4. <strong>Compromisso com a Comunidade</strong></h4><p>A sustentabilidade vai além do meio ambiente. Apoiamos projetos locais e ações sociais, buscando criar um impacto positivo nas comunidades em que atuamos. Acreditamos que um futuro sustentável é um futuro inclusivo, e que a transformação social anda de mãos dadas com o cuidado ao meio ambiente.</p><hr><h4>5. <strong>Descarte Responsável</strong></h4><p>Além de oferecer produtos sustentáveis, incentivamos nossos clientes a realizar o descarte adequado de itens que chegaram ao fim de sua vida útil. Através de nossas iniciativas de reciclagem e parcerias com instituições especializadas, promovemos uma cadeia de descarte que valoriza o meio ambiente.</p><hr><h4>6. <strong>Inovação e Transparência</strong></h4><p>Nosso compromisso com a sustentabilidade é uma jornada. Estamos continuamente pesquisando e inovando para aprimorar nossas práticas. A transparência é fundamental para nós, e convidamos você a acompanhar nosso progresso e desafios em relatórios que atualizamos periodicamente.</p><hr><h4>Faça Parte da Mudança</h4><p>Convidamos você a fazer parte desta jornada conosco. Ao escolher a <strong>Arena Center</strong>, você opta por uma marca que se preocupa com o impacto de cada escolha no futuro do nosso planeta. Juntos, podemos construir um futuro mais sustentável para todos.</p><hr><h4><strong>Juntos pelo futuro!</strong></h4><hr><p>Esse conteúdo reflete o compromisso da <em>Arena Center</em> com práticas sustentáveis, abrangendo desde os materiais até o apoio à comunidade e transparência.</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "AC-Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
