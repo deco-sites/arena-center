@@ -35,29 +35,29 @@
       "__resolveType": "site/sections/TopBar.tsx",
       "content": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
-          "title": "Lorem ipsum.",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/743bb01f-2fdd-433a-8df5-913486e9bcf2/camapreta.svg",
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ec50a172-adc4-4e00-bd1c-67422472a492/Design-sem-nome-(14).svg",
+          "title": "Entrega Rápida",
+          "subtitle": "Para todo o Brasil",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9fef46c4-33eb-4fa1-8340-fefdcb77b48c/Design-sem-nome-(15).svg",
           "greaterIcon": true
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5cff0e18-d326-475b-9584-06d46d15a6cb/box.svg",
-          "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8b96a6d8-5929-43f5-b6f0-e057ade4642d/caixabranca.svg"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/895423e6-7c07-4697-a6a4-fe22ce0da508/Design-sem-nome-(13).svg",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8b96a6d8-5929-43f5-b6f0-e057ade4642d/caixabranca.svg",
+          "title": "Embalagem Reforçada",
+          "subtitle": "Seu produto em perfeito estado"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5701eed8-753e-4d26-bcc7-59e7d575fcb3/calendario.svg",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
-          "title": "Lorem ipsum",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/01297a00-3d0c-4556-b237-8ab26d843d3d/calendariobranco.svg"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/04ca241f-a70f-4987-9302-544a8ce18f92/Design-sem-nome-(16).svg",
+          "subtitle": "Compre no site e receba 3% de volta",
+          "title": "Cashback",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/cb3c7d08-2419-471f-aaa5-860f8200126c/Design-sem-nome-(15).svg"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/15c70b2f-aac6-488a-84b4-c4d043dcd1dd/search.svg",
-          "title": "Lorem ipsum",
-          "subtitle": "Lorem ipsum dolor sit amet consectetur. Vulputate sed posuere consectetur",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d11c8aa0-543f-4ff6-9ab9-5598395c70c8/searchbranco.svg"
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/36e3f40b-0bed-4099-a8a8-1f07e8f76e19/Design-sem-nome-(17).svg",
+          "title": "Troca Fácil",
+          "subtitle": "Sistema de trocas facilitado",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
         }
       ]
     },
@@ -359,24 +359,24 @@
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/6947265d-8113-4b90-b8c4-0cb644469096/arquiteta.jpg",
           "width": 395,
           "height": 184,
-          "title": "Arquitetos",
-          "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. ",
+          "title": "ARQUITETOS",
+          "paragraph": "Contamos com arquitetos especializados que auxiliam na criação de ambientes decorativos e na escolha ideal de móveis, ajudando você a montar espaços funcionais e elegantes que refletem o seu estilo.",
           "cta": "SAIBA MAIS",
           "link": "/"
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8e01340f-4459-47b9-9ab2-a6ba20c2ee22/arenacenter.jpg",
           "title": "ENCONTRE UMA LOJA",
-          "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. ",
+          "paragraph": "A Arena Center possui lojas físicas no Rio de Janeiro, onde você poderá ver nossos produtos de perto, retirar pedidos com agendamento e realizar trocas. Clique no link abaixo e veja qual a loja mais próxima da sua região.",
           "cta": "SAIBA MAIS",
-          "link": "/",
+          "link": "https://www.google.com/search?sca_esv=140d6f1ac97950c1&rlz=1C5CHFA_enBR1106BR1106&tbm=lcl&q=arena+center+oficial+loja+rio+de+janeiro&rflfq=1&num=10&sa=X&ved=2ahUKEwjiu-zAxMqJAxUTP7kGHT5SGKYQjGp6BAg7EAE&biw=1837&bih=949&dpr=1.6#rlfi=hd:;si:;mv:[[-22.7944715,-43.2006467],[-22.9740815,-43.3631968]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10",
           "width": 395,
           "height": 184
         },
         {
           "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png",
           "title": "LISTA DE PRESENTES",
-          "paragraph": "Lorem ipsum dolor sit amet consectetur. Et id vitae cursus etiam vestibulum sed. Auctor ipsum pellentesque mauris aliquet tellus aliquam dictum sit egestas. Sed sapien in laoreet eget. ",
+          "paragraph": "Selecione seus itens favoritos para diversas ocasiões, como casamentos, aniversários e chás de casa nova, facilitando a escolha de presentes para seus convidados. Compartilhe sua lista e acompanhe as compras.",
           "cta": "SAIBA MAIS",
           "link": "/",
           "width": 395,
