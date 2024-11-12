@@ -24,6 +24,7 @@ import {
 import { useDevice } from "@deco/deco/hooks";
 import { type LoadingFallbackProps } from "@deco/deco";
 import type { AlertItem, ContactItem } from "../../components/header/Alert.tsx";
+import { useScript } from "deco/hooks/useScript.ts";
 
 export interface Logo {
   src: ImageWidget;
@@ -54,10 +55,31 @@ export interface SectionProps {
   loading?: "eager" | "lazy";
 }
 type Props = Omit<SectionProps, "alert">;
+
+const onLoad = () => {
+  const handleScrollAnimation = () => {
+      const header = document.getElementById("header");
+    const scrollPosition = window.scrollY;
+
+    
+
+       if (scrollPosition > 0) {
+         header?.classList.add("opacity-0");
+         header?.classList.remove("opacity-100");
+    
+         
+       } else {
+         header?.classList.remove("opacity-0");
+         header?.classList.add("opacity-100");
+   
+       }
+    };
+ window.addEventListener("scroll", handleScrollAnimation);
+}
+
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
   <>
-    {
-      /* <Modal id={SEARCHBAR_POPUP_ID}>
+    {/* <Modal id={SEARCHBAR_POPUP_ID}>
       <div
         class="absolute top-0 bg-base-100 container"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
@@ -70,8 +92,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           <Searchbar {...searchbar} />
         )}
       </div>
-    </Modal> */
-    }
+    </Modal> */}
 
     <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
       <div class="grid grid-cols-3 place-items-center ">
@@ -86,8 +107,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           </a>
         </div>
 
-        {
-          /* <label
+        {/* <label
           for={SEARCHBAR_POPUP_ID}
           class="input input-bordered flex items-center gap-2 w-full"
           aria-label="search icon button"
@@ -96,8 +116,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           <span class="text-base-400 truncate">
             Search products, brands...
           </span>
-        </label> */
-        }
+        </label> */}
         <Searchbar {...searchbar} />
 
         <div class="flex gap-4 place-self-end pr-14">
@@ -107,7 +126,9 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
       </div>
 
       <ul class="flex justify-between text-accent-content border-y border-gray-300 h-11 max-w-[1444px] px-14">
-        {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
+        {navItems?.slice(0, 10).map((item) => (
+          <NavItem item={item} />
+        ))}
       </ul>
     </div>
   </>
@@ -204,8 +225,7 @@ function Header({
   alerts = [],
   contacts = [],
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -216,22 +236,34 @@ function Header({
   return (
     <header
       style={{
-        height: device === "desktop"
-          ? HEADER_HEIGHT_DESKTOP
-          : HEADER_HEIGHT_MOBILE,
+        height:
+          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
       }}
     >
-      <div class="bg-base-100 fixed w-full z-40">
+      <div
+        class="bg-base-100 fixed w-full z-40  top-0 left-0   transition-all duration-500 ease-in-out"
+        id="header"
+       
+      >
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
-        {device === "desktop"
-          ? <Desktop logo={logo} {...props} />
-          : <Mobile logo={logo} {...props} />}
+        {device === "desktop" ? (
+          <Desktop logo={logo} {...props} />
+        ) : (
+          <Mobile logo={logo} {...props} />
+        )}
       </div>
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(onLoad),
+        }}
+      />
     </header>
   );
+  
 }
 export const LoadingFallback = (props: LoadingFallbackProps<Props>) => (
   // deno-lint-ignore no-explicit-any
-  <Header {...props as any} loading="lazy" />
+  <Header {...(props as any)} loading="lazy" />
 );
 export default Header;
