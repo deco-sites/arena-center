@@ -35,7 +35,7 @@ export default function ({ img }: Props) {
     );
   }
   return (
-    <div class="flex gap-2 px-6 overflow-auto lg:overflow-visible max-w-[1440px] w-full mx-auto mt-8">
+    <div class="flex gap-2 px-6 overflow-auto lg:overflow-visible max-w-[1200px] w-full mx-auto mt-8">
       <div class="relative lg:overflow-hidden">
         <a href={img[0].link} class=" block">
           <Image
