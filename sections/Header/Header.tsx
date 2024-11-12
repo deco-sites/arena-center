@@ -57,24 +57,36 @@ export interface SectionProps {
 type Props = Omit<SectionProps, "alert">;
 
 const onLoad = () => {
+  const HEIGHT_THRESHOLD = 60;
+
+  let lastScrollY = 0;
+  let accumulatedScroll = 0;
+  
   const handleScrollAnimation = () => {
-      const header = document.getElementById("header");
+    const header = document.getElementById("header");
     const scrollPosition = window.scrollY;
 
-    
+    const scrollDifference = scrollPosition - lastScrollY;
 
-       if (scrollPosition > 0) {
-         header?.classList.add("opacity-0");
-         header?.classList.remove("opacity-100");
+    accumulatedScroll += scrollDifference;
+
+    if (Math.abs(accumulatedScroll) >= HEIGHT_THRESHOLD) {
+
+      if (accumulatedScroll > 0) {
+        header?.classList.add("opacity-0");
+        header?.classList.remove("opacity-100");
     
          
-       } else {
-         header?.classList.remove("opacity-0");
-         header?.classList.add("opacity-100");
+      } else {
+        header?.classList.remove("opacity-0");
+        header?.classList.add("opacity-100");
    
-       }
+      }
+      accumulatedScroll = 0;
     };
- window.addEventListener("scroll", handleScrollAnimation);
+    lastScrollY = scrollPosition;
+  }
+  window.addEventListener("scroll", handleScrollAnimation);
 }
 
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
