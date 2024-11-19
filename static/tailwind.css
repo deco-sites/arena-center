@@ -5945,16 +5945,12 @@ details.collapse summary::-webkit-details-marker {
   opacity: 0.75 !important;
 }
 
-.disabled\:opacity-0:disabled {
-  opacity: 0;
-}
-
 .disabled\:opacity-100:disabled {
   opacity: 1;
 }
 
-.disabled\:opacity-50:disabled {
-  opacity: 0.5;
+.disabled\:opacity-40:disabled {
+  opacity: 0.4;
 }
 
 .group[open] .group-open\:border-b-\[4px\] {

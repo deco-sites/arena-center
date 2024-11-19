@@ -61,7 +61,7 @@ const onLoad = () => {
 
   let lastScrollY = 0;
   let accumulatedScroll = 0;
-  
+
   const handleScrollAnimation = () => {
     const header = document.getElementById("header");
     const scrollPosition = window.scrollY;
@@ -71,23 +71,19 @@ const onLoad = () => {
     accumulatedScroll += scrollDifference;
 
     if (Math.abs(accumulatedScroll) >= HEIGHT_THRESHOLD) {
-
       if (accumulatedScroll > 0) {
         header?.classList.add("opacity-0");
         header?.classList.remove("opacity-100");
-    
-         
       } else {
         header?.classList.remove("opacity-0");
         header?.classList.add("opacity-100");
-   
       }
       accumulatedScroll = 0;
-    };
+    }
     lastScrollY = scrollPosition;
-  }
+  };
   window.addEventListener("scroll", handleScrollAnimation);
-}
+};
 
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
   <>
@@ -252,17 +248,15 @@ function Header({
           device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
       }}
     >
-      <div
-        class="bg-base-100 fixed w-full z-40  top-0 left-0   transition-all duration-500 ease-in-out"
-        id="header"
-       
-      >
+      <div class=" fixed w-full z-40  top-0 left-0   transition-all duration-500 ease-in-out">
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
-        {device === "desktop" ? (
-          <Desktop logo={logo} {...props} />
-        ) : (
-          <Mobile logo={logo} {...props} />
-        )}
+        <div id="header" class="bg-base-100">
+          {device === "desktop" ? (
+            <Desktop logo={logo} {...props} />
+          ) : (
+            <Mobile logo={logo} {...props} />
+          )}
+        </div>
       </div>
       <script
         type="module"
@@ -272,7 +266,6 @@ function Header({
       />
     </header>
   );
-  
 }
 export const LoadingFallback = (props: LoadingFallbackProps<Props>) => (
   // deno-lint-ignore no-explicit-any
