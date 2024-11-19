@@ -261,7 +261,10 @@
               "ids": [],
               "count": 10
             },
-            "title": "Sala"
+            "title": "Sala",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
+            }
           },
           {
             "products": {
@@ -274,7 +277,10 @@
               "ids": [],
               "count": 12
             },
-            "title": "banheiro"
+            "title": "banheiro",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+            }
           },
           {
             "products": {
@@ -287,7 +293,10 @@
               "ids": [],
               "count": 12
             },
-            "title": "cozinha"
+            "title": "cozinha",
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
+            }
           }
         ],
         "index": 0
@@ -356,36 +365,7 @@
     },
     {
       "__resolveType": "site/sections/LearnMore.tsx",
-      "mainTitle": "serviços exclusivos da arena center",
-      "learnMore": [
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/6947265d-8113-4b90-b8c4-0cb644469096/arquiteta.jpg",
-          "width": 395,
-          "height": 184,
-          "title": "ARQUITETOS",
-          "paragraph": "Contamos com arquitetos especializados que auxiliam na criação de ambientes decorativos e na escolha ideal de móveis, ajudando você a montar espaços funcionais e elegantes que refletem o seu estilo.",
-          "cta": "SAIBA MAIS",
-          "link": "/"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8e01340f-4459-47b9-9ab2-a6ba20c2ee22/arenacenter.jpg",
-          "title": "ENCONTRE UMA LOJA",
-          "paragraph": "A Arena Center possui lojas físicas no Rio de Janeiro, onde você poderá ver nossos produtos de perto, retirar pedidos com agendamento e realizar trocas. Clique no link abaixo e veja qual a loja mais próxima da sua região.",
-          "cta": "SAIBA MAIS",
-          "link": "https://www.google.com/search?sca_esv=140d6f1ac97950c1&rlz=1C5CHFA_enBR1106BR1106&tbm=lcl&q=arena+center+oficial+loja+rio+de+janeiro&rflfq=1&num=10&sa=X&ved=2ahUKEwjiu-zAxMqJAxUTP7kGHT5SGKYQjGp6BAg7EAE&biw=1837&bih=949&dpr=1.6#rlfi=hd:;si:;mv:[[-22.7944715,-43.2006467],[-22.9740815,-43.3631968]];tbs:lrf:!1m4!1u3!2m2!3m1!1e1!1m4!1u2!2m2!2m1!1e1!2m1!1e2!2m1!1e3!3sIAE,lf:1,lf_ui:10",
-          "width": 395,
-          "height": 184
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png",
-          "title": "LISTA DE PRESENTES",
-          "paragraph": "Selecione seus itens favoritos para diversas ocasiões, como casamentos, aniversários e chás de casa nova, facilitando a escolha de presentes para seus convidados. Compartilhe sua lista e acompanhe as compras.",
-          "cta": "SAIBA MAIS",
-          "link": "/",
-          "width": 395,
-          "height": 184
-        }
-      ]
+      "learnMore": []
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
