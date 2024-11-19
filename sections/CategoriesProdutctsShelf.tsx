@@ -33,7 +33,9 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
   return (
     <div class="container max-w-[1440px] mx-auto lg:mt-12  px-6 lg:px-11">
       <div class="flex items-center mb-3 flex-col lg:flex-row">
-        <p class="font-medium uppercase px-2 lg:mr-4 text-center mb-5 lg:mb-0">{title}</p>
+        <p class="font-medium uppercase px-2 lg:mr-4 text-center mb-5 lg:mb-0">
+          {title}
+        </p>
         <div class=" flex gap-8 overflow-x-auto w-full">
           {productList.map((item, index) => (
             <button
@@ -62,7 +64,7 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
         </div>
 
         <div
-          class="flex w-full"
+          class="flex w-full overflow-x-hidden"
           id="product-slider-container"
         >
           {productsArray && <ProductSlider products={productsArray} />}
