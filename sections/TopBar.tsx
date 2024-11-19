@@ -38,17 +38,17 @@ export default function TopBar({ content }: Props) {
   const device = useDevice();
   if (device !== "desktop") {
     return (
-      <div class="flex items-center overflow-auto mx-auto bg-primary w-screen px-4 md:max-w-[1440px]  h-auto">
+      <div class="flex items-center overflow-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] mt-[-8px]">
         {content.map((item) => (
           <a
             href={item.href}
             target="blank"
-            class="flex items-center w-full md:mr-0 ml-6 h-[100px]"
+            class="flex items-center w-full md:mr-0 ml-6"
           >
-            <div class="flex justify-center items-center w-[90px] h-[73px]">
+            <div class="flex justify-center items-">
               {item.mobileImage && (
                 <Image
-                  class="object-contain w-full h-full"
+                  class="object-contain w-8 h-8"
                   src={item.mobileImage}
                   alt={item.title}
                   width={32}

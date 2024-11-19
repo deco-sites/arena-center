@@ -31,10 +31,10 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
   const imagePrincipal = productList[index].image;
 
   return (
-    <div class="container max-w-[1440px] mx-auto mt-12 px-11">
-      <div class="flex items-center mb-3">
-        <p class="font-medium uppercase px-2 lg:mr-4">{title}</p>
-        <div class=" flex gap-8">
+    <div class="container max-w-[1440px] mx-auto lg:mt-12  px-6 lg:px-11">
+      <div class="flex items-center mb-3 flex-col lg:flex-row">
+        <p class="font-medium uppercase px-2 lg:mr-4 text-center mb-5 lg:mb-0">{title}</p>
+        <div class=" flex gap-8 overflow-x-auto w-full">
           {productList.map((item, index) => (
             <button
               class=" bg-gray-200 w-36 text-center text-accent-content uppercase border-none hover:bg-primary hover:text-base-100 p-2 rounded"
@@ -48,8 +48,8 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
         </div>
       </div>
       <div class="flex mt-8">
-        <div class=" w-[394px] h-[498px] ">
-          <a href={imagePrincipal.href} class="hidden lg:flex gap-3">
+        <div class=" w-[394px] h-[498px] hidden lg:flex">
+          <a href={imagePrincipal.href} class=" gap-3">
             <Image
               src={imagePrincipal.src}
               class="w-[394px] h-[498px] object-cover"
@@ -62,7 +62,7 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
         </div>
 
         <div
-          class="flex max-w-[calc(100%_-_394px)]"
+          class="flex w-full"
           id="product-slider-container"
         >
           {productsArray && <ProductSlider products={productsArray} />}
