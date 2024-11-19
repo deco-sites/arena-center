@@ -24,7 +24,7 @@ export interface Props {
 
 function Banner({ images, href, alt }: Props) {
   return (
-    <a class="relative mx-auto w-screen hidden md:block" href={href}>
+    <a class="relative mx-auto w-screen hidden md:block mt-14" href={href}>
       <Picture>
         <Source
           media="(max-width: 640px)"
@@ -42,7 +42,7 @@ function Banner({ images, href, alt }: Props) {
           src={images.desktop}
           alt={alt}
           loading={"lazy"}
-          class=" w-full  max-w-[1200px] px-6 mt-2 h-auto object-cover mx-auto"
+          class=" w-full  max-w-[1440px] px-6 mt-2 h-auto object-cover mx-auto"
         />
       </Picture>
     </a>

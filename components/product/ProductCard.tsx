@@ -41,6 +41,7 @@ function ProductCard({
 
   const { url, image: images, offers, isVariantOf } = product;
   const hasVariant = isVariantOf?.hasVariant ?? [];
+  const description = product.description || isVariantOf?.description;
   const title = isVariantOf?.name ?? product.name;
   const [front, back] = images ?? [];
 
@@ -50,13 +51,16 @@ function ProductCard({
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
-  const percent = listPrice && price
-    ? Math.round(((listPrice - price) / listPrice) * 100)
-    : 0;
+  const percent =
+    listPrice && price
+      ? Math.round(((listPrice - price) / listPrice) * 100)
+      : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
-  {/* Add click event to dataLayer */}
+  {
+    /* Add click event to dataLayer */
+  }
   const event = useSendEvent({
     on: "click",
     event: {
@@ -72,6 +76,9 @@ function ProductCard({
   const firstVariantName = firstSkuVariations?.[0]?.toLowerCase();
   const shoeSizeVariant = "shoe size";
 
+  const shortDescription =
+    description && description?.replace(/<\/?p>|<br\s*\/?>/gi, "").slice(0, 100) + "...";
+
   return (
     <div
       {...event}
@@ -81,7 +88,7 @@ function ProductCard({
         class={clx(
           "relative bg-base-100 w-[295px] h-[295px]",
           "rounded border border-transparent",
-          "group-hover:border-primary",
+          "group-hover:border-primary"
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
@@ -93,7 +100,7 @@ function ProductCard({
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
             "w-[295px]",
-            !inStock && "opacity-70",
+            !inStock && "opacity-70"
           )}
         >
           <Image
@@ -105,7 +112,7 @@ function ProductCard({
             class={clx(
               "object-contain",
               "rounded w-[295px]",
-              "col-span-full row-span-full",
+              "col-span-full row-span-full"
             )}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -121,7 +128,7 @@ function ProductCard({
               "object-contain",
               "rounded w-[295px]",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100",
+              "transition-opacity opacity-0 lg:group-hover:opacity-100"
             )}
             loading="lazy"
             decoding="async"
@@ -129,8 +136,7 @@ function ProductCard({
         </a>
 
         {/* Wishlist button */}
-        {
-          /* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
+        {/* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
 
           <span
             class={clx(
@@ -140,29 +146,26 @@ function ProductCard({
           >
             Notify me
           </span>
-          </div> */
-        }
+          </div> */}
 
         {/* Discounts */}
         <span
           class={clx(
             "absolute top-2 left-2",
             "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-            (percent < 1 || !inStock) && "opacity-0",
+            (percent < 1 || !inStock) && "opacity-0"
           )}
         >
           {percent} % off
         </span>
 
-        {
-          /* <div class="absolute bottom-0 right-0">
+        {/* <div class="absolute bottom-0 right-0">
           <WishlistButton item={item} variant="icon" />
-        </div> */
-        }
+        </div> */}
       </figure>
 
       <a href={relativeUrl} class="pt-4">
-        <span class="font-base text-sm">{title}</span>
+        <p class="font-base text-sm h-10">{title}</p>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (
@@ -174,11 +177,13 @@ function ProductCard({
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
+        <div class="h-[26px] font-light text-[10px] my-3">
+          {shortDescription && <p>{shortDescription}</p>}
+        </div>
       </a>
 
       {/* SKU Selector */}
-      {
-        /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
+      {/* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
         <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
@@ -196,40 +201,36 @@ function ProductCard({
               </li>
             ))}
         </ul>
-      )} */
-      }
+      )} */}
 
-      <div class="flex-grow" />
 
       <div>
-        {inStock
-          ? (
-            <AddToCartButton
-              product={product}
-              seller={seller}
-              item={item}
-              class={clx(
-                "btn",
-                "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full min-h-0 h-7",
-                "hover:!bg-primary",
-                "hover:!text-base-100",
-              )}
-            />
-          )
-          : (
-            <a
-              href={relativeUrl}
-              class={clx(
-                "btn",
-                "btn-outline justify-start border-none text-center !text-sm !font-medium px-0 no-animation w-full h-29",
-                "hover:!bg-transparent",
-                "disabled:!bg-transparent disabled:!opacity-75",
-                "btn-error hover:!text-error disabled:!text-error",
-              )}
-            >
-              Fora de estoque
-            </a>
-          )}
+        {inStock ? (
+          <AddToCartButton
+            product={product}
+            seller={seller}
+            item={item}
+            class={clx(
+              "btn",
+              "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full min-h-0 h-7 mt-2",
+              "hover:!bg-primary",
+              "hover:!text-base-100"
+            )}
+          />
+        ) : (
+          <a
+            href={relativeUrl}
+            class={clx(
+              "btn",
+              "btn-outline justify-start border-none text-center !text-sm !font-medium px-0 no-animation w-full h-29",
+              "hover:!bg-transparent",
+              "disabled:!bg-transparent disabled:!opacity-75",
+              "btn-error hover:!text-error disabled:!text-error"
+            )}
+          >
+            Fora de estoque
+          </a>
+        )}
       </div>
     </div>
   );
