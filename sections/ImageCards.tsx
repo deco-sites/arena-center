@@ -19,10 +19,10 @@ export default function (props: Props) {
           <a href={card.href}>
             <div class="flex flex-col">
               <Image
-                class="hidden lg:block w-full"
+                class="hidden lg:block w-[294px] h-[625px]"
                 src={card.src}
                 width={294}
-                height={368}
+                height={625}
               />
               {/* <div class="bg-primary text-center lg:pb-[57px] lg:w-auto overflow-auto lg:overflow-visible rounded-full lg:rounded-none py-10 lg:pt-3 px-16">
                 <p class="font-extralight text-2xl">até</p>
