@@ -77,7 +77,8 @@ function ProductCard({
   const shoeSizeVariant = "shoe size";
 
   const shortDescription =
-    description && description?.replace(/<\/?p>|<br\s*\/?>/gi, "").slice(0, 100) + "...";
+    description &&
+    description?.replace(/<\/?p>|<br\s*\/?>/gi, "").slice(0, 100) + "...";
 
   return (
     <div
@@ -202,7 +203,6 @@ function ProductCard({
             ))}
         </ul>
       )} */}
-
 
       <div>
         {inStock ? (

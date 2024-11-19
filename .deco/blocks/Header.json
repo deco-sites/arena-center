@@ -130,7 +130,11 @@
           "url": "/natal/guirlandas"
         }
       ],
-      "image": []
+      "image": [
+        {
+          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f4a9b970-2298-458b-bce7-2eac21ecd554/happy-christmas-tree-and-presents"
+        }
+      ]
     },
     {
       "@type": "SiteNavigationElement",
