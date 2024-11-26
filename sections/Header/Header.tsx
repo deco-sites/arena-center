@@ -210,22 +210,24 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
         </a>
       )}
 
-      <label
-        for={SEARCHBAR_DRAWER_ID}
-        class="btn btn-square btn-sm btn-ghost "
-        aria-label="search icon button"
-      >
-        {/* <Icon id="search" /> */}
-        <Image
-          id="search"
-          src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2737a7a2-66a0-45ef-aff9-ae6065f16919/search.svg"
-          alt="icone de pesquisa"
-          width={18}
-          height={18}
-        />
-      </label>
-      <User />
-      <Bag />
+      <div class="flex gap-1 items-center">
+        <label
+          for={SEARCHBAR_DRAWER_ID}
+          class="btn btn-square btn-sm btn-ghost "
+          aria-label="search icon button"
+        >
+          {/* <Icon id="search" /> */}
+          <Image
+            id="search"
+            src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2737a7a2-66a0-45ef-aff9-ae6065f16919/search.svg"
+            alt="icone de pesquisa"
+            width={18}
+            height={18}
+          />
+        </label>
+        <User />
+        <Bag />
+      </div>
     </div>
   </>
 );

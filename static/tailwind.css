@@ -3818,6 +3818,10 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 0.25rem;
   margin-bottom: 0.25rem;
 }
+.my-12 {
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+}
 .my-14 {
   margin-top: 3.5rem;
   margin-bottom: 3.5rem;
@@ -3880,6 +3884,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .ml-6 {
   margin-left: 1.5rem;
+}
+.ml-8 {
+  margin-left: 2rem;
 }
 .mr-2 {
   margin-right: 0.5rem;
@@ -4039,6 +4046,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[26px\] {
   height: 26px;
+}
+.h-\[270px\] {
+  height: 270px;
 }
 .h-\[295px\] {
   height: 295px;
@@ -4208,6 +4218,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[25px\] {
   width: 25px;
+}
+.w-\[270px\] {
+  width: 270px;
 }
 .w-\[280px\] {
   width: 280px;
@@ -4964,10 +4977,6 @@ details.collapse summary::-webkit-details-marker {
   padding-left: 3.5rem;
   padding-right: 3.5rem;
 }
-.px-16 {
-  padding-left: 4rem;
-  padding-right: 4rem;
-}
 .px-2 {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
@@ -5210,9 +5219,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-\[48px\] {
   font-size: 48px;
-}
-.text-\[73px\] {
-  font-size: 73px;
 }
 .text-\[80px\] {
   font-size: 80px;
@@ -6305,6 +6311,11 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 768px) {
 
+  .md\:mx-0 {
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
@@ -6530,10 +6541,6 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 1.5rem;
   }
 
-  .lg\:block {
-    display: block;
-  }
-
   .lg\:flex {
     display: flex;
   }
@@ -6682,10 +6689,6 @@ details.collapse summary::-webkit-details-marker {
     overflow: visible;
   }
 
-  .lg\:rounded-none {
-    border-radius: 0px;
-  }
-
   .lg\:bg-primary-content {
     --tw-bg-opacity: 1;
     background-color: var(--fallback-pc,oklch(var(--pc)/var(--tw-bg-opacity)));
@@ -6734,14 +6737,6 @@ details.collapse summary::-webkit-details-marker {
   .lg\:py-36 {
     padding-top: 9rem;
     padding-bottom: 9rem;
-  }
-
-  .lg\:pb-\[57px\] {
-    padding-bottom: 57px;
-  }
-
-  .lg\:pt-3 {
-    padding-top: 0.75rem;
   }
 
   .lg\:text-left {

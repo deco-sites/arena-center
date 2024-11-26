@@ -21,7 +21,7 @@ function Header({ title, cta }: Props) {
         "px-5 sm:px-10",
       )}
     >
-      <span class="text-base font-semibold text-accent">{title}</span>
+      <span class="text-base font-semibold text-accent mx-auto md:mx-0">{title}</span>
       {cta && (
         <a class="text-sm font-medium text-primary" href={cta}>
           Veja mais:

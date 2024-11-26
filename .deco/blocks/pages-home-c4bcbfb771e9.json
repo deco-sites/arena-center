@@ -185,6 +185,24 @@
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "href": "#"
+        },
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "href": "#"
+        },
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "href": "#"
+        },
+        {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "href": "#"
+        }
       ]
     },
     {

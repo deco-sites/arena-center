@@ -38,7 +38,7 @@ export default function TopBar({ content }: Props) {
   const device = useDevice();
   if (device !== "desktop") {
     return (
-      <div class="fixed flex items-center overflow-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] mt-[-8px]">
+      <div class="flex items-center overflow-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] mt-[-8px]">
         {content.map((item) => (
           <a
             href={item.href}
