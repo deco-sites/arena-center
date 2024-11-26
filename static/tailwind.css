@@ -3886,9 +3886,6 @@ details.collapse summary::-webkit-details-marker {
 .ml-8 {
   margin-left: 2rem;
 }
-.ml-\[-240px\] {
-  margin-left: -240px;
-}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -6351,6 +6348,10 @@ details.collapse summary::-webkit-details-marker {
   .md\:mx-10 {
     margin-left: 2.5rem;
     margin-right: 2.5rem;
+  }
+
+  .md\:ml-\[-240px\] {
+    margin-left: -240px;
   }
 
   .md\:mr-0 {

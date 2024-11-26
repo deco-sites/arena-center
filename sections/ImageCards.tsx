@@ -50,6 +50,7 @@ export default function (props: Props) {
                   src={card.src}
                   width={270}
                   height={270}
+                  fit="contain"
                 />
               </a>
             ))}

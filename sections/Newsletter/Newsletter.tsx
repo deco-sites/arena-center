@@ -48,7 +48,7 @@ function Notice({ title, description }: {
   return (
     <div class="w-full max-w-[1200px] pb-1">
       <div class="flex flex-col justify-center mx-auto items-center  gap-4">
-        <p class="text-[22px] mb-4 font-medium text-start ml-[-240px]">
+        <p class="text-[22px] mb-4 font-medium text-center md:ml-[-240px]">
           {title}
         </p>
       </div>
