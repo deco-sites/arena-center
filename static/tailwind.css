@@ -3665,6 +3665,9 @@ details.collapse summary::-webkit-details-marker {
 .left-12 {
   left: 3rem;
 }
+.left-14 {
+  left: 3.5rem;
+}
 .left-2 {
   left: 0.5rem;
 }
@@ -4324,14 +4327,17 @@ details.collapse summary::-webkit-details-marker {
 .max-w-7xl {
   max-width: 80rem;
 }
+.max-w-\[1095px\] {
+  max-width: 1095px;
+}
 .max-w-\[1096px\] {
   max-width: 1096px;
 }
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
-.max-w-\[1300px\] {
-  max-width: 1300px;
+.max-w-\[1320px\] {
+  max-width: 1320px;
 }
 .max-w-\[139px\] {
   max-width: 139px;
@@ -4395,6 +4401,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .max-w-\[80px\] {
   max-width: 80px;
+}
+.max-w-\[980px\] {
+  max-width: 980px;
 }
 .max-w-full {
   max-width: 100%;
@@ -6297,6 +6306,10 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:pb-5 {
     padding-bottom: 1.25rem;
+  }
+
+  .sm\:pl-0 {
+    padding-left: 0px;
   }
 
   .sm\:pt-10 {

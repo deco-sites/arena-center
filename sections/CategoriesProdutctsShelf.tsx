@@ -2,7 +2,7 @@ import Image from "apps/website/components/Image.tsx";
 import type { ImageWidget } from "apps/admin/widgets.ts";
 import S from "../components/ui/Section.tsx";
 import { Product } from "apps/commerce/types.ts";
-import ProductSlider from "../components/product/ProductSlider.tsx";
+import ProductSliderCategorie from "../components/product/ProductSliderCategorie.tsx";
 
 import { useSection } from "@deco/deco/hooks";
 
@@ -67,7 +67,7 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
           class="flex w-full overflow-x-hidden"
           id="product-slider-container"
         >
-          {productsArray && <ProductSlider products={productsArray} />}
+          {productsArray && <ProductSliderCategorie products={productsArray} />}
         </div>
       </div>
     </div>
