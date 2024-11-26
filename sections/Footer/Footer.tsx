@@ -103,9 +103,9 @@ function Footer({
         </button>
         <p class="text-primary text-center text-xs">TOPO</p>
       </div>
-      <div class="flex flex-col max-w-[1440px] mx-auto gap-5 py-10">
+      <div class="flex flex-col max-w-[1440px] mx-auto gap-5 pb-10 ">
         <Newsletter {...newsletterProps} />
-        <ul class="grid grid-flow-row lg:grid-flow-col w-full justify-around mx-auto columns-2 gap-6 px-4">
+        <ul class="grid grid-flow-row lg:grid-flow-col w-full justify-around mx-auto columns-2 gap-6 px-4 border-t border-base-300 pt-7">
           <li class="flex flex-col gap-4 col-start-1 col-end-3 w-full md:w-[180px]">
             <p class="text-xs font-medium">{aboutUs.title}</p>
             <p class="text-[10px]">{aboutUs.paragraph}</p>
@@ -132,7 +132,7 @@ function Footer({
               </ul>
             </li>
           ))}
-          <div class="flex flex-col gap-4">
+          <div class="flex flex-col gap-4 mt-[-80px] md:mt-0">
             <p class="text-xs font-medium">{social?.socialTitle}</p>
             <div class="flex md:justify-center lg:justify-around">
               {social?.socialItems.map(({ image, href, alt }) => (
@@ -200,7 +200,7 @@ function Footer({
             ))}
             <div class="mx-12 pb-4 flex justify-start w-full">
               {" "}
-              <span class="text-[10px] font-normal text-base-400">
+              <span class="text-[10px] font-normal text-base-400 pl-14">
                 {trademark}
               </span>
             </div>

@@ -47,8 +47,8 @@ function Notice({ title, description }: {
 }) {
   return (
     <div class="w-full max-w-[1200px] pb-1">
-      <div class="flex flex-col justify-center mx-auto items-center text-center gap-4">
-        <p class="text-[22px] mb-4 font-medium text-center sm:text-start">
+      <div class="flex flex-col justify-center mx-auto items-center  gap-4">
+        <p class="text-[22px] mb-4 font-medium text-start ml-[-240px]">
           {title}
         </p>
       </div>
@@ -95,13 +95,8 @@ function Newsletter({
     );
   }
   return (
-    <div class="bg-primary flex flex-col md:flex-row gap-8 items-center md:gap-4 sm:gap-6 w-80% md:px-10 max-w-[1440px] py-5 sm:py-10">
-        <Image
-          class="object-contain"
-          src={logo}
-          width={240}
-          height={40}
-        />
+    <div class="bg-primary flex flex-col md:flex-row gap-8 items-center md:gap-4 sm:gap-6 w-80% md:px-10 max-w-[1440px] py-5 sm:pb-5 sm:pt-4">
+      <Image class="object-contain" src={logo} width={240} height={40} />
       <div class="flex flex-col pb-1 w-full max-w-[570px] mx-auto">
         <Notice {...empty} />
         <form
@@ -116,14 +111,15 @@ function Newsletter({
             type="text"
             placeholder={placeholder}
           />
-          <button class="bg-accent-content mx-auto h-5 text-primary-content text-xs px-8 rounded-lg" type="submit">
-            <span class="[.htmx-request_&]:hidden inline">
-              {label}
-            </span>
+          <button
+            class="bg-accent-content mx-auto h-5 text-primary-content text-xs px-8 rounded-lg"
+            type="submit"
+          >
+            <span class="[.htmx-request_&]:hidden inline">{label}</span>
             <span class="[.htmx-request_&]:inline hidden loading loading-spinner" />
           </button>
         </form>
-          <span class="text-[10px] mt-[6px]">{consentText}</span>
+        <span class="text-[10px] mt-[6px]">{consentText}</span>
       </div>
     </div>
   );

@@ -40,7 +40,7 @@ export default function Form({ items }: Props) {
         <input
           as="input"
           type="text"
-          class="input  join-item w-[280px] h-9 bg-accent-content bg-opacity-10 placeholder:text-[10px] text-sm rounded "
+          class="input  join-item md:w-[280px] w-48 h-9 bg-accent-content bg-opacity-10 placeholder:text-[10px] text-sm rounded "
           placeholder="Digite aqui o CEP"
           name="postalCode"
           maxLength={8}

@@ -869,11 +869,6 @@ html {
   -ms-overflow-style: none;
   scrollbar-width: none;
 }
-.carousel-vertical {
-  flex-direction: column;
-  overflow-y: scroll;
-  scroll-snap-type: y mandatory;
-}
 .carousel-item {
   box-sizing: content-box;
   display: flex;
@@ -3888,6 +3883,9 @@ details.collapse summary::-webkit-details-marker {
 .ml-8 {
   margin-left: 2rem;
 }
+.ml-\[-240px\] {
+  margin-left: -240px;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -3935,6 +3933,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-\[-80px\] {
+  margin-top: -80px;
 }
 .mt-\[-8px\] {
   margin-top: -8px;
@@ -4071,14 +4072,8 @@ details.collapse summary::-webkit-details-marker {
 .h-\[625px\] {
   height: 625px;
 }
-.h-\[666px\] {
-  height: 666px;
-}
 .h-\[73px\] {
   height: 73px;
-}
-.h-\[809px\] {
-  height: 809px;
 }
 .h-\[88px\] {
   height: 88px;
@@ -4177,6 +4172,9 @@ details.collapse summary::-webkit-details-marker {
 .w-44 {
   width: 11rem;
 }
+.w-48 {
+  width: 12rem;
+}
 .w-6 {
   width: 1.5rem;
 }
@@ -4222,9 +4220,6 @@ details.collapse summary::-webkit-details-marker {
 .w-\[270px\] {
   width: 270px;
 }
-.w-\[280px\] {
-  width: 280px;
-}
 .w-\[287px\] {
   width: 287px;
 }
@@ -4269,9 +4264,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[522px\] {
   width: 522px;
-}
-.w-\[596px\] {
-  width: 596px;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -5076,6 +5068,9 @@ details.collapse summary::-webkit-details-marker {
 .pb-1 {
   padding-bottom: 0.25rem;
 }
+.pb-10 {
+  padding-bottom: 2.5rem;
+}
 .pb-12 {
   padding-bottom: 3rem;
 }
@@ -5138,6 +5133,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-6 {
   padding-top: 1.5rem;
+}
+.pt-7 {
+  padding-top: 1.75rem;
 }
 .pt-8 {
   padding-top: 2rem;
@@ -5707,6 +5705,12 @@ details.collapse summary::-webkit-details-marker {
 }
 
 @media (min-width: 768px) {
+
+  .md\:carousel-vertical {
+    flex-direction: column;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+  }
 
   .md\:btn-sm {
     height: 2rem;
@@ -6284,8 +6288,16 @@ details.collapse summary::-webkit-details-marker {
     padding-bottom: 2.5rem;
   }
 
+  .sm\:pb-5 {
+    padding-bottom: 1.25rem;
+  }
+
   .sm\:pt-10 {
     padding-top: 2.5rem;
+  }
+
+  .sm\:pt-4 {
+    padding-top: 1rem;
   }
 
   .sm\:text-start {
@@ -6341,6 +6353,14 @@ details.collapse summary::-webkit-details-marker {
     display: flex;
   }
 
+  .md\:h-\[666px\] {
+    height: 666px;
+  }
+
+  .md\:h-\[809px\] {
+    height: 809px;
+  }
+
   .md\:max-h-\[940px\] {
     max-height: 940px;
   }
@@ -6355,6 +6375,14 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:w-\[200px\] {
     width: 200px;
+  }
+
+  .md\:w-\[280px\] {
+    width: 280px;
+  }
+
+  .md\:w-\[596px\] {
+    width: 596px;
   }
 
   .md\:w-full {

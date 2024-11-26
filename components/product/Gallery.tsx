@@ -48,11 +48,11 @@ export default function GallerySlider(props: Props) {
         {/* Image Slider */}
         <div class="col-start-1 col-span-1 sm:col-start-2">
           <div class="relative h-min flex-grow">
-            <Slider class="carousel carousel-vertical gap-2 w-[596px] h-[809px]">
+            <Slider class="carousel md:carousel-vertical gap-2 md:w-[596px] md:h-[809px]">
               {images.map((img, index) => (
                 <Slider.Item
                   index={index}
-                  class="carousel-item w-full h-[666px]"
+                  class="carousel-item w-full md:h-[666px]"
                 >
                   <Image
                     class="w-full bg-base-100"
