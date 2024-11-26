@@ -31,7 +31,7 @@ export default function ProductShelf({ products, title, cta }: Props) {
     },
   });
   return (
-    <Section.Container {...viewItemListEvent} class=" w-full px-2 mx-auto ">
+    <Section.Container {...viewItemListEvent} class="px-2 mx-auto ">
       <Section.Header title={title} cta={cta}/>
 
       <ProductSlider products={products} itemListName={title} />
