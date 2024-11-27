@@ -8,9 +8,11 @@ export interface Cards {
 }
 
 export interface Props {
-  /** @maxItem 4 */
+  /** @maxItem images 4 */
+  /** @description tamanho da imagem para celular largura 294px altura 625px */
   images?: Cards[];
   /** @maxItem 4 */
+  /** @description tamanho da imagem para celular largura 270px altura 270px */
   imagesMobile: Cards[];
 }
 
@@ -59,3 +61,4 @@ export default function (props: Props) {
     </>
   );
 }
+
