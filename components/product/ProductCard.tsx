@@ -83,11 +83,11 @@ function ProductCard({
   return (
     <div
       {...event}
-      class={clx("card card-compact group text-sm w-[295px] h-[498px]", _class)}
+      class={clx("card card-compact group text-sm w-[280px] h-auto", _class)}
     >
       <figure
         class={clx(
-          "relative bg-base-100 w-[295px] h-[295px]",
+          "relative bg-base-100 w-[280px] h-[280px]",
           "rounded border border-transparent",
           "group-hover:border-primary"
         )}
@@ -100,19 +100,19 @@ function ProductCard({
           class={clx(
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
-            "w-[295px]",
+            "w-[280px]",
             !inStock && "opacity-70"
           )}
         >
           <Image
             src={front.url!}
             alt={front.alternateName}
-            width={295}
-            height={295}
+            width={280}
+            height={280}
             //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
-              "rounded w-[295px]",
+              "rounded w-[280px]",
               "col-span-full row-span-full"
             )}
             preload={preload}
@@ -122,12 +122,12 @@ function ProductCard({
           <Image
             src={back?.url ?? front.url!}
             alt={back?.alternateName ?? front.alternateName}
-            width={295}
-            height={295}
+            width={280}
+            height={280}
             //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
-              "rounded w-[295px]",
+              "rounded w-[280px]",
               "col-span-full row-span-full",
               "transition-opacity opacity-0 lg:group-hover:opacity-100"
             )}

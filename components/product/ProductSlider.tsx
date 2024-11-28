@@ -17,40 +17,39 @@ function ProductSlider({ products, itemListName }: Props) {
     <>
       <div
         id={id}
-        class="grid grid-rows-1 lg:px-11 px-0 overflow-x-auto max-w-[1440px]"
-        style={{
-          gridTemplateColumns: "min-content 1fr min-content",
-        }}
+        class=" max-w-[1440px] mx-auto flex "
+        // style={{
+        //   gridTemplateColumns: "min-content 1fr min-content",
+        // }}
       >
-        <div class="col-start-1 col-span-3 row-start-1 row-span-1 w-full">
-          <Slider class="carousel carousel-center  gap-7 sm:gap-8 max-w-[1320px] mx-auto">
+        <div class="z-10 self-center p-2 relative ">
+          <Slider.PrevButton class="hidden sm:flex disabled:opacity-40 cursor-pointer">
+            <Icon id="chevron-right" class="rotate-180 text-accent-content" />
+          </Slider.PrevButton>
+        </div>
+        <div class="">
+          <Slider class="carousel carousel-center  gap-7 sm:gap-5 max-w-[1280px] mx-auto">
             {products?.map((product, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
-                  "carousel-item",
-                  "first:pl-5 ",
-                  "last:pr-5 last:sm:pr-0"
+                  "carousel-item"
+                  // "first:pl-12 first:sm:pr-0",
+                  // "last:pr-12 last:sm:pr-0"
                 )}
               >
                 <ProductCard
                   index={index}
                   product={product}
                   itemListName={itemListName}
-                  class="w-[287px] sm:w-[300px]"
+                  class="w-[287px]"
                 />
               </Slider.Item>
             ))}
           </Slider>
         </div>
 
-        <div class="col-start-1 col-span-1 row-start-1 row-span-1 z-10 self-center p-2 relative bottom-[15%] right-12">
-          <Slider.PrevButton class="hidden sm:flex disabled:opacity-40 cursor-pointer">
-            <Icon id="chevron-right" class="rotate-180 text-accent-content" />
-          </Slider.PrevButton>
-        </div>
-
-        <div class="col-start-3 col-span-1 row-start-1 row-span-1 z-10 self-center p-2 relative bottom-[15%] left-12">
+        <div class="z-10 self-center p-2 relative bottom-[15%] ">
           <Slider.NextButton class="hidden sm:flex disabled:opacity-40 cursor-pointer">
             <Icon id="chevron-right" class=" text-accent-content" />
           </Slider.NextButton>
