@@ -26,7 +26,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
       </p>
       <div
         id={id}
-        class="grid grid-rows-1 w-full max-w-[1440px]"
+        class="grid grid-rows-1 w-full"
         style={{
           gridTemplateColumns: "min-content 1fr min-content",
         }}

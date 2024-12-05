@@ -3653,6 +3653,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-\[15\%\] {
   bottom: 15%;
 }
+.bottom-\[25\%\] {
+  bottom: 25%;
+}
 .bottom-\[7\%\] {
   bottom: 7%;
 }
@@ -3688,6 +3691,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .right-6 {
   right: 1.5rem;
+}
+.right-8 {
+  right: 2rem;
 }
 .top-0 {
   top: 0px;
@@ -3883,6 +3889,9 @@ details.collapse summary::-webkit-details-marker {
 .ml-8 {
   margin-left: 2rem;
 }
+.mr-1 {
+  margin-right: 0.25rem;
+}
 .mr-2 {
   margin-right: 0.5rem;
 }
@@ -4027,8 +4036,11 @@ details.collapse summary::-webkit-details-marker {
 .h-\[174px\] {
   height: 174px;
 }
-.h-\[18px\] {
-  height: 18px;
+.h-\[17px\] {
+  height: 17px;
+}
+.h-\[182px\] {
+  height: 182px;
 }
 .h-\[20px\] {
   height: 20px;
@@ -4077,6 +4089,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[92px\] {
   height: 92px;
+}
+.h-\[96px\] {
+  height: 96px;
 }
 .h-auto {
   height: auto;
@@ -4201,6 +4216,15 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[165px\] {
   width: 165px;
+}
+.w-\[175px\] {
+  width: 175px;
+}
+.w-\[176px\] {
+  width: 176px;
+}
+.w-\[17px\] {
+  width: 17px;
 }
 .w-\[193px\] {
   width: 193px;
@@ -4330,8 +4354,11 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[1200px\] {
   max-width: 1200px;
 }
-.max-w-\[1280px\] {
-  max-width: 1280px;
+.max-w-\[1220px\] {
+  max-width: 1220px;
+}
+.max-w-\[1300px\] {
+  max-width: 1300px;
 }
 .max-w-\[139px\] {
   max-width: 139px;
@@ -4564,6 +4591,9 @@ details.collapse summary::-webkit-details-marker {
 .gap-12 {
   gap: 3rem;
 }
+.gap-16 {
+  gap: 4rem;
+}
 .gap-2 {
   gap: 0.5rem;
 }
@@ -4792,10 +4822,6 @@ details.collapse summary::-webkit-details-marker {
 .border-neutral {
   --tw-border-opacity: 1;
   border-color: var(--fallback-n,oklch(var(--n)/var(--tw-border-opacity)));
-}
-.border-primary {
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-p,oklch(var(--p)/var(--tw-border-opacity)));
 }
 .border-secondary {
   --tw-border-opacity: 1;
@@ -5226,6 +5252,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .text-\[80px\] {
   font-size: 80px;
+}
+.text-\[9px\] {
+  font-size: 9px;
 }
 .text-base {
   font-size: 1rem;
@@ -5712,12 +5741,6 @@ details.collapse summary::-webkit-details-marker {
 
 @media (min-width: 768px) {
 
-  .md\:carousel-vertical {
-    flex-direction: column;
-    overflow-y: scroll;
-    scroll-snap-type: y mandatory;
-  }
-
   .md\:btn-sm {
     height: 2rem;
     min-height: 2rem;
@@ -5938,12 +5961,6 @@ details.collapse summary::-webkit-details-marker {
   text-decoration-line: underline;
 }
 
-.hover\:shadow-lg:hover {
-  --tw-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.1), 0 4px 6px -4px rgb(0 0 0 / 0.1);
-  --tw-shadow-colored: 0 10px 15px -3px var(--tw-shadow-color), 0 4px 6px -4px var(--tw-shadow-color);
-  box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
 .focus\:outline-none:focus {
   outline: 2px solid transparent;
   outline-offset: 2px;
@@ -5985,6 +6002,10 @@ details.collapse summary::-webkit-details-marker {
 
 .disabled\:opacity-40:disabled {
   opacity: 0.4;
+}
+
+.disabled\:opacity-50:disabled {
+  opacity: 0.5;
 }
 
 .group[open] .group-open\:border-b-\[4px\] {
@@ -6288,6 +6309,11 @@ details.collapse summary::-webkit-details-marker {
     padding-right: 2.5rem;
   }
 
+  .sm\:px-24 {
+    padding-left: 6rem;
+    padding-right: 6rem;
+  }
+
   .sm\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
@@ -6379,12 +6405,8 @@ details.collapse summary::-webkit-details-marker {
     display: flex;
   }
 
-  .md\:h-\[666px\] {
-    height: 666px;
-  }
-
-  .md\:h-\[809px\] {
-    height: 809px;
+  .md\:h-\[630px\] {
+    height: 630px;
   }
 
   .md\:max-h-\[940px\] {
@@ -6393,6 +6415,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:w-1\/3 {
     width: 33.333333%;
+  }
+
+  .md\:w-\[143px\] {
+    width: 143px;
   }
 
   .md\:w-\[180px\] {
@@ -6407,8 +6433,8 @@ details.collapse summary::-webkit-details-marker {
     width: 280px;
   }
 
-  .md\:w-\[596px\] {
-    width: 596px;
+  .md\:w-\[630px\] {
+    width: 630px;
   }
 
   .md\:w-full {
@@ -6451,6 +6477,10 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:justify-around {
     justify-content: space-around;
+  }
+
+  .md\:gap-1 {
+    gap: 0.25rem;
   }
 
   .md\:gap-2 {

@@ -45,15 +45,16 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
   // Find the related product
   const secondProduct = pdpProductTag
     ? products.find((item) => {
-      return (
-        item.additionalProperty?.find(({ name }) =>
+        return (
+          item.additionalProperty?.find(({ name }) =>
             name?.includes(pdpProductTag)
           ) !== undefined && item.productID !== productID
-      );
-    })
+        );
+      })
     : undefined;
-  
-  const totalPrice = offers &&
+
+  const totalPrice =
+    offers &&
     secondProduct &&
     offers.lowPrice + (secondProduct.offers?.lowPrice || 0);
 
@@ -61,15 +62,15 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
     <div class="container flex flex-col gap-2 sm:gap-5 md:w-full pt-8 items-center py-5 w-[350px] mt-2 mx-auto">
       {page !== undefined && secondProduct !== undefined && (
         <div class="flex flex-col ">
-          <div class="flex md:flex-row flex-col md:items-center mx-auto md:gap-2">
+          <div class="flex md:flex-row flex-col md:items-center mx-auto md:gap-1">
             <div class="flex items-center">
               <ProductCardBuyTogether
                 index={1}
                 product={product}
-                class="md:w-[200px] w-[150px]"
+                class="md:w-[143px] w-[150px]"
               />
-              <div class="py-auto w-[25px] h-[25px] z-10">
-                <p class="w-full h-full text-xl font-bold text-base-100 bg-secondary rounded-full flex items-center justify-center">
+              <div class="py-auto w-[17px] h-[17px] z-10">
+                <p class="w-full h-full text-lg  text-base-100 bg-secondary rounded-full flex items-center justify-center">
                   +
                 </p>
               </div>
@@ -77,46 +78,44 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
                 <ProductCardBuyTogether
                   index={1}
                   product={secondProduct}
-                  class="md:w-[200px] w-[150px]"
+                  class="md:w-[143px] w-[150px]"
                 />
               )}
             </div>
-            <div class="flex flex-col mt-3 md:mt-0">
-              <div class="py-auto w-[25px] h-[25px] mx-auto">
-                <p class="w-full h-full text-xl font-bold text-base-100 bg-secondary rounded-full flex items-center justify-center">
-                  =
+            <div class="flex flex-col">
+              <div class="flex flex-col mt-3 md:mt-0 w-[175px] h-[182px] bg-secondary  items-center justify-center text-base-100 gap-7">
+                <p class="text-[9px] font-semibold ">
+                  Comprar esses 2 produtos por:
                 </p>
+                <div class="flex items-center gap-2">
+                  <p class="w-[17px] h-[17px] text-lg text-secondary bg-base-100 rounded-full flex items-center justify-center">
+                    =
+                  </p>
+                  <p class="text-2xl font-semibold ">
+                    {" "}
+                    {formatPrice(totalPrice, offers?.priceCurrency)}
+                  </p>
+                </div>
               </div>
 
-              <div class="flex flex-col items-center md:justify-center">
-                <p class="text-sm font-semibold ">Valor total:</p>
-                <p class="text-2lg font-bold text-secondary">
-                  {" "}
-                  {formatPrice(totalPrice, offers?.priceCurrency)}
-                </p>
-              </div>
-            </div>
-          </div>
-          <div>
-            {inStock && secondProduct
-              ? (
+              {inStock && secondProduct ? (
                 <AddToCartBuyTogether
                   products={[product, secondProduct]}
                   class={clx("")}
-                  icon=""
+                  icon="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
                 />
-              )
-              : (
+              ) : (
                 <p
                   class={clx(
                     "btn",
                     "btn-outline justify-center  !text-[12px] !font-medium px-0 no-animation w-full",
-                    "text-center border border-secondary btn-secondary min-h-0 h-[26px]",
+                    "text-center border border-secondary btn-secondary min-h-0 h-[26px]"
                   )}
                 >
                   Fora de estoque
                 </p>
               )}
+            </div>
           </div>
         </div>
       )}

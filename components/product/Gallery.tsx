@@ -29,7 +29,11 @@ export default function GallerySlider(props: Props) {
     throw new Error("Missing Product Details Page Info");
   }
 
-  const { page: { product: { name, isVariantOf, image: pImages } } } = props;
+  const {
+    page: {
+      product: { name, isVariantOf, image: pImages },
+    },
+  } = props;
 
   // Filter images when image's alt text matches product name
   // More info at: https://community.shopify.com/c/shopify-discussions/i-can-not-add-multiple-pictures-for-my-variants/m-p/2416533
@@ -47,21 +51,21 @@ export default function GallerySlider(props: Props) {
       >
         {/* Image Slider */}
         <div class="col-start-1 col-span-1 sm:col-start-2">
-          <div class="relative h-min flex-grow">
-            <Slider class="carousel md:carousel-vertical gap-2 md:w-[596px] md:h-[809px]">
+          <div class="relative h-min flex">
+            <Slider class="carousel  gap-2 md:w-[630px] md:h-[630px]">
               {images.map((img, index) => (
                 <Slider.Item
                   index={index}
-                  class="carousel-item w-full md:h-[666px]"
+                  class="carousel-item w-full md:h-[630px]"
                 >
                   <Image
-                    class="w-full bg-base-100"
-                    sizes="(max-width: 640px) 100vw, 40vw"
+                    class="w-full bg-base-100 border border-base-400"
+                    sizes="(max-width: 630px) 100vw, 40vw"
                     style={{ aspectRatio: ASPECT_RATIO }}
                     src={img.url!}
                     alt={img.alternateName}
-                    width={WIDTH}
-                    height={HEIGHT}
+                    width={630}
+                    height={630}
                     // Preload LCP image for better web vitals
                     preload={index === 0}
                     loading={index === 0 ? "eager" : "lazy"}
@@ -69,24 +73,22 @@ export default function GallerySlider(props: Props) {
                 </Slider.Item>
               ))}
             </Slider>
-            {
-              /*
+
             <Slider.PrevButton
-              class="no-animation absolute left-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
+              class="no-animation absolute left-4 top-1/2 btn btn-circle btn-outline disabled:opacity-50"
               disabled
             >
               <Icon id="chevron-right" class="rotate-180" />
             </Slider.PrevButton>
 
             <Slider.NextButton
-              class="no-animation absolute right-2 top-1/2 btn btn-circle btn-outline disabled:invisible"
+              class="no-animation absolute right-8 top-1/2 btn btn-circle btn-outline disabled:opacity-50"
               disabled={images.length < 2}
             >
               <Icon id="chevron-right" />
-            </Slider.NextButton> */
-            }
+            </Slider.NextButton>
 
-            <div class="absolute top-2 right-2 bg-base-100 rounded-full">
+            <div class="absolute top-2 right-8 bg-base-100 rounded-full">
               <label class="btn btn-ghost hidden sm:inline-flex" for={zoomId}>
                 <Icon id="pan_zoom" />
               </label>
@@ -103,7 +105,7 @@ export default function GallerySlider(props: Props) {
               "gap-2",
               "max-w-full",
               "overflow-x-auto",
-              "sm:overflow-y-auto",
+              "sm:overflow-y-auto"
             )}
             style={{ maxHeight: "600px" }}
           >

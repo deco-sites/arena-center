@@ -69,21 +69,21 @@ function AddToCartButton(props: Props) {
     >
       <button
         class={clx(
-          "flex  w-full h-[18px] text-base-200 min-h-0 btn btn-outline",
+          "flex  w-[176px] h-[29px] text-base-200 min-h-0 btn bg-gray-300 border-none mt-3",
           _class?.toString(),
         )}
         hx-on:click={useScript(onClick)}
         disabled={false}
       >
         <span class="text-accent font-medium text-[10px] text-center w-full  hover:text-base-100 flex justify-center items-center ">
-          ADICIONAR AO CARRINHO
           {icon !== "" && (
             <img
-              class="ml-1"
+              class="mr-1"
               src={icon}
               alt="icone de um carrinho de compras"
             />
           )}
+         comprar junto
         </span>
       </button>
     </div>

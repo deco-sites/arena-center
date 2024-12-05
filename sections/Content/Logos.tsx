@@ -1,51 +1,72 @@
 import { type ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
-import Section, {
-  type Props as SectionHeaderProps,
-} from "../../components/ui/Section.tsx";
+
+import { clx } from "../../sdk/clx.ts";
+import Icon from "../../components/ui/Icon.tsx";
+import Slider from "../../components/ui/Slider.tsx";
+import { useId } from "../../sdk/useId.ts";
+import Section from "../../components/ui/Section.tsx";
 
 export interface Image {
   image: ImageWidget;
   alt: string;
+  href: string;
 }
 
-export interface Props extends SectionHeaderProps {
+export interface Props  {
   images?: Image[];
 }
 
-function Logos({
-  title,
-  cta,
-  images = [
-    {
-      alt: "deco",
-      image:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/fe7cd8ba-c954-45d6-9282-ee7d8ca8e3c7",
-    },
-    {
-      alt: "deco",
-      image:
-        "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/637e8601-6b86-4979-aa97-68013a2a60fd",
-    },
-  ],
-}: Props) {
+function Logos({  images }: Props) {
+  const id = useId();
   return (
     <Section.Container>
-      <Section.Header title={title} cta={cta} />
+      <div
+        id={id}
+        class="grid grid-rows-1 w-full max-w-[1300px] mx-auto h-[96px] mt-5"
+        style={{
+          gridTemplateColumns: "min-content 1fr min-content",
+        }}
+      >
+        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 px-6 md:px-0 max-w-[1200px]">
+          <Slider class="carousel carousel-center sm:carousel-end gap-16 w-full">
+            {images?.map((item, index) => (
+              <Slider.Item
+                index={index}
+                class={clx(
+                  "carousel-item",
+                  "first:pl-0 first:sm:pl-0",
+                  "last:pr-0 last:sm:pr-0"
+                )}
+              >
+                <div class="">
+                  <a href={item.href}>
+                    <Image
+                      src={item.image}
+                      width={0}
+                      height={48}
+                      class=" h-12 w-auto"
+                    />
+                  </a>
+                </div>
+              </Slider.Item>
+            ))}
+          </Slider>
+        </div>
+        <div class="relative bottom-[25%] z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center">
+          <Slider.PrevButton class="sm:flex hidden disabled:opacity-40 no-animation">
+            <Icon id="chevron-right" class="rotate-180 text-accent-content" />
+          </Slider.PrevButton>
+        </div>
 
-      <ul class="flex flex-wrap items-center justify-center gap-2 sm:gap-4 px-5 sm:px-0">
-        {images.map((item) => (
-          <li>
-            <Image
-              width={300}
-              height={300}
-              src={item.image}
-              alt={item.alt}
-              class="w-full h-full object-cover"
-            />
-          </li>
-        ))}
-      </ul>
+        <div class="relative bottom-[25%] z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center">
+          <Slider.NextButton class="sm:flex hidden disabled:opacity-40 no-animation">
+            <Icon id="chevron-right" class="text-accent-content" />
+          </Slider.NextButton>
+        </div>
+      </div>
+
+      <Slider.JS rootId={id} />
     </Section.Container>
   );
 }
