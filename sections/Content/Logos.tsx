@@ -20,15 +20,15 @@ export interface Props  {
 function Logos({  images }: Props) {
   const id = useId();
   return (
-    <Section.Container>
+    <Section.Container class=" w-full">
       <div
         id={id}
-        class="grid grid-rows-1 w-full max-w-[1300px] mx-auto h-[96px] mt-5"
+        class="grid grid-rows-1 w-[full] lg:max-w-[1300px] mx-auto h-[96px] mt-5 "
         style={{
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 px-6 md:px-0 max-w-[1200px]">
+        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 px-6 md:px-0 lg:max-w-[1200px] w-full">
           <Slider class="carousel carousel-center sm:carousel-end gap-16 w-full">
             {images?.map((item, index) => (
               <Slider.Item
