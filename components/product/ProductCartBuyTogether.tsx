@@ -47,10 +47,9 @@ function ProductCardBuyTogether({
   const firstSkuVariations = Object.entries(possibilities)?.[0];
   const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
-  const percent =
-    listPrice && offers?.lowPrice
-      ? Math.round(((listPrice - offers?.lowPrice) / listPrice) * 100)
-      : 0;
+  const percent = listPrice && offers?.lowPrice
+    ? Math.round(((listPrice - offers?.lowPrice) / listPrice) * 100)
+    : 0;
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
@@ -88,7 +87,7 @@ function ProductCardBuyTogether({
             "absolute top-0 left-0 m-auto ",
             "grid grid-cols-1 grid-rows-1",
             "w-full bg-base-100",
-            !inStock && "opacity-70"
+            !inStock && "opacity-70",
           )}
         >
           <Image
@@ -100,7 +99,7 @@ function ProductCardBuyTogether({
             class={clx(
               "object-contain",
               "rounded",
-              "col-span-full row-span-full"
+              "col-span-full row-span-full",
             )}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -116,7 +115,7 @@ function ProductCardBuyTogether({
               "object-contain",
               "rounded",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100 "
+              "transition-opacity opacity-0 lg:group-hover:opacity-100 ",
             )}
             loading="lazy"
             decoding="async"
@@ -127,7 +126,7 @@ function ProductCardBuyTogether({
           class={clx(
             "text-[10px] font-semibold text-base-100 bg-primary text-center rounded-badge w-[48px] h-[20px] uppercase",
             "absolute top-1 left-1 flex flex-col items-center justify-center",
-            (percent < 1 || !inStock) && "opacity-1"
+            (percent < 1 || !inStock) && "opacity-1",
           )}
         >
           <span>10% off</span>

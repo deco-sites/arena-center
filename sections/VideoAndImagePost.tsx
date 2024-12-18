@@ -38,8 +38,7 @@ const DEFAULT_PROPS: Props = {
       titleNews: "TÍTULO: XXXXXXXX",
       subtitleNews: "XXXXXXXXXXXXXXX",
       image: {
-        src:
-          "",
+        src: "",
         alt: "",
       },
       video: "",
@@ -50,13 +49,11 @@ const DEFAULT_PROPS: Props = {
       titleNews: "TÍTULO: XXXXXXXX",
       subtitleNews: "XXXXXXXXXXXXXXX",
       image: {
-        src:
-          "",
+        src: "",
         alt: "",
       },
       video: "",
-      post:
-        " ",
+      post: " ",
     },
     {
       titleNews: "TÍTULO: XXXXXXXX",
@@ -66,9 +63,8 @@ const DEFAULT_PROPS: Props = {
         alt: "",
       },
       video: "",
-      post:
-        ""
-    }
+      post: "",
+    },
   ],
   layout: {
     variation: "Grid",

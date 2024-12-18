@@ -76,7 +76,7 @@ const sdk = () => {
           // deno-lint-ignore no-explicit-any
           (item as any).item_id === itemId
         );
-     
+
         if (!input || !item) {
           return false;
         }
@@ -287,7 +287,6 @@ export default function Session(
             <div
               class="h-full flex flex-col bg-base-100 items-center justify-center overflow-auto "
               style={{
-              
                 maxWidth: "425px",
               }}
             >

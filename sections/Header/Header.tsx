@@ -87,7 +87,8 @@ const onLoad = () => {
 
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
   <>
-    {/* <Modal id={SEARCHBAR_POPUP_ID}>
+    {
+      /* <Modal id={SEARCHBAR_POPUP_ID}>
       <div
         class="absolute top-0 bg-base-100 container"
         style={{ marginTop: HEADER_HEIGHT_MOBILE }}
@@ -100,7 +101,8 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           <Searchbar {...searchbar} />
         )}
       </div>
-    </Modal> */}
+    </Modal> */
+    }
 
     <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
       <div class="grid grid-cols-3 place-items-center ">
@@ -115,7 +117,8 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           </a>
         </div>
 
-        {/* <label
+        {
+          /* <label
           for={SEARCHBAR_POPUP_ID}
           class="input input-bordered flex items-center gap-2 w-full"
           aria-label="search icon button"
@@ -124,7 +127,8 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           <span class="text-base-400 truncate">
             Search products, brands...
           </span>
-        </label> */}
+        </label> */
+        }
         <Searchbar {...searchbar} />
 
         <div class="flex gap-4 place-self-end pr-14">
@@ -134,9 +138,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
       </div>
 
       <ul class="flex justify-between text-accent-content border-y border-gray-300 h-11 max-w-[1444px] px-14">
-        {navItems?.slice(0, 10).map((item) => (
-          <NavItem item={item} />
-        ))}
+        {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
       </ul>
     </div>
   </>
@@ -148,13 +150,13 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       aside={
         <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
           <div class="w-screen overflow-y-auto">
-            {loading === "lazy" ? (
-              <div class="h-full w-full flex items-center justify-center">
-                <span class="loading loading-spinner" />
-              </div>
-            ) : (
-              <Searchbar {...searchbar} />
-            )}
+            {loading === "lazy"
+              ? (
+                <div class="h-full w-full flex items-center justify-center">
+                  <span class="loading loading-spinner" />
+                </div>
+              )
+              : <Searchbar {...searchbar} />}
           </div>
         </Drawer.Aside>
       }
@@ -163,17 +165,17 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       id={SIDEMENU_DRAWER_ID}
       aside={
         <Drawer.Aside title="Menu" drawer={SIDEMENU_DRAWER_ID}>
-          {loading === "lazy" ? (
-            <div
-              id={SIDEMENU_CONTAINER_ID}
-              class="h-full flex items-center justify-center"
-              style={{ minWidth: "100vw" }}
-            >
-              <span class="loading loading-spinner" />
-            </div>
-          ) : (
-            <Menu navItems={navItems ?? []} />
-          )}
+          {loading === "lazy"
+            ? (
+              <div
+                id={SIDEMENU_CONTAINER_ID}
+                class="h-full flex items-center justify-center"
+                style={{ minWidth: "100vw" }}
+              >
+                <span class="loading loading-spinner" />
+              </div>
+            )
+            : <Menu navItems={navItems ?? []} />}
         </Drawer.Aside>
       }
     />
@@ -235,7 +237,8 @@ function Header({
   alerts = [],
   contacts = [],
   logo = {
-    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -246,18 +249,17 @@ function Header({
   return (
     <header
       style={{
-        height:
-          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
+        height: device === "desktop"
+          ? HEADER_HEIGHT_DESKTOP
+          : HEADER_HEIGHT_MOBILE,
       }}
     >
       <div class=" fixed w-full z-40  top-0 left-0   transition-all duration-500 ease-in-out">
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
         <div id="header" class="bg-base-100">
-          {device === "desktop" ? (
-            <Desktop logo={logo} {...props} />
-          ) : (
-            <Mobile logo={logo} {...props} />
-          )}
+          {device === "desktop"
+            ? <Desktop logo={logo} {...props} />
+            : <Mobile logo={logo} {...props} />}
         </div>
       </div>
       <script

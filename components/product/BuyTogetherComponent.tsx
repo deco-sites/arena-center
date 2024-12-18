@@ -45,16 +45,15 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
   // Find the related product
   const secondProduct = pdpProductTag
     ? products.find((item) => {
-        return (
-          item.additionalProperty?.find(({ name }) =>
+      return (
+        item.additionalProperty?.find(({ name }) =>
             name?.includes(pdpProductTag)
           ) !== undefined && item.productID !== productID
-        );
-      })
+      );
+    })
     : undefined;
 
-  const totalPrice =
-    offers &&
+  const totalPrice = offers &&
     secondProduct &&
     offers.lowPrice + (secondProduct.offers?.lowPrice || 0);
 
@@ -98,23 +97,25 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
                 </div>
               </div>
 
-              {inStock && secondProduct ? (
-                <AddToCartBuyTogether
-                  products={[product, secondProduct]}
-                  class={clx("")}
-                  icon="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
-                />
-              ) : (
-                <p
-                  class={clx(
-                    "btn",
-                    "btn-outline justify-center  !text-[12px] !font-medium px-0 no-animation w-full",
-                    "text-center border border-secondary btn-secondary min-h-0 h-[26px]"
-                  )}
-                >
-                  Fora de estoque
-                </p>
-              )}
+              {inStock && secondProduct
+                ? (
+                  <AddToCartBuyTogether
+                    products={[product, secondProduct]}
+                    class={clx("")}
+                    icon="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
+                  />
+                )
+                : (
+                  <p
+                    class={clx(
+                      "btn",
+                      "btn-outline justify-center  !text-[12px] !font-medium px-0 no-animation w-full",
+                      "text-center border border-secondary btn-secondary min-h-0 h-[26px]",
+                    )}
+                  >
+                    Fora de estoque
+                  </p>
+                )}
             </div>
           </div>
         </div>

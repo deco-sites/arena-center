@@ -13,11 +13,11 @@ export interface Image {
   href: string;
 }
 
-export interface Props  {
+export interface Props {
   images?: Image[];
 }
 
-function Logos({  images }: Props) {
+function Logos({ images }: Props) {
   const id = useId();
   return (
     <Section.Container class=" w-full">
@@ -36,7 +36,7 @@ function Logos({  images }: Props) {
                 class={clx(
                   "carousel-item",
                   "first:pl-0 first:sm:pl-0",
-                  "last:pr-0 last:sm:pr-0"
+                  "last:pr-0 last:sm:pr-0",
                 )}
               >
                 <div class="">

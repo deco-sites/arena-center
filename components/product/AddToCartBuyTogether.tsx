@@ -83,7 +83,7 @@ function AddToCartButton(props: Props) {
               alt="icone de um carrinho de compras"
             />
           )}
-         comprar junto
+          comprar junto
         </span>
       </button>
     </div>
