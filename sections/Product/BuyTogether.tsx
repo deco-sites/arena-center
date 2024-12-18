@@ -43,7 +43,7 @@ export default function BuyTogether({ page, products }: Props) {
       );
     })
     : undefined;
-  console.log("pdp", pdpProductTag, secondProduct);
+
   const totalPrice = offers &&
     secondProduct &&
     offers.lowPrice + (secondProduct.offers?.lowPrice || 0);
@@ -71,8 +71,8 @@ export default function BuyTogether({ page, products }: Props) {
               />
             )}
           </div>
-          <div class="flex flex-col mt-3 md:mt-0">
-            <div class="py-auto w-[25px] h-[25px] mx-auto">
+          <div class="flex flex-col mt-3 md:mt-0 border border-red-900">
+            <div class="py-auto w-[25px] h-[25px] px-auto">
               <p class="w-full h-full text-xl font-bold text-base-200 bg-secondary rounded-full flex items-center justify-center">
                 =
               </p>

@@ -81,7 +81,7 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
                 />
               )}
             </div>
-            <div class="flex flex-col">
+            <div class="flex flex-col justify-center items-center">
               <div class="flex flex-col mt-3 md:mt-0 w-[175px] h-[182px] bg-secondary  items-center justify-center text-base-100 gap-7">
                 <p class="text-[9px] font-semibold ">
                   Comprar esses 2 produtos por:
