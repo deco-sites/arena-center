@@ -9,15 +9,33 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
     <div class="collapse collapse-plus">
       <input type="checkbox" />
-      <div class="collapse-title">{item.name}</div>
+      <a class="collapse-title capitalize" href={item.url}>
+        {item.name}
+      </a>
       <div class="collapse-content">
         <ul>
-          <li>
-            <a class="underline text-sm" href={item.url}>Ver todos</a>
-          </li>
           {item.children?.map((node) => (
             <li>
-              <MenuItem item={node} />
+              <div class="collapse collapse-plus">
+                <input type="checkbox" />
+                <a
+                  class="collapse-title capitalize font-medium"
+                  href={node.url}
+                >
+                  {node.name}
+                </a>
+                <div class="collapse-content">
+                  <ul>
+                    {item.children?.map((nodeItem) => (
+                      <li class="mt-4">
+                        <a href={nodeItem.url} >
+                          {nodeItem.name}
+                        </a>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+              </div>
             </li>
           ))}
         </ul>
@@ -40,7 +58,7 @@ function Menu({ navItems = [] }: Props) {
         ))}
       </ul>
 
-      <ul class="flex flex-col py-2 bg-base-200">
+      {/* <ul class="flex flex-col py-2 bg-base-200">
         <li>
           <a
             class="flex items-center gap-4 px-4 py-2"
@@ -77,7 +95,7 @@ function Menu({ navItems = [] }: Props) {
             <span class="text-sm">Minha conta</span>
           </a>
         </li>
-      </ul>
+      </ul> */}
     </div>
   );
 }

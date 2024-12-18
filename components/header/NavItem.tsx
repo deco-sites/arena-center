@@ -14,13 +14,16 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
       class="group flex items-center "
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
-      <a href={url} class="group-hover:underline text-sm font-light">
+      <a
+        href={url}
+        class="group-hover:underline text-sm font-light hover:text-primary "
+      >
         {name}
       </a>
 
       {children && children.length > 0 && (
         <div
-          class="fixed hidden hover:flex text-xs group-hover:flex bg-gray-100 z-40 items-start justify-center gap-6 border-t border-b border-accent-content max-w-[1440px] mx-auto top-[-15px]"
+          class="fixed hidden hover:flex text-xs group-hover:flex bg-white z-40 items-start justify-center gap-6  max-w-[1440px] overflow-x-auto  mx-auto top-[-15px] capitalize w-screen left-1/2 -translate-x-1/2"
           style={{
             marginTop: HEADER_HEIGHT_DESKTOP,
           }}
@@ -38,15 +41,15 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
           <ul class="flex items-start justify-start gap-6 container">
             {children.map((node) => (
               <li class="p-6">
-                <a class="hover:underline" href={node.url}>
-                  <span>{node.name}</span>
+                <a class="hover:underline capitalize" href={node.url}>
+                  <span class="capitalize font-medium">{node.name}</span>
                 </a>
 
-                <ul class="flex flex-col gap-1 mt-4">
+                <ul class="flex flex-col gap-2 mt-4">
                   {node.children?.map((leaf) => (
                     <li>
-                      <a class="hover:underline" href={leaf.url}>
-                        <span class="text-xs">{leaf.name}</span>
+                      <a class="hover:underline capitalize" href={leaf.url}>
+                        <span class="text-xs capitalize">{leaf.name}</span>
                       </a>
                     </li>
                   ))}
