@@ -75,23 +75,1924 @@
           "children": [
             {
               "image": [],
+              "children": [
+                {
+                  "image": [],
+                  "children": [
+                    {
+                      "image": [],
+                      "children": [
+                        {
+                          "image": []
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ],
+              "name": "Baldes",
+              "url": "/Bar/baldes-e-champanheiras/baldes"
+            },
+            {
+              "image": [],
               "children": [],
-              "name": "sala",
-              "url": "/"
+              "name": "Champanheiras",
+              "url": "/bar/baldes-e-champanheiras/champanheiras"
             }
           ],
-          "name": "Ultimos Lançamentos",
           "image": [
             {
               "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1c5c2d6e-5bc5-4e2e-bab6-8dfafabeae60/sala.png"
             }
           ],
-          "url": "/ultimos"
+          "url": "/bar/baldes-e-champanheiras",
+          "name": "Baldes e Champanheiras"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "name": "CANECAS CERVEJA",
+              "url": "/bar/copos-e-canecas/canecas-cerveja"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "COPOS BAIXOS",
+              "url": "/bar/copos-e-canecas/copos-baixos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "COPOS ÁGUA E SUCO",
+              "url": "/bar/copos-e-canecas/copos-agua-e-suco"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "COPOS COM CANUDO",
+              "url": "/bar/copos-e-canecas/copos-com-canudo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "COPOS DE SHOT",
+              "url": "/bar/copos-e-canecas/copos-de-shot"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "COPOS DE WHISKY",
+              "url": "/bar/copos-e-canecas/copos-de-whisky"
+            }
+          ],
+          "name": "COPOS E CANECAS",
+          "url": "/bar/copos-e-canecas"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "name": "DECANTERS",
+              "url": "/bar/decantes-e-garrafas/decantes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "garrafas",
+              "url": "/bar/decantes-e-garrafas/garrafas"
+            }
+          ],
+          "name": "DECANTERS E GARRAFAS",
+          "url": "/bar/decantes-e-garrafas"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "bar/jarras-moringas-e-suqueiras/jarras",
+              "name": "jarras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "bar/jarras-moringas-e-suqueiras/moringas",
+              "name": "moringas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "bar/jarras-moringas-e-suqueiras/suqueiras",
+              "name": "suqueiras"
+            }
+          ],
+          "name": "JARRAS, MORINGAS E SUQUEIRAS",
+          "url": "/bar/jarras-moringas-e-suqueiras"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-coquetel",
+              "name": "taças coquetel"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-de-agua",
+              "name": "taças de água"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-de-cerveja",
+              "name": "Taças de cerveja"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-de-champanhe",
+              "name": "taças de champanhe"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-de-drink",
+              "name": "taças de drink"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-de-gin",
+              "name": "taças de gin"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-de-licor",
+              "name": "taças de licor"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "taças de vinho",
+              "url": "/bar/taças/taças-de-vinho"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-diversas",
+              "name": "taças diversas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/taças/taças-milk-shake",
+              "name": "Taças Milk Shake"
+            }
+          ],
+          "name": "taças",
+          "url": "/bar/taças"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/abridores",
+              "name": "Abridores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/aeradores",
+              "name": "Aeradores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/amassadores",
+              "name": "Amassadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/coadores",
+              "name": "coadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/colher-preparo",
+              "name": "Colher preparo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Colheres de sorvete",
+              "url": "/bar/utensilios-de-bar/colheres-de-sorvete"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/conchas",
+              "name": "Conchas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/coqueteleiras",
+              "name": "coqueteleiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/cortadores",
+              "name": "Cortadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/descascadores",
+              "name": "descascadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/dosadores",
+              "name": "dosadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/escumadeiras",
+              "name": "escumadeiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/espatulas",
+              "name": "espatulas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/espremedores",
+              "name": "espremedores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/formas-de-gelo",
+              "name": "Formas de Gelo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/fouet",
+              "name": "Fouet"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/garfo-preparo",
+              "name": "Garfo preparo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/pegadores",
+              "name": "pegadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/peneiras",
+              "name": "peneiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/pinceis",
+              "name": "pincéis"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/processadores",
+              "name": "Processadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/quebra-nozes",
+              "name": "Quebra Nozes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/ralador",
+              "name": "Ralador"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/rolos-massa",
+              "name": "Rolos Massa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/tampas",
+              "name": "tampas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "termômetros",
+              "url": "/bar/utensilios-de-bar/termômetros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/bar/utensilios-de-bar/timers",
+              "name": "timers"
+            }
+          ],
+          "name": "UTENSÍLIOS DE BAR",
+          "url": "/bar/utensilios-de-bar"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "bar diversos",
+          "url": "/bar/bar-diversos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "outlet bar",
+          "url": "/bar/outlet-bar"
         }
       ],
-      "url": "/novidades",
+      "url": "/bar",
       "@type": "SiteNavigationElement",
-      "name": "Novidades"
+      "name": "Bar"
+    },
+    {
+      "url": "/mesa-posta",
+      "name": "Mesa Posta",
+      "children": [
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/aneis-guardanapo",
+              "name": "Anéis Guardanapo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/descanso-de-panela",
+              "name": "Descanso de Panela"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/guardanapos",
+              "name": "Guardanapos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/lugar-americano",
+              "name": "Lugar Americano"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/porta-talheres",
+              "name": "Porta Talheres"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/sousplat",
+              "name": "Sousplat"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/toalhas-mesa",
+              "name": "Toalhas Mesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/mesa-textil-e-acessorios/trilhos-mesa",
+              "name": "Trilhos Mesa"
+            }
+          ],
+          "name": "MESA TEXTIL E ACESSÓRIOS",
+          "url": "/mesa-posta/mesa-textil-e-acessorios"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/aparelhos-de-jantar",
+              "name": "Aparelhos de Jantar"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/bowls",
+              "name": "Bowls"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/Bules",
+              "name": "Bules"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/canecas",
+              "name": "Canecas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/pratos-diversos",
+              "name": "Pratos Diversos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/pratos-fundos",
+              "name": "Pratos Fundos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/pratos-rasos",
+              "name": "Pratos Rasos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/pratos-sobremesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/ramekins",
+              "name": "Ramekins"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/saladeiras",
+              "name": "Saladeiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/taça-sobremesa",
+              "name": "Taça Sobremesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/xicaras-cafe",
+              "name": "Xícaras Café"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/louças/xicaras-cha",
+              "name": "Xícaras Chá"
+            }
+          ],
+          "url": "/mesa-posta/louças",
+          "name": "Louças"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "name": "Colher Mesa",
+              "url": "/mesa-posta/faqueiros-e-talheres/colher-mesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/faqueiros-e-talheres/colher-sobremesa",
+              "name": "Colher Sobremesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/faqueiros-e-talheres/facas-churrasco",
+              "name": "Facas Churrasco"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/faqueiros-e-talheres/facas-sobremesa",
+              "name": "Facas Sobremesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/faqueiros-e-talheres/faqueiros",
+              "name": "Faqueiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Garfos Mesa",
+              "url": "/mesa-posta/faqueiros-e-talheres/garfos-mesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/faqueiros-e-talheres/garfos-sobremesa",
+              "name": "Garfos Sobremesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/faqueiros-e-talheres/talheres-outros",
+              "name": "Talheres Outros"
+            }
+          ],
+          "name": "Faqueiros e Talheres",
+          "url": "/mesa-posta/faqueiros-e-talheres"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/açucareiros",
+              "name": "Açucareiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/aparelhos-de-fondue",
+              "name": "Aparelhos de Fondue"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/azeiteiros-e-vinagreiros",
+              "name": "Azeiteiros e Vinagreiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/balde-pestisco",
+              "name": "Balde Petisco"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/bandejas",
+              "name": "Bandejas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/boleiras",
+              "name": "Boleiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/bules",
+              "name": "Bules"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/caixas-chá",
+              "name": "Caixas Chá"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/cestas-pao",
+              "name": "Cestas Pão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/galheteiros",
+              "name": "Galheteiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/garrafas-termicas",
+              "name": "Garrafas Térmicas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Leiteiras",
+              "url": "/mesa-posta/acessórios-para-servir/leiteiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/mantegueiras",
+              "name": "Mantegueiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/meleiras",
+              "name": "Meleiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Molheiras",
+              "url": "/mesa-posta/acessórios-para-servir/molheiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/paliteiros",
+              "name": "Paliteiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/petisqueiras",
+              "name": "Petisqueiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/pimenteiros",
+              "name": "Pimenteiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Queijeiras",
+              "url": "/mesa-posta/acessórios-para-servir/queijeiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/rechauds",
+              "name": "Rechauds"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/saleiros-de-mesa",
+              "name": "Saleiros de Mesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/servir-diversos",
+              "name": "Servir Diversos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/sopeiras",
+              "name": "Sopeiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/tabuas-de-servir",
+              "name": "Tábuas de Servir"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/tigelas-e-bowls"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/travessas",
+              "name": "Travessas"
+            }
+          ],
+          "name": "Acessórios para Servir",
+          "url": "/mesa-posta/acessórios-para-servir"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/linha-oriental/pratos-orientais",
+              "name": "Pratos Orientais"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/linha-oriental/hashis",
+              "name": "Hashis"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/linha-oriental/oriental-diversos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/linha-oriental/tigelas-orientais",
+              "name": "Tigelas Orientais"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/linha-oriental/travessas-orientais",
+              "name": "Travessas Orientais"
+            }
+          ],
+          "url": "/mesa-posta/linha-oriental",
+          "name": "Linha Oriental"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "Mesa Posta Diversos",
+          "url": "/mesa-posta/mesa-posta-diversos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/mesa-posta/outlet",
+          "name": "Outlet"
+        }
+      ],
+      "image": []
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/cozinha",
+      "children": [
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/dispenser-detergente",
+              "name": "Dispenser Detergente"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/escorredores",
+              "name": "Escorredores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/fruteiras",
+              "name": "Fruteiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/lixeiras-de-pia",
+              "name": "Lixeiras de Pia"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/lixeiras-de-cozinha",
+              "name": "Lixeiras de Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/organizadores-de-talheres",
+              "name": "Organizadores de Talheres"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/porta-papel-toalha",
+              "name": "Porta Papel Toalha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/rodo-de-pia",
+              "name": "Rodo de Pia"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/porta-ovos",
+              "name": "Porta Ovos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/suportes-de-cozinha",
+              "name": "Suportes de Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/organizadores-de-cozinha",
+              "name": "Organizadores de Cozinha"
+            }
+          ],
+          "url": "/cozinha/organizacao-cozinha",
+          "name": "Organização Cozinha"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/portes-de-armazento/latas-de-armazenamento",
+              "name": "Latas de Armazenamento"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/portes-de-armazento/porta-pao",
+              "name": "Porta Pão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/portes-de-armazento/potes-de-armazenamento",
+              "name": "Potes de Armazenamento"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/portes-de-armazento/porta-condimentos",
+              "name": "Porta Condimentos"
+            }
+          ],
+          "url": "/cozinha/potes-de-armazenamento",
+          "name": "Potes de Armazenamento"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/apoios-de-colher",
+              "name": "Apoios de Colher"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/balancas-de-cozinha",
+              "name": "Balanças de Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/bowls-preparo",
+              "name": "Bowls Preparo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/escorredores-de-preparo",
+              "name": "Escorredores de Preparo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/macaricos",
+              "name": "Maçaricos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/maquinas-macarrao",
+              "name": "Máquinas Macarrão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/medidores",
+              "name": "Medidores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/moedores",
+              "name": "Moedores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/pilao",
+              "name": "Pilão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/secadores-salada",
+              "name": "Secadores Salada"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/tabuas-preparo",
+              "name": "Tábuas Preparo"
+            }
+          ],
+          "name": "Acessórios para Cozinha",
+          "url": "/cozinha/acessorios-para-cozinha"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/cafeteiras-chaleiras-e-fervedores/cafeteiras",
+              "name": "Cafeteiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/cafeteiras-chaleiras-e-fervedores/chaleiras",
+              "name": "Chaleiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/cafeteiras-chaleiras-e-fervedores/fervedores",
+              "name": "Fervedores"
+            }
+          ],
+          "url": "/cozinha/cafeteiras-chaleiras-e-fervedores",
+          "name": "Cafeteiras, Chaleiras e Fervedores"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/copa-textil/avental",
+              "name": "Avental"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/copa-textil/luvas-cozinha",
+              "name": "Luvas Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/copa-textil/panos-prato",
+              "name": "Panos Prato"
+            }
+          ],
+          "name": "Copa Têxtil",
+          "url": "/cozinha/copa-textil"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/facas-e-acessorios/afiadores-de-faca",
+              "name": "Afiadores de Faca"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/facas-e-acessorios/facas-cozinha",
+              "name": "Facas Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/facas-e-acessorios/jogos-facas",
+              "name": "Jogos Facas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/facas-e-acessorios/tesouras-cozinha",
+              "name": "Tesouras Cozinha"
+            }
+          ],
+          "name": "Facas e Acessórios",
+          "url": "/cozinha/facas-e-acessorios"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/linha-churrasco/acessorios-churrasco",
+              "name": "Acessórios Churrasco"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/linha-churrasco/faca-churrasco",
+              "name": "Faca Churrasco"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/linha-churrasco/garfo-churrasco",
+              "name": "Garfo Churrasco"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/linha-churrasco/kit-churrasco",
+              "name": "Kit Churrasco"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/linha-churrasco/chairas",
+              "name": "Chairas"
+            }
+          ],
+          "url": "/cozinha/linha-churrasco",
+          "name": "Linha Churrasco"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/formas-e-assadeiras/assadeiras-e-formas-de-pao",
+              "name": "Assadeiras e Formas de Pão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/formas-e-assadeiras/formas-e-refratarios",
+              "name": "Formas e Refratários"
+            }
+          ],
+          "name": "Formas e Assadeiras",
+          "url": "/cozinha/formas-e-assadeiras"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/frigideiras",
+              "name": "Frigideiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/caçarolas",
+              "name": "Caçarolas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Jogos Panelas",
+              "url": "/cozinha/panelas/jogos-panelas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/omeleteiras",
+              "name": "Omeleteiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/woks",
+              "name": "Woks"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/tapioqueiras",
+              "name": "Tapioqueiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/diversos",
+              "name": "Diversos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/bifeteiras",
+              "name": "Bifeteiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/panelas-de-pressao",
+              "name": "Panelas de Pressão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/panquequeiras",
+              "name": "Panquequeiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/panelas/pipoqueiras",
+              "name": "Pipoqueiras"
+            }
+          ],
+          "url": "/cozinha/panelas",
+          "name": "Panelas"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/abridores-lata",
+              "name": "Abridores Lata"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/acendedores",
+              "name": "Acendedores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/amassadores",
+              "name": "Amassadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/coadores",
+              "name": "Coadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/colheres-de-sorvete",
+              "name": "Colheres de Sorvete"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/conchas",
+              "name": "Conchas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/cortadores-ovo",
+              "name": "Cortadores Ovo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/descascadores",
+              "name": "Descascadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/escumadeira",
+              "name": "Escumadeira"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/espátulas",
+              "name": "Espátulas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/espremedores",
+              "name": "Espremedores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/fouet",
+              "name": "Fouet"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/garfo-preparo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/kit-utensilios-cozinha",
+              "name": "Kit Utensílios Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/pegadores",
+              "name": "Pegadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/peneiras",
+              "name": "Peneiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/pincéis",
+              "name": "Pincéis"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/processadores",
+              "name": "Processadores"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/quebra-nozes",
+              "name": "Quebra Nozes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/ralador",
+              "name": "Ralador"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/rolos-massa",
+              "name": "Rolos Massa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/utensilios-de-cozinha/termometro",
+              "name": "Termômetro"
+            },
+            {
+              "image": [],
+              "children": [],
+              "name": "Timers",
+              "url": "/cozinha/utensilios-de-cozinha/timers"
+            }
+          ],
+          "url": "/cozinha/utensilios-de-cozinha",
+          "name": "Utensílios de Cozinha"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "Cozinha Diversos",
+          "url": "/cozinha/cozinha-diversos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "name": "Cozinha Outlet",
+          "url": "/cozinha/cozinha-outlet"
+        }
+      ],
+      "name": "Cozinha"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "children": [
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-closets/cabides",
+              "name": "Cabides"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-closets/caixas-organizadoras",
+              "name": "Caixas Organizadoras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-closets/organizadores-de-armario",
+              "name": "Organizadores de Armário"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-closets/organizadores-de-gavetas",
+              "name": "Organizadores de Gavetas"
+            }
+          ],
+          "name": "Organização Closets",
+          "url": "organizacao/organizacao-closets"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/balancas-de-banheiro",
+              "name": "Balanças de Banheiro"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/bandejas-de-lavabo",
+              "name": "Bandejas de Lavabo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/kits-banheiro",
+              "name": "Kits Banheiro"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/lixeiras-de-banheiro",
+              "name": "Lixeiras de Banheiro"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/porta-escova",
+              "name": "Porta Escova"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/porta-papel-higienico",
+              "name": "Porta Papel Higiênico"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/porta-sabonete",
+              "name": "Porta Sabonete"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/porta-shampoo",
+              "name": "Porta Shampoo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/porta-toalha",
+              "name": "Porta Toalha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavabo/saboneteiras",
+              "name": "Saboneteiras"
+            }
+          ],
+          "url": "/organizacao/organizacao-lavabo",
+          "name": "Organização Lavabo"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavanderia/cestos-de-roupas",
+              "name": "Cestos de Roupas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavanderia/varal-roupas",
+              "name": "Varal Roupas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/organizacao-lavanderia/tabua-de-passar",
+              "name": "Tábua de Passar"
+            }
+          ],
+          "url": "/organizacao/organizacao-lavanderia",
+          "name": "Organização Lavanderia"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/utensilios-de-limpeza/bacias",
+              "name": "Bacias"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/utensilios-de-limpeza/baldes",
+              "name": "Baldes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/utensilios-de-limpeza/escovas-sanitarias",
+              "name": "Escovas Sanitárias"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/utensilios-de-limpeza/outros",
+              "name": "Outros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/utensilios-de-limpeza/kit-limpeza",
+              "name": "Kit Limpeza"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/organizacao/utensilios-de-limpeza/mop",
+              "name": "Mop"
+            }
+          ],
+          "url": "/organizacao/utensilios-de-limpeza",
+          "name": "Utensílios de Limpeza"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/organizacao/organizacao-diversos",
+          "name": "Organização Diversos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/organizacao/organizacao-outlet",
+          "name": "Outlet"
+        }
+      ],
+      "name": "Organização",
+      "url": "/organizacao"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "name": "Decoração",
+      "children": [
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/almofadas-e-mantas/almofadas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/almofadas-e-mantas/capas-de-almofadas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/almofadas-e-mantas/enchimento-para-almofadas",
+              "name": "Enchimento para almofadas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/almofadas-e-mantas/mantas-para-sofá"
+            }
+          ],
+          "url": "/decoracao/almofadas-e-mantas",
+          "name": "Almofadas e Mantas"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/aromatizadores-de-ambiente/agua-perfumada",
+              "name": "Água Perfumada"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/aromatizadores-de-ambiente/difusores-de-ambientes",
+              "name": "Difusores de Ambientes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/aromatizadores-de-ambiente/sabonetes",
+              "name": "Sabonetes"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/aromatizadores-de-ambiente/saches",
+              "name": "Sachês"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/aromatizadores-de-ambiente/spray",
+              "name": "Spray"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/aromatizadores-de-ambiente/velas-perfumadas",
+              "name": "Velas Perfumadas"
+            }
+          ],
+          "url": "/decoracao/aromatizadores-de-ambiente",
+          "name": "Aromatizadores de Ambiente"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/cortinas/cortinas-banheiro",
+              "name": "Cortinas Banheiro"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/cortinas/cortinas-cozinha",
+              "name": "Cortinas Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/cortinas/cortinas-sala",
+              "name": "Cortinas Sala"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/cortinas/varao",
+              "name": "Varão"
+            }
+          ],
+          "name": "Cortinas",
+          "url": "/decoracao/cortinas"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/espelhos/espelhos-de-parede",
+              "name": "Espelhos de Parede"
+            }
+          ],
+          "url": "/decoracao/espelhos"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/iluminacao/abajures",
+              "name": "Abajures"
+            }
+          ],
+          "url": "/decoracao/iluminacao"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/ampulhetas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/bandejas-decorativas",
+              "name": "Bandejas Decorativas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/bombonieres",
+              "name": "Bombonieres"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/cachepots",
+              "name": "Cachepots"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/caixas-decorativas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/calendarios",
+              "name": "Calendários"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/centros-de-mesa",
+              "name": "Centros de Mesa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/cestos-decorativos",
+              "name": "Cestos Decorativos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/colares",
+              "name": "Colares"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/esculturas",
+              "name": "Esculturas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/globos",
+              "name": "Globos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/lupas",
+              "name": "Lupas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/potiches",
+              "name": "Potiches"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/vasos",
+              "name": "Vasos"
+            }
+          ],
+          "url": "/decoracao/objetos-de-decoracao",
+          "name": "Objetos de Decoração"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/adornos-de-parede",
+              "name": "Adornos de Parede"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/papeis-de-parede",
+              "name": "Papéis de Parede"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/prateleiras",
+              "name": "Prateleiras"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/relogios-de-parede",
+              "name": "Relógios de Parede"
+            }
+          ],
+          "url": "/decoracao/decoracao-de-parede",
+          "name": "Decoração de Parede"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/quadros-e-porta-retrato/porta-retrato",
+              "name": "Porta Retrato"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/quadros-e-porta-retrato/quadros",
+              "name": "Quadros"
+            }
+          ],
+          "url": "/decoracao/quadros-e-porta-retrato"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/velas-e-acessorios/casticais"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/velas-e-acessorios/lanternas",
+              "name": "Lanternas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/velas-e-acessorios/velas-decorativas",
+              "name": "Velas Decorativas"
+            }
+          ],
+          "url": "/decoracao/velas-e-acessorios",
+          "name": "Velas e Acessórios"
+        }
+      ],
+      "url": "/decoração"
+    },
+    {
+      "@type": "SiteNavigationElement",
+      "url": "/cama-e-banho",
+      "name": "Cama e Banho",
+      "children": [
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/tapetes/tapetes-banheiro",
+              "name": "Tapetes Banheiro"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/tapetes/tapetes-box",
+              "name": "Tapetes Box"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/tapetes/tapetes-para-cozinha",
+              "name": "Tapete para Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/tapetes/tapetes-quarto",
+              "name": "Tapetes Quarto"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/tapetes/tapetes-sala",
+              "name": "Tapete Sala"
+            }
+          ],
+          "url": "/cama-e-banho/tapetes",
+          "name": "Tapetes"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/toalhas/toalhas-de-banho",
+              "name": "Toalhas de Banho"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/toalhas/toalhas-de-rosto",
+              "name": "Toalhas de Rosto"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/toalhas/toalhas-de-chao",
+              "name": "Toalhas de Chão"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/toalhas/roupoes",
+              "name": "Roupões"
+            }
+          ],
+          "url": "/cama-e-banho/toalhas",
+          "name": "Toalhas"
+        },
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/cama/colchas",
+              "name": "Colchas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/cama/travesseiros",
+              "name": "Travesseiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/cama/fronhas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cama-e-banho/cama/cobertores",
+              "name": "Cobertores"
+            }
+          ],
+          "url": "/cama-e-banho/cama",
+          "name": "Cama"
+        }
+      ]
     },
     {
       "url": "/natal",
@@ -103,12 +2004,53 @@
             {
               "image": [],
               "children": [],
-              "name": "Arvores Grandes",
-              "url": "/natal/arvore-de-natal/arvores-grandes"
+              "url": "/natal/bonecos-natalinos/bonecas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/bonecos-natalinos/bonecos-de-neve",
+              "name": "Bonecos de Neve"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/bonecos-natalinos/bonecos-outros",
+              "name": "Bonecos Outros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/bonecos-natalinos/esquilos",
+              "name": "Esquilos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/bonecos-natalinos/papai-noel",
+              "name": "Papai Noel"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/bonecos-natalinos/pinguins",
+              "name": "Pinguins"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/bonecos-natalinos/renas",
+              "name": "Renas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/bonecos-natalinos/ursos",
+              "name": "Ursos"
             }
           ],
-          "name": "Arvore de Natal",
-          "url": "/natal/arvore-de-natal"
+          "url": "/natal/bonecos-natalinos",
+          "name": "Bonecos Natalinos"
         },
         {
           "image": [],
@@ -116,71 +2058,200 @@
             {
               "image": [],
               "children": [],
-              "name": "Guirlandas Grandes",
-              "url": "/natal/guirlandas/guirlandas-grandes"
+              "url": "/natal/mesa-posta-natal/aneis-guardanapo",
+              "name": "Anéis Guardanapo"
             },
             {
               "image": [],
               "children": [],
-              "name": "Guirlandas Pequenas",
-              "url": "/natal/guirlandas/guirlandas-pequenas"
+              "url": "/natal/mesa-posta-natal/mesa-têxtil-e-acessorios",
+              "name": "Mesa Têxtil e Acessórios"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/mesa-posta-natal/boleiras-natal",
+              "name": "Boleiras Natal"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/mesa-posta-natal/loucas-diversas-natal"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/mesa-posta-natal/bandejas-natal"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/natal/mesa-posta-natal/velas-e-acessorios-natal",
+              "name": "Velas e Acessórios Natal"
             }
           ],
-          "name": "Guirlandas",
-          "url": "/natal/guirlandas"
+          "url": "/natal/mesa-posta-natal",
+          "name": "Mesa Posta Natal"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/adornos-natalinos",
+          "name": "Adornos Natalinos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/arvores-de-natal",
+          "name": "Árvores de Natal"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/bolas-natalinas",
+          "name": "Bolas Natalinas"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/festao",
+          "name": "Festão"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/fitas-natalinas",
+          "name": "Fitas Natalinas"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/flores-permanentes-natalinas",
+          "name": "Flores Permanentes Natalinas"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/guirlandas-natal",
+          "name": "Guirlandas Natal"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/lacos-natalinos",
+          "name": "Laços Natalinos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/natal-diversos",
+          "name": "Natal DIversos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/natal-outlet",
+          "name": "Natal Outlet"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/natal/pisca-pisca",
+          "name": "Pisca Pisca"
         }
       ],
-      "image": [
-        {
-          "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f4a9b970-2298-458b-bce7-2eac21ecd554/happy-christmas-tree-and-presents"
-        }
-      ]
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "url": "/",
-      "name": "Organização",
-      "children": []
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "children": [],
-      "name": "Decoração",
-      "url": "/"
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "name": "Bar",
-      "children": [],
-      "url": "/"
-    },
-    {
-      "@type": "SiteNavigationElement",
-      "url": "/",
-      "name": "Cozinha",
-      "children": []
-    },
-    {
-      "url": "/men",
-      "name": "Men",
-      "children": [],
       "@type": "SiteNavigationElement"
     },
     {
-      "children": [],
+      "children": [
+        {
+          "image": [],
+          "children": [
+            {
+              "image": [],
+              "children": [],
+              "url": "/pascoa/mesa-posta-pascoa/aneis-guardanapo",
+              "name": "Anéis Guardanapo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/pascoa/mesa-posta-pascoa/mesa-textil-e-acessorios-pascoa",
+              "name": "Mesa Têxtil e Acessórios Páscoa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/pascoa/mesa-posta-pascoa/boleiras-pascoa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/pascoa/mesa-posta-pascoa/loucas-diversas-pascoa",
+              "name": "Louças Diversas Pascoa"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/pascoa/mesa-posta-pascoa/bandejas-pascoa",
+              "name": "Bandejas Páscoa"
+            }
+          ],
+          "url": "/pascoa/mesa-posta-pascoa",
+          "name": "Mesa Posta Páscoa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/adornos-pascoa",
+          "name": "Adornos Páscoa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/bonecos-pascoa",
+          "name": "Bonecos Páscoa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/fitas-pascoa",
+          "name": "Fitas Páscoa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/flores-permanentes-pascoa",
+          "name": "Flores Permanentes Páscoa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/guirlandas-pascoa",
+          "name": "Guirlandas Páscoa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/lacos-pascoa",
+          "name": "Laços Páscoa"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/pascoa-diversos",
+          "name": "Páscoa Diversos"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/pascoa/pascoa-outlet",
+          "name": "Páscoa Outlet"
+        }
+      ],
       "image": [],
-      "name": "Cama e Banho",
-      "url": "/"
-    },
-    {
-      "children": [],
-      "@type": "SiteNavigationElement",
-      "url": "/activities",
-      "name": "Activities"
-    },
-    {
-      "children": [],
-      "image": []
+      "name": "Páscoa",
+      "url": "/pascoa"
     }
   ],
   "loading": "eager",

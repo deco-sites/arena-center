@@ -114,16 +114,7 @@
     ],
     "socialTitle": "Permaneça conectado"
   },
-  "apps": [
-    {
-      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7ae30aac-ad82-4daf-b909-38fc11f07934/App-Apple.png",
-      "link": "/"
-    },
-    {
-      "icon": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7f2172d6-e540-4f46-8ff7-aa34df0c942c/App-android.png",
-      "link": "/"
-    }
-  ],
+  "apps": [],
   "paymentMethods": [
     {
       "payment": [

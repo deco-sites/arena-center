@@ -378,6 +378,20 @@
             "image": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
             }
+          },
+          {
+            "products": [],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
+            },
+            "title": "Home Office"
+          },
+          {
+            "products": [],
+            "image": {
+              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
+            },
+            "title": "ÀREA EXTERNA"
           }
         ],
         "index": 0
