@@ -114,41 +114,41 @@
             {
               "image": [],
               "children": [],
-              "name": "CANECAS CERVEJA",
+              "name": "Canecas Cerveja",
               "url": "/bar/copos-e-canecas/canecas-cerveja"
             },
             {
               "image": [],
               "children": [],
-              "name": "COPOS BAIXOS",
+              "name": "Copos Baixos",
               "url": "/bar/copos-e-canecas/copos-baixos"
             },
             {
               "image": [],
               "children": [],
-              "name": "COPOS ÁGUA E SUCO",
+              "name": "Copos Água e Suco",
               "url": "/bar/copos-e-canecas/copos-agua-e-suco"
             },
             {
               "image": [],
               "children": [],
-              "name": "COPOS COM CANUDO",
+              "name": "Copos com Canudo",
               "url": "/bar/copos-e-canecas/copos-com-canudo"
             },
             {
               "image": [],
               "children": [],
-              "name": "COPOS DE SHOT",
+              "name": "Copos de Shot",
               "url": "/bar/copos-e-canecas/copos-de-shot"
             },
             {
               "image": [],
               "children": [],
-              "name": "COPOS DE WHISKY",
+              "name": "Copos de Whisky",
               "url": "/bar/copos-e-canecas/copos-de-whisky"
             }
           ],
-          "name": "COPOS E CANECAS",
+          "name": "Copos e Canecas",
           "url": "/bar/copos-e-canecas"
         },
         {
@@ -157,17 +157,17 @@
             {
               "image": [],
               "children": [],
-              "name": "DECANTERS",
+              "name": "Decantes",
               "url": "/bar/decantes-e-garrafas/decantes"
             },
             {
               "image": [],
               "children": [],
-              "name": "garrafas",
+              "name": "Garrafas",
               "url": "/bar/decantes-e-garrafas/garrafas"
             }
           ],
-          "name": "DECANTERS E GARRAFAS",
+          "name": "Decantes e Garrafas",
           "url": "/bar/decantes-e-garrafas"
         },
         {
@@ -177,22 +177,22 @@
               "image": [],
               "children": [],
               "url": "bar/jarras-moringas-e-suqueiras/jarras",
-              "name": "jarras"
+              "name": "Jarras"
             },
             {
               "image": [],
               "children": [],
               "url": "bar/jarras-moringas-e-suqueiras/moringas",
-              "name": "moringas"
+              "name": "Moringas"
             },
             {
               "image": [],
               "children": [],
               "url": "bar/jarras-moringas-e-suqueiras/suqueiras",
-              "name": "suqueiras"
+              "name": "Suqueiras"
             }
           ],
-          "name": "JARRAS, MORINGAS E SUQUEIRAS",
+          "name": "Jarras, Moringas e Suqueiras",
           "url": "/bar/jarras-moringas-e-suqueiras"
         },
         {
@@ -202,55 +202,55 @@
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-coquetel",
-              "name": "taças coquetel"
+              "name": "Taças Coquetel"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-de-agua",
-              "name": "taças de água"
+              "name": "Taças de Água"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-de-cerveja",
-              "name": "Taças de cerveja"
+              "name": "Taças de Cerveja"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-de-champanhe",
-              "name": "taças de champanhe"
+              "name": "Taças de Champanhe"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-de-drink",
-              "name": "taças de drink"
+              "name": "Taças de Drink"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-de-gin",
-              "name": "taças de gin"
+              "name": "Taças de Gin"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-de-licor",
-              "name": "taças de licor"
+              "name": "Taças de Licor"
             },
             {
               "image": [],
               "children": [],
-              "name": "taças de vinho",
+              "name": "Taças de Vinho",
               "url": "/bar/taças/taças-de-vinho"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/taças/taças-diversas",
-              "name": "taças diversas"
+              "name": "Taças Diversas"
             },
             {
               "image": [],
@@ -259,7 +259,7 @@
               "name": "Taças Milk Shake"
             }
           ],
-          "name": "taças",
+          "name": "Taças",
           "url": "/bar/taças"
         },
         {
@@ -287,18 +287,18 @@
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/coadores",
-              "name": "coadores"
+              "name": "Coadores"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/colher-preparo",
-              "name": "Colher preparo"
+              "name": "Colher de Preparo"
             },
             {
               "image": [],
               "children": [],
-              "name": "Colheres de sorvete",
+              "name": "Colheres de Sorvete",
               "url": "/bar/utensilios-de-bar/colheres-de-sorvete"
             },
             {
@@ -311,7 +311,7 @@
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/coqueteleiras",
-              "name": "coqueteleiras"
+              "name": "Coqueteleiras"
             },
             {
               "image": [],
@@ -323,31 +323,31 @@
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/descascadores",
-              "name": "descascadores"
+              "name": "Descascadores"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/dosadores",
-              "name": "dosadores"
+              "name": "Dosadores"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/escumadeiras",
-              "name": "escumadeiras"
+              "name": "Escumadeiras"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/espatulas",
-              "name": "espatulas"
+              "name": "Espatulas"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/espremedores",
-              "name": "espremedores"
+              "name": "Espremedores"
             },
             {
               "image": [],
@@ -365,25 +365,25 @@
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/garfo-preparo",
-              "name": "Garfo preparo"
+              "name": "Garfo Preparo"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/pegadores",
-              "name": "pegadores"
+              "name": "Pegadores"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/peneiras",
-              "name": "peneiras"
+              "name": "Peneiras"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/pinceis",
-              "name": "pincéis"
+              "name": "Pincéis"
             },
             {
               "image": [],
@@ -413,34 +413,34 @@
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/tampas",
-              "name": "tampas"
+              "name": "Tampas"
             },
             {
               "image": [],
               "children": [],
-              "name": "termômetros",
+              "name": "Termômetros",
               "url": "/bar/utensilios-de-bar/termômetros"
             },
             {
               "image": [],
               "children": [],
               "url": "/bar/utensilios-de-bar/timers",
-              "name": "timers"
+              "name": "Timers"
             }
           ],
-          "name": "UTENSÍLIOS DE BAR",
+          "name": "Utensílios de Bar",
           "url": "/bar/utensilios-de-bar"
         },
         {
           "image": [],
           "children": [],
-          "name": "bar diversos",
+          "name": "Bar Diversos",
           "url": "/bar/bar-diversos"
         },
         {
           "image": [],
           "children": [],
-          "name": "outlet bar",
+          "name": "Outlet Bar",
           "url": "/bar/outlet-bar"
         }
       ],
@@ -504,7 +504,7 @@
               "name": "Trilhos Mesa"
             }
           ],
-          "name": "MESA TEXTIL E ACESSÓRIOS",
+          "name": "Mesa Textil e Acessórios",
           "url": "/mesa-posta/mesa-textil-e-acessorios"
         },
         {
