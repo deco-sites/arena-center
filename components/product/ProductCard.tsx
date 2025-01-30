@@ -76,7 +76,7 @@ function ProductCard({
   const shoeSizeVariant = "shoe size";
 
   const shortDescription = description &&
-    description?.replace(/<\/?p>|<br\s*\/?>/gi, "").slice(0, 100) + "...";
+    description?.replace(/<\/?p>|<br\s*\/?>/gi, "").slice(0, 85) + "...";
 
   return (
     <div
@@ -150,7 +150,7 @@ function ProductCard({
       </figure>
 
       <a href={relativeUrl} class="pt-4">
-        <p class="font-base text-sm h-10">{title}</p>
+        <p class="font-base text-sm h-14 lg:h-10">{title}</p>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (

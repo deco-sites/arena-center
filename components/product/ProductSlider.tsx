@@ -17,12 +17,12 @@ function ProductSlider({ products, itemListName }: Props) {
     <>
       <div
         id={id}
-        class=" max-w-[1440px] w-full lg:mx-auto flex "
+        class=" max-w-[1440px] w-full lg:mx-auto flex justify-center"
         // style={{
         //   gridTemplateColumns: "min-content 1fr min-content",
         // }}
       >
-        <div class="z-10 self-center p-2 relative left-[35px] lg:left-0 ">
+        <div class="z-10 self-center p-2 relative left-[30px] lg:left-0 ">
           <Slider.PrevButton class=" flex disabled:opacity-40 cursor-pointer ">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
@@ -49,7 +49,7 @@ function ProductSlider({ products, itemListName }: Props) {
           </Slider>
         </div>
 
-        <div class="z-10 self-center p-2 relative bottom-[15%] right-[35px] lg:right-0">
+        <div class="z-10 self-center p-2 relative bottom-[15%] right-[30px] lg:right-0">
           <Slider.NextButton class="flex disabled:opacity-40 cursor-pointer">
             <Icon id="chevron-right" class=" text-accent-content" />
           </Slider.NextButton>

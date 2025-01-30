@@ -3653,6 +3653,9 @@ details.collapse summary::-webkit-details-marker {
 .bottom-\[15\%\] {
   bottom: 15%;
 }
+.bottom-\[25\%\] {
+  bottom: 25%;
+}
 .bottom-\[7\%\] {
   bottom: 7%;
 }
@@ -3674,8 +3677,8 @@ details.collapse summary::-webkit-details-marker {
 .left-4 {
   left: 1rem;
 }
-.left-\[35px\] {
-  left: 35px;
+.left-\[30px\] {
+  left: 30px;
 }
 .right-0 {
   right: 0px;
@@ -3698,8 +3701,8 @@ details.collapse summary::-webkit-details-marker {
 .right-8 {
   right: 2rem;
 }
-.right-\[35px\] {
-  right: 35px;
+.right-\[30px\] {
+  right: 30px;
 }
 .top-0 {
   top: 0px;
@@ -4003,14 +4006,14 @@ details.collapse summary::-webkit-details-marker {
 .h-0\.5 {
   height: 0.125rem;
 }
-.h-10 {
-  height: 2.5rem;
-}
 .h-11 {
   height: 2.75rem;
 }
 .h-12 {
   height: 3rem;
+}
+.h-14 {
+  height: 3.5rem;
 }
 .h-16 {
   height: 4rem;
@@ -4600,9 +4603,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .gap-12 {
   gap: 3rem;
-}
-.gap-16 {
-  gap: 4rem;
 }
 .gap-2 {
   gap: 0.5rem;
@@ -6604,12 +6604,20 @@ details.collapse summary::-webkit-details-marker {
     left: 0px;
   }
 
+  .lg\:left-12 {
+    left: 3rem;
+  }
+
   .lg\:left-4 {
     left: 1rem;
   }
 
   .lg\:right-0 {
     right: 0px;
+  }
+
+  .lg\:right-12 {
+    right: 3rem;
   }
 
   .lg\:top-0 {
@@ -6660,6 +6668,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:grid {
     display: grid;
+  }
+
+  .lg\:h-10 {
+    height: 2.5rem;
   }
 
   .lg\:h-\[26px\] {
