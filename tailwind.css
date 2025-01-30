@@ -41,3 +41,7 @@
     --dot-progress: 100%
   }
 }
+
+.home-category-product-shelf:active {
+  @apply bg-primary;
+}

@@ -87,24 +87,7 @@ const onLoad = () => {
 
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
   <>
-    {
-      /* <Modal id={SEARCHBAR_POPUP_ID}>
-      <div
-        class="absolute top-0 bg-base-100 container"
-        style={{ marginTop: HEADER_HEIGHT_MOBILE }}
-      >
-        {loading === "lazy" ? (
-          <div class="flex justify-center items-center">
-            <span class="loading loading-spinner" />
-          </div>
-        ) : (
-          <Searchbar {...searchbar} />
-        )}
-      </div>
-    </Modal> */
-    }
-
-    <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
+  <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
       <div class="grid grid-cols-3 place-items-center ">
         <div class="place-self-start pl-14">
           <a href="/" aria-label="Store logo">
@@ -117,18 +100,6 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
           </a>
         </div>
 
-        {
-          /* <label
-          for={SEARCHBAR_POPUP_ID}
-          class="input input-bordered flex items-center gap-2 w-full"
-          aria-label="search icon button"
-        >
-          <Icon id="search" />
-          <span class="text-base-400 truncate">
-            Search products, brands...
-          </span>
-        </label> */
-        }
         <Searchbar {...searchbar} />
 
         <div class="flex gap-4 place-self-end pr-14">
@@ -150,13 +121,13 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       aside={
         <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
           <div class="w-screen overflow-y-auto">
-            {loading === "lazy"
-              ? (
-                <div class="h-full w-full flex items-center justify-center">
-                  <span class="loading loading-spinner" />
-                </div>
-              )
-              : <Searchbar {...searchbar} />}
+            {loading === "lazy" ? (
+              <div class="h-full w-full flex items-center justify-center">
+                <span class="loading loading-spinner" />
+              </div>
+            ) : (
+              <Searchbar {...searchbar} />
+            )}
           </div>
         </Drawer.Aside>
       }
@@ -165,54 +136,37 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       id={SIDEMENU_DRAWER_ID}
       aside={
         <Drawer.Aside title="Menu" drawer={SIDEMENU_DRAWER_ID}>
-          {loading === "lazy"
-            ? (
-              <div
-                id={SIDEMENU_CONTAINER_ID}
-                class="h-full flex items-center justify-center"
-                style={{ minWidth: "100vw" }}
-              >
-                <span class="loading loading-spinner" />
-              </div>
-            )
-            : <Menu navItems={navItems ?? []} />}
+          {loading === "lazy" ? (
+            <div
+              id={SIDEMENU_CONTAINER_ID}
+              class="h-full flex items-center justify-center"
+              style={{ minWidth: "100vw" }}
+            >
+              <span class="loading loading-spinner" />
+            </div>
+          ) : (
+            <Menu navItems={navItems ?? []} />
+          )}
         </Drawer.Aside>
       }
     />
 
     <div
-      class="grid place-items-center w-screen px-5 gap-3 lg:gap-4"
+      class="grid place-items-center w-screen px-4 gap-3 lg:gap-4"
       style={{
         height: NAVBAR_HEIGHT_MOBILE,
         gridTemplateColumns:
           "min-content auto min-content min-content min-content",
       }}
     >
-      <label
-        for={SIDEMENU_DRAWER_ID}
-        class="btn btn-square btn-sm btn-ghost"
-        aria-label="open menu"
-      >
-        <Icon id="menu" />
-      </label>
-
-      {logo && (
-        <a
-          href="/"
-          class="flex-grow inline-flex items-center justify-center"
-          style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
-          aria-label="Store logo"
+      <div class="flex gap-2">
+        <label
+          for={SIDEMENU_DRAWER_ID}
+          class="btn btn-square btn-sm btn-ghost"
+          aria-label="open menu"
         >
-          <Image
-            src={logo.src}
-            alt={logo.alt}
-            width={logo.width || 100}
-            height={logo.height || 13}
-          />
-        </a>
-      )}
-
-      <div class="flex gap-1 items-center">
+          <Icon id="menu" />
+        </label>
         <label
           for={SEARCHBAR_DRAWER_ID}
           class="btn btn-square btn-sm btn-ghost "
@@ -227,6 +181,24 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
             height={18}
           />
         </label>
+      </div>
+      {logo && (
+        <a
+          href="/"
+          class="flex-grow inline-flex items-center justify-center"
+          style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
+          aria-label="Store logo"
+        >
+          <Image
+            src={logo.src}
+            alt={logo.alt}
+            width={logo.width || 100}
+            height={logo.height || 35}
+          />
+        </a>
+      )}
+
+      <div class="flex gap-1 items-center mr-[-24px] lg:mr-0">
         <User />
         <Bag />
       </div>

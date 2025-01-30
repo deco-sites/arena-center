@@ -33,7 +33,7 @@ export default function ProductShelf({ products, title, cta }: Props) {
   return (
     <Section.Container
       {...viewItemListEvent}
-      class=" overflow-x-auto max-w-[1440px]"
+      class=" lg:overflow-x-auto lg:max-w-[1440px] w-[330px]"
     >
       <Section.Header title={title} cta={cta} />
 

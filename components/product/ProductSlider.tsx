@@ -17,23 +17,23 @@ function ProductSlider({ products, itemListName }: Props) {
     <>
       <div
         id={id}
-        class=" max-w-[1440px] mx-auto flex "
+        class=" max-w-[1440px] w-full lg:mx-auto flex "
         // style={{
         //   gridTemplateColumns: "min-content 1fr min-content",
         // }}
       >
-        <div class="z-10 self-center p-2 relative ">
-          <Slider.PrevButton class="hidden sm:flex disabled:opacity-40 cursor-pointer">
+        <div class="z-10 self-center p-2 relative left-[35px] lg:left-0">
+          <Slider.PrevButton class=" flex disabled:opacity-40 cursor-pointer ">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
         <div class="">
-          <Slider class="carousel carousel-center  gap-7 sm:gap-5 max-w-[1220px] mx-auto">
+          <Slider class="carousel carousel-center  gap-7 sm:gap-5 lg:max-w-[1220px] w-[350px] mx-auto">
             {products?.map((product, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
-                  "carousel-item",
+                  "carousel-item"
                   // "first:pl-12 first:sm:pr-0",
                   // "last:pr-12 last:sm:pr-0"
                 )}
@@ -42,15 +42,15 @@ function ProductSlider({ products, itemListName }: Props) {
                   index={index}
                   product={product}
                   itemListName={itemListName}
-                  class="w-[287px]"
+                  class="lg:w-[287px] w-[175px] "
                 />
               </Slider.Item>
             ))}
           </Slider>
         </div>
 
-        <div class="z-10 self-center p-2 relative bottom-[15%] ">
-          <Slider.NextButton class="hidden sm:flex disabled:opacity-40 cursor-pointer">
+        <div class="z-10 self-center p-2 relative bottom-[15%] right-[35px] lg:right-0">
+          <Slider.NextButton class="flex disabled:opacity-40 cursor-pointer">
             <Icon id="chevron-right" class=" text-accent-content" />
           </Slider.NextButton>
         </div>

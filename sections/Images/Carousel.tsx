@@ -77,15 +77,13 @@ function BannerItem(
       {action && (
         <div
           class={clx(
-            "absolute h-full w-full top-0 left-0",
+            "absolute lg:h-full lg:w-full top-0 left-0 w-screen h-auto",
             "flex flex-col justify-center items-center",
             "px-5 sm:px-0",
-            "sm:left-40 sm:items-start sm:max-w-96",
+            "sm:left-40 sm:items-start sm:max-w-96"
           )}
         >
-          <span class="font-bold text-7xl text-base-100">
-            {action.title}
-          </span>
+          <span class="font-bold text-7xl text-base-100">{action.title}</span>
           <span class="pt-4 pb-12 font-normal text-base text-base-100">
             {action.subTitle}
           </span>
@@ -102,8 +100,8 @@ function BannerItem(
           media="(max-width: 767px)"
           fetchPriority={lcp ? "high" : "auto"}
           src={mobile}
-          width={412}
-          height={660}
+          width={450}
+          height={450}
         />
         <Source
           media="(min-width: 768px)"
@@ -113,7 +111,7 @@ function BannerItem(
           height={600}
         />
         <img
-          class="w-full h-full object-cover"
+          class="w-full h-full object-cover  "
           loading={lcp ? "eager" : "lazy"}
           src={desktop}
           alt={alt}

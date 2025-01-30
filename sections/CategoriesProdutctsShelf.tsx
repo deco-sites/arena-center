@@ -3,7 +3,7 @@ import type { ImageWidget } from "apps/admin/widgets.ts";
 import S from "../components/ui/Section.tsx";
 import { Product } from "apps/commerce/types.ts";
 import ProductSliderCategorie from "../components/product/ProductSliderCategorie.tsx";
-
+import { useDevice } from "@deco/deco/hooks";
 import { useSection } from "@deco/deco/hooks";
 
 /** @titleby title */
@@ -27,9 +27,16 @@ export interface Props {
 }
 
 function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
+const device = useDevice();
+
   const productsArray = productList[index].products;
   const imagePrincipal = productList[index].image;
-
+  const activeButtom = index;
+  if (device !== "desktop") {
+    return (
+      <div></div>
+    )
+  }
   return (
     <div class="container max-w-[1440px] mx-auto lg:mt-12  px-6 lg:px-11">
       <div class="flex items-center mb-3 flex-col lg:flex-row">
@@ -39,7 +46,11 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
         <div class=" flex gap-8 overflow-x-auto w-full">
           {productList.map((item, index) => (
             <button
-              class=" bg-gray-200 w-36 text-center text-accent-content uppercase border-none hover:bg-primary hover:text-base-100 p-2 rounded"
+              class={`${
+                index === activeButtom
+                  ? "bg-primary text-base-100"
+                  : "bg-gray-200 text-accent-content"
+              } bg-gray-200 w-36 text-center  uppercase border-none hover:bg-primary hover:text-base-100 p-2 rounded`}
               hx-get={useSection({ props: { index } })}
               hx-target="closest section"
               hx-swap="outerHTML"

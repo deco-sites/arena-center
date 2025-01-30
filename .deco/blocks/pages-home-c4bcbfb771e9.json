@@ -20,7 +20,7 @@
         "images": [
           {
             "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f8a57e0a-839c-46f2-94d2-65875b053278/mesa2.png",
+            "mobile": "https://data.decoassets.com/arena-center/9299213b-6f49-4e23-a52b-4606e3e82fc7/arena.png",
             "alt": "Prato e talheres com um fundo bege"
           },
           {
@@ -59,7 +59,8 @@
           "subtitle": "Sistema de trocas facilitado",
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
         }
-      ]
+      ],
+      "interval": 3
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
@@ -125,69 +126,6 @@
         }
       ],
       "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Content/Logos.tsx",
-        "images": [
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
-            "alt": "/",
-            "href": "/"
-          },
-          {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
-            "alt": "/",
-            "href": "/"
-          }
-        ]
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -461,6 +399,69 @@
     {
       "__resolveType": "site/sections/LearnMore.tsx",
       "learnMore": []
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Content/Logos.tsx",
+        "images": [
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "alt": "/",
+            "href": "/"
+          },
+          {
+            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "alt": "/",
+            "href": "/"
+          }
+        ]
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

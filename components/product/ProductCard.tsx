@@ -81,13 +81,16 @@ function ProductCard({
   return (
     <div
       {...event}
-      class={clx("card card-compact group text-sm w-[280px] h-auto", _class)}
+      class={clx(
+        "card card-compact group text-sm lg:w-[280px] w-[175px] h-auto",
+        _class
+      )}
     >
       <figure
         class={clx(
-          "relative bg-base-100 w-[280px] h-[280px]",
+          "relative bg-base-100 lg:w-[280px] w-[175px] h-[280px]",
           "rounded border border-transparent",
-          "group-hover:border-primary",
+          "group-hover:border-primary"
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
@@ -98,8 +101,8 @@ function ProductCard({
           class={clx(
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
-            "w-[280px]",
-            !inStock && "opacity-70",
+            "lg:w-[280px] w-[175px]",
+            !inStock && "opacity-70"
           )}
         >
           <Image
@@ -110,8 +113,8 @@ function ProductCard({
             //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
-              "rounded w-[280px]",
-              "col-span-full row-span-full",
+              "rounded lg:w-[280px] w-[175px]",
+              "col-span-full row-span-full"
             )}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -125,46 +128,25 @@ function ProductCard({
             //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
-              "rounded w-[280px]",
+              "rounded w-[175px] lg:w-[280px]",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100",
+              "transition-opacity opacity-0 lg:group-hover:opacity-100"
             )}
             loading="lazy"
             decoding="async"
           />
         </a>
 
-        {/* Wishlist button */}
-        {
-          /* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
 
-          <span
-            class={clx(
-              "text-sm/4 font-normal text-black bg-error bg-opacity-15 text-center rounded-badge px-2 py-1",
-              inStock && "opacity-0"
-            )}
-          >
-            Notify me
-          </span>
-          </div> */
-        }
-
-        {/* Discounts */}
         <span
           class={clx(
             "absolute top-2 left-2",
             "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-            (percent < 1 || !inStock) && "opacity-0",
+            (percent < 1 || !inStock) && "opacity-0"
           )}
         >
           {percent} % off
         </span>
-
-        {
-          /* <div class="absolute bottom-0 right-0">
-          <WishlistButton item={item} variant="icon" />
-        </div> */
-        }
       </figure>
 
       <a href={relativeUrl} class="pt-4">
@@ -180,14 +162,13 @@ function ProductCard({
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
-        <div class="h-[26px] font-light text-[10px] my-3">
+        <div class="lg:h-[26px] h-[58px] font-light text-[10px] my-3">
           {shortDescription && <p>{shortDescription}</p>}
         </div>
       </a>
 
       {/* SKU Selector */}
-      {
-        /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
+      {/* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
         <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
@@ -205,38 +186,35 @@ function ProductCard({
               </li>
             ))}
         </ul>
-      )} */
-      }
+      )} */}
 
       <div>
-        {inStock
-          ? (
-            <AddToCartButton
-              product={product}
-              seller={seller}
-              item={item}
-              class={clx(
-                "btn",
-                "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full min-h-0 h-7 mt-2",
-                "hover:!bg-primary",
-                "hover:!text-base-100",
-              )}
-            />
-          )
-          : (
-            <a
-              href={relativeUrl}
-              class={clx(
-                "btn",
-                "btn-outline justify-start border-none text-center !text-sm !font-medium px-0 no-animation w-full h-29",
-                "hover:!bg-transparent",
-                "disabled:!bg-transparent disabled:!opacity-75",
-                "btn-error hover:!text-error disabled:!text-error",
-              )}
-            >
-              Fora de estoque
-            </a>
-          )}
+        {inStock ? (
+          <AddToCartButton
+            product={product}
+            seller={seller}
+            item={item}
+            class={clx(
+              "btn",
+              "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full min-h-0 h-7 mt-2",
+              "hover:!bg-primary",
+              "hover:!text-base-100"
+            )}
+          />
+        ) : (
+          <a
+            href={relativeUrl}
+            class={clx(
+              "btn",
+              "btn-outline justify-start border-none text-center !text-sm !font-medium px-0 no-animation w-full h-29",
+              "hover:!bg-transparent",
+              "disabled:!bg-transparent disabled:!opacity-75",
+              "btn-error hover:!text-error disabled:!text-error"
+            )}
+          >
+            Fora de estoque
+          </a>
+        )}
       </div>
     </div>
   );
