@@ -6690,6 +6690,10 @@ details.collapse summary::-webkit-details-marker {
     width: 6rem;
   }
 
+  .lg\:w-\[1220px\] {
+    width: 1220px;
+  }
+
   .lg\:w-\[1300px\] {
     width: 1300px;
   }
@@ -6744,10 +6748,6 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:max-w-\[1200px\] {
     max-width: 1200px;
-  }
-
-  .lg\:max-w-\[1220px\] {
-    max-width: 1220px;
   }
 
   .lg\:max-w-\[1300px\] {

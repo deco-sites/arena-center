@@ -22,13 +22,13 @@ function ProductSlider({ products, itemListName }: Props) {
         //   gridTemplateColumns: "min-content 1fr min-content",
         // }}
       >
-        <div class="z-10 self-center p-2 relative left-[35px] lg:left-0">
+        <div class="z-10 self-center p-2 relative left-[35px] lg:left-0 ">
           <Slider.PrevButton class=" flex disabled:opacity-40 cursor-pointer ">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
         <div class="">
-          <Slider class="carousel carousel-center  gap-7 sm:gap-5 lg:max-w-[1220px] w-[350px] mx-auto">
+          <Slider class="carousel carousel-center  gap-7 sm:gap-5 lg:w-[1220px] w-[350px] mx-auto">
             {products?.map((product, index) => (
               <Slider.Item
                 index={index}
