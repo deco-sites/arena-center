@@ -129,7 +129,7 @@ function PageResult(props: SectionProps<typeof loader>) {
                 hx-swap="outerHTML show:parent:top"
                 hx-get={partialNext}
               >
-                <span class="inline [.htmx-request_&]:hidden">Show More</span>
+                <span class="inline [.htmx-request_&]:hidden">Mostrar mais</span>
                 <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
               </a>
             </div>
