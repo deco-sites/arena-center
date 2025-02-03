@@ -12,7 +12,8 @@
     "slug": {
       "__resolveType": "website/functions/requestToParam.ts",
       "param": "slug"
-    }
+    },
+    "filterByTags": true
   },
   "extensions": [],
   "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"

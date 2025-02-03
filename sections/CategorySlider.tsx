@@ -67,7 +67,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
 
         <div class="relative bottom-[7%] z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center">
           <Slider.NextButton class="flex disabled:opacity-40 no-animation">
-            <Icon id="chevron-right" class="text-accent-content" />
+            <Icon id="chevron-right" class="text-accent-content " />
           </Slider.NextButton>
         </div>
       </div>
