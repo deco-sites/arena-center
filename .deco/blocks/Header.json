@@ -201,66 +201,66 @@
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-coquetel",
+              "url": "/bar/tacas/tacas-coquetel",
               "name": "Taças Coquetel"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-de-agua",
+              "url": "/bar/tacas/tacas-de-agua",
               "name": "Taças de Água"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-de-cerveja",
+              "url": "/bar/tacas/tacas-de-cerveja",
               "name": "Taças de Cerveja"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-de-champanhe",
+              "url": "/bar/tacas/tacas-de-champanhe",
               "name": "Taças de Champanhe"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-de-drink",
+              "url": "/bar/tacas/tacas-de-drink",
               "name": "Taças de Drink"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-de-gin",
+              "url": "/bar/tacas/tacas-de-gin",
               "name": "Taças de Gin"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-de-licor",
+              "url": "/bar/tacas/tacas-de-licor",
               "name": "Taças de Licor"
             },
             {
               "image": [],
               "children": [],
               "name": "Taças de Vinho",
-              "url": "/bar/taças/taças-de-vinho"
+              "url": "/bar/tacas/tacas-de-vinho"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-diversas",
+              "url": "/bar/tacas/tacas-diversas",
               "name": "Taças Diversas"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/taças/taças-milk-shake",
+              "url": "/bar/tacas/tacas-milk-shake",
               "name": "Taças Milk Shake"
             }
           ],
           "name": "Taças",
-          "url": "/bar/taças"
+          "url": "/bar/tacas"
         },
         {
           "image": [],
@@ -446,7 +446,8 @@
       ],
       "url": "/bar",
       "@type": "SiteNavigationElement",
-      "name": "Bar"
+      "name": "Bar",
+      "image": null
     },
     {
       "url": "/mesa-posta",
@@ -1407,7 +1408,8 @@
           "url": "/cozinha/cozinha-outlet"
         }
       ],
-      "name": "Cozinha"
+      "name": "Cozinha",
+      "image": null
     },
     {
       "@type": "SiteNavigationElement",
