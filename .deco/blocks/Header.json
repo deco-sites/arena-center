@@ -1712,7 +1712,8 @@
               "name": "Espelhos de Parede"
             }
           ],
-          "url": "/decoracao/espelhos"
+          "url": "/decoracao/espelhos",
+          "name": "Espelhos"
         },
         {
           "image": [],
@@ -1724,7 +1725,8 @@
               "name": "Abajures"
             }
           ],
-          "url": "/decoracao/iluminacao"
+          "url": "/decoracao/iluminacao",
+          "name": "Iluminação"
         },
         {
           "image": [],
@@ -1889,7 +1891,8 @@
           "name": "Velas e Acessórios"
         }
       ],
-      "url": "/decoração"
+      "url": "/decoração",
+      "image": null
     },
     {
       "@type": "SiteNavigationElement",
