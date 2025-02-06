@@ -28,7 +28,8 @@
             "alt": "promocao arena center",
             "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
           }
-        ]
+        ],
+        "interval": 5
       }
     },
     {

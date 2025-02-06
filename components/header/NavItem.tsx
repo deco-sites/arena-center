@@ -23,7 +23,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
       {children && children.length > 0 && (
         <div
-          class="fixed hidden hover:flex text-xs group-hover:flex bg-white z-40 items-start justify-center gap-6  max-w-[1440px] overflow-x-auto  mx-auto top-[-15px] capitalize w-screen left-1/2 -translate-x-1/2"
+          class="fixed hidden hover:flex text-xs group-hover:flex bg-white z-40 items-start justify-center gap-6  max-w-[1440px] !overflow-auto custom-scroll  mx-auto top-[-15px] capitalize w-full left-1/2 -translate-x-1/2"
           style={{
             marginTop: HEADER_HEIGHT_DESKTOP,
           }}
@@ -31,7 +31,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
           {image?.url && (
             <Image
               class="p-6"
-              src={image.url}
+              src={image.url} 
               alt={image.alternateName}
               width={300}
               height={332}

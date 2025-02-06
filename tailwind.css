@@ -45,3 +45,31 @@
 .home-category-product-shelf:active {
   @apply bg-primary;
 }
+
+.custom-scroll {
+  overflow-x: auto;
+}
+
+.custom-scroll::-webkit-scrollbar {
+        display: none; /* Oculta a barra de scroll inicialmente */
+}
+
+.custom-scroll:hover::-webkit-scrollbar {
+     display: block; /* Força a exibição da barra de scroll ao passar o mouse */
+       height: 10px; /* Ajuste a altura da barra de scroll */
+}
+
+.custom-scroll::-webkit-scrollbar-track {
+       background: #f1f1f1;
+       border-radius: 10px;
+}
+
+.custom-scroll::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: 10px;
+}
+
+
+.custom-scroll::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}

@@ -63,7 +63,8 @@
           "slug": {
             "__resolveType": "website/functions/requestToParam.ts",
             "param": "slug"
-          }
+          },
+          "filterByTags": true
         },
         "layout": {
           "columns": {
