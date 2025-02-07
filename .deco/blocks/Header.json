@@ -146,6 +146,12 @@
               "children": [],
               "name": "Copos de Whisky",
               "url": "/bar/copos-e-canecas/copos-de-whisky"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Copos Long Drink",
+              "url": "/bar/copos-e-canecas/copos-long-drink"
             }
           ],
           "name": "Copos e Canecas",
@@ -157,18 +163,18 @@
             {
               "image": [],
               "children": [],
-              "name": "Decantes",
-              "url": "/bar/decantes-e-garrafas/decantes"
+              "name": "Decanters",
+              "url": "/bar/decanters-e-garrafas/decanters"
             },
             {
               "image": [],
               "children": [],
               "name": "Garrafas",
-              "url": "/bar/decantes-e-garrafas/garrafas"
+              "url": "/bar/decanters-e-garrafas/garrafas"
             }
           ],
-          "name": "Decantes e Garrafas",
-          "url": "/bar/decantes-e-garrafas"
+          "name": "Decanters e Garrafas",
+          "url": "/bar/decanters-e-garrafas"
         },
         {
           "image": [],
@@ -556,7 +562,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/louças/pratos-sobremesa"
+              "url": "/mesa-posta/louças/pratos-sobremesa",
+              "name": "Pratos Sobremesa"
             },
             {
               "image": [],
@@ -573,7 +580,7 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/louças/taça-sobremesa",
+              "url": "/mesa-posta/louças/taca-sobremesa",
               "name": "Taça Sobremesa"
             },
             {
@@ -797,7 +804,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/tigelas-e-bowls"
+              "url": "/mesa-posta/acessórios-para-servir/tigelas-e-bowls",
+              "name": "Tigelas e Bowls"
             },
             {
               "image": [],
@@ -827,7 +835,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/linha-oriental/oriental-diversos"
+              "url": "/mesa-posta/linha-oriental/oriental-diversos",
+              "name": "Oriental Diversos"
             },
             {
               "image": [],
@@ -1329,7 +1338,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/garfo-preparo"
+              "url": "/cozinha/utensilios-de-cozinha/garfo-preparo",
+              "name": "Garfo Preparo"
             },
             {
               "image": [],
@@ -1590,11 +1600,12 @@
           "image": [],
           "children": [],
           "url": "/organizacao/organizacao-outlet",
-          "name": "Outlet"
+          "name": "Organização Outlet"
         }
       ],
       "name": "Organização",
-      "url": "/organizacao"
+      "url": "/organizacao",
+      "image": null
     },
     {
       "@type": "SiteNavigationElement",
@@ -1606,12 +1617,14 @@
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/almofadas-e-mantas/almofadas"
+              "url": "/decoracao/almofadas-e-mantas/almofadas",
+              "name": "Almofadas"
             },
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/almofadas-e-mantas/capas-de-almofadas"
+              "url": "/decoracao/almofadas-e-mantas/capas-de-almofadas",
+              "name": "Capas de Almofadas"
             },
             {
               "image": [],
@@ -1622,7 +1635,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/almofadas-e-mantas/mantas-para-sofá"
+              "url": "/decoracao/almofadas-e-mantas/mantas-para-sofa",
+              "name": "Mantas para sofá"
             }
           ],
           "url": "/decoracao/almofadas-e-mantas",
@@ -1734,7 +1748,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/objetos-de-decoracao/ampulhetas"
+              "url": "/decoracao/objetos-de-decoracao/ampulhetas",
+              "name": "Ampulhetas"
             },
             {
               "image": [],
@@ -1757,7 +1772,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/objetos-de-decoracao/caixas-decorativas"
+              "url": "/decoracao/objetos-de-decoracao/caixas-decorativas",
+              "name": "Caixas Decorativas"
             },
             {
               "image": [],
@@ -1864,7 +1880,8 @@
               "name": "Quadros"
             }
           ],
-          "url": "/decoracao/quadros-e-porta-retrato"
+          "url": "/decoracao/quadros-e-porta-retrato",
+          "name": "Quadros e Porta Retratos"
         },
         {
           "image": [],
@@ -1872,7 +1889,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/velas-e-acessorios/casticais"
+              "url": "/decoracao/velas-e-acessorios/casticais",
+              "name": "Castiçais"
             },
             {
               "image": [],
@@ -2081,12 +2099,14 @@
             {
               "image": [],
               "children": [],
-              "url": "/natal/mesa-posta-natal/loucas-diversas-natal"
+              "url": "/natal/mesa-posta-natal/loucas-diversas-natal",
+              "name": "Louças Diversas Natal"
             },
             {
               "image": [],
               "children": [],
-              "url": "/natal/mesa-posta-natal/bandejas-natal"
+              "url": "/natal/mesa-posta-natal/bandejas-natal",
+              "name": "Bandejas Natal"
             },
             {
               "image": [],
@@ -2165,7 +2185,8 @@
           "name": "Pisca Pisca"
         }
       ],
-      "@type": "SiteNavigationElement"
+      "@type": "SiteNavigationElement",
+      "image": null
     },
     {
       "children": [
@@ -2187,7 +2208,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/pascoa/mesa-posta-pascoa/boleiras-pascoa"
+              "url": "/pascoa/mesa-posta-pascoa/boleiras-pascoa",
+              "name": "Boleiras Páscoa"
             },
             {
               "image": [],
