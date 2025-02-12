@@ -17,47 +17,24 @@ export interface Props {
 }
 
 export default function (props: Props) {
-  const device = useDevice();
+  // const device = useDevice();
   return (
     <>
-      {device === "desktop" && (
-        <div class="flex flex-row gap-10 md:gap-4 text-white w-full max-w-[1440px] overflow-auto lg:overflow-visible mt-16 lg:mt-6 mx-auto px-6 justify-center">
-          {props.images &&
-            props.images.map((card) => (
-              <a href={card.href}>
-                <div class="flex flex-col">
-                  <Image
-                    class=" w-[294px] h-[625px]"
-                    src={card.src}
-                    width={294}
-                    height={625}
-                  />
-                </div>
-              </a>
-            ))}
-        </div>
-      )}
-      {device === "mobile" && (
-        <div class="carousel  w-full my-12 ">
-          {props.imagesMobile &&
-            props.imagesMobile.map((card, index) => (
-              <a
-                href={card.href}
-                key={index}
-                class="carousel-item "
-              >
+      <div class="custom-scroll flex gap-6 md:gap-4 w-full max-w-[1440px] lg:overflow-visible mt-6 mx-auto px-6 lg:justify-center">
+        {props.images &&
+          props.images.map((card) => (
+            <a href={card.href}>
+              <div class="lg:w-[294px] lg:h-[625px] w-[180px] h-auto">
                 <Image
-                  class="ml-8 w-[270px] h-[270px] object-contain"
-                  alt={`Image ${index + 1}`}
+                  class="object-cover "
                   src={card.src}
-                  width={270}
-                  height={270}
-                  fit="contain"
+                  width={294}
+                  height={625}
                 />
-              </a>
-            ))}
-        </div>
-      )}
+              </div>
+            </a>
+          ))}
+      </div>
     </>
   );
 }

@@ -52,7 +52,6 @@
 }
 
 .custom-scroll:hover::-webkit-scrollbar {
-  display: block; /* Força a exibição da barra de scroll ao passar o mouse */
   height: 10px; /* Ajuste a altura da barra de scroll */
   width: 10px; /* Ajuste a largura da barra de scroll */
 }
