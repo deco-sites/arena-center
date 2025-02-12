@@ -24,7 +24,7 @@ export default function (props: Props) {
         {props.images &&
           props.images.map((card) => (
             <a href={card.href}>
-              <div class="lg:w-[294px] lg:h-[625px] w-[180px] h-auto">
+              <div class="lg:w-[294px] lg:h-[625px] w-[160px] h-auto">
                 <Image
                   class="object-cover "
                   src={card.src}

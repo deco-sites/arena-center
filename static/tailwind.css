@@ -4218,6 +4218,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[150px\] {
   width: 150px;
 }
+.w-\[160px\] {
+  width: 160px;
+}
 .w-\[161px\] {
   width: 161px;
 }
@@ -4232,9 +4235,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[17px\] {
   width: 17px;
-}
-.w-\[180px\] {
-  width: 180px;
 }
 .w-\[193px\] {
   width: 193px;
@@ -5594,7 +5594,6 @@ details.collapse summary::-webkit-details-marker {
 }
 
 .custom-scroll:hover::-webkit-scrollbar {
-  display: block; /* Força a exibição da barra de scroll ao passar o mouse */
   height: 10px; /* Ajuste a altura da barra de scroll */
   width: 10px; /* Ajuste a largura da barra de scroll */
 }

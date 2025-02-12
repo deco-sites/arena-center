@@ -46,7 +46,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
 
 function Menu({ navItems = [] }: Props) {
   return (
-    <div class="flex flex-col h-full  " style={{ minWidth: "100vw" }}>
+    <div class="flex flex-col h-full bg-base-100 " style={{ minWidth: "100vw" }}>
       <ul class="px-4 flex-grow flex flex-col divide-y divide-base-200  text-accent-content ">
         {navItems.map((item) => (
           <li>

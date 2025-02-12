@@ -45,7 +45,7 @@ function Drawer(
         <aside
           data-aside
           class={clx(
-            "drawer-side h-full z-40 overflow-hidden",
+            "drawer-side h-full z-40 overflow-auto",
             "[[data-aside]&_section]:contents",
           )}
         >
