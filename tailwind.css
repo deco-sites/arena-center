@@ -3,15 +3,14 @@
 @tailwind utilities;
 
 @layer base {
-
   /* Allow changing font family via CMS */
   html {
     font-family: var(--font-family);
   }
 
   /** Remove default styles from input[type=number] */
-  input[type=number]::-webkit-inner-spin-button,
-  input[type=number]::-webkit-outer-spin-button {
+  input[type="number"]::-webkit-inner-spin-button,
+  input[type="number"]::-webkit-outer-spin-button {
     -webkit-appearance: none;
     margin: 0;
   }
@@ -25,7 +24,7 @@
 }
 
 .group:disabled .group-disabled\:animate-progress {
-  animation: progress-frame ease normal
+  animation: progress-frame ease normal;
 }
 
 .reset_styles > * {
@@ -34,11 +33,11 @@
 
 @keyframes progress-frame {
   0% {
-    --dot-progress: 0%
+    --dot-progress: 0%;
   }
 
   to {
-    --dot-progress: 100%
+    --dot-progress: 100%;
   }
 }
 
@@ -48,28 +47,26 @@
 
 .custom-scroll {
   overflow-x: auto;
-}
-
-.custom-scroll::-webkit-scrollbar {
-        display: none; /* Oculta a barra de scroll inicialmente */
+  overflow-y: auto;
+  
 }
 
 .custom-scroll:hover::-webkit-scrollbar {
-     display: block; /* Força a exibição da barra de scroll ao passar o mouse */
-       height: 10px; /* Ajuste a altura da barra de scroll */
+  display: block; /* Força a exibição da barra de scroll ao passar o mouse */
+  height: 10px; /* Ajuste a altura da barra de scroll */
+  width: 10px; /* Ajuste a largura da barra de scroll */
 }
 
 .custom-scroll::-webkit-scrollbar-track {
-       background: #f1f1f1;
-       border-radius: 10px;
+  background: #f1f1f1;
+  border-radius: 10px;
 }
 
 .custom-scroll::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 10px;
+  background: #888;
+  border-radius: 10px;
 }
 
-
 .custom-scroll::-webkit-scrollbar-thumb:hover {
-    background: #555;
+  background: #555;
 }

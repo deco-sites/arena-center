@@ -33,7 +33,7 @@ function ProductSlider({ products, itemListName }: Props) {
               <Slider.Item
                 index={index}
                 class={clx(
-                  "carousel-item"
+                  "carousel-item",
                   // "first:pl-12 first:sm:pr-0",
                   // "last:pr-12 last:sm:pr-0"
                 )}

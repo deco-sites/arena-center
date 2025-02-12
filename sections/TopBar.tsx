@@ -38,31 +38,31 @@ export default function TopBar({ content }: Props) {
   const device = useDevice();
   if (device !== "desktop") {
     return (
-        <div class="flex items-center overflow-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] mt-[-8px]">
-          {content.map((item) => (
-            <a
-              href={item.href}
-              target="blank"
-              class="flex items-center w-full md:mr-0 ml-6"
-            >
-              <div class="flex justify-center items-">
-                {item.mobileImage && (
-                  <Image
-                    class="object-contain w-8 h-8"
-                    src={item.mobileImage}
-                    alt={item.title}
-                    width={32}
-                    height={32}
-                  />
-                )}
-              </div>
-              <div class="w-[240px] px-2 text-base text-primary-content">
-                <p class="font-normal text-xs">{item.title}</p>
-                <p class="font-extralight text-xs">{item.subtitle}</p>
-              </div>
-            </a>
-          ))}
-        </div>
+      <div class="flex items-center overflow-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] mt-[-8px]">
+        {content.map((item) => (
+          <a
+            href={item.href}
+            target="blank"
+            class="flex items-center w-full md:mr-0 ml-6"
+          >
+            <div class="flex justify-center items-">
+              {item.mobileImage && (
+                <Image
+                  class="object-contain w-8 h-8"
+                  src={item.mobileImage}
+                  alt={item.title}
+                  width={32}
+                  height={32}
+                />
+              )}
+            </div>
+            <div class="w-[240px] px-2 text-base text-primary-content">
+              <p class="font-normal text-xs">{item.title}</p>
+              <p class="font-extralight text-xs">{item.subtitle}</p>
+            </div>
+          </a>
+        ))}
+      </div>
     );
   }
   return (

@@ -92,14 +92,14 @@ function Filters({ filters, categoryList }: Props) {
           <ul class="flex flex-col gap-6 p-4 sm:p-0 mt-6">
             {filters.filter(isToggle).map(
               (filter) =>
-                filter.label === "categoria" && (
+                filter.label === "subcategoria-mae" && (
                   <li key={filter.label} class="flex flex-col gap-4">
-                    <span class="text-sm font-semibold first-letter:uppercase">
+                    {/* <span class="text-sm font-semibold first-letter:uppercase">
                       {filter.label}
-                    </span>
+                    </span> */}
                     <FilterValues {...filter} />
                   </li>
-                ),
+                )
             )}
           </ul>
         </div>
@@ -120,12 +120,12 @@ function Filters({ filters, categoryList }: Props) {
               (filter) =>
                 filter.label === "subcategoria" && (
                   <li key={filter.label} class="flex flex-col gap-4">
-                    <span class="text-sm font-semibold first-letter:uppercase">
+                    {/* <span class="text-sm font-semibold first-letter:uppercase">
                       {filter.label}
-                    </span>
+                    </span> */}
                     <FilterValues {...filter} />
                   </li>
-                ),
+                )
             )}
           </ul>
         </div>
@@ -151,7 +151,7 @@ function Filters({ filters, categoryList }: Props) {
                     </span>
                     <FilterValues {...filter} />
                   </li>
-                ),
+                )
             )}
           </ul>
         </div>

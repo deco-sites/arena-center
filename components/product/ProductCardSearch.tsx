@@ -165,7 +165,9 @@ function ProductCard({
       </figure>
 
       <a href={relativeUrl} class="pt-4">
-        <span class="font-medium text-sm">{title}</span>
+        <div class="h-10">
+          <span class="font-medium text-sm  overflow-y-auto">{title}</span>
+        </div>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (

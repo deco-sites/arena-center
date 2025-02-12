@@ -87,7 +87,7 @@ const onLoad = () => {
 
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
   <>
-  <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
+    <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
       <div class="grid grid-cols-3 place-items-center ">
         <div class="place-self-start pl-14">
           <a href="/" aria-label="Store logo">
@@ -121,13 +121,13 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       aside={
         <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
           <div class="w-screen overflow-y-auto">
-            {loading === "lazy" ? (
-              <div class="h-full w-full flex items-center justify-center">
-                <span class="loading loading-spinner" />
-              </div>
-            ) : (
-              <Searchbar {...searchbar} />
-            )}
+            {loading === "lazy"
+              ? (
+                <div class="h-full w-full flex items-center justify-center">
+                  <span class="loading loading-spinner" />
+                </div>
+              )
+              : <Searchbar {...searchbar} />}
           </div>
         </Drawer.Aside>
       }
@@ -136,17 +136,17 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       id={SIDEMENU_DRAWER_ID}
       aside={
         <Drawer.Aside title="Menu" drawer={SIDEMENU_DRAWER_ID}>
-          {loading === "lazy" ? (
-            <div
-              id={SIDEMENU_CONTAINER_ID}
-              class="h-full flex items-center justify-center"
-              style={{ minWidth: "100vw" }}
-            >
-              <span class="loading loading-spinner" />
-            </div>
-          ) : (
-            <Menu navItems={navItems ?? []} />
-          )}
+          {loading === "lazy"
+            ? (
+              <div
+                id={SIDEMENU_CONTAINER_ID}
+                class="h-full flex items-center justify-center"
+                style={{ minWidth: "100vw" }}
+              >
+                <span class="loading loading-spinner" />
+              </div>
+            )
+            : <Menu navItems={navItems ?? []} />}
         </Drawer.Aside>
       }
     />

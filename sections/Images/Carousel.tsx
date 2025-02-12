@@ -80,7 +80,7 @@ function BannerItem(
             "absolute lg:h-full lg:w-full top-0 left-0 w-screen h-auto",
             "flex flex-col justify-center items-center",
             "px-5 sm:px-0",
-            "sm:left-40 sm:items-start sm:max-w-96"
+            "sm:left-40 sm:items-start sm:max-w-96",
           )}
         >
           <span class="font-bold text-7xl text-base-100">{action.title}</span>

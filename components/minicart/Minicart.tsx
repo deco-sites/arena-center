@@ -116,7 +116,7 @@ export default function Cart(
   return (
     <>
       <form
-        class="contents"
+        class="contents "
         id={MINICART_FORM_ID}
         hx-sync="this:replace"
         hx-trigger="submit, change delay:300ms"
@@ -186,7 +186,7 @@ export default function Cart(
                 {/* Cart Items */}
                 <ul
                   role="list"
-                  class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-full"
+                  class="mt-6 px-2 flex-grow overflow-y-auto flex flex-col gap-6 w-ful  bg-black "
                 >
                   {items.map((item, index) => (
                     <li>

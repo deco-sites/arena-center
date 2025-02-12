@@ -27,15 +27,13 @@ export interface Props {
 }
 
 function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
-const device = useDevice();
+  const device = useDevice();
 
   const productsArray = productList[index].products;
   const imagePrincipal = productList[index].image;
   const activeButtom = index;
   if (device !== "desktop") {
-    return (
-      <div></div>
-    )
+    return <div></div>;
   }
   return (
     <div class="container max-w-[1440px] mx-auto lg:mt-12  px-6 lg:px-11">

@@ -83,14 +83,14 @@ function ProductCard({
       {...event}
       class={clx(
         "card card-compact group text-sm lg:w-[280px] w-[175px] h-auto",
-        _class
+        _class,
       )}
     >
       <figure
         class={clx(
           "relative bg-base-100 lg:w-[280px] w-[175px] h-[280px]",
           "rounded border border-transparent",
-          "group-hover:border-primary"
+          "group-hover:border-primary",
         )}
         style={{ aspectRatio: ASPECT_RATIO }}
       >
@@ -102,7 +102,7 @@ function ProductCard({
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
             "lg:w-[280px] w-[175px]",
-            !inStock && "opacity-70"
+            !inStock && "opacity-70",
           )}
         >
           <Image
@@ -114,7 +114,7 @@ function ProductCard({
             class={clx(
               "object-contain",
               "rounded lg:w-[280px] w-[175px]",
-              "col-span-full row-span-full"
+              "col-span-full row-span-full",
             )}
             preload={preload}
             loading={preload ? "eager" : "lazy"}
@@ -130,19 +130,18 @@ function ProductCard({
               "object-contain",
               "rounded w-[175px] lg:w-[280px]",
               "col-span-full row-span-full",
-              "transition-opacity opacity-0 lg:group-hover:opacity-100"
+              "transition-opacity opacity-0 lg:group-hover:opacity-100",
             )}
             loading="lazy"
             decoding="async"
           />
         </a>
 
-
         <span
           class={clx(
             "absolute top-2 left-2",
             "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-            (percent < 1 || !inStock) && "opacity-0"
+            (percent < 1 || !inStock) && "opacity-0",
           )}
         >
           {percent} % off
@@ -168,7 +167,8 @@ function ProductCard({
       </a>
 
       {/* SKU Selector */}
-      {/* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
+      {
+        /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
         <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
           {variants
             .map(([value, link]) => [value, relative(link)] as const)
@@ -186,35 +186,38 @@ function ProductCard({
               </li>
             ))}
         </ul>
-      )} */}
+      )} */
+      }
 
       <div>
-        {inStock ? (
-          <AddToCartButton
-            product={product}
-            seller={seller}
-            item={item}
-            class={clx(
-              "btn",
-              "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full min-h-0 h-7 mt-2",
-              "hover:!bg-primary",
-              "hover:!text-base-100"
-            )}
-          />
-        ) : (
-          <a
-            href={relativeUrl}
-            class={clx(
-              "btn",
-              "btn-outline justify-start border-none text-center !text-sm !font-medium px-0 no-animation w-full h-29",
-              "hover:!bg-transparent",
-              "disabled:!bg-transparent disabled:!opacity-75",
-              "btn-error hover:!text-error disabled:!text-error"
-            )}
-          >
-            Fora de estoque
-          </a>
-        )}
+        {inStock
+          ? (
+            <AddToCartButton
+              product={product}
+              seller={seller}
+              item={item}
+              class={clx(
+                "btn",
+                "btn-outline justify-center border-gray-400 !text-sm !font-medium px-0 no-animation w-full min-h-0 h-7 mt-2",
+                "hover:!bg-primary",
+                "hover:!text-base-100",
+              )}
+            />
+          )
+          : (
+            <a
+              href={relativeUrl}
+              class={clx(
+                "btn",
+                "btn-outline justify-start border-none text-center !text-sm !font-medium px-0 no-animation w-full h-29",
+                "hover:!bg-transparent",
+                "disabled:!bg-transparent disabled:!opacity-75",
+                "btn-error hover:!text-error disabled:!text-error",
+              )}
+            >
+              Fora de estoque
+            </a>
+          )}
       </div>
     </div>
   );
