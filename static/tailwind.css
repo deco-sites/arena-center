@@ -6686,6 +6686,10 @@ details.collapse summary::-webkit-details-marker {
     display: grid;
   }
 
+  .lg\:hidden {
+    display: none;
+  }
+
   .lg\:h-10 {
     height: 2.5rem;
   }

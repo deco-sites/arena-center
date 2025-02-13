@@ -64,6 +64,7 @@ const onLoad = () => {
 
   const handleScrollAnimation = () => {
     const header = document.getElementById("header");
+    const headerMobile = document.getElementById("header-mobile");
     const scrollPosition = window.scrollY;
 
     const scrollDifference = scrollPosition - lastScrollY;
@@ -74,9 +75,13 @@ const onLoad = () => {
       if (accumulatedScroll > 0) {
         header?.classList.add("opacity-0");
         header?.classList.remove("opacity-100");
+        headerMobile?.classList.add("opacity-100");
+        headerMobile?.classList.remove("opacity-0");
       } else {
         header?.classList.remove("opacity-0");
         header?.classList.add("opacity-100");
+        headerMobile?.classList.add("opacity-0");
+        headerMobile?.classList.remove("opacity-100");
       }
       accumulatedScroll = 0;
     }
@@ -109,7 +114,9 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
       </div>
 
       <ul class="flex justify-between text-accent-content border-y border-gray-300 h-11 max-w-[1444px] px-14">
-        {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
+        {navItems?.slice(0, 10).map((item) => (
+          <NavItem item={item} />
+        ))}
       </ul>
     </div>
   </>
@@ -214,8 +221,7 @@ function Header({
   alerts = [],
   contacts = [],
   logo = {
-    src:
-      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -223,22 +229,31 @@ function Header({
   ...props
 }: Props) {
   const device = useDevice();
+  const searchbar = props.searchbar;
   return (
     <header
       style={{
-        height: device === "desktop"
-          ? HEADER_HEIGHT_DESKTOP
-          : HEADER_HEIGHT_MOBILE,
+        height:
+          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
       }}
     >
-      <div class=" fixed w-full z-40  top-0 left-0   transition-all duration-500 ease-in-out">
+      <div class=" fixed w-full z-40  top-0    transition-all duration-500 ease-in-out">
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
-        <div id="header" class="bg-base-100">
-          {device === "desktop"
-            ? <Desktop logo={logo} {...props} />
-            : <Mobile logo={logo} {...props} />}
+        <div
+          id="header-mobile"
+          class="fixed w-screen mx-auto lg:hidden flex justify-center opacity-0 bg-base-100"
+        >
+          <Searchbar {...searchbar} />
+        </div>
+        <div id="header" class="bg-base-100 ">
+          {device === "desktop" ? (
+            <Desktop logo={logo} {...props} />
+          ) : (
+            <Mobile logo={logo} {...props} />
+          )}
         </div>
       </div>
+
       <script
         type="module"
         dangerouslySetInnerHTML={{
