@@ -1,6 +1,10 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
 import { useDevice } from "@deco/deco/hooks";
+import { useId } from "../sdk/useId.ts";
+import Slider from "../components/ui/Slider.tsx";
+import { clx } from "../sdk/clx.ts";
+import Icon from "../components/ui/Icon.tsx";
 
 /** @titleBy title */
 export interface TopItem {
@@ -32,36 +36,93 @@ interface Props {
    * @title Conteudo
    * @maxItem 4 */
   content: TopItem[];
+  interval?: number;
 }
 
-export default function TopBar({ content }: Props) {
+export default function TopBar({ content, interval = 3 }: Props) {
+  const id = useId();
   const device = useDevice();
   if (device !== "desktop") {
     return (
       <div class="flex items-center overflow-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] mt-[-8px]">
-        {content.map((item) => (
-          <a
-            href={item.href}
-            target="blank"
-            class="flex items-center w-full md:mr-0 ml-6"
-          >
-            <div class="flex justify-center items-">
-              {item.mobileImage && (
-                <Image
-                  class="object-contain w-8 h-8"
-                  src={item.mobileImage}
-                  alt={item.title}
-                  width={32}
-                  height={32}
-                />
+         <div
+      id={id}
+      class={clx(
+        "grid",
+        "grid-rows-[1fr_32px_1fr_64px]",
+        "grid-cols-[32px_1fr_32px] ",
+        "sm:grid-cols-[112px_1fr_112px] ",
+        "w-screen",
+        "max-w-[1440px]",
+        "mx-auto"
+      )}
+    >
+      <div class="col-span-full row-span-full ">
+        <Slider class="w-full carousel carousel-center pt-8">
+          {content.map((item, index) => (
+            <Slider.Item index={index} class="w-full carousel-item">
+              <a
+                href={item.href}
+                target="blank"
+                class="flex items-center w-full justify-center"
+              >
+                <div class="flex justify-center items-">
+                  {item.mobileImage && (
+                    <Image
+                      class="object-contain w-8 h-8"
+                      src={item.mobileImage}
+                      alt={item.title}
+                      width={32}
+                      height={32}
+                    />
+                  )}
+                </div>
+                <div class="w-auto px-2 text-base text-primary-content">
+                  <p class="font-normal text-xs">{item.title}</p>
+                  <p class="font-extralight text-xs">{item.subtitle}</p>
+                </div>
+              </a>
+            </Slider.Item>
+          ))}
+        </Slider>
+      </div>
+
+      {/* <div class="z-10 sm:flex justify-center mt-7 items-center col-start-1 row-start-2">
+        <Slider.PrevButton class="" disabled={false}>
+          <Icon id="chevron-right" class="rotate-180" />
+        </Slider.PrevButton>
+      </div>
+
+      <div class="z-10 justify-center mt-7 items-center col-start-3 row-start-2">
+        <Slider.NextButton class="" disabled={false}>
+          <Icon id="chevron-right" />
+        </Slider.NextButton>
+      </div>
+
+      <ul
+        class={clx()
+        // "col-span-full row-start-4 z-10",
+        // "carousel justify-center gap-3",
+        }
+      >
+        {content.map((_, index) => (
+          <li class="carousel-item">
+            <Slider.Dot
+              index={index}
+              class={clx(
+                "bg-black opacity-20 h-3 w-3 no-animation rounded-full  hidden md:flex",
+                "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]"
               )}
-            </div>
-            <div class="w-[240px] px-2 text-base text-primary-content">
-              <p class="font-normal text-xs">{item.title}</p>
-              <p class="font-extralight text-xs">{item.subtitle}</p>
-            </div>
-          </a>
+            >
+              <></>
+            </Slider.Dot>
+          </li>
         ))}
+      </ul> */}
+
+      <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
+    </div>
+  
       </div>
     );
   }
@@ -91,5 +152,6 @@ export default function TopBar({ content }: Props) {
         </a>
       ))}
     </div>
+
   );
 }

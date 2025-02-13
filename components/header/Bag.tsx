@@ -36,8 +36,9 @@ function Bag() {
             id="shopping_bag"
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
             alt="icone de usuario"
-            width={20}
-            height={20}
+            width={23}
+            height={22}
+            class="pt-[3px]"
           />
           <p class="hidden lg:flex text-[10px] text-accent-content">Carrinho</p>
         </div>

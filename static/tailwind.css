@@ -4242,9 +4242,6 @@ details.collapse summary::-webkit-details-marker {
 .w-\[200px\] {
   width: 200px;
 }
-.w-\[240px\] {
-  width: 240px;
-}
 .w-\[25px\] {
   width: 25px;
 }
@@ -5173,6 +5170,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pt-8 {
   padding-top: 2rem;
+}
+.pt-\[3px\] {
+  padding-top: 3px;
 }
 .pt-\[5px\] {
   padding-top: 5px;
