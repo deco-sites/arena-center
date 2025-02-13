@@ -3944,9 +3944,6 @@ details.collapse summary::-webkit-details-marker {
 .mt-8 {
   margin-top: 2rem;
 }
-.mt-\[-80px\] {
-  margin-top: -80px;
-}
 .mt-\[-8px\] {
   margin-top: -8px;
 }
@@ -4139,6 +4136,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .min-h-0 {
   min-height: 0px;
+}
+.min-h-\[0\] {
+  min-height: 0;
 }
 .min-h-\[100px\] {
   min-height: 100px;
@@ -4502,10 +4502,6 @@ details.collapse summary::-webkit-details-marker {
 .list-disc {
   list-style-type: disc;
 }
-.columns-2 {
-  -moz-columns: 2;
-       columns: 2;
-}
 .auto-cols-max {
   grid-auto-columns: max-content;
 }
@@ -4778,6 +4774,9 @@ details.collapse summary::-webkit-details-marker {
   border-top-width: 1px;
   border-bottom-width: 1px;
 }
+.border-b {
+  border-bottom-width: 1px;
+}
 .border-t {
   border-top-width: 1px;
 }
@@ -4790,6 +4789,10 @@ details.collapse summary::-webkit-details-marker {
 .border-\[\#C9CFCF\] {
   --tw-border-opacity: 1;
   border-color: rgb(201 207 207 / var(--tw-border-opacity));
+}
+.border-base-100 {
+  --tw-border-opacity: 1;
+  border-color: var(--fallback-b1,oklch(var(--b1)/var(--tw-border-opacity)));
 }
 .border-base-200 {
   --tw-border-opacity: 1;
@@ -5049,10 +5052,6 @@ details.collapse summary::-webkit-details-marker {
   padding-top: 2.5rem;
   padding-bottom: 2.5rem;
 }
-.py-12 {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
 .py-16 {
   padding-top: 4rem;
   padding-bottom: 4rem;
@@ -5128,6 +5127,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .pl-3 {
   padding-left: 0.75rem;
+}
+.pl-5 {
+  padding-left: 1.25rem;
 }
 .pl-\[9px\] {
   padding-left: 9px;
@@ -6810,6 +6812,11 @@ details.collapse summary::-webkit-details-marker {
     flex: 100px;
   }
 
+  .lg\:columns-2 {
+    -moz-columns: 2;
+         columns: 2;
+  }
+
   .lg\:grid-flow-col {
     grid-auto-flow: column;
   }
@@ -6916,6 +6923,11 @@ details.collapse summary::-webkit-details-marker {
   .lg\:py-10 {
     padding-top: 2.5rem;
     padding-bottom: 2.5rem;
+  }
+
+  .lg\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 
   .lg\:py-3 {
