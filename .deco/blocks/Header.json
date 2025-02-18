@@ -274,26 +274,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/bar/utensilios-de-bar/abridores",
-              "name": "Abridores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/bar/utensilios-de-bar/aeradores",
-              "name": "Aeradores"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/bar/utensilios-de-bar/amassadores",
               "name": "Amassadores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/bar/utensilios-de-bar/coadores",
-              "name": "Coadores"
             },
             {
               "image": [],
@@ -304,8 +286,8 @@
             {
               "image": [],
               "children": [],
-              "name": "Colheres de Sorvete",
-              "url": "/bar/utensilios-de-bar/colheres-de-sorvete"
+              "url": "/bar/utensilios-de-bar/colheres-de-sorvete",
+              "name": "Colheres de Sorvete"
             },
             {
               "image": [],
@@ -316,26 +298,14 @@
             {
               "image": [],
               "children": [],
-              "url": "/bar/utensilios-de-bar/coqueteleiras",
-              "name": "Coqueteleiras"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/bar/utensilios-de-bar/cortadores",
               "name": "Cortadores"
             },
             {
               "image": [],
               "children": [],
-              "url": "/bar/utensilios-de-bar/descascadores",
-              "name": "Descascadores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/bar/utensilios-de-bar/dosadores",
-              "name": "Dosadores"
+              "name": "Descascadores",
+              "url": "/bar/utensilios-de-bar/descascadores"
             },
             {
               "image": [],
@@ -348,18 +318,6 @@
               "children": [],
               "url": "/bar/utensilios-de-bar/espatulas",
               "name": "Espatulas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/bar/utensilios-de-bar/espremedores",
-              "name": "Espremedores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/bar/utensilios-de-bar/formas-de-gelo",
-              "name": "Formas de Gelo"
             },
             {
               "image": [],
@@ -424,8 +382,8 @@
             {
               "image": [],
               "children": [],
-              "name": "Termômetros",
-              "url": "/bar/utensilios-de-bar/termômetros"
+              "url": "/bar/utensilios-de-bar/termômetros",
+              "name": "Termômetros"
             },
             {
               "image": [],
@@ -436,18 +394,6 @@
           ],
           "name": "Utensílios de Bar",
           "url": "/bar/utensilios-de-bar"
-        },
-        {
-          "image": [],
-          "children": [],
-          "name": "Bar Diversos",
-          "url": "/bar/bar-diversos"
-        },
-        {
-          "image": [],
-          "children": [],
-          "name": "Outlet Bar",
-          "url": "/bar/outlet-bar"
         }
       ],
       "url": "/bar",
@@ -660,158 +606,32 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/açucareiros",
-              "name": "Açucareiros"
+              "url": "/mesa-posta/acessórios-para-servir/itens-de-temperos-e-molhos",
+              "name": "Itens de Temperos e Molhos"
             },
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/aparelhos-de-fondue",
-              "name": "Aparelhos de Fondue"
+              "url": "/mesa-posta/acessórios-para-servir/boleiras-e-queijeiras",
+              "name": "Boleiras e Queijeiras"
             },
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/azeiteiros-e-vinagreiros",
-              "name": "Azeiteiros e Vinagreiros"
+              "url": "/mesa-posta/acessórios-para-servir/petisqueiras-e-tabuas",
+              "name": "Petisqueiras e Tábuas"
             },
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/balde-pestisco",
-              "name": "Balde Petisco"
+              "url": "/mesa-posta/acessórios-para-servir/mantegueiras-e-meleiras",
+              "name": "Mantegueiras e Meleiras"
             },
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/bandejas",
-              "name": "Bandejas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/boleiras",
-              "name": "Boleiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/bules",
-              "name": "Bules"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/caixas-chá",
-              "name": "Caixas Chá"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/cestas-pao",
-              "name": "Cestas Pão"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/galheteiros",
-              "name": "Galheteiros"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/garrafas-termicas",
-              "name": "Garrafas Térmicas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Leiteiras",
-              "url": "/mesa-posta/acessórios-para-servir/leiteiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/mantegueiras",
-              "name": "Mantegueiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/meleiras",
-              "name": "Meleiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Molheiras",
-              "url": "/mesa-posta/acessórios-para-servir/molheiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/paliteiros",
-              "name": "Paliteiros"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/petisqueiras",
-              "name": "Petisqueiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/pimenteiros",
-              "name": "Pimenteiros"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Queijeiras",
-              "url": "/mesa-posta/acessórios-para-servir/queijeiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/rechauds",
-              "name": "Rechauds"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/saleiros-de-mesa",
-              "name": "Saleiros de Mesa"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/servir-diversos",
-              "name": "Servir Diversos"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/sopeiras",
+              "url": "/mesa-posta/acessórios-para-servir/tigela-e-travessas",
               "name": "Sopeiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/tabuas-de-servir",
-              "name": "Tábuas de Servir"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/tigelas-e-bowls",
-              "name": "Tigelas e Bowls"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/travessas",
-              "name": "Travessas"
             }
           ],
           "name": "Acessórios para Servir",
@@ -819,52 +639,9 @@
         },
         {
           "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/linha-oriental/pratos-orientais",
-              "name": "Pratos Orientais"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/linha-oriental/hashis",
-              "name": "Hashis"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/linha-oriental/oriental-diversos",
-              "name": "Oriental Diversos"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/linha-oriental/tigelas-orientais",
-              "name": "Tigelas Orientais"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/linha-oriental/travessas-orientais",
-              "name": "Travessas Orientais"
-            }
-          ],
+          "children": [],
           "url": "/mesa-posta/linha-oriental",
           "name": "Linha Oriental"
-        },
-        {
-          "image": [],
-          "children": [],
-          "name": "Mesa Posta Diversos",
-          "url": "/mesa-posta/mesa-posta-diversos"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/mesa-posta/outlet",
-          "name": "Outlet"
         }
       ],
       "image": []
@@ -983,38 +760,26 @@
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/apoios-de-colher",
-              "name": "Apoios de Colher"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/balancas-de-cozinha",
-              "name": "Balanças de Cozinha"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/cozinha/acessorios-para-cozinha/bowls-preparo",
               "name": "Bowls Preparo"
             },
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/escorredores-de-preparo",
-              "name": "Escorredores de Preparo"
+              "url": "/cozinha/acessorios-para-cozinha/formas-e-assadeiras",
+              "name": "Formas e Assadeiras"
             },
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/macaricos",
-              "name": "Maçaricos"
+              "url": "/cozinha/acessorios-para-cozinha/copa-textil",
+              "name": "Copa Têxtil"
             },
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/maquinas-macarrao",
-              "name": "Máquinas Macarrão"
+              "url": "/cozinha/acessorios-para-cozinha/cafeteiras-chaleiras-e-fervedores",
+              "name": "Cafeteiras, Chaleiras e Fervedores"
             },
             {
               "image": [],
@@ -1025,80 +790,30 @@
             {
               "image": [],
               "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/equipamentos-de-preparo",
+              "name": "Equipamentos de Preparo"
+            },
+            {
+              "image": [],
+              "children": [],
               "url": "/cozinha/acessorios-para-cozinha/moedores",
               "name": "Moedores"
             },
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/pilao",
-              "name": "Pilão"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/secadores-salada",
-              "name": "Secadores Salada"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/cozinha/acessorios-para-cozinha/tabuas-preparo",
               "name": "Tábuas Preparo"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/acessorios-para-cozinha/formas-e-assadeiras",
+              "name": "Formas e Assadeiras"
             }
           ],
           "name": "Acessórios para Cozinha",
           "url": "/cozinha/acessorios-para-cozinha"
-        },
-        {
-          "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/cafeteiras-chaleiras-e-fervedores/cafeteiras",
-              "name": "Cafeteiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/cafeteiras-chaleiras-e-fervedores/chaleiras",
-              "name": "Chaleiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/cafeteiras-chaleiras-e-fervedores/fervedores",
-              "name": "Fervedores"
-            }
-          ],
-          "url": "/cozinha/cafeteiras-chaleiras-e-fervedores",
-          "name": "Cafeteiras, Chaleiras e Fervedores"
-        },
-        {
-          "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/copa-textil/avental",
-              "name": "Avental"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/copa-textil/luvas-cozinha",
-              "name": "Luvas Cozinha"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/copa-textil/panos-prato",
-              "name": "Panos Prato"
-            }
-          ],
-          "name": "Copa Têxtil",
-          "url": "/cozinha/copa-textil"
         },
         {
           "image": [],
@@ -1128,8 +843,8 @@
               "name": "Tesouras Cozinha"
             }
           ],
-          "name": "Facas e Acessórios",
-          "url": "/cozinha/facas-e-acessorios"
+          "url": "/cozinha/facas-e-acessorios",
+          "name": "Facas e Acessórios"
         },
         {
           "image": [],
@@ -1165,27 +880,8 @@
               "name": "Chairas"
             }
           ],
-          "url": "/cozinha/linha-churrasco",
-          "name": "Linha Churrasco"
-        },
-        {
-          "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/formas-e-assadeiras/assadeiras-e-formas-de-pao",
-              "name": "Assadeiras e Formas de Pão"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/formas-e-assadeiras/formas-e-refratarios",
-              "name": "Formas e Refratários"
-            }
-          ],
-          "name": "Formas e Assadeiras",
-          "url": "/cozinha/formas-e-assadeiras"
+          "name": "Linha Churrasco",
+          "url": "/cozinha/linha-churrasco"
         },
         {
           "image": [],
@@ -1199,223 +895,31 @@
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/panelas/caçarolas",
-              "name": "Caçarolas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Jogos Panelas",
-              "url": "/cozinha/panelas/jogos-panelas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/omeleteiras",
-              "name": "Omeleteiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/woks",
-              "name": "Woks"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/tapioqueiras",
-              "name": "Tapioqueiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/diversos",
-              "name": "Diversos"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/bifeteiras",
-              "name": "Bifeteiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/panelas-de-pressao",
-              "name": "Panelas de Pressão"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/panquequeiras",
-              "name": "Panquequeiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/pipoqueiras",
-              "name": "Pipoqueiras"
+              "url": "/cozinha/panelas/panelas-e-cacarolas",
+              "name": "Panelas e Caçarolas"
             }
           ],
-          "url": "/cozinha/panelas",
-          "name": "Panelas"
+          "name": "Panelas",
+          "url": "/cozinha/panelas"
         },
         {
           "image": [],
           "children": [
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/abridores-lata",
-              "name": "Abridores Lata"
+              "image": null,
+              "url": "/cozinha/utensilios-de-cozinha/cortadores",
+              "name": "Cortadores"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/acendedores",
-              "name": "Acendedores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/amassadores",
-              "name": "Amassadores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/coadores",
-              "name": "Coadores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/colheres-de-sorvete",
-              "name": "Colheres de Sorvete"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/conchas",
-              "name": "Conchas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/cortadores-ovo",
-              "name": "Cortadores Ovo"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/descascadores",
-              "name": "Descascadores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/escumadeira",
-              "name": "Escumadeira"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/espátulas",
-              "name": "Espátulas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/espremedores",
-              "name": "Espremedores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/fouet",
-              "name": "Fouet"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/garfo-preparo",
-              "name": "Garfo Preparo"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/kit-utensilios-cozinha",
-              "name": "Kit Utensílios Cozinha"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/pegadores",
-              "name": "Pegadores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/peneiras",
-              "name": "Peneiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/pincéis",
-              "name": "Pincéis"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/processadores",
-              "name": "Processadores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/quebra-nozes",
-              "name": "Quebra Nozes"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/ralador",
-              "name": "Ralador"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/rolos-massa",
-              "name": "Rolos Massa"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/termometro",
-              "name": "Termômetro"
-            },
-            {
-              "image": [],
-              "children": [],
-              "name": "Timers",
-              "url": "/cozinha/utensilios-de-cozinha/timers"
+              "image": null,
+              "url": "/cozinha/utensilios-de-cozinha/utensilios-de-preparo",
+              "name": "Utensílio de Preparo"
             }
           ],
           "url": "/cozinha/utensilios-de-cozinha",
           "name": "Utensílios de Cozinha"
-        },
-        {
-          "image": [],
-          "children": [],
-          "name": "Cozinha Diversos",
-          "url": "/cozinha/cozinha-diversos"
-        },
-        {
-          "image": [],
-          "children": [],
-          "name": "Cozinha Outlet",
-          "url": "/cozinha/cozinha-outlet"
         }
       ],
       "name": "Cozinha",
@@ -1589,18 +1093,6 @@
           ],
           "url": "/organizacao/utensilios-de-limpeza",
           "name": "Utensílios de Limpeza"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/organizacao/organizacao-diversos",
-          "name": "Organização Diversos"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/organizacao/organizacao-outlet",
-          "name": "Organização Outlet"
         }
       ],
       "name": "Organização",
@@ -1687,60 +1179,9 @@
         },
         {
           "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/cortinas/cortinas-banheiro",
-              "name": "Cortinas Banheiro"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/cortinas/cortinas-cozinha",
-              "name": "Cortinas Cozinha"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/cortinas/cortinas-sala",
-              "name": "Cortinas Sala"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/cortinas/varao",
-              "name": "Varão"
-            }
-          ],
+          "children": [],
           "name": "Cortinas",
           "url": "/decoracao/cortinas"
-        },
-        {
-          "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/espelhos/espelhos-de-parede",
-              "name": "Espelhos de Parede"
-            }
-          ],
-          "url": "/decoracao/espelhos",
-          "name": "Espelhos"
-        },
-        {
-          "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/iluminacao/abajures",
-              "name": "Abajures"
-            }
-          ],
-          "url": "/decoracao/iluminacao",
-          "name": "Iluminação"
         },
         {
           "image": [],
@@ -1754,14 +1195,14 @@
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/objetos-de-decoracao/bandejas-decorativas",
-              "name": "Bandejas Decorativas"
+              "url": "/decoracao/objetos-de-decoracao/abajur",
+              "name": "Abajur"
             },
             {
               "image": [],
               "children": [],
-              "url": "/decoracao/objetos-de-decoracao/bombonieres",
-              "name": "Bombonieres"
+              "url": "/decoracao/objetos-de-decoracao/bandejas-decorativas",
+              "name": "Bandejas Decorativas"
             },
             {
               "image": [],
@@ -1841,6 +1282,12 @@
               "children": [],
               "url": "/decoracao/decoracao-de-parede/adornos-de-parede",
               "name": "Adornos de Parede"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/espelho-de-parede",
+              "name": "Espelho de Parede"
             },
             {
               "image": [],
@@ -1956,66 +1403,24 @@
         },
         {
           "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/toalhas/toalhas-de-banho",
-              "name": "Toalhas de Banho"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/toalhas/toalhas-de-rosto",
-              "name": "Toalhas de Rosto"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/toalhas/toalhas-de-chao",
-              "name": "Toalhas de Chão"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/toalhas/roupoes",
-              "name": "Roupões"
-            }
-          ],
+          "children": [],
           "url": "/cama-e-banho/toalhas",
           "name": "Toalhas"
         },
         {
           "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/cama/colchas",
-              "name": "Colchas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/cama/travesseiros",
-              "name": "Travesseiros"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/cama/fronhas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/cama/cobertores",
-              "name": "Cobertores"
-            }
-          ],
+          "children": [],
           "url": "/cama-e-banho/cama",
           "name": "Cama"
+        },
+        {
+          "image": [],
+          "children": [],
+          "url": "/cama-e-banho/acessorios-de-banheiro",
+          "name": "Acessórios de Banheiro"
         }
-      ]
+      ],
+      "image": null
     },
     {
       "url": "/natal",
@@ -2121,44 +1526,14 @@
         {
           "image": [],
           "children": [],
-          "url": "/natal/adornos-natalinos",
-          "name": "Adornos Natalinos"
-        },
-        {
-          "image": [],
-          "children": [],
           "url": "/natal/arvores-de-natal",
           "name": "Árvores de Natal"
         },
         {
           "image": [],
           "children": [],
-          "url": "/natal/bolas-natalinas",
-          "name": "Bolas Natalinas"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/natal/festao",
-          "name": "Festão"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/natal/fitas-natalinas",
-          "name": "Fitas Natalinas"
-        },
-        {
-          "image": [],
-          "children": [],
           "url": "/natal/flores-permanentes-natalinas",
           "name": "Flores Permanentes Natalinas"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/natal/guirlandas-natal",
-          "name": "Guirlandas Natal"
         },
         {
           "image": [],
@@ -2262,18 +1637,6 @@
           "children": [],
           "url": "/pascoa/lacos-pascoa",
           "name": "Laços Páscoa"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/pascoa/pascoa-diversos",
-          "name": "Páscoa Diversos"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/pascoa/pascoa-outlet",
-          "name": "Páscoa Outlet"
         }
       ],
       "image": [],
