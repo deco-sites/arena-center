@@ -179,7 +179,7 @@ function Footer({
               ))}
           <div class="flex flex-col gap-4  md:mt-0">
             <p class="text-xs font-medium">{social?.socialTitle}</p>
-            <div class="flex md:justify-center lg:justify-around">
+            <div class="flex md:justify-center lg:justify-around gap-2">
               {social?.socialItems.map(({ image, href, alt }) => (
                 <div key={alt} class="">
                   <a href={href}>
