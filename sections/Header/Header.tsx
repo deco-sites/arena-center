@@ -131,6 +131,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
                 <span class="loading loading-spinner" />
               </div>
             ) : (
+              
               <Searchbar {...searchbar} />
             )}
           </div>

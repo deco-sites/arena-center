@@ -44,50 +44,53 @@ export default function TopBar({ content, interval = 3 }: Props) {
   const device = useDevice();
   if (device !== "desktop") {
     return (
-      <div class="flex items-center overflow-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] mt-[-8px]">
-         <div
-      id={id}
-      class={clx(
-        "grid",
-        "grid-rows-[1fr_32px_1fr_64px]",
-        "grid-cols-[32px_1fr_32px] ",
-        "sm:grid-cols-[112px_1fr_112px] ",
-        "w-screen",
-        "max-w-[1440px]",
-        "mx-auto"
-      )}
-    >
-      <div class="col-span-full row-span-full ">
-        <Slider class="w-full carousel carousel-center pt-8">
-          {content.map((item, index) => (
-            <Slider.Item index={index} class="w-full carousel-item">
-              <a
-                href={item.href}
-                target="blank"
-                class="flex items-center w-full justify-center"
-              >
-                <div class="flex justify-center items-">
-                  {item.mobileImage && (
-                    <Image
-                      class="object-contain w-8 h-8"
-                      src={item.mobileImage}
-                      alt={item.title}
-                      width={32}
-                      height={32}
-                    />
-                  )}
-                </div>
-                <div class="w-auto px-2 text-base text-primary-content">
-                  <p class="font-normal text-xs">{item.title}</p>
-                  <p class="font-extralight text-xs">{item.subtitle}</p>
-                </div>
-              </a>
-            </Slider.Item>
-          ))}
-        </Slider>
-      </div>
+      <div class="flex items-center overflow-x-auto mx-auto bg-primary w-screen lg:px-4 md:max-w-[1440px] h-[73px] ">
+        <div
+          id={id}
+          class={clx(
+            "grid",
+            "grid-rows-[1fr_32px_1fr_64px]",
+            "grid-cols-[32px_1fr_32px] ",
+            "sm:grid-cols-[112px_1fr_112px] ",
+            "w-screen",
+            "max-w-[1440px]",
+            "mx-auto h-[73px] "
+          )}
+        >
+          <div class="col-span-full row-span-full  flex items-center justify-center h-[73px]">
+            <Slider class="w-full carousel carousel-center ">
+              {content.map((item, index) => (
+                <Slider.Item
+                  index={index}
+                  class="w-full carousel-item h-auto overflow-y-hidden "
+                >
+                  <a
+                    href={item.href}
+                    target="blank"
+                    class="flex items-center w-full justify-center"
+                  >
+                    <div class="flex justify-center items-">
+                      {item.mobileImage && (
+                        <Image
+                          class="object-contain w-8 h-8"
+                          src={item.mobileImage}
+                          alt={item.title}
+                          width={32}
+                          height={32}
+                        />
+                      )}
+                    </div>
+                    <div class="w-auto px-2 text-base text-primary-content">
+                      <p class="font-normal text-xs">{item.title}</p>
+                      <p class="font-extralight text-xs">{item.subtitle}</p>
+                    </div>
+                  </a>
+                </Slider.Item>
+              ))}
+            </Slider>
+          </div>
 
-      {/* <div class="z-10 sm:flex justify-center mt-7 items-center col-start-1 row-start-2">
+          {/* <div class="z-10 sm:flex justify-center mt-7 items-center col-start-1 row-start-2">
         <Slider.PrevButton class="" disabled={false}>
           <Icon id="chevron-right" class="rotate-180" />
         </Slider.PrevButton>
@@ -120,9 +123,12 @@ export default function TopBar({ content, interval = 3 }: Props) {
         ))}
       </ul> */}
 
-      <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
-    </div>
-  
+          <Slider.JS
+            rootId={id}
+            interval={interval && interval * 1e3}
+            infinite
+          />
+        </div>
       </div>
     );
   }
