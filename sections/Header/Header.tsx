@@ -120,6 +120,16 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
     </div>
   </>
 );
+
+const SerchBarMobile = ({  searchbar }: Props) => (
+  <div
+    id="header-mobile"
+    class="fixed w-screen mx-auto lg:hidden  justify-center hidden bg-base-100 z-40"
+  >
+    <Searchbar {...searchbar} />
+  </div>
+);
+
 const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
   <>
     <Drawer
@@ -156,7 +166,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
         </Drawer.Aside>
       }
     />
-
+  
     <div
       class="grid place-items-center w-screen px-4 gap-3 lg:gap-4"
       style={{
@@ -183,14 +193,14 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
           class="btn btn-square btn-sm btn-ghost "
           aria-label="search icon button"
         >
-        {/* <Icon id="search" />  */}
-         <Image
+          {/* <Icon id="search" />  */}
+          <Image
             id="search"
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2737a7a2-66a0-45ef-aff9-ae6065f16919/search.svg"
             alt="icone de pesquisa"
             width={18}
             height={18}
-          /> 
+          />
         </label>
       </div>
       {logo && (
@@ -228,7 +238,6 @@ function Header({
   ...props
 }: Props) {
   const device = useDevice();
-  const searchbar = props.searchbar;
   return (
     <header
       style={{
@@ -238,12 +247,7 @@ function Header({
     >
       <div class=" fixed w-full z-40  top-0    transition-all duration-500 ease-in-out">
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
-        <div
-          id="header-mobile"
-          class="fixed w-screen mx-auto lg:hidden  justify-center hidden bg-base-100"
-        >
-          <Searchbar {...searchbar} />
-        </div>
+        <SerchBarMobile logo={logo} {...props} />
         <div id="header" class="bg-base-100 ">
           {device === "desktop" ? (
             <Desktop logo={logo} {...props} />
