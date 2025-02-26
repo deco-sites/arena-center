@@ -3914,6 +3914,9 @@ details.collapse summary::-webkit-details-marker {
 .mr-\[-24px\] {
   margin-right: -24px;
 }
+.mt-0 {
+  margin-top: 0px;
+}
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -4040,6 +4043,9 @@ details.collapse summary::-webkit-details-marker {
 .h-9 {
   height: 2.25rem;
 }
+.h-\[100px\] {
+  height: 100px;
+}
 .h-\[10px\] {
   height: 10px;
 }
@@ -4048,9 +4054,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[17px\] {
   height: 17px;
-}
-.h-\[182px\] {
-  height: 182px;
 }
 .h-\[20px\] {
   height: 20px;
@@ -4072,6 +4075,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[29px\] {
   height: 29px;
+}
+.h-\[32px\] {
+  height: 32px;
+}
+.h-\[36px\] {
+  height: 36px;
 }
 .h-\[398px\] {
   height: 398px;
@@ -5201,6 +5210,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .\!text-\[12px\] {
   font-size: 12px !important;
+}
+.\!text-\[14px\] {
+  font-size: 14px !important;
 }
 .\!text-sm {
   font-size: 0.875rem !important;

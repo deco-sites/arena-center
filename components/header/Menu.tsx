@@ -8,8 +8,8 @@ export interface Props {
 function MenuItem({ item }: { item: SiteNavigationElement }) {
   return (
     <div class="collapse collapse-plus">
-      <input type="checkbox" />
-      <a class="collapse-title capitalize" href={item.url}>
+      <input type="checkbox" class="min-h-[0]" />
+      <a class="collapse-title capitalize text-left" href={item.url}>
         {item.name}
       </a>
       <div class="collapse-content">
@@ -28,9 +28,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
                   <ul>
                     {item.children?.map((nodeItem) => (
                       <li class="mt-4">
-                        <a href={nodeItem.url}>
-                          {nodeItem.name}
-                        </a>
+                        <a href={nodeItem.url}>{nodeItem.name}</a>
                       </li>
                     ))}
                   </ul>

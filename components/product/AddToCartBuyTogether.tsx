@@ -64,18 +64,18 @@ function AddToCartButton(props: Props) {
       id={id}
       class="flex"
       data-cart-item={encodeURIComponent(
-        JSON.stringify({ items, platformProps }),
+        JSON.stringify({ items, platformProps })
       )}
     >
       <button
         class={clx(
-          "flex  w-[176px] h-[29px] text-base-200 min-h-0 btn bg-gray-300 border-none mt-3",
-          _class?.toString(),
+          "flex  w-[176px] h-[32px] text-base-200 min-h-0 btn bg-gray-300 border-none ",
+          _class?.toString()
         )}
         hx-on:click={useScript(onClick)}
         disabled={false}
       >
-        <span class="text-accent font-medium text-[10px] text-center w-full  hover:text-base-100 flex justify-center items-center ">
+        <span class="text-black font-medium text-[14px] text-center w-full  hover:text-base-100 flex justify-center items-center ">
           {icon !== "" && (
             <img
               class="mr-1"
@@ -83,7 +83,7 @@ function AddToCartButton(props: Props) {
               alt="icone de um carrinho de compras"
             />
           )}
-          comprar junto
+          COMPRE JUNTO
         </span>
       </button>
     </div>

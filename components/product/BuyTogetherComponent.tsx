@@ -104,7 +104,7 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
               )}
             </div>
             <div class="flex flex-col justify-center items-center">
-              <div class="flex flex-col mt-3 md:mt-0 w-[175px] h-[182px] bg-secondary  items-center justify-center text-base-100 gap-7">
+              <div class="flex flex-col mt-0 w-[175px] h-[100px]  items-center justify-center text-black gap-4">
                 <p class="text-[9px] font-semibold ">
                   Comprar esses 2 produtos por:
                 </p>
@@ -119,25 +119,23 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
                 </div>
               </div>
 
-              {inStock && secondProduct
-                ? (
-                  <AddToCartBuyTogether
-                    products={[product, secondProduct]}
-                    class={clx("")}
-                    icon="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
-                  />
-                )
-                : (
-                  <p
-                    class={clx(
-                      "btn",
-                      "btn-outline justify-center  !text-[12px] !font-medium px-0 no-animation w-full",
-                      "text-center border border-secondary btn-secondary min-h-0 h-[26px]",
-                    )}
-                  >
-                    Fora de estoque
-                  </p>
-                )}
+              {inStock && secondProduct ? (
+                <AddToCartBuyTogether
+                  products={[product, secondProduct]}
+                  class={clx("")}
+                  icon="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
+                />
+              ) : (
+                <p
+                  class={clx(
+                    "btn",
+                    "btn-outline justify-center  !text-[14px] !font-medium px-0 no-animation w-full",
+                    "text-center border border-secondary btn-secondary min-h-0 h-[36px]"
+                  )}
+                >
+                  Fora de estoque
+                </p>
+              )}
             </div>
           </div>
         </div>

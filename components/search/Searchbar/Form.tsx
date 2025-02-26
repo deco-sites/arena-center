@@ -68,7 +68,7 @@ export default function Searchbar({
   const slot = useId();
   return (
     <div
-      class="lg:w-[407px] w-[90vw] lg:h-8 h-10 border border-gray-200 lg:bg-gray-100 bg-base-100 rounded-full my-2 lg:my-0 "
+      class="lg:w-[407px] w-[90vw] lg:h-8 h-10 border border-gray-200 lg:bg-gray-100 bg-base-100 rounded-full my-2 lg:my-0 mx-auto"
       style={{ gridTemplateRows: "min-content auto" }}
     >
       <form id={SEARCHBAR_INPUT_FORM_ID} action={ACTION} class="join">

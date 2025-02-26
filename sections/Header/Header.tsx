@@ -23,6 +23,7 @@ import { useDevice } from "@deco/deco/hooks";
 import { type LoadingFallbackProps } from "@deco/deco";
 import type { AlertItem, ContactItem } from "../../components/header/Alert.tsx";
 import { useScript } from "deco/hooks/useScript.ts";
+import Icon from "../../components/ui/Icon.tsx";
 
 export interface Logo {
   src: ImageWidget;
@@ -73,13 +74,13 @@ const onLoad = () => {
       if (accumulatedScroll > 0) {
         header?.classList.add("opacity-0");
         header?.classList.remove("opacity-100");
-        headerMobile?.classList.add("opacity-100");
-        headerMobile?.classList.remove("opacity-0");
+        headerMobile?.classList.add("flex");
+        headerMobile?.classList.remove("hidden");
       } else {
         header?.classList.remove("opacity-0");
         header?.classList.add("opacity-100");
-        headerMobile?.classList.add("opacity-0");
-        headerMobile?.classList.remove("opacity-100");
+        headerMobile?.classList.add("hidden");
+        headerMobile?.classList.remove("flex");
       }
       accumulatedScroll = 0;
     }
@@ -125,7 +126,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       id={SEARCHBAR_DRAWER_ID}
       aside={
         <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
-          <div class="w-screen overflow-y-auto">
+          <div class="w-screen overflow-y-auto ">
             {loading === "lazy" ? (
               <div class="h-full w-full flex items-center justify-center">
                 <span class="loading loading-spinner" />
@@ -170,7 +171,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
           class="btn btn-square btn-sm btn-ghost"
           aria-label="open menu"
         >
-          {/* <Icon id="menu" /> */}
+          {/* <Icon id="menu" />  */}
 
           <img
             src="https://data.decoassets.com/arena-center/42109a6a-97fd-4c1d-94c4-10dbac32f590/pngtree-hamburger-menu-button-list-content-png-image_5288864.png"
@@ -182,14 +183,14 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
           class="btn btn-square btn-sm btn-ghost "
           aria-label="search icon button"
         >
-          {/* <Icon id="search" /> */}
-          <Image
+        {/* <Icon id="search" />  */}
+         <Image
             id="search"
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2737a7a2-66a0-45ef-aff9-ae6065f16919/search.svg"
             alt="icone de pesquisa"
             width={18}
             height={18}
-          />
+          /> 
         </label>
       </div>
       {logo && (
@@ -239,7 +240,7 @@ function Header({
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
         <div
           id="header-mobile"
-          class="fixed w-screen mx-auto lg:hidden flex justify-center opacity-0 bg-base-100"
+          class="fixed w-screen mx-auto lg:hidden  justify-center hidden bg-base-100"
         >
           <Searchbar {...searchbar} />
         </div>
