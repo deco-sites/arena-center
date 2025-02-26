@@ -3875,6 +3875,9 @@ details.collapse summary::-webkit-details-marker {
 .mb-5 {
   margin-bottom: 1.25rem;
 }
+.mb-\[-2px\] {
+  margin-bottom: -2px;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -3889,6 +3892,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .ml-6 {
   margin-left: 1.5rem;
+}
+.ml-\[-9px\] {
+  margin-left: -9px;
 }
 .mr-1 {
   margin-right: 0.25rem;
@@ -3943,6 +3949,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-8 {
   margin-top: 2rem;
+}
+.mt-\[-40px\] {
+  margin-top: -40px;
 }
 .mt-\[-8px\] {
   margin-top: -8px;
@@ -6798,6 +6807,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:max-w-\[1440px\] {
     max-width: 1440px;
+  }
+
+  .lg\:max-w-\[800px\] {
+    max-width: 800px;
   }
 
   .lg\:max-w-lg {

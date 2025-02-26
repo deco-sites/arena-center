@@ -161,9 +161,9 @@ function ProductCard({
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
-        <div class="lg:h-[26px] h-[58px] font-light text-[10px] my-3">
+        {/* <div class="lg:h-[26px] h-[58px] font-light text-[10px] my-3">
           {shortDescription && <p>{shortDescription}</p>}
-        </div>
+        </div> */}
       </a>
 
       {/* SKU Selector */}

@@ -164,7 +164,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
           "min-content auto min-content min-content min-content",
       }}
     >
-      <div class="flex gap-2">
+      <div class="flex ">
         <label
           for={SIDEMENU_DRAWER_ID}
           class="btn btn-square btn-sm btn-ghost"
@@ -195,7 +195,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       {logo && (
         <a
           href="/"
-          class="flex-grow inline-flex items-center justify-center"
+          class="flex-grow inline-flex items-center justify-center ml-[-9px]"
           style={{ minHeight: NAVBAR_HEIGHT_MOBILE }}
           aria-label="Store logo"
         >
@@ -208,7 +208,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
         </a>
       )}
 
-      <div class="flex gap-1 items-center mr-[-24px] lg:mr-0">
+      <div class="flex gap-[6px] items-center mr-[-24px] lg:mr-0">
         <User />
         <Bag />
       </div>
