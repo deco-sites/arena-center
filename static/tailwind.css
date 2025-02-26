@@ -4209,9 +4209,6 @@ details.collapse summary::-webkit-details-marker {
 .w-80 {
   width: 20rem;
 }
-.w-96 {
-  width: 24rem;
-}
 .w-\[10px\] {
   width: 10px;
 }
@@ -4278,9 +4275,6 @@ details.collapse summary::-webkit-details-marker {
 .w-\[400px\] {
   width: 400px;
 }
-.w-\[407px\] {
-  width: 407px;
-}
 .w-\[48px\] {
   width: 48px;
 }
@@ -4295,6 +4289,12 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[80vw\] {
   width: 80vw;
+}
+.w-\[88vw\] {
+  width: 88vw;
+}
+.w-\[90vw\] {
+  width: 90vw;
 }
 .w-\[full\] {
   width: full;
@@ -4874,10 +4874,6 @@ details.collapse summary::-webkit-details-marker {
   --tw-bg-opacity: 1;
   background-color: var(--fallback-er,oklch(var(--er)/var(--tw-bg-opacity)));
 }
-.bg-gray-100 {
-  --tw-bg-opacity: 1;
-  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
-}
 .bg-gray-200 {
   --tw-bg-opacity: 1;
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
@@ -4913,6 +4909,9 @@ details.collapse summary::-webkit-details-marker {
 .bg-slate-800 {
   --tw-bg-opacity: 1;
   background-color: rgb(30 41 59 / var(--tw-bg-opacity));
+}
+.bg-transparent {
+  background-color: transparent;
 }
 .bg-white {
   --tw-bg-opacity: 1;
@@ -6662,6 +6661,11 @@ details.collapse summary::-webkit-details-marker {
     margin-right: auto;
   }
 
+  .lg\:my-0 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
   .lg\:mb-0 {
     margin-bottom: 0px;
   }
@@ -6702,6 +6706,14 @@ details.collapse summary::-webkit-details-marker {
     height: 2.5rem;
   }
 
+  .lg\:h-7 {
+    height: 1.75rem;
+  }
+
+  .lg\:h-8 {
+    height: 2rem;
+  }
+
   .lg\:h-\[26px\] {
     height: 26px;
   }
@@ -6734,6 +6746,10 @@ details.collapse summary::-webkit-details-marker {
     width: 6rem;
   }
 
+  .lg\:w-96 {
+    width: 24rem;
+  }
+
   .lg\:w-\[1220px\] {
     width: 1220px;
   }
@@ -6764,6 +6780,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:w-\[34px\] {
     width: 34px;
+  }
+
+  .lg\:w-\[407px\] {
+    width: 407px;
   }
 
   .lg\:w-\[495px\] {
@@ -6893,6 +6913,11 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:overflow-x-auto {
     overflow-x: auto;
+  }
+
+  .lg\:bg-gray-100 {
+    --tw-bg-opacity: 1;
+    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
   }
 
   .lg\:bg-primary-content {

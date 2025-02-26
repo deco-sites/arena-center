@@ -61,13 +61,14 @@ const script = (formId: string, name: string, popupId: string) => {
   });
 };
 
-export default function Searchbar(
-  { placeholder = "What are you looking for?", loader }: SearchbarProps,
-) {
+export default function Searchbar({
+  placeholder = "What are you looking for?",
+  loader,
+}: SearchbarProps) {
   const slot = useId();
   return (
     <div
-      class="w-[407px] h-8 border border-gray-200 bg-gray-100 rounded"
+      class="lg:w-[407px] w-[90vw] lg:h-8 h-10 border border-gray-200 lg:bg-gray-100 bg-base-100 rounded-full my-2 lg:my-0 "
       style={{ gridTemplateRows: "min-content auto" }}
     >
       <form id={SEARCHBAR_INPUT_FORM_ID} action={ACTION} class="join">
@@ -89,7 +90,7 @@ export default function Searchbar(
         </button>
         <input
           tabIndex={0}
-          class="input  join-item bg-gray-100 min-h-0 h-7 placeholder:text-[10px] w-96"
+          class="input  join-item bg-transparent lg:bg-gray-100 min-h-0 lg:h-7 h-9  placeholder:text-[10px] lg:w-96 w-[88vw]"
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"
@@ -111,7 +112,7 @@ export default function Searchbar(
             script,
             SEARCHBAR_INPUT_FORM_ID,
             NAME,
-            SEARCHBAR_POPUP_ID,
+            SEARCHBAR_POPUP_ID
           ),
         }}
       />
