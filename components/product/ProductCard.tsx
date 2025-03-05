@@ -82,13 +82,13 @@ function ProductCard({
     <div
       {...event}
       class={clx(
-        "card card-compact group text-sm lg:w-[280px] w-[175px] h-auto",
+        "card card-compact group text-sm lg:w-[280px] w-[170px] h-auto",
         _class,
       )}
     >
       <figure
         class={clx(
-          "relative bg-base-100 lg:w-[280px] w-[175px] h-[280px]",
+          "relative bg-base-100 lg:w-[280px] w-[170px] h-[280px]",
           "rounded border border-transparent",
           "group-hover:border-primary",
         )}
@@ -101,7 +101,7 @@ function ProductCard({
           class={clx(
             "absolute top-0 left-0",
             "grid grid-cols-1 grid-rows-1",
-            "lg:w-[280px] w-[175px]",
+            "lg:w-[280px] w-[170px]",
             !inStock && "opacity-70",
           )}
         >

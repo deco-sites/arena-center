@@ -28,7 +28,7 @@ function ProductSlider({ products, itemListName }: Props) {
           </Slider.PrevButton>
         </div>
         <div class="">
-          <Slider class="carousel carousel-center  gap-7 sm:gap-5 lg:w-[1220px] w-[350px] mx-auto">
+          <Slider class="carousel carousel-center  gap-4 sm:gap-5 lg:w-[1220px] w-[360px] mx-auto">
             {products?.map((product, index) => (
               <Slider.Item
                 index={index}
@@ -42,7 +42,7 @@ function ProductSlider({ products, itemListName }: Props) {
                   index={index}
                   product={product}
                   itemListName={itemListName}
-                  class="lg:w-[287px] w-[175px] "
+                  class="lg:w-[287px] w-[170px] "
                 />
               </Slider.Item>
             ))}

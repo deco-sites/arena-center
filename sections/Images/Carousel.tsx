@@ -134,11 +134,11 @@ function Carousel({ images = [], preload, interval }: Props) {
         "sm:grid-cols-[112px_1fr_112px] ",
         "w-screen",
         "max-w-[1440px]",
-        "mx-auto",
+        "mx-auto"
       )}
     >
-      <div class="col-span-full row-span-full">
-        <Slider class="gap-6 w-full carousel carousel-center">
+      <div class="col-span-full row-span-full mb-[-7px]">
+        <Slider class="gap-6 w-full carousel carousel-center ">
           {images.map((image, index) => (
             <Slider.Item index={index} class="w-full carousel-item">
               <BannerItem image={image} lcp={index === 0 && preload} />
@@ -148,28 +148,22 @@ function Carousel({ images = [], preload, interval }: Props) {
       </div>
 
       <div class="z-10 sm:flex justify-center mt-7 items-center col-start-1 row-start-2">
-        <Slider.PrevButton
-          class=""
-          disabled={false}
-        >
+        <Slider.PrevButton class="" disabled={false}>
           <Icon id="chevron-right" class="rotate-180" />
         </Slider.PrevButton>
       </div>
 
       <div class="z-10 justify-center mt-7 items-center col-start-3 row-start-2">
-        <Slider.NextButton
-          class=""
-          disabled={false}
-        >
+        <Slider.NextButton class="" disabled={false}>
           <Icon id="chevron-right" />
         </Slider.NextButton>
       </div>
 
       <ul
-        class={clx(
-          // "col-span-full row-start-4 z-10",
-          // "carousel justify-center gap-3",
-        )}
+        class={clx()
+        // "col-span-full row-start-4 z-10",
+        // "carousel justify-center gap-3",
+        }
       >
         {images.map((_, index) => (
           <li class="carousel-item">
@@ -177,7 +171,7 @@ function Carousel({ images = [], preload, interval }: Props) {
               index={index}
               class={clx(
                 "bg-black opacity-20 h-3 w-3 no-animation rounded-full  hidden md:flex",
-                "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
+                "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]"
               )}
             >
               <></>

@@ -99,7 +99,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           "group-has-[#grid-2:checked]/items:grid-cols-2",
           "group-has-[#grid-3:checked]/items:grid-cols-3",
           "group-has-[#grid-4:checked]/items:grid-cols-4",
-          "grid items-center",
+          "grid items-center grid-cols-2",
           "gap-2",
           "sm:gap-10",
           "w-full",
@@ -166,7 +166,7 @@ function PageResult(props: SectionProps<typeof loader>) {
               </a>
             </div>
           )} */}
-        <div class={clx("join",  "flex justify-center")}>
+        <div class={clx("join", "flex justify-center")}>
           <a
             rel="prev"
             aria-label="previous page link"

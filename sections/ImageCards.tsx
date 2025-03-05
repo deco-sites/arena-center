@@ -20,7 +20,7 @@ export default function (props: Props) {
   // const device = useDevice();
   return (
     <>
-      <div class="custom-scroll flex gap-3 md:gap-4 w-full max-w-[1440px] lg:overflow-visible mt-6 mx-auto px-6 lg:justify-center">
+      <div class="custom-scroll flex gap-2 w-full max-w-[1440px] lg:overflow-visible mt-6 mx-auto px-6 lg:justify-center">
         {props.images &&
           props.images.map((card) => (
             <a href={card.href}>

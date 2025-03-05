@@ -3878,6 +3878,9 @@ details.collapse summary::-webkit-details-marker {
 .mb-\[-2px\] {
   margin-bottom: -2px;
 }
+.mb-\[-7px\] {
+  margin-bottom: -7px;
+}
 .ml-1 {
   margin-left: 0.25rem;
 }
@@ -3955,6 +3958,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .mt-\[-40px\] {
   margin-top: -40px;
+}
+.mt-\[4px\] {
+  margin-top: 4px;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -4239,6 +4245,9 @@ details.collapse summary::-webkit-details-marker {
 .w-\[165px\] {
   width: 165px;
 }
+.w-\[170px\] {
+  width: 170px;
+}
 .w-\[175px\] {
   width: 175px;
 }
@@ -4274,6 +4283,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[350px\] {
   width: 350px;
+}
+.w-\[360px\] {
+  width: 360px;
 }
 .w-\[363px\] {
   width: 363px;
@@ -4528,6 +4540,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
+}
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));

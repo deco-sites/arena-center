@@ -46,8 +46,10 @@ export interface SectionProps {
    * @description Searchbar configuration
    */
   searchbar: SearchbarProps;
-  /** @title Logo */
+  /** @title Logo Mobile*/
   logo: Logo;
+  /** @title Logo Desktop*/
+  logoDesktop: Logo;
   /**
    * @description Usefull for lazy loading hidden elements, like hamburguer menus etc
    * @hide true */
@@ -98,7 +100,7 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
             <Image
               src={logo.src}
               alt={logo.alt}
-              width={logo.width || 100}
+              width={logo.width || 200}
               height={logo.height || 23}
             />
           </a>
@@ -198,8 +200,8 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
             id="search"
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/2737a7a2-66a0-45ef-aff9-ae6065f16919/search.svg"
             alt="icone de pesquisa"
-            width={18}
-            height={18}
+            width={20}
+            height={20}
           />
         </label>
       </div>
@@ -215,6 +217,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
             alt={logo.alt}
             width={logo.width || 100}
             height={logo.height || 35}
+            class="h-9 w-auto mt-[4px]"
           />
         </a>
       )}
@@ -250,7 +253,7 @@ function Header({
         <SerchBarMobile logo={logo} {...props} />
         <div id="header" class="bg-base-100 ">
           {device === "desktop" ? (
-            <Desktop logo={logo} {...props} />
+            <Desktop logo={props.logoDesktop} {...props} />
           ) : (
             <Mobile logo={logo} {...props} />
           )}
