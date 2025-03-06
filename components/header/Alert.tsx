@@ -32,11 +32,10 @@ export interface Props {
 
 function Alert({ alerts = [], interval = 5, contacts }: Props) {
   const id = useId();
-
   return (
     <div
       id={id}
-      class=" w-screen bg-gray-300 flex flex-col
+      class=" w-full bg-gray-300 flex flex-col
     "
     >
       <div class="flex justify-center">
@@ -52,7 +51,7 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
               />
 
               {alert.cupom && (
-                <div class="flex ml-2 lg:ml-14 lg:w-[193px] w-[130px] h-6 bg-gray-200 rounded-lg ">
+                <div class="hidden md:flex ml-2 lg:ml-14 lg:w-[193px] w-[130px] h-6 bg-gray-200 rounded-lg ">
                   <p class="flex items-center justify-center text-base-100 font-bold bg-primary w-16 lg:w-24 h-6 text-center rounded-lg text-[12px] lg:text-[14px]">
                     <span class="top-1">CUPOM</span>
                   </p>
@@ -74,9 +73,11 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
           {contacts &&
             contacts.map((contact) => (
               <a
-                href={contact.contact === "whatsapp"
-                  ? `https://api.whatsapp.com/send/?phone=${contact.number}&text&type=phone_number&app_absent=0`
-                  : `tel:${contact.number}`}
+                href={
+                  contact.contact === "whatsapp"
+                    ? `https://api.whatsapp.com/send/?phone=${contact.number}&text&type=phone_number&app_absent=0`
+                    : `tel:${contact.number}`
+                }
                 target="blank"
                 class="flex items-center"
               >
