@@ -28,7 +28,7 @@ function Drawer(
 ) {
   return (
     <>
-      <div class={clx("drawer lg:hidden block", _class)}>
+      <div class={clx("drawer  block", _class)}>
         <input
           id={id}
           name={id}
