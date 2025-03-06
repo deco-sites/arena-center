@@ -39,7 +39,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
                 class={clx(
                   "carousel-item",
                   "first:pl-0 first:sm:pl-0",
-                  "last:pr-0 last:sm:pr-0"
+                  "last:pr-0 last:sm:pr-0",
                 )}
               >
                 <div class="bg-secondary-content">
@@ -60,13 +60,13 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           </Slider>
         </div>
         <div class="relative bottom-[7%] z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center ">
-          <Slider.PrevButton class="flex  disabled:opacity-40 no-animation btn ">
+          <Slider.PrevButton class="flex  disabled:opacity-40 no-animation ">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
 
         <div class="relative bottom-[7%] z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center">
-          <Slider.NextButton class="flex disabled:opacity-40 no-animation btn ">
+          <Slider.NextButton class="flex disabled:opacity-40 no-animation ">
             <Icon id="chevron-right" class="text-accent-content " />
           </Slider.NextButton>
         </div>

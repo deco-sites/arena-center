@@ -134,7 +134,7 @@ function Carousel({ images = [], preload, interval }: Props) {
         "sm:grid-cols-[112px_1fr_112px] ",
         "w-screen",
         "max-w-[1440px]",
-        "mx-auto"
+        "mx-auto",
       )}
     >
       <div class="col-span-full row-span-full mb-[-7px]">
@@ -160,9 +160,10 @@ function Carousel({ images = [], preload, interval }: Props) {
       </div>
 
       <ul
-        class={clx()
-        // "col-span-full row-start-4 z-10",
-        // "carousel justify-center gap-3",
+        class={
+          clx()
+          // "col-span-full row-start-4 z-10",
+          // "carousel justify-center gap-3",
         }
       >
         {images.map((_, index) => (
@@ -171,7 +172,7 @@ function Carousel({ images = [], preload, interval }: Props) {
               index={index}
               class={clx(
                 "bg-black opacity-20 h-3 w-3 no-animation rounded-full  hidden md:flex",
-                "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]"
+                "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
               )}
             >
               <></>

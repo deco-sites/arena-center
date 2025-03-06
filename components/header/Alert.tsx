@@ -34,8 +34,11 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
   const id = useId();
 
   return (
-    <div id={id} class=" w-screen bg-gray-300 flex flex-col
-    ">
+    <div
+      id={id}
+      class=" w-screen bg-gray-300 flex flex-col
+    "
+    >
       <div class="flex justify-center">
         <Slider class="carousel carousel-center  gap-6  text-accent">
           {alerts.map((alert, index) => (
@@ -71,11 +74,9 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
           {contacts &&
             contacts.map((contact) => (
               <a
-                href={
-                  contact.contact === "whatsapp"
-                    ? `https://api.whatsapp.com/send/?phone=${contact.number}&text&type=phone_number&app_absent=0`
-                    : `tel:${contact.number}`
-                }
+                href={contact.contact === "whatsapp"
+                  ? `https://api.whatsapp.com/send/?phone=${contact.number}&text&type=phone_number&app_absent=0`
+                  : `tel:${contact.number}`}
                 target="blank"
                 class="flex items-center"
               >

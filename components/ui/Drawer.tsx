@@ -44,7 +44,7 @@ function Drawer(
           data-aside
           class={clx(
             "drawer-side h-full z-40 overflow-auto ",
-            "[[data-aside]&_section]:contents"
+            "[[data-aside]&_section]:contents",
           )}
         >
           <label for={id} class="drawer-overlay" />

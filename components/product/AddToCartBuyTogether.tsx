@@ -64,13 +64,13 @@ function AddToCartButton(props: Props) {
       id={id}
       class="flex"
       data-cart-item={encodeURIComponent(
-        JSON.stringify({ items, platformProps })
+        JSON.stringify({ items, platformProps }),
       )}
     >
       <button
         class={clx(
           "flex  w-[176px] h-[32px] text-base-200 min-h-0 btn bg-gray-300 border-none ",
-          _class?.toString()
+          _class?.toString(),
         )}
         hx-on:click={useScript(onClick)}
         disabled={false}

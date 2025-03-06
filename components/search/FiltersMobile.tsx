@@ -32,14 +32,12 @@ function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
     <a href={url} rel="nofollow" class="flex items-center gap-2">
       <div aria-checked={selected} class="checkbox" />
       <span class="text-sm first-letter:uppercase">
-        {startsWithLetter
-          ? label.replace("-", " ")
-          : label
-              .split("_")
-              .map(
-                (parte) => `R$${parseFloat(parte).toFixed(2).replace(".", ",")}`
-              )
-              .join(" ~ ")}
+        {startsWithLetter ? label.replace("-", " ") : label
+          .split("_")
+          .map(
+            (parte) => `R$${parseFloat(parte).toFixed(2).replace(".", ",")}`,
+          )
+          .join(" ~ ")}
       </span>
       {quantity > 0 && <span class="text-sm text-base-400">({quantity})</span>}
     </a>
@@ -103,7 +101,7 @@ function FiltersMobile({ filters, categoryList }: Props) {
                 </span>
                 <FilterValues {...filter} />
               </li>
-            )
+            ),
         )}
       </ul>
       <ul class="flex flex-col gap-6 p-4 sm:p-0 mt-6">
@@ -116,7 +114,7 @@ function FiltersMobile({ filters, categoryList }: Props) {
                 </span>
                 <FilterValues {...filter} />
               </li>
-            )
+            ),
         )}
       </ul>
       <ul class="flex flex-col gap-6 p-4 sm:p-0 mt-6">
@@ -129,7 +127,7 @@ function FiltersMobile({ filters, categoryList }: Props) {
                 </span>
                 <FilterValues {...filter} />
               </li>
-            )
+            ),
         )}
       </ul>
     </div>

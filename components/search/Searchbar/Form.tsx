@@ -112,7 +112,7 @@ export default function Searchbar({
             script,
             SEARCHBAR_INPUT_FORM_ID,
             NAME,
-            SEARCHBAR_POPUP_ID
+            SEARCHBAR_POPUP_ID,
           ),
         }}
       />

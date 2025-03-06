@@ -115,15 +115,13 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
       </div>
 
       <ul class="flex justify-between text-accent-content border-y border-gray-300 h-11 max-w-[1444px] px-14">
-        {navItems?.slice(0, 10).map((item) => (
-          <NavItem item={item} />
-        ))}
+        {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
       </ul>
     </div>
   </>
 );
 
-const SerchBarMobile = ({  searchbar }: Props) => (
+const SerchBarMobile = ({ searchbar }: Props) => (
   <div
     id="header-mobile"
     class="fixed w-screen mx-auto lg:hidden  justify-center hidden bg-base-100 z-40"
@@ -139,13 +137,13 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       aside={
         <Drawer.Aside title="Search" drawer={SEARCHBAR_DRAWER_ID}>
           <div class="w-screen overflow-y-auto ">
-            {loading === "lazy" ? (
-              <div class="h-full w-full flex items-center justify-center">
-                <span class="loading loading-spinner" />
-              </div>
-            ) : (
-              <Searchbar {...searchbar} />
-            )}
+            {loading === "lazy"
+              ? (
+                <div class="h-full w-full flex items-center justify-center">
+                  <span class="loading loading-spinner" />
+                </div>
+              )
+              : <Searchbar {...searchbar} />}
           </div>
         </Drawer.Aside>
       }
@@ -154,21 +152,21 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
       id={SIDEMENU_DRAWER_ID}
       aside={
         <Drawer.Aside title="Menu" drawer={SIDEMENU_DRAWER_ID}>
-          {loading === "lazy" ? (
-            <div
-              id={SIDEMENU_CONTAINER_ID}
-              class="h-full flex items-center justify-center"
-              style={{ minWidth: "100vw" }}
-            >
-              <span class="loading loading-spinner" />
-            </div>
-          ) : (
-            <Menu navItems={navItems ?? []} />
-          )}
+          {loading === "lazy"
+            ? (
+              <div
+                id={SIDEMENU_CONTAINER_ID}
+                class="h-full flex items-center justify-center"
+                style={{ minWidth: "100vw" }}
+              >
+                <span class="loading loading-spinner" />
+              </div>
+            )
+            : <Menu navItems={navItems ?? []} />}
         </Drawer.Aside>
       }
     />
-  
+
     <div
       class="grid place-items-center w-screen px-4 gap-3 lg:gap-4"
       style={{
@@ -217,7 +215,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
             alt={logo.alt}
             width={logo.width || 100}
             height={logo.height || 35}
-            class="h-9 w-auto mt-[4px]"
+            class="h-[28px] w-auto mt-[5px]"
           />
         </a>
       )}
@@ -233,7 +231,8 @@ function Header({
   alerts = [],
   contacts = [],
   logo = {
-    src: "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
+    src:
+      "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/2291/986b61d4-3847-4867-93c8-b550cb459cc7",
     width: 100,
     height: 16,
     alt: "Logo",
@@ -244,19 +243,18 @@ function Header({
   return (
     <header
       style={{
-        height:
-          device === "desktop" ? HEADER_HEIGHT_DESKTOP : HEADER_HEIGHT_MOBILE,
+        height: device === "desktop"
+          ? HEADER_HEIGHT_DESKTOP
+          : HEADER_HEIGHT_MOBILE,
       }}
     >
       <div class=" fixed w-full z-40  top-0    transition-all duration-500 ease-in-out">
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
         <SerchBarMobile logo={logo} {...props} />
         <div id="header" class="bg-base-100 ">
-          {device === "desktop" ? (
-            <Desktop logo={props.logoDesktop} {...props} />
-          ) : (
-            <Mobile logo={logo} {...props} />
-          )}
+          {device === "desktop"
+            ? <Desktop logo={props.logoDesktop} {...props} />
+            : <Mobile logo={logo} {...props} />}
         </div>
       </div>
 

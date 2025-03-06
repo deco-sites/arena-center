@@ -94,12 +94,14 @@ function Filters({ filters, categoryList }: Props) {
               (filter) =>
                 filter.label === "subcategoria-mae" && (
                   <li key={filter.label} class="flex flex-col gap-4">
-                    {/* <span class="text-sm font-semibold first-letter:uppercase">
+                    {
+                      /* <span class="text-sm font-semibold first-letter:uppercase">
                       {filter.label}
-                    </span> */}
+                    </span> */
+                    }
                     <FilterValues {...filter} />
                   </li>
-                )
+                ),
             )}
           </ul>
         </div>
@@ -120,12 +122,14 @@ function Filters({ filters, categoryList }: Props) {
               (filter) =>
                 filter.label === "subcategoria" && (
                   <li key={filter.label} class="flex flex-col gap-4">
-                    {/* <span class="text-sm font-semibold first-letter:uppercase">
+                    {
+                      /* <span class="text-sm font-semibold first-letter:uppercase">
                       {filter.label}
-                    </span> */}
+                    </span> */
+                    }
                     <FilterValues {...filter} />
                   </li>
-                )
+                ),
             )}
           </ul>
         </div>
@@ -151,7 +155,7 @@ function Filters({ filters, categoryList }: Props) {
                     </span>
                     <FilterValues {...filter} />
                   </li>
-                )
+                ),
             )}
           </ul>
         </div>
