@@ -35,10 +35,10 @@
   ],
   "routes": [
     {
-      "__resolveType": "shopify/loaders/proxy.ts",
-      "extraPathsToProxy": [],
+      "__resolveType": "vnda/loaders/proxy.ts",
       "includeSiteMap": [],
-      "excludePathsFromDecoSiteMap": []
+      "excludePathsFromDecoSiteMap": [],
+      "pagesToProxy": []
     },
     {
       "__resolveType": "website/loaders/pages.ts"
