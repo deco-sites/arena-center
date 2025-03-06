@@ -63,9 +63,9 @@
   ],
   "logo": {
     "alt": "Arena Center Logo",
-    "width": 205,
-    "height": 28,
-    "src": "https://data.decoassets.com/arena-center/5226c083-4902-4b36-a180-c28b113d6995/Marca_logo.png"
+    "height": 25,
+    "src": "https://data.decoassets.com/arena-center/5226c083-4902-4b36-a180-c28b113d6995/Marca_logo.png",
+    "width": 130
   },
   "navItems": [
     {

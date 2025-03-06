@@ -214,7 +214,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
             src={logo.src}
             alt={logo.alt}
             width={logo.width || 100}
-            height={logo.height || 35}
+            height={logo.height || 28}
             class="h-[28px] w-auto mt-[5px]"
           />
         </a>
