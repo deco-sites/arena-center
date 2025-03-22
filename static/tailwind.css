@@ -5623,7 +5623,6 @@ details.collapse summary::-webkit-details-marker {
 .custom-scroll {
   overflow-x: auto;
   overflow-y: auto;
-  
 }
 
 .custom-scroll:hover::-webkit-scrollbar {
@@ -5645,18 +5644,17 @@ details.collapse summary::-webkit-details-marker {
   background: #555;
 }
 
-
 .custom-container {
-    max-width: 1440px;
-    padding-right: 0px;
-    padding-left: 0px;
+  max-width: 1440px;
+  padding-right: 0px;
+  padding-left: 0px;
 }
 @media (max-width: 1440px) {
   .custom-container {
     max-width: 1440px;
     padding-right: 80px;
     padding-left: 80px;
-  } 
+  }
 }
 @media (max-width: 1024px) {
   .custom-container {

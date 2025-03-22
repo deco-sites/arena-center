@@ -31,7 +31,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 pl-6 md:px-0 max-w-[1200px]">
+        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 md:px-0 max-w-[1200px]">
           <Slider class="gap-2 w-full">
             {categoryItems?.map((item, index) => (
               <Slider.Item

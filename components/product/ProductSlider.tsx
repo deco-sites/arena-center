@@ -30,7 +30,7 @@ function ProductSlider({ products, itemListName }: Props) {
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
-        <div class="w-full max-md:pl-6 lg:max-w-[1280px]">
+        <div class="w-full lg:max-w-[1280px]">
           <Slider class="gap-4 sm:gap-5 mx-auto">
             {products?.map((product, index) => (
               <Slider.Item
