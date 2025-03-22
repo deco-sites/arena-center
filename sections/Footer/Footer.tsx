@@ -5,7 +5,6 @@ import Newsletter from "../Newsletter/Newsletter.tsx";
 import { Props as NewsletterProps } from "../Newsletter/Newsletter.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import { useDevice } from "@deco/deco/hooks";
-import { useScript } from "@deco/deco/hooks";
 /** @titleBy title */
 interface Item {
   title: string;
@@ -86,6 +85,7 @@ function Footer(
     <footer class="px-5 sm:px-0 mt-16 w-full bg-primary text-primary-content">
       <div class="absolute -mt-[65px] flex flex-col right-0 mr-4">
         <button
+          type="button"
           class="p-2 rounded-full bg-primary"
           id="scrollTopBtn"
           hx-get="#"
@@ -172,14 +172,14 @@ function Footer(
             <p class="text-xs font-medium">{social?.socialTitle}</p>
             <div class="flex md:justify-center lg:justify-around gap-2">
               {social?.socialItems.map(({ image, href, alt }) => (
-                <div key={alt} class="">
+                <div key={alt}>
                   <a href={href}>
                     <Image
                       src={image}
                       alt={alt}
                       loading="lazy"
-                      width={22}
-                      height={22}
+                      width={44}
+                      height={44}
                     />
                   </a>
                 </div>
@@ -200,21 +200,21 @@ function Footer(
             {paymentMethods.map((test, index) => (
               <div
                 key={index}
-                class="flex gap-1 flex-wrap w-[165px]  justify-center items-center"
+                class="flex gap-1 flex-wrap w-[265px] justify-center items-center"
               >
                 <p class="text-xs w-full font-bold text-center">
                   {test.paymentTitle}
                 </p>
                 {test.payment.map(({ img, alt }, index) => (
                   <li key={index}>
-                    <div class="bg-white flex-row flex justify-center p-1 items-center w-8 h-5">
+                    <div class="bg-white flex-row flex justify-center p-1 items-center w-8 h-5 max-md:w-14 max-md:h-10 rounded-lg">
                       <Image
                         class="object-contain w-full h-full bg-white"
                         src={img}
                         alt={alt}
                         fit="contain"
-                        width={26}
-                        height={16}
+                        width={52}
+                        height={32}
                         loading="lazy"
                       />
                     </div>

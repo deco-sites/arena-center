@@ -119,6 +119,7 @@ export interface Props {
   infinite?: boolean;
   align?: "start" | "center" | "end";
   startIndex?: number;
+  controlDots?: boolean;
 }
 
 const setup = (
@@ -129,6 +130,7 @@ const setup = (
     interval,
     align = "start",
     startIndex = 0,
+    controlDots,
   }: Props,
 ) => {
   const root = document.getElementById(rootId);
@@ -143,7 +145,9 @@ const setup = (
 
   const nextButton = root.querySelector("[data-slide='next']");
   const prevButton = root.querySelector("[data-slide='prev']");
-  const dots = root.querySelector("[data-dots]");
+  const dots = controlDots
+    ? root.querySelectorAll("[data-dot]")
+    : root.querySelector("[data-dots]");
 
   const options = {
     loop: infinite,
@@ -169,12 +173,21 @@ const setup = (
     embla.scrollNext();
   }, false);
 
-  if (dots) {
+  if (dots && controlDots) {
+    (dots as NodeListOf<Element>).forEach((dotNode, index) => {
+      dotNode.addEventListener("click", () => {
+        autoplay?.reset();
+        embla.scrollTo(index);
+      }, false);
+    });
+  }
+
+  if (dots && !controlDots) {
     let dotNodes: HTMLElement[] = [];
-    const dotElement = dots.innerHTML;
+    const dotElement = (dots as Element).innerHTML;
 
     const setupDots = (): void => {
-      dots.innerHTML = embla
+      (dots as Element).innerHTML = embla
         .scrollSnapList()
         .map(() => dotElement)
         .join("");
@@ -183,7 +196,7 @@ const setup = (
         embla.scrollTo(index);
       };
 
-      dotNodes = Array.from(dots.querySelectorAll("[data-dot]"));
+      dotNodes = Array.from((dots as Element).querySelectorAll("[data-dot]"));
       dotNodes.forEach((dotNode, index) => {
         dotNode.addEventListener("click", () => {
           autoplay?.reset();

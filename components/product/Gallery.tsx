@@ -52,11 +52,11 @@ export default function GallerySlider(props: Props) {
         {/* Image Slider */}
         <div class="col-start-1 col-span-1 sm:col-start-2">
           <div class="relative h-min flex">
-            <Slider class="carousel  gap-2 md:w-[630px] md:h-[630px]">
+            <Slider class="gap-2 md:w-[630px] md:h-[630px]">
               {images.map((img, index) => (
                 <Slider.Item
                   index={index}
-                  class="carousel-item w-full md:h-[630px]"
+                  class="w-full md:h-[630px]"
                 >
                   <Image
                     class="w-full bg-base-100 border border-base-400"
@@ -74,19 +74,17 @@ export default function GallerySlider(props: Props) {
               ))}
             </Slider>
 
-            <Slider.PrevButton
-              class="no-animation absolute left-4 top-1/2 btn btn-circle btn-outline disabled:opacity-50"
-              disabled
-            >
-              <Icon id="chevron-right" class="rotate-180" />
-            </Slider.PrevButton>
+            {images.length > 1 && (
+              <Slider.PrevButton class="no-animation absolute left-0 top-1/2 disabled:opacity-50 bg-transparent border-none">
+                <Icon id="chevron-right" class="rotate-180" />
+              </Slider.PrevButton>
+            )}
 
-            <Slider.NextButton
-              class="no-animation absolute right-8 top-1/2 btn btn-circle btn-outline disabled:opacity-50"
-              disabled={images.length < 2}
-            >
-              <Icon id="chevron-right" />
-            </Slider.NextButton>
+            {images.length > 1 && (
+              <Slider.NextButton class="no-animation absolute right-0 top-1/2 disabled:opacity-50 bg-transparent border-none">
+                <Icon id="chevron-right" />
+              </Slider.NextButton>
+            )}
 
             <div class="absolute top-2 right-8 bg-base-100 rounded-full">
               <label class="btn btn-ghost hidden sm:inline-flex" for={zoomId}>
@@ -98,7 +96,7 @@ export default function GallerySlider(props: Props) {
 
         {/* Dots */}
         <div class="col-start-1 col-span-1">
-          <ul
+          <div
             class={clx(
               "carousel carousel-center",
               "sm:carousel-vertical",
@@ -109,9 +107,9 @@ export default function GallerySlider(props: Props) {
             )}
             style={{ maxHeight: "600px" }}
           >
-            {images.map((img, index) => (
+            {images.map((img) => (
               <li class="carousel-item w-16 h-16">
-                <Slider.Dot index={index}>
+                <Slider.Dot>
                   <Image
                     style={{ aspectRatio: "1 / 1" }}
                     class="group-disabled:border-base-400 border rounded object-cover w-full h-full"
@@ -123,10 +121,10 @@ export default function GallerySlider(props: Props) {
                 </Slider.Dot>
               </li>
             ))}
-          </ul>
+          </div>
         </div>
 
-        <Slider.JS rootId={id} />
+        <Slider.JS rootId={id} infinite controlDots />
       </div>
       <ProductImageZoom
         id={zoomId}
