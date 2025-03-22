@@ -135,9 +135,7 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "count": 12,
-          "tags": [
-            "decoracao"
-          ],
+          "tags": ["decoracao"],
           "typeTags": [],
           "ids": [],
           "sort": "newest"
@@ -214,9 +212,7 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "count": 12,
-          "tags": [
-            "decoracao"
-          ],
+          "tags": ["decoracao"],
           "typeTags": [],
           "ids": [],
           "sort": "newest"
@@ -298,9 +294,7 @@
               "products": {
                 "__resolveType": "vnda/loaders/productList.ts",
                 "sort": "newest",
-                "tags": [
-                  "decoracao"
-                ],
+                "tags": ["decoracao"],
                 "typeTags": [],
                 "ids": [],
                 "count": 6
@@ -323,9 +317,7 @@
           "__resolveType": "vnda/loaders/productList.ts",
           "count": 10,
           "sort": "newest",
-          "tags": [
-            "decoracao"
-          ],
+          "tags": ["decoracao"],
           "typeTags": [],
           "ids": []
         },
@@ -335,9 +327,7 @@
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
-              "tags": [
-                "decoracao"
-              ],
+              "tags": ["decoracao"],
               "typeTags": [],
               "ids": [],
               "count": 10
@@ -353,9 +343,7 @@
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
-              "tags": [
-                "sala"
-              ],
+              "tags": ["sala"],
               "typeTags": [],
               "ids": [],
               "count": 10
@@ -369,9 +357,7 @@
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
-              "tags": [
-                "banheiro"
-              ],
+              "tags": ["banheiro"],
               "typeTags": [],
               "ids": [],
               "count": 12
@@ -385,9 +371,7 @@
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
-              "tags": [
-                "cozinha"
-              ],
+              "tags": ["cozinha"],
               "typeTags": [],
               "ids": [],
               "count": 12

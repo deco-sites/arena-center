@@ -73,11 +73,9 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
           {contacts &&
             contacts.map((contact) => (
               <a
-                href={
-                  contact.contact === "whatsapp"
-                    ? `https://api.whatsapp.com/send/?phone=${contact.number}&text&type=phone_number&app_absent=0`
-                    : `tel:${contact.number}`
-                }
+                href={contact.contact === "whatsapp"
+                  ? `https://api.whatsapp.com/send/?phone=${contact.number}&text&type=phone_number&app_absent=0`
+                  : `tel:${contact.number}`}
                 target="blank"
                 class="flex items-center"
               >

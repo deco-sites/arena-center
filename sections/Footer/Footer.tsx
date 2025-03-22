@@ -4,9 +4,8 @@ import Section from "../../components/ui/Section.tsx";
 import Newsletter from "../Newsletter/Newsletter.tsx";
 import { Props as NewsletterProps } from "../Newsletter/Newsletter.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import { useScript } from "deco/hooks/useScript.ts";
 import { useDevice } from "@deco/deco/hooks";
-
+import { useScript } from "@deco/deco/hooks";
 /** @titleBy title */
 interface Item {
   title: string;
@@ -14,7 +13,6 @@ interface Item {
   icon?: ImageWidget;
   bold?: boolean;
 }
-
 /** @titleBy title */
 interface Link extends Item {
   children: Item[];
@@ -33,13 +31,11 @@ export interface SocialItem {
   href?: string;
   image: ImageWidget;
 }
-
 /** @titleBy alt */
 interface Social {
   socialTitle: string;
   socialItems: SocialItem[];
 }
-
 /** @titleBy alt */
 export interface Methods {
   /**@title icone da bandeira */
@@ -52,7 +48,6 @@ export interface PaymentMethod {
   paymentTitle: string;
   payment: Methods[];
 }
-
 interface Apps {
   icon: ImageWidget;
   link: string;
@@ -73,18 +68,19 @@ interface Props {
   trademark?: string;
   newsletterProps: NewsletterProps;
 }
-
-function Footer({
-  links = [],
-  social,
-  policies = [],
-  paymentMethods = [],
-  logo,
-  trademark,
-  aboutUs,
-  apps,
-  newsletterProps,
-}: Props) {
+function Footer(
+  {
+    links = [],
+    social,
+    policies = [],
+    paymentMethods = [],
+    logo,
+    trademark,
+    aboutUs,
+    apps,
+    newsletterProps,
+  }: Props,
+) {
   const device = useDevice();
   return (
     <footer class="px-5 sm:px-0 mt-16 w-full bg-primary text-primary-content">
@@ -110,73 +106,68 @@ function Footer({
           </li>
           {device === "desktop"
             ? links.map(({ title, href, children }) => (
-                <li key={title} class="flex flex-col gap-4 max-w-[205px]">
-                  <a class="text-xs font-medium" href={href}>
-                    {title}
-                  </a>
-                  <ul class="flex flex-col gap-2">
-                    {children.map(({ title, href, icon, bold }) => (
-                      <li key={title} class="flex gap-1">
-                        {icon && (
-                          <Image
-                            src={icon}
-                            width={22}
-                            height={22}
-                            alt={title}
-                          />
-                        )}
-                        <a
-                          class={`text-[10px] ${
-                            bold ? "font-medium" : "font-normal"
-                          }`}
-                          href={href}
-                        >
-                          {title}
-                        </a>
-                      </li>
-                    ))}
-                  </ul>
-                </li>
-              ))
-            : links.map(({ title, href, children }) => (
-                <li key={title} class="">
-                  <div class="collapse collapse-arrow ">
-                    <input id={title} type="checkbox" class="min-h-[0]" />
-                    <label
-                      htmlFor={title}
-                      class="collapse-title min-h-[0]  flex gap-2 border-b border-base-100"
-                    >
-                      <a class="text-xs font-medium" href={href}>
+              <li key={title} class="flex flex-col gap-4 max-w-[205px]">
+                <a class="text-xs font-medium" href={href}>
+                  {title}
+                </a>
+                <ul class="flex flex-col gap-2">
+                  {children.map(({ title, href, icon, bold }) => (
+                    <li key={title} class="flex gap-1">
+                      {icon && (
+                        <Image src={icon} width={22} height={22} alt={title} />
+                      )}
+                      <a
+                        class={`text-[10px] ${
+                          bold ? "font-medium" : "font-normal"
+                        }`}
+                        href={href}
+                      >
                         {title}
                       </a>
-                    </label>
-                    <div class="collapse-content">
-                      <ul class="flex flex-col gap-2">
-                        {children.map(({ title, href, icon, bold }) => (
-                          <li key={title} class="flex flex-col gap-1 pl-5 pt-2">
-                            {icon && (
-                              <Image
-                                src={icon}
-                                width={22}
-                                height={22}
-                                alt={title}
-                              />
-                            )}
-                            <a
-                              class={`text-[10px] ${
-                                bold ? "font-medium" : "font-normal"
-                              }`}
-                              href={href}
-                            >
-                              {title}
-                            </a>
-                          </li>
-                        ))}
-                      </ul>
-                    </div>
+                    </li>
+                  ))}
+                </ul>
+              </li>
+            ))
+            : links.map(({ title, href, children }) => (
+              <li key={title} class="">
+                <div class="collapse collapse-arrow ">
+                  <input id={title} type="checkbox" class="min-h-[0]" />
+                  <label
+                    htmlFor={title}
+                    class="collapse-title min-h-[0]  flex gap-2 border-b border-base-100"
+                  >
+                    <a class="text-xs font-medium" href={href}>
+                      {title}
+                    </a>
+                  </label>
+                  <div class="collapse-content">
+                    <ul class="flex flex-col gap-2">
+                      {children.map(({ title, href, icon, bold }) => (
+                        <li key={title} class="flex flex-col gap-1 pl-5 pt-2">
+                          {icon && (
+                            <Image
+                              src={icon}
+                              width={22}
+                              height={22}
+                              alt={title}
+                            />
+                          )}
+                          <a
+                            class={`text-[10px] ${
+                              bold ? "font-medium" : "font-normal"
+                            }`}
+                            href={href}
+                          >
+                            {title}
+                          </a>
+                        </li>
+                      ))}
+                    </ul>
                   </div>
-                </li>
-              ))}
+                </div>
+              </li>
+            ))}
           <div class="flex flex-col gap-4 items-center md:mt-0">
             <p class="text-xs font-medium">{social?.socialTitle}</p>
             <div class="flex md:justify-center lg:justify-around gap-2">
@@ -233,10 +224,12 @@ function Footer({
             ))}
           </div>
         </ul>
-        {/* <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
+        {
+          /* <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
           <ul class="flex gap-4"></ul>
           <ul class="flex flex-wrap gap-2"></ul>
-        </div> */}
+        </div> */
+        }
         <div class="w-full gap-8">
           <ul class="flex flex-col gap-8 text-center justify-center items-center">
             {policies.map(({ title, href }, index) => (
@@ -274,7 +267,5 @@ function Footer({
     </footer>
   );
 }
-
 export const LoadingFallback = () => <Section.Placeholder height="1145px" />;
-
 export default Footer;

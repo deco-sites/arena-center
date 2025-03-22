@@ -72,7 +72,7 @@ function BannerItem(
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="block relative w-full overflow-x-hidden"
+      class="block relative w-full h-full overflow-x-hidden"
     >
       {action && (
         <div
@@ -132,15 +132,15 @@ function Carousel({ images = [], preload, interval }: Props) {
         "grid-rows-[1fr_32px_1fr_64px]",
         "grid-cols-[32px_1fr_32px] ",
         "sm:grid-cols-[112px_1fr_112px] ",
-        "w-screen",
+        "w-full",
         "max-w-[1440px]",
         "mx-auto",
       )}
     >
       <div class="col-span-full row-span-full mb-[-7px]">
-        <Slider class="gap-6 w-full carousel carousel-center ">
+        <Slider class="gap-6 w-full">
           {images.map((image, index) => (
-            <Slider.Item index={index} class="w-full carousel-item">
+            <Slider.Item index={index} class="w-full">
               <BannerItem image={image} lcp={index === 0 && preload} />
             </Slider.Item>
           ))}
@@ -148,40 +148,31 @@ function Carousel({ images = [], preload, interval }: Props) {
       </div>
 
       <div class="z-10 sm:flex justify-center mt-7 items-center col-start-1 row-start-2">
-        <Slider.PrevButton class="" disabled={false}>
+        <Slider.PrevButton>
           <Icon id="chevron-right" class="rotate-180" />
         </Slider.PrevButton>
       </div>
 
       <div class="z-10 justify-center mt-7 items-center col-start-3 row-start-2">
-        <Slider.NextButton class="" disabled={false}>
+        <Slider.NextButton>
           <Icon id="chevron-right" />
         </Slider.NextButton>
       </div>
 
-      <ul
-        class={
-          clx()
-          // "col-span-full row-start-4 z-10",
-          // "carousel justify-center gap-3",
-        }
-      >
-        {images.map((_, index) => (
-          <li class="carousel-item">
-            <Slider.Dot
-              index={index}
-              class={clx(
-                "bg-black opacity-20 h-3 w-3 no-animation rounded-full  hidden md:flex",
-                "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
-              )}
-            >
-              <></>
-            </Slider.Dot>
-          </li>
-        ))}
-      </ul>
+      <Slider.Dots>
+        <Slider.Dot
+          class={clx(
+            "bg-black opacity-20 h-3 w-3 no-animation rounded-full hidden md:flex",
+            "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]",
+          )}
+        />
+      </Slider.Dots>
 
-      <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
+      <Slider.JS
+        rootId={id}
+        interval={interval && interval * 1e3}
+        infinite
+      />
     </div>
   );
 }

@@ -17,25 +17,28 @@ function ProductSlider({ products, itemListName }: Props) {
     <>
       <div
         id={id}
-        class=" max-w-[1440px] w-full lg:mx-auto flex justify-center"
-        // style={{
-        //   gridTemplateColumns: "min-content 1fr min-content",
-        // }}
+        class="max-w-[1440px] w-full lg:mx-auto flex justify-center max-lg:overflow-x-hidden relative"
       >
-        <div class="z-10 self-center p-2 relative left-[30px] lg:left-0 ">
-          <Slider.PrevButton class=" flex disabled:opacity-40 cursor-pointer ">
+        <div
+          class={clx(
+            "z-10 self-center p-2 -translate-y-1/2 top-1/2",
+            "lg:relative lg:left-[-30px]",
+            "max-lg:absolute max-lg:left-0",
+          )}
+        >
+          <Slider.PrevButton class="flex disabled:opacity-40 cursor-pointer">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
-        <div class="">
-          <Slider class="carousel carousel-center  gap-4 sm:gap-5 lg:w-[1220px] w-[360px] mx-auto">
+        <div class="w-full max-md:pl-6 lg:max-w-[1280px]">
+          <Slider class="gap-4 sm:gap-5 mx-auto">
             {products?.map((product, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
-                  "carousel-item",
+                  "!flex-none",
                   // "first:pl-12 first:sm:pr-0",
-                  // "last:pr-12 last:sm:pr-0"
+                  "last:mr-4 last:sm:mr-5",
                 )}
               >
                 <ProductCard
@@ -49,13 +52,19 @@ function ProductSlider({ products, itemListName }: Props) {
           </Slider>
         </div>
 
-        <div class="z-10 self-center p-2 relative bottom-[15%] right-[30px] lg:right-0">
+        <div
+          class={clx(
+            "z-10 self-center p-2 -translate-y-1/2 top-1/2",
+            "max-lg:absolute lg:relative",
+            "max-lg:right-0 lg:right-[-30px]",
+          )}
+        >
           <Slider.NextButton class="flex disabled:opacity-40 cursor-pointer">
             <Icon id="chevron-right" class=" text-accent-content" />
           </Slider.NextButton>
         </div>
       </div>
-      <Slider.JS rootId={id} />
+      <Slider.JS rootId={id} infinite />
     </>
   );
 }

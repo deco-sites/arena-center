@@ -1,16 +1,32 @@
-import type { ComponentChildren, JSX } from "preact";
 import { scriptAsDataURI } from "apps/utils/dataURI.ts";
+import type { ComponentChildren, JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 
-function Dot({ index, children, class: _class }: {
-  index: number;
-  children: ComponentChildren;
+type WithoutRootId<T> = Omit<T, "rootId">;
+
+type DotProps = {
+  children?: ComponentChildren;
+  rootId?: string;
   class?: string;
-}) {
+};
+
+type DotsProps = JSX.IntrinsicElements["div"] & {
+  children: ComponentChildren;
+};
+
+function Dots({ children, ...props }: DotsProps) {
+  return (
+    <div data-dots class={clx(props.class, props.className)}>
+      {children}
+    </div>
+  );
+}
+
+function Dot({ children, class: _class }: DotProps) {
   return (
     <button
-      data-dot={index}
-      aria-label={`go to slider item ${index}`}
+      type="button"
+      data-dot
       class={clx(
         "focus:outline-none group w-full sm:w-auto",
         _class,
@@ -21,328 +37,220 @@ function Dot({ index, children, class: _class }: {
   );
 }
 
-function Slider(props: JSX.IntrinsicElements["ul"]) {
-  return <ul data-slider {...props} />;
+type SliderProps = JSX.IntrinsicElements["ul"] & {
+  rootId?: string;
+};
+
+function Slider({ rootId, class: className, ...props }: SliderProps) {
+  return (
+    <div data-viewport class={clx("embla embla__viewport")}>
+      <ul
+        data-root={rootId}
+        class={clx(
+          "embla__container",
+          "data-[draggable='true']:[scroll-snap-type:none] group/slider",
+          className,
+        )}
+        {...props}
+      />
+    </div>
+  );
 }
 
-function Item({
-  index,
-  ...props
-}: JSX.IntrinsicElements["li"] & { index: number }) {
-  return <li data-slider-item={index} {...props} />;
+type ItemProps = JSX.IntrinsicElements["li"] & {
+  index: number;
+  rootId?: string;
+  children?: ComponentChildren;
+};
+
+function Item({ index, rootId, class: _class, ...props }: ItemProps) {
+  return (
+    <li
+      class={clx("embla__slide", _class)}
+      data-root={rootId}
+      data-slider-item={index}
+      {...props}
+    />
+  );
 }
 
-function NextButton(props: JSX.IntrinsicElements["button"]) {
-  return <button data-slide="next" aria-label="Next item" {...props} />;
+type ButtonProps = JSX.IntrinsicElements["button"] & { rootId?: string };
+
+function NextButton({ rootId, ...props }: ButtonProps) {
+  return (
+    <button
+      data-root={rootId}
+      data-slide="next"
+      aria-label="Next item"
+      {...props}
+    />
+  );
 }
 
-function PrevButton(props: JSX.IntrinsicElements["button"]) {
-  return <button data-slide="prev" aria-label="Previous item" {...props} />;
+function PrevButton({ rootId, ...props }: ButtonProps) {
+  return (
+    <button
+      data-root={rootId}
+      data-slide="prev"
+      aria-label="Previous item"
+      {...props}
+    />
+  );
 }
+
+// export interface Props {
+//   rootId: string;
+//   scroll?: "smooth" | "auto" | "instant";
+//   interval?: number;
+//   infinite?: boolean;
+//   oneByone?: boolean;
+//   /**
+//    * Set to true if you want to create dots per page, instead of creating per item
+//    */
+//   pageDots?: boolean;
+//   isFromHook?: boolean;
+//   desktopDraggable?: boolean;
+// }
 
 export interface Props {
   rootId: string;
-  scroll?: "smooth" | "auto" | "instant";
+  scroll?: "smooth" | "auto";
   interval?: number;
   infinite?: boolean;
-  oneByone?: boolean;
+  align?: "start" | "center" | "end";
+  startIndex?: number;
 }
 
-const setup = ({ rootId, scroll, interval, infinite, oneByone }: Props) => {
-  const ATTRIBUTES = {
-    "data-slider": "data-slider",
-    "data-slider-item": "data-slider-item",
-    'data-slide="prev"': 'data-slide="prev"',
-    'data-slide="next"': 'data-slide="next"',
-    "data-dot": "data-dot",
-    "data-progress": "data-progress",
-  };
-
-  // Percentage of the item that has to be inside the container
-  // for it it be considered as inside the container
-  const THRESHOLD = 0.7;
-  const USE_INFINITE_BEHAVIOUR = true;
-
-  const intersectionX = (element: DOMRect, container: DOMRect): number => {
-    const delta = container.width / 1_000;
-
-    if (element.right < container.left - delta) {
-      return 0.0;
-    }
-
-    if (element.left > container.right + delta) {
-      return 0.0;
-    }
-
-    if (element.left < container.left - delta) {
-      return element.right - container.left + delta;
-    }
-
-    if (element.right > container.right + delta) {
-      return container.right - element.left + delta;
-    }
-
-    return element.width;
-  };
-
-  // as any are ok in typeguard functions
-  const isHTMLElement = (x: Element): x is HTMLElement =>
-    // deno-lint-ignore no-explicit-any
-    typeof (x as any).offsetLeft === "number";
-
+const setup = (
+  {
+    rootId,
+    infinite,
+    // scroll,
+    interval,
+    align = "start",
+    startIndex = 0,
+  }: Props,
+) => {
   const root = document.getElementById(rootId);
-  const slider = root?.querySelector(`[${ATTRIBUTES["data-slider"]}]`);
-  const items = root?.querySelectorAll(`[${ATTRIBUTES["data-slider-item"]}]`);
-  const prev = root?.querySelector(`[${ATTRIBUTES['data-slide="prev"']}]`);
-  const next = root?.querySelector(`[${ATTRIBUTES['data-slide="next"']}]`);
-  const dots = root?.querySelectorAll(`[${ATTRIBUTES["data-dot"]}]`);
-  const progress: HTMLProgressElement | null | undefined = root?.querySelector(
-    `[${ATTRIBUTES["data-progress"]}]`,
-  );
-
-  if (!root || !slider || !items || items.length === 0) {
-    console.warn(
-      "Missing necessary slider attributes. It will not work as intended. Necessary elements:",
-      { root, slider, items, rootId },
-    );
-
-    return;
+  if (!root) {
+    throw new Error(`Root element with id ${rootId} not found`);
   }
 
-  const getElementsInsideContainer = () => {
-    const indices: number[] = [];
-    const sliderRect = slider.getBoundingClientRect();
+  const viewport = root.querySelector("[data-viewport]");
+  if (!viewport) {
+    throw new Error(`Viewport element with data-viewport not found`);
+  }
 
-    for (let index = 0; index < items.length; index++) {
-      const item = items.item(index);
-      const rect = item.getBoundingClientRect();
+  const nextButton = root.querySelector("[data-slide='next']");
+  const prevButton = root.querySelector("[data-slide='prev']");
+  const dots = root.querySelector("[data-dots]");
 
-      const ratio = intersectionX(
-        rect,
-        sliderRect,
-      ) / rect.width;
-
-      if (ratio > THRESHOLD) {
-        indices.push(index);
-      }
-    }
-
-    return indices;
+  const options = {
+    loop: infinite,
+    slidesToScroll: "auto",
+    startIndex,
+    align,
+    dragFree: true,
   };
+  const autoplay = interval && interval > 0
+    // @ts-ignore ignore typing
+    ? EmblaCarouselAutoplay({ stopOnInteraction: false, delay: interval })
+    : null;
+  const plugins = [autoplay].filter(Boolean);
+  // @ts-ignore ignore typing
+  const embla = EmblaCarousel(viewport, options, plugins);
 
-  const elementsInsideContainer = getElementsInsideContainer();
-  const infiniteBehavior = infinite && elementsInsideContainer.length === 1 &&
-    items.length > 1 && USE_INFINITE_BEHAVIOUR;
+  prevButton?.addEventListener("click", () => {
+    autoplay?.reset();
+    embla.scrollPrev();
+  }, false);
+  nextButton?.addEventListener("click", () => {
+    autoplay?.reset();
+    embla.scrollNext();
+  }, false);
 
-  const goToItem = (index: number, behavior = scroll) => {
-    const item = slider.querySelector(`li[data-slider-item='${index}']`);
-    if (item) {
-      if (!isHTMLElement(item as HTMLElement)) {
-        console.warn(
-          `Element at index ${index} is not an html element. Skipping carousel`,
-        );
+  if (dots) {
+    let dotNodes: HTMLElement[] = [];
+    const dotElement = dots.innerHTML;
 
-        return;
-      }
+    const setupDots = (): void => {
+      dots.innerHTML = embla
+        .scrollSnapList()
+        .map(() => dotElement)
+        .join("");
 
-      slider.scrollTo({
-        top: 0,
-        behavior: behavior,
-        left: (item as HTMLElement).offsetLeft - root.offsetLeft,
+      const scrollTo = (index: number): void => {
+        embla.scrollTo(index);
+      };
+
+      dotNodes = Array.from(dots.querySelectorAll("[data-dot]"));
+      dotNodes.forEach((dotNode, index) => {
+        dotNode.addEventListener("click", () => {
+          autoplay?.reset();
+          scrollTo(index);
+        }, false);
       });
-    }
-  };
+    };
 
-  const onClickPrev = () => {
-    const indices = getElementsInsideContainer();
-    // Wow! items per page is how many elements are being displayed inside the container!!
-    const itemsPerPage = indices.length;
-
-    const isShowingFirst = indices[0] === 0;
-    const pageIndex = Math.floor(indices[indices.length - 1] / itemsPerPage);
-
-    if (oneByone) {
-      isShowingFirst
-        ? (infinite ? goToItem(items.length - 1) : null)
-        : goToItem(indices[0] - 1);
-    } else {
-      goToItem(
-        isShowingFirst
-          ? (infiniteBehavior ? items.length : items.length - 1)
-          : (pageIndex - 1) * itemsPerPage,
-      );
-    }
-  };
-
-  const onClickNext = () => {
-    const indices = getElementsInsideContainer();
-    // Wow! items per page is how many elements are being displayed inside the container!!
-    const itemsPerPage = indices.length;
-
-    const isShowingLast = indices[indices.length - 1] === items.length - 1;
-    const pageIndex = Math.floor(indices[0] / itemsPerPage);
-
-    if (oneByone) {
-      isShowingLast
-        ? (infinite ? goToItem(0) : null)
-        : goToItem(indices[0] + 1);
-    } else {
-      goToItem(
-        isShowingLast
-          ? (infiniteBehavior ? items.length + 1 : 0)
-          : (pageIndex + 1) * itemsPerPage,
-      );
-    }
-  };
-
-  const observer = new IntersectionObserver(
-    (elements) => {
-      elements.forEach((item) => {
-        const index = Number(item.target.getAttribute("data-slider-item")) || 0;
-        const dot = dots?.item(index);
-        const prevDots = Array.from(dots ?? []).slice(0, index);
-
-        dots?.forEach((dot) => dot.removeAttribute("data-painted"));
-
-        if (item.isIntersecting) {
-          prevDots.forEach((dot) => dot.setAttribute("data-painted", "true"));
-          dot?.setAttribute("disabled", "true");
+    const toggleActiveDot = (): void => {
+      const previous = embla.previousScrollSnap();
+      const selected = embla.selectedScrollSnap();
+      dotNodes[previous]?.removeAttribute("data-selected");
+      dotNodes[selected]?.setAttribute("data-selected", "");
+      dotNodes.forEach((dot, index) => {
+        if (
+          (index < selected) &&
+          !(selected === 0 && previous === dotNodes.length - 1)
+        ) {
+          dot?.setAttribute("data-painted", "true");
         } else {
-          dot?.removeAttribute("disabled");
-        }
-
-        if (!infinite) {
-          if (index === 0) {
-            if (item.isIntersecting) {
-              prev?.setAttribute("disabled", "");
-            } else {
-              prev?.removeAttribute("disabled");
-            }
-          }
-          if (index === items.length - 1) {
-            if (item.isIntersecting) {
-              next?.setAttribute("disabled", "");
-            } else {
-              next?.removeAttribute("disabled");
-            }
-          }
-          if (progress) {
-            if (progress.id == "0" && index === items.length - 1) {
-              progress.style.height = `${1 / items.length * 100}%`;
-              progress.style.width = `${1 / items.length * 100}%`;
-              progress.id = "1";
-            } else {
-              progress.style.height = `${(index + 1) / items.length * 100}%`;
-              progress.style.width = `${(index + 1) / items.length * 100}%`;
-            }
-          }
+          dot?.removeAttribute("data-painted");
         }
       });
-    },
-    { threshold: THRESHOLD, root: slider, rootMargin: "100px" },
-  );
+    };
 
-  const fullObserver = new IntersectionObserver((elements) => {
-    elements.forEach((item) => {
-      const currentItems = slider?.querySelectorAll(`li`);
-
-      if (item.isIntersecting && elements.length == 1) {
-        if (item.target == currentItems[1]) {
-          setTimeout(() => {
-            goToItem(items.length - 1, "instant");
-          }, 200);
-        }
-        if (item.target === currentItems[currentItems.length - 2]) {
-          setTimeout(() => {
-            goToItem(0, "instant");
-          }, 200);
-        }
-      }
-    });
-  }, { threshold: 0.70, root: slider, rootMargin: "100px" });
-
-  if (infiniteBehavior) {
-    const firstItemClone = items[0].cloneNode(true);
-    const secondItemClone = items[1]?.cloneNode(true);
-    const penultimateItemClone = items[items.length - 2]?.cloneNode(true);
-    const lastItemClone = items[items.length - 1].cloneNode(true);
-
-    (lastItemClone as HTMLElement).setAttribute(
-      "data-slider-item",
-      items.length.toString(),
-    );
-    (penultimateItemClone as HTMLElement)?.removeAttribute("data-slider-item");
-    (firstItemClone as HTMLElement).setAttribute(
-      "data-slider-item",
-      (items.length + 1).toString(),
-    );
-    (secondItemClone as HTMLElement)?.removeAttribute("data-slider-item");
-
-    slider.insertBefore(lastItemClone, items[0]);
-    penultimateItemClone &&
-      slider.insertBefore(penultimateItemClone, lastItemClone);
-    slider.appendChild(firstItemClone);
-    secondItemClone && slider.appendChild(secondItemClone);
-    goToItem(0, "instant");
+    embla
+      .on("init", setupDots)
+      .on("reInit", setupDots)
+      .on("init", toggleActiveDot)
+      .on("reInit", toggleActiveDot)
+      .on("select", toggleActiveDot);
   }
-
-  const currentItems = slider?.querySelectorAll(`li`);
-
-  items.forEach((item) => observer.observe(item));
-
-  if (infiniteBehavior) {
-    fullObserver.observe(currentItems[1]);
-    fullObserver.observe(currentItems[currentItems.length - 2]);
-  }
-
-  for (let it = 0; it < (dots?.length ?? 0); it++) {
-    dots?.item(it).addEventListener("click", () => goToItem(it));
-  }
-
-  prev?.addEventListener("click", onClickPrev);
-  next?.addEventListener("click", onClickNext);
-
-  const timeout = interval && setInterval(onClickNext, interval);
-
-  // Unregister callbacks
-  return () => {
-    for (let it = 0; it < (dots?.length ?? 0); it++) {
-      dots?.item(it).removeEventListener("click", () => goToItem(it));
-    }
-
-    prev?.removeEventListener("click", onClickPrev);
-    next?.removeEventListener("click", onClickNext);
-    observer.disconnect();
-
-    clearInterval(timeout);
-  };
 };
 
-function JS({
-  rootId,
-  scroll = "smooth",
-  interval,
-  infinite = false,
-  oneByone,
-}: Props) {
+function JS(props: Props) {
   return (
     <script
-      src={scriptAsDataURI(setup, {
-        rootId,
-        scroll,
-        interval,
-        infinite,
-        oneByone,
-      })}
+      src={scriptAsDataURI(setup, { ...props })}
       defer
     />
   );
 }
 
 Slider.Dot = Dot;
+Slider.Dots = Dots;
 Slider.Item = Item;
 Slider.NextButton = NextButton;
 Slider.PrevButton = PrevButton;
 Slider.JS = JS;
+
+export function useSlider(rootId: string) {
+  return {
+    Carousel: (props: WithoutRootId<SliderProps>) => (
+      <Slider {...props} rootId={rootId} />
+    ),
+    Item: (props: WithoutRootId<ItemProps>) => (
+      <Item {...props} rootId={rootId} />
+    ),
+    Dot: (props: WithoutRootId<DotProps>) => <Dot {...props} rootId={rootId} />,
+    NextButton: (props: WithoutRootId<ButtonProps>) => (
+      <NextButton {...props} rootId={rootId} />
+    ),
+    PrevButton: (props: WithoutRootId<ButtonProps>) => (
+      <PrevButton {...props} rootId={rootId} />
+    ),
+    JS: (props: Props) => <JS {...props} />,
+  };
+}
 
 export default Slider;

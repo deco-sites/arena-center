@@ -12,6 +12,16 @@ export default defineApp(async (_req, ctx) => {
     <>
       {/* Include Icons and manifest */}
       <Head>
+        <script
+          id="embla-carousel-js"
+          src="https://unpkg.com/embla-carousel@8.5.2/embla-carousel.umd.js"
+        />
+
+        <script
+          id="embla-carousel-autoplay-js"
+          src="https://unpkg.com/embla-carousel-autoplay@8.5.2/embla-carousel-autoplay.umd.js"
+        />
+
         {/* Enable View Transitions API */}
         <style
           dangerouslySetInnerHTML={{

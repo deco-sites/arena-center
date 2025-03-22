@@ -1,34 +1,32 @@
 import { Product } from "apps/commerce/types.ts";
-import { useScript } from "deco/hooks/useScript.ts";
 import { JSX } from "preact";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { usePlatform } from "../../sdk/usePlatform.tsx";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
-
 import { Item } from "../minicart/Item.tsx";
-
+import { useScript } from "@deco/deco/hooks";
 export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   products: Product[];
   icon: string;
 }
-
 const onClick = () => {
   event?.stopPropagation();
   const button = event?.currentTarget as HTMLButtonElement | null;
   const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
   const { items, platformProps = [] } = JSON.parse(
     decodeURIComponent(container.getAttribute("data-cart-item")!),
-  ) as { items: Item[]; platformProps: ReturnType<typeof useAddToCart> };
+  ) as {
+    items: Item[];
+    platformProps: ReturnType<typeof useAddToCart>;
+  };
   items.forEach((item, index) => {
     window.STOREFRONT.CART.addToCart(item, platformProps?.[index]);
   });
 };
-
 const useAddToCart = ({ products }: Props) => {
   const platform = usePlatform();
-
   if (platform === "vnda") {
     const items = products.map((item) => ({
       itemId: item.productID,
@@ -37,28 +35,22 @@ const useAddToCart = ({ products }: Props) => {
         item.additionalProperty?.map(({ name, value }) => [name, value]) || [],
       ),
     }));
-
     return items;
   }
-
   return null;
 };
-
 function AddToCartButton(props: Props) {
   const { products, class: _class, icon } = props;
   const platformProps = useAddToCart(props);
   const id = useId();
-
   const items = products.map((item) => {
     const { price, listPrice } = useOffer(item.offers);
-
     return mapProductToAnalyticsItem({
       product: item,
       price,
       listPrice,
     });
   });
-
   return (
     <div
       id={id}
@@ -89,5 +81,4 @@ function AddToCartButton(props: Props) {
     </div>
   );
 }
-
 export default AddToCartButton;

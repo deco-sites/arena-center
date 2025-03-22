@@ -4,7 +4,6 @@ import { useDevice } from "@deco/deco/hooks";
 import { useId } from "../sdk/useId.ts";
 import Slider from "../components/ui/Slider.tsx";
 import { clx } from "../sdk/clx.ts";
-import Icon from "../components/ui/Icon.tsx";
 
 /** @titleBy title */
 export interface TopItem {
@@ -58,11 +57,11 @@ export default function TopBar({ content, interval = 3 }: Props) {
           )}
         >
           <div class="col-span-full row-span-full  flex items-center justify-center h-[73px]">
-            <Slider class="w-full carousel carousel-center ">
+            <Slider class="w-full">
               {content.map((item, index) => (
                 <Slider.Item
                   index={index}
-                  class="w-full carousel-item h-auto overflow-y-hidden "
+                  class="w-full h-auto overflow-y-hidden "
                 >
                   <a
                     href={item.href}
@@ -89,41 +88,6 @@ export default function TopBar({ content, interval = 3 }: Props) {
               ))}
             </Slider>
           </div>
-
-          {
-            /* <div class="z-10 sm:flex justify-center mt-7 items-center col-start-1 row-start-2">
-        <Slider.PrevButton class="" disabled={false}>
-          <Icon id="chevron-right" class="rotate-180" />
-        </Slider.PrevButton>
-      </div>
-
-      <div class="z-10 justify-center mt-7 items-center col-start-3 row-start-2">
-        <Slider.NextButton class="" disabled={false}>
-          <Icon id="chevron-right" />
-        </Slider.NextButton>
-      </div>
-
-      <ul
-        class={clx()
-        // "col-span-full row-start-4 z-10",
-        // "carousel justify-center gap-3",
-        }
-      >
-        {content.map((_, index) => (
-          <li class="carousel-item">
-            <Slider.Dot
-              index={index}
-              class={clx(
-                "bg-black opacity-20 h-3 w-3 no-animation rounded-full  hidden md:flex",
-                "disabled:w-8 disabled:bg-base-100 disabled:opacity-100 transition-[width]"
-              )}
-            >
-              <></>
-            </Slider.Dot>
-          </li>
-        ))}
-      </ul> */
-          }
 
           <Slider.JS
             rootId={id}

@@ -88,7 +88,7 @@ function ProductCard({
     >
       <figure
         class={clx(
-          "relative bg-base-100 lg:w-[280px] w-[170px] h-[280px]",
+          "relative bg-base-100 lg:w-[280px] w-[170px]",
           "rounded border border-transparent",
           "group-hover:border-primary",
         )}
@@ -149,7 +149,7 @@ function ProductCard({
       </figure>
 
       <a href={relativeUrl} class="pt-4">
-        <p class="font-base text-sm h-14 lg:h-10">{title}</p>
+        <p class="font-base text-sm h-14 lg:h-10 line-clamp-2">{title}</p>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (
@@ -161,11 +161,6 @@ function ProductCard({
             {formatPrice(price, offers?.priceCurrency)}
           </span>
         </div>
-        {
-          /* <div class="lg:h-[26px] h-[58px] font-light text-[10px] my-3">
-          {shortDescription && <p>{shortDescription}</p>}
-        </div> */
-        }
       </a>
 
       {/* SKU Selector */}

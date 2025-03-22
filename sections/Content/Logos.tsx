@@ -20,7 +20,7 @@ export interface Props {
 function Logos({ images }: Props) {
   const id = useId();
   return (
-    <Section.Container class=" w-full">
+    <Section.Container class="w-full overflow-x-hidden">
       <div
         id={id}
         class="grid grid-rows-1 w-[full] lg:max-w-[1300px] mx-auto h-[96px] mt-5 "
@@ -29,14 +29,13 @@ function Logos({ images }: Props) {
         }}
       >
         <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 px-6 md:px-0 lg:max-w-[1200px] w-full">
-          <Slider class="carousel carousel-center sm:carousel-end gap-10 lg:gap-16 lg:w-full w-[330px] first:pl-5">
+          <Slider class="gap-10 lg:gap-16 lg:w-full w-[330px]">
             {images?.map((item, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
-                  "carousel-item",
-                  "first:pl-0 first:sm:pl-0",
-                  "last:pr-0 last:sm:pr-0",
+                  "!flex-none",
+                  "last:mr-10 last:lg:mr-16",
                 )}
               >
                 <div class="">
@@ -65,7 +64,7 @@ function Logos({ images }: Props) {
         </div>
       </div>
 
-      <Slider.JS rootId={id} />
+      <Slider.JS rootId={id} infinite />
     </Section.Container>
   );
 }

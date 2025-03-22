@@ -36,7 +36,7 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
     return <div></div>;
   }
   return (
-    <div class="container max-w-[1440px] mx-auto lg:mt-12  px-6 lg:px-11">
+    <div class="container max-w-[1440px] mx-auto lg:mt-12 px-6">
       <div class="flex items-center mb-3 flex-col lg:flex-row">
         <p class="font-medium uppercase px-2 lg:mr-4 text-center mb-5 lg:mb-0">
           {title}

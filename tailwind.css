@@ -48,7 +48,6 @@
 .custom-scroll {
   overflow-x: auto;
   overflow-y: auto;
-  
 }
 
 .custom-scroll:hover::-webkit-scrollbar {
@@ -68,4 +67,41 @@
 
 .custom-scroll::-webkit-scrollbar-thumb:hover {
   background: #555;
+}
+
+.custom-container {
+  max-width: 1440px;
+  padding-right: 0px;
+  padding-left: 0px;
+}
+@media (max-width: 1440px) {
+  .custom-container {
+    max-width: 1440px;
+    padding-right: 80px;
+    padding-left: 80px;
+  }
+}
+@media (max-width: 1024px) {
+  .custom-container {
+    padding-right: 0px;
+    padding-left: 24px;
+  }
+}
+
+.embla {
+  --slide-spacing: 0rem;
+  --slide-size: 100%;
+}
+.embla__viewport {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+  touch-action: pan-y pinch-zoom;
+}
+.embla__slide {
+  transform: translate3d(0, 0, 0);
+  flex: 0 0 var(--slide-size);
+  min-width: 0;
+  padding-left: var(--slide-spacing);
 }
