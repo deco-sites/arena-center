@@ -1,5 +1,8 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Image from "apps/website/components/Image.tsx";
+import Slider from "site/components/ui/Slider.tsx";
+import { useId } from "site/sdk/useId.ts";
+import { clx } from "site/sdk/clx.ts";
 import { useDevice } from "@deco/deco/hooks";
 
 export interface Cards {
@@ -17,24 +20,39 @@ export interface Props {
 }
 
 export default function (props: Props) {
-  // const device = useDevice();
+  const id = useId();
+  const isDesktop = useDevice() === "desktop";
+  const Container = isDesktop ? "ul" : Slider;
+  const Item = isDesktop ? "li" : Slider.Item;
   return (
-    <>
-      <div class="custom-scroll flex gap-2 w-full max-w-[1440px] lg:overflow-visible mt-6 mx-auto px-6 lg:justify-center">
+    <div
+      id={id}
+      class="overflow-x-hidden max-md:pl-6 max-w-[1440px] lg:max-w-[1280px] mx-auto"
+    >
+      <Container class="flex gap-2 mt-6 mx-auto lg:justify-center">
         {props.images &&
-          props.images.map((card) => (
-            <a href={card.href}>
-              <div class="lg:w-[294px] lg:h-[625px] w-[160px] h-auto">
-                <Image
-                  class="object-cover "
-                  src={card.src}
-                  width={294}
-                  height={625}
-                />
-              </div>
-            </a>
+          props.images.map((card, index) => (
+            <Item
+              class={clx(
+                "!flex-none",
+                "last:mr-2",
+              )}
+              index={index}
+            >
+              <a href={card.href}>
+                <div class="lg:w-[294px] lg:h-[625px] w-[160px] h-auto">
+                  <Image
+                    class="object-cover "
+                    src={card.src}
+                    width={294}
+                    height={625}
+                  />
+                </div>
+              </a>
+            </Item>
           ))}
-      </div>
-    </>
+      </Container>
+      {!isDesktop && <Slider.JS rootId={id} infinite />}
+    </div>
   );
 }

@@ -1,4 +1,4 @@
-import type { HTMLWidget, ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget } from "apps/admin/widgets.ts";
 import type { SiteNavigationElement } from "apps/commerce/types.ts";
 import Image from "apps/website/components/Image.tsx";
 import Alert from "../../components/header/Alert.tsx";
@@ -15,23 +15,19 @@ import {
   HEADER_HEIGHT_MOBILE,
   NAVBAR_HEIGHT_MOBILE,
   SEARCHBAR_DRAWER_ID,
-  SEARCHBAR_POPUP_ID,
   SIDEMENU_CONTAINER_ID,
   SIDEMENU_DRAWER_ID,
 } from "../../constants.ts";
 import { useDevice } from "@deco/deco/hooks";
 import { type LoadingFallbackProps } from "@deco/deco";
 import type { AlertItem, ContactItem } from "../../components/header/Alert.tsx";
-import { useScript } from "deco/hooks/useScript.ts";
-import Icon from "../../components/ui/Icon.tsx";
-
+import { useScript } from "@deco/deco/hooks";
 export interface Logo {
   src: ImageWidget;
   alt: string;
   width?: number;
   height?: number;
 }
-
 export interface SectionProps {
   alerts?: AlertItem[];
   /** @maxItems 2 */
@@ -56,22 +52,16 @@ export interface SectionProps {
   loading?: "eager" | "lazy";
 }
 type Props = Omit<SectionProps, "alert">;
-
 const onLoad = () => {
   const HEIGHT_THRESHOLD = 60;
-
   let lastScrollY = 0;
   let accumulatedScroll = 0;
-
   const handleScrollAnimation = () => {
     const header = document.getElementById("header");
     const headerMobile = document.getElementById("header-mobile");
     const scrollPosition = window.scrollY;
-
     const scrollDifference = scrollPosition - lastScrollY;
-
     accumulatedScroll += scrollDifference;
-
     if (Math.abs(accumulatedScroll) >= HEIGHT_THRESHOLD) {
       if (accumulatedScroll > 0) {
         header?.classList.add("opacity-0");
@@ -90,7 +80,6 @@ const onLoad = () => {
   };
   window.addEventListener("scroll", handleScrollAnimation);
 };
-
 const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
   <>
     <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
@@ -120,7 +109,6 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
     </div>
   </>
 );
-
 const SerchBarMobile = ({ searchbar }: Props) => (
   <div
     id="header-mobile"
@@ -129,7 +117,6 @@ const SerchBarMobile = ({ searchbar }: Props) => (
     <Searchbar {...searchbar} />
   </div>
 );
-
 const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
   <>
     <Drawer
@@ -215,7 +202,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
             alt={logo.alt}
             width={logo.width || 100}
             height={logo.height || 28}
-            class="h-[28px] w-auto mt-[5px]"
+            class="h-[28px] w-auto mt-[5px] max-md:scale-125"
             fit="contain"
           />
         </a>

@@ -17,10 +17,10 @@ function QuantitySelector(
   { id = useId(), disabled, ...props }: JSX.IntrinsicElements["input"],
 ) {
   return (
-    <div class="join border rounded w-24  bg-gray-200">
+    <div class="join border rounded bg-gray-200">
       <button
         type="button"
-        class="btn btn-square btn-ghost no-animation  bg-gray-200 h-6 min-h-0"
+        class="btn btn-square btn-ghost no-animation  bg-transparent h-6 min-h-0"
         hx-on:click={useScript(onClick, -1)}
         disabled={disabled}
       >
@@ -48,7 +48,7 @@ function QuantitySelector(
       </div>
       <button
         type="button"
-        class="btn btn-square btn-ghost no-animation  bg-gray-200 h-6 min-h-0"
+        class="btn btn-square btn-ghost no-animation  bg-transparent h-6 min-h-0"
         hx-on:click={useScript(onClick, 1)}
         disabled={disabled}
       >

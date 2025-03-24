@@ -44,7 +44,6 @@ function CartItem({ item, index, locale, currency }: Props) {
         height={150}
         class="h-full object-contain"
         fit="contain"
-        
       />
 
       {/* Info */}

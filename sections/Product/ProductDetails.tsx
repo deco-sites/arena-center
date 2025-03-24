@@ -5,10 +5,9 @@ import Breadcrumb from "../../components/ui/Breadcrumb.tsx";
 import SectionUi from "../../components/ui/Section.tsx";
 import { clx } from "../../sdk/clx.ts";
 import type { IconItem } from "../../components/product/BuyTogetherComponent.tsx";
-import type { Section } from "deco/blocks/section.ts";
 import BuyTogetherComponent from "../../components/product/BuyTogetherComponent.tsx";
 import type { Product } from "apps/commerce/types.ts";
-
+import { type Section } from "@deco/deco/blocks";
 export interface Props {
   /** @title Integração */
   page: ProductDetailsPage | null;
@@ -20,7 +19,6 @@ export interface Props {
    */
   icons?: IconItem[];
 }
-
 export default function ProductDetails({ page, icons, products }: Props) {
   /**
    * Rendered when a not found is returned by any of the loaders run on this page
@@ -37,7 +35,6 @@ export default function ProductDetails({ page, icons, products }: Props) {
       </div>
     );
   }
-
   return (
     <div class="container flex flex-col gap-4 sm:gap-5 max-w-[1440px] py-4 sm:py-5 px-5 sm:px-24">
       <Breadcrumb itemListElement={page.breadcrumbList.itemListElement} />
@@ -60,5 +57,4 @@ export default function ProductDetails({ page, icons, products }: Props) {
     </div>
   );
 }
-
 export const LoadingFallback = () => <SectionUi.Placeholder height="635px" />;

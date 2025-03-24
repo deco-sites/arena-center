@@ -20,8 +20,8 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
   const id = useId();
 
   return (
-    <div class="mx-auto max-w-[1440px] flex flex-col gap-2 mt-8 px-0 md:px-6">
-      <p class="text-accent-content md:text-primary text-lg font-semibold text-center">
+    <div class="mx-auto max-w-[1440px] flex flex-col gap-2 mt-8 custom-container">
+      <p class="text-accent-content md:text-primary text-lg max-md:text-base font-semibold text-center">
         {itemListName}
       </p>
       <div
@@ -31,26 +31,27 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           gridTemplateColumns: "min-content 1fr min-content",
         }}
       >
-        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 px-6 md:px-0 max-w-[1200px]">
-          <Slider class="carousel carousel-center sm:carousel-end gap-2 w-full">
+        <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 md:px-0 max-w-[1200px]">
+          <Slider class="gap-2 w-full">
             {categoryItems?.map((item, index) => (
               <Slider.Item
                 index={index}
                 class={clx(
-                  "carousel-item",
+                  "!flex-none",
+                  "last:mr-2",
                   "first:pl-0 first:sm:pl-0",
                   "last:pr-0 last:sm:pr-0",
                 )}
               >
-                <div class="bg-secondary-content">
-                  <a href={item.link}>
+                <div class="h-full">
+                  <a class="flex flex-col h-full" href={item.link}>
                     <Image
                       src={item.image}
                       width={295}
                       height={305}
-                      class="w-[287px] sm:w-[295px] h-auto"
+                      class="w-[287px] sm:w-[295px] h-full"
                     />
-                    <p class="pt-[5px] text-xs pb-[7px] pl-[9px] h-[29px]">
+                    <p class="pt-[5px] text-xs pb-[7px] pl-[9px] h-[29px] bg-secondary-content">
                       {item.paragraph}
                     </p>
                   </a>
@@ -71,7 +72,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           </Slider.NextButton>
         </div>
       </div>
-      <Slider.JS rootId={id} />
+      <Slider.JS rootId={id} infinite />
     </div>
   );
 }

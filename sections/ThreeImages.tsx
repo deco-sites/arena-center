@@ -18,7 +18,7 @@ export default function ({ img }: Props) {
   const device = useDevice();
   if (device !== "desktop") {
     return (
-      <div class="flex gap-3 px-3 overflow-auto max-w-[1440px] w-full mx-auto mt-7">
+      <div class="flex gap-3 pl-6 overflow-auto max-w-[1440px] w-full mx-auto mt-7 custom-container">
         {img.map((item) => (
           <div class="relative">
             <a href={item.link} class="w-[80vw] block lg:w-auto">
@@ -26,7 +26,7 @@ export default function ({ img }: Props) {
                 src={item.mobile}
                 width={321}
                 height={307}
-                loading={"lazy"}
+                loading="lazy"
               />
             </a>
           </div>
@@ -43,7 +43,7 @@ export default function ({ img }: Props) {
             src={img[0].desktop}
             width={596}
             height={578}
-            loading={"lazy"}
+            loading="lazy"
           />
         </a>
       </div>
@@ -55,7 +55,7 @@ export default function ({ img }: Props) {
               src={img[1].desktop}
               width={596}
               height={285}
-              loading={"lazy"}
+              loading="lazy"
             />
           </a>
         </div>
@@ -66,7 +66,7 @@ export default function ({ img }: Props) {
               src={img[2].desktop}
               width={596}
               height={285}
-              loading={"lazy"}
+              loading="lazy"
             />
           </a>
         </div>
