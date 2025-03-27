@@ -1,0 +1,30 @@
+{
+  "name": "Fale Conosco",
+  "path": "/fale-conosco",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/TextInformations.tsx",
+        "title": "Fale Conosco",
+        "conteudo": "<h2>ESTAMOS AQUI PARA TE AJUDAR!</h2><p>Se você tem dúvidas, sugestões ou precisa de suporte com seu pedido, nossa equipe de atendimento está pronta para te atender com atenção, agilidade e carinho.</p><p>📧 <strong>E-mail SAC</strong></p><p>Envie sua mensagem para:</p><p><strong><a href=\"mailto:sac@arenacenterloja.com.br\" data-mce-href=\"mailto:sac@arenacenterloja.com.br\">sac@arenacenterloja.com.br</a></strong></p><p>📱 <strong>WhatsApp</strong></p><p>Fale com a gente pelo número:</p><p><strong>+55 21 99853-5142</strong></p><p>Nosso horário de atendimento é de segunda a sexta-feira, das 9h às 18h (exceto feriados).</p><p>Conte com a Arena Center para transformar seus espaços com praticidade e estilo.</p><p><!-- notionvc: 18ad4819-43f0-4067-ab99-cad386183f3a --><br></p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "AC-Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

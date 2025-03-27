@@ -1,0 +1,30 @@
+{
+  "__resolveType": "website/pages/Page.tsx",
+  "name": "Nossas Lojas",
+  "path": "/nossas-lojas",
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/TextInformations.tsx",
+        "title": "Nossas Lojas",
+        "conteudo": "<p class=\"\" data-start=\"163\" data-end=\"355\">A Arena Center está presente no coração de Jacarepaguá, no Rio de Janeiro, oferecendo uma ampla variedade de utilidades para o lar, sempre com foco em qualidade, praticidade e bom atendimento.</p><p class=\"\" data-start=\"357\" data-end=\"469\">Visite nosso espaço físico e conheça de perto as soluções que transformam ambientes com estilo e funcionalidade.</p><p class=\"\" data-start=\"471\" data-end=\"629\">📍 <strong data-start=\"474\" data-end=\"487\">Endereço:</strong><br data-start=\"487\" data-end=\"490\">Arena Center Distribuidora de Utilidades LTDA<br data-start=\"535\" data-end=\"538\">CNPJ: 08.267.363/0001-08<br data-start=\"562\" data-end=\"565\">Av. Ayrton Senna – Jacarepaguá,<br data-start=\"596\" data-end=\"599\">Rio de Janeiro – RJ, 22775-005</p><p class=\"\" data-start=\"631\" data-end=\"696\">Estamos prontos para te receber com a atenção que você merece. 💡</p>"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "AC-Footer"
+      }
+    }
+  ]
+}
