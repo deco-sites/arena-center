@@ -3619,9 +3619,6 @@ details.collapse summary::-webkit-details-marker {
   white-space: nowrap;
   border-width: 0;
 }
-.visible {
-  visibility: visible;
-}
 .invisible {
   visibility: hidden;
 }
