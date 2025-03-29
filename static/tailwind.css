@@ -3889,6 +3889,9 @@ details.collapse summary::-webkit-details-marker {
 .ml-\[-9px\] {
   margin-left: -9px;
 }
+.ml-auto {
+  margin-left: auto;
+}
 .mr-1 {
   margin-right: 0.25rem;
 }
