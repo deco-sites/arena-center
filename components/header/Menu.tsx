@@ -42,7 +42,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
                   </a>
                   <div class="collapse-content">
                     <ul>
-                      {item.children?.map((nodeItem) => (
+                      {node.children?.map((nodeItem) => (
                         <li class="mt-4">
                           <a href={nodeItem.url}>{nodeItem.name}</a>
                         </li>
