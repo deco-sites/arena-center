@@ -23,7 +23,7 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
       {children && children.length > 0 && (
         <div
-          class="fixed hidden hover:flex text-xs group-hover:flex bg-white z-40 max-h-[70vh] items-start justify-center gap-5  max-w-[1440px] !overflow-auto custom-scroll  mx-auto top-[-15px] capitalize w-full left-1/2 -translate-x-1/2"
+          class="fixed hidden hover:flex text-xs group-hover:flex bg-white z-40 max-h-[70vh] items-start justify-center gap-5  max-w-[1440px] !overflow-auto custom-scroll  mx-auto top-[-15px]  w-full left-1/2 -translate-x-1/2"
           style={{
             marginTop: HEADER_HEIGHT_DESKTOP,
           }}
@@ -42,10 +42,10 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
             {children.map((node) => (
               <li class="p-4">
                 <a
-                  class="hover:underline capitalize text-center "
+                  class="hover:underline  text-center "
                   href={node.url}
                 >
-                  <span class="capitalize font-medium text-sm text-secondary text-center">
+                  <span class=" font-medium text-sm text-secondary text-center">
                     {node.name}
                   </span>
                 </a>
@@ -53,8 +53,8 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
                 <ul class="flex flex-col gap-2 mt-4 min-w-[150px]">
                   {node.children?.map((leaf) => (
                     <li>
-                      <a class="hover:underline capitalize" href={leaf.url}>
-                        <span class="text-xs capitalize text-center">
+                      <a class="hover:underline " href={leaf.url}>
+                        <span class="text-xs  text-center">
                           {leaf.name}
                         </span>
                       </a>
