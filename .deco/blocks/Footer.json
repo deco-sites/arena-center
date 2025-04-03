@@ -127,20 +127,8 @@
     },
     "socialItems": [
       {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c11384e4-73ce-44b0-9239-6acd2b467cd0/Facebook-(1).png",
-        "alt": "facebook"
-      },
-      {
         "image": "https://assets.decocache.com/arena-center/56a0f556-541a-426d-bc9b-9b4a038c5954/Instagram.jpg",
         "alt": "instagram"
-      },
-      {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c4e04399-4aab-40ec-a3f4-31d6336566dc/LinkedIn-(1).png",
-        "alt": "linkedin"
-      },
-      {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c404f3e5-7cd2-4f81-af31-ced4806a4102/Twitter-(1).png",
-        "alt": "twitter"
       }
     ],
     "socialTitle": "Permaneça conectado"
