@@ -7,7 +7,6 @@ import type {
 import { parseRange } from "apps/commerce/utils/filters.ts";
 import Avatar from "../../components/ui/Avatar.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { formatPrice } from "../../sdk/format.ts";
 
 export interface CategoryFilter {
   title: string;
@@ -67,10 +66,10 @@ function FilterValues({ key, values }: FilterToggle) {
         if (key === "price-range") {
           const range = parseRange(item.value);
 
-          return range && <ValueItem {...item} />;
+          return range && <ValueItem key={item.url} {...item} />;
         }
 
-        return <ValueItem {...item} />;
+        return <ValueItem key={item.url} {...item} />;
       })}
     </ul>
   );

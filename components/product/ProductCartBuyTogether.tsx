@@ -6,11 +6,6 @@ import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
-import { useVariantPossibilities } from "../../sdk/useVariantPossiblities.ts";
-import WishlistButton from "../wishlist/WishlistButton.tsx";
-import AddToCartButton from "./AddToCartButton.tsx";
-import { Ring } from "./ProductVariantSelector.tsx";
-import { useId } from "../../sdk/useId.ts";
 
 interface Props {
   product: Product;
@@ -34,18 +29,12 @@ function ProductCardBuyTogether({
   index,
   class: _class,
 }: Props) {
-  const id = useId();
-
   const { url, image: images, offers, isVariantOf } = product;
-  const hasVariant = isVariantOf?.hasVariant ?? [];
   const title = isVariantOf?.name ?? product.name;
   const [front, back] = images ?? [];
 
-  const { listPrice, price, seller = "1", availability } = useOffer(offers);
+  const { listPrice, price, availability } = useOffer(offers);
   const inStock = availability === "https://schema.org/InStock";
-  const possibilities = useVariantPossibilities(hasVariant, product);
-  const firstSkuVariations = Object.entries(possibilities)?.[0];
-  const variants = Object.entries(firstSkuVariations?.[1] ?? {});
   const relativeUrl = relative(url);
   const percent = listPrice && offers?.lowPrice
     ? Math.round(((listPrice - offers?.lowPrice) / listPrice) * 100)
@@ -65,10 +54,6 @@ function ProductCardBuyTogether({
       },
     },
   });
-
-  //Added it to check the variant name in the SKU Selector later, so it doesn't render the SKU to "shoes size" in the Product Card
-  const firstVariantName = firstSkuVariations?.[0]?.toLowerCase();
-  const shoeSizeVariant = "shoe size";
 
   return (
     <div

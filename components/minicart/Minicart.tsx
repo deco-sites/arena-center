@@ -4,7 +4,6 @@ import { clx } from "../../sdk/clx.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { useComponent } from "../../sections/Component.tsx";
 import Coupon from "./Coupon.tsx";
-import FreeShippingProgressBar from "./FreeShippingProgressBar.tsx";
 import CartItem, { Item } from "./Item.tsx";
 import { useScript } from "@deco/deco/hooks";
 export interface Minicart {
@@ -81,6 +80,7 @@ export function ErrorFallback() {
       </div>
 
       <button
+        type="submit"
         class="btn btn-primary"
         hx-patch={useComponent(import.meta.url)}
         hx-swap="outerHTML"
@@ -104,7 +104,6 @@ export default function Cart(
         locale,
         currency,
         enableCoupon = true,
-        freeShippingTarget,
         checkoutHref,
       },
     },
@@ -127,11 +126,11 @@ export default function Cart(
         hx-swap="outerHTML"
       >
         {/* Button to submit the form */}
-        <button hidden autofocus />
+        <button type="submit" hidden autofocus />
 
         {/* Add to cart controllers */}
         <input name="add-to-cart" type="hidden" />
-        <button hidden name="action" value="add-to-cart" />
+        <button type="submit" hidden name="action" value="add-to-cart" />
 
         {/* This contains the STOREFRONT cart. */}
         <input

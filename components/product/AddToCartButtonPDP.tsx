@@ -37,22 +37,8 @@ const onChange = () => {
 };
 // Copy cart form values into AddToCartButton
 const onLoad = (id: string) => {
-  window.STOREFRONT.CART.subscribe((sdk) => {
+  window.STOREFRONT.CART.subscribe(() => {
     const container = document.getElementById(id);
-    // const checkbox = container?.querySelector<HTMLInputElement>(
-    //   'input[type="checkbox"]',
-    // );
-    const input = container?.querySelector<HTMLInputElement>(
-      'input[type="number"]',
-    );
-    const itemID = container?.getAttribute("data-item-id")!;
-    const quantity = sdk.getQuantity(itemID) || 0;
-    // if (!input || !checkbox) {
-    //   return;
-    // }
-    // input.value = quantity.toString();
-    // checkbox.checked = quantity > 0;
-    // enable interactivity
     container?.querySelectorAll<HTMLButtonElement>("button").forEach((node) =>
       node.disabled = false
     );
@@ -62,10 +48,9 @@ const onLoad = (id: string) => {
     return;
   });
 };
-const useAddToCart = ({ product, seller }: Props) => {
+const useAddToCart = ({ product }: Props) => {
   const platform = usePlatform();
-  const { additionalProperty = [], isVariantOf, productID } = product;
-  const productGroupID = isVariantOf?.productGroupID;
+  const { additionalProperty = [], productID } = product;
 
   if (platform === "vnda") {
     return {
@@ -91,7 +76,7 @@ function AddToCartButton(props: Props) {
           max={100}
           value={1}
           hx-on:change={useScript(onChange)}
-          id={"productDetailValue"}
+          id="productDetailValue"
         />
       </div>
       <div
@@ -105,6 +90,7 @@ function AddToCartButton(props: Props) {
         {/* <input type="checkbox" class="hidden peer" /> */}
 
         <button
+          type="button"
           class={clx(
             "flex-grow uppercase btn btn-secondary min-h-0 h-7 !text-base-100 bg-secondary",
             _class?.toString(),
@@ -131,6 +117,7 @@ function AddToCartButton(props: Props) {
         {/* <input type="checkbox" class="hidden peer" /> */}
 
         <button
+          type="button"
           class={clx(
             "flex-grow uppercase btn btn-outline no-animation w-full",
             _class?.toString(),

@@ -5,13 +5,8 @@ import { formatPrice } from "../../sdk/format.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
-import WishlistButton from "../wishlist/WishlistButton.tsx";
-import AddToCartButton from "./AddToCartButton.tsx";
 import AddToCartButtonPDP from "./AddToCartButtonPDP.tsx";
 import OutOfStock from "./OutOfStock.tsx";
-import ProductSelector from "./ProductVariantSelector.tsx";
-import QuantitySelector from "../../components/ui/QuantitySelector.tsx";
-import { useScript } from "@deco/deco/hooks";
 interface Props {
   page: ProductDetailsPage | null;
 }
@@ -22,7 +17,6 @@ function ProductInfo({ page }: Props) {
   }
   const { breadcrumbList, product } = page;
   const { productID, offers, isVariantOf } = product;
-  const description = product.description || isVariantOf?.description;
   const title = isVariantOf?.name ?? product.name;
   const { price = 0, listPrice, seller = "1", availability } = useOffer(offers);
   const percent = listPrice && price
@@ -50,12 +44,6 @@ function ProductInfo({ page }: Props) {
       },
     },
   });
-  //Checks if the variant name is "title"/"default title" and if so, the SKU Selector div doesn't render
-  const hasValidVariants =
-    isVariantOf?.hasVariant?.some((variant) =>
-      variant?.name?.toLowerCase() !== "title" &&
-      variant?.name?.toLowerCase() !== "default title"
-    ) ?? false;
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
       {/* Price tag */}

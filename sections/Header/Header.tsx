@@ -78,9 +78,9 @@ const onLoad = () => {
     }
     lastScrollY = scrollPosition;
   };
-  window.addEventListener("scroll", handleScrollAnimation);
+  globalThis.window.addEventListener("scroll", handleScrollAnimation);
 };
-const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
+const Desktop = ({ navItems, logo, searchbar }: Props) => (
   <>
     <div class="flex flex-col gap-4 pt-5 container max-w-[1440px]">
       <div class="grid grid-cols-3 place-items-center ">
@@ -104,7 +104,9 @@ const Desktop = ({ navItems, logo, searchbar, loading }: Props) => (
       </div>
 
       <ul class="flex justify-between text-accent-content border-y border-gray-300 h-11 max-w-[1444px] px-14">
-        {navItems?.slice(0, 10).map((item) => <NavItem item={item} />)}
+        {navItems?.slice(0, 10).map((item) => (
+          <NavItem key={item.url} item={item} />
+        ))}
       </ul>
     </div>
   </>

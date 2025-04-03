@@ -14,19 +14,9 @@ import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
 
-export interface Layout {
-  /**
-   * @title Pagination
-   * @description Format of the pagination
-   */
-  //pagination?: "show-more" | "pagination";
-  pagination?: "pagination";
-}
-
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
-  layout?: Layout;
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
   /** @hidden partial */
@@ -57,7 +47,7 @@ const useUrlRebased = (overrides: string | undefined, base: string) => {
 };
 
 function PageResult(props: SectionProps<typeof loader>) {
-  const { layout, startingPage = 0, url, partial } = props;
+  const { startingPage = 0, url, partial } = props;
   const page = props.page!;
   const { products, pageInfo } = page;
   const perPage = pageInfo?.recordPerPage || products.length;
@@ -69,11 +59,6 @@ function PageResult(props: SectionProps<typeof loader>) {
     href: prevPageUrl,
     props: { partial: "hideMore" },
   });
-  const partialNext = useSection({
-    href: nextPageUrl,
-    props: { partial: "hideLess" },
-  });
-  const infinite = layout?.pagination !== "pagination";
 
   return (
     <div class="grid grid-flow-row grid-cols-1 place-items-center w-full">
@@ -118,56 +103,6 @@ function PageResult(props: SectionProps<typeof loader>) {
       </div>
 
       <div class={clx("pt-2 sm:pt-10 w-full", "")}>
-        {
-          /* {infinite
-          ? (
-            <div class="flex justify-center [&_section]:contents">
-              <a
-                rel="next"
-                class={clx(
-                  "btn btn-ghost",
-                  (!nextPageUrl || partial === "hideMore") && "hidden",
-                )}
-                hx-swap="outerHTML show:parent:top"
-                hx-get={partialNext}
-              >
-                <span class="inline [.htmx-request_&]:hidden">
-                  Mostrar mais
-                </span>
-                <span class="loading loading-spinner hidden [.htmx-request_&]:block" />
-              </a>
-            </div>
-          )
-          : (
-            <div class={clx("join", infinite && "hidden", "flex justify-center")}>
-              <a
-                rel="prev"
-                aria-label="previous page link"
-                href={prevPageUrl ?? "#"}
-                disabled={!prevPageUrl}
-                class="btn btn-ghost join-item"
-              >
-                <Icon id="chevron-right" class="rotate-180" />
-              </a>
-              <span class="btn btn-ghost join-item">
-                Page {zeroIndexedOffsetPage + 1}/
-                {Math.ceil(
-                  (page.pageInfo.records ?? 0) /
-                    (page.pageInfo.recordPerPage ?? products.length),
-                )}
-              </span>
-              <a
-                rel="next"
-                aria-label="next page link"
-                href={nextPageUrl ?? "#"}
-                disabled={!nextPageUrl}
-                class="btn btn-ghost join-item"
-              >
-                <Icon id="chevron-right" />
-              </a>
-            </div>
-          )} */
-        }
         <div class={clx("join", "flex justify-center")}>
           <a
             rel="prev"

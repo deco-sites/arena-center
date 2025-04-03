@@ -1,12 +1,7 @@
 import { ProductDetailsPage } from "apps/commerce/types.ts";
 import SectionUi from "../../components/ui/Section.tsx";
-import { useSendEvent } from "../../sdk/useSendEvent.ts";
-import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
-import { useId } from "../../sdk/useId.ts";
-import Image from "apps/website/components/Image.tsx";
 import { clx } from "../../sdk/clx.ts";
-import { relative } from "../../sdk/url.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import AddToCartBuyTogether from "../../components/product/AddToCartBuyTogether.tsx";
 import type { Product } from "apps/commerce/types.ts";
