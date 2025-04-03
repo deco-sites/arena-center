@@ -486,59 +486,74 @@
         "__resolveType": "site/sections/Content/Logos.tsx",
         "images": [
           {
-            "image": "https://assets.decocache.com/arena-center/9d8f29b0-4028-42df-961c-7bdccbc98a9d/mart.png",
+            "image": "https://assets.decocache.com/arena-center/9f80dc33-f925-4568-87a9-3ae2ac4955ec/mart.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/10b86436-a7b7-41bf-aafc-9dedb8f6fd31/WhatsApp-Image-2025-04-01-at-13.43.04.jpeg",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/4a00fe8e-3df7-445b-b180-e43e619ad132/porto-brasil.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/2f21728d-d471-40b2-86a9-ab7aac06eca5/mimo.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/2cad16e5-9f2f-44ad-af55-2b040a4f4c49/wolff-rojemac.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/33a19c68-3956-4868-9f25-be7fd1ec5af8/hauskraft.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/e21ec978-88a3-4ca6-9286-3cb30d054509/lyor.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/011e0018-7924-4a65-9943-c71cc8486c8a/alleanza.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/cd7b4ed7-dfd7-4e43-90f3-adcd56167c95/full-fit.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/28e165c9-8974-4a22-8678-94a4e123bfe7/adidas-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/e1b33b60-706f-41e6-84f9-591a8dae206f/germer.png",
             "alt": "/",
             "href": "/"
           },
           {
-            "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ffdc8981-04b4-42e1-a494-d38e615ed137/nba-logo.svg",
+            "image": "https://assets.decocache.com/arena-center/73220393-02c9-4bac-8c39-0ee033aab8cc/brinox.png",
             "alt": "/",
             "href": "/"
+          },
+          {
+            "image": "https://assets.decocache.com/arena-center/178060cd-6dfb-4c2c-9cf7-9591fd3164e8/ou.png"
+          },
+          {
+            "image": "https://assets.decocache.com/arena-center/aa49716c-a663-47a6-a383-0d369d8f623c/scalla.png"
+          },
+          {
+            "image": "https://assets.decocache.com/arena-center/5d41fa98-7c4f-4568-b793-f3a183b5a74b/schmidt.png"
+          },
+          {
+            "image": "https://assets.decocache.com/arena-center/101b5867-1a97-4999-9c2f-4cdbfb7f588b/oxford.png"
+          },
+          {
+            "image": "https://assets.decocache.com/arena-center/ed626433-ad4b-4ce2-bcc0-89347af47ba3/lenvie.png"
           }
         ]
       }

@@ -447,6 +447,71 @@
           ],
           "name": "Utensílios de Bar",
           "url": "/bar/utensilios-de-bar"
+        },
+        {
+          "children": [
+            {
+              "children": [
+                {
+                  "children": [
+                    {
+                      "children": [],
+                      "image": null
+                    }
+                  ],
+                  "image": null
+                }
+              ],
+              "image": null,
+              "name": "Abridores",
+              "url": "/bar/abridores"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Aeradores",
+              "url": "/bar/aeradores"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Coadores",
+              "url": "/bar/coadores"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Coqueteleiras",
+              "url": "/bar/coqueteleiras"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Dosadores",
+              "url": "bar/dosadores"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Espremedores",
+              "url": "bar/espremedores"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Formas de Gelo",
+              "url": "bar/formas-de-gelo"
+            }
+          ],
+          "image": null,
+          "name": "Bar Diversos",
+          "url": "/bar/bar-diversos"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Bar Outlet",
+          "url": "/bar/bar-outlet"
         }
       ],
       "url": "/bar",
@@ -470,8 +535,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/mesa-textil-e-acessorios/descanso-de-panela",
-              "name": "Descanso de Panela"
+              "url": "/mesa-posta/mesa-textil-e-acessorios/descansos-de-panela",
+              "name": "Descansos de Panela"
             },
             {
               "image": [],
@@ -531,7 +596,7 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/louças/Bules",
+              "url": "/mesa-posta/louças/bules",
               "name": "Bules"
             },
             {
@@ -614,10 +679,10 @@
               "name": "Colher Sobremesa"
             },
             {
-              "image": [],
+              "image": null,
               "children": [],
-              "url": "/mesa-posta/faqueiros-e-talheres/facas-churrasco",
-              "name": "Facas Churrasco"
+              "url": "mesa posta/faqueiros-e-talheres/facas-mesa",
+              "name": "Facas Mesa"
             },
             {
               "image": [],
@@ -628,14 +693,20 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/faqueiros-e-talheres/faqueiros",
-              "name": "Faqueiros"
+              "url": "/mesa-posta/faqueiros-e-talheres/facas-churrasco",
+              "name": "Facas Churrasco"
             },
             {
               "image": [],
               "children": [],
-              "name": "Garfos Mesa",
-              "url": "/mesa-posta/faqueiros-e-talheres/garfos-mesa"
+              "name": "Faqueiros",
+              "url": "/mesa-posta/faqueiros-e-talheres/faqueiros"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/faqueiros-e-talheres/garfos-mesa",
+              "name": "Garfos Mesa"
             },
             {
               "image": [],
@@ -644,10 +715,10 @@
               "name": "Garfos Sobremesa"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/mesa-posta/faqueiros-e-talheres/talheres-outros",
-              "name": "Talheres Outros"
+              "image": [],
+              "name": "Talheres Outros",
+              "url": "/mesa-posta/faqueiros-e-talheres/talheres-outros"
             }
           ],
           "name": "Faqueiros e Talheres",
@@ -671,20 +742,20 @@
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/petisqueiras-e-tabuas",
-              "name": "Petisqueiras e Tábuas"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/mesa-posta/acessórios-para-servir/mantegueiras-e-meleiras",
               "name": "Mantegueiras e Meleiras"
             },
             {
               "image": [],
               "children": [],
-              "url": "/mesa-posta/acessórios-para-servir/tigela-e-travessas",
-              "name": "Sopeiras"
+              "url": "/mesa-posta/acessórios-para-servir/petisqueiras-e-tabuas",
+              "name": "Petisqueiras e Tábuas"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/tigelas-e-travessas",
+              "name": "Tigelas e Travessas"
             }
           ],
           "name": "Acessórios para Servir",
@@ -692,9 +763,119 @@
         },
         {
           "image": [],
-          "children": [],
+          "children": [
+            {
+              "children": [],
+              "image": null,
+              "name": "Pratos Orientais",
+              "url": "/mesa-posta/pratos-orientais"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Hashis",
+              "url": "/mesa-posta/hashis"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Tigelas Orientais",
+              "url": "/mesa-posta/tigelas-orientais"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Travessas Orientais",
+              "url": "/mesa-posta/travessas-orientais"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Oriental Diversos",
+              "url": "/mesa-posta/oriental-diversos"
+            }
+          ],
           "url": "/mesa-posta/linha-oriental",
           "name": "Linha Oriental"
+        },
+        {
+          "children": [
+            {
+              "children": [],
+              "image": null,
+              "name": "Açucareiros",
+              "url": "/mesa-posta/acucareiros"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Aparelhos De Fondue",
+              "url": "/mesa-posta/aprelhos-de-fondue"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Bandejas",
+              "url": "/mesa-posta/bandejas"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Bules",
+              "url": "/mesa-posta/bules"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Caixas Chá",
+              "url": "/mesa-posta/caixas-chá"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Cestas Pão",
+              "url": "/mesa-posta/cestas-pao"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Garrafas Térmicas",
+              "url": "/mesa-posta/garrafas-termicas"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Leiteiras",
+              "url": "/mesa-posta/leiteiras"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Paliteiros",
+              "url": "/mesa-posta/paliteiros"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Rechauds",
+              "url": "/mesa-posta/rechauds"
+            },
+            {
+              "children": [],
+              "image": null,
+              "name": "Sopeira",
+              "url": "/mesa-posta/sopeira"
+            }
+          ],
+          "image": null,
+          "name": "Mesa Posta Diversos",
+          "url": "/mesa-posta/mesa-posta-diversos"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Mesa Posta Outlet",
+          "url": "/mesa-posta/outlet"
         }
       ],
       "image": []
@@ -727,20 +908,32 @@
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/organizacao-cozinha/lixeiras-de-pia",
-              "name": "Lixeiras de Pia"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/cozinha/organizacao-cozinha/lixeiras-de-cozinha",
               "name": "Lixeiras de Cozinha"
             },
             {
               "image": [],
               "children": [],
+              "url": "/cozinha/organizacao-cozinha/lixeiras-de-pia",
+              "name": "Lixeiras de Pia"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/organizadores-cozinha",
+              "name": "Organizadores Cozinha"
+            },
+            {
+              "image": [],
+              "children": [],
               "url": "/cozinha/organizacao-cozinha/organizadores-de-talheres",
               "name": "Organizadores de Talheres"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/organizacao-cozinha/porta-ovos",
+              "name": "Porta Ovos"
             },
             {
               "image": [],
@@ -757,20 +950,8 @@
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/organizacao-cozinha/porta-ovos",
-              "name": "Porta Ovos"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/cozinha/organizacao-cozinha/suportes-de-cozinha",
               "name": "Suportes de Cozinha"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/organizacao-cozinha/organizadores-de-cozinha",
-              "name": "Organizadores de Cozinha"
             }
           ],
           "url": "/cozinha/organizacao-cozinha",
@@ -782,26 +963,26 @@
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/portes-de-armazento/latas-de-armazenamento",
+              "url": "/cozinha/potes-de-armazenamento/latas-de-armazenamento",
               "name": "Latas de Armazenamento"
             },
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/portes-de-armazento/porta-pao",
+              "url": "/cozinha/potes-de-armazenamento/porta-condimentos",
+              "name": "Porta Condimentos"
+            },
+            {
+              "image": [],
+              "children": [],
+              "url": "/cozinha/potes-de-armazenamento/porta-pao",
               "name": "Porta Pão"
             },
             {
               "image": [],
               "children": [],
-              "url": "/cozinha/portes-de-armazento/potes-de-armazenamento",
-              "name": "Potes de Armazenamento"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/portes-de-armazento/porta-condimentos",
-              "name": "Porta Condimentos"
+              "url": "/cozinha/potes-de-armazenamento/potes",
+              "name": "Potes"
             }
           ],
           "url": "/cozinha/potes-de-armazenamento",
@@ -811,58 +992,34 @@
           "image": [],
           "children": [
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/bowls-preparo",
-              "name": "Bowls Preparo"
+              "image": null,
+              "name": "Bowls e Tábuas Preparo",
+              "url": "/cozinha/bowls-e-tabuas-preparo"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/formas-e-assadeiras",
-              "name": "Formas e Assadeiras"
+              "image": null,
+              "name": "Cafeteiras, Chaleiras e fervedores",
+              "url": "/cozinha/cafeteiras-chaleiras-e-fervedores"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/copa-textil",
-              "name": "Copa Têxtil"
+              "image": null,
+              "name": "Copa Têxtil",
+              "url": "/cozinha/copa-textil"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/cafeteiras-chaleiras-e-fervedores",
-              "name": "Cafeteiras, Chaleiras e Fervedores"
+              "image": null,
+              "name": "Equipamentos De Preparo",
+              "url": "/cozinha/equipamentos-de-preparo"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/medidores",
-              "name": "Medidores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/equipamentos-de-preparo",
-              "name": "Equipamentos de Preparo"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/moedores",
-              "name": "Moedores"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/tabuas-preparo",
-              "name": "Tábuas Preparo"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/acessorios-para-cozinha/formas-e-assadeiras",
-              "name": "Formas e Assadeiras"
+              "image": null,
+              "name": "Formas e Assadeiras",
+              "url": "/cozinha/formas-e-assadeiras"
             }
           ],
           "name": "Acessórios para Cozinha",
@@ -872,34 +1029,16 @@
           "image": [],
           "children": [
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/facas-e-acessorios/afiadores-de-faca",
-              "name": "Afiadores de Faca"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/facas-e-acessorios/facas-cozinha",
-              "name": "Facas Cozinha"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/facas-e-acessorios/jogos-facas",
-              "name": "Jogos Facas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/facas-e-acessorios/tesouras-cozinha",
-              "name": "Tesouras Cozinha"
+              "image": null,
+              "name": "Facas",
+              "url": "/cozinha/facas-cozinha"
             },
             {
               "children": [],
               "image": null,
-              "url": "/cozinha/facas-e-acessorios/linha-churrasco",
-              "name": "Linha Churrasco"
+              "name": "Linha Churrasco",
+              "url": "/cozinha/linha-churrasco"
             }
           ],
           "url": "/cozinha/facas-e-acessorios",
@@ -909,40 +1048,16 @@
           "image": [],
           "children": [
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/panelas/frigideiras",
+              "image": null,
+              "name": "Panelas e Caçarolas",
+              "url": "/cozinha/panelas-e-cacarolas"
+            },
+            {
+              "children": [],
+              "image": null,
+              "url": "/cozinha/frigideiras",
               "name": "Frigideiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cozinha/panelas/panelas-e-cacarolas",
-              "name": "Panelas e Caçarolas"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/panelas/jogos-panelas",
-              "name": "Jogos Panelas"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/panelas/panelas-de-pressão",
-              "name": "Panelas de Pressão"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/panelas/woks",
-              "name": "Woks"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/panelas/pipoqueiras",
-              "name": "Pipoqueiras"
             }
           ],
           "name": "Panelas",
@@ -952,85 +1067,32 @@
           "image": [],
           "children": [
             {
-              "image": null,
               "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/cortadores",
-              "name": "Cortadores"
-            },
-            {
               "image": null,
-              "children": [],
-              "url": "/cozinha/utensilios-de-cozinha/utensilios-de-preparo",
-              "name": "Utensílio de Preparo"
+              "name": "Utensílios De Preparo",
+              "url": "/cozinha/utensilios-de-preparo"
             },
             {
               "children": [],
               "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/abridores-de-lata",
-              "name": "Abridores de Lata"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/acendedores",
-              "name": "Acendedores"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/descascadores"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/fouet",
-              "name": "Fouet"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/colheres-de-sorvete",
-              "name": "Colheres de Sorvete"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/kit-utensilios-de-cozinha",
-              "name": "Kit Utensílios de Cozinha"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/pegadores",
-              "name": "Pegadores"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/peneiras",
-              "name": "Peneiras"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/rolos-massa",
-              "name": "Rolos Massa"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/termometros",
-              "name": "Termômetros"
-            },
-            {
-              "children": [],
-              "image": null,
-              "url": "/cozinha/utensilios-de-cozinha/timers",
-              "name": "Timers"
+              "name": "Processadores",
+              "url": "/cozinha/processadores"
             }
           ],
           "name": "Utensílios de Cozinha",
           "url": "/cozinha/utensilios-de-cozinha"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Cozinha Diversos",
+          "url": "/cozinha/diversos"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Cozinha Outlet",
+          "url": "/cozinha/outlet"
         }
       ],
       "name": "Cozinha",
@@ -1466,56 +1528,6 @@
     },
     {
       "@type": "SiteNavigationElement",
-      "url": "/banheiro",
-      "name": "Banheiro",
-      "children": [
-        {
-          "image": [],
-          "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/tapetes/tapetes-banheiro",
-              "name": "Tapetes Banheiro"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/tapetes/tapetes-box",
-              "name": "Tapetes Box"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/tapetes/tapetes-para-cozinha",
-              "name": "Tapete para Cozinha"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/tapetes/tapetes-quarto",
-              "name": "Tapetes Quarto"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/cama-e-banho/tapetes/tapetes-sala",
-              "name": "Tapete Sala"
-            }
-          ],
-          "url": "/cama-e-banho/tapetes",
-          "name": "Tapetes"
-        },
-        {
-          "image": [],
-          "children": [],
-          "url": "/cama-e-banho/acessorios-de-banheiro",
-          "name": "Acessórios de Banheiro"
-        }
-      ],
-      "image": null
-    },
-    {
       "url": "/natal",
       "name": "Natal",
       "children": [
@@ -1653,10 +1665,11 @@
           "name": "Pisca Pisca"
         }
       ],
-      "@type": "SiteNavigationElement",
       "image": null
     },
     {
+      "url": "/pascoa",
+      "name": "Páscoa",
       "children": [
         {
           "image": [],
@@ -1732,9 +1745,7 @@
           "name": "Laços Páscoa"
         }
       ],
-      "image": [],
-      "name": "Páscoa",
-      "url": "/pascoa"
+      "image": []
     }
   ],
   "loading": "eager",
@@ -1756,7 +1767,7 @@
   ],
   "logoDesktop": {
     "alt": "Arena Center Logo",
-    "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d3b65f86-eb83-45da-9693-af221172fe2e/arena-center.svg",
+    "src": "https://assets.decocache.com/arena-center/8b29f887-ff6d-4bcd-8ced-3741c26014a2/Marca_ArenaCenter_SVG.svg",
     "width": 205,
     "height": 34
   }

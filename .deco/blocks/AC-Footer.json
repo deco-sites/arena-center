@@ -91,18 +91,9 @@
     },
     "socialItems": [
       {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c11384e4-73ce-44b0-9239-6acd2b467cd0/Facebook-(1).png",
-        "alt": "facebook",
-        "href": "https://www.facebook.com/arenacenteroficial/"
-      },
-      {
         "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/61ca5b80-f920-4f33-8850-3ebcfea8d044/Instagram-(1).png",
         "alt": "instagram",
         "href": "https://www.instagram.com/arenacenteroficial/"
-      },
-      {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/c404f3e5-7cd2-4f81-af31-ced4806a4102/Twitter-(1).png",
-        "alt": "twitter"
       }
     ],
     "socialTitle": "Permaneça conectado"
