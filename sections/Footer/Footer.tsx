@@ -205,31 +205,27 @@ function Footer(
                 <p class="text-xs w-full font-bold text-center">
                   {test.paymentTitle}
                 </p>
-                {test.payment.map(({ img, alt }, index) => (
-                  <li key={index}>
-                    <div class="bg-white flex-row flex justify-center p-1 items-center w-8 h-5 max-md:w-14 max-md:h-10 rounded-lg">
-                      <Image
-                        class="object-contain w-full h-full bg-white"
-                        src={img}
-                        alt={alt}
-                        fit="contain"
-                        width={52}
-                        height={32}
-                        loading="lazy"
-                      />
-                    </div>
-                  </li>
-                ))}
+                <div class="flex gap-1 flex-wrap w-full justify-center items-center">
+                  {test.payment.map(({ img, alt }, index) => (
+                    <li key={index}>
+                      <div class="bg-white flex-row p-0.5 flex justify-start items-center w-8 h-5 max-md:w-[47px] max-md:h-[29px] rounded-[4px]">
+                        <Image
+                          class="object-contain w-full h-full bg-white"
+                          src={img}
+                          alt={alt}
+                          fit="contain"
+                          width={52}
+                          height={32}
+                          loading="lazy"
+                        />
+                      </div>
+                    </li>
+                  ))}
+                </div>
               </div>
             ))}
           </div>
         </ul>
-        {
-          /* <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
-          <ul class="flex gap-4"></ul>
-          <ul class="flex flex-wrap gap-2"></ul>
-        </div> */
-        }
         <div class="w-full gap-8">
           <ul class="flex flex-col gap-8 text-center justify-center items-center">
             {policies.map(({ title, href }, index) => (
@@ -239,9 +235,8 @@ function Footer(
                 </a>
               </li>
             ))}
-            <div class="mx-12 pb-4 flex justify-start w-full">
-              {" "}
-              <span class="text-[10px] font-normal text-base-400 pl-14">
+            <div class="mx-12 pb-4 flex justify-center w-full">
+              <span class="text-[10px] font-normal text-base-400 md:pl-14">
                 {trademark}
               </span>
             </div>

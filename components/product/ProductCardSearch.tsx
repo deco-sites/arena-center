@@ -164,7 +164,9 @@ function ProductCard({
 
       <a href={relativeUrl} class="pt-4">
         <div class="">
-          <span class="font-medium text-sm line-clamp-2">{title}</span>
+          <span class="font-medium text-xs md:text-sm line-clamp-2">
+            {title}
+          </span>
         </div>
 
         <div class="flex gap-2 pt-2">

@@ -108,8 +108,8 @@ function ProductCard({
           <Image
             src={front.url!}
             alt={front.alternateName}
-            width={280}
-            height={280}
+            width={1000}
+            height={1000}
             //style={{ aspectRatio: ASPECT_RATIO }}
             class={clx(
               "object-contain",
@@ -149,7 +149,9 @@ function ProductCard({
       </figure>
 
       <a href={relativeUrl} class="pt-4">
-        <p class="font-base text-sm h-14 lg:h-10 line-clamp-2">{title}</p>
+        <p class="font-base text-xs md:text-sm h-14 lg:h-10 line-clamp-2">
+          {title}
+        </p>
 
         <div class="flex gap-2 pt-2">
           {listPrice && (
@@ -162,29 +164,6 @@ function ProductCard({
           </span>
         </div>
       </a>
-
-      {/* SKU Selector */}
-      {
-        /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
-        <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
-          {variants
-            .map(([value, link]) => [value, relative(link)] as const)
-            .map(([value, link]) => (
-              <li>
-                <a href={link} class="cursor-pointer">
-                  <input
-                    class="hidden peer"
-                    type="radio"
-                    name={`${id}-${firstSkuVariations?.[0]}`}
-                    checked={link === relativeUrl}
-                  />
-                  <Ring value={value} checked={link === relativeUrl} />
-                </a>
-              </li>
-            ))}
-        </ul>
-      )} */
-      }
 
       <div>
         {inStock

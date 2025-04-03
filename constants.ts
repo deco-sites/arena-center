@@ -14,5 +14,5 @@ export const WISHLIST_FORM_ID = "wishlist-form";
 
 export const HEADER_HEIGHT_MOBILE = "90px";
 export const NAVBAR_HEIGHT_MOBILE = "56px";
-export const HEADER_HEIGHT_DESKTOP = "176px";
+export const HEADER_HEIGHT_DESKTOP = "168px";
 export const NAVBAR_HEIGHT_DESKTOP = "44px";

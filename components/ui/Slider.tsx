@@ -154,7 +154,8 @@ const setup = (
     slidesToScroll: "auto",
     startIndex,
     align,
-    dragFree: true,
+    dragFree: false,
+    containScroll: "trimSnaps",
   };
   const autoplay = interval && interval > 0
     // @ts-ignore ignore typing

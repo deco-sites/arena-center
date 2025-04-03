@@ -19,7 +19,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
         type="checkbox"
         class="w-12 ml-auto"
       />
-      <a class="collapse-title capitalize text-left" href={item.url}>
+      <a class="collapse-title text-left" href={item.url}>
         {item.name}
       </a>
       <div class="collapse-content">
@@ -35,7 +35,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
                     class="w-12 ml-auto"
                   />
                   <a
-                    class="collapse-title capitalize font-medium"
+                    class="collapse-title font-medium"
                     href={node.url}
                   >
                     {node.name}

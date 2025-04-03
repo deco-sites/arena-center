@@ -4,6 +4,7 @@ import {
   HEADER_HEIGHT_DESKTOP,
   NAVBAR_HEIGHT_DESKTOP,
 } from "../../constants.ts";
+import { clx } from "site/sdk/clx.ts";
 
 function NavItem({ item }: { item: SiteNavigationElement }) {
   const { url, name, children } = item;
@@ -11,7 +12,10 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
   return (
     <li
-      class="group flex items-center "
+      class={clx(
+        "group flex items-center px-4",
+        "first:!pr-4 first:!pl-0 last:!pl-4 last:!pr-0",
+      )}
       style={{ height: NAVBAR_HEIGHT_DESKTOP }}
     >
       <a
@@ -23,9 +27,15 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
 
       {children && children.length > 0 && (
         <div
-          class="fixed hidden hover:flex text-xs group-hover:flex bg-white z-40 max-h-[70vh] items-start justify-center gap-5  max-w-[1440px] !overflow-auto custom-scroll  mx-auto top-[-15px]  w-full left-1/2 -translate-x-1/2"
+          class={clx(
+            "text-xs bg-white z-40 max-h-[70vh] !overflow-auto custom-scroll mx-auto",
+            "items-start justify-center gap-5  max-w-[1440px] w-full",
+            "opacity-0 group-hover:opacity-100 transition-opacity",
+            "pointer-events-none group-hover:pointer-events-auto",
+            "fixed left-1/2 -translate-x-1/2",
+          )}
           style={{
-            marginTop: HEADER_HEIGHT_DESKTOP,
+            top: HEADER_HEIGHT_DESKTOP,
           }}
         >
           {image?.url && (
@@ -38,9 +48,9 @@ function NavItem({ item }: { item: SiteNavigationElement }) {
               loading="lazy"
             />
           )}
-          <ul class="flex items-start justify-start gap-6 container">
+          <ul class="flex items-start justify-start gap-6 px-14 py-4 w-full">
             {children.map((node) => (
-              <li class="p-4">
+              <li>
                 <a
                   class="hover:underline  text-center "
                   href={node.url}

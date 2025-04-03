@@ -3619,6 +3619,9 @@ details.collapse summary::-webkit-details-marker {
   white-space: nowrap;
   border-width: 0;
 }
+.pointer-events-none {
+  pointer-events: none;
+}
 .invisible {
   visibility: hidden;
 }
@@ -3714,9 +3717,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .top-4 {
   top: 1rem;
-}
-.top-\[-15px\] {
-  top: -15px;
 }
 .top-\[41px\] {
   top: 41px;
@@ -4432,6 +4432,9 @@ details.collapse summary::-webkit-details-marker {
 .max-w-\[80px\] {
   max-width: 80px;
 }
+.max-w-\[900px\] {
+  max-width: 900px;
+}
 .max-w-\[980px\] {
   max-width: 980px;
 }
@@ -4978,6 +4981,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .p-0 {
   padding: 0px;
+}
+.p-0\.5 {
+  padding: 0.125rem;
 }
 .p-1 {
   padding: 0.25rem;
@@ -5927,6 +5933,12 @@ details.collapse summary::-webkit-details-marker {
 .first\:ml-4:first-child {
   margin-left: 1rem;
 }
+.first\:\!pl-0:first-child {
+  padding-left: 0px !important;
+}
+.first\:\!pr-4:first-child {
+  padding-right: 1rem !important;
+}
 .first\:pl-0:first-child {
   padding-left: 0px;
 }
@@ -5951,14 +5963,17 @@ details.collapse summary::-webkit-details-marker {
 .last\:mr-7:last-child {
   margin-right: 1.75rem;
 }
+.last\:\!pl-4:last-child {
+  padding-left: 1rem !important;
+}
+.last\:\!pr-0:last-child {
+  padding-right: 0px !important;
+}
 .last\:pr-0:last-child {
   padding-right: 0px;
 }
 .last\:pr-5:last-child {
   padding-right: 1.25rem;
-}
-.hover\:flex:hover {
-  display: flex;
 }
 .hover\:scale-125:hover {
   --tw-scale-x: 1.25;
@@ -6063,8 +6078,8 @@ details.collapse summary::-webkit-details-marker {
 .group[open] .group-open\:font-semibold {
   font-weight: 600;
 }
-.group:hover .group-hover\:flex {
-  display: flex;
+.group:hover .group-hover\:pointer-events-auto {
+  pointer-events: auto;
 }
 .group:hover .group-hover\:-translate-x-40 {
   --tw-translate-x: -10rem;
@@ -6136,12 +6151,12 @@ details.collapse summary::-webkit-details-marker {
 }
 @media not all and (min-width: 768px) {
 
-  .max-md\:h-10 {
-    height: 2.5rem;
+  .max-md\:h-\[29px\] {
+    height: 29px;
   }
 
-  .max-md\:w-14 {
-    width: 3.5rem;
+  .max-md\:w-\[47px\] {
+    width: 47px;
   }
 
   .max-md\:scale-125 {
@@ -6326,10 +6341,6 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:items-end {
     align-items: flex-end;
-  }
-
-  .sm\:items-center {
-    align-items: center;
   }
 
   .sm\:justify-center {
@@ -6603,6 +6614,10 @@ details.collapse summary::-webkit-details-marker {
   .md\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .md\:pl-14 {
+    padding-left: 3.5rem;
   }
 
   .md\:pt-0 {

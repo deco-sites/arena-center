@@ -39,11 +39,11 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
     "
     >
       <div class="flex justify-center">
-        <Slider class="carousel carousel-center  gap-6  text-accent">
+        <Slider class="gap-6 text-accent max-w-[900px]">
           {alerts.map((alert, index) => (
             <Slider.Item
               index={index}
-              class="carousel-item  flex items-center justify-center mx-auto lg:w-[800px]"
+              class="flex items-center justify-center mx-auto lg:w-[800px]"
             >
               <span
                 class="px-2 lg:px-5 py-2 text-center lg:text-base font-bold text-accent-content text-[12px]"
@@ -93,7 +93,7 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
             ))}
         </div>
       </div>
-      <Slider.JS rootId={id} interval={interval && interval * 1e3} />
+      <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
     </div>
   );
 }
