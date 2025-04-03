@@ -22,8 +22,8 @@ interface Props {
   class?: string;
 }
 
-const WIDTH = 295;
-const HEIGHT = 378;
+const WIDTH = 1000;
+const HEIGHT = 1000;
 const ASPECT_RATIO = `${WIDTH} / ${HEIGHT}`;
 
 function ProductCard({
