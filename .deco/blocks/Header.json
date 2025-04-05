@@ -741,7 +741,6 @@
       "url": "/decoracao",
       "children": [
         {
-          "image": [],
           "children": [
             {
               "image": [],
@@ -769,7 +768,8 @@
             }
           ],
           "url": "/decoracao/almofadas-e-mantas",
-          "name": "Almofadas e Mantas"
+          "name": "Almofadas e Mantas",
+          "image": null
         },
         {
           "image": [],
