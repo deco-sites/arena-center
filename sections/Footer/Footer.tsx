@@ -106,8 +106,9 @@ function Footer({
                         />
                       )}
                     <a
-                      class={`text-[10px] ${bold ? "font-medium" : "font-normal"
-                        }`}
+                      class={`text-[10px] ${
+                        bold ? "font-medium" : "font-normal"
+                      }`}
                       href={href}
                     >
                       {title}
@@ -170,7 +171,9 @@ function Footer({
             ))}
           </div>
         </ul>
-        <div class="mx-12 flex justify-center"> <span class="text-xs font-normal text-base-400">{trademark}</span></div>
+        <div class="mx-12 flex justify-center">
+          <span class="text-xs font-normal text-base-400">{trademark}</span>
+        </div>
         <div class="flex flex-col sm:flex-row gap-12 justify-between items-start sm:items-center">
           <ul class="flex gap-4">
           </ul>
@@ -187,19 +190,21 @@ function Footer({
               </li>
             ))}
             <div class="flex flex-col flex-nowrap items-center justify-between sm:justify-center gap-4">
-
-              {logo && logo?.length > 0 && <div class="flex items-center justify-center gap-4">
-                {logo?.map((item) => (
-                  <a href={item.href} target="_blank">
-                    <Image
-                      class="object-contain"
-                      src={item.img}
-                      width={57}
-                      height={24}
-                      loading="lazy" />
-                  </a>
-                ))}
-              </div>}
+              {logo && logo?.length > 0 && (
+                <div class="flex items-center justify-center gap-4">
+                  {logo?.map((item) => (
+                    <a href={item.href} target="_blank">
+                      <Image
+                        class="object-contain"
+                        src={item.img}
+                        width={57}
+                        height={24}
+                        loading="lazy"
+                      />
+                    </a>
+                  ))}
+                </div>
+              )}
             </div>
           </ul>
         </div>

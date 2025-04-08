@@ -42,9 +42,9 @@ function Logos({ images }: Props) {
                   <a href={item.href}>
                     <Image
                       src={item.image}
-                      width={112}
-                      height={112}
-                      class="h-28 w-28"
+                      width={224}
+                      height={224}
+                      class="h-28 w-28 lg:h-[186px] lg:w-[186px]"
                     />
                   </a>
                 </div>
