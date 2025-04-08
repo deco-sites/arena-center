@@ -3579,9 +3579,6 @@ details.collapse summary::-webkit-details-marker {
 .bottom-\[15\%\] {
   bottom: 15%;
 }
-.bottom-\[25\%\] {
-  bottom: 25%;
-}
 .bottom-\[7\%\] {
   bottom: 7%;
 }
@@ -3938,6 +3935,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-16 {
   height: 4rem;
+}
+.h-28 {
+  height: 7rem;
 }
 .h-3 {
   height: 0.75rem;

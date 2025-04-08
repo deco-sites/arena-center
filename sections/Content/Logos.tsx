@@ -29,7 +29,7 @@ function Logos({ images }: Props) {
         }}
       >
         <div class="col-span-3 col-start-1 row-span-1 mx-auto row-start-1 px-6 md:px-0 lg:max-w-[1200px] w-full">
-          <Slider class="gap-10 lg:gap-16 lg:w-full w-[330px]">
+          <Slider class="gap-6 lg:gap-16 lg:w-full w-[330px]">
             {images?.map((item, index) => (
               <Slider.Item
                 index={index}
@@ -42,9 +42,9 @@ function Logos({ images }: Props) {
                   <a href={item.href}>
                     <Image
                       src={item.image}
-                      width={0}
-                      height={48}
-                      class=" h-12 w-auto"
+                      width={112}
+                      height={112}
+                      class="h-28 w-28"
                     />
                   </a>
                 </div>
@@ -52,12 +52,12 @@ function Logos({ images }: Props) {
             ))}
           </Slider>
         </div>
-        <div class="relative bottom-[25%] z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center lg:right-12 right-1">
+        <div class="relative top-1/2 -translate-y-1/2 z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center lg:right-12 right-1">
           <Slider.PrevButton class="flex disabled:opacity-40 no-animation">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
-        <div class="relative bottom-[25%] z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center lg:left-12 left-1">
+        <div class="relative top-1/2 -translate-y-1/2 z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center lg:left-12 left-1">
           <Slider.NextButton class="flex disabled:opacity-40 no-animation">
             <Icon id="chevron-right" class="text-accent-content" />
           </Slider.NextButton>
