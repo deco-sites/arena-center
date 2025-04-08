@@ -24,9 +24,9 @@
             "alt": "Prato e talheres com um fundo bege"
           },
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-            "alt": "promocao arena center",
-            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
+            "desktop": "https://assets.decocache.com/arena-center/13632c4a-123a-4b98-a3d9-2e519676a9fd/Banner-HomePage.png",
+            "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png",
+            "alt": "Campanha dia das Mães"
           }
         ],
         "interval": 5
@@ -487,8 +487,8 @@
         "images": [
           {
             "image": "https://assets.decocache.com/arena-center/e0ee11d0-b8ac-4b61-ad20-78b09cbe7a64/mart.png",
-            "alt": "/",
-            "href": "/"
+            "alt": "/mart",
+            "href": "/mart"
           },
           {
             "image": "https://assets.decocache.com/arena-center/56ee8960-8218-48fa-98cf-cd6e88c250df/tramontina.png",
