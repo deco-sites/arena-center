@@ -91,7 +91,7 @@
     },
     "socialItems": [
       {
-        "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/61ca5b80-f920-4f33-8850-3ebcfea8d044/Instagram-(1).png",
+        "image": "https://assets.decocache.com/arena-center/66fcd724-fa51-4a1a-8789-7c3bed0dc725/IN-Branco.png",
         "alt": "instagram",
         "href": "https://www.instagram.com/arenacenteroficial/"
       }
@@ -249,16 +249,5 @@
     "label": "teste",
     "placeholder": "placeholder"
   },
-  "logo": [
-    {
-      "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b0ace67c-e6a2-42ad-a8d2-a34c6e897515/image.svg",
-      "href": "https://deco.cx",
-      "alt": "deco"
-    },
-    {
-      "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/85cfff4c-5123-4e46-b9e1-042ab88e4830/tec3.svg",
-      "href": "https://tec3commerce.com.br/",
-      "alt": "tec3"
-    }
-  ]
+  "logo": []
 }
