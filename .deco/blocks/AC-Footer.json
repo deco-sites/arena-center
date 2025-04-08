@@ -91,7 +91,7 @@
     },
     "socialItems": [
       {
-        "image": "https://assets.decocache.com/arena-center/47ebe103-d4cd-4085-9219-b93a6c839416/icons8-instagram-256.png",
+        "image": "https://assets.decocache.com/arena-center/8ca164fa-3e53-4566-9cb8-2f28e3a9ba58/Icone-Branco-IN.jpg",
         "alt": "instagram",
         "href": "https://www.instagram.com/arenacenteroficial/"
       }
@@ -156,36 +156,6 @@
         }
       ],
       "paymentTitle": "Cartões de crédito"
-    },
-    {
-      "payment": [
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a3c91402-5e8b-4e0c-b46a-8f72f55dec28/LogosMastercard.png",
-          "alt": "mastercard"
-        },
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/30f98da4-f1c1-464c-ac8c-d8edc722ad1d/LogosVisa.png",
-          "alt": "visa"
-        },
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fcfc1078-bfe5-44a2-9596-b7085e611ff7/elo.png",
-          "alt": "Elo"
-        }
-      ],
-      "paymentTitle": "Cartões de Débito"
-    },
-    {
-      "payment": [
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/631174e0-fa01-493b-9587-64e7daf86bfb/pix2x.png.png",
-          "alt": "pix"
-        },
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/64c2fb38-a5d8-4607-bd1c-739d817f22e5/boleto.png",
-          "alt": "boleto"
-        }
-      ],
-      "paymentTitle": "Outros"
     }
   ],
   "policies": [
@@ -212,7 +182,7 @@
     },
     "consentText": "Ao se inscrever, você está aceitando nossa Política de Privacidade."
   },
-  "trademark": "Copyright  LOREN IPSUM - 2024. Todos os direitos reservados.",
+  "trademark": "Copyright  Loja Arena Center - 2025. Todos os direitos reservados.",
   "contact": [
     {
       "text": "titulo",

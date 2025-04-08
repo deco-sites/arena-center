@@ -1,0 +1,14 @@
+{
+  "__resolveType": "site/sections/Header/Header.tsx",
+  "alerts": [],
+  "contacts": [],
+  "searchbar": {
+    "placeholder": "What are you looking for?",
+    "loader": {
+      "__resolveType": "resolved"
+    }
+  },
+  "logo": {},
+  "logoDesktop": {},
+  "loading": "eager"
+}
