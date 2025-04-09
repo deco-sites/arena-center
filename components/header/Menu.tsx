@@ -19,7 +19,7 @@ function MenuItem({ item }: { item: SiteNavigationElement }) {
         type="checkbox"
         class="w-12 ml-auto"
       />
-      <a class="collapse-title text-left" href={item.url}>
+      <a class="collapse-title font-bold text-black text-left" href={item.url}>
         {item.name}
       </a>
       <div class="collapse-content">

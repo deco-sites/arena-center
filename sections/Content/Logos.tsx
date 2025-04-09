@@ -23,7 +23,7 @@ function Logos({ images }: Props) {
     <Section.Container class="w-full overflow-x-hidden">
       <div
         id={id}
-        class="grid grid-rows-1 w-[full] lg:max-w-[1300px] mx-auto h-[96px] mt-5 "
+        class="grid grid-rows-1 w-[full] lg:max-w-[1300px] mx-auto mt-5 "
         style={{
           gridTemplateColumns: "min-content 1fr min-content",
         }}
@@ -52,12 +52,12 @@ function Logos({ images }: Props) {
             ))}
           </Slider>
         </div>
-        <div class="relative top-1/2 -translate-y-1/2 z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center lg:right-12 right-1">
+        <div class="relative z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center lg:right-12 -left-3">
           <Slider.PrevButton class="flex disabled:opacity-40 no-animation">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
         </div>
-        <div class="relative top-1/2 -translate-y-1/2 z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center lg:left-12 left-1">
+        <div class="relative z-10 col-span-1 col-start-3 row-span-1 row-start-1 p-2 self-center lg:left-12 -right-3">
           <Slider.NextButton class="flex disabled:opacity-40 no-animation">
             <Icon id="chevron-right" class="text-accent-content" />
           </Slider.NextButton>
