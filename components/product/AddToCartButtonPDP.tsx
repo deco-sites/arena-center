@@ -11,8 +11,10 @@ export interface Props extends JSX.HTMLAttributes<HTMLButtonElement> {
   item: AnalyticsItem;
   inputQuantityId: string;
 }
-const onClick = ({ inputQuantityId }: {inputQuantityId: string}) => {
-  const inputQuantity = document.getElementById(inputQuantityId) as HTMLInputElement;
+const onClick = ({ inputQuantityId }: { inputQuantityId: string }) => {
+  const inputQuantity = document.getElementById(
+    inputQuantityId,
+  ) as HTMLInputElement;
   event?.stopPropagation();
   const button = event?.currentTarget as HTMLButtonElement | null;
   const container = button!.closest<HTMLDivElement>("div[data-cart-item]")!;
@@ -99,7 +101,9 @@ function AddToCartButton(props: Props) {
             "flex-grow uppercase btn btn-secondary min-h-0 h-7 !text-base-100 bg-secondary",
             _class?.toString(),
           )}
-          hx-on:click={useScript(onClick, {inputQuantityId:"productDetailValue"})}
+          hx-on:click={useScript(onClick, {
+            inputQuantityId: "productDetailValue",
+          })}
           disabled={false}
         >
           comprar
@@ -126,7 +130,9 @@ function AddToCartButton(props: Props) {
             "flex-grow uppercase btn btn-outline no-animation w-full",
             _class?.toString(),
           )}
-          hx-on:click={useScript(onClick, {inputQuantityId:"productDetailValue"})}
+          hx-on:click={useScript(onClick, {
+            inputQuantityId: "productDetailValue",
+          })}
           disabled={false}
         >
           Adicionar ao carrinho

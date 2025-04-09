@@ -27,7 +27,7 @@ const removeItemHandler = () => {
 function CartItem({ item, index, locale, currency }: Props) {
   const { image, listPrice, price = Infinity, quantity } = item;
   const isGift = price < 0.01;
-  const hasDiscount = listPrice !== price
+  const hasDiscount = listPrice !== price;
   // deno-lint-ignore no-explicit-any
   const name = (item as any).item_name;
   return (
@@ -65,9 +65,11 @@ function CartItem({ item, index, locale, currency }: Props) {
 
         {/* Price Block */}
         <div class="flex items-center gap-2">
-          {hasDiscount && <span class="line-through text-sm">
-            {formatPrice(listPrice, currency, locale)}
-          </span>}
+          {hasDiscount && (
+            <span class="line-through text-sm">
+              {formatPrice(listPrice, currency, locale)}
+            </span>
+          )}
           <span class="text-sm text-secondary">
             {isGift ? "Grátis" : formatPrice(price, currency, locale)}
           </span>

@@ -117,8 +117,9 @@ function Footer(
                         <Image src={icon} width={22} height={22} alt={title} />
                       )}
                       <a
-                        class={`text-[10px] ${bold ? "font-medium" : "font-normal"
-                          }`}
+                        class={`text-[10px] ${
+                          bold ? "font-medium" : "font-normal"
+                        }`}
                         href={href}
                       >
                         {title}
@@ -153,8 +154,9 @@ function Footer(
                             />
                           )}
                           <a
-                            class={`text-[10px] ${bold ? "font-medium" : "font-normal"
-                              }`}
+                            class={`text-[10px] ${
+                              bold ? "font-medium" : "font-normal"
+                            }`}
                             href={href}
                           >
                             {title}
