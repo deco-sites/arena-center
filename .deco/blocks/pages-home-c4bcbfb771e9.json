@@ -101,32 +101,37 @@
       ],
       "categoryItems": [
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "Sala de Jantar",
-          "link": "/sala-de-jantar"
+          "image": "https://assets.decocache.com/arena-center/f5fe7596-9e82-41ab-9435-9de4e19b7d64/decor-ok.png",
+          "paragraph": "Decoração com Alma",
+          "link": "/decoracao"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/801ed0d0-8519-4f9b-8e4d-6869d90602aa/cama2.png",
-          "paragraph": "Quarto ",
-          "link": "/"
+          "image": "https://assets.decocache.com/arena-center/c4c18bb3-bbd2-4c06-81fc-bb04b57073f0/SALA.png",
+          "link": "/sala",
+          "paragraph": "Sala com Estilo"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/70c738dc-f41f-4eff-ba5a-8e02f16a664e/SALA.png",
-          "paragraph": "Sala de estar",
-          "link": "/"
+          "image": "https://assets.decocache.com/arena-center/2ed1c547-bb98-454c-b8ab-7729ebd21795/Design-sem-nome.png",
+          "paragraph": "Elegância à Mesa",
+          "link": "/mesa-posta"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/3832191e-1b3f-4307-bbba-0f06bee49264/garrafa.png",
-          "paragraph": "Decoração",
-          "link": "/"
+          "image": "https://assets.decocache.com/arena-center/e8846cea-1adf-4c9b-8983-817f2fb17275/cozinha-ok.png",
+          "paragraph": "Cozinha Prática",
+          "link": "/cozinha"
         },
         {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0e041b6-98a4-496c-95c4-dab63c775ef4/11.png",
-          "paragraph": "test",
-          "link": "/"
+          "image": "https://assets.decocache.com/arena-center/b6bf4fdc-c695-4bf6-983f-8cc3462a54aa/quarto-ok.png",
+          "paragraph": "Quarto Aconchegante",
+          "link": "/quarto"
+        },
+        {
+          "paragraph": "Banheiro Clean",
+          "link": "/banheiro",
+          "image": "https://assets.decocache.com/arena-center/45bd6eb8-7f67-46fb-a299-d53286785f94/banheiro-ok.png"
         }
       ],
-      "itemListName": "POR QUAL AMBIENTE VOCÊ QUER COMEÇAR?"
+      "itemListName": "ESCOLHA POR AMBIENTE"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
