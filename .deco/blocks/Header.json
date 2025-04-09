@@ -185,12 +185,6 @@
             {
               "image": [],
               "children": [],
-              "name": "Copos com Canudo",
-              "url": "/bar/copos-e-canecas/copos-com-canudo"
-            },
-            {
-              "image": [],
-              "children": [],
               "name": "Copos de Shot",
               "url": "/bar/copos-e-canecas/copos-de-shot"
             },
@@ -201,8 +195,8 @@
               "url": "/bar/copos-e-canecas/copos-de-whisky"
             },
             {
-              "children": [],
               "image": null,
+              "children": [],
               "name": "Copos Long Drink",
               "url": "/bar/copos-e-canecas/copos-long-drink"
             }
@@ -753,18 +747,6 @@
               "children": [],
               "url": "/decoracao/almofadas-e-mantas/capas-de-almofadas",
               "name": "Capas de Almofadas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/almofadas-e-mantas/enchimento-para-almofadas",
-              "name": "Enchimento para almofadas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/almofadas-e-mantas/mantas-para-sofa",
-              "name": "Mantas para sofá"
             }
           ],
           "url": "/decoracao/almofadas-e-mantas",
@@ -826,20 +808,8 @@
             {
               "children": [],
               "image": [],
-              "name": "Papéis de Parede",
-              "url": "/decoracao/decoracao-de-parede/papeis-de-parede"
-            },
-            {
-              "children": [],
-              "image": [],
-              "name": "Prateleiras",
-              "url": "/decoracao/decoracao-de-parede/prateleiras"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/decoracao/decoracao-de-parede/relogios-de-parede",
-              "name": "Relógios de Parede"
+              "name": "Relógios de Parede",
+              "url": "/decoracao/decoracao-de-parede/relogios-de-parede"
             }
           ],
           "name": "Decoração de Parede",
@@ -1303,18 +1273,6 @@
               "children": [],
               "url": "/mesa-posta/mesa-textil-e-acessorios/sousplat",
               "name": "Sousplat"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/mesa-textil-e-acessorios/toalhas-mesa",
-              "name": "Toalhas Mesa"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/mesa-posta/mesa-textil-e-acessorios/trilhos-mesa",
-              "name": "Trilhos Mesa"
             }
           ],
           "image": [],
@@ -1415,12 +1373,6 @@
             {
               "image": [],
               "children": [],
-              "url": "/organizacao/organizacao-banheiro-e-lavabo/balancas-de-banheiro",
-              "name": "Balanças de Banheiro"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/organizacao/organizacao-banheiro-e-lavabo/bandejas-de-lavabo",
               "name": "Bandejas de Lavabo"
             },
@@ -1482,12 +1434,6 @@
             {
               "image": [],
               "children": [],
-              "url": "/organizacao/organizacao-closets/cabides",
-              "name": "Cabides"
-            },
-            {
-              "image": [],
-              "children": [],
               "url": "/organizacao/organizacao-closets/caixas-organizadoras",
               "name": "Caixas Organizadoras"
             },
@@ -1521,18 +1467,6 @@
               "children": [],
               "url": "/organizacao/organizacao-lavanderia/cestos-de-roupas",
               "name": "Cestos de Roupas"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/organizacao/organizacao-lavanderia/tabua-de-passar",
-              "name": "Tábua de Passar"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/organizacao/organizacao-lavanderia/varal-roupas",
-              "name": "Varal Roupas"
             }
           ],
           "name": "Organização Lavanderia",
@@ -1541,12 +1475,6 @@
         {
           "image": [],
           "children": [
-            {
-              "image": [],
-              "children": [],
-              "url": "/organizacao/utensilios-de-limpeza/bacias",
-              "name": "Bacias"
-            },
             {
               "image": [],
               "children": [],
@@ -1564,12 +1492,6 @@
               "children": [],
               "url": "/organizacao/utensilios-de-limpeza/kit-limpeza",
               "name": "Kit Limpeza"
-            },
-            {
-              "image": [],
-              "children": [],
-              "url": "/organizacao/utensilios-de-limpeza/mop",
-              "name": "Mop"
             }
           ],
           "url": "/organizacao/utensilios-de-limpeza",
