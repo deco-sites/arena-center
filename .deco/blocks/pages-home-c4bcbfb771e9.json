@@ -341,16 +341,15 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
               "tags": [
-                "decoracao"
+                "o-amor-esta-a-mesa"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 10
+              "count": 12
             },
-            "title": "Decoração",
+            "title": "O Amor Está à Mesa",
             "image": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png",
-              "alt": "decoracao",
               "href": "/"
             }
           },
@@ -359,13 +358,13 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
               "tags": [
-                "sala"
+                "cafe-com-ternura"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 10
+              "count": 12
             },
-            "title": "Sala",
+            "title": "Café com Ternura",
             "image": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
             }
@@ -375,13 +374,13 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
               "tags": [
-                "banheiro"
+                "memoria-afetiva"
               ],
               "typeTags": [],
               "ids": [],
               "count": 12
             },
-            "title": "banheiro",
+            "title": "Memória Afetiva",
             "image": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ed4bd4d0-c290-48f1-a5cc-68fc5a2a8436/Rectangle-147.png"
             }
@@ -391,30 +390,30 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
               "tags": [
-                "cozinha"
+                "encanto-e-delicadeza"
               ],
               "typeTags": [],
               "ids": [],
               "count": 12
             },
-            "title": "cozinha",
+            "title": "Encanto e Delicadeza",
             "image": {
               "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
             }
           },
           {
-            "products": [],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
+            "image": {},
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "aromas-que-acolhem"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 12
             },
-            "title": "Home Office"
-          },
-          {
-            "products": [],
-            "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
-            },
-            "title": "ÀREA EXTERNA"
+            "title": "Aromas que Acolhem"
           }
         ],
         "index": 0
