@@ -145,14 +145,15 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest"
+          "sort": "newest",
+          "term": "/decoracao"
         },
-        "title": "OS MAIS PROCURADOS",
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
         "count": 10,
+        "title": "OS MAIS VENDIDOS EM DECORAÇÃO",
         "cta": "/decoracao"
       },
       "title": "OS MAIS VENDIDOS"
@@ -220,13 +221,14 @@
           "__resolveType": "vnda/loaders/productList.ts",
           "count": 12,
           "tags": [
-            "decoracao"
+            "/decoracao"
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest"
+          "sort": "newest",
+          "term": "/decoracao"
         },
-        "title": "OS MAIS PROCURADOS",
+        "title": "OS MAIS VENDIDOS EM DECORAÇÃO",
         "sort": "newest",
         "tags": [],
         "typeTags": [],
@@ -348,7 +350,7 @@
             },
             "title": "O Amor Está à Mesa",
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png",
+              "src": "https://assets.decocache.com/arena-center/2dff33fd-3dee-4257-aa4d-009e59531b8a/ChatGPT-Image-9-de-abr.-de-2025-16_07_11.png",
               "href": "/"
             }
           },
@@ -365,7 +367,7 @@
             },
             "title": "Café com Ternura",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/ac2981bf-b563-4db9-be40-01f5e535811f/ChatGPT-Image-10-de-abr.-de-2025-09_51_05.png"
+              "src": "https://assets.decocache.com/arena-center/44bc254e-708c-4bde-8ac2-d2575278dece/ChatGPT-Image-9-de-abr.-de-2025-16_07_13-(2).png"
             }
           },
           {
@@ -402,7 +404,7 @@
           },
           {
             "image": {
-              "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png"
+              "src": "https://assets.decocache.com/arena-center/c6327550-ae16-4e55-a09d-2d7e898a694d/AROMAS.png"
             },
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
@@ -418,7 +420,7 @@
           }
         ],
         "index": 0,
-        "title": "Emoção em cada Detalhe"
+        "title": "INSPIRAÇÕES PARA SURPREENDER E EMOCIONAR"
       }
     },
     {
