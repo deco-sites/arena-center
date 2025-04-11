@@ -137,56 +137,35 @@
     {
       "payment": [
         {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a3c91402-5e8b-4e0c-b46a-8f72f55dec28/LogosMastercard.png",
-          "alt": "mastercard"
-        },
-        {
           "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/30f98da4-f1c1-464c-ac8c-d8edc722ad1d/LogosVisa.png",
           "alt": "visa"
         },
         {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5018d59a-5ba7-4cfc-8d2c-cdcb88e1ed1e/hiper.png",
-          "alt": "hiper"
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/a3c91402-5e8b-4e0c-b46a-8f72f55dec28/LogosMastercard.png",
+          "alt": "mastercard"
         },
         {
           "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/fcfc1078-bfe5-44a2-9596-b7085e611ff7/elo.png",
           "alt": "elo"
         },
         {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ba659bc8-9a12-4d63-a8f6-39cc29c14a26/diiner.png",
-          "alt": "Diners"
-        },
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/efec2904-4f59-4bb3-97b8-e0480cefa296/SoroCred.jpg",
-          "alt": "soroCred"
-        },
-        {
           "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/668a1f99-01db-419a-9ab6-cf7fe6b9350d/ameriicansvg.svg",
           "alt": "american express"
+        },
+        {
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/5018d59a-5ba7-4cfc-8d2c-cdcb88e1ed1e/hiper.png",
+          "alt": "hiper"
         },
         {
           "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/cdc7ddf9-dbca-415b-8db8-5808152acedf/LogosHipercard.png",
           "alt": "hipercard"
         },
         {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/77382630-48f3-4390-aa70-72d3edbf6ce8/jcb.jpg",
-          "alt": "jcb"
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ba659bc8-9a12-4d63-a8f6-39cc29c14a26/diiner.png",
+          "alt": "Diners"
         },
         {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/7fd85362-e232-4763-b9a0-8deaba3389f8/banes.png",
-          "alt": "banes"
-        },
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ab5a8aaf-38d2-4421-9b4a-58490095d03b/cabal.png",
-          "alt": "bal"
-        },
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/672dcdca-047b-40a6-bd14-8830909562ae/mais.png",
-          "alt": "mais!"
-        },
-        {
-          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/e569a2d8-1549-4c2a-8641-5029b1987fe6/Credz.png",
-          "alt": "Credz"
+          "img": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/631174e0-fa01-493b-9587-64e7daf86bfb/pix2x.png.png"
         }
       ],
       "paymentTitle": "Cartões de crédito"
