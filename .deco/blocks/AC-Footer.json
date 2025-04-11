@@ -141,12 +141,11 @@
     }
   ],
   "newsletterProps": {
-    "placeholder": "digite seu email",
-    "label": "enviar",
+    "placeholder": "Digite seu E-mail",
     "empty": {
       "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
-      "title": "Assine nossa newsletter",
-      "description": "Fique por dentro de nossas novidades e descontos"
+      "description": "Inscreva-se aqui para receber nossas comunicações",
+      "title": "Acompanhe nossas novidades"
     },
     "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
     "success": {
@@ -156,7 +155,8 @@
       "logo": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/de41e126-fd50-480c-b899-168414e9d2a2/Group-275.png",
       "title": "Falha"
     },
-    "consentText": "Ao se inscrever, você está aceitando nossa Política de Privacidade."
+    "consentText": "Ao se inscrever, você está aceitando nossa Política de Privacidade.",
+    "label": "Enviar"
   },
   "trademark": "Copyright  Loja Arena Center - 2025. Todos os direitos reservados.",
   "contact": [
