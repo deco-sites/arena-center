@@ -140,7 +140,7 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 16,
+          "count": 20,
           "tags": [
             "decoracao"
           ],
@@ -220,14 +220,14 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 16,
           "tags": [
             "bar"
           ],
           "typeTags": [],
           "ids": [],
           "term": "bar",
-          "sort": "newest"
+          "sort": "newest",
+          "count": 20
         },
         "sort": "newest",
         "tags": [],
@@ -475,15 +475,15 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "sort": "highest_price",
           "tags": [
             "cozinha"
           ],
           "typeTags": [],
           "ids": [],
-          "count": 16,
+          "count": 20,
           "wildcard": false,
-          "term": "cozinha"
+          "term": "cozinha",
+          "sort": "newest"
         },
         "cta": "/cozinha",
         "title": "OS MAIS VENDIDOS EM COZINHA"
