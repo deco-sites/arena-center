@@ -140,7 +140,7 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 12,
+          "count": 16,
           "tags": [
             "decoracao"
           ],
@@ -154,8 +154,8 @@
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "title": "OS MAIS VENDIDOS EM DECORAÇÃO",
-        "cta": "/decoracao"
+        "cta": "/decoracao",
+        "title": "OS MAIS VENDIDOS EM DECORAÇÃO"
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -220,22 +220,22 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 12,
+          "count": 16,
           "tags": [
-            "/decoracao"
+            "bar"
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
-          "term": "/decoracao"
+          "term": "bar",
+          "sort": "newest"
         },
-        "title": "OS MAIS VENDIDOS EM DECORAÇÃO",
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "cta": "/decoracao"
+        "title": "OS MAIS VENDIDOS EM BAR",
+        "cta": "/bar"
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -475,14 +475,18 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "sort": "newest",
-          "tags": [],
+          "sort": "highest_price",
+          "tags": [
+            "cozinha"
+          ],
           "typeTags": [],
           "ids": [],
-          "count": 4,
-          "wildcard": false
+          "count": 16,
+          "wildcard": false,
+          "term": "cozinha"
         },
-        "title": "PROMOÇÕES IMPERDÍVEIS"
+        "cta": "/cozinha",
+        "title": "OS MAIS VENDIDOS EM COZINHA"
       }
     },
     {
