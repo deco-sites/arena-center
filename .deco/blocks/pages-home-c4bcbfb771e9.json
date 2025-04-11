@@ -163,7 +163,7 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png",
+          "src": "https://assets.decocache.com/arena-center/38891d29-1273-456a-8c76-90beef5ef959/card-1.png",
           "discount": "50%",
           "href": "/",
           "width": 564,
@@ -171,7 +171,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/97673ba1-12bf-4c2d-811a-6f7a7528e5ab/cardtamanhocerto.png",
+          "src": "https://assets.decocache.com/arena-center/0bdd7b8d-378a-4d47-bb69-0602f9279680/card-2.1.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
