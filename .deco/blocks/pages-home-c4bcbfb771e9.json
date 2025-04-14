@@ -163,7 +163,7 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://assets.decocache.com/arena-center/38891d29-1273-456a-8c76-90beef5ef959/card-1.png",
+          "src": "https://assets.decocache.com/arena-center/181f61fa-0de8-4be3-a27e-44f37f29c71e/card-1.png",
           "discount": "50%",
           "href": "/",
           "width": 564,
@@ -171,7 +171,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/0bdd7b8d-378a-4d47-bb69-0602f9279680/card-2.1.png",
+          "src": "https://assets.decocache.com/arena-center/69f603b6-486e-4c9b-baa1-bf6785d5aee7/card-2.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
@@ -179,7 +179,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/37c8f0a7-9c49-45e1-97b9-f2dbd90b8ca5/card-3.png",
+          "src": "https://assets.decocache.com/arena-center/f4eb086c-411d-4500-af79-dac6e284d485/card-3.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
@@ -187,7 +187,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/c4d4a0cc-48d7-473e-bba6-4f5efe49f97d/card-4.png",
+          "src": "https://assets.decocache.com/arena-center/7e542bd1-ea7e-43f1-b4a2-af05d08cd133/card-4.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
