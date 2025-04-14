@@ -198,19 +198,19 @@
       "imagesMobile": [
         {
           "src": "https://assets.decocache.com/arena-center/579b2a2e-95d0-459e-9c51-16fe86daa5bd/card-1-mobi.png",
-          "href": "#"
+          "href": "/"
         },
         {
           "src": "https://assets.decocache.com/arena-center/be1ac9fe-0058-46d3-a9a7-0dc40861d045/card-2-mobi.png",
-          "href": "#"
+          "href": "/"
         },
         {
           "src": "https://assets.decocache.com/arena-center/dca71f5f-5e28-4fab-b875-26d9d056fbf7/card-3-mobi.png",
-          "href": "#"
+          "href": "/"
         },
         {
           "src": "https://assets.decocache.com/arena-center/fa571aed-4f51-4cf2-90e4-f65a1f603795/card-4-mobi.png",
-          "href": "#"
+          "href": "/"
         }
       ]
     },
