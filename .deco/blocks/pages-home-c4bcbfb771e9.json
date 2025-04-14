@@ -179,7 +179,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/f4eb086c-411d-4500-af79-dac6e284d485/card-3.png",
+          "src": "https://assets.decocache.com/arena-center/515d6844-3d12-41f5-ae01-2bdd0d87d73d/card-3.png",
           "discount": "30%",
           "href": "/",
           "width": 564,
@@ -197,19 +197,19 @@
       ],
       "imagesMobile": [
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "src": "https://assets.decocache.com/arena-center/579b2a2e-95d0-459e-9c51-16fe86daa5bd/card-1-mobi.png",
           "href": "#"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "src": "https://assets.decocache.com/arena-center/be1ac9fe-0058-46d3-a9a7-0dc40861d045/card-2-mobi.png",
           "href": "#"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "src": "https://assets.decocache.com/arena-center/dca71f5f-5e28-4fab-b875-26d9d056fbf7/card-3-mobi.png",
           "href": "#"
         },
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
+          "src": "https://assets.decocache.com/arena-center/fa571aed-4f51-4cf2-90e4-f65a1f603795/card-4-mobi.png",
           "href": "#"
         }
       ]
