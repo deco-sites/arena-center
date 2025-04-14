@@ -163,16 +163,16 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://assets.decocache.com/arena-center/161a38db-5ab7-4014-a10b-a65b73a0550b/Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px).png",
-          "discount": "50%",
+          "src": "https://assets.decocache.com/arena-center/23c88e01-5b6b-439d-96e3-6f0d3f9b15c1/Copia-de-Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px).png",
+          "discount": "30%",
           "href": "/",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/23c88e01-5b6b-439d-96e3-6f0d3f9b15c1/Copia-de-Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px).png",
-          "discount": "30%",
+          "src": "https://assets.decocache.com/arena-center/161a38db-5ab7-4014-a10b-a65b73a0550b/Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px).png",
+          "discount": "50%",
           "href": "/",
           "width": 564,
           "height": 705,
@@ -197,19 +197,19 @@
       ],
       "imagesMobile": [
         {
-          "src": "https://assets.decocache.com/arena-center/c5d64aad-37bc-4443-9ac4-a74595dabb6c/b2885d.png",
+          "src": "https://assets.decocache.com/arena-center/23c88e01-5b6b-439d-96e3-6f0d3f9b15c1/Copia-de-Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px).png",
           "href": "/"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/3aee07a1-5dcb-48e2-b001-10e01b9d69aa/Copia-de-b2885d.png",
+          "src": "https://assets.decocache.com/arena-center/161a38db-5ab7-4014-a10b-a65b73a0550b/Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px).png",
           "href": "/"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/314123cc-9912-41ee-b2da-cdbff84bca05/Copia-de-Copia-de-Copia-de-b2885d.png",
+          "src": "https://assets.decocache.com/arena-center/7ae8e8f8-9549-475e-b010-c9d30ae97752/Copia-de-Copia-de-Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px).png",
           "href": "/"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/c1d6d0ab-bc04-4d1e-ac62-77f32d5156e7/Copia-de-Copia-de-b2885d.png",
+          "src": "https://assets.decocache.com/arena-center/a82e7155-1c79-4dfe-b640-5f697919d74b/Copia-de-Copia-de-Palestra-em-live-ao-vivo-elegante-moderno-bege-verde-story-do-instagram-(588-x-1250-px)-(1).png",
           "href": "/"
         }
       ]
