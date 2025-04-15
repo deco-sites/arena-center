@@ -28,7 +28,8 @@
             "mobile": "https://data.decoassets.com/arena-center/9299213b-6f49-4e23-a52b-4606e3e82fc7/arena.png",
             "alt": "Prato e talheres com um fundo bege",
             "action": {}
-          }
+          },
+          {}
         ],
         "interval": 5
       }
@@ -448,12 +449,12 @@
           "mobile": "https://assets.decocache.com/arena-center/2456364f-66ec-43f6-9d0c-b6ed20abbc91/Brown-Simple-Strategic-Working-Plan-Presentation-.png"
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png"
+          "desktop": "https://assets.decocache.com/arena-center/35cba6a9-4b52-48b9-9f1a-c88a442ebdc8/Design-sem-nome-(2).png",
+          "mobile": "https://assets.decocache.com/arena-center/35cba6a9-4b52-48b9-9f1a-c88a442ebdc8/Design-sem-nome-(2).png"
         },
         {
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png"
+          "desktop": "https://assets.decocache.com/arena-center/2370bcc7-b11c-41d8-9905-b4a7b1ac25d2/d486e295-23e3-48dd-96a3-741b66dd6496.png",
+          "mobile": "https://assets.decocache.com/arena-center/2370bcc7-b11c-41d8-9905-b4a7b1ac25d2/d486e295-23e3-48dd-96a3-741b66dd6496.png"
         }
       ]
     },
