@@ -243,7 +243,7 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://assets.decocache.com/arena-center/59ac7ec0-2e2c-4206-b570-3e95a88d61fe/Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "src": "https://assets.decocache.com/arena-center/50bc7220-d050-4f7f-a004-31ed49386d12/mesa-e-cozinha-bambu-(2).png",
           "discount": "50%",
           "href": "/",
           "width": 564,
@@ -251,7 +251,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/7cfe64e4-a35a-482a-a88a-a0e6213c8a9b/Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "src": "https://assets.decocache.com/arena-center/b37ecff1-effa-475f-ae92-19a7db5ddc8d/Copia-de-mesa-e-cozinha-bambu-(5).png",
           "discount": "30%",
           "href": "/",
           "width": 564,
@@ -277,20 +277,20 @@
       ],
       "imagesMobile": [
         {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
-          "href": "#"
+          "src": "https://assets.decocache.com/arena-center/50bc7220-d050-4f7f-a004-31ed49386d12/mesa-e-cozinha-bambu-(2).png",
+          "href": "/"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/b37ecff1-effa-475f-ae92-19a7db5ddc8d/Copia-de-mesa-e-cozinha-bambu-(5).png",
+          "href": "/"
         },
         {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
-          "href": "#"
+          "href": "/"
         },
         {
           "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
-          "href": "#"
-        },
-        {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f20c6d6b-62ad-440f-89a9-073ef5ac8a91/promotion-mobile.png",
-          "href": "#"
+          "href": "/"
         }
       ]
     },
