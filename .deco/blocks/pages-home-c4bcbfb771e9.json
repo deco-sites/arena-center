@@ -463,8 +463,8 @@
       "section": {
         "__resolveType": "site/sections/WideBannerHome.tsx",
         "images": {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1aa86e54-192a-4b13-8b18-4213c573dfe3/cama-banner2.png"
+          "mobile": "https://assets.decocache.com/arena-center/5124488f-b5b2-45f4-a845-ba67662092bd/desktop-(4).png",
+          "desktop": "https://assets.decocache.com/arena-center/0e9e0a97-6112-4cc6-bb8f-f9de9847d6d0/mobile-(2).png"
         },
         "alt": "banner em promocao",
         "href": "/"
