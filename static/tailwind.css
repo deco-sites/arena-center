@@ -3885,6 +3885,9 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[6px\] {
   margin-top: 6px;
 }
+.mt-\[8px\] {
+  margin-top: 8px;
+}
 .mt-auto {
   margin-top: auto;
 }
@@ -4001,9 +4004,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .h-\[26px\] {
   height: 26px;
-}
-.h-\[28px\] {
-  height: 28px;
 }
 .h-\[29px\] {
   height: 29px;
