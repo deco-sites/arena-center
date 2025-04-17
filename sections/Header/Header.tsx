@@ -204,7 +204,7 @@ const Mobile = ({ logo, searchbar, navItems, loading }: Props) => (
             alt={logo.alt}
             width={logo.width || 100}
             height={logo.height || 28}
-            class="h-[36px] w-auto mt-[8px] max-md:scale-125"
+            class="h-[36px] w-auto mt-[10px] max-md:scale-125"
             fit="contain"
           />
         </a>

@@ -3879,14 +3879,14 @@ details.collapse summary::-webkit-details-marker {
 .mt-\[-40px\] {
   margin-top: -40px;
 }
+.mt-\[10px\] {
+  margin-top: 10px;
+}
 .mt-\[5px\] {
   margin-top: 5px;
 }
 .mt-\[6px\] {
   margin-top: 6px;
-}
-.mt-\[8px\] {
-  margin-top: 8px;
 }
 .mt-auto {
   margin-top: auto;
