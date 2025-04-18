@@ -13,6 +13,7 @@ import Drawer from "../ui/Drawer.tsx";
 import Sort from "./Sort.tsx";
 import { useDevice, useScript, useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
+import { setFilteredUrl } from "site/sdk/processFilters.ts";
 
 export interface Props {
   /** @title Integration */
@@ -203,7 +204,7 @@ function Result(props: SectionProps<typeof loader>) {
       <div
         id={container}
         {...viewItemListEvent}
-        class="max-w-[1440px] mx-auto "
+        class="max-w-[1440px] mx-auto lg:px-14"
       >
         {partial
           ? <PageResult {...props} />
@@ -222,8 +223,29 @@ function Result(props: SectionProps<typeof loader>) {
                         </label>
                       </div>
                       <div class="flex-grow overflow-auto">
-                        <FiltersMobile filters={filters} />
+                        <FiltersMobile url={props.url} filters={filters} />
                       </div>
+                      <button
+                        hx-on:click={useScript(() => {
+                          function getFilteredUrl(): string {
+                            const SESSION_URL_KEY = "filteredUrl";
+                            let url = sessionStorage.getItem(SESSION_URL_KEY);
+                            if (!url) {
+                              sessionStorage.setItem(
+                                SESSION_URL_KEY,
+                                globalThis.window.location.href,
+                              );
+                              url = globalThis.window.location.href;
+                            }
+                            return url;
+                          }
+
+                          globalThis.window.location.href = getFilteredUrl();
+                        })}
+                        class="btn no-animation bg-black text-white btn-block hover:text-white "
+                      >
+                        APLICAR FILTRO
+                      </button>
                     </div>
                   }
                 >
@@ -239,7 +261,7 @@ function Result(props: SectionProps<typeof loader>) {
                 {device === "desktop" && (
                   <div class="flex flex-col lg:flex-row justify-between gap-3 mt-5">
                     <div class="z-30">
-                      <Filters filters={filters} />
+                      <Filters url={props.url} filters={filters} />
                     </div>
                     <div class="flex items-center gap-9 ">
                       <div>{sortBy}</div>
@@ -300,6 +322,13 @@ function Result(props: SectionProps<typeof loader>) {
             </div>
           )}
       </div>
+
+      <script
+        type="module"
+        dangerouslySetInnerHTML={{
+          __html: useScript(setFilteredUrl, props.url),
+        }}
+      />
 
       <script
         type="module"

@@ -4,9 +4,10 @@ import type {
   FilterToggleValue,
   ProductListingPage,
 } from "apps/commerce/types.ts";
-import { parseRange } from "apps/commerce/utils/filters.ts";
-import Avatar from "../../components/ui/Avatar.tsx";
 import { clx } from "../../sdk/clx.ts";
+import { getFiltersByUrl, updateQueryParam } from "site/sdk/processFilters.ts";
+import { useId } from "site/sdk/useId.ts";
+import { useScript } from "@deco/deco/hooks";
 
 export interface CategoryFilter {
   title: string;
@@ -18,18 +19,36 @@ export interface CategoryFilter {
 
 interface Props {
   filters: ProductListingPage["filters"];
+  url: string;
   categoryList?: CategoryFilter;
 }
 
 const isToggle = (filter: Filter): filter is FilterToggle =>
   filter["@type"] === "FilterToggle";
 
-function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
+function ValueItem(
+  { url, selected, label, quantity, windowUrl, filterLabel }:
+    & FilterToggleValue
+    & {
+      windowUrl: string;
+      filterLabel: string;
+    },
+) {
   const startsWithLetter = /^[a-zA-Z]/.test(label);
+  const value = getFiltersByUrl(url, windowUrl);
 
+  const id = useId();
   return (
-    <a href={url} rel="nofollow" class="flex items-center gap-2">
-      <div aria-checked={selected} class="checkbox" />
+    <button
+      hx-on:click={useScript(updateQueryParam, {
+        label: filterLabel,
+        value,
+        id,
+      })}
+      rel="nofollow"
+      class="flex items-center gap-2"
+    >
+      <div id={id} aria-checked={selected} class="checkbox" />
       <span class="text-sm first-letter:uppercase">
         {startsWithLetter ? label.replace("-", " ") : label
           .split("_")
@@ -39,43 +58,33 @@ function ValueItem({ url, selected, label, quantity }: FilterToggleValue) {
           .join(" ~ ")}
       </span>
       {quantity > 0 && <span class="text-sm text-base-400">({quantity})</span>}
-    </a>
+    </button>
   );
 }
 
-function FilterValues({ key, values }: FilterToggle) {
+function FilterValues(
+  { key, values, windowUrl, label }: FilterToggle & { windowUrl: string },
+) {
   const avatars = key === "tamanho" || key === "cor";
   const flexDirection = avatars ? "flex-row items-center" : "flex-col";
 
   return (
     <ul class={clx(`flex flex-wrap gap-2 `, flexDirection)}>
       {values.map((item) => {
-        const { url, selected, value } = item;
-
-        if (avatars) {
-          return (
-            <a href={url} rel="nofollow">
-              <Avatar
-                content={value}
-                variant={selected ? "active" : "default"}
-              />
-            </a>
-          );
-        }
-
-        if (key === "price-range") {
-          const range = parseRange(item.value);
-
-          return range && <ValueItem key={item.url} {...item} />;
-        }
-
-        return <ValueItem key={item.url} {...item} />;
+        return (
+          <ValueItem
+            key={item.url}
+            filterLabel={label}
+            windowUrl={windowUrl}
+            {...item}
+          />
+        );
       })}
     </ul>
   );
 }
 
-function FiltersMobile({ filters, categoryList }: Props) {
+function FiltersMobile({ filters, categoryList, url }: Props) {
   return (
     <div>
       <span class="text-sm font-semibold first-letter:uppercase mt-3">
@@ -96,9 +105,9 @@ function FiltersMobile({ filters, categoryList }: Props) {
             filter.label === "subcategoria-mae" && (
               <li class="flex flex-col gap-4">
                 <span class="text-sm font-semibold first-letter:uppercase">
-                  {filter.label}
+                  Categoria
                 </span>
-                <FilterValues {...filter} />
+                <FilterValues windowUrl={url} {...filter} />
               </li>
             ),
         )}
@@ -111,20 +120,7 @@ function FiltersMobile({ filters, categoryList }: Props) {
                 <span class="text-sm font-semibold first-letter:uppercase">
                   {filter.label}
                 </span>
-                <FilterValues {...filter} />
-              </li>
-            ),
-        )}
-      </ul>
-      <ul class="flex flex-col gap-6 p-4 sm:p-0 mt-6">
-        {filters.filter(isToggle).map(
-          (filter) =>
-            filter.label === "filtro-preco" && (
-              <li class="flex flex-col gap-4">
-                <span class="text-sm font-semibold first-letter:uppercase">
-                  {filter.label}
-                </span>
-                <FilterValues {...filter} />
+                <FilterValues windowUrl={url} {...filter} />
               </li>
             ),
         )}
