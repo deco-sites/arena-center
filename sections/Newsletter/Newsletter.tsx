@@ -97,7 +97,7 @@ function Newsletter({
   return (
     <div class="bg-primary flex flex-col md:flex-row gap-8 items-center md:gap-4 sm:gap-6 w-80% md:px-10 max-w-[1440px] py-5 sm:pb-5 sm:pt-4">
       <Image class="object-contain" src={logo} width={240} height={40} />
-      <div class="flex flex-col pb-1 w-full max-w-[570px] mx-auto">
+      <div class="flex flex-col pb-1 w-full max-w-[570px] lg:ml-[100px]">
         <Notice {...empty} />
         <form
           hx-target="closest section"

@@ -6586,6 +6586,10 @@ details.collapse summary::-webkit-details-marker {
     margin-left: 0.75rem;
   }
 
+  .lg\:ml-\[100px\] {
+    margin-left: 100px;
+  }
+
   .lg\:mr-0 {
     margin-right: 0px;
   }
