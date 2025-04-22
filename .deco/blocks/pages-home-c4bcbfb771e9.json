@@ -165,10 +165,10 @@
         {
           "src": "https://assets.decocache.com/arena-center/10c78dc2-8c5d-497f-b9ea-1d074997e1dd/utensilios-a-partir-de-999.png",
           "discount": "30%",
-          "href": "/",
           "width": 564,
           "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "utensilios-de-cozinha-a-partir-de"
         },
         {
           "src": "https://assets.decocache.com/arena-center/9bfe6cba-1dee-4005-bc2d-093510b19dca/decoracao-a-partir-de-2499.png",
@@ -198,7 +198,7 @@
       "imagesMobile": [
         {
           "src": "https://assets.decocache.com/arena-center/10c78dc2-8c5d-497f-b9ea-1d074997e1dd/utensilios-a-partir-de-999.png",
-          "href": "/"
+          "href": "utensilios-de-cozinha-a-partir-de"
         },
         {
           "src": "https://assets.decocache.com/arena-center/9bfe6cba-1dee-4005-bc2d-093510b19dca/decoracao-a-partir-de-2499.png",
