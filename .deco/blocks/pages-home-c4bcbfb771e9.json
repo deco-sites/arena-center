@@ -171,9 +171,9 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/1cdc13c6-16bb-46ac-91ca-05f0d887b6f8/decoracao-a-partir-de-2499-(1).png",
+          "src": "https://assets.decocache.com/arena-center/9bfe6cba-1dee-4005-bc2d-093510b19dca/decoracao-a-partir-de-2499.png",
           "discount": "50%",
-          "href": "/",
+          "href": "decoracao-a-partir-de",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
@@ -201,8 +201,8 @@
           "href": "/"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/1cdc13c6-16bb-46ac-91ca-05f0d887b6f8/decoracao-a-partir-de-2499-(1).png",
-          "href": "/"
+          "src": "https://assets.decocache.com/arena-center/9bfe6cba-1dee-4005-bc2d-093510b19dca/decoracao-a-partir-de-2499.png",
+          "href": "decoracao-a-partir-de"
         },
         {
           "src": "https://assets.decocache.com/arena-center/c02b2ba2-7357-48f7-a96c-55113bc4d741/outlet-inauguracao-30.png",
