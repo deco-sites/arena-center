@@ -140,14 +140,14 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 20,
+          "count": 16,
           "tags": [
             "decoracao"
           ],
           "typeTags": [],
           "ids": [],
           "sort": "newest",
-          "term": "/decoracao"
+          "term": "os-mais-vendidos-em-decoracao"
         },
         "sort": "newest",
         "tags": [],
