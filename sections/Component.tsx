@@ -1,5 +1,7 @@
-import type { AppContext } from "site/apps/site.ts";
+// deno-lint-ignore-file no-explicit-any
+import { Component, type ComponentType } from "preact";
 import { toFileUrl } from "std/path/mod.ts";
+import type { AppContext } from "../apps/site.ts";
 import { useSection } from "@deco/deco/hooks";
 import { type SectionProps } from "@deco/deco";
 interface Props {
@@ -11,55 +13,91 @@ export type ComponentProps<LoaderFunc, ActionFunc = LoaderFunc> = SectionProps<
   ActionFunc
 >;
 const ROOT = toFileUrl(Deno.cwd()).href;
-export const useComponent = <T extends Record<string, unknown>>(
+export class ErrorBoundary extends Component<{
+  fallback?: ComponentType<{
+    error: Error;
+  }>;
+}, {
+  error: Error | null;
+}> {
+  state = { error: null };
+  static getDerivedStateFromError(error: Error) {
+    return { error };
+  }
+  render() {
+    const { fallback: Fallback, children } = this.props;
+    const error = this.state.error;
+    if (error && Fallback) {
+      return <Fallback error={error} />;
+    }
+    return <>{children}</>;
+  }
+}
+export function useComponent<T = Record<string, unknown>>(
   component: string,
   props?: T,
   otherProps: {
     href?: string;
   } = {},
-) =>
-  useSection({
+) {
+  return useSection({
     ...otherProps,
     props: {
       props,
       component: component.replace(ROOT, ""),
-      __resolveType: "site/sections/HTMX/Component.tsx",
+      __resolveType: "site/sections/Component.tsx",
     },
   });
+}
 const identity = <T,>(x: T) => x;
 export const loader = async (
   { component, props }: Props,
   req: Request,
   ctx: AppContext,
 ) => {
-  const { default: Component, loader, action } = await import(
+  const { default: Component, loader, action, ErrorFallback } = await import(
     `${ROOT}${component}`
   );
-  return {
-    props: await (loader || action || identity)(props, req, ctx),
-    Component,
-  };
+  try {
+    const p = await (loader || action || identity)(props, req, ctx);
+    return {
+      Component: () => (
+        <ErrorBoundary fallback={ErrorFallback}>
+          <Component {...p} />
+        </ErrorBoundary>
+      ),
+    };
+  } catch (error) {
+    return {
+      Component: () => <ErrorFallback error={error} />,
+    };
+  }
 };
 export const action = async (
   { component, props }: Props,
   req: Request,
   ctx: AppContext,
 ) => {
-  const { default: Component, action, loader } = await import(
+  const { default: Component, action, loader, ErrorFallback } = await import(
     `${ROOT}${component}`
   );
-  return {
-    props: await (action || loader || identity)(props, req, ctx),
-    Component,
-  };
+  try {
+    const p = await (action || loader || identity)(props, req, ctx);
+    return {
+      Component: () => (
+        <ErrorBoundary fallback={ErrorFallback}>
+          <Component {...p} />
+        </ErrorBoundary>
+      ),
+    };
+  } catch (error) {
+    return {
+      Component: () => <ErrorFallback error={error} />,
+    };
+  }
 };
-export default function Section(
-  { Component, props }: {
-    // deno-lint-ignore no-explicit-any
-    Component: any;
-    // deno-lint-ignore no-explicit-any
-    props: any;
-  },
-) {
-  return <Component {...props} />;
+export default function Section({ Component }: {
+  Component: any;
+}) {
+  return <Component />;
 }
