@@ -221,21 +221,21 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "bar"
+            "os-mais-vendidos-em-loucas"
           ],
           "typeTags": [],
           "ids": [],
-          "term": "bar",
           "sort": "newest",
-          "count": 20
+          "count": 17,
+          "term": "os-mais-vendidos-em-loucas"
         },
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "title": "OS MAIS VENDIDOS EM BAR",
-        "cta": "/bar"
+        "title": "OS MAIS VENDIDOS EM LOUÇAS",
+        "cta": "loucas"
       },
       "title": "OS MAIS VENDIDOS"
     },
