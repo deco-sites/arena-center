@@ -146,7 +146,7 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
+          "sort": "lowest_price",
           "term": "os-mais-vendidos-em-decoracao"
         },
         "sort": "newest",
@@ -225,9 +225,9 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
           "count": 17,
-          "term": "os-mais-vendidos-em-loucas"
+          "term": "os-mais-vendidos-em-loucas",
+          "sort": "newest"
         },
         "sort": "newest",
         "tags": [],
