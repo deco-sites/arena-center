@@ -8,7 +8,6 @@ import AddToCartBuyTogether from "./AddToCartBuyTogether.tsx";
 import type { Product } from "apps/commerce/types.ts";
 import ProductCardBuyTogether from "./ProductCartBuyTogether.tsx";
 import { ImageWidget } from "apps/admin/widgets.ts";
-import ShippingSimulationForm from "../shipping/Form.tsx";
 
 /** title {{{title}}} */
 export interface IconItem {
@@ -31,14 +30,13 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
   const { product } = page;
   const { productID, offers } = product;
 
-  const { availability, seller = "1" } = useOffer(offers);
+  const { availability } = useOffer(offers);
   const inStock = availability === "https://schema.org/InStock";
 
   const pdpProductTag = product.additionalProperty?.find(({ name }) =>
     name?.includes("categoria")
   )?.value;
 
-  // Find the related product
   const secondProduct = pdpProductTag
     ? products.find((item) => {
       return (
@@ -57,13 +55,6 @@ export default function BuyTogetherComponent({ page, products, icons }: Props) {
     <div class="container flex flex-col gap-2 sm:gap-5 md:w-full pt-8 items-center py-5 w-[350px] mt-2 mx-auto">
       {page !== undefined && secondProduct !== undefined && (
         <div class="flex flex-col ">
-          {/* Shipping Simulation */}
-          <div class="">
-            <ShippingSimulationForm
-              items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
-            />
-          </div>
-
           {/* Garanty Icons */}
           <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
             {icons &&

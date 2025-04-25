@@ -2,6 +2,7 @@ import type { SKU } from "apps/vtex/utils/types.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useComponent } from "../../sections/Component.tsx";
 import Image from "apps/website/components/Image.tsx";
+import { useScript } from "@deco/deco/hooks";
 
 export interface Props {
   items: SKU[];
@@ -11,7 +12,7 @@ export default function Form({ items }: Props) {
   const slot = useId();
 
   return (
-    <div class="flex flex-col gap-2 border-t-[1px] border-gray-300 pt-5 px-3 ">
+    <div class="flex flex-col gap-2 border-t-[1px] border-gray-300 pt-5">
       <div class="flex flex-col">
         <div class="flex">
           <Image
@@ -38,13 +39,19 @@ export default function Form({ items }: Props) {
         })}
       >
         <input
+          hx-on:input={useScript(() => {
+            // @ts-expect-error - hx-on:input is not typed
+            const self = this as HTMLInputElement;
+            self.value = self.value.replace(/\D/g, "");
+            if (self.value.length > 5) {
+              self.value = self.value.slice(0, 5) + "-" + self.value.slice(5);
+            }
+          })}
           as="input"
           type="text"
           class="input  join-item md:w-[280px] w-48 h-9 bg-accent-content bg-opacity-10 placeholder:text-[10px] text-sm rounded "
           placeholder="Digite aqui o CEP"
           name="postalCode"
-          maxLength={8}
-          size={8}
         />
         <button
           type="submit"

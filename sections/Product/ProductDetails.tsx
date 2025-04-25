@@ -7,19 +7,60 @@ import { clx } from "../../sdk/clx.ts";
 import type { IconItem } from "../../components/product/BuyTogetherComponent.tsx";
 import BuyTogetherComponent from "../../components/product/BuyTogetherComponent.tsx";
 import type { Product } from "apps/commerce/types.ts";
-import { type Section } from "@deco/deco/blocks";
+import { AppContext } from "site/apps/site.ts";
+import ShippingSimulationForm from "site/components/shipping/Form.tsx";
 export interface Props {
   /** @title Integração */
   page: ProductDetailsPage | null;
-  products: Product[] | null;
-  sections?: Section[];
+  /**
+   * @ignore
+   */
+  buyTogether: Product[] | null;
   /** @title icones de informação
    *  @description tamanho do icone largura 31px altura 31px
    * @maxItems 2
    */
   icons?: IconItem[];
 }
-export default function ProductDetails({ page, icons, products }: Props) {
+
+export async function loader(props: Props, _req: Request, ctx: AppContext) {
+  const products = await ctx.get({
+    "__resolveType": "vnda/loaders/productList.ts",
+    "tags": [],
+    count: 1,
+    "ids": [Number(props.page?.product.inProductGroupWithID)],
+  }) as unknown as Product[];
+
+  if (!products) {
+    ctx.response.status = 404;
+    return {
+      ...props,
+      page: null,
+    };
+  }
+
+  const [productWithAdditionalProperty] = products;
+  const tags = productWithAdditionalProperty?.additionalProperty?.filter(
+    ({ name }) => {
+      try {
+        return name?.includes("compre-junto");
+      } catch {
+        return false; // Retorna falso se houver uma exceção ao analisar JSON
+      }
+    },
+  ).map(({ name }) => name);
+  const buyTogether = await ctx.get({
+    "__resolveType": "vnda/loaders/productList.ts",
+    "tags": tags,
+  });
+
+  return {
+    ...props,
+    buyTogether,
+  };
+}
+
+export default function ProductDetails({ page, icons, buyTogether }: Props) {
   /**
    * Rendered when a not found is returned by any of the loaders run on this page
    */
@@ -51,7 +92,20 @@ export default function ProductDetails({ page, icons, products }: Props) {
         </div>
         <div class="sm:col-span-2">
           <ProductInfo page={page} />
-          <BuyTogetherComponent page={page} products={products} icons={icons} />
+          <div class="">
+            <ShippingSimulationForm
+              items={[{
+                id: Number(page.product.sku),
+                quantity: 1,
+                seller: "1",
+              }]}
+            />
+          </div>
+          <BuyTogetherComponent
+            page={page}
+            products={buyTogether}
+            icons={icons}
+          />
         </div>
       </div>
     </div>

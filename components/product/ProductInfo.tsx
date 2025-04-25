@@ -58,17 +58,19 @@ function ProductInfo({ page }: Props) {
       </span>
 
       {/* Product Name */}
-      <h1 class={clx("text-2xl font-light")}>{title}</h1>
+      <h1 class={clx("text-lg font-light")}>{title}</h1>
 
       {/* Product id */}
       <span class={clx("text-[10px] font-light")}>{productID}</span>
 
       {/* Prices */}
       <div class="flex gap-3 pt-1">
-        <span class="line-through text-sm font-medium text-gray-400">
-          {formatPrice(listPrice, offers?.priceCurrency)}
-        </span>
-        <span class="text-md font-semibold text-secondary">
+        {percent !== 0 && (
+          <span class="line-through text-sm font-medium text-gray-400">
+            {formatPrice(listPrice, offers?.priceCurrency)}
+          </span>
+        )}
+        <span class="text-xl font-semibold text-secondary">
           {formatPrice(price, offers?.priceCurrency)}
         </span>
       </div>
@@ -105,37 +107,6 @@ function ProductInfo({ page }: Props) {
         <ShippingSimulationForm
           items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
         />
-      </div> */
-      }
-
-      {/* Garanty Icons */}
-      {
-        /* <div class="flex w-full px-11 justify-between pt-6 border-t border-gray-300">
-        {icons &&
-          icons.map((item) => (
-            <div class="flex items-center flex-col gap-3 ">
-              <Image src={item.icon} width={31} height={31} alt={item.title} />
-              <p class="text-accent-content text-[12px]">{item.title}</p>
-            </div>
-          ))}
-
-      </div> */
-      }
-
-      {/* Description card */}
-      {
-        /* <div class="mt-4 sm:mt-6">
-        <span class="text-sm">
-          {description && (
-            <details>
-              <summary class="cursor-pointer">Description</summary>
-              <div
-                class="ml-2 mt-2"
-                dangerouslySetInnerHTML={{ __html: description }}
-              />
-            </details>
-          )}
-        </span>
       </div> */
       }
     </div>

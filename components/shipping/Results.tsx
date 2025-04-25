@@ -2,43 +2,36 @@
  * TODO: support other platforms. Currently only for VTEX
  */
 import { AppContext } from "apps/vtex/mod.ts";
-import type { SimulationOrderForm, SKU, Sla } from "apps/vtex/utils/types.ts";
+import type { SKU } from "apps/vtex/utils/types.ts";
 import { formatPrice } from "../../sdk/format.ts";
 import { ComponentProps } from "../../sections/Component.tsx";
+import type { ShippingMethod } from "apps/vnda/utils/client/types.ts";
 
 export interface Props {
   items: SKU[];
 }
 
-const formatShippingEstimate = (estimate: string) => {
-  const [, time, type] = estimate.split(/(\d+)/);
-
-  if (type === "bd") return `${time} dias úteis`;
-  if (type === "d") return `${time} dias`;
-  if (type === "h") return `${time} horas`;
-};
+type ShippingResult = { [key: string]: ShippingMethod[] };
 
 export async function action(props: Props, req: Request, ctx: AppContext) {
   const form = await req.formData();
 
   try {
-    const result = await ctx.invoke("vtex/actions/cart/simulation.ts", {
-      items: props.items,
-      postalCode: `${form.get("postalCode") ?? ""}`,
-      country: "BRA",
-    }) as SimulationOrderForm | null;
-
+    const result = await ctx.invoke("vnda/actions/cart/simulation.ts", {
+      skuId: props.items?.[0]?.id,
+      zip: `${form.get("postalCode") ?? ""}`,
+      quantity: 1,
+    }) as ShippingResult | null;
+    console.log({ result });
     return { result };
-  } catch {
+  } catch (error) {
+    console.log(error);
     return { result: null };
   }
 }
 
 export default function Results({ result }: ComponentProps<typeof action>) {
-  const methods = result?.logisticsInfo?.reduce(
-    (initial, { slas }) => [...initial, ...slas],
-    [] as Sla[],
-  ) ?? [];
+  const methods = (Object.values(result ?? {})[0] ?? []) as ShippingMethod[];
 
   if (!methods.length) {
     return (
@@ -51,18 +44,19 @@ export default function Results({ result }: ComponentProps<typeof action>) {
   return (
     <ul class="flex flex-col gap-4 p-4 border border-base-400 rounded">
       {methods.map((method) => (
-        <li class="flex justify-between items-center border-base-200 not-first-child:border-t">
-          <span class="text-button text-center">
-            Entrega {method.name}
-          </span>
-          <span class="text-button">
-            até {formatShippingEstimate(method.shippingEstimate)}
-          </span>
-          <span class="text-base font-semibold text-right">
+        <li class="flex justify-start items-center gap-2 border-base-200 not-first-child:border-t">
+          <div class="w-[70px] flex-shrink-0 flex justify-between items-center gap-1 whitespace-nowrap">
+            <p>{method.name}</p>
+            <p>-</p>
+          </div>
+          <p class="text-sm">
+            {method.description}
+          </p>
+          <p class="text-base font-semibold text-right">
             {method.price === 0 ? "Grátis" : (
-              formatPrice(method.price / 100, "BRL", "pt-BR")
+              formatPrice(method.price, "BRL", "pt-BR")
             )}
-          </span>
+          </p>
         </li>
       ))}
       <span class="text-xs font-thin">

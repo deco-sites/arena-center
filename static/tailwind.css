@@ -3481,6 +3481,9 @@ details.collapse summary::-webkit-details-marker {
 .pointer-events-none {
   pointer-events: none;
 }
+.visible {
+  visibility: visible;
+}
 .invisible {
   visibility: hidden;
 }
@@ -4153,6 +4156,9 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[522px\] {
   width: 522px;
+}
+.w-\[70px\] {
+  width: 70px;
 }
 .w-\[80\%\] {
   width: 80%;
@@ -4894,10 +4900,6 @@ details.collapse summary::-webkit-details-marker {
 .px-20 {
   padding-left: 5rem;
   padding-right: 5rem;
-}
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
 }
 .px-4 {
   padding-left: 1rem;
@@ -6071,10 +6073,6 @@ details.collapse summary::-webkit-details-marker {
 
   .sm\:mt-10 {
     margin-top: 2.5rem;
-  }
-
-  .sm\:mt-6 {
-    margin-top: 1.5rem;
   }
 
   .sm\:mt-8 {
