@@ -95,7 +95,7 @@ export default function ProductDetails({ page, icons, buyTogether }: Props) {
           <div class="">
             <ShippingSimulationForm
               items={[{
-                id: Number(page.product.sku),
+                id: page.product.sku,
                 quantity: 1,
                 seller: "1",
               }]}
