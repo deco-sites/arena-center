@@ -60,7 +60,7 @@ export default function GallerySlider(props: Props) {
             {percent > 0 && (
               <Tag
                 text={`${percent} % off`}
-                class="absolute z-40 top-2 left-2"
+                class="absolute z-30 top-2 left-2"
               />
             )}
             <Slider class="gap-2 md:w-[630px] md:h-[630px]">
