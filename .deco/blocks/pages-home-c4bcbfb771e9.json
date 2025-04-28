@@ -467,8 +467,8 @@
       "section": {
         "__resolveType": "site/sections/WideBannerHome.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/e156b99f-2911-4d8e-a358-eda98c19ef4d/desktop.png",
-          "desktop": "https://assets.decocache.com/arena-center/558729ab-3b0c-49ba-a797-8de1d331fb74/mobile-(3).png"
+          "mobile": "https://assets.decocache.com/arena-center/0b0a47aa-0f23-45f4-b488-d61ce158a262/mobile-(1).png",
+          "desktop": "https://assets.decocache.com/arena-center/918bacf2-1843-4fe1-91bb-7e5c9d8e90c9/desktop-(10).png"
         },
         "alt": "banner siga nosso instagram",
         "href": "https://www.instagram.com/arenacenteroficial/"
