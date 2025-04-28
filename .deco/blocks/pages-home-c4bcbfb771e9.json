@@ -24,15 +24,10 @@
             "alt": "Campanha dia das Mães"
           },
           {
-            "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/b9f56e4d-21d9-4af4-8748-694ae29989c7/banner.png",
-            "mobile": "https://data.decoassets.com/arena-center/9299213b-6f49-4e23-a52b-4606e3e82fc7/arena.png",
-            "alt": "Prato e talheres com um fundo bege",
+            "desktop": "https://assets.decocache.com/arena-center/9bbe5e52-a46e-4699-81d5-2795ccb40327/Inspiracao-(4).png",
+            "mobile": "https://assets.decocache.com/arena-center/f5ffd26d-bec9-479e-94ed-a51bccb75cd8/Copia-de-Banner-Mobile.png",
+            "alt": "Inspiração",
             "action": {}
-          },
-          {
-            "desktop": "https://assets.decocache.com/arena-center/a0e90823-8b25-4b9f-bcf7-e4e24d3a7392/INSPIRACAO-(1).gif",
-            "mobile": "https://assets.decocache.com/arena-center/a0e90823-8b25-4b9f-bcf7-e4e24d3a7392/INSPIRACAO-(1).gif",
-            "alt": "inspiração"
           }
         ],
         "interval": 5
