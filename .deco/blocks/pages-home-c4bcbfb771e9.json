@@ -250,7 +250,7 @@
         {
           "src": "https://assets.decocache.com/arena-center/50bc7220-d050-4f7f-a004-31ed49386d12/mesa-e-cozinha-bambu-(2).png",
           "discount": "50%",
-          "href": "/",
+          "href": "linha-mesa-cozinha-bambu",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
@@ -283,7 +283,7 @@
       "imagesMobile": [
         {
           "src": "https://assets.decocache.com/arena-center/50bc7220-d050-4f7f-a004-31ed49386d12/mesa-e-cozinha-bambu-(2).png",
-          "href": "/"
+          "href": "linha-mesa-cozinha-bambu"
         },
         {
           "src": "https://assets.decocache.com/arena-center/b37ecff1-effa-475f-ae92-19a7db5ddc8d/Copia-de-mesa-e-cozinha-bambu-(5).png",
