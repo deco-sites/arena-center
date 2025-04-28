@@ -10,7 +10,7 @@ function Tag({ text, class: _class }: Props) {
     <div
       class={clx(
         "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-        _class
+        _class,
       )}
     >
       {text}

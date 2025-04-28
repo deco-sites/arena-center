@@ -47,7 +47,7 @@ function ProductCard({
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
-  {/* Add click event to dataLayer */ }
+  {/* Add click event to dataLayer */}
   const event = useSendEvent({
     on: "click",
     event: {
@@ -118,7 +118,9 @@ function ProductCard({
           />
         </a>
         {/* Discounts */}
-        {percent > 0 && <Tag text={`${percent} % off`} class="absolute z-40 top-2 left-2" />}
+        {percent > 0 && (
+          <Tag text={`${percent} % off`} class="absolute z-40 top-2 left-2" />
+        )}
       </figure>
 
       <a href={relativeUrl} class="pt-4">

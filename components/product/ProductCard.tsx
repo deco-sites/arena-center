@@ -120,7 +120,9 @@ function ProductCard({
           />
         </a>
 
-        {percent > 0 && <Tag text={`${percent} % off`} class="absolute z-40 top-2 left-2" />}
+        {percent > 0 && (
+          <Tag text={`${percent} % off`} class="absolute z-40 top-2 left-2" />
+        )}
       </figure>
 
       <a href={relativeUrl} class="pt-4">

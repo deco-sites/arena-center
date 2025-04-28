@@ -44,7 +44,7 @@ export default function GallerySlider(props: Props) {
     name?.includes(img.alternateName || "")
   );
   const images = filtered.length > 0 ? filtered : groupImages;
-  const { price = 0, listPrice, } = useOffer(offers);
+  const { price = 0, listPrice } = useOffer(offers);
   const percent = listPrice && price
     ? Math.round(((listPrice - price) / listPrice) * 100)
     : 0;
@@ -57,7 +57,12 @@ export default function GallerySlider(props: Props) {
         {/* Image Slider */}
         <div class="col-start-1 col-span-1 sm:col-start-2">
           <div class="relative h-min flex">
-            {percent > 0 && <Tag text={`${percent} % off`} class="absolute z-40 top-2 left-2" />}
+            {percent > 0 && (
+              <Tag
+                text={`${percent} % off`}
+                class="absolute z-40 top-2 left-2"
+              />
+            )}
             <Slider class="gap-2 md:w-[630px] md:h-[630px]">
               {images.map((img, index) => (
                 <Slider.Item
