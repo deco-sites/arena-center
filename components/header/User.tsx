@@ -7,7 +7,7 @@ function UserIcon() {
         <span class="hidden indicator-item badge badge-primary badge-sm " />
 
         <a
-          href="https://lojaarenacenter.cdn.vnda.com.br/entrar"
+          href="/account/entrar"
           class="btn btn-ghost no-animation  text-secondary hover:border-primary flex flex-col min-h-0 p-0 lg:px-2"
         >
           <Image
