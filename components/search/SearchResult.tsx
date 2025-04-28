@@ -234,9 +234,9 @@ function Result(props: SectionProps<typeof loader>) {
                             if (!url) {
                               sessionStorage.setItem(
                                 SESSION_URL_KEY,
-                                globalThis.window.location.href,
+                                globalThis.window?.location.href ?? "",
                               );
-                              url = globalThis.window.location.href;
+                              url = globalThis.window?.location?.href ?? "";
                             }
                             return url;
                           }

@@ -75,7 +75,7 @@ export function updateQueryParam({
 
 export const getFiltersByUrl = (url: string, windowUrl: string = "") => {
   const windowSearchParams =
-    new URL(globalThis.window.location.href || windowUrl).searchParams;
+    new URL(globalThis.window?.location?.href || windowUrl).searchParams;
   const filterSearchParams = new URL(url).searchParams;
   const windowParams = Array.from(windowSearchParams);
   const searchParams = Array.from(filterSearchParams);

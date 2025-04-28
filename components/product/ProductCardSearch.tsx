@@ -7,6 +7,7 @@ import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import AddToCartButton from "./AddToCartButton.tsx";
+import Tag from "site/components/ui/Tag.tsx";
 
 interface Props {
   product: Product;
@@ -46,7 +47,7 @@ function ProductCard({
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
-  {/* Add click event to dataLayer */}
+  {/* Add click event to dataLayer */ }
   const event = useSendEvent({
     on: "click",
     event: {
@@ -116,38 +117,8 @@ function ProductCard({
             decoding="async"
           />
         </a>
-
-        {/* Wishlist button */}
-        {
-          /* <div class="absolute top-0 left-0 w-full flex items-center justify-between">
-
-          <span
-            class={clx(
-              "text-sm/4 font-normal text-black bg-error bg-opacity-15 text-center rounded-badge px-2 py-1",
-              inStock && "opacity-0"
-            )}
-          >
-            Notify me
-          </span>
-          </div> */
-        }
-
         {/* Discounts */}
-        <span
-          class={clx(
-            "absolute top-2 left-2",
-            "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-            (percent < 1 || !inStock) && "opacity-0",
-          )}
-        >
-          {percent} % off
-        </span>
-
-        {
-          /* <div class="absolute bottom-0 right-0">
-          <WishlistButton item={item} variant="icon" />
-        </div> */
-        }
+        {percent > 0 && <Tag text={`${percent} % off`} class="absolute z-40 top-2 left-2" />}
       </figure>
 
       <a href={relativeUrl} class="pt-4">

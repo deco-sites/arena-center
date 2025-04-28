@@ -7,6 +7,7 @@ import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import AddToCartButtonPDP from "./AddToCartButtonPDP.tsx";
 import OutOfStock from "./OutOfStock.tsx";
+import ProductSelector from "site/components/product/ProductSelector.tsx";
 interface Props {
   page: ProductDetailsPage | null;
 }
@@ -46,17 +47,6 @@ function ProductInfo({ page }: Props) {
   });
   return (
     <div {...viewItemEvent} class="flex flex-col" id={id}>
-      {/* Price tag */}
-      <span
-        class={clx(
-          "text-sm/4 font-normal text-black bg-primary bg-opacity-15 text-center rounded-badge px-2 py-1",
-          percent < 1 && "opacity-0",
-          "w-fit",
-        )}
-      >
-        {percent} % off
-      </span>
-
       {/* Product Name */}
       <h1 class={clx("text-lg font-light")}>{title}</h1>
 
@@ -76,13 +66,7 @@ function ProductInfo({ page }: Props) {
       </div>
 
       {/* Sku Selector */}
-      {
-        /* {hasValidVariants && (
-        <div className="mt-4 sm:mt-8">
-          <ProductSelector product={product} />
-        </div>
-      )} */
-      }
+      <ProductSelector product={product} />
 
       {/* Add to Cart and Favorites button */}
       <div class="mt-4 sm:mt-10 flex flex-col gap-2">
@@ -100,15 +84,6 @@ function ProductInfo({ page }: Props) {
           )
           : <OutOfStock productID={productID} />}
       </div>
-
-      {/* Shipping Simulation */}
-      {
-        /* <div class="mt-8">
-        <ShippingSimulationForm
-          items={[{ id: Number(product.sku), quantity: 1, seller: seller }]}
-        />
-      </div> */
-      }
     </div>
   );
 }

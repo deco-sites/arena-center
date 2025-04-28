@@ -7,6 +7,7 @@ import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
 import AddToCartButton from "./AddToCartButton.tsx";
+import Tag from "site/components/ui/Tag.tsx";
 
 interface Props {
   product: Product;
@@ -119,15 +120,7 @@ function ProductCard({
           />
         </a>
 
-        <span
-          class={clx(
-            "absolute top-2 left-2",
-            "text-[12px] font-normal text-base-100  bg-primary  text-center rounded-[4px] px-2 py-1",
-            (percent < 1 || !inStock) && "opacity-0",
-          )}
-        >
-          {percent} % off
-        </span>
+        {percent > 0 && <Tag text={`${percent} % off`} class="absolute z-40 top-2 left-2" />}
       </figure>
 
       <a href={relativeUrl} class="pt-4">
