@@ -18,7 +18,7 @@ export default function ({ img }: Props) {
   const device = useDevice();
   if (device !== "desktop") {
     return (
-      <div class="flex gap-3 pl-6 overflow-auto max-w-[1440px] w-full mx-auto mt-7 custom-container">
+      <div class="flex gap-2 pl-6 overflow-auto max-w-[1440px] w-full mx-auto mt-7 custom-container">
         {img.map((item) => (
           <div class="relative">
             <a href={item.link} class="w-[80vw] block lg:w-auto">
