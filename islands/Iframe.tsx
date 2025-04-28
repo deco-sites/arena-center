@@ -1,1 +1,1 @@
-export { default } from "site/sections/Iframe.tsx"
+export { default } from "site/sections/Iframe.tsx";

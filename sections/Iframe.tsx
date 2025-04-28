@@ -11,8 +11,9 @@ const Iframe = ({ src, minHeight, origin }: ReturnType<typeof loader>) => {
   const handleResize = () => {
     const iframe = iframeRef.current;
     if (iframe) {
-      iframe.style.height = `${iframe.contentWindow!.document.documentElement.scrollHeight
-        }px`;
+      iframe.style.height = `${
+        iframe.contentWindow!.document.documentElement.scrollHeight
+      }px`;
     }
   };
 
@@ -33,13 +34,17 @@ const Iframe = ({ src, minHeight, origin }: ReturnType<typeof loader>) => {
   };
 
   const verificarURL = (interval: number) => {
-    const url = new URL(iframeRef.current?.contentWindow?.document.location.href ?? src)
+    const url = new URL(
+      iframeRef.current?.contentWindow?.document.location.href ?? src,
+    );
     const isAboutBlank =
       iframeRef.current!.contentWindow!.document.location.href ===
-      "about:blank";
-    const isTheSamePath =
-      url.pathname !== src;
-    console.log(isTheSamePath, iframeRef.current?.contentWindow?.document.location.href)
+        "about:blank";
+    const isTheSamePath = url.pathname !== src;
+    console.log(
+      isTheSamePath,
+      iframeRef.current?.contentWindow?.document.location.href,
+    );
 
     if (!isAboutBlank && isTheSamePath) {
       window.location.href =
@@ -80,11 +85,11 @@ const Iframe = ({ src, minHeight, origin }: ReturnType<typeof loader>) => {
 };
 
 export function loader(props: Props, req: Request) {
-  const url = new URL(req.url)
+  const url = new URL(req.url);
   return {
     ...props,
-    origin: url.origin
-  }
+    origin: url.origin,
+  };
 }
 
 export default Iframe;
