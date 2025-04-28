@@ -120,6 +120,7 @@ export interface Props {
   align?: "start" | "center" | "end";
   startIndex?: number;
   controlDots?: boolean;
+  dragFree?: boolean;
 }
 
 const setup = (
@@ -131,6 +132,7 @@ const setup = (
     align = "start",
     startIndex = 0,
     controlDots,
+    dragFree,
   }: Props,
 ) => {
   const root = document.getElementById(rootId);
@@ -154,7 +156,7 @@ const setup = (
     slidesToScroll: "auto",
     startIndex,
     align,
-    dragFree: false,
+    dragFree,
     containScroll: "trimSnaps",
   };
   const autoplay = interval && interval > 0

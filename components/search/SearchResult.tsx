@@ -226,6 +226,7 @@ function Result(props: SectionProps<typeof loader>) {
                         <FiltersMobile url={props.url} filters={filters} />
                       </div>
                       <button
+                        type="button"
                         hx-on:click={useScript(() => {
                           function getFilteredUrl(): string {
                             const SESSION_URL_KEY = "filteredUrl";

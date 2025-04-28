@@ -33,14 +33,14 @@ function Banner({ images, href, alt }: Props) {
         <Source
           media="(min-width: 640px)"
           src={images.desktop}
-          width={1200}
-          height={176}
-          loading={"lazy"}
+          width={1392}
+          height={267}
+          loading="lazy"
         />
         <img
           src={images.desktop}
           alt={alt}
-          loading={"lazy"}
+          loading="lazy"
           class=" w-full  max-w-[1440px] px-6 mt-2 h-auto object-cover mx-auto"
         />
       </Picture>

@@ -21,7 +21,8 @@ export type AvailableIcons =
   | "grid2"
   | "grid3"
   | "grid4"
-  | "grid5";
+  | "grid5"
+  | "logo";
 
 interface Props extends JSX.SVGAttributes<SVGSVGElement> {
   /**

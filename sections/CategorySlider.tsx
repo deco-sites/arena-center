@@ -26,7 +26,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
       </p>
       <div
         id={id}
-        class="grid grid-rows-1 w-full"
+        class="grid grid-rows-1 w-full max-lg:overflow-x-hidden"
         style={{
           gridTemplateColumns: "min-content 1fr min-content",
         }}
@@ -72,7 +72,7 @@ function CategorySlider({ categoryItems, itemListName }: Props) {
           </Slider.NextButton>
         </div>
       </div>
-      <Slider.JS rootId={id} infinite />
+      <Slider.JS rootId={id} dragFree infinite />
     </div>
   );
 }

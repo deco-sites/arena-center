@@ -72,7 +72,7 @@ function BannerItem(
       {...selectPromotionEvent}
       href={action?.href ?? "#"}
       aria-label={action?.label}
-      class="block relative w-full h-full overflow-x-hidden"
+      class="block relative w-full h-full overflow-x-hidden max-h-[600px]"
     >
       {action && (
         <div
@@ -88,6 +88,7 @@ function BannerItem(
             {action.subTitle}
           </span>
           <button
+            type="button"
             class="border-0 bg-base-100 min-w-[180px] btn btn-outline btn-primary"
             aria-label={action.label}
           >

@@ -15,7 +15,7 @@ export default function GreaterBanner(props: Props) {
         src={props.src}
         width={props.width}
         height={props.height}
-        loading={"eager"}
+        loading="eager"
         preload
       />
     </div>

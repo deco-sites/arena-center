@@ -85,7 +85,9 @@ export default function FAQ({
 
       <ul class="w-full">
         <li>
-          {questions.map((question) => <Question {...question} />)}
+          {questions.map((question) => (
+            <Question key={question.question} {...question} />
+          ))}
         </li>
       </ul>
 

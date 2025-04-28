@@ -40,6 +40,7 @@ function ValueItem(
   const id = useId();
   return (
     <button
+      type="button"
       hx-on:click={useScript(updateQueryParam, {
         label: filterLabel,
         value,
@@ -136,6 +137,7 @@ function Filters({ filters, url }: Props) {
       </div>
       <div>
         <button
+          type="button"
           hx-on:click={useScript(() => {
             function getFilteredUrl(): string {
               const SESSION_URL_KEY = "filteredUrl";

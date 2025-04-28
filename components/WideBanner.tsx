@@ -35,12 +35,12 @@ function Banner({ images, href, alt }: Props) {
           src={images.desktop}
           width={1440}
           height={176}
-          loading={"lazy"}
+          loading="lazy"
         />
         <img
           src={images.desktop}
           alt={alt}
-          loading={"lazy"}
+          loading="lazy"
           class=" w-full  max-w-[1440px] px-6 mt-2 h-auto object-cover mx-auto"
         />
       </Picture>

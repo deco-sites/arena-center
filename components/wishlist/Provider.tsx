@@ -31,7 +31,7 @@ function WishlistProvider({ wishlist }: {
     >
       <input type="hidden" name="product-id" />
       <input type="hidden" name="product-group-id" />
-      <button hidden />
+      <button type="submit" hidden />
 
       <script
         type="application/json"

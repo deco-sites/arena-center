@@ -284,8 +284,9 @@ export default function Session(
         class="drawer-end z-50 "
         aside={
           <Drawer.Aside
-            title="Carrinho ArenaCenter"
+            title="Carrinho"
             drawer={MINICART_DRAWER_ID}
+            hasLogo
           >
             <div
               class="h-full flex flex-col bg-base-100 items-center justify-center overflow-auto "

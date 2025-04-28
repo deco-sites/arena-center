@@ -44,6 +44,7 @@ function CategoriesProductsShelf({ productList, title, index = 0 }: Props) {
         <div class=" flex gap-8 overflow-x-auto w-full">
           {productList.map((item, index) => (
             <button
+              type="button"
               class={`${
                 index === activeButtom
                   ? "bg-primary text-base-100"

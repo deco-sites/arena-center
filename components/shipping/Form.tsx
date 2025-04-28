@@ -4,8 +4,12 @@ import { useComponent } from "../../sections/Component.tsx";
 import Image from "apps/website/components/Image.tsx";
 import { useScript } from "@deco/deco/hooks";
 
+type vndaSku = Omit<SKU, "id"> & {
+  id: string;
+};
+
 export interface Props {
-  items: SKU[];
+  items: vndaSku[];
 }
 
 export default function Form({ items }: Props) {

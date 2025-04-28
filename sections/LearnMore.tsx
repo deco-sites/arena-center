@@ -32,7 +32,7 @@ export default function LearnMore({ mainTitle, learnMore }: Props) {
               width={395}
               height={184}
               alt={learnMore.title}
-              loading={"lazy"}
+              loading="lazy"
             />
             <p class="pt-4 text-lg font-extralight">
               {learnMore.title}

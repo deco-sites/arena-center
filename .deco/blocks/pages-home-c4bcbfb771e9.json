@@ -28,6 +28,11 @@
             "mobile": "https://data.decoassets.com/arena-center/9299213b-6f49-4e23-a52b-4606e3e82fc7/arena.png",
             "alt": "Prato e talheres com um fundo bege",
             "action": {}
+          },
+          {
+            "desktop": "https://assets.decocache.com/arena-center/a0e90823-8b25-4b9f-bcf7-e4e24d3a7392/INSPIRACAO-(1).gif",
+            "mobile": "https://assets.decocache.com/arena-center/a0e90823-8b25-4b9f-bcf7-e4e24d3a7392/INSPIRACAO-(1).gif",
+            "alt": "inspiração"
           }
         ],
         "interval": 5
@@ -488,10 +493,6 @@
         "cta": "/cozinha",
         "title": "OS MAIS VENDIDOS EM COZINHA"
       }
-    },
-    {
-      "__resolveType": "site/sections/LearnMore.tsx",
-      "learnMore": []
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",

@@ -40,6 +40,7 @@ function ValueItem(
   const id = useId();
   return (
     <button
+      type="button"
       hx-on:click={useScript(updateQueryParam, {
         label: filterLabel,
         value,

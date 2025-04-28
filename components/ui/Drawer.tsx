@@ -43,7 +43,7 @@ function Drawer(
         <aside
           data-aside
           class={clx(
-            "drawer-side h-full z-40 overflow-auto ",
+            "drawer-side h-full z-40 overflow-x-hidden",
             "[[data-aside]&_section]:contents",
           )}
         >
@@ -58,8 +58,9 @@ function Drawer(
     </>
   );
 }
-function Aside({ title, drawer, children }: {
+function Aside({ title, drawer, children, hasLogo }: {
   title: string;
+  hasLogo?: boolean;
   drawer: string;
   children: ComponentChildren;
 }) {
@@ -70,9 +71,10 @@ function Aside({ title, drawer, children }: {
       style={{ maxWidth: "425px" }}
     >
       <div class="flex justify-between items-center">
-        <h1 class="px-4 py-3">
+        <div class="flex items-center px-4 py-3">
           <span class="font-medium text-2xl">{title}</span>
-        </h1>
+          {hasLogo && <Icon id="logo" width={150} height={60} class="ml-2" />}
+        </div>
         <label for={drawer} aria-label="X" class="btn btn-ghost">
           <Icon id="close" />
         </label>

@@ -60,6 +60,7 @@ function AddToCartButton(props: Props) {
       )}
     >
       <button
+        type="button"
         class={clx(
           "flex  w-[176px] h-[32px] text-base-200 min-h-0 btn bg-gray-300 border-none ",
           _class?.toString(),

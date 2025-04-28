@@ -139,12 +139,11 @@ function BannerItem({ banner, device }: {
                 loading={lcp ? "eager" : "lazy"}
                 src={mobileSrc}
                 alt={alt}
-              >
-                <div class="top-0 left-0 absolute flex flex-col justify-center items-center gap-y-4 w-full h-full">
-                  <p class="text-5xl text-accent">{text}</p>
-                  <p class="text-[18px] text-accent">{text}</p>
-                </div>
-              </img>
+              />
+              <div class="top-0 left-0 absolute flex flex-col justify-center items-center gap-y-4 w-full h-full">
+                <p class="text-5xl text-accent">{text}</p>
+                <p class="text-[18px] text-accent">{text}</p>
+              </div>
             </div>
           )}
         {deviceUseDevice === "desktop" && desktopSrc &&
@@ -156,12 +155,11 @@ function BannerItem({ banner, device }: {
                 loading={lcp ? "eager" : "lazy"}
                 src={desktopSrc}
                 alt={alt}
-              >
-                <div class="top-0 left-0 absolute flex flex-col justify-center items-center gap-y-4 w-full h-full">
-                  <p class="text-5xl text-accent">{text}</p>
-                  <p class="text-[18px] text-accent">{text}</p>
-                </div>
-              </img>
+              />
+              <div class="top-0 left-0 absolute flex flex-col justify-center items-center gap-y-4 w-full h-full">
+                <p class="text-5xl text-accent">{text}</p>
+                <p class="text-[18px] text-accent">{text}</p>
+              </div>
             </div>
           )}
       </Picture>
