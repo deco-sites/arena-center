@@ -147,7 +147,7 @@
           "__resolveType": "vnda/loaders/productList.ts",
           "count": 16,
           "tags": [
-            "decoracao"
+            "os-mais-vendidos-em-decoracao"
           ],
           "typeTags": [],
           "ids": [],
@@ -230,7 +230,7 @@
           ],
           "typeTags": [],
           "ids": [],
-          "count": 17,
+          "count": 16,
           "term": "os-mais-vendidos-em-loucas",
           "sort": "newest"
         },
@@ -240,7 +240,7 @@
         "ids": [],
         "count": 10,
         "title": "OS MAIS VENDIDOS EM LOUÇAS",
-        "cta": "loucas"
+        "cta": "/loucas"
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -481,13 +481,13 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "cozinha"
+            "os-mais-vendidos-em-cozinha"
           ],
           "typeTags": [],
           "ids": [],
-          "count": 20,
+          "count": 16,
           "wildcard": false,
-          "term": "cozinha",
+          "term": "os-mais-vendidos-em-cozinha",
           "sort": "newest"
         },
         "cta": "/cozinha",
