@@ -47,7 +47,7 @@ function ProductCard({
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
-  {/* Add click event to dataLayer */}
+  {/* Add click event to dataLayer */ }
   const event = useSendEvent({
     on: "click",
     event: {
@@ -125,7 +125,7 @@ function ProductCard({
 
       <a href={relativeUrl} class="pt-4">
         <div class="">
-          <span class="font-medium text-xs md:text-sm line-clamp-2">
+          <span class="font-medium text-xs md:text-sm h-14 lg:h-10 line-clamp-2">
             {title}
           </span>
         </div>
@@ -141,29 +141,6 @@ function ProductCard({
           </span>
         </div>
       </a>
-
-      {/* SKU Selector */}
-      {
-        /* {variants.length > 1 && firstVariantName !== shoeSizeVariant && (
-        <ul class="flex items-center justify-start gap-2 pt-4 pb-1 pl-1 overflow-x-auto">
-          {variants
-            .map(([value, link]) => [value, relative(link)] as const)
-            .map(([value, link]) => (
-              <li>
-                <a href={link} class="cursor-pointer">
-                  <input
-                    class="hidden peer"
-                    type="radio"
-                    name={`${id}-${firstSkuVariations?.[0]}`}
-                    checked={link === relativeUrl}
-                  />
-                  <Ring value={value} checked={link === relativeUrl} />
-                </a>
-              </li>
-            ))}
-        </ul>
-      )} */
-      }
 
       <div class="flex-grow" />
 
