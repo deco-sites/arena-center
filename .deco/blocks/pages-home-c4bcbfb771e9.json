@@ -188,7 +188,7 @@
         {
           "src": "https://assets.decocache.com/arena-center/98ee1f54-7e5c-4054-aae6-e7aebbea999c/outlet-inauguracao-50.png",
           "discount": "30%",
-          "href": "/",
+          "href": "outlet-inauguracao-50",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
@@ -209,7 +209,7 @@
         },
         {
           "src": "https://assets.decocache.com/arena-center/98ee1f54-7e5c-4054-aae6-e7aebbea999c/outlet-inauguracao-50.png",
-          "href": "/"
+          "href": "outlet-inauguracao-50"
         }
       ]
     },
