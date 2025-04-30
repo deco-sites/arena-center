@@ -340,13 +340,13 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "o-amor-esta-a-mesa"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 12
+              "count": 16
             },
             "title": "O Amor Está à Mesa",
             "image": {
@@ -357,13 +357,13 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "cafe-com-ternura"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 12
+              "count": 16
             },
             "title": "Café com Ternura",
             "image": {
@@ -373,13 +373,13 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "memoria-afetiva"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 20
+              "count": 16
             },
             "title": "Memória Afetiva",
             "image": {
@@ -389,13 +389,13 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "encanto-e-delicadeza"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 12
+              "count": 16
             },
             "title": "Encanto e Delicadeza",
             "image": {
@@ -408,7 +408,7 @@
             },
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "aromas-que-acolhem"
               ],
