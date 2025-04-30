@@ -346,13 +346,12 @@
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16,
-              "term": "loucas"
+              "count": 16
             },
             "title": "O Amor Está à Mesa",
             "image": {
               "src": "https://assets.decocache.com/arena-center/18c6f595-56c3-446d-8e17-7b447d5e423d/ChatGPT-Image-15-de-abr.-de-2025-10_06_08.png",
-              "href": "/"
+              "href": "loucas"
             }
           },
           {
@@ -364,12 +363,12 @@
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16,
-              "term": "loucas"
+              "count": 16
             },
             "title": "Café com Ternura",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/78a61792-4c45-4a6c-81ca-b9ede5d9d77e/resized_breakfast_table.png"
+              "src": "https://assets.decocache.com/arena-center/78a61792-4c45-4a6c-81ca-b9ede5d9d77e/resized_breakfast_table.png",
+              "href": "loucas"
             }
           },
           {
@@ -381,12 +380,12 @@
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16,
-              "term": "decoracao"
+              "count": 16
             },
             "title": "Memória Afetiva",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/be88264f-4c1c-4958-b759-e869a298a1cd/Design-sem-nome-(5).png"
+              "src": "https://assets.decocache.com/arena-center/be88264f-4c1c-4958-b759-e869a298a1cd/Design-sem-nome-(5).png",
+              "href": "decoracao"
             }
           },
           {
@@ -398,17 +397,18 @@
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16,
-              "term": "flores-permanentes"
+              "count": 16
             },
             "title": "Encanto e Delicadeza",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/e30db9e7-2ed9-4b8e-a5a2-577328dd27b7/ChatGPT-Image-10-de-abr.-de-2025-08_55_16.png"
+              "src": "https://assets.decocache.com/arena-center/e30db9e7-2ed9-4b8e-a5a2-577328dd27b7/ChatGPT-Image-10-de-abr.-de-2025-08_55_16.png",
+              "href": "flores-permanentes"
             }
           },
           {
             "image": {
-              "src": "https://assets.decocache.com/arena-center/c6327550-ae16-4e55-a09d-2d7e898a694d/AROMAS.png"
+              "src": "https://assets.decocache.com/arena-center/c6327550-ae16-4e55-a09d-2d7e898a694d/AROMAS.png",
+              "href": "aromatizadores-de-ambiente"
             },
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
@@ -418,8 +418,7 @@
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16,
-              "term": "aromatizadores-de-ambiente"
+              "count": 16
             },
             "title": "Aromas que Acolhem"
           }
