@@ -26,7 +26,10 @@
           {
             "desktop": "https://assets.decocache.com/arena-center/56597b89-9c4d-470e-b312-ac3bd6804610/Inspiracao-(2880-x-1200-px).png",
             "mobile": "https://assets.decocache.com/arena-center/f5ffd26d-bec9-479e-94ed-a51bccb75cd8/Copia-de-Banner-Mobile.png",
-            "alt": "Campanha dia das Mães 2"
+            "alt": "Campanha dia das Mães 2",
+            "action": {
+              "href": "inspiracao-mesa-posta-1"
+            }
           }
         ],
         "interval": 5
@@ -61,7 +64,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
         }
       ],
-      "interval": 3
+      "interval": 5
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
