@@ -361,7 +361,7 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
+              "sort": "lowest_price",
               "tags": [
                 "cafe-com-ternura"
               ],
@@ -378,7 +378,7 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
+              "sort": "newest",
               "tags": [
                 "memoria-afetiva"
               ],
@@ -416,7 +416,7 @@
             },
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
+              "sort": "lowest_price",
               "tags": [
                 "aromas-que-acolhem"
               ],
