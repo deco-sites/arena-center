@@ -47,7 +47,7 @@ function ProductCard({
 
   const item = mapProductToAnalyticsItem({ product, price, listPrice, index });
 
-  {/* Add click event to dataLayer */}
+  {/* Add click event to dataLayer */ }
   const event = useSendEvent({
     on: "click",
     event: {
@@ -125,7 +125,7 @@ function ProductCard({
 
       <a href={relativeUrl} class="pt-4">
         <div class="">
-          <span class="font-medium text-xs md:text-sm h-14 lg:h-10 line-clamp-2">
+          <span class="font-medium text-xs md:text-sm h-10 overflow-hidden line-clamp-2">
             {title}
           </span>
         </div>

@@ -64,13 +64,13 @@ const onLoad = () => {
     accumulatedScroll += scrollDifference;
     if (Math.abs(accumulatedScroll) >= HEIGHT_THRESHOLD) {
       if (accumulatedScroll > 0) {
-        header?.classList.add("opacity-0");
-        header?.classList.remove("opacity-100");
+        header!.style.opacity = "0";
+        header!.style.pointerEvents = "none";
         headerMobile?.classList.add("flex");
         headerMobile?.classList.remove("hidden");
       } else {
-        header?.classList.remove("opacity-0");
-        header?.classList.add("opacity-100");
+        header!.style.opacity = "1";
+        header!.style.pointerEvents = "auto";
         headerMobile?.classList.add("hidden");
         headerMobile?.classList.remove("flex");
       }
@@ -114,7 +114,7 @@ const Desktop = ({ navItems, logo, searchbar }: Props) => (
 const SerchBarMobile = ({ searchbar }: Props) => (
   <div
     id="header-mobile"
-    class="fixed w-screen mx-auto lg:hidden  justify-center hidden bg-base-100 z-40"
+    class="fixed w-screen mx-auto lg:hidden justify-center hidden bg-base-100 z-40"
   >
     <Searchbar {...searchbar} />
   </div>
@@ -238,10 +238,10 @@ function Header({
           : HEADER_HEIGHT_MOBILE,
       }}
     >
-      <div class=" fixed w-full z-40  top-0    transition-all duration-500 ease-in-out">
+      <div class=" fixed w-full z-40 top-0 transition-all duration-500 ease-in-out">
         {alerts.length > 0 && <Alert alerts={alerts} contacts={contacts} />}
         <SerchBarMobile logo={logo} {...props} />
-        <div id="header" class="bg-base-100 ">
+        <div id="header" class="transition-opacity duration-500 bg-base-100">
           {device === "desktop"
             ? <Desktop logo={props.logoDesktop} {...props} />
             : <Mobile logo={logo} {...props} />}

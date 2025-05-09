@@ -85,7 +85,7 @@ export default function Searchbar({
         </button>
         <input
           tabIndex={0}
-          class="input  join-item bg-transparent lg:bg-gray-100 min-h-0 lg:h-7 h-9  placeholder:text-[10px] lg:w-96 w-[88vw]"
+          class="input join-item bg-transparent lg:bg-gray-100 min-h-0 lg:h-7 h-9 placeholder:text-[10px] lg:w-96 w-[88vw] !outline-none focus:!border-none"
           name={NAME}
           placeholder={placeholder}
           autocomplete="off"
