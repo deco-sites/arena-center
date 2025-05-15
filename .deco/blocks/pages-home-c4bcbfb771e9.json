@@ -472,11 +472,11 @@
       "section": {
         "__resolveType": "site/sections/WideBannerHome.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/0b0a47aa-0f23-45f4-b488-d61ce158a262/mobile-(1).png",
-          "desktop": "https://assets.decocache.com/arena-center/918bacf2-1843-4fe1-91bb-7e5c9d8e90c9/desktop-(10).png"
+          "mobile": "https://assets.decocache.com/arena-center/87f9c6d5-8f62-4e83-bc82-0c6efba0de28/mobile.png",
+          "desktop": "https://assets.decocache.com/arena-center/6ad049bf-a028-44d9-ba71-79290bcf4f01/desktop-(7).png"
         },
-        "alt": "banner siga nosso instagram",
-        "href": "https://www.instagram.com/arenacenteroficial/"
+        "href": "/novidades-porto-brasil",
+        "alt": "Novidades Porto Brasil"
       }
     },
     {
