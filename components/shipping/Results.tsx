@@ -45,7 +45,7 @@ export default function Results({ result }: ComponentProps<typeof action>) {
     <ul class="flex flex-col gap-4 p-4 border border-base-400 rounded">
       {methods.map((method) => (
         <li class="flex justify-start items-center gap-2 border-base-200 not-first-child:border-t">
-          <div class="w-[70px] flex-shrink-0 flex justify-between items-center gap-1 whitespace-nowrap">
+          <div class="w-[70px] flex-shrink-0 flex justify-between items-center gap-1">
             <p>{method.name}</p>
             <p>-</p>
           </div>
