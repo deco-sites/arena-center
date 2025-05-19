@@ -3485,9 +3485,6 @@ details.collapse summary::-webkit-details-marker {
 .left-0 {
   left: 0px;
 }
-.left-1 {
-  left: 0.25rem;
-}
 .left-1\/2 {
   left: 50%;
 }
@@ -3870,9 +3867,6 @@ details.collapse summary::-webkit-details-marker {
 .h-\[17px\] {
   height: 17px;
 }
-.h-\[20px\] {
-  height: 20px;
-}
 .h-\[210px\] {
   height: 210px;
 }
@@ -4083,9 +4077,6 @@ details.collapse summary::-webkit-details-marker {
 }
 .w-\[400px\] {
   width: 400px;
-}
-.w-\[48px\] {
-  width: 48px;
 }
 .w-\[4px\] {
   width: 4px;

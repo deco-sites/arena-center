@@ -6,6 +6,7 @@ import { formatPrice } from "../../sdk/format.ts";
 import { relative } from "../../sdk/url.ts";
 import { useOffer } from "../../sdk/useOffer.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import Tag from "site/components/ui/Tag.tsx";
 
 interface Props {
   product: Product;
@@ -107,15 +108,9 @@ function ProductCardBuyTogether({
           />
         </a>
 
-        <div
-          class={clx(
-            "text-[10px] font-semibold text-base-100 bg-primary text-center rounded-badge w-[48px] h-[20px] uppercase",
-            "absolute top-1 left-1 flex flex-col items-center justify-center",
-            (percent < 1 || !inStock) && "opacity-1",
-          )}
-        >
-          <span>10% off</span>
-        </div>
+        {percent > 0 && (
+          <Tag text={`${percent} % off`} class="absolute z-30 top-2 left-2" />
+        )}
       </figure>
 
       <a href={relativeUrl} class="pt-5 flex flex-col items-center w-[143px]">
