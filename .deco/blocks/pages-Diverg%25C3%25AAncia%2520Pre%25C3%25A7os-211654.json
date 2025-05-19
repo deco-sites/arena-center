@@ -1,0 +1,30 @@
+{
+  "name": "Divergência Preços",
+  "path": "/divergencia-precos",
+  "sections": [
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "Header"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/TextInformations.tsx",
+        "conteudo": "<p>Informamos que os preços praticados em nosso site, em nossas lojas físicas e em anúncios promocionais podem variar entre si. Essa diferença pode ocorrer devido a condições específicas de cada canal de venda, como campanhas promocionais exclusivas, custos operacionais e estratégias comerciais distintas.</p><p>✔️ <strong>Por que os preços são diferentes?</strong></p><p><br>Cada plataforma pode oferecer condições específicas de venda. Por exemplo:</p><p>Algumas promoções podem ser exclusivas para compras online;</p><p>Ofertas veiculadas em panfletos, redes sociais ou anúncios podem ter validade e regras específicas;</p><p>Lojas físicas podem realizar ações promocionais locais.</p><p>🛒 <strong>Qual preço vale?</strong></p><p><br>De acordo com o Código de Defesa do Consumidor (CDC):</p><p>Toda oferta ou anúncio com preço claro e válido vincula o fornecedor ao cumprimento da condição apresentada;</p><p>Em caso de divergência de preço dentro do mesmo canal (por exemplo, em diferentes páginas do site), será considerado o menor valor;</p><p>Se o consumidor apresentar um anúncio válido com preço diferente, e as condições forem compatíveis, a loja deverá respeitar o valor anunciado.</p><p>🔎 <strong>Orientações:</strong></p><p><br>Sempre verifique as condições da oferta, como validade e exclusividade por canal;</p><p>Em caso de dúvidas ou divergência de valores, nossa equipe de atendimento está pronta para ajudar;</p><p>Guarde registros de promoções ou capturas de tela, caso deseje reivindicar um preço anunciado.</p><p><br data-mce-bogus=\"1\"></p><p><strong>Nosso compromisso é com a transparência e o respeito aos seus direitos como consumidor.</strong></p>",
+        "title": "Divergência de Preço entre Site, Lojas e Anúncios"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "AC-Footer"
+      }
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}

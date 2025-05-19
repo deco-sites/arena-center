@@ -3651,6 +3651,9 @@ details.collapse summary::-webkit-details-marker {
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+.-ml-\[20px\] {
+  margin-left: -20px;
+}
 .-mt-\[65px\] {
   margin-top: -65px;
 }

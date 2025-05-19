@@ -57,12 +57,12 @@
     {
       "children": [
         {
-          "title": "Informações de Preços, Promoções, Validade",
+          "title": "Preço, Promoção e Validade",
           "href": "/preco-promocao-validade"
         },
         {
-          "title": "Informações sobre divergência de preço ente o site, Loja e Anúncios",
-          "href": "/"
+          "title": "Divergência de preço entre Site, Loja e Anúncios",
+          "href": "/divergencia-precos"
         }
       ],
       "title": "Informações",
