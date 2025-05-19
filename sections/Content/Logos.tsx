@@ -52,7 +52,7 @@ function Logos({ images }: Props) {
             ))}
           </Slider>
         </div>
-        <div class="relative z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center lg:right-12 -left-3">
+        <div class="relative z-10 col-span-1 col-start-1 row-span-1 row-start-1 p-2 self-center lg:right-12 -left-3 -ml-[20px]">
           <Slider.PrevButton class="flex disabled:opacity-40 no-animation">
             <Icon id="chevron-right" class="rotate-180 text-accent-content" />
           </Slider.PrevButton>
