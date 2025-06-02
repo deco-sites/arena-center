@@ -58,8 +58,8 @@
       "46": "p",
       "47": ">",
       "title": "GANHE 10% OFF NA PRIMEIRA COMPRA",
-      "subtitle": "Aproveite: apenas no lançamento do site!",
-      "cupom": "arena10"
+      "cupom": "Arena10",
+      "subtitle": "Aproveite: apenas no lançamento do site!"
     },
     {
       "0": "<",
@@ -110,9 +110,8 @@
       "45": "/",
       "46": "p",
       "47": ">",
-      "title": "GANHE 10% OFF NA PRIMEIRA COMPRA",
-      "cupom": "arena10",
-      "subtitle": "Aproveite: apenas no lançamento do site!"
+      "title": "PARCELE EM ATÉ 6X SEM JUROS",
+      "subtitle": "Parcela mínima de R$100"
     }
   ],
   "logo": {

@@ -19,21 +19,30 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/arena-center/e04939f4-7962-4701-ae44-ac1ea4bca8f1/banner-novo-desktop.png",
-            "mobile": "https://assets.decocache.com/arena-center/d74f6174-2686-489a-85b6-26c221aaa7ca/banner-novo-mobile.png",
-            "alt": "Campanha dia das Mães"
+            "desktop": "https://assets.decocache.com/arena-center/61262caa-7fc7-44f0-b4e8-479ec2bc756d/Banner-Desktop-(2).png",
+            "mobile": "https://assets.decocache.com/arena-center/1f7113e9-2dbe-4c2c-8d74-b2f977f38d56/Banner-Mobile-(3).png",
+            "action": {
+              "title": "Outono Inverno",
+              "subTitle": "Desfrute do aconchego de estar EM CASA.",
+              "label": "Confira a coleção",
+              "href": "/outono-inverno"
+            },
+            "alt": "Outono Inverno"
           },
           {
-            "desktop": "https://assets.decocache.com/arena-center/48b4cb7a-b894-4716-9679-fac86d82cd33/Inspiracao-(2880-x-1200-px).png",
-            "mobile": "https://assets.decocache.com/arena-center/a42af133-5915-45b3-ba2b-890c789bc6c1/Copia-de-Banner-Mobile.png",
-            "alt": "Campanha dia das Mães 2",
+            "desktop": "https://assets.decocache.com/arena-center/df82359f-9634-4404-a78f-31b4d8e47b3c/Inspiracao-(2880-x-1200-px)-(1440-x-600-px).gif",
+            "mobile": "https://assets.decocache.com/arena-center/a624c4e5-ec9b-4e89-aa73-5435097face9/Copia-de-Banner-Mobile-(1).gif",
             "action": {
-              "href": "/inspiracao-mesa-posta-1",
-              "label": "Confira"
-            }
+              "label": "Confira a coleção",
+              "title": "Dia dos Namorados",
+              "subTitle": "Prepare a mesa, escolha os detalhes e viva momentos inesquecíveis.",
+              "href": "/dia-dos-namorados"
+            },
+            "alt": "Dia dos Namorados"
           }
         ],
-        "interval": 5
+        "preload": false,
+        "interval": 7
       }
     },
     {
@@ -65,7 +74,7 @@
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
         }
       ],
-      "interval": 5
+      "interval": 10
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
@@ -105,37 +114,31 @@
       ],
       "categoryItems": [
         {
-          "image": "https://assets.decocache.com/arena-center/f5fe7596-9e82-41ab-9435-9de4e19b7d64/decor-ok.png",
-          "paragraph": "Decoração com Alma",
-          "link": "/decoracao"
+          "image": "https://assets.decocache.com/arena-center/4a67c28f-0d56-42ad-b98d-34aba0a78543/Copia-de-Almofadas-mantas-e-tapetes.png",
+          "link": "/esculturas-vasos-plantas"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/c4c18bb3-bbd2-4c06-81fc-bb04b57073f0/SALA.png",
-          "link": "/sala-com-estilo",
-          "paragraph": "Sala com Estilo"
+          "image": "https://assets.decocache.com/arena-center/8eb418bb-86d5-4e91-9fca-bd23b9d3ebf2/Almofadas-mantas-e-tapetes.png",
+          "link": "/almofadas-mantas-tapetes"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/2ed1c547-bb98-454c-b8ab-7729ebd21795/Design-sem-nome.png",
-          "paragraph": "Elegância à Mesa",
-          "link": "/elegancia-a-mesa"
+          "image": "https://assets.decocache.com/arena-center/07a7380e-ea35-4d35-a339-fa6d2a0075ed/Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
+          "link": "/aromatizadores-difusores"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/e8846cea-1adf-4c9b-8983-817f2fb17275/cozinha-ok.png",
-          "paragraph": "Cozinha Prática",
-          "link": "/cozinha"
+          "image": "https://assets.decocache.com/arena-center/423d44bc-e8ae-4ea4-822d-4c339831465e/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
+          "link": "/luminarias-lanternas-velas"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/b6bf4fdc-c695-4bf6-983f-8cc3462a54aa/quarto-ok.png",
-          "paragraph": "Quarto Aconchegante",
-          "link": "/quarto"
+          "image": "https://assets.decocache.com/arena-center/e50648c7-38fb-4951-afaa-7f919a2617f4/Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
+          "link": "/outlet-inauguracao-30"
         },
         {
-          "paragraph": "Banheiro Clean",
-          "link": "/banheiro",
-          "image": "https://assets.decocache.com/arena-center/45bd6eb8-7f67-46fb-a299-d53286785f94/banheiro-ok.png"
+          "link": "/outlet-inauguracao-50",
+          "image": "https://assets.decocache.com/arena-center/b6e85406-b9c0-4be5-b767-6602c9b544cf/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes-(2).png"
         }
       ],
-      "itemListName": "ESCOLHA POR AMBIENTE"
+      "itemListName": "PARA AQUECER A TEMPORADA"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -145,12 +148,12 @@
           "__resolveType": "vnda/loaders/productList.ts",
           "count": 16,
           "tags": [
-            "os-mais-vendidos-em-decoracao"
+            "decoracao-aconchegante"
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "lowest_price",
-          "term": "os-mais-vendidos-em-decoracao"
+          "term": "decoracao-aconchegante",
+          "sort": "oldest"
         },
         "sort": "newest",
         "tags": [],
@@ -158,7 +161,7 @@
         "ids": [],
         "count": 10,
         "cta": "/decoracao",
-        "title": "OS MAIS VENDIDOS EM DECORAÇÃO"
+        "title": "DECORAÇÃO ACONCHEGANTE"
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -166,134 +169,54 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://assets.decocache.com/arena-center/10c78dc2-8c5d-497f-b9ea-1d074997e1dd/utensilios-a-partir-de-999.png",
+          "src": "https://assets.decocache.com/arena-center/fea90b1e-7ebf-43c5-90e9-00380184dd3b/mesa-e-cozinha-bambu-(1).png",
           "discount": "30%",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "utensilios-de-cozinha-a-partir-de"
+          "href": "amor-e-pasta"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/36011fdf-7f1e-4354-b061-e1a72dfd2370/decoracao-a-partir-de-1999.png",
+          "src": "https://assets.decocache.com/arena-center/a977a79c-6b65-45e4-adb4-8613991402ec/Copia-de-mesa-e-cozinha-bambu-(2).png",
           "discount": "50%",
-          "href": "decoracao-a-partir-de",
+          "href": "sintonia-e-vinho",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/c02b2ba2-7357-48f7-a96c-55113bc4d741/outlet-inauguracao-30.png",
+          "src": "https://assets.decocache.com/arena-center/1c21478c-9f75-49c3-9b9d-80ac9ab0dd91/Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
           "discount": "30%",
-          "href": "outlet-inauguracao-30",
+          "href": "alegria-e-pizza",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/98ee1f54-7e5c-4054-aae6-e7aebbea999c/outlet-inauguracao-50.png",
+          "src": "https://assets.decocache.com/arena-center/d2fcaeaa-f72a-440a-9a63-d1f448735bf9/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
           "discount": "30%",
-          "href": "outlet-inauguracao-50",
           "width": 564,
           "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "conexao-e-sushi"
         }
       ],
       "imagesMobile": [
         {
-          "src": "https://assets.decocache.com/arena-center/10c78dc2-8c5d-497f-b9ea-1d074997e1dd/utensilios-a-partir-de-999.png",
-          "href": "utensilios-de-cozinha-a-partir-de"
+          "src": "https://assets.decocache.com/arena-center/fea90b1e-7ebf-43c5-90e9-00380184dd3b/mesa-e-cozinha-bambu-(1).png",
+          "href": "amor-e-pasta"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/36011fdf-7f1e-4354-b061-e1a72dfd2370/decoracao-a-partir-de-1999.png",
-          "href": "decoracao-a-partir-de"
+          "src": "https://assets.decocache.com/arena-center/a977a79c-6b65-45e4-adb4-8613991402ec/Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "href": "sintonia-e-vinho"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/c02b2ba2-7357-48f7-a96c-55113bc4d741/outlet-inauguracao-30.png",
-          "href": "outlet-inauguracao-30"
+          "src": "https://assets.decocache.com/arena-center/1c21478c-9f75-49c3-9b9d-80ac9ab0dd91/Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "alegria-e-pizza"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/98ee1f54-7e5c-4054-aae6-e7aebbea999c/outlet-inauguracao-50.png",
-          "href": "outlet-inauguracao-50"
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "os-mais-vendidos-em-loucas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 16,
-          "term": "os-mais-vendidos-em-loucas",
-          "sort": "newest"
-        },
-        "sort": "newest",
-        "tags": [],
-        "typeTags": [],
-        "ids": [],
-        "count": 10,
-        "title": "OS MAIS VENDIDOS EM LOUÇAS",
-        "cta": "/loucas"
-      },
-      "title": "OS MAIS VENDIDOS"
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/50bc7220-d050-4f7f-a004-31ed49386d12/mesa-e-cozinha-bambu-(2).png",
-          "discount": "50%",
-          "href": "linha-mesa-cozinha-bambu",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/b37ecff1-effa-475f-ae92-19a7db5ddc8d/Copia-de-mesa-e-cozinha-bambu-(5).png",
-          "discount": "30%",
-          "href": "borda-dourada",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/5619ba9f-27f0-402b-9050-6018089464d2/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "href": "linha-oasis",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/41146e47-40c2-4c83-9593-3b0b0816ff64/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "href": "/linha-maresia",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/50bc7220-d050-4f7f-a004-31ed49386d12/mesa-e-cozinha-bambu-(2).png",
-          "href": "linha-mesa-cozinha-bambu"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/b37ecff1-effa-475f-ae92-19a7db5ddc8d/Copia-de-mesa-e-cozinha-bambu-(5).png",
-          "href": "borda-dourada"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/5619ba9f-27f0-402b-9050-6018089464d2/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "linha-oasis"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/41146e47-40c2-4c83-9593-3b0b0816ff64/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "/linha-maresia"
+          "src": "https://assets.decocache.com/arena-center/d2fcaeaa-f72a-440a-9a63-d1f448735bf9/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "conexao-e-sushi"
         }
       ]
     },
@@ -346,16 +269,16 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "highest_price",
               "tags": [
-                "o-amor-esta-a-mesa"
+                "fondue"
               ],
               "typeTags": [],
               "ids": [],
               "count": 20
             },
-            "title": "O Amor Está à Mesa",
+            "title": "Noite de Fondue",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/18c6f595-56c3-446d-8e17-7b447d5e423d/ChatGPT-Image-15-de-abr.-de-2025-10_06_08.png",
-              "href": "loucas"
+              "src": "https://assets.decocache.com/arena-center/4959a1ec-8411-48e8-a182-a9434eca435d/fondue.png",
+              "href": "fondue"
             }
           },
           {
@@ -363,33 +286,33 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "highest_price",
               "tags": [
-                "cafe-com-ternura"
+                "manha-mesa-posta"
               ],
               "typeTags": [],
               "ids": [],
               "count": 20
             },
-            "title": "Café com Ternura",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/78a61792-4c45-4a6c-81ca-b9ede5d9d77e/resized_breakfast_table.png",
-              "href": "loucas"
-            }
+              "src": "https://assets.decocache.com/arena-center/27365a10-ac54-48a3-b52d-25814570cc1f/mesa-posta.png",
+              "href": "manha-mesa-posta"
+            },
+            "title": "Manhã com Mesa Posta"
           },
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
               "tags": [
-                "memoria-afetiva"
+                "cantinho-do-cafe"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 18
+              "count": 20
             },
-            "title": "Memória Afetiva",
+            "title": "Cantinho do Café",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/be88264f-4c1c-4958-b759-e869a298a1cd/Design-sem-nome-(5).png",
-              "href": "decoracao"
+              "src": "https://assets.decocache.com/arena-center/886a6bbd-5907-430f-805d-f8b2234c8840/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome.png",
+              "href": "cantinho-do-cafe"
             }
           },
           {
@@ -397,39 +320,137 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "highest_price",
               "tags": [
-                "encanto-e-delicadeza"
+                "hora-do-cha"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 17
+              "count": 20
             },
-            "title": "Encanto e Delicadeza",
+            "title": "Hora do chá",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/e30db9e7-2ed9-4b8e-a5a2-577328dd27b7/ChatGPT-Image-10-de-abr.-de-2025-08_55_16.png",
-              "href": "flores-permanentes"
+              "src": "https://assets.decocache.com/arena-center/fe8b8b94-d71d-4af5-af21-6c22c780b4b1/cha.png",
+              "href": "hora-do-cha"
             }
           },
           {
             "image": {
-              "src": "https://assets.decocache.com/arena-center/c6327550-ae16-4e55-a09d-2d7e898a694d/AROMAS.png",
-              "href": "aromatizadores-de-ambiente"
+              "src": "https://assets.decocache.com/arena-center/500cbc3a-7e3e-4885-a7a1-3e8605cbac5d/Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
+              "href": "festival-de-canecas"
             },
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "lowest_price",
               "tags": [
-                "aromas-que-acolhem"
+                "festival-de-canecas"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 13
+              "count": 20,
+              "wildcard": true
             },
-            "title": "Aromas que Acolhem"
+            "title": "Festival de Canecas"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/47f971ce-5bcb-46bc-8915-df60cd27c3ad/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome.png",
+              "href": "o-melhor-preparo"
+            },
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "o-melhor-preparo"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "title": "O Melhor Preparo"
           }
         ],
         "index": 0,
         "title": "INSPIRAÇÕES PARA SURPREENDER E EMOCIONAR"
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "PARA QUEM AMA, MESA POSTA",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "count": 16,
+          "tags": [
+            "para-quem-ama-mesa-posta"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "oldest",
+          "term": "para-quem-ama-mesa-posta"
+        },
+        "sort": "newest",
+        "tags": [],
+        "typeTags": [],
+        "ids": [],
+        "count": 10,
+        "cta": "/mesa-posta"
+      },
+      "title": "OS MAIS VENDIDOS"
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/593d0890-1a53-4d5b-9e3c-0bbbf5db9141/Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "discount": "50%",
+          "href": "cozinha-organizada",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/4f53f9d7-d035-4ea5-9ff1-6f2743d9cf02/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "discount": "30%",
+          "href": "closet-organizado",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/34c05a03-30fa-43e0-8a80-bb86669fa8c6/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "discount": "30%",
+          "href": "banheiro-e-lavabo",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/2bd26f98-b0ab-449e-8490-54e998ba9e3b/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "lavanderia"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/593d0890-1a53-4d5b-9e3c-0bbbf5db9141/Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "href": "cozinha-organizada"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/4f53f9d7-d035-4ea5-9ff1-6f2743d9cf02/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "closet-organizado"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/34c05a03-30fa-43e0-8a80-bb86669fa8c6/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "banheiro-e-lavabo"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/2bd26f98-b0ab-449e-8490-54e998ba9e3b/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "lavanderia"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/ThreeImages.tsx",
@@ -451,33 +472,21 @@
       },
       "img": [
         {
-          "desktop": "https://assets.decocache.com/arena-center/eac75518-1199-4a69-b038-99626050e42e/Brown-Simple-Strategic-Working-Plan-Presentation--(15).png",
-          "mobile": "https://assets.decocache.com/arena-center/10a3f2c9-5cbb-4795-be19-395a0f2eb776/Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(2).png",
-          "link": "inspiracao-mesa-posta-2"
+          "desktop": "https://assets.decocache.com/arena-center/8033e0cf-d211-4b39-8ec0-74a9526bf4bb/Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(8).png",
+          "mobile": "https://assets.decocache.com/arena-center/a8fccd47-0ae9-4b35-96ee-68887daca2b8/Copia-de-Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(307-x-322-px).png",
+          "link": "almofadas-outono"
         },
         {
-          "desktop": "https://assets.decocache.com/arena-center/35cba6a9-4b52-48b9-9f1a-c88a442ebdc8/Design-sem-nome-(2).png",
-          "mobile": "https://assets.decocache.com/arena-center/2efe17a9-dd22-41b3-9dc8-d7ed515d8eb4/Design-sem-nome-(16).png",
-          "link": "inspiracao-mesa-posta-2"
+          "desktop": "https://assets.decocache.com/arena-center/81102b90-9457-4aee-8f98-3ed0d11365b5/3.png",
+          "mobile": "https://assets.decocache.com/arena-center/88e717e8-ec8d-4a17-8f42-fdfd3ccb9210/Sem-nome-(307-x-322-px)-(2).png",
+          "link": "almofadas-outono"
         },
         {
-          "desktop": "https://assets.decocache.com/arena-center/7b20a98a-ccef-4b46-aeb4-41b73524aa76/inspiracao-by-(8).png",
-          "mobile": "https://assets.decocache.com/arena-center/2084337b-3215-4727-aedb-090b73026da2/Copia-de-Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation-.png",
-          "link": "inspiracao-mesa-posta-2"
+          "desktop": "https://assets.decocache.com/arena-center/72bb5e46-4f18-4a4f-8a95-02740ba0d841/inspiracao-by-(1).png",
+          "mobile": "https://assets.decocache.com/arena-center/6f5bd1f8-defc-4682-9797-4a66e745be91/Copia-de-Copia-de-Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(307-x-322-px).png",
+          "link": "almofadas-outono"
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/WideBannerHome.tsx",
-        "images": {
-          "mobile": "https://assets.decocache.com/arena-center/87f9c6d5-8f62-4e83-bc82-0c6efba0de28/mobile.png",
-          "desktop": "https://assets.decocache.com/arena-center/6ad049bf-a028-44d9-ba71-79290bcf4f01/desktop-(7).png"
-        },
-        "href": "/novidades-porto-brasil",
-        "alt": "Novidades Porto Brasil"
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -485,18 +494,29 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
+          "count": 16,
+          "sort": "oldest",
           "tags": [
-            "os-mais-vendidos-em-cozinha"
+            "tendencias-decor"
           ],
           "typeTags": [],
           "ids": [],
-          "count": 16,
-          "wildcard": false,
-          "term": "os-mais-vendidos-em-cozinha",
-          "sort": "newest"
+          "term": "tendencias"
         },
-        "cta": "/cozinha",
-        "title": "OS MAIS VENDIDOS EM COZINHA"
+        "cta": "/decoracao",
+        "title": "PEÇAS SELECIONADAS PARA QUEM ACOMPANHA AS TENDÊNCIAS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/WideBannerHome.tsx",
+        "images": {
+          "mobile": "https://assets.decocache.com/arena-center/97b3a63d-db29-46bd-8aaa-379efd0f522f/desktop-(1200-x-204-px)-(7).png",
+          "desktop": "https://assets.decocache.com/arena-center/97b3a63d-db29-46bd-8aaa-379efd0f522f/desktop-(1200-x-204-px)-(7).png"
+        },
+        "href": "novidades-em-loucas",
+        "alt": "Novidades em Louças"
       }
     },
     {
