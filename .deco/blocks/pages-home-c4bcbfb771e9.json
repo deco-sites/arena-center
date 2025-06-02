@@ -34,9 +34,9 @@
             "mobile": "https://assets.decocache.com/arena-center/a624c4e5-ec9b-4e89-aa73-5435097face9/Copia-de-Banner-Mobile-(1).gif",
             "action": {
               "label": "Confira a coleção",
-              "title": "Dia dos Namorados",
               "subTitle": "Prepare a mesa, escolha os detalhes e viva momentos inesquecíveis.",
-              "href": "/dia-dos-namorados"
+              "href": "/dia-dos-namorados",
+              "title": "Dia dos Namorados"
             },
             "alt": "Dia dos Namorados"
           }
