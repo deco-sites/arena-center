@@ -512,11 +512,11 @@
       "section": {
         "__resolveType": "site/sections/WideBannerHome.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/8ba851ae-ed1d-4e93-b618-4dad063b85de/Copia-de-desktop-(1200-x-204-px).png",
+          "mobile": "https://assets.decocache.com/arena-center/5c8aa276-6e24-43bf-a2d2-d6be6364f1bf/Copia-de-desktop-(1200-x-204-px).png",
           "desktop": "https://assets.decocache.com/arena-center/97b3a63d-db29-46bd-8aaa-379efd0f522f/desktop-(1200-x-204-px)-(7).png"
         },
-        "href": "novidades-em-loucas",
-        "alt": "Novidades em Louças"
+        "href": "novidades-em-mesata",
+        "alt": "Novidades em Mesa Posta"
       }
     },
     {
