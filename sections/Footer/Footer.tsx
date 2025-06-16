@@ -91,8 +91,8 @@ function Footer(
           hx-get="#"
           hx-trigger="click"
           hx-swap="none"
-             hx-on:click={useScript(() => {
-            window.scrollTo({ top: 0, behavior: 'smooth' })
+          hx-on:click={useScript(() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
           })}
         >
           <Icon id="chevron-right" class="rotate-[270deg]" size={22} />
