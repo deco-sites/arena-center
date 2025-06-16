@@ -4,7 +4,7 @@ import Section from "../../components/ui/Section.tsx";
 import Newsletter from "../Newsletter/Newsletter.tsx";
 import { Props as NewsletterProps } from "../Newsletter/Newsletter.tsx";
 import Icon from "../../components/ui/Icon.tsx";
-import { useDevice } from "@deco/deco/hooks";
+import { useDevice, useScript } from "@deco/deco/hooks";
 /** @titleBy title */
 interface Item {
   title: string;
@@ -91,7 +91,9 @@ function Footer(
           hx-get="#"
           hx-trigger="click"
           hx-swap="none"
-          hx-on="click: window.scrollTo({ top: 0, behavior: 'smooth' })"
+             hx-on:click={useScript(() => {
+            window.scrollTo({ top: 0, behavior: 'smooth' })
+          })}
         >
           <Icon id="chevron-right" class="rotate-[270deg]" size={22} />
         </button>
