@@ -357,7 +357,7 @@
             },
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "o-melhor-preparo"
               ],
