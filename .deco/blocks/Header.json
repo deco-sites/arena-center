@@ -1,11 +1,11 @@
 {
   "__resolveType": "site/sections/Header/Header.tsx",
   "searchbar": {
-    "placeholder": "Digite o produto ou marca que você deseja",
     "loader": {
       "__resolveType": "resolved",
       "data": null
-    }
+    },
+    "placeholder": "O QUE VOCÊ PROCURA?"
   },
   "alerts": [
     {
@@ -57,9 +57,9 @@
       "45": "/",
       "46": "p",
       "47": ">",
-      "title": "GANHE 10% OFF NA PRIMEIRA COMPRA",
-      "cupom": "Arena10",
-      "subtitle": "Aproveite: apenas no lançamento do site!"
+      "title": "ANIVERSÁRIO ARENA COM 10% OFF",
+      "cupom": "CELEBRA",
+      "subtitle": "Aproveite o desconto exclusivo de aniversário! *Uso único por cliente."
     },
     {
       "0": "<",

@@ -19,30 +19,28 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/arena-center/61262caa-7fc7-44f0-b4e8-479ec2bc756d/Banner-Desktop-(2).png",
-            "mobile": "https://assets.decocache.com/arena-center/1f7113e9-2dbe-4c2c-8d74-b2f977f38d56/Banner-Mobile-(3).png",
+            "desktop": "https://assets.decocache.com/arena-center/28903925-0126-40a9-97b4-fd84a6ed074a/Copia-de-Banner-Desktop-(9).png",
+            "mobile": "https://assets.decocache.com/arena-center/adb12aed-bd82-46cd-9f93-a8e2d6858be4/Copia-de-Banner-Mobile-(2).png",
             "action": {
-              "title": "Outono Inverno",
-              "subTitle": "Desfrute do aconchego de estar EM CASA.",
-              "label": "Confira a coleção",
-              "href": "/outono-inverno"
+              "href": "/outlet-todos",
+              "label": "CONFIRA AS OFERTAS"
             },
-            "alt": "Outono Inverno"
+            "alt": "Aniversário Arena"
           },
           {
-            "desktop": "https://assets.decocache.com/arena-center/df82359f-9634-4404-a78f-31b4d8e47b3c/Inspiracao-(2880-x-1200-px)-(1440-x-600-px).gif",
-            "mobile": "https://assets.decocache.com/arena-center/a624c4e5-ec9b-4e89-aa73-5435097face9/Copia-de-Banner-Mobile-(1).gif",
+            "desktop": "https://assets.decocache.com/arena-center/9dc14edb-50f1-4850-b407-4a1672295b00/Banner-Desktop-(1).png",
+            "mobile": "https://assets.decocache.com/arena-center/a4e703c3-2c42-4f84-8285-758794a126be/Banner-Mobile-(1).png",
             "action": {
-              "label": "Confira a coleção",
-              "subTitle": "Prepare a mesa, escolha os detalhes e viva momentos inesquecíveis.",
-              "href": "/dia-dos-namorados",
-              "title": "Dia dos Namorados"
+              "label": "CONFIRA A COLEÇÃO",
+              "href": "/outono-inverno",
+              "title": "Temporada de Inverno",
+              "subTitle": "Desfrute do conforto de estar em casa. Escolha os detalhes e viva momentos inesquecíveis."
             },
-            "alt": "Dia dos Namorados"
+            "alt": "Temporada de Inverno"
           }
         ],
         "preload": false,
-        "interval": 7
+        "interval": 10
       }
     },
     {
@@ -128,14 +126,6 @@
         {
           "image": "https://assets.decocache.com/arena-center/423d44bc-e8ae-4ea4-822d-4c339831465e/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
           "link": "/luminarias-lanternas-velas"
-        },
-        {
-          "image": "https://assets.decocache.com/arena-center/e50648c7-38fb-4951-afaa-7f919a2617f4/Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
-          "link": "/outlet-inauguracao-30"
-        },
-        {
-          "link": "/outlet-inauguracao-50",
-          "image": "https://assets.decocache.com/arena-center/b6e85406-b9c0-4be5-b767-6602c9b544cf/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes-(2).png"
         }
       ],
       "itemListName": "PARA AQUECER A TEMPORADA"
@@ -146,14 +136,14 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 16,
           "tags": [
             "decoracao-aconchegante"
           ],
           "typeTags": [],
           "ids": [],
           "term": "decoracao-aconchegante",
-          "sort": "oldest"
+          "sort": "newest",
+          "count": 20
         },
         "sort": "newest",
         "tags": [],
