@@ -364,24 +364,24 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "PARA QUEM AMA, MESA POSTA",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 16,
           "tags": [
-            "para-quem-ama-mesa-posta"
+            "o-melhor-preparo"
           ],
           "typeTags": [],
           "ids": [],
           "sort": "oldest",
-          "term": "para-quem-ama-mesa-posta"
+          "term": "o-melhor-preparo",
+          "count": 22
         },
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "cta": "/mesa-posta"
+        "title": "SUA COZINHA MERECE O MELHOR",
+        "cta": "o-melhor-preparo"
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -482,17 +482,17 @@
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
-          "count": 16,
+          "count": 20,
           "sort": "oldest",
           "tags": [
-            "tendencias-decor"
+            "vasos-e-cachepots"
           ],
           "typeTags": [],
           "ids": [],
-          "term": "tendencias"
+          "term": "Vasos"
         },
-        "cta": "/decoracao",
-        "title": "PEÇAS SELECIONADAS PARA QUEM ACOMPANHA AS TENDÊNCIAS"
+        "cta": "/vasos-e-cachepots",
+        "title": "TENDÊNCIAS EM VASOS DECORATIVOS"
       }
     },
     {
