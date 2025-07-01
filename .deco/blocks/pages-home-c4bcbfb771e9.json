@@ -255,6 +255,96 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "manha-mesa-posta"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "title": "Café da Manhã",
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/a423c2e1-b71a-417f-a2f0-35f4b4ae1cf9/Copia-de-Copia-de-Sem-nome-(1).png",
+              "href": "manha-mesa-posta",
+              "alt": "Café da Manhã"
+            }
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "mesa-posta-almoco"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/c0b31b64-4cf4-4801-be80-e774d4debbad/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
+              "href": "mesa-posta-almoco"
+            },
+            "title": "Almoço"
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "hora-do-cha"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "title": "Café da tarde",
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/92e8ee16-5e08-4c87-a78a-69ec5e98aa6a/Copia-de-Copia-de-Sem-nome-(2).png",
+              "href": "hora-do-cha"
+            }
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "mesa-posta-jantar"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "title": "Jantar",
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/4776b7e4-3348-4170-8929-0bbcb62d64c3/Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
+              "href": "mesa-posta-jantar"
+            }
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/3518774d-9555-4ba2-ba2f-e64f677bbf34/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(2).png",
+              "href": "acessorios-mesa-posta"
+            },
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "highest_price",
+              "tags": [
+                "acessorios-mesa-posta"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "title": "Acessórios mesa posta"
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/f4fd8ccc-11de-4d90-881f-77d775e2db3f/Design-sem-nome-(1).png",
+              "href": "fondue"
+            },
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
               "sort": "highest_price",
               "tags": [
                 "fondue"
@@ -263,101 +353,11 @@
               "ids": [],
               "count": 20
             },
-            "title": "Noite de Fondue",
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/4959a1ec-8411-48e8-a182-a9434eca435d/fondue.png",
-              "href": "fondue"
-            }
-          },
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
-              "tags": [
-                "manha-mesa-posta"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/27365a10-ac54-48a3-b52d-25814570cc1f/mesa-posta.png",
-              "href": "manha-mesa-posta"
-            },
-            "title": "Manhã com Mesa Posta"
-          },
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
-              "tags": [
-                "cantinho-do-cafe"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "title": "Cantinho do Café",
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/886a6bbd-5907-430f-805d-f8b2234c8840/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome.png",
-              "href": "cantinho-do-cafe"
-            }
-          },
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
-              "tags": [
-                "hora-do-cha"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "title": "Hora do chá",
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/fe8b8b94-d71d-4af5-af21-6c22c780b4b1/cha.png",
-              "href": "hora-do-cha"
-            }
-          },
-          {
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/500cbc3a-7e3e-4885-a7a1-3e8605cbac5d/Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
-              "href": "festival-de-canecas"
-            },
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "lowest_price",
-              "tags": [
-                "festival-de-canecas"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20,
-              "wildcard": true
-            },
-            "title": "Festival de Canecas"
-          },
-          {
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/47f971ce-5bcb-46bc-8915-df60cd27c3ad/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome.png",
-              "href": "o-melhor-preparo"
-            },
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
-              "tags": [
-                "o-melhor-preparo"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "title": "O Melhor Preparo"
+            "title": "Fondue"
           }
         ],
         "index": 0,
-        "title": "INSPIRAÇÕES PARA SURPREENDER E EMOCIONAR"
+        "title": "MESA POSTA PERFEITA EM TODOS OS MOMENTOS"
       }
     },
     {
