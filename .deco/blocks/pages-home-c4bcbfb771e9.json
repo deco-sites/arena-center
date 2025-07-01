@@ -28,13 +28,11 @@
             "alt": "Aniversário Arena"
           },
           {
-            "desktop": "https://assets.decocache.com/arena-center/9dc14edb-50f1-4850-b407-4a1672295b00/Banner-Desktop-(1).png",
-            "mobile": "https://assets.decocache.com/arena-center/a4e703c3-2c42-4f84-8285-758794a126be/Banner-Mobile-(1).png",
+            "desktop": "https://assets.decocache.com/arena-center/37c077d1-f298-4185-b863-d515959acaa2/Banner-Desktop-(2).png",
+            "mobile": "https://assets.decocache.com/arena-center/aff51c82-8721-4aeb-a9f8-90d74962e7e9/Banner-Mobile-(2).png",
             "action": {
               "label": "CONFIRA A COLEÇÃO",
-              "href": "/outono-inverno",
-              "title": "Temporada de Inverno",
-              "subTitle": "Desfrute do conforto de estar em casa. Escolha os detalhes e viva momentos inesquecíveis."
+              "href": "/outono-inverno"
             },
             "alt": "Temporada de Inverno"
           }
