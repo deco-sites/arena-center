@@ -426,9 +426,9 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "oldest",
+          "sort": "highest_price",
           "term": "o-melhor-preparo",
-          "count": 22
+          "count": 20
         },
         "sort": "newest",
         "tags": [],
