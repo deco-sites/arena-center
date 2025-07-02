@@ -135,6 +135,61 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
+            "vasos-e-cachepots"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "term": "Vasos",
+          "sort": "oldest",
+          "count": 20
+        },
+        "cta": "/vasos-e-cachepots",
+        "title": "TENDÊNCIAS EM VASOS DECORATIVOS"
+      }
+    },
+    {
+      "__resolveType": "site/sections/ThreeImages.tsx",
+      "firstImage": {
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
+        "width": 2384,
+        "height": 2276,
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png"
+      },
+      "secondImage": {
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png",
+        "width": 2384,
+        "height": 1124
+      },
+      "thirdImage": {
+        "width": 2384,
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
+        "height": 1124
+      },
+      "img": [
+        {
+          "desktop": "https://assets.decocache.com/arena-center/cc52113a-98a3-46d3-8cda-500b9efa232d/Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(2).png",
+          "mobile": "https://assets.decocache.com/arena-center/cc52113a-98a3-46d3-8cda-500b9efa232d/Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(2).png",
+          "link": "caixas-vasos-esculturas"
+        },
+        {
+          "desktop": "https://assets.decocache.com/arena-center/ccd4d065-1ae2-40df-abee-06f9eb52b69d/inspiracao-by-(8).png",
+          "mobile": "https://assets.decocache.com/arena-center/e8f4feba-1e55-4a5c-aea3-4ac6ae4b4a45/Design-sem-nome-(1).png",
+          "link": "caixas-vasos-esculturas"
+        },
+        {
+          "desktop": "https://assets.decocache.com/arena-center/dbc90229-2650-4bd2-94e1-c7be864558a2/PRATO-SOBREMESA-BIO-RAIO-34613-R-3999-(15).png",
+          "mobile": "https://assets.decocache.com/arena-center/c3ce3a36-5cd8-4c5c-af51-4dddace28774/Design-sem-nome-(3).png",
+          "link": "caixas-vasos-esculturas"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
             "decoracao-aconchegante"
           ],
           "typeTags": [],
@@ -148,65 +203,10 @@
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "cta": "/decoracao",
-        "title": "DECORAÇÃO ACONCHEGANTE"
+        "cta": "/decoracao-aconchegante",
+        "title": "OS MAIS VENDIDOS EM DECORAÇÃO"
       },
       "title": "OS MAIS VENDIDOS"
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/21325b71-3f62-4d01-bd7f-22e148267719/mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "amor-e-pasta"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/6521ff33-f0b4-4156-964c-8b8c980dab4d/Copia-de-mesa-e-cozinha-bambu.png",
-          "discount": "50%",
-          "href": "sintonia-e-vinho",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/37e3ed45-62f5-461b-9c85-d02d6403046e/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "href": "alegria-e-pizza",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/fd442d9d-2e0f-4886-81c7-cf8db1ee8a5b/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "conexao-e-sushi"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/21325b71-3f62-4d01-bd7f-22e148267719/mesa-e-cozinha-bambu.png",
-          "href": "amor-e-pasta"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/6521ff33-f0b4-4156-964c-8b8c980dab4d/Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "sintonia-e-vinho"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/37e3ed45-62f5-461b-9c85-d02d6403046e/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "alegria-e-pizza"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/fd442d9d-2e0f-4886-81c7-cf8db1ee8a5b/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "conexao-e-sushi"
-        }
-      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -361,6 +361,61 @@
       }
     },
     {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/21325b71-3f62-4d01-bd7f-22e148267719/mesa-e-cozinha-bambu.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "amor-e-pasta"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/6521ff33-f0b4-4156-964c-8b8c980dab4d/Copia-de-mesa-e-cozinha-bambu.png",
+          "discount": "50%",
+          "href": "sintonia-e-vinho",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/37e3ed45-62f5-461b-9c85-d02d6403046e/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "discount": "30%",
+          "href": "alegria-e-pizza",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/fd442d9d-2e0f-4886-81c7-cf8db1ee8a5b/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "conexao-e-sushi"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/21325b71-3f62-4d01-bd7f-22e148267719/mesa-e-cozinha-bambu.png",
+          "href": "amor-e-pasta"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/6521ff33-f0b4-4156-964c-8b8c980dab4d/Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "sintonia-e-vinho"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/37e3ed45-62f5-461b-9c85-d02d6403046e/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "alegria-e-pizza"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/fd442d9d-2e0f-4886-81c7-cf8db1ee8a5b/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "conexao-e-sushi"
+        }
+      ]
+    },
+    {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
@@ -439,61 +494,6 @@
           "href": "lavanderia"
         }
       ]
-    },
-    {
-      "__resolveType": "site/sections/ThreeImages.tsx",
-      "firstImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
-        "width": 2384,
-        "height": 2276,
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png"
-      },
-      "secondImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png",
-        "width": 2384,
-        "height": 1124
-      },
-      "thirdImage": {
-        "width": 2384,
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
-        "height": 1124
-      },
-      "img": [
-        {
-          "desktop": "https://assets.decocache.com/arena-center/8033e0cf-d211-4b39-8ec0-74a9526bf4bb/Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(8).png",
-          "mobile": "https://assets.decocache.com/arena-center/a8fccd47-0ae9-4b35-96ee-68887daca2b8/Copia-de-Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(307-x-322-px).png",
-          "link": "almofadas-outono"
-        },
-        {
-          "desktop": "https://assets.decocache.com/arena-center/81102b90-9457-4aee-8f98-3ed0d11365b5/3.png",
-          "mobile": "https://assets.decocache.com/arena-center/88e717e8-ec8d-4a17-8f42-fdfd3ccb9210/Sem-nome-(307-x-322-px)-(2).png",
-          "link": "almofadas-outono"
-        },
-        {
-          "desktop": "https://assets.decocache.com/arena-center/72bb5e46-4f18-4a4f-8a95-02740ba0d841/inspiracao-by-(1).png",
-          "mobile": "https://assets.decocache.com/arena-center/6f5bd1f8-defc-4682-9797-4a66e745be91/Copia-de-Copia-de-Copia-de-Brown-Simple-Strategic-Working-Plan-Presentation--(307-x-322-px).png",
-          "link": "almofadas-outono"
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "count": 20,
-          "sort": "oldest",
-          "tags": [
-            "vasos-e-cachepots"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "term": "Vasos"
-        },
-        "cta": "/vasos-e-cachepots",
-        "title": "TENDÊNCIAS EM VASOS DECORATIVOS"
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
