@@ -500,8 +500,8 @@
       "section": {
         "__resolveType": "site/sections/WideBannerHome.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/5c8aa276-6e24-43bf-a2d2-d6be6364f1bf/Copia-de-desktop-(1200-x-204-px).png",
-          "desktop": "https://assets.decocache.com/arena-center/1a21ac6b-e506-4a07-b0cc-0a720620b8b5/desktop-(1200-x-204-px).png"
+          "mobile": "https://assets.decocache.com/arena-center/e8fac062-e5e2-4ccb-99bd-204f69a63126/desktop-(1200-x-204-px).png",
+          "desktop": "https://assets.decocache.com/arena-center/e8fac062-e5e2-4ccb-99bd-204f69a63126/desktop-(1200-x-204-px).png"
         },
         "href": "novidades-em-mesa-posta",
         "alt": "Novidades em Mesa Posta"
