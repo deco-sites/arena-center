@@ -486,8 +486,8 @@
       "section": {
         "__resolveType": "site/sections/WideBannerHome.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/886afbfe-8978-43c5-8554-8f2c7b401785/desktop-(1200-x-204-px).png",
-          "desktop": "https://assets.decocache.com/arena-center/886afbfe-8978-43c5-8554-8f2c7b401785/desktop-(1200-x-204-px).png"
+          "mobile": "https://assets.decocache.com/arena-center/d550552e-6416-4b1e-827e-2df734e1d0b9/desktop-(1200-x-204-px)-(1).png",
+          "desktop": "https://assets.decocache.com/arena-center/d550552e-6416-4b1e-827e-2df734e1d0b9/desktop-(1200-x-204-px)-(1).png"
         },
         "href": "novidade-decor",
         "alt": "Decoração"
