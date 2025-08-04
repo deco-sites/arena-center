@@ -254,13 +254,13 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "pai-que-ama-cozinhar"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16
+              "count": 20
             },
             "title": "COZINHAR",
             "image": {
@@ -272,13 +272,13 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "pai-que-ama-filmes-e-series"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16
+              "count": 20
             },
             "image": {
               "src": "https://assets.decocache.com/arena-center/10a87dfb-44ab-4cd9-9979-ab134ff09479/Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
@@ -290,13 +290,13 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "highest_price",
               "tags": [
                 "pai-que-ama-esportes"
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16
+              "count": 20
             },
             "title": "Esportes",
             "image": {
@@ -337,7 +337,7 @@
               ],
               "typeTags": [],
               "ids": [],
-              "count": 16
+              "count": 20
             },
             "title": "Viajar"
           }
@@ -414,7 +414,7 @@
           "ids": [],
           "sort": "newest",
           "term": "escritorio-com-estilo",
-          "count": 16
+          "count": 20
         },
         "sort": "newest",
         "tags": [],
