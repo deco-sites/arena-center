@@ -331,7 +331,7 @@
             },
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
+              "sort": "oldest",
               "tags": [
                 "pai-que-ama-viajar"
               ],
