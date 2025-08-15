@@ -19,22 +19,13 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/arena-center/21e7123b-16df-4686-b9e1-b8e0bccce089/Copia-de-Banner-Desktop-(1).png",
-            "mobile": "https://assets.decocache.com/arena-center/abb91a7b-dde3-4e27-8c8c-07edea8d0690/Copia-de-Copia-de-Banner-Mobile.png",
+            "desktop": "https://assets.decocache.com/arena-center/3d5a541c-f2ed-4d10-a778-34ec6c90d04c/Copia-de-Banner-Desktop-(4).png",
+            "mobile": "https://assets.decocache.com/arena-center/85ec0704-cc00-4ec6-95cd-31b97ccc1939/Copia-de-Copia-de-Banner-Mobile-(2).png",
             "action": {
-              "href": "/dia-dos-pais",
-              "label": "CONFIRA A COLEÇÃO"
+              "label": "CONFIRA",
+              "href": "/decoracao"
             },
-            "alt": "Dia dos Pais"
-          },
-          {
-            "desktop": "https://assets.decocache.com/arena-center/29361bf4-d6e5-45bb-8322-2b25dbcf0025/Copia-de-Copia-de-Banner-Desktop-(1).png",
-            "mobile": "https://assets.decocache.com/arena-center/51ca4858-0ac4-4ef2-8080-c88aa4821aba/Copia-de-Banner-Mobile-(1).png",
-            "action": {
-              "label": "CONFIRA A COLEÇÃO",
-              "href": "/dia-dos-pais"
-            },
-            "alt": "Dia dos Pais Coleção"
+            "alt": "Renova"
           }
         ],
         "preload": false,
