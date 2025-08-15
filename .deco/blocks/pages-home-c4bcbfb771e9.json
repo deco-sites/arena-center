@@ -126,14 +126,14 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "decoracao-que-aproxima"
+            "decoracao"
           ],
           "typeTags": [],
           "ids": [],
           "sort": "newest",
           "count": 16
         },
-        "cta": "/decoracao-que-aproxima",
+        "cta": "/decoracao",
         "title": "Decoração que aproxima"
       }
     },
