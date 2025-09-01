@@ -135,11 +135,11 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "decoracao"
+            "novidade-decor"
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
+          "sort": "lowest_price",
           "count": 20
         },
         "cta": "/decoracao",
