@@ -110,20 +110,20 @@
       ],
       "categoryItems": [
         {
-          "image": "https://assets.decocache.com/arena-center/ca3e1a43-971d-499c-9de8-67f9fedf66eb/Copia-de-Almofadas-mantas-e-tapetes.png",
-          "link": "/mesa-posta-azul"
-        },
-        {
-          "image": "https://assets.decocache.com/arena-center/8e5142eb-1126-48d5-82bb-a1dffa62158c/Almofadas-mantas-e-tapetes.png",
-          "link": "/mesa-posta-verde"
-        },
-        {
           "image": "https://assets.decocache.com/arena-center/2601b4eb-7014-4b3b-87bf-a18e5e445e44/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
           "link": "/mesa-posta-cinza-marrom-e-preto"
         },
         {
           "image": "https://assets.decocache.com/arena-center/3717736e-5594-4b38-aabc-9651681b2f50/Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
           "link": "/mesa-posta-branco"
+        },
+        {
+          "image": "https://assets.decocache.com/arena-center/8e5142eb-1126-48d5-82bb-a1dffa62158c/Almofadas-mantas-e-tapetes.png",
+          "link": "/mesa-posta-verde"
+        },
+        {
+          "image": "https://assets.decocache.com/arena-center/ca3e1a43-971d-499c-9de8-67f9fedf66eb/Copia-de-Almofadas-mantas-e-tapetes.png",
+          "link": "/mesa-posta-azul"
         }
       ],
       "itemListName": "INSPIRAÇÔES MESA POSTA"
@@ -140,10 +140,10 @@
           "typeTags": [],
           "ids": [],
           "sort": "newest",
-          "count": 16
+          "count": 20
         },
         "cta": "/decoracao",
-        "title": "Decoração que aproxima"
+        "title": "NOVIDADES EM DECORAÇÃO"
       }
     },
     {
