@@ -189,21 +189,21 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "mais-vendidos-mesa-posta"
+            "mesa-bambu"
           ],
           "typeTags": [],
           "ids": [],
-          "term": "mais-vendidos-mesa-posta",
+          "term": "mesa-bambu",
           "sort": "newest",
-          "count": 16
+          "count": 20
         },
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "cta": "/mesa-posta",
-        "title": "Os Mais Vendidos em Mesa Posta"
+        "cta": "/mesa-bambu",
+        "title": "MESA E COZINHA EM BAMBU"
       },
       "title": "OS MAIS VENDIDOS"
     },
