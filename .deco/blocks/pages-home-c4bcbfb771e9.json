@@ -19,13 +19,22 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/arena-center/3d5a541c-f2ed-4d10-a778-34ec6c90d04c/Copia-de-Banner-Desktop-(4).png",
-            "mobile": "https://assets.decocache.com/arena-center/85ec0704-cc00-4ec6-95cd-31b97ccc1939/Copia-de-Copia-de-Banner-Mobile-(2).png",
+            "desktop": "https://assets.decocache.com/arena-center/2bb39ade-54e7-49f0-ad9d-37d774ec479e/Copia-de-Banner-Desktop-(17).png",
+            "mobile": "https://assets.decocache.com/arena-center/0752238b-120a-45fc-bbc7-e934b1d3ecb2/Copia-de-Banner-Mobile-(8).png",
             "action": {
-              "label": "CONFIRA",
+              "href": "/mesa-posta",
+              "label": "CONFIRA A COLEÇÃO"
+            },
+            "alt": "Renova Mesa Posta"
+          },
+          {
+            "desktop": "https://assets.decocache.com/arena-center/6a17fcdf-4444-4620-a996-95cc980b4356/Copia-de-Copia-de-Banner-Desktop-(20).png",
+            "mobile": "https://assets.decocache.com/arena-center/b87b30f8-1ad3-423c-9195-9ce99f978577/Copia-de-Banner-Mobile-(5).png",
+            "action": {
+              "label": "CONFIRA A COLEÇÃO",
               "href": "/decoracao"
             },
-            "alt": "Renova"
+            "alt": "Renova Decor"
           }
         ],
         "preload": false,
