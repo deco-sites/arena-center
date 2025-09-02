@@ -110,12 +110,12 @@
       ],
       "categoryItems": [
         {
-          "image": "https://assets.decocache.com/arena-center/2601b4eb-7014-4b3b-87bf-a18e5e445e44/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
-          "link": "/mesa-posta-cinza-marrom-e-preto"
-        },
-        {
           "image": "https://assets.decocache.com/arena-center/3717736e-5594-4b38-aabc-9651681b2f50/Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
           "link": "/mesa-posta-branco"
+        },
+        {
+          "image": "https://assets.decocache.com/arena-center/2601b4eb-7014-4b3b-87bf-a18e5e445e44/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
+          "link": "/mesa-posta-cinza-marrom-e-preto"
         },
         {
           "image": "https://assets.decocache.com/arena-center/8e5142eb-1126-48d5-82bb-a1dffa62158c/Almofadas-mantas-e-tapetes.png",
@@ -350,54 +350,54 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://assets.decocache.com/arena-center/3eb25e03-79a3-4802-af55-812d98499399/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "src": "https://assets.decocache.com/arena-center/a3b7fccf-74ec-476b-8fae-25c73758775a/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
           "discount": "30%",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "conexao-e-sushi"
+          "href": "potes"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/4f95b190-b9d1-40fb-91a4-04eac93765c6/Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "src": "https://assets.decocache.com/arena-center/ca33a81c-b5a0-4805-92de-9addb1cef1b6/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
           "discount": "50%",
-          "href": "sintonia-e-vinho",
           "width": 564,
           "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "porta-condimentos"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/5d42ab59-926d-433c-a0fa-3ab6b6caed8d/mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "href": "amor-e-pasta",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/1a96c6e8-5e75-4bd2-b1f1-049b0c408df6/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "src": "https://assets.decocache.com/arena-center/d923ffa6-82ce-425d-a1d0-52e47d841733/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
           "discount": "30%",
           "width": 564,
           "height": 705,
           "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "alegria-e-pizza"
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/37151871-1e8a-4d65-b60a-672dabfd2446/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bombonieres-e-potiches"
         }
       ],
       "imagesMobile": [
         {
-          "src": "https://assets.decocache.com/arena-center/3eb25e03-79a3-4802-af55-812d98499399/Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "conexao-e-sushi"
+          "src": "https://assets.decocache.com/arena-center/a3b7fccf-74ec-476b-8fae-25c73758775a/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "potes"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/4f95b190-b9d1-40fb-91a4-04eac93765c6/Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "href": "sintonia-e-vinho"
+          "src": "https://assets.decocache.com/arena-center/ca33a81c-b5a0-4805-92de-9addb1cef1b6/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "porta-condimentos"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/1a96c6e8-5e75-4bd2-b1f1-049b0c408df6/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "alegria-e-pizza"
+          "src": "https://assets.decocache.com/arena-center/d923ffa6-82ce-425d-a1d0-52e47d841733/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "petisqueiras-e-tabuas"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/1a96c6e8-5e75-4bd2-b1f1-049b0c408df6/Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "amor-e-pasta"
+          "src": "https://assets.decocache.com/arena-center/37151871-1e8a-4d65-b60a-672dabfd2446/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "bombonieres-e-potiches"
         }
       ]
     },
