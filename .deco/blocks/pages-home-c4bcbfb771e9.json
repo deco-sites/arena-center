@@ -408,12 +408,12 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "escritorio-com-estilo"
+            "linha-ou"
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
-          "term": "escritorio-com-estilo",
+          "sort": "highest_price",
+          "term": "linha-ou",
           "count": 20
         },
         "sort": "newest",
@@ -421,8 +421,8 @@
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "title": "Escritório com Estilo",
-        "cta": "decoracao"
+        "title": "NOVIDADES PARA UMA COZINHA SEMPRE ORGANIZADA",
+        "cta": "linha-ou"
       },
       "title": "OS MAIS VENDIDOS"
     },
