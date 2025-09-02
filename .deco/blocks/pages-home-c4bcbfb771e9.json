@@ -256,53 +256,53 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "highest_price",
               "tags": [
-                "pai-que-ama-cozinhar"
+                "esculturas"
               ],
               "typeTags": [],
               "ids": [],
               "count": 20
             },
-            "title": "COZINHAR",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/dff9d15b-6bd0-43e2-a08d-38e7c4d12940/Copia-de-Copia-de-Sem-nome-(1).png",
-              "href": "/cozinha",
-              "alt": "Pai que Ama Cozinhar"
-            }
+              "src": "https://assets.decocache.com/arena-center/f37a558f-7bec-41ea-be1f-0e8f6c8b8da1/Copia-de-Copia-de-Sem-nome.png",
+              "href": "/esculturas",
+              "alt": "Curadoria em Esculturas"
+            },
+            "title": "ESCULTURAS"
           },
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
+              "sort": "newest",
               "tags": [
-                "pai-que-ama-filmes-e-series"
+                "caixas-decorativas"
               ],
               "typeTags": [],
               "ids": [],
               "count": 20
             },
             "image": {
-              "src": "https://assets.decocache.com/arena-center/10a87dfb-44ab-4cd9-9979-ab134ff09479/Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
-              "alt": "Pai que Ama Filmes e Séries",
-              "href": "/mesa-posta"
+              "src": "https://assets.decocache.com/arena-center/19da55d2-ecb5-4790-8674-7579d839ed61/Copia-de-Copia-de-Copia-de-Sem-nome.png",
+              "alt": "CAIXAS DECORATIVAS",
+              "href": "/caixas-decorativas"
             },
-            "title": "Filmes e séries"
+            "title": "CAIXAS DECORATIVAS"
           },
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
+              "sort": "newest",
               "tags": [
-                "pai-que-ama-esportes"
+                "vasos-e-cachepots"
               ],
               "typeTags": [],
               "ids": [],
               "count": 20
             },
-            "title": "Esportes",
+            "title": "VASOS",
             "image": {
-              "src": "https://assets.decocache.com/arena-center/68edaa6f-954d-408b-b196-a435ec44b2f1/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
-              "href": "/decoracao",
-              "alt": "Pai que Ama Esportes"
+              "src": "https://assets.decocache.com/arena-center/022b20bf-8a97-48fc-8137-6014f442c938/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(2).png",
+              "href": "/vasos-e-cachepots",
+              "alt": "VASOS"
             }
           },
           {
@@ -310,40 +310,40 @@
               "__resolveType": "vnda/loaders/productList.ts",
               "sort": "newest",
               "tags": [
-                "pai-que-ama-leitura"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 16
-            },
-            "title": "Leitura",
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/ac9bdbc9-279a-43f1-8bb8-59a00d6165d4/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome.png",
-              "href": "/decoracao",
-              "alt": "Pai que Ama Leitura"
-            }
-          },
-          {
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/8d3abd0b-ef65-4804-aecd-d3e0587e0fed/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome.png",
-              "href": "/decoracao",
-              "alt": "Pai que Ama Viajar"
-            },
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "oldest",
-              "tags": [
-                "pai-que-ama-viajar"
+                "bandejas-decorativas"
               ],
               "typeTags": [],
               "ids": [],
               "count": 20
             },
-            "title": "Viajar"
+            "title": "BANDEJAS DECORATIVAS",
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/47c19698-b617-4967-9001-4d6a7a667e5c/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
+              "href": "/bandejas-decorativas",
+              "alt": "BANDEJAS DECORATIVAS"
+            }
+          },
+          {
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/388de6fe-6fe7-48d3-91df-c070b22f888f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
+              "href": "/quadros-e-porta-retratos",
+              "alt": "PORTA RETRATOS"
+            },
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "newest",
+              "tags": [
+                "porta-retrato"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "title": "PORTA-RETRATOS"
           }
         ],
         "index": 0,
-        "title": "Seleção de Produtos para Pais que Amam:"
+        "title": "A MELHOR SELEÇÃO EM DECOR, CURADORIA ARENA"
       }
     },
     {
