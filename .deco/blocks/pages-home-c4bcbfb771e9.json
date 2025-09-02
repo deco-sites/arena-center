@@ -166,8 +166,8 @@
       },
       "img": [
         {
-          "desktop": "https://assets.decocache.com/arena-center/441d1234-2aa5-4192-b279-85e61206fa79/1-banner--desktop-e-mobile-(1).png",
-          "mobile": "https://assets.decocache.com/arena-center/441d1234-2aa5-4192-b279-85e61206fa79/1-banner--desktop-e-mobile-(1).png",
+          "desktop": "https://assets.decocache.com/arena-center/19c208e4-51db-4811-b5ff-2bd4326224af/1-banner--desktop-e-mobile-(2).png",
+          "mobile": "https://assets.decocache.com/arena-center/19c208e4-51db-4811-b5ff-2bd4326224af/1-banner--desktop-e-mobile-(2).png",
           "link": "cafe"
         },
         {
@@ -176,7 +176,7 @@
           "link": "cafe"
         },
         {
-          "desktop": "https://assets.decocache.com/arena-center/d17451b8-caf6-4e64-b076-5e4bd1c14027/3-banner-desktop-(1).png",
+          "desktop": "https://assets.decocache.com/arena-center/1239a2c8-64a8-479e-9e52-bd36d4d3a1de/3-banner-desktop-(3).png",
           "mobile": "https://assets.decocache.com/arena-center/0f5c2b5c-a386-464d-9a05-7ff159730cea/3-banner-mobile-(2).png",
           "link": "cafe"
         }
@@ -486,11 +486,9 @@
       "section": {
         "__resolveType": "site/sections/WideBannerHome.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/d550552e-6416-4b1e-827e-2df734e1d0b9/desktop-(1200-x-204-px)-(1).png",
-          "desktop": "https://assets.decocache.com/arena-center/d550552e-6416-4b1e-827e-2df734e1d0b9/desktop-(1200-x-204-px)-(1).png"
-        },
-        "href": "novidade-decor",
-        "alt": "Decoração"
+          "mobile": "https://assets.decocache.com/arena-center/a1a0dce3-c538-4fa3-9151-6e9170c90ef5/desktop-(1200-x-204-px)-(4).png",
+          "desktop": "https://assets.decocache.com/arena-center/a1a0dce3-c538-4fa3-9151-6e9170c90ef5/desktop-(1200-x-204-px)-(4).png"
+        }
       }
     },
     {
