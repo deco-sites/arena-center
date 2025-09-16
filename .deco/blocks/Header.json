@@ -1467,6 +1467,79 @@
       ],
       "url": "/organizacao",
       "image": null
+    },
+    {
+      "children": [
+        {
+          "children": [],
+          "name": "Mesa Posta Natal",
+          "url": "/natal/mesa-posta-natal",
+          "image": null
+        },
+        {
+          "children": [],
+          "url": "/natal/arvores-de-natal",
+          "name": "Árvores de Natal",
+          "image": null
+        },
+        {
+          "children": [],
+          "name": "Bolas Natalinas",
+          "url": "/natal/bolas-natalinas",
+          "image": null
+        },
+        {
+          "children": [],
+          "url": "/natal/pisca-pisca",
+          "name": "Pisca Pisca",
+          "image": null
+        },
+        {
+          "children": [],
+          "name": "Guirlandas e Festão",
+          "url": "/natal/guirlandas-e-festao",
+          "image": null
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Fitas e Laços Natalinos",
+          "url": "/natal/fitas-e-lacos-natalinos"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Bonecos Natalinos",
+          "url": "/natal/bonecos-natalinos"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Flores Permanentes Natalinas",
+          "url": "/natal/flores-permanentes-natalinas"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Adornos Natal",
+          "url": "/natal/adornos-natal"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Natal Diversos",
+          "url": "/natal/natal-diversos"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Natal Outlet",
+          "url": "/natal/natal-outlet"
+        }
+      ],
+      "image": null,
+      "name": "Natal",
+      "url": "/natal"
     }
   ],
   "loading": "eager",
