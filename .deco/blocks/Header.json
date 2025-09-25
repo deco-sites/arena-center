@@ -1478,39 +1478,33 @@
         },
         {
           "children": [],
-          "url": "/natal/arvores-de-natal",
-          "name": "Árvores de Natal",
-          "image": null
-        },
-        {
-          "children": [],
-          "name": "Bolas Natalinas",
           "url": "/natal/bolas-natalinas",
+          "name": "Bolas Natalinas",
           "image": null
         },
         {
           "children": [],
-          "url": "/natal/pisca-pisca",
           "name": "Pisca Pisca",
+          "url": "/natal/pisca-pisca",
           "image": null
         },
         {
           "children": [],
-          "name": "Guirlandas e Festão",
           "url": "/natal/guirlandas-e-festao",
+          "name": "Guirlandas e Festão",
           "image": null
         },
         {
           "children": [],
-          "image": null,
           "name": "Fitas e Laços Natalinos",
-          "url": "/natal/fitas-e-lacos-natalinos"
+          "url": "/natal/fitas-e-lacos-natalinos",
+          "image": null
         },
         {
           "children": [],
           "image": null,
           "name": "Bonecos Natalinos",
-          "url": "/natal/bonecos-natalinos"
+          "url": "/natal/bonecos-e-adornos"
         },
         {
           "children": [],
@@ -1521,20 +1515,8 @@
         {
           "children": [],
           "image": null,
-          "name": "Adornos Natal",
-          "url": "/natal/adornos-natal"
-        },
-        {
-          "children": [],
-          "image": null,
           "name": "Natal Diversos",
           "url": "/natal/natal-diversos"
-        },
-        {
-          "children": [],
-          "image": null,
-          "name": "Natal Outlet",
-          "url": "/natal/natal-outlet"
         }
       ],
       "image": null,
