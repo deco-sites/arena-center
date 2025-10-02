@@ -26,15 +26,6 @@
               "label": "CONFIRA A COLEÇÃO"
             },
             "alt": "Mesa Posta Renovada"
-          },
-          {
-            "desktop": "https://assets.decocache.com/arena-center/6a17fcdf-4444-4620-a996-95cc980b4356/Copia-de-Copia-de-Banner-Desktop-(20).png",
-            "mobile": "https://assets.decocache.com/arena-center/b87b30f8-1ad3-423c-9195-9ce99f978577/Copia-de-Banner-Mobile-(5).png",
-            "action": {
-              "label": "CONFIRA A COLEÇÃO",
-              "href": "/decoracao"
-            },
-            "alt": "Renova Decor"
           }
         ],
         "preload": false,
