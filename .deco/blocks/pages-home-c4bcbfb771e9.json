@@ -135,15 +135,15 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "novidade-decor"
+            "esculturas"
           ],
           "typeTags": [],
           "ids": [],
           "sort": "newest",
           "count": 25
         },
-        "cta": "/decoracao",
-        "title": "NOVIDADES EM DECORAÇÃO"
+        "cta": "/esculturas",
+        "title": "NOVIDADES EM ESCULTURAS"
       }
     },
     {
@@ -203,7 +203,7 @@
         "ids": [],
         "count": 10,
         "cta": "/mesa-bambu",
-        "title": "MESA E COZINHA EM BAMBU"
+        "title": "COZINHA EM BAMBU"
       },
       "title": "OS MAIS VENDIDOS"
     },
