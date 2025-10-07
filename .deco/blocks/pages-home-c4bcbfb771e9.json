@@ -19,13 +19,22 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/arena-center/2bb39ade-54e7-49f0-ad9d-37d774ec479e/Copia-de-Banner-Desktop-(17).png",
-            "mobile": "https://assets.decocache.com/arena-center/fc15dbaa-ff75-4b24-bdb2-3f7e0ae052c4/Copia-de-Banner-Mobile-(10).png",
+            "desktop": "https://assets.decocache.com/arena-center/7d42cbdc-91f2-4008-b349-76acbcc450e7/Copia-de-Banner-Desktop.gif",
+            "mobile": "https://assets.decocache.com/arena-center/ee1b1e08-2675-4bcc-8d90-ddc935a1efdb/Copia-de-Copia-de-Banner-Mobile-(8).gif",
             "action": {
-              "href": "/mesa-posta-renovada",
-              "label": "CONFIRA A COLEÇÃO"
+              "href": "/primavera-verao",
+              "label": "Descubra"
             },
-            "alt": "Mesa Posta Renovada"
+            "alt": "Primavera Verão"
+          },
+          {
+            "desktop": "https://assets.decocache.com/arena-center/b02bea9b-2313-4a43-b380-863536b9eada/Copia-de-Banner-Desktop-(9).png",
+            "mobile": "https://assets.decocache.com/arena-center/01af1db4-16bd-4c4d-a69c-07187c8f7677/Copia-de-Copia-de-Banner-Mobile-(5).png",
+            "action": {
+              "href": "/natal",
+              "label": "Descubra"
+            },
+            "alt": "Preview de Natal"
           }
         ],
         "preload": false,
