@@ -129,24 +129,6 @@
       "itemListName": "INSPIRAÇÔES MESA POSTA"
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "esculturas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "sort": "newest",
-          "count": 25
-        },
-        "cta": "/esculturas",
-        "title": "NOVIDADES EM ESCULTURAS"
-      }
-    },
-    {
       "__resolveType": "site/sections/ThreeImages.tsx",
       "firstImage": {
         "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
@@ -166,46 +148,21 @@
       },
       "img": [
         {
-          "desktop": "https://assets.decocache.com/arena-center/19c208e4-51db-4811-b5ff-2bd4326224af/1-banner--desktop-e-mobile-(2).png",
-          "mobile": "https://assets.decocache.com/arena-center/19c208e4-51db-4811-b5ff-2bd4326224af/1-banner--desktop-e-mobile-(2).png",
-          "link": "cafe"
+          "desktop": "https://assets.decocache.com/arena-center/6c22e911-6ba0-461b-86cf-b393aad64e21/1-banner--desktop-e-mobile-(3).png",
+          "mobile": "https://assets.decocache.com/arena-center/0c0166d6-7480-4c75-b4fb-03096912eee6/1-banner--desktop-e-mobile-(6).gif",
+          "link": "bio-mirage"
         },
         {
-          "desktop": "https://assets.decocache.com/arena-center/2f749df1-6435-4f21-8ff5-040d3f384a5e/2-banner-desktop-(2).png",
-          "mobile": "https://assets.decocache.com/arena-center/ff939160-441e-4d7f-95a2-4c03242af513/2-banner-mobile-(1).png",
-          "link": "cafe"
+          "desktop": "https://assets.decocache.com/arena-center/a22159db-bf68-455c-ba66-aa688140ff14/2-banner-desktop-(8).png",
+          "mobile": "https://assets.decocache.com/arena-center/6e8d51ca-41bb-4e4d-81a6-cb1df7eeb82a/1-banner--desktop-e-mobile-(4).png",
+          "link": "bio-mirage"
         },
         {
-          "desktop": "https://assets.decocache.com/arena-center/1239a2c8-64a8-479e-9e52-bd36d4d3a1de/3-banner-desktop-(3).png",
-          "mobile": "https://assets.decocache.com/arena-center/0f5c2b5c-a386-464d-9a05-7ff159730cea/3-banner-mobile-(2).png",
-          "link": "cafe"
+          "desktop": "https://assets.decocache.com/arena-center/f2840bac-84a9-475c-9d2c-906c428edd83/2-banner-desktop-(7).png",
+          "mobile": "https://assets.decocache.com/arena-center/88f52a0e-3380-4ab9-87a4-9be1c37a45f6/1-banner--desktop-e-mobile-(5).png",
+          "link": "bio-mirage"
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "mesa-bambu"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "term": "mesa-bambu",
-          "sort": "newest",
-          "count": 20
-        },
-        "sort": "newest",
-        "tags": [],
-        "typeTags": [],
-        "ids": [],
-        "count": 10,
-        "cta": "/mesa-bambu",
-        "title": "COZINHA EM BAMBU"
-      },
-      "title": "OS MAIS VENDIDOS"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -255,7 +212,25 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "highest_price",
+              "sort": "oldest",
+              "tags": [
+                "vasos-e-cachepots"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20
+            },
+            "title": "VASOS",
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/022b20bf-8a97-48fc-8137-6014f442c938/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(2).png",
+              "href": "/vasos-e-cachepots",
+              "alt": "VASOS"
+            }
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "sort": "oldest",
               "tags": [
                 "esculturas"
               ],
@@ -287,24 +262,6 @@
               "href": "/caixas-decorativas"
             },
             "title": "CAIXAS DECORATIVAS"
-          },
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
-              "tags": [
-                "vasos-e-cachepots"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "title": "VASOS",
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/022b20bf-8a97-48fc-8137-6014f442c938/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(2).png",
-              "href": "/vasos-e-cachepots",
-              "alt": "VASOS"
-            }
           },
           {
             "products": {
@@ -347,82 +304,45 @@
       }
     },
     {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a3b7fccf-74ec-476b-8fae-25c73758775a/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "potes"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "NOVIDADES EM ESCULTURAS",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "esculturas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "count": 25
         },
-        {
-          "src": "https://assets.decocache.com/arena-center/ca33a81c-b5a0-4805-92de-9addb1cef1b6/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "porta-condimentos"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/d923ffa6-82ce-425d-a1d0-52e47d841733/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f36de8e6-335c-459a-9dd9-360c5342275f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bombonieres-e-potiches"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a3b7fccf-74ec-476b-8fae-25c73758775a/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "href": "potes"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/ca33a81c-b5a0-4805-92de-9addb1cef1b6/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "href": "porta-condimentos"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/d923ffa6-82ce-425d-a1d0-52e47d841733/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f36de8e6-335c-459a-9dd9-360c5342275f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "href": "bombonieres-e-potiches"
-        }
-      ]
+        "cta": "/esculturas"
+      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "CAIXAS DECORATIVAS",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "linha-ou"
+            "caixas-decorativas"
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "highest_price",
-          "term": "linha-ou",
-          "count": 20
+          "sort": "lowest_price",
+          "term": "livro-caixa",
+          "count": 18
         },
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
         "count": 10,
-        "title": "NOVIDADES PARA UMA COZINHA SEMPRE ORGANIZADA",
-        "cta": "linha-ou"
+        "cta": "caixas-decorativas"
       },
       "title": "OS MAIS VENDIDOS"
     },
@@ -478,6 +398,86 @@
         {
           "src": "https://assets.decocache.com/arena-center/5454c634-5098-4fdd-bfb1-d3d653d07432/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
           "href": "faqueiros-e-talheres"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "mesa-bambu"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "term": "mesa-bambu",
+          "count": 20
+        },
+        "sort": "newest",
+        "tags": [],
+        "typeTags": [],
+        "ids": [],
+        "count": 10,
+        "title": "COZINHA EM BAMBU",
+        "cta": "/mesa-bambu"
+      },
+      "title": "OS MAIS VENDIDOS"
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/a3b7fccf-74ec-476b-8fae-25c73758775a/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "potes"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/ca33a81c-b5a0-4805-92de-9addb1cef1b6/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "discount": "50%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "porta-condimentos"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/d923ffa6-82ce-425d-a1d0-52e47d841733/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/f36de8e6-335c-459a-9dd9-360c5342275f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bombonieres-e-potiches"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/a3b7fccf-74ec-476b-8fae-25c73758775a/Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "potes"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/ca33a81c-b5a0-4805-92de-9addb1cef1b6/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "porta-condimentos"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/d923ffa6-82ce-425d-a1d0-52e47d841733/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/f36de8e6-335c-459a-9dd9-360c5342275f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "bombonieres-e-potiches"
         }
       ]
     },
