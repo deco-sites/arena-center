@@ -129,6 +129,24 @@
       "itemListName": "INSPIRAÇÔES MESA POSTA"
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "NOVIDADES EM ACESSÓRIOS PARA SERVIR",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "novidades-acessorios-para-servir"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "count": 25
+        },
+        "cta": "/acessorios-para-servir"
+      }
+    },
+    {
       "__resolveType": "site/sections/ThreeImages.tsx",
       "firstImage": {
         "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
@@ -335,7 +353,7 @@
           "ids": [],
           "sort": "lowest_price",
           "term": "livro-caixa",
-          "count": 18
+          "count": 25
         },
         "sort": "newest",
         "tags": [],
@@ -414,7 +432,7 @@
           "ids": [],
           "sort": "newest",
           "term": "mesa-bambu",
-          "count": 20
+          "count": 25
         },
         "sort": "newest",
         "tags": [],
