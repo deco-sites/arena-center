@@ -18,15 +18,15 @@
       "__resolveType": "site/sections/CenteredText.tsx",
       "text": [
         {
-          "mainTitle": "Nossa missão",
+          "mainTitle": "Missão",
           "paragraph": "<p>Proporcionar soluções práticas e acessíveis que simplifiquem o dia a dia, tragam conforto e estilo, e gerem valor tanto para consumidores finais quanto para atacadistas, com um atendimento que constrói relações de confiança e fidelidade.                                                                             .</p>"
         },
         {
-          "mainTitle": "Nossa visão",
+          "mainTitle": "Visão",
           "paragraph": "<p>Ser referência nacional em soluções para ambientes, unindo funcionalidade, design e praticidade. Queremos transformar a experiência de compra em algo simples e inspirador, contribuindo para que cada espaço reflita o estilo e a personalidade de quem o vive.</p>"
         },
         {
-          "mainTitle": "Nossos valores",
+          "mainTitle": "Valores",
           "paragraph": "<p>Acreditamos em qualidade e inovação, no respeito aos clientes e colaboradores, na transparência em nossas relações e na dedicação em atender com excelência. Valorizamos o compromisso com a satisfação de quem confia na Arena Center para transformar.</p>"
         }
       ]
