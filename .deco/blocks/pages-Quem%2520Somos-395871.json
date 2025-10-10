@@ -15,27 +15,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/WideBanner.tsx",
-        "images": {
-          "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9d9003ed-0705-43dd-8ea5-201a4a4969ad/quem-somos-banner.png",
-          "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9d9003ed-0705-43dd-8ea5-201a4a4969ad/quem-somos-banner.png"
-        }
-      }
-    },
-    {
-      "__resolveType": "site/sections/TextWithImage.tsx",
-      "services": [
-        {
-          "placement": "right",
-          "label": "A NOSSA HISTÓRIA É ESCRITA JUNTO COM A SUA !",
-          "description": "<p>&nbsp; Desde 2006, a <strong>Arena Center</strong> transforma ideias e sonhos em realidade. A partir da primeira loja, localizada no coração de Vigário Geral, Rio de Janeiro, nos tornamos referência em utilidades e decoração, oferecendo soluções que combinam praticidade, estilo, beleza e funcionalidade. </p><p>&nbsp; A partir desse sucesso, inauguramos nossa loja no Uptown Barra, trazendo um novo modelo para atender ainda melhor os nossos clientes. Com mais de 18 anos de experiência, atendemos tanto o público varejista quanto o atacadista, além de arquitetos e designers, com produtos que resolvem as necessidades do dia a dia e trazem beleza para todos os ambientes.</p><p>&nbsp; Nosso compromisso é tornar a vida mais prática e organizada, aliando variedade, qualidade e preços competitivos para atender às expectativas de nossos clientes. &nbsp;Estamos sempre ao seu lado, oferecendo um atendimento acolhedor e uma seleção completa de produtos que atendem a diferentes gostos e necessidades. Queremos continuar fazendo parte da sua vida, ajudando a transformar cada espaço em algo único e especial.</p>",
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1c1e2821-fa6d-4ea4-89f7-f7bf14dbac6c/familia.png"
-        }
-      ]
-    },
-    {
       "__resolveType": "site/sections/CenteredText.tsx",
       "text": [
         {
@@ -53,39 +32,90 @@
       ]
     },
     {
-      "__resolveType": "site/sections/DoubleCardText.tsx",
-      "infoSectionProps": [
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
         {
-          "text": "<p><strong>Na Arena Center, o sucesso tem nome: compromisso com você.</strong><br>Acreditamos que o verdadeiro diferencial está no atendimento que acolhe, entende e encanta. Nossa equipe está sempre pronta para oferecer uma experiência única, feita com atenção, respeito e dedicação.</p><p>Mais do que vender, buscamos oferecer o melhor — produtos com personalidade, qualidade que se sente no toque e preços que fazem sentido. É essa busca incansável pela excelência que move cada detalhe do nosso trabalho. Porque para nós, sucesso é ver você voltar, sorrir e confiar.</p>",
-          "title": "A essência do nosso sucesso"
-        },
-        {
-          "title": "Seu lar, do seu jeito",
-          "text": "<p><strong>Na Arena Center, o seu lar é o nosso compromisso.</strong><br>Mais do que oferecer utilidades e decoração, nossa missão é transformar cada ambiente em um reflexo do seu estilo, da sua história e da sua essência. Acreditamos que sua casa deve ser do seu jeito — confortável, funcional e com a sua personalidade em cada detalhe. Estamos aqui para ajudar você a criar não apenas um espaço bonito, mas um verdadeiro lar.</p>"
+          "placement": "right",
+          "label": "A NOSSA HISTÓRIA É ESCRITA JUNTO COM A SUA !",
+          "description": "<p style=\"text-align: justify\"><span style=\"font-size: 12pt\">&nbsp; Desde 2006, a Arena Center transforma ideias e sonhos em realidade. A partir da primeira loja, localizada no coração de Vigário Geral, Rio de Janeiro, nos tornamos referência em utilidades e decoração, oferecendo soluções que combinam praticidade, estilo, beleza e funcionalidade.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">&nbsp; A partir desse sucesso, inauguramos a loja do Uptown Barra, trazendo um novo modelo para atender ainda melhor os nossos clientes. Com mais de 18 anos de experiência, atendemos tanto o público varejista quanto o atacadista, além de arquitetos e designers, com produtos que resolvem as necessidades do dia a dia e trazem beleza para todos os ambientes.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">&nbsp; Nosso compromisso é tornar a vida mais prática e organizada, aliando variedade, qualidade e preços competitivos para atender às expectativas de nossos clientes. &nbsp;Estamos sempre ao seu lado, oferecendo um atendimento acolhedor e uma seleção completa de produtos que atendem a diferentes gostos e necessidades. Queremos continuar fazendo parte da sua vida, ajudando a transformar cada espaço em algo único e especial.</span></p>",
+          "image": "https://assets.decocache.com/arena-center/48efddd2-ad6c-4b9d-9596-543ef2cdb962/Imagem-do-WhatsApp-de-2025-09-26-a(s)-13.45.52_18423654.jpg"
         }
       ]
     },
     {
-      "__resolveType": "site/sections/VideoAndImagePost.tsx",
-      "title": "Eventos Arena Center",
-      "news": [
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
         {
-          "titleNews": "Workshop com Carlos Bertolazzi e Porto Brasil",
-          "image": {
-            "src": "https://assets.decocache.com/arena-center/278a5d80-1452-4c2d-aff0-0d3eeedcce21/Copia-de-Carlos-Bertolazzi-(Story).png"
-          },
-          "subtitleNews": "Nesta aula gastronômica em parceria com Carlos Bertolazzi e Porto Brasil, foi ensinado como podemos utilizar as louças para tornar as refeições ainda mais especiais. Foram liberados cupons de desconto, vouchers de compras, além dos sorteios Porto Brasil, e muito mais."
-        },
-        {
-          "image": {
-            "src": "https://assets.decocache.com/arena-center/0e5af41e-bfdc-4301-aaf4-c54d2921f9c3/Copia-de-Post-Workshop--(628-x-433-px)-(1).png"
-          },
-          "titleNews": "Workshops de Organização e Decoração",
-          "subtitleNews": "Nesses Workshops foram compartilhadas diversas dicas e formas de organizar e decorar. Em parceria com Personal Organizers e Arquitetas, repartimos o conhecimento em otimizar espaços e rotinas, através da transformação dos ambientes."
+          "placement": "right",
+          "label": "Propósito",
+          "description": "<p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Na Arena Center, acreditamos que cada detalhe da sua casa pode se transformar em uma memória.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">💖 Uma mesa posta que vira tradição.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">🏡 Um objeto que passa de geração em geração.</span></p>",
+          "image": "https://assets.decocache.com/arena-center/3a4a306a-f21e-4e44-843e-93deb7c0f294/Imagem-do-WhatsApp-de-2025-09-26-a(s)-13.45.52_15400729.jpg"
         }
-      ],
-      "layout": {
-        "variation": "Grid"
+      ]
+    },
+    {
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
+        {
+          "placement": "right",
+          "label": "Nossa Missão",
+          "description": "<p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Nossa missão é simples:</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">👉 Fazer da sua casa um verdadeiro lar.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Com soluções práticas, acessíveis e cheias de estilo, que te dão mais tempo para viver momentos com quem você ama.</span></p><p></p>",
+          "image": "https://assets.decocache.com/arena-center/82af1368-6447-4b7b-81e8-db80783e2a59/Imagem-do-WhatsApp-de-2025-09-26-a(s)-13.45.52_efb47a0b.jpg"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
+        {
+          "placement": "right",
+          "label": "CURADORIA",
+          "description": "<p style=\"text-align: justify\"><span style=\"font-size: 12pt\">E sabe aquele produto que dura anos?</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Não é por acaso.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Cada peça aqui é escolhida com cuidado, unindo design, funcionalidade e aconchego.</span></p><p></p>",
+          "image": "https://assets.decocache.com/arena-center/38039c4a-509b-4751-8a47-672d84581c17/Imagem-do-WhatsApp-de-2025-09-26-a(s)-13.45.52_fa098384.jpg"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
+        {
+          "placement": "right",
+          "label": "Nossa Visão",
+          "description": "<p style=\"text-align: justify\"><span style=\"font-size: 12pt\">A gente sonha grande:</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">🌍 Ser referência nacional em soluções para ambientes.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Mas, acima de tudo, queremos que cada compra seja uma experiência leve, inspiradora e cheia de significado.</span></p><p></p>",
+          "image": "https://assets.decocache.com/arena-center/cad61b50-48f8-4d10-9788-8c4a1c8579d8/Imagem-do-WhatsApp-de-2025-09-26-a(s)-13.45.52_0659bc8a.jpg"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
+        {
+          "placement": "right",
+          "label": "Nossos Valores",
+          "description": "<p style=\"text-align: justify\"><span style=\"font-size: 12pt\">E tudo isso só faz sentido porque acreditamos em:</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">✔ Qualidade e inovação para colorir sua vida.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">✔ Respeito e transparência para gerar confiança.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">✔ Dedicação em cada atendimento.</span></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">✔ Compromisso com você, que confia na Arena Center.</span></p><p></p>",
+          "image": "https://assets.decocache.com/arena-center/2d5e9680-a605-4ced-908d-4560fe02796d/Imagem-do-WhatsApp-de-2025-09-26-a(s)-13.45.52_a7065012.jpg"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/TextWithImage.tsx",
+      "services": [
+        {
+          "placement": "right",
+          "label": "Porque no fim, não vendemos apenas decoração e utilidades",
+          "description": "<p></p><p style=\"text-align: justify\"><span style=\"font-size: 12pt\">Ajudamos você a criar histórias, memórias e momentos que vão durar para sempre. ✨ </span></p><p></p><p></p><p></p>",
+          "image": "https://assets.decocache.com/arena-center/428f8d1e-aec9-4d81-b935-28bd74cda233/Imagem-do-WhatsApp-de-2025-09-26-a(s)-13.45.52_68f75ad1.jpg"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/WideBanner.tsx",
+        "images": {
+          "mobile": "https://assets.decocache.com/arena-center/d3a4fac7-5df7-4a75-b1f2-95e5060fac12/Utilidade-com-estilo-Decoracao-com-alma-(2).png",
+          "desktop": "https://assets.decocache.com/arena-center/a4dd01ba-07a1-445d-8b74-90df8eb7af48/Utilidade-com-estilo-Decoracao-com-alma-(1).png"
+        }
       }
     },
     {
