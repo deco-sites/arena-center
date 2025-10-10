@@ -186,7 +186,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "NOVIDADES EM ORIENTAL",
+        "title": "LINHA ORIENTAL",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -248,7 +248,6 @@
           {
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "oldest",
               "tags": [
                 "vasos-e-cachepots"
               ],
