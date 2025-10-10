@@ -185,6 +185,24 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "NOVIDADES EM ORIENTAL",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "linha-oriental"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "count": 20
+        },
+        "cta": "/acessorios-para-servir"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/CategoriesProdutctsShelf.tsx",
         "title": "A MELHOR SELEÇÃO EM DECOR, CURADORIA ARENA",
         "section": [
@@ -325,7 +343,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "NOVIDADES EM ESCULTURAS",
+        "title": "NOVIDADES EM DECORAÇÃO",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -334,7 +352,7 @@
           "typeTags": [],
           "ids": [],
           "sort": "newest",
-          "count": 25
+          "count": 20
         },
         "cta": "/esculturas"
       }
@@ -343,7 +361,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "CAIXAS DECORATIVAS",
+        "title": "LLIVROS CAIXA",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -353,7 +371,7 @@
           "ids": [],
           "sort": "lowest_price",
           "term": "livro-caixa",
-          "count": 25
+          "count": 20
         },
         "sort": "newest",
         "tags": [],
