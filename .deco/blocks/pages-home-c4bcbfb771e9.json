@@ -185,24 +185,6 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "LINHA ORIENTAL",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "linha-oriental"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "sort": "newest",
-          "count": 20
-        },
-        "cta": "/linha-oriental"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
         "__resolveType": "site/sections/CategoriesProdutctsShelf.tsx",
         "title": "A MELHOR SELEÇÃO EM DECOR, CURADORIA ARENA",
         "section": [
@@ -249,6 +231,24 @@
             "products": {
               "__resolveType": "vnda/loaders/productList.ts",
               "tags": [
+                "esculturas"
+              ],
+              "typeTags": [],
+              "ids": [],
+              "count": 20,
+              "sort": "highest_price"
+            },
+            "image": {
+              "src": "https://assets.decocache.com/arena-center/f37a558f-7bec-41ea-be1f-0e8f6c8b8da1/Copia-de-Copia-de-Sem-nome.png",
+              "href": "/esculturas",
+              "alt": "Curadoria em Esculturas"
+            },
+            "title": "ESCULTURAS"
+          },
+          {
+            "products": {
+              "__resolveType": "vnda/loaders/productList.ts",
+              "tags": [
                 "vasos-e-cachepots"
               ],
               "typeTags": [],
@@ -261,24 +261,6 @@
               "href": "/vasos-e-cachepots",
               "alt": "VASOS"
             }
-          },
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "oldest",
-              "tags": [
-                "esculturas"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/f37a558f-7bec-41ea-be1f-0e8f6c8b8da1/Copia-de-Copia-de-Sem-nome.png",
-              "href": "/esculturas",
-              "alt": "Curadoria em Esculturas"
-            },
-            "title": "ESCULTURAS"
           },
           {
             "products": {
@@ -369,15 +351,15 @@
           "typeTags": [],
           "ids": [],
           "sort": "lowest_price",
-          "term": "livro-caixa",
-          "count": 20
+          "count": 20,
+          "term": "livro-caixa"
         },
+        "cta": "caixas-decorativas",
         "sort": "newest",
         "tags": [],
         "typeTags": [],
         "ids": [],
-        "count": 10,
-        "cta": "caixas-decorativas"
+        "count": 10
       },
       "title": "OS MAIS VENDIDOS"
     },
