@@ -346,7 +346,7 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "LLIVROS CAIXA",
+        "title": "LIVROS CAIXA",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
