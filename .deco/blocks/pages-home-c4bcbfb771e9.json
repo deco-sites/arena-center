@@ -89,37 +89,6 @@
       }
     },
     {
-      "__resolveType": "site/sections/TopBar.tsx",
-      "content": [
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ec50a172-adc4-4e00-bd1c-67422472a492/Design-sem-nome-(14).svg",
-          "title": "Entrega Rápida",
-          "subtitle": "Para todo o Brasil",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9fef46c4-33eb-4fa1-8340-fefdcb77b48c/Design-sem-nome-(15).svg",
-          "greaterIcon": true
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/895423e6-7c07-4697-a6a4-fe22ce0da508/Design-sem-nome-(13).svg",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8b96a6d8-5929-43f5-b6f0-e057ade4642d/caixabranca.svg",
-          "title": "Embalagem Reforçada",
-          "subtitle": "Seu produto em perfeito estado"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/04ca241f-a70f-4987-9302-544a8ce18f92/Design-sem-nome-(16).svg",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/cb3c7d08-2419-471f-aaa5-860f8200126c/Design-sem-nome-(15).svg",
-          "title": "Parcelamento",
-          "subtitle": "Em até 6x sem juros"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/36e3f40b-0bed-4099-a8a8-1f07e8f76e19/Design-sem-nome-(17).svg",
-          "title": "Troca Fácil",
-          "subtitle": "Sistema de trocas facilitado",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
-        }
-      ],
-      "interval": 5
-    },
-    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
@@ -193,64 +162,115 @@
       }
     },
     {
-      "__resolveType": "site/sections/CategorySlider.tsx",
-      "products": [
+      "__resolveType": "site/sections/TopBar.tsx",
+      "content": [
         {
-          "@type": "Product",
-          "additionalProperty": [],
-          "aggregateRating": {
-            "@type": "AggregateRating"
-          },
-          "brand": {
-            "@type": "Brand"
-          },
-          "isRelatedTo": [],
-          "isSimilarTo": [],
-          "isVariantOf": {
-            "@type": "ProductGroup",
-            "hasVariant": [],
-            "additionalProperty": []
-          },
-          "offers": {
-            "@type": "AggregateOffer",
-            "offers": [],
-            "hasMerchantReturnPolicy": {
-              "@type": "MerchantReturnPolicy",
-              "returnFees": "https://schema.org/FreeReturn",
-              "returnMethod": "https://schema.org/KeepProduct",
-              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow"
-            }
-          },
-          "review": [],
-          "isAccessoryOrSparePartFor": [],
-          "questions": [],
-          "image": [],
-          "video": []
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ec50a172-adc4-4e00-bd1c-67422472a492/Design-sem-nome-(14).svg",
+          "title": "Entrega Rápida",
+          "subtitle": "Para todo o Brasil",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9fef46c4-33eb-4fa1-8340-fefdcb77b48c/Design-sem-nome-(15).svg",
+          "greaterIcon": true
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/895423e6-7c07-4697-a6a4-fe22ce0da508/Design-sem-nome-(13).svg",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8b96a6d8-5929-43f5-b6f0-e057ade4642d/caixabranca.svg",
+          "title": "Embalagem Reforçada",
+          "subtitle": "Seu produto em perfeito estado"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/04ca241f-a70f-4987-9302-544a8ce18f92/Design-sem-nome-(16).svg",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/cb3c7d08-2419-471f-aaa5-860f8200126c/Design-sem-nome-(15).svg",
+          "title": "Parcelamento",
+          "subtitle": "Em até 6x sem juros"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/36e3f40b-0bed-4099-a8a8-1f07e8f76e19/Design-sem-nome-(17).svg",
+          "title": "Troca Fácil",
+          "subtitle": "Sistema de trocas facilitado",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
         }
       ],
-      "categoryItems": [
+      "interval": 5
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
         {
-          "image": "https://assets.decocache.com/arena-center/3717736e-5594-4b38-aabc-9651681b2f50/Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
-          "link": "/mesa-posta-branco"
+          "src": "https://assets.decocache.com/arena-center/412ad248-335b-4d09-8db8-2ec00719e87f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(8).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "boleiras"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/69f95e76-7b2b-4119-88ce-d10d5990aea7/Almofadas-mantas-e-tapetes-(1).png",
-          "link": "/mesa-posta-verde"
+          "src": "https://assets.decocache.com/arena-center/8105fd65-ea84-4ffd-923c-c06fd62c5a99/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(5).png",
+          "discount": "30%",
+          "href": "bombonieres-e-potiches",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/2601b4eb-7014-4b3b-87bf-a18e5e445e44/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes.png",
-          "link": "/mesa-posta-cinza-marrom-e-preto"
+          "src": "https://assets.decocache.com/arena-center/5c9e75ec-914e-45e6-a6e4-a45db12b6dcc/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "petisqueiras-e-tabuas"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/20cf0168-06eb-4d24-bb42-9f54cc70d456/Almofadas-mantas-e-tapetes-(5).png",
-          "link": "/mesa-posta-amarelo"
-        },
-        {
-          "image": "https://assets.decocache.com/arena-center/ca3e1a43-971d-499c-9de8-67f9fedf66eb/Copia-de-Almofadas-mantas-e-tapetes.png",
-          "link": "/mesa-posta-azul"
+          "src": "https://assets.decocache.com/arena-center/cf8bc2d3-c4de-4838-8e85-b45831c84db3/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(7).png",
+          "discount": "50%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "jarras-moringas-e-suqueiras"
         }
       ],
-      "itemListName": "INSPIRAÇÕES MESA POSTA"
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/412ad248-335b-4d09-8db8-2ec00719e87f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(8).png",
+          "href": "boleiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/8105fd65-ea84-4ffd-923c-c06fd62c5a99/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(5).png",
+          "href": "bombonieres-e-potiches"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/5c9e75ec-914e-45e6-a6e4-a45db12b6dcc/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/cf8bc2d3-c4de-4838-8e85-b45831c84db3/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(7).png",
+          "href": "jarras-moringas-e-suqueiras"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "loucas-diversas-natal"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "term": "loucas-diversas-natal",
+          "count": 25
+        },
+        "sort": "newest",
+        "tags": [],
+        "typeTags": [],
+        "ids": [],
+        "count": 10,
+        "title": "LOUÇAS E MELAMINAS NATAL",
+        "cta": "/loucas-diversas-natal"
+      },
+      "title": "OS MAIS VENDIDOS"
     },
     {
       "__resolveType": "site/sections/ThreeImages.tsx",
@@ -289,90 +309,71 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "mesa-bambu"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "sort": "newest",
-          "term": "mesa-bambu",
-          "count": 25
-        },
-        "sort": "newest",
-        "tags": [],
-        "typeTags": [],
-        "ids": [],
-        "count": 10,
-        "title": "COZINHA EM BAMBU",
-        "cta": "/mesa-bambu"
-      },
-      "title": "OS MAIS VENDIDOS"
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
+      "__resolveType": "site/sections/CategorySlider.tsx",
+      "products": [
         {
-          "src": "https://assets.decocache.com/arena-center/9c055f62-efcc-4cfb-abe7-3d9001718ee5/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "tacas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/2a1a31ba-305a-4496-ba21-7fb1862f98da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "discount": "30%",
-          "href": "copos-e-jarras",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/0bb70118-3dc1-405c-a92c-8b141fd8f364/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "lugar-americano"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/5454c634-5098-4fdd-bfb1-d3d653d07432/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "faqueiros-e-talheres"
+          "@type": "Product",
+          "additionalProperty": [],
+          "aggregateRating": {
+            "@type": "AggregateRating"
+          },
+          "brand": {
+            "@type": "Brand"
+          },
+          "isRelatedTo": [],
+          "isSimilarTo": [],
+          "isVariantOf": {
+            "@type": "ProductGroup",
+            "hasVariant": [],
+            "additionalProperty": []
+          },
+          "offers": {
+            "@type": "AggregateOffer",
+            "offers": [],
+            "hasMerchantReturnPolicy": {
+              "@type": "MerchantReturnPolicy",
+              "returnFees": "https://schema.org/FreeReturn",
+              "returnMethod": "https://schema.org/KeepProduct",
+              "returnPolicyCategory": "https://schema.org/MerchantReturnFiniteReturnWindow"
+            }
+          },
+          "review": [],
+          "isAccessoryOrSparePartFor": [],
+          "questions": [],
+          "image": [],
+          "video": []
         }
       ],
-      "imagesMobile": [
+      "categoryItems": [
         {
-          "src": "https://assets.decocache.com/arena-center/9c055f62-efcc-4cfb-abe7-3d9001718ee5/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "href": "tacas"
+          "image": "https://assets.decocache.com/arena-center/228ab833-5e5b-4711-a4b3-f83d9487cd3c/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes-(1).png",
+          "link": "/sala"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/2a1a31ba-305a-4496-ba21-7fb1862f98da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "href": "copos-e-jarras"
+          "image": "https://assets.decocache.com/arena-center/d8af2a57-9fff-4b1f-b829-a48ac228d770/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes-(2).png",
+          "link": "/quarto"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/0bb70118-3dc1-405c-a92c-8b141fd8f364/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
-          "href": "lugar-americano"
+          "image": "https://assets.decocache.com/arena-center/ba5c2f19-d560-4680-b96f-73118891378a/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes-(3).png",
+          "link": "/cozinha"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/5454c634-5098-4fdd-bfb1-d3d653d07432/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu.png",
-          "href": "faqueiros-e-talheres"
+          "image": "https://assets.decocache.com/arena-center/e8d8efbe-422a-4d07-9a4b-1bf4cdd5da55/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes-(4).png",
+          "link": "/banheiro-e-lavabo"
+        },
+        {
+          "image": "https://assets.decocache.com/arena-center/d59460ba-75af-4c7c-b93a-d02dbc20e56d/Copia-de-Copia-de-Copia-de-Copia-de-Almofadas-mantas-e-tapetes-(5).png",
+          "link": "/lavanderia-e-closet"
         }
-      ]
+      ],
+      "itemListName": "RENOVE SUA CASA PARA O FIM DE ANO"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "NOVIDADES EM DECORAÇÃO",
+        "cta": "/esculturas",
+        "title": "NOVIDADES EM ESCULTURAS",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -382,135 +383,43 @@
           "ids": [],
           "sort": "newest",
           "count": 20
-        },
-        "cta": "/esculturas"
+        }
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/CategoriesProdutctsShelf.tsx",
-        "title": "SELEÇÃO EM DECORAÇÃO, COM A CURADORIA ARENA.",
-        "section": [
+        "__resolveType": "site/sections/Images/ImageGallery.tsx",
+        "cta": "/caixas-decorativas",
+        "banners": [
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Product/ProductShelf.tsx",
-              "products": {
-                "__resolveType": "vnda/loaders/productList.ts",
-                "sort": "newest",
-                "tags": [
-                  "decoracao"
-                ],
-                "typeTags": [],
-                "ids": [],
-                "count": 6
-              }
-            }
+            "mobile": "https://assets.decocache.com/arena-center/ede49982-b6ac-4708-a953-d0a8c72e2843/Tarsila-(1).png",
+            "desktop": "https://assets.decocache.com/arena-center/ede49982-b6ac-4708-a953-d0a8c72e2843/Tarsila-(1).png",
+            "href": "/abaporu"
           },
           {
-            "__resolveType": "website/sections/Rendering/Lazy.tsx",
-            "section": {
-              "__resolveType": "site/sections/Product/ProductShelf.tsx"
-            }
+            "mobile": "https://assets.decocache.com/arena-center/f8e25f3e-6102-4f9d-bc44-da4be0aae643/Tarsila-(5).png",
+            "href": "/abaporu",
+            "desktop": "https://assets.decocache.com/arena-center/f8e25f3e-6102-4f9d-bc44-da4be0aae643/Tarsila-(5).png"
+          },
+          {
+            "mobile": "https://assets.decocache.com/arena-center/e7992d61-212e-4a7a-a6de-3fd006b52315/Tarsila-(2).png",
+            "href": "/vangogh",
+            "desktop": "https://assets.decocache.com/arena-center/e7992d61-212e-4a7a-a6de-3fd006b52315/Tarsila-(2).png"
+          },
+          {
+            "mobile": "https://assets.decocache.com/arena-center/02170567-2573-43cb-aeb3-352dbc09ccc9/Tarsila-(6).png",
+            "desktop": "https://assets.decocache.com/arena-center/02170567-2573-43cb-aeb3-352dbc09ccc9/Tarsila-(6).png",
+            "href": "/vangogh"
           }
-        ],
-        "image": {
-          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/34d63c01-caab-4a3e-8d52-847e47059d12/categoryShelf.png",
-          "href": "/",
-          "alt": "teste"
-        },
-        "products1": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "count": 10,
-          "sort": "newest",
-          "tags": [
-            "decoracao"
-          ],
-          "typeTags": [],
-          "ids": []
-        },
-        "productList": [
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
-              "tags": [
-                "bandejas-decorativas"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "title": "BANDEJAS DECORATIVAS",
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/47c19698-b617-4967-9001-4d6a7a667e5c/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
-              "href": "/bandejas-decorativas",
-              "alt": "BANDEJAS DECORATIVAS"
-            }
-          },
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "tags": [
-                "vasos-e-cachepots"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20,
-              "sort": "oldest"
-            },
-            "title": "VASOS E CACHEPOTS",
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/022b20bf-8a97-48fc-8137-6014f442c938/Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(2).png",
-              "href": "/vasos-e-cachepots",
-              "alt": "VASOS E CACHEPOTS"
-            }
-          },
-          {
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "tags": [
-                "esculturas"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20,
-              "sort": "oldest"
-            },
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/f37a558f-7bec-41ea-be1f-0e8f6c8b8da1/Copia-de-Copia-de-Sem-nome.png",
-              "href": "/esculturas",
-              "alt": "Curadoria em Esculturas"
-            },
-            "title": "ESCULTURAS DIVERSAS"
-          },
-          {
-            "image": {
-              "src": "https://assets.decocache.com/arena-center/388de6fe-6fe7-48d3-91df-c070b22f888f/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Sem-nome-(1).png",
-              "href": "/quadros-e-porta-retratos",
-              "alt": "PORTA RETRATOS"
-            },
-            "products": {
-              "__resolveType": "vnda/loaders/productList.ts",
-              "sort": "newest",
-              "tags": [
-                "porta-retrato"
-              ],
-              "typeTags": [],
-              "ids": [],
-              "count": 20
-            },
-            "title": "PORTA-RETRATOS"
-          }
-        ],
-        "index": 0
+        ]
       }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "caixas-decorativas",
         "title": "LIVROS CAIXA",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
@@ -523,7 +432,6 @@
           "count": 20,
           "term": "livro-caixa"
         },
-        "cta": "caixas-decorativas",
         "sort": "newest",
         "tags": [],
         "typeTags": [],
