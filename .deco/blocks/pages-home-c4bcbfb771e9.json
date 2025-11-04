@@ -309,6 +309,24 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/linha-lavanda",
+        "title": "LINHA LAVANDA",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "linha-lavanda"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "count": 5
+        }
+      }
+    },
+    {
       "__resolveType": "site/sections/CategorySlider.tsx",
       "products": [
         {
