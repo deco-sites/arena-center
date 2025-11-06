@@ -89,6 +89,37 @@
       }
     },
     {
+      "__resolveType": "site/sections/TopBar.tsx",
+      "content": [
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ec50a172-adc4-4e00-bd1c-67422472a492/Design-sem-nome-(14).svg",
+          "title": "Entrega Rápida",
+          "subtitle": "Para todo o Brasil",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9fef46c4-33eb-4fa1-8340-fefdcb77b48c/Design-sem-nome-(15).svg",
+          "greaterIcon": true
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/895423e6-7c07-4697-a6a4-fe22ce0da508/Design-sem-nome-(13).svg",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8b96a6d8-5929-43f5-b6f0-e057ade4642d/caixabranca.svg",
+          "title": "Embalagem Reforçada",
+          "subtitle": "Seu produto em perfeito estado"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/04ca241f-a70f-4987-9302-544a8ce18f92/Design-sem-nome-(16).svg",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/cb3c7d08-2419-471f-aaa5-860f8200126c/Design-sem-nome-(15).svg",
+          "title": "Parcelamento",
+          "subtitle": "Em até 6x sem juros"
+        },
+        {
+          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/36e3f40b-0bed-4099-a8a8-1f07e8f76e19/Design-sem-nome-(17).svg",
+          "title": "Troca Fácil",
+          "subtitle": "Sistema de trocas facilitado",
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
+        }
+      ],
+      "interval": 5
+    },
+    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
@@ -160,37 +191,6 @@
         },
         "cta": "/tacas"
       }
-    },
-    {
-      "__resolveType": "site/sections/TopBar.tsx",
-      "content": [
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/ec50a172-adc4-4e00-bd1c-67422472a492/Design-sem-nome-(14).svg",
-          "title": "Entrega Rápida",
-          "subtitle": "Para todo o Brasil",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9fef46c4-33eb-4fa1-8340-fefdcb77b48c/Design-sem-nome-(15).svg",
-          "greaterIcon": true
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/895423e6-7c07-4697-a6a4-fe22ce0da508/Design-sem-nome-(13).svg",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8b96a6d8-5929-43f5-b6f0-e057ade4642d/caixabranca.svg",
-          "title": "Embalagem Reforçada",
-          "subtitle": "Seu produto em perfeito estado"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/04ca241f-a70f-4987-9302-544a8ce18f92/Design-sem-nome-(16).svg",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/cb3c7d08-2419-471f-aaa5-860f8200126c/Design-sem-nome-(15).svg",
-          "title": "Parcelamento",
-          "subtitle": "Em até 6x sem juros"
-        },
-        {
-          "image": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/36e3f40b-0bed-4099-a8a8-1f07e8f76e19/Design-sem-nome-(17).svg",
-          "title": "Troca Fácil",
-          "subtitle": "Sistema de trocas facilitado",
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/9cd317d3-0f4a-456a-8a9d-5c37d9f14c75/Design-sem-nome-(18).svg"
-        }
-      ],
-      "interval": 5
     },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
