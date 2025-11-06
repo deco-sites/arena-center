@@ -155,8 +155,8 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "highest_price",
-          "count": 25
+          "count": 25,
+          "sort": "highest_price"
         },
         "cta": "/tacas"
       }
@@ -258,7 +258,7 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
+          "sort": "lowest_price",
           "term": "loucas-diversas-natal",
           "count": 25
         },
@@ -321,7 +321,7 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
+          "sort": "lowest_price",
           "count": 5
         }
       }
