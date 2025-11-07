@@ -127,14 +127,13 @@
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "tacas"
+            "tacas-mais-desejadas"
           ],
           "typeTags": [],
           "ids": [],
-          "count": 25,
-          "sort": "highest_price"
+          "count": 25
         },
-        "cta": "/tacas"
+        "cta": "/tacas-mais-desejadas"
       }
     },
     {
