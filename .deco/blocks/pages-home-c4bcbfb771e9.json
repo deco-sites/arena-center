@@ -120,6 +120,24 @@
       "interval": 5
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "title": "AS TAÇAS MAIS DESEJADAS",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "tacas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 25,
+          "sort": "highest_price"
+        },
+        "cta": "/tacas"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
@@ -178,18 +196,17 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "title": "AS TAÇAS MAIS DESEJADAS",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "tacas"
+            "outlet-natal"
           ],
           "typeTags": [],
           "ids": [],
-          "count": 25,
-          "sort": "highest_price"
+          "count": 25
         },
-        "cta": "/tacas"
+        "cta": "/outlet-natal",
+        "title": "OUTLET NATAL"
       }
     },
     {
