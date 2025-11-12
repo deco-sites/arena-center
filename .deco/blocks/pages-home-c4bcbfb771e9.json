@@ -131,7 +131,8 @@
           ],
           "typeTags": [],
           "ids": [],
-          "count": 25
+          "count": 25,
+          "sort": "highest_price"
         },
         "cta": "/tacas-mais-desejadas"
       }
