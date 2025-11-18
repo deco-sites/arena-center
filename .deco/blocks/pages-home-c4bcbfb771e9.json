@@ -68,21 +68,6 @@
                 }
               ],
               "__resolveType": "site/sections/Category/CategoryBanner.tsx"
-            }
-          },
-          {
-            "value": {
-              "banners": [
-                {
-                  "image": {
-                    "mobile": "https://assets.decocache.com/arena-center/5348a0ab-feb2-43bd-b448-686205bb7210/CONTAGEM-REGRESSIVA-(5).png",
-                    "desktop": "https://assets.decocache.com/arena-center/8190cd1f-81d8-40b6-a165-24a24223ff4c/CONTAGEM-REGRESSIVA-(1).png"
-                  },
-                  "desktopWidth": 100,
-                  "desktopHeight": 100
-                }
-              ],
-              "__resolveType": "site/sections/Category/CategoryBanner.tsx"
             },
             "rule": {
               "__resolveType": "website/matchers/always.ts"
@@ -157,7 +142,7 @@
           "typeTags": [],
           "ids": [],
           "count": 25,
-          "sort": "highest_price"
+          "sort": "newest"
         },
         "cta": "/tacas-mais-desejadas"
       }
