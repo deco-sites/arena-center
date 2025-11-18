@@ -9,9 +9,9 @@
   },
   "alerts": [
     {
-      "title": "PRIMEIRO PEDIDO COM 10% OFF",
       "cupom": "PRIMEIRA10",
-      "subtitle": "*Uso único por cliente, por tempo limitado."
+      "subtitle": "*Uso único por cliente, por tempo limitado.",
+      "title": "PRIMEIRA COMPRA COM 10% OFF"
     },
     {
       "title": "FRETE GRÁTIS PARA RJ E SP, EM COMPRAS ACIMA DE R$349,00",

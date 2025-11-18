@@ -53,17 +53,42 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "banners": [
+        "__resolveType": "website/flags/multivariate/section.ts",
+        "variants": [
           {
-            "image": {
-              "mobile": "https://assets.decocache.com/arena-center/5348a0ab-feb2-43bd-b448-686205bb7210/CONTAGEM-REGRESSIVA-(5).png",
-              "desktop": "https://assets.decocache.com/arena-center/8190cd1f-81d8-40b6-a165-24a24223ff4c/CONTAGEM-REGRESSIVA-(1).png"
+            "value": {
+              "banners": [
+                {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/arena-center/5348a0ab-feb2-43bd-b448-686205bb7210/CONTAGEM-REGRESSIVA-(5).png",
+                    "desktop": "https://assets.decocache.com/arena-center/8190cd1f-81d8-40b6-a165-24a24223ff4c/CONTAGEM-REGRESSIVA-(1).png"
+                  },
+                  "desktopWidth": 100,
+                  "desktopHeight": 100
+                }
+              ],
+              "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+            }
+          },
+          {
+            "value": {
+              "banners": [
+                {
+                  "image": {
+                    "mobile": "https://assets.decocache.com/arena-center/5348a0ab-feb2-43bd-b448-686205bb7210/CONTAGEM-REGRESSIVA-(5).png",
+                    "desktop": "https://assets.decocache.com/arena-center/8190cd1f-81d8-40b6-a165-24a24223ff4c/CONTAGEM-REGRESSIVA-(1).png"
+                  },
+                  "desktopWidth": 100,
+                  "desktopHeight": 100
+                }
+              ],
+              "__resolveType": "site/sections/Category/CategoryBanner.tsx"
             },
-            "desktopWidth": 100,
-            "desktopHeight": 100
+            "rule": {
+              "__resolveType": "website/matchers/always.ts"
+            }
           }
-        ],
-        "__resolveType": "site/sections/Category/CategoryBanner.tsx"
+        ]
       }
     },
     {
@@ -136,6 +161,42 @@
         },
         "cta": "/tacas-mais-desejadas"
       }
+    },
+    {
+      "__resolveType": "site/sections/ThreeImages.tsx",
+      "firstImage": {
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
+        "width": 2384,
+        "height": 2276,
+        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png"
+      },
+      "secondImage": {
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png",
+        "width": 2384,
+        "height": 1124
+      },
+      "thirdImage": {
+        "width": 2384,
+        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
+        "height": 1124
+      },
+      "img": [
+        {
+          "desktop": "https://assets.decocache.com/arena-center/6c22e911-6ba0-461b-86cf-b393aad64e21/1-banner--desktop-e-mobile-(3).png",
+          "mobile": "https://assets.decocache.com/arena-center/0c0166d6-7480-4c75-b4fb-03096912eee6/1-banner--desktop-e-mobile-(6).gif",
+          "link": "bio-mirage"
+        },
+        {
+          "desktop": "https://assets.decocache.com/arena-center/35636993-f6c3-461b-abe5-0175a163881f/2-banner-desktop-(9).png",
+          "mobile": "https://assets.decocache.com/arena-center/9f82a3ef-8ca1-4dd2-965c-618957e6d54a/1-banner--desktop-e-mobile-(6).png",
+          "link": "bio-mirage"
+        },
+        {
+          "desktop": "https://assets.decocache.com/arena-center/f2840bac-84a9-475c-9d2c-906c428edd83/2-banner-desktop-(7).png",
+          "mobile": "https://assets.decocache.com/arena-center/88f52a0e-3380-4ab9-87a4-9be1c37a45f6/1-banner--desktop-e-mobile-(5).png",
+          "link": "bio-mirage"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/ImageCards.tsx",
@@ -290,60 +351,6 @@
       "title": "OS MAIS VENDIDOS"
     },
     {
-      "__resolveType": "site/sections/ThreeImages.tsx",
-      "firstImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/510a28be-2ca5-465a-b681-a391bebaf833/1.png",
-        "width": 2384,
-        "height": 2276,
-        "mobile": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png"
-      },
-      "secondImage": {
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/4cf97d83-f8b4-40da-adde-8fabb34c5d3c/2.png",
-        "width": 2384,
-        "height": 1124
-      },
-      "thirdImage": {
-        "width": 2384,
-        "desktop": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/f631d7bd-ea4b-4992-8460-2002fe895224/3.png",
-        "height": 1124
-      },
-      "img": [
-        {
-          "desktop": "https://assets.decocache.com/arena-center/6c22e911-6ba0-461b-86cf-b393aad64e21/1-banner--desktop-e-mobile-(3).png",
-          "mobile": "https://assets.decocache.com/arena-center/0c0166d6-7480-4c75-b4fb-03096912eee6/1-banner--desktop-e-mobile-(6).gif",
-          "link": "bio-mirage"
-        },
-        {
-          "desktop": "https://assets.decocache.com/arena-center/35636993-f6c3-461b-abe5-0175a163881f/2-banner-desktop-(9).png",
-          "mobile": "https://assets.decocache.com/arena-center/9f82a3ef-8ca1-4dd2-965c-618957e6d54a/1-banner--desktop-e-mobile-(6).png",
-          "link": "bio-mirage"
-        },
-        {
-          "desktop": "https://assets.decocache.com/arena-center/f2840bac-84a9-475c-9d2c-906c428edd83/2-banner-desktop-(7).png",
-          "mobile": "https://assets.decocache.com/arena-center/88f52a0e-3380-4ab9-87a4-9be1c37a45f6/1-banner--desktop-e-mobile-(5).png",
-          "link": "bio-mirage"
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/linha-lavanda",
-        "title": "LINHA LAVANDA",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "linha-lavanda"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "sort": "lowest_price",
-          "count": 5
-        }
-      }
-    },
-    {
       "__resolveType": "site/sections/CategorySlider.tsx",
       "products": [
         {
@@ -419,35 +426,6 @@
           "sort": "newest",
           "count": 20
         }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/ImageGallery.tsx",
-        "cta": "/caixas-decorativas",
-        "banners": [
-          {
-            "mobile": "https://assets.decocache.com/arena-center/ede49982-b6ac-4708-a953-d0a8c72e2843/Tarsila-(1).png",
-            "desktop": "https://assets.decocache.com/arena-center/ede49982-b6ac-4708-a953-d0a8c72e2843/Tarsila-(1).png",
-            "href": "/abaporu"
-          },
-          {
-            "mobile": "https://assets.decocache.com/arena-center/f8e25f3e-6102-4f9d-bc44-da4be0aae643/Tarsila-(5).png",
-            "href": "/abaporu",
-            "desktop": "https://assets.decocache.com/arena-center/f8e25f3e-6102-4f9d-bc44-da4be0aae643/Tarsila-(5).png"
-          },
-          {
-            "mobile": "https://assets.decocache.com/arena-center/e7992d61-212e-4a7a-a6de-3fd006b52315/Tarsila-(2).png",
-            "href": "/van-gogh",
-            "desktop": "https://assets.decocache.com/arena-center/e7992d61-212e-4a7a-a6de-3fd006b52315/Tarsila-(2).png"
-          },
-          {
-            "mobile": "https://assets.decocache.com/arena-center/02170567-2573-43cb-aeb3-352dbc09ccc9/Tarsila-(6).png",
-            "desktop": "https://assets.decocache.com/arena-center/02170567-2573-43cb-aeb3-352dbc09ccc9/Tarsila-(6).png",
-            "href": "/van-gogh"
-          }
-        ]
       }
     },
     {
