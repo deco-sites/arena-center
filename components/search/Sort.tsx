@@ -51,7 +51,9 @@ function Sort({ sortOptions, url, sort }: Props) {
           <option
             label={labels[label] ?? label}
             value={value}
-            selected={value === current || (sort && value === sort)}
+            selected={
+              value === current || (sort && value === getUrl(url, sort))
+            }
           >
             {label === "Relevância" ? "Ordenar por" : label}
           </option>
