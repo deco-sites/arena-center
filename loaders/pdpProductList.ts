@@ -4,18 +4,6 @@ import { AppContext } from "site/apps/deco/vnda.ts";
 export interface Props {
   /** @description total number of items to display */
   count: number;
-
-  /** @description search sort parameter */
-  sort?: "newest" | "oldest" | "lowest_price" | "highest_price";
-
-  /** @description search for products that have certain tag */
-  tags?: string[];
-
-  /** @description Override to use specific tags instead of product tags */
-  useSpecificTags?: boolean;
-
-  /** @description Filter by specific tag type (categoria, subcategoria, etc) */
-  tagType?: string;
 }
 
 /**
@@ -74,85 +62,22 @@ const pdpProductList = async (
       }
     }) || [];
 
-  // 3. Define quais tags usar para busca com estratégia em cascata
-  let tagsToSearch: string[] = [];
-  let searchStrategy = "custom";
-
-  if (props.useSpecificTags && props.tags && props.tags.length > 0) {
-    // Usa tags específicas passadas via props
-    tagsToSearch = props.tags;
-    searchStrategy = "props";
-  } else {
-    // Estratégia 1: Tenta usar subcategoria primeiro (mais específico)
-    const subcategoryTags = productTags.filter((tag) =>
-      tag.type === "subcategoria"
-    );
-
-    if (subcategoryTags.length > 0) {
-      tagsToSearch = subcategoryTags.map((tag) => tag.name).filter((name): name is string => typeof name === "string");
-      searchStrategy = "subcategoria";
-    } else {
-      // Estratégia 2: Usa categoria (menos específico)
-      const categoryTags = productTags.filter((tag) =>
-        tag.type === "categoria"
-      );
-
-      if (categoryTags.length > 0) {
-        tagsToSearch = categoryTags.map((tag) => tag.name).filter((name): name is string => typeof name === "string");
-        searchStrategy = "categoria";
-      } else {
-        // Estratégia 3: Usa todas as tags do produto
-        tagsToSearch = productTags.map((tag) => tag.name).filter((name): name is string => typeof name === "string");
-        searchStrategy = "all";
-      }
-    }
-
-    // Se tagType foi especificado, sobrescreve a estratégia
-    if (props.tagType) {
-      const filteredTags = productTags.filter((tag) =>
-        tag.type === props.tagType
-      );
-      if (filteredTags.length > 0) {
-        tagsToSearch = filteredTags.map((tag) => tag.name).filter((name): name is string => typeof name === "string");
-        searchStrategy = props.tagType;
-      }
-    }
-  }
+  const categoryTag = productTags.find((tag) => tag.type === "categoria")?.name;
 
   // Se não encontrou tags, retorna null
-  if (tagsToSearch.length === 0) return null;
+  if (!categoryTag) return null;
 
-  // 4. Busca produtos com as mesmas tags
-  let relatedProducts = await ctx.invoke.vnda.loaders.productList({
-    count: props.count + 5, // Pega mais produtos para compensar filtros
-    tags: tagsToSearch,
-    sort: props.sort,
+  const relatedProducts = await ctx.invoke.vnda.loaders.productListingPage({
+    count: props.count,
+    pageHref: `${url.origin}/${categoryTag}`,
   });
 
-  // Se não encontrou produtos suficientes e usou subcategoria, tenta com categoria
-  if (
-    searchStrategy === "subcategoria" &&
-    (!relatedProducts || relatedProducts.length < 3)
-  ) {
-    const categoryTags = productTags.filter((tag) => tag.type === "categoria");
-    if (categoryTags.length > 0) {
-      relatedProducts = await ctx.invoke.vnda.loaders.productList({
-        count: props.count + 5,
-        tags: categoryTags.map((tag) => tag.name).filter((
-          name,
-        ): name is string => typeof name === "string"),
-        sort: props.sort,
-      });
-      searchStrategy = "categoria-fallback";
-    }
-  }
-
-  if (!relatedProducts || relatedProducts.length === 0) {
+  if (!relatedProducts || relatedProducts.products.length === 0) {
     return null;
   }
 
   // 5. Remove o produto atual dos resultados
-  const filteredProducts = relatedProducts.filter(
+  const filteredProducts = relatedProducts.products.filter(
     (product) => product.productID !== currentProduct.productID,
   );
 
