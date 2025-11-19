@@ -4,6 +4,18 @@ import { AppContext } from "site/apps/deco/vnda.ts";
 export interface Props {
   /** @description total number of items to display */
   count: number;
+
+  /** @description search sort parameter */
+  sort?: "newest" | "oldest" | "lowest_price" | "highest_price";
+
+  /** @description search for products that have certain tag */
+  tags?: string[];
+
+  /** @description Override to use specific tags instead of product tags */
+  useSpecificTags?: boolean;
+
+  /** @description Filter by specific tag type (categoria, subcategoria, etc) */
+  tagType?: string;
 }
 
 /**
@@ -62,22 +74,47 @@ const pdpProductList = async (
       }
     }) || [];
 
-  const categoryTag = productTags.find((tag) => tag.type === "categoria")?.name;
+  // 3. Define qual tag usar para busca (apenas 1 para trazer mais resultados)
+  let tagToSearch: string | null = null;
 
-  // Se não encontrou tags, retorna null
-  if (!categoryTag) return null;
+  if (props.useSpecificTags && props.tags && props.tags.length > 0) {
+    // Usa a primeira tag específica passada via props
+    tagToSearch = props.tags[0];
+  } else if (props.tagType) {
+    // Se tagType foi especificado, usa a primeira tag desse tipo
+    const filteredTag = productTags.find((tag) => tag.type === props.tagType);
+    tagToSearch = filteredTag?.name || null;
+  } else {
+    // Estratégia de priorização: subcategoria > categoria > primeira tag
+    const subcategoryTag = productTags.find((tag) => tag.type === "subcategoria");
+    const categoryTag = productTags.find((tag) => tag.type === "categoria");
+    
+    if (subcategoryTag?.name) {
+      tagToSearch = subcategoryTag.name;
+    } else if (categoryTag?.name) {
+      tagToSearch = categoryTag.name;
+    } else {
+      // Usa a primeira tag disponível
+      tagToSearch = productTags[0]?.name || null;
+    }
+  }
 
-  const relatedProducts = await ctx.invoke.vnda.loaders.productListingPage({
-    count: props.count,
-    pageHref: `${url.origin}/${categoryTag}`,
+  // Se não encontrou tag, retorna null
+  if (!tagToSearch) return null;
+
+  // 4. Busca produtos com a mesma tag
+  const relatedProducts = await ctx.invoke.vnda.loaders.productList({
+    count: props.count + 5, // Pega mais produtos para compensar filtros
+    tags: [tagToSearch], // Usa apenas 1 tag
+    sort: props.sort,
   });
 
-  if (!relatedProducts || relatedProducts.products.length === 0) {
+  if (!relatedProducts || relatedProducts.length === 0) {
     return null;
   }
 
   // 5. Remove o produto atual dos resultados
-  const filteredProducts = relatedProducts.products.filter(
+  const filteredProducts = relatedProducts.filter(
     (product) => product.productID !== currentProduct.productID,
   );
 
