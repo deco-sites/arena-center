@@ -13,7 +13,8 @@
       "__resolveType": "website/functions/requestToParam.ts",
       "param": "slug"
     },
-    "filterByTags": true
+    "filterByTags": true,
+    "sort": "newest"
   },
   "extensions": [],
   "__resolveType": "commerce/loaders/product/extensions/listingPage.ts"
