@@ -78,25 +78,29 @@ const pdpProductList = async (
 
   if (!currentProduct) return null;
 
-  // 2. Pega a categoria do produto atual
-  // Adapte isso conforme a estrutura da sua API VNDA
-  const category = currentProduct.category_tags?.[0];
+  // 2. Pega as tags do produto atual (que funcionam como categorias na VNDA)
+  const productTags = currentProduct.tag_names || [];
 
-  if (!category) return null;
+  if (productTags.length === 0) return null;
 
-  // 3. Busca produtos da mesma categoria
+  // 3. Busca produtos com as mesmas tags
   const searchParams: Record<string, unknown> = {
-    term: props?.category || category, // Usa props.category se fornecido, senão usa a categoria do produto
     wildcard: props?.wildcard,
     sort: props?.sort,
     per_page: props?.count,
-    "tags[]": props?.tags,
+    // Usa as tags do produto atual para buscar produtos relacionados
+    "tags[]": props?.tags || productTags,
     ...Object.fromEntries(
       (props.typeTags || []).map((
         { key, value },
       ) => [`type_tags[${key}][]`, value]),
     ),
   };
+
+  // Se foi passado um termo específico nas props, usa ele
+  if (props?.term) {
+    searchParams.term = props.term;
+  }
 
   if (props?.ids && props.ids.length > 0) {
     searchParams["ids[]"] = props.ids;
