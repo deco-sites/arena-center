@@ -46,11 +46,11 @@ const pdpProductList = async (
 
   // Extrai o slug da URL atual para buscar o produto
   const pathname = url.pathname;
-  const segments = pathname.split('/').filter(Boolean);
-  
+  const segments = pathname.split("/").filter(Boolean);
+
   // Pega o último segmento como slug do produto
   const slug = segments[segments.length - 1];
-  
+
   if (!slug) return null;
 
   // Função para extrair ID do slug (mesmo parseSlug do loader original)
@@ -61,7 +61,7 @@ const pdpProductList = async (
   };
 
   const fromSlug = parseSlug(slug);
-  
+
   if (!fromSlug) return null;
 
   // 1. Busca o produto atual para pegar sua categoria
@@ -70,7 +70,7 @@ const pdpProductList = async (
     currentProduct = await api["GET /api/v2/products/:id"]({
       id: fromSlug.id,
       include_images: "false", // Não precisa das imagens aqui
-    }, STALE).then(res => res.json());
+    }, STALE).then((res) => res.json());
   } catch (error) {
     console.error("Erro ao buscar produto atual:", error);
     return null;
@@ -78,10 +78,18 @@ const pdpProductList = async (
 
   if (!currentProduct) return null;
 
-  // 2. Pega as tags do produto atual (que funcionam como categorias na VNDA)
-  const productTags = currentProduct.tag_names || [];
+  // 2. Pega as category_tags do produto atual
+  const categoryTags = currentProduct.category_tags || [];
 
-  if (productTags.length === 0) return null;
+  // Extrai os nomes das category_tags
+  const categoryNames = categoryTags.map((tag) => tag.name).filter(Boolean);
+
+  if (categoryNames.length === 0) {
+    // Fallback para tag_names se não houver category_tags
+    const productTags = currentProduct.tag_names || [];
+    if (productTags.length === 0) return null;
+    categoryNames.push(...productTags);
+  }
 
   // 3. Busca produtos com as mesmas tags
   // deno-lint-ignore no-explicit-any
@@ -96,7 +104,7 @@ const pdpProductList = async (
   if (props?.tags && props.tags.length > 0) {
     searchParams["tags[]"] = props.tags;
   } else {
-    searchParams["tags[]"] = productTags;
+    searchParams["tags[]"] = categoryNames;
   }
 
   // Se foi passado um termo específico nas props, usa ele
@@ -128,13 +136,14 @@ const pdpProductList = async (
 
   // 4. Exclui o produto atual dos resultados
   validProducts = validProducts.filter(
-    (product) => product.id !== fromSlug.id
+    (product) => product.id !== fromSlug.id,
   );
 
   if (validProducts.length === 0) return null;
 
   const sortedProducts = props.ids && props.ids.length > 0
-    ? props.ids.map((id) => validProducts.find((product) => product.id === id)).filter(Boolean)
+    ? props.ids.map((id) => validProducts.find((product) => product.id === id))
+      .filter(Boolean)
     : validProducts;
 
   return sortedProducts.map((product) => {
