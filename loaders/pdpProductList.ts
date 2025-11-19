@@ -46,11 +46,11 @@ const pdpProductList = async (
 
   // Extrai o slug da URL atual para buscar o produto
   const pathname = url.pathname;
-  const segments = pathname.split("/").filter(Boolean);
-
+  const segments = pathname.split('/').filter(Boolean);
+  
   // Pega o último segmento como slug do produto
   const slug = segments[segments.length - 1];
-
+  
   if (!slug) return null;
 
   // Função para extrair ID do slug (mesmo parseSlug do loader original)
@@ -61,7 +61,7 @@ const pdpProductList = async (
   };
 
   const fromSlug = parseSlug(slug);
-
+  
   if (!fromSlug) return null;
 
   // 1. Busca o produto atual para pegar sua categoria
@@ -70,7 +70,7 @@ const pdpProductList = async (
     currentProduct = await api["GET /api/v2/products/:id"]({
       id: fromSlug.id,
       include_images: "false", // Não precisa das imagens aqui
-    }, STALE).then((res) => res.json());
+    }, STALE).then(res => res.json());
   } catch (error) {
     console.error("Erro ao buscar produto atual:", error);
     return null;
@@ -84,22 +84,34 @@ const pdpProductList = async (
   if (productTags.length === 0) return null;
 
   // 3. Busca produtos com as mesmas tags
-  const searchParams: Record<string, unknown> = {
+  // deno-lint-ignore no-explicit-any
+  const searchParams: any = {
     wildcard: props?.wildcard,
     sort: props?.sort,
     per_page: props?.count,
-    // Usa as tags do produto atual para buscar produtos relacionados
-    "tags[]": props?.tags || productTags,
-    ...Object.fromEntries(
-      (props.typeTags || []).map((
-        { key, value },
-      ) => [`type_tags[${key}][]`, value]),
-    ),
+    show_only_available: true,
   };
+
+  // Adiciona as tags do produto atual ou as tags passadas via props
+  if (props?.tags && props.tags.length > 0) {
+    searchParams["tags[]"] = props.tags;
+  } else {
+    searchParams["tags[]"] = productTags;
+  }
 
   // Se foi passado um termo específico nas props, usa ele
   if (props?.term) {
     searchParams.term = props.term;
+  }
+
+  // Adiciona type_tags se fornecido
+  if (props.typeTags && props.typeTags.length > 0) {
+    props.typeTags.forEach(({ key, value }) => {
+      if (!searchParams["type_tags[]"]) {
+        searchParams["type_tags[]"] = {};
+      }
+      searchParams["type_tags[]"][key] = value;
+    });
   }
 
   if (props?.ids && props.ids.length > 0) {
@@ -116,14 +128,13 @@ const pdpProductList = async (
 
   // 4. Exclui o produto atual dos resultados
   validProducts = validProducts.filter(
-    (product) => product.id !== fromSlug.id,
+    (product) => product.id !== fromSlug.id
   );
 
   if (validProducts.length === 0) return null;
 
   const sortedProducts = props.ids && props.ids.length > 0
-    ? props.ids.map((id) => validProducts.find((product) => product.id === id))
-      .filter(Boolean)
+    ? props.ids.map((id) => validProducts.find((product) => product.id === id)).filter(Boolean)
     : validProducts;
 
   return sortedProducts.map((product) => {
