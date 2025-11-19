@@ -1,5 +1,6 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+import { Sort as SortOption } from "apps/vnda/utils/client/types.ts";
 import ProductCardSearch from "../../components/product/ProductCardSearch.tsx";
 import Filters from "../../components/search/Filters.tsx";
 import FiltersMobile from "../../components/search/FiltersMobile.tsx";
@@ -18,6 +19,11 @@ import { setFilteredUrl } from "site/sdk/processFilters.ts";
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
+  /**
+   *  @title Default Sort
+   *  @description Define visualmente selecionada a ordenação padrão no componente de Ordenação. Não aplica a ordenação diretamente na listagem de produtos, para isso utilize o campo Sort na integração com o loader.
+   */
+  sort?: SortOption;
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
   /** @hidden partial */
@@ -66,7 +72,7 @@ function PageResult(props: SectionProps<typeof loader>) {
       <div
         class={clx(
           "pb-2 sm:pb-10",
-          (!prevPageUrl || partial === "hideLess") && "hidden",
+          (!prevPageUrl || partial === "hideLess") && "hidden"
         )}
       >
         <a
@@ -89,7 +95,7 @@ function PageResult(props: SectionProps<typeof loader>) {
           "gap-2",
           "sm:gap-10",
           "w-full",
-          "productsParentDiv",
+          "productsParentDiv"
         )}
       >
         {products?.map((product, index) => (
@@ -118,7 +124,7 @@ function PageResult(props: SectionProps<typeof loader>) {
             Page {zeroIndexedOffsetPage + 1}/
             {Math.ceil(
               (page.pageInfo.records ?? 0) /
-                (page.pageInfo.recordPerPage ?? products.length),
+                (page.pageInfo.recordPerPage ?? products.length)
             )}
           </span>
           <a
@@ -196,7 +202,7 @@ function Result(props: SectionProps<typeof loader>) {
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
-    <Sort sortOptions={sortOptions} url={url} />
+    <Sort sort={props.sort} sortOptions={sortOptions} url={url} />
   );
 
   return (
@@ -206,122 +212,122 @@ function Result(props: SectionProps<typeof loader>) {
         {...viewItemListEvent}
         class="max-w-[1440px] mx-auto lg:px-14"
       >
-        {partial
-          ? <PageResult {...props} />
-          : (
-            <div class="container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0 max-w-[1440px]">
-              <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
+        {partial ? (
+          <PageResult {...props} />
+        ) : (
+          <div class="container flex flex-col gap-4 sm:gap-5 w-full py-4 sm:py-5 px-5 sm:px-0 max-w-[1440px]">
+            <Breadcrumb itemListElement={breadcrumb?.itemListElement} />
 
-              {device === "mobile" && (
-                <Drawer
-                  id={controls}
-                  aside={
-                    <div class="bg-base-100 flex flex-col h-full divide-y overflow-y-hidden">
-                      <div class="flex justify-between items-center">
-                        <label class="btn btn-ghost" for={controls}>
-                          <Icon id="close" />
+            {device === "mobile" && (
+              <Drawer
+                id={controls}
+                aside={
+                  <div class="bg-base-100 flex flex-col h-full divide-y overflow-y-hidden">
+                    <div class="flex justify-between items-center">
+                      <label class="btn btn-ghost" for={controls}>
+                        <Icon id="close" />
+                      </label>
+                    </div>
+                    <div class="flex-grow overflow-auto">
+                      <FiltersMobile url={props.url} filters={filters} />
+                    </div>
+                    <button
+                      type="button"
+                      hx-on:click={useScript(() => {
+                        function getFilteredUrl(): string {
+                          const SESSION_URL_KEY = "filteredUrl";
+                          let url = sessionStorage.getItem(SESSION_URL_KEY);
+                          if (!url) {
+                            sessionStorage.setItem(
+                              SESSION_URL_KEY,
+                              globalThis.window?.location.href ?? ""
+                            );
+                            url = globalThis.window?.location?.href ?? "";
+                          }
+                          return url;
+                        }
+
+                        globalThis.window.location.href = getFilteredUrl();
+                      })}
+                      class="btn no-animation bg-black text-white btn-block hover:text-white "
+                    >
+                      APLICAR FILTRO
+                    </button>
+                  </div>
+                }
+              >
+                <div class="flex sm:hidden justify-between items-center">
+                  <label class="btn btn-ghost" for={controls}>
+                    Filters
+                  </label>
+                  <div class="flex flex-col">{sortBy}</div>
+                </div>
+              </Drawer>
+            )}
+            <div class="group/items ">
+              {device === "desktop" && (
+                <div class="flex flex-col lg:flex-row justify-between gap-3 mt-5">
+                  <div class="z-30">
+                    <Filters url={props.url} filters={filters} />
+                  </div>
+                  <div class="flex items-center gap-9 ">
+                    <div>{sortBy}</div>
+                    <div class="flex w-28 justify-between ">
+                      <div>
+                        <input
+                          type="radio"
+                          id="grid-2"
+                          name="grid"
+                          class="peer hidden"
+                        />
+                        <label
+                          for="grid-2"
+                          class="flex cursor-pointer text-gray-400 items-center justify-center peer-checked:text-primary"
+                        >
+                          <Icon id="grid2" width={16} height={16} />
                         </label>
                       </div>
-                      <div class="flex-grow overflow-auto">
-                        <FiltersMobile url={props.url} filters={filters} />
+                      <div>
+                        <input
+                          type="radio"
+                          id="grid-3"
+                          name="grid"
+                          class="peer hidden"
+                        />
+                        <label
+                          for="grid-3"
+                          class="flex text-gray-400 cursor-pointer items-center justify-center peer-checked:text-primary"
+                        >
+                          <Icon id="grid3" width={25} height={16} />
+                        </label>
                       </div>
-                      <button
-                        type="button"
-                        hx-on:click={useScript(() => {
-                          function getFilteredUrl(): string {
-                            const SESSION_URL_KEY = "filteredUrl";
-                            let url = sessionStorage.getItem(SESSION_URL_KEY);
-                            if (!url) {
-                              sessionStorage.setItem(
-                                SESSION_URL_KEY,
-                                globalThis.window?.location.href ?? "",
-                              );
-                              url = globalThis.window?.location?.href ?? "";
-                            }
-                            return url;
-                          }
-
-                          globalThis.window.location.href = getFilteredUrl();
-                        })}
-                        class="btn no-animation bg-black text-white btn-block hover:text-white "
-                      >
-                        APLICAR FILTRO
-                      </button>
-                    </div>
-                  }
-                >
-                  <div class="flex sm:hidden justify-between items-center">
-                    <label class="btn btn-ghost" for={controls}>
-                      Filters
-                    </label>
-                    <div class="flex flex-col">{sortBy}</div>
-                  </div>
-                </Drawer>
-              )}
-              <div class="group/items ">
-                {device === "desktop" && (
-                  <div class="flex flex-col lg:flex-row justify-between gap-3 mt-5">
-                    <div class="z-30">
-                      <Filters url={props.url} filters={filters} />
-                    </div>
-                    <div class="flex items-center gap-9 ">
-                      <div>{sortBy}</div>
-                      <div class="flex w-28 justify-between ">
-                        <div>
-                          <input
-                            type="radio"
-                            id="grid-2"
-                            name="grid"
-                            class="peer hidden"
-                          />
-                          <label
-                            for="grid-2"
-                            class="flex cursor-pointer text-gray-400 items-center justify-center peer-checked:text-primary"
-                          >
-                            <Icon id="grid2" width={16} height={16} />
-                          </label>
-                        </div>
-                        <div>
-                          <input
-                            type="radio"
-                            id="grid-3"
-                            name="grid"
-                            class="peer hidden"
-                          />
-                          <label
-                            for="grid-3"
-                            class="flex text-gray-400 cursor-pointer items-center justify-center peer-checked:text-primary"
-                          >
-                            <Icon id="grid3" width={25} height={16} />
-                          </label>
-                        </div>
-                        <div>
-                          <input
-                            type="radio"
-                            id="grid-4"
-                            name="grid"
-                            checked
-                            class="peer hidden"
-                          />
-                          <label
-                            for="grid-4"
-                            class="flex cursor-pointer items-center justify-center text-gray-400 peer-checked:text-primary"
-                          >
-                            <Icon id="grid4" width={34} height={15} />
-                          </label>
-                        </div>
+                      <div>
+                        <input
+                          type="radio"
+                          id="grid-4"
+                          name="grid"
+                          checked
+                          class="peer hidden"
+                        />
+                        <label
+                          for="grid-4"
+                          class="flex cursor-pointer items-center justify-center text-gray-400 peer-checked:text-primary"
+                        >
+                          <Icon id="grid4" width={34} height={15} />
+                        </label>
                       </div>
                     </div>
                   </div>
-                )}
-                <div class="mt-4">
-                  <div class="flex justify-end mb-4">{results}</div>
-
-                  <PageResult {...props} />
                 </div>
+              )}
+              <div class="mt-4">
+                <div class="flex justify-end mb-4">{results}</div>
+
+                <PageResult {...props} />
               </div>
             </div>
-          )}
+          </div>
+        )}
       </div>
 
       <script
@@ -337,7 +343,7 @@ function Result(props: SectionProps<typeof loader>) {
           __html: useScript(
             setPageQuerystring,
             `${pageInfo.currentPage}`,
-            container,
+            container
           ),
         }}
       />
