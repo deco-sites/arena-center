@@ -11,12 +11,13 @@ import * as $$$$$$$$$$$3 from "./apps/site.ts";
 import * as $$$0 from "./loaders/availableIcons.ts";
 import * as $$$1 from "./loaders/icons.ts";
 import * as $$$2 from "./loaders/minicart.ts";
-import * as $$$3 from "./loaders/user.ts";
-import * as $$$4 from "./loaders/wishlist.ts";
+import * as $$$3 from "./loaders/pdpProductList.ts";
+import * as $$$4 from "./loaders/user.ts";
+import * as $$$5 from "./loaders/wishlist.ts";
 import * as $$$$$$0 from "./sections/CategoriesProdutctsShelf.tsx";
-import * as $$$$$$1 from "./sections/Category/CategoryBanner.tsx";
-import * as $$$$$$2 from "./sections/Category/CategoryGrid.tsx";
-import * as $$$$$$3 from "./sections/CategorySlider.tsx";
+import * as $$$$$$2 from "./sections/Category/CategoryBanner.tsx";
+import * as $$$$$$3 from "./sections/Category/CategoryGrid.tsx";
+import * as $$$$$$1 from "./sections/CategorySlider.tsx";
 import * as $$$$$$4 from "./sections/CenteredText.tsx";
 import * as $$$$$$5 from "./sections/Component.tsx";
 import * as $$$$$$6 from "./sections/Content/Logos.tsx";
@@ -59,14 +60,15 @@ const manifest = {
     "site/loaders/availableIcons.ts": $$$0,
     "site/loaders/icons.ts": $$$1,
     "site/loaders/minicart.ts": $$$2,
-    "site/loaders/user.ts": $$$3,
-    "site/loaders/wishlist.ts": $$$4,
+    "site/loaders/pdpProductList.ts": $$$3,
+    "site/loaders/user.ts": $$$4,
+    "site/loaders/wishlist.ts": $$$5,
   },
   "sections": {
     "site/sections/CategoriesProdutctsShelf.tsx": $$$$$$0,
-    "site/sections/Category/CategoryBanner.tsx": $$$$$$1,
-    "site/sections/Category/CategoryGrid.tsx": $$$$$$2,
-    "site/sections/CategorySlider.tsx": $$$$$$3,
+    "site/sections/Category/CategoryBanner.tsx": $$$$$$2,
+    "site/sections/Category/CategoryGrid.tsx": $$$$$$3,
+    "site/sections/CategorySlider.tsx": $$$$$$1,
     "site/sections/CenteredText.tsx": $$$$$$4,
     "site/sections/Component.tsx": $$$$$$5,
     "site/sections/Content/Logos.tsx": $$$$$$6,
