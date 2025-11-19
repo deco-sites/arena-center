@@ -1,3 +1,4 @@
+// deno-lint-ignore-file no-explicit-any
 import { STALE } from "apps/utils/fetch.ts";
 import { Product } from "apps/commerce/types.ts";
 import { AppContext } from "site/apps/deco/vnda.ts";
@@ -25,16 +26,13 @@ export interface Props {
   /** @description search for products by id */
   ids?: number[];
 
-  /** @description search for products by category */
-  category?: string;
-
-  /** @description exclude product from the list */
-  excludeProductId?: number;
+  /** @description Override to use specific tags instead of product tags */
+  useSpecificTags?: boolean;
 }
 
 /**
  * @title VNDA Integration
- * @description Product List loader - Same Category
+ * @description Product List loader - Same Category (PDP)
  */
 const pdpProductList = async (
   props: Props,
@@ -46,14 +44,14 @@ const pdpProductList = async (
 
   // Extrai o slug da URL atual para buscar o produto
   const pathname = url.pathname;
-  const segments = pathname.split("/").filter(Boolean);
-
+  const segments = pathname.split('/').filter(Boolean);
+  
   // Pega o último segmento como slug do produto
   const slug = segments[segments.length - 1];
-
+  
   if (!slug) return null;
 
-  // Função para extrair ID do slug (mesmo parseSlug do loader original)
+  // Função para extrair ID do slug
   const parseSlug = (slug: string) => {
     const splitted = slug.split("-");
     const maybeId = Number(splitted[splitted.length - 1]);
@@ -61,16 +59,16 @@ const pdpProductList = async (
   };
 
   const fromSlug = parseSlug(slug);
-
+  
   if (!fromSlug) return null;
 
-  // 1. Busca o produto atual para pegar sua categoria
+  // 1. Busca o produto atual para pegar suas tags/categorias
   let currentProduct;
   try {
     currentProduct = await api["GET /api/v2/products/:id"]({
       id: fromSlug.id,
-      include_images: "false", // Não precisa das imagens aqui
-    }, STALE).then((res) => res.json());
+      include_images: "false",
+    }, STALE).then(res => res.json());
   } catch (error) {
     console.error("Erro ao buscar produto atual:", error);
     return null;
@@ -78,76 +76,87 @@ const pdpProductList = async (
 
   if (!currentProduct) return null;
 
-  // 2. Pega as category_tags do produto atual
-  const categoryTags = currentProduct.category_tags || [];
+  // 2. Define quais tags usar para busca
+  let tagsToSearch: string[] = [];
 
-  // Extrai os nomes das category_tags
-  const categoryNames = categoryTags.map((tag) => tag.name).filter(Boolean);
-
-  if (categoryNames.length === 0) {
-    // Fallback para tag_names se não houver category_tags
-    const productTags = currentProduct.tag_names || [];
-    if (productTags.length === 0) return null;
-    categoryNames.push(...productTags);
+  if (props.useSpecificTags && props.tags && props.tags.length > 0) {
+    // Usa tags específicas passadas via props
+    tagsToSearch = props.tags;
+  } else {
+    // Tenta pegar tags do produto
+    // Prioridade: category_tags -> tag_names
+    if (currentProduct.category_tags && currentProduct.category_tags.length > 0) {
+      tagsToSearch = currentProduct.category_tags
+        .map((tag: any) => tag.name)
+        .filter((name: string | undefined): name is string => Boolean(name));
+    } else if (currentProduct.tag_names && currentProduct.tag_names.length > 0) {
+      tagsToSearch = currentProduct.tag_names;
+    }
   }
 
-  // 3. Busca produtos com as mesmas tags
-  // deno-lint-ignore no-explicit-any
-  const searchParams: any = {
-    wildcard: props?.wildcard,
-    sort: props?.sort,
-    per_page: props?.count,
+  // Se não encontrou tags, retorna null
+  if (tagsToSearch.length === 0) return null;
+
+  // 3. Monta os parâmetros de busca seguindo o padrão do searchLoader
+  const searchParams: Record<string, any> = {
+    per_page: props.count,
+    sort: props.sort,
+    wildcard: props.wildcard ?? true,
     show_only_available: true,
   };
 
-  // Adiciona as tags do produto atual ou as tags passadas via props
-  if (props?.tags && props.tags.length > 0) {
-    searchParams["tags[]"] = props.tags;
-  } else {
-    searchParams["tags[]"] = categoryNames;
-  }
+  // Adiciona as tags no formato correto
+  searchParams["tags[]"] = tagsToSearch;
 
-  // Se foi passado um termo específico nas props, usa ele
-  if (props?.term) {
+  // Se term foi fornecido, usa ele
+  if (props.term) {
     searchParams.term = props.term;
   }
 
   // Adiciona type_tags se fornecido
   if (props.typeTags && props.typeTags.length > 0) {
     props.typeTags.forEach(({ key, value }) => {
-      if (!searchParams["type_tags[]"]) {
-        searchParams["type_tags[]"] = {};
+      const paramKey = `type_tags[${key}][]`;
+      if (!searchParams[paramKey]) {
+        searchParams[paramKey] = [];
       }
-      searchParams["type_tags[]"][key] = value;
+      searchParams[paramKey].push(value);
     });
   }
 
-  if (props?.ids && props.ids.length > 0) {
+  // Adiciona IDs específicos se fornecido
+  if (props.ids && props.ids.length > 0) {
     searchParams["ids[]"] = props.ids;
   }
 
+  // 4. Executa a busca
   const { results: searchResults = [] } = await api
     ["GET /api/v2/products/search"](searchParams, STALE)
-    .then((res) => res.json());
+    .then((res) => res.json())
+    .catch(() => ({ results: [] }));
 
-  let validProducts = searchResults.filter(({ variants }) => {
-    return variants.length !== 0;
+  // 5. Filtra produtos válidos (com variantes)
+  let validProducts = searchResults.filter(({ variants }: any) => {
+    return variants && variants.length !== 0;
   });
 
-  // 4. Exclui o produto atual dos resultados
+  // 6. Remove o produto atual dos resultados
   validProducts = validProducts.filter(
-    (product) => product.id !== fromSlug.id,
+    (product: any) => product.id !== fromSlug.id
   );
 
   if (validProducts.length === 0) return null;
 
+  // 7. Ordena se IDs foram fornecidos
   const sortedProducts = props.ids && props.ids.length > 0
-    ? props.ids.map((id) => validProducts.find((product) => product.id === id))
-      .filter(Boolean)
+    ? props.ids
+        .map((id) => validProducts.find((product: any) => product.id === id))
+        .filter(Boolean)
     : validProducts;
 
-  return sortedProducts.map((product) => {
-    return toProduct(product!, null, {
+  // 8. Converte para o formato Product
+  return sortedProducts.map((product: any) => {
+    return toProduct(product, null, {
       url,
       priceCurrency: "BRL",
     });
