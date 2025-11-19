@@ -6381,6 +6381,10 @@ details.collapse summary::-webkit-details-marker {
     margin-top: 3rem;
   }
 
+  .lg\:block {
+    display: block;
+  }
+
   .lg\:flex {
     display: flex;
   }

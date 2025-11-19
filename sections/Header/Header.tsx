@@ -86,7 +86,7 @@ const Desktop = ({ navItems, logo, searchbar }: Props) => (
       <div class="grid grid-cols-3 place-items-center ">
         <div class="place-self-start pl-14">
           <a href="/" aria-label="Store logo">
-            <Image
+            <img
               src={logo.src}
               alt={logo.alt}
               width={logo.width || 200}

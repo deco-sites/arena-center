@@ -1,20 +1,29 @@
-import type { ImageWidget } from "apps/admin/widgets.ts";
+import type { ImageWidget, VideoWidget } from "apps/admin/widgets.ts";
 import { Picture, Source } from "apps/website/components/Picture.tsx";
 import Icon from "../../components/ui/Icon.tsx";
 import Slider from "../../components/ui/Slider.tsx";
 import { clx } from "../../sdk/clx.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useSendEvent } from "../../sdk/useSendEvent.ts";
+import Video from "apps/website/components/Video.tsx";
+
+export interface VideoSources {
+  desktop?: VideoWidget;
+  mobile?: VideoWidget;
+}
 
 /**
  * @titleBy alt
  */
 export interface Banner {
   /** @description desktop otimized image */
-  desktop: ImageWidget;
+  desktop?: ImageWidget;
 
   /** @description mobile otimized image */
-  mobile: ImageWidget;
+  mobile?: ImageWidget;
+
+  /** @description video content sources - use para utilizar vídeo */
+  videoContent?: VideoSources;
 
   /** @description Image's alt text */
   alt: string;
@@ -46,15 +55,8 @@ export interface Props {
   interval?: number;
 }
 
-function BannerItem(
-  { image, lcp }: { image: Banner; lcp?: boolean },
-) {
-  const {
-    alt,
-    mobile,
-    desktop,
-    action,
-  } = image;
+function BannerItem({ image, lcp }: { image: Banner; lcp?: boolean }) {
+  const { alt, mobile, desktop, action, videoContent } = image;
   const params = { promotion_name: image.alt };
 
   const selectPromotionEvent = useSendEvent({
@@ -96,28 +98,84 @@ function BannerItem(
           </button>
         </div>
       )}
-      <Picture preload={lcp} {...viewPromotionEvent}>
-        <Source
-          media="(max-width: 767px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={mobile}
-          width={450}
-          height={450}
-        />
-        <Source
-          media="(min-width: 768px)"
-          fetchPriority={lcp ? "high" : "auto"}
-          src={desktop}
-          width={1440}
-          height={600}
-        />
-        <img
-          class="w-full h-full object-cover  "
-          loading={lcp ? "eager" : "lazy"}
-          src={desktop}
-          alt={alt}
-        />
-      </Picture>
+      {/* Desktop Video */}
+      {videoContent?.desktop
+        ? (
+          <Video
+            class="hidden lg:block w-full h-full object-cover"
+            src={videoContent.desktop}
+            loading={lcp ? "eager" : "lazy"}
+            width={1440}
+            height={600}
+            autoplay
+            muted
+            loop
+          />
+        )
+        : null}
+      {/* Mobile Video */}
+      {videoContent?.mobile
+        ? (
+          <Video
+            class="block lg:hidden w-full h-full object-cover"
+            loading={lcp ? "eager" : "lazy"}
+            src={videoContent.mobile}
+            width={450}
+            height={450}
+            autoplay
+            muted
+            loop
+          />
+        )
+        : null}
+      {/* Mobile Image (only if no mobile video) */}
+      {!videoContent?.mobile && mobile
+        ? (
+          <Picture
+            preload={lcp}
+            {...viewPromotionEvent}
+            class="block lg:hidden w-full h-full"
+          >
+            <Source
+              media="(max-width: 767px)"
+              fetchPriority={lcp ? "high" : "auto"}
+              src={mobile}
+              width={450}
+              height={450}
+            />
+            <img
+              class="w-full h-full object-cover"
+              loading={lcp ? "eager" : "lazy"}
+              src={mobile}
+              alt={alt}
+            />
+          </Picture>
+        )
+        : null}
+      {/* Desktop Image (only if no desktop video) */}
+      {!videoContent?.desktop && desktop
+        ? (
+          <Picture
+            preload={lcp}
+            {...viewPromotionEvent}
+            class="hidden lg:block w-full h-full"
+          >
+            <Source
+              media="(min-width: 768px)"
+              fetchPriority={lcp ? "high" : "auto"}
+              src={desktop}
+              width={1440}
+              height={600}
+            />
+            <img
+              class="w-full h-full object-cover"
+              loading={lcp ? "eager" : "lazy"}
+              src={desktop}
+              alt={alt}
+            />
+          </Picture>
+        )
+        : null}
     </a>
   );
 }
@@ -169,11 +227,7 @@ function Carousel({ images = [], preload, interval }: Props) {
         />
       </Slider.Dots>
 
-      <Slider.JS
-        rootId={id}
-        interval={interval && interval * 1e3}
-        infinite
-      />
+      <Slider.JS rootId={id} interval={interval && interval * 1e3} infinite />
     </div>
   );
 }

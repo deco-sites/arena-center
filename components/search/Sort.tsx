@@ -28,7 +28,7 @@ const labels: Record<string, string> = {
 function Sort({ sortOptions, url, sort }: Props) {
   const current = getUrl(
     url,
-    new URL(url).searchParams.get(SORT_QUERY_PARAM) ?? ""
+    new URL(url).searchParams.get(SORT_QUERY_PARAM) ?? "",
   );
   const options = sortOptions?.map(({ value, label }) => ({
     value: getUrl(url, value),
@@ -51,9 +51,8 @@ function Sort({ sortOptions, url, sort }: Props) {
           <option
             label={labels[label] ?? label}
             value={value}
-            selected={
-              value === current || (sort && value === getUrl(url, sort))
-            }
+            selected={value === current ||
+              (sort && value === getUrl(url, sort))}
           >
             {label === "Relevância" ? "Ordenar por" : label}
           </option>

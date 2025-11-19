@@ -19,13 +19,15 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "desktop": "https://assets.decocache.com/arena-center/006e45a0-48bc-4c44-8c2b-a6db6c6944d9/Copia-de-Banner-Desktop-(5).gif",
             "mobile": "https://assets.decocache.com/arena-center/03e0e06e-a53a-4309-968c-85b12491d207/Copia-de-Copia-de-Banner-Mobile-(8).png",
             "action": {
               "href": "/natal",
               "label": "CLIQUE E DESCUBRA"
             },
-            "alt": "Natal Arena Center"
+            "alt": "Natal Arena Center",
+            "videoContent": {
+              "desktop": "https://assets.decocache.com/arena-center/89fb33bf-27fd-4f3f-8dd4-4cfd60d34c0c/ezgif-714fe2bc627c16d7.mp4"
+            }
           },
           {
             "desktop": "https://assets.decocache.com/arena-center/c687659e-8d3c-4777-8965-8311c0c46843/Copia-de-Banner-Desktop-(10).png",
@@ -46,7 +48,7 @@
             "alt": "Mesa Posta Natal"
           }
         ],
-        "preload": false,
+        "preload": true,
         "interval": 10
       }
     },
