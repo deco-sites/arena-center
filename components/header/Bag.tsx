@@ -1,4 +1,3 @@
-import Image from "apps/website/components/Image.tsx";
 import { MINICART_DRAWER_ID } from "../../constants.ts";
 import { useId } from "../../sdk/useId.ts";
 import { useScript } from "@deco/deco/hooks";
@@ -32,7 +31,7 @@ function Bag() {
         />
 
         <div class="btn btn-ghost no-animation  text-secondary hover:border-primary flex flex-col min-h-0 p-0 lg:px-2">
-          <Image
+          <img
             id="shopping_bag"
             src="https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/8ffcddc7-e6c9-4326-81f2-79c0abbee7a0/CART_02.svg"
             alt="icone de usuario"

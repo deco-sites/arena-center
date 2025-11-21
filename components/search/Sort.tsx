@@ -1,9 +1,12 @@
 import { ProductListingPage } from "apps/commerce/types.ts";
 import { useScript } from "@deco/deco/hooks";
+import { Sort as SortOption } from "apps/vnda/utils/client/types.ts";
+
 const SORT_QUERY_PARAM = "sort";
 const PAGE_QUERY_PARAM = "page";
 export type Props = Pick<ProductListingPage, "sortOptions"> & {
   url: string;
+  sort?: SortOption;
 };
 const getUrl = (href: string, value: string) => {
   const url = new URL(href);
@@ -22,7 +25,7 @@ const labels: Record<string, string> = {
   "discount:desc": "Maior desconto",
 };
 
-function Sort({ sortOptions, url }: Props) {
+function Sort({ sortOptions, url, sort }: Props) {
   const current = getUrl(
     url,
     new URL(url).searchParams.get(SORT_QUERY_PARAM) ?? "",
@@ -48,7 +51,8 @@ function Sort({ sortOptions, url }: Props) {
           <option
             label={labels[label] ?? label}
             value={value}
-            selected={value === current}
+            selected={value === current ||
+              (sort && value === getUrl(url, sort))}
           >
             {label === "Relevância" ? "Ordenar por" : label}
           </option>

@@ -69,5 +69,8 @@
   "flavor": {
     "framework": "htmx"
   },
-  "platform": "vnda"
+  "platform": "vnda",
+  "whilelistURLs": [],
+  "whitelistPatterns": [],
+  "disableProxy": false
 }

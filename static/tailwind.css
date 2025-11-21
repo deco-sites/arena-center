@@ -3429,9 +3429,6 @@ details.collapse summary::-webkit-details-marker {
 .pointer-events-none {
   pointer-events: none;
 }
-.visible {
-  visibility: visible;
-}
 .invisible {
   visibility: hidden;
 }
@@ -6382,6 +6379,10 @@ details.collapse summary::-webkit-details-marker {
 
   .lg\:mt-12 {
     margin-top: 3rem;
+  }
+
+  .lg\:block {
+    display: block;
   }
 
   .lg\:flex {

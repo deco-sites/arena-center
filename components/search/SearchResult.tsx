@@ -1,5 +1,6 @@
 import type { ProductListingPage } from "apps/commerce/types.ts";
 import { mapProductToAnalyticsItem } from "apps/commerce/utils/productToAnalyticsItem.ts";
+import { Sort as SortOption } from "apps/vnda/utils/client/types.ts";
 import ProductCardSearch from "../../components/product/ProductCardSearch.tsx";
 import Filters from "../../components/search/Filters.tsx";
 import FiltersMobile from "../../components/search/FiltersMobile.tsx";
@@ -18,6 +19,11 @@ import { setFilteredUrl } from "site/sdk/processFilters.ts";
 export interface Props {
   /** @title Integration */
   page: ProductListingPage | null;
+  /**
+   *  @title Default Sort
+   *  @description Define visualmente selecionada a ordenação padrão no componente de Ordenação. Não aplica a ordenação diretamente na listagem de produtos, para isso utilize o campo Sort na integração com o loader.
+   */
+  sort?: SortOption;
   /** @description 0 for ?page=0 as your first page */
   startingPage?: 0 | 1;
   /** @hidden partial */
@@ -196,7 +202,7 @@ function Result(props: SectionProps<typeof loader>) {
     </span>
   );
   const sortBy = sortOptions.length > 0 && (
-    <Sort sortOptions={sortOptions} url={url} />
+    <Sort sort={props.sort} sortOptions={sortOptions} url={url} />
   );
 
   return (

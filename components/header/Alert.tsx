@@ -1,7 +1,6 @@
 import { ImageWidget } from "apps/admin/widgets.ts";
 import Slider from "../../components/ui/Slider.tsx";
 import { useId } from "../../sdk/useId.ts";
-import Image from "apps/website/components/Image.tsx";
 
 /** @titleby title */
 export interface AlertItem {
@@ -79,7 +78,7 @@ function Alert({ alerts = [], interval = 5, contacts }: Props) {
                 target="blank"
                 class="flex items-center"
               >
-                <Image
+                <img
                   src={contact.image}
                   alt={contact.title}
                   width={22}

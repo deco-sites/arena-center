@@ -32,7 +32,8 @@
           "variant": "aside",
           "pagination": "show-more"
         },
-        "startingPage": 1
+        "startingPage": 1,
+        "sort": "newest"
       }
     },
     {
