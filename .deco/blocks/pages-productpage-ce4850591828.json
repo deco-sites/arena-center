@@ -88,7 +88,7 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
+          "__resolveType": "site/loaders/pdpProductList.ts",
           "sort": "newest",
           "tags": [],
           "typeTags": [],
