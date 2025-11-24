@@ -183,7 +183,7 @@
           ],
           "typeTags": [],
           "ids": [],
-          "count": 25,
+          "count": 20,
           "sort": "newest"
         }
       }
@@ -472,7 +472,7 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
+          "sort": "highest_price",
           "count": 20
         }
       }
