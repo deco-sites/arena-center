@@ -480,6 +480,24 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/esculturas",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "esculturas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "count": 20
+        },
+        "title": "NOVIDADES EM ESCULTURAS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/Content/Logos.tsx",
         "images": [
           {
