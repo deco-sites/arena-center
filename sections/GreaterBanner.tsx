@@ -3,13 +3,14 @@ import { ImageWidget } from "apps/admin/widgets.ts";
 
 export interface Props {
   src: ImageWidget;
+  link?: string;
   width: number;
   height: number;
 }
 
 export default function GreaterBanner(props: Props) {
   return (
-    <div>
+    <a href={props.link}>
       <Image
         class="w-full"
         src={props.src}
@@ -18,6 +19,6 @@ export default function GreaterBanner(props: Props) {
         loading="eager"
         preload
       />
-    </div>
+    </a>
   );
 }
