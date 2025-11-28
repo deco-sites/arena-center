@@ -2,29 +2,14 @@
   "banners": [
     {
       "image": {
-        "mobile": "https://assets.decocache.com/arena-center/5acb18b4-a554-42f2-84ff-d7a3ea8e7c61/Linha-Corporativa.png",
-        "desktop": "https://assets.decocache.com/arena-center/5acb18b4-a554-42f2-84ff-d7a3ea8e7c61/Linha-Corporativa.png"
+        "mobile": "https://assets.decocache.com/arena-center/0bb11628-6366-4506-94ea-fb9c8539973e/CONTAGEM-REGRESSIVA-(5).png",
+        "desktop": "https://assets.decocache.com/arena-center/f0ec15de-121b-48ad-a7f4-6e3d1257872b/CONTAGEM-REGRESSIVA-(4).png"
       },
-      "matcher": "/linha-corporativa/*",
-      "subtitle": "Tudo para seu Negócio",
-      "title": "Linha Corporativa"
-    },
-    {
-      "image": {
-        "mobile": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/91102b71-4832-486a-b683-5f7b06f649af",
-        "desktop": "https://ozksgdmyrqcxcwhnbepg.supabase.co/storage/v1/object/public/assets/239/ec597b6a-dcf1-48ca-a99d-95b3c6304f96"
-      },
-      "title": "Woman",
-      "matcher": "/*",
-      "subtitle": "As"
-    },
-    {
-      "image": {
-        "desktop": "https://assets.decocache.com/arena-center/5acb18b4-a554-42f2-84ff-d7a3ea8e7c61/Linha-Corporativa.png",
-        "mobile": "https://assets.decocache.com/arena-center/5acb18b4-a554-42f2-84ff-d7a3ea8e7c61/Linha-Corporativa.png"
-      },
-      "matcher": "/linha-corporativa",
-      "title": "Linha Corporativa"
+      "matcher": "/preco-promocao-validade",
+      "subtitle": "BLACK WEEK ARENA CENTER",
+      "title": "CASHBACK",
+      "desktopHeight": 350,
+      "desktopWidth": 1444
     }
   ],
   "__resolveType": "site/sections/Category/CategoryBanner.tsx"

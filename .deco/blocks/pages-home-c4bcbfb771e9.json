@@ -38,6 +38,13 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/GreaterBanner.tsx",
+        "src": "https://assets.decocache.com/arena-center/46d21978-ab06-4764-a785-260abcaf9908/CONTAGEM-REGRESSIVA-(6).png"
+      }
+    },
+    {
       "__resolveType": "site/sections/TopBar.tsx",
       "content": [
         {
