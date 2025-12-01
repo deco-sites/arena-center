@@ -19,18 +19,30 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "alt": "Black Week Arena Center",
-            "videoContent": {
-              "desktop": "https://assets.decocache.com/arena-center/5567d517-b7a5-456b-a2f9-00c529d39e7f/Copia-de-Copia-de-Banner-Desktop-(1).mp4",
-              "mobile": "https://assets.decocache.com/arena-center/068d3fc8-797d-40ab-b802-6b8d5f77d6b6/Copia-de-Copia-de-Banner-Mobile.mp4"
-            },
+            "alt": "Natal Arena Center",
+            "videoContent": {},
             "": {
               "href": "black-2025"
             },
             "action": {
-              "href": "black-2025",
+              "href": "mesa-posta-natal",
               "label": "COMPRE AGORA"
-            }
+            },
+            "desktop": "https://assets.decocache.com/arena-center/e9abdc55-9584-4f33-b418-db7e17c3109a/Copia-de-Banner-Desktop-(11).png",
+            "mobile": "https://assets.decocache.com/arena-center/4f2f94f3-2960-4c40-abe8-378cfbda6457/Copia-de-Copia-de-Banner-Mobile-(10).png"
+          },
+          {
+            "alt": "Natal Arena Center",
+            "videoContent": {},
+            "": {
+              "href": "black-2025"
+            },
+            "action": {
+              "href": "decoracao-de-natal",
+              "label": "COMPRE AGORA"
+            },
+            "desktop": "https://assets.decocache.com/arena-center/c687659e-8d3c-4777-8965-8311c0c46843/Copia-de-Banner-Desktop-(10).png",
+            "mobile": "https://assets.decocache.com/arena-center/8653b0b9-01cd-4694-abdd-2ed6c5cfebb5/Copia-de-Copia-de-Banner-Mobile-(9).png"
           }
         ],
         "preload": true,
@@ -72,108 +84,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/black-2025",
-        "title": "BLACK WEEK ARENA CENTER",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "black-2025"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "sort": "newest",
-          "count": 12
-        }
-      }
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/189c6171-2622-48fe-a519-d70ba62d6e1c/1.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "black-decor"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/0cc19a5a-03d5-4a55-927d-6143dbf283c2/2.png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "black-cozinha"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/a37f20b2-2ed7-4394-b6df-94d3d729826c/3.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "black-bar"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4713d07e-20cd-4f87-b690-578cd2ed3423/4.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "outlet-natal"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/189c6171-2622-48fe-a519-d70ba62d6e1c/1.png",
-          "href": "black-decor"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/0cc19a5a-03d5-4a55-927d-6143dbf283c2/2.png",
-          "href": "black-cozinha"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/a37f20b2-2ed7-4394-b6df-94d3d729826c/3.png",
-          "href": "black-bar"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4713d07e-20cd-4f87-b690-578cd2ed3423/4.png",
-          "href": "outlet-natal"
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/ImageGallery.tsx",
-        "cta": "/abaporu",
-        "banners": [
-          {
-            "mobile": "https://assets.decocache.com/arena-center/9933a2d9-b0e0-4bc5-8df1-423b494e5915/ABAPORU-MOBILE-(4).png",
-            "desktop": "https://assets.decocache.com/arena-center/5c35cfb5-75fc-408a-953c-aa60404f833d/ABAPORU-(3).png",
-            "href": "/abaporu"
-          },
-          {
-            "href": "/abaporu",
-            "desktop": "https://assets.decocache.com/arena-center/0f27f58c-e18f-482b-9080-900f3282d681/ABAPORU-(2).png",
-            "mobile": "https://assets.decocache.com/arena-center/438f7ff8-9c73-4dfd-82b1-1b2473c37e85/ABAPORU.gif"
-          },
-          {
-            "mobile": "https://assets.decocache.com/arena-center/0d4fe4c5-f890-4c24-a6bb-c9969154d4eb/ABAPORU-MOBILE-(6).png",
-            "desktop": "https://assets.decocache.com/arena-center/fdbe619d-3b3f-4880-995a-0537e64275fb/galery-(5).png",
-            "href": "/abaporu"
-          },
-          {
-            "mobile": "https://assets.decocache.com/arena-center/014230ba-2868-450e-857a-da91c9d4bd08/galery-(6).png",
-            "desktop": "https://assets.decocache.com/arena-center/014230ba-2868-450e-857a-da91c9d4bd08/galery-(6).png",
-            "href": "/abaporu"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/tacas-mais-desejadas",
         "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
         "products": {
@@ -187,6 +97,157 @@
           "sort": "newest"
         }
       }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ThreeImages.tsx",
+        "img": [
+          {
+            "mobile": "https://assets.decocache.com/arena-center/f6b0b6b7-6846-493e-ae29-9135af7d41ce/3.png",
+            "desktop": "https://assets.decocache.com/arena-center/2d97dd57-429e-4326-9c98-a97a3fb81122/1.png",
+            "link": "outlet-natal"
+          },
+          {
+            "mobile": "https://assets.decocache.com/arena-center/aacd08d0-54cf-4fc9-bbcf-f8a8d310a5a0/2.png",
+            "desktop": "https://assets.decocache.com/arena-center/c840c93b-c2ba-4579-90de-2a060c5bd377/2-banner-desktop.png",
+            "link": "outlet-natal"
+          },
+          {
+            "mobile": "https://assets.decocache.com/arena-center/2d97dd57-429e-4326-9c98-a97a3fb81122/1.png",
+            "desktop": "https://assets.decocache.com/arena-center/1c1cb610-209a-45ca-89e0-a6c3b8fb4b22/2-banner-desktop.png",
+            "link": "outlet-natal"
+          }
+        ]
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/loucas-diversas-natal",
+        "title": "MESA POSTA PERFEITA NESTE NATAL",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "pratos-natal"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "newest",
+          "count": 20
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/840bf857-0de9-4fdd-9db0-30bafb39a751/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bonecos-natalinos"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/7df14ff4-4559-453a-bdc1-658355c1e501/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(4).png",
+          "discount": "50%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bolas-natalinas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/20d43fa8-ba29-4067-b1f2-ad0aa96ebc87/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "fitas-natalinas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/d68511d1-4708-4354-b9d4-1e9ac2bf93da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "flores-permanentes-natalinas"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/840bf857-0de9-4fdd-9db0-30bafb39a751/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "href": "bonecos-natalinos"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/7df14ff4-4559-453a-bdc1-658355c1e501/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(4).png",
+          "href": "bolas-natalinas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/20d43fa8-ba29-4067-b1f2-ad0aa96ebc87/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
+          "href": "fitas-natalinas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/d68511d1-4708-4354-b9d4-1e9ac2bf93da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "href": "flores-permanentes-natalinas"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/f98183ef-c33e-4a49-a2e8-be74c7314053/3(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "boleiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/72fecd89-974b-45b4-9b65-bae47eaf0174/1(1).png",
+          "discount": "50%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/41c713a1-27ed-4c9d-a45e-31693e8f2c8e/2(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bombonieres-e-potiches"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/dbb90d1e-756e-413f-bbb9-dd8f65b7c5d4/4(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "jarras-moringas-e-suqueiras"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/f98183ef-c33e-4a49-a2e8-be74c7314053/3(1).png",
+          "href": "boleiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/72fecd89-974b-45b4-9b65-bae47eaf0174/1(1).png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/41c713a1-27ed-4c9d-a45e-31693e8f2c8e/2(1).png",
+          "href": "bombonieres-e-potiches"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/dbb90d1e-756e-413f-bbb9-dd8f65b7c5d4/4(1).png",
+          "href": "jarras-moringas-e-suqueiras"
+        }
+      ]
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
@@ -247,157 +308,6 @@
         }
       ],
       "itemListName": "MAIS VENDIDOS EM MESA POSTA"
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/ThreeImages.tsx",
-        "img": [
-          {
-            "mobile": "https://assets.decocache.com/arena-center/f6b0b6b7-6846-493e-ae29-9135af7d41ce/3.png",
-            "desktop": "https://assets.decocache.com/arena-center/2d97dd57-429e-4326-9c98-a97a3fb81122/1.png",
-            "link": "outlet-natal"
-          },
-          {
-            "mobile": "https://assets.decocache.com/arena-center/aacd08d0-54cf-4fc9-bbcf-f8a8d310a5a0/2.png",
-            "desktop": "https://assets.decocache.com/arena-center/c840c93b-c2ba-4579-90de-2a060c5bd377/2-banner-desktop.png",
-            "link": "outlet-natal"
-          },
-          {
-            "mobile": "https://assets.decocache.com/arena-center/2d97dd57-429e-4326-9c98-a97a3fb81122/1.png",
-            "desktop": "https://assets.decocache.com/arena-center/1c1cb610-209a-45ca-89e0-a6c3b8fb4b22/2-banner-desktop.png",
-            "link": "outlet-natal"
-          }
-        ]
-      }
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/840bf857-0de9-4fdd-9db0-30bafb39a751/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bonecos-natalinos"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/7df14ff4-4559-453a-bdc1-658355c1e501/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(4).png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bolas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/20d43fa8-ba29-4067-b1f2-ad0aa96ebc87/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "fitas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/d68511d1-4708-4354-b9d4-1e9ac2bf93da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "flores-permanentes-natalinas"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/840bf857-0de9-4fdd-9db0-30bafb39a751/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
-          "href": "bonecos-natalinos"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/7df14ff4-4559-453a-bdc1-658355c1e501/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(4).png",
-          "href": "bolas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/20d43fa8-ba29-4067-b1f2-ad0aa96ebc87/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
-          "href": "fitas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/d68511d1-4708-4354-b9d4-1e9ac2bf93da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
-          "href": "flores-permanentes-natalinas"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/f98183ef-c33e-4a49-a2e8-be74c7314053/3(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "boleiras"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/72fecd89-974b-45b4-9b65-bae47eaf0174/1(1).png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/41c713a1-27ed-4c9d-a45e-31693e8f2c8e/2(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/dbb90d1e-756e-413f-bbb9-dd8f65b7c5d4/4(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "jarras-moringas-e-suqueiras"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/f98183ef-c33e-4a49-a2e8-be74c7314053/3(1).png",
-          "href": "boleiras"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/72fecd89-974b-45b4-9b65-bae47eaf0174/1(1).png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/41c713a1-27ed-4c9d-a45e-31693e8f2c8e/2(1).png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/dbb90d1e-756e-413f-bbb9-dd8f65b7c5d4/4(1).png",
-          "href": "jarras-moringas-e-suqueiras"
-        }
-      ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/loucas-diversas-natal",
-        "title": "MESA POSTA PERFEITA NESTE NATAL",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "pratos-natal"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "sort": "newest",
-          "count": 20
-        }
-      }
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
@@ -463,24 +373,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/capas-de-almofadas",
-        "title": "RENOVE SUA SALA COM DESCONTO",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "capas-de-almofadas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "sort": "highest_price",
-          "count": 20
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/esculturas",
         "title": "NOVIDADES EM ESCULTURAS",
         "products": {
@@ -491,6 +383,24 @@
           "typeTags": [],
           "ids": [],
           "sort": "newest",
+          "count": 20
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/capas-de-almofadas",
+        "title": "RENOVE SUA SALA COM DESCONTO",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "capas-de-almofadas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "sort": "highest_price",
           "count": 20
         }
       }
