@@ -18,10 +18,6 @@
       "subtitle": "Envio via Sedex ou PAC, à escolha do ofertante*"
     },
     {
-      "title": "CASHBACK DE 20% EM COMPRAS A PARTIR DE R$600",
-      "subtitle": "CONFIRA AS REGRAS"
-    },
-    {
       "0": "<",
       "1": "p",
       "2": ">",
@@ -84,6 +80,68 @@
     {
       "children": [
         {
+          "children": [],
+          "image": null,
+          "url": "/natal/mesa-posta-natal",
+          "name": "Mesa Posta Natal"
+        },
+        {
+          "image": null,
+          "children": [],
+          "name": "Bolas Natalinas",
+          "url": "/natal/bolas-natalinas"
+        },
+        {
+          "image": null,
+          "children": [],
+          "name": "Pisca Pisca",
+          "url": "/natal/pisca-pisca"
+        },
+        {
+          "image": null,
+          "children": [],
+          "name": "Guirlandas e Festão",
+          "url": "/natal/guirlandas-e-festao"
+        },
+        {
+          "image": null,
+          "children": [],
+          "name": "Fitas e Laços Natalinos",
+          "url": "/natal/fitas-e-lacos-natalinos"
+        },
+        {
+          "image": null,
+          "children": [],
+          "name": "Bonecos Natalinos",
+          "url": "/natal/bonecos-e-adornos"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Flores Permanentes Natalinas",
+          "url": "/natal/flores-permanentes-natalinas"
+        },
+        {
+          "children": [],
+          "image": null,
+          "name": "Natal Diversos",
+          "url": "/natal/natal-diversos"
+        }
+      ],
+      "url": "/natal",
+      "name": "Natal",
+      "image": null
+    },
+    {
+      "url": "/bar",
+      "name": "Bar",
+      "children": [
+        {
+          "image": [
+            {
+              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1c5c2d6e-5bc5-4e2e-bab6-8dfafabeae60/sala.png"
+            }
+          ],
           "children": [
             {
               "image": [],
@@ -102,23 +160,18 @@
                   ]
                 }
               ],
-              "name": "Baldes",
-              "url": "/Bar/baldes-e-champanheiras/baldes"
+              "url": "/Bar/baldes-e-champanheiras/baldes",
+              "name": "Baldes"
             },
             {
               "image": [],
               "children": [],
-              "name": "Champanheiras",
-              "url": "/bar/baldes-e-champanheiras/champanheiras"
+              "url": "/bar/baldes-e-champanheiras/champanheiras",
+              "name": "Champanheiras"
             }
           ],
-          "image": [
-            {
-              "url": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/1c5c2d6e-5bc5-4e2e-bab6-8dfafabeae60/sala.png"
-            }
-          ],
-          "url": "/bar/baldes-e-champanheiras",
-          "name": "Baldes e Champanheiras"
+          "name": "Baldes e Champanheiras",
+          "url": "/bar/baldes-e-champanheiras"
         },
         {
           "image": [],
@@ -126,14 +179,14 @@
             {
               "image": [],
               "children": [],
-              "name": "Canecas de Cerveja",
-              "url": "/bar/copos-e-canecas/canecas-cerveja"
+              "url": "/bar/copos-e-canecas/canecas-cerveja",
+              "name": "Canecas de Cerveja"
             },
             {
               "image": [],
               "children": [],
-              "name": "Copos Baixos",
-              "url": "/bar/copos-e-canecas/copos-baixos"
+              "url": "/bar/copos-e-canecas/copos-baixos",
+              "name": "Copos Baixos"
             },
             {
               "image": [],
@@ -160,8 +213,8 @@
               "url": "/bar/copos-e-canecas/copos-long-drink"
             }
           ],
-          "name": "Copos e Canecas",
-          "url": "/bar/copos-e-canecas"
+          "url": "/bar/copos-e-canecas",
+          "name": "Copos e Canecas"
         },
         {
           "image": [],
@@ -175,8 +228,8 @@
             {
               "image": [],
               "children": [],
-              "name": "Garrafas",
-              "url": "/bar/decanters-e-garrafas/garrafas"
+              "url": "/bar/decanters-e-garrafas/garrafas",
+              "name": "Garrafas"
             }
           ],
           "name": "Decanters e Garrafas",
@@ -211,28 +264,28 @@
           "image": [],
           "children": [
             {
-              "image": [],
               "children": [],
-              "url": "/bar/tacas/tacas-coquetel",
-              "name": "Taças Coquetel"
+              "image": [],
+              "name": "Taças Coquetel",
+              "url": "/bar/tacas/tacas-coquetel"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/bar/tacas/tacas-de-agua",
-              "name": "Taças de Água"
+              "image": [],
+              "name": "Taças de Água",
+              "url": "/bar/tacas/tacas-de-agua"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/bar/tacas/tacas-de-cerveja",
-              "name": "Taças de Cerveja"
+              "image": [],
+              "name": "Taças de Cerveja",
+              "url": "/bar/tacas/tacas-de-cerveja"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/bar/tacas/tacas-de-champanhe",
-              "name": "Taças de Champanhe"
+              "image": [],
+              "name": "Taças de Champanhe",
+              "url": "/bar/tacas/tacas-de-champanhe"
             },
             {
               "image": [],
@@ -271,23 +324,22 @@
               "name": "Taças Milk Shake"
             }
           ],
-          "name": "Taças",
-          "url": "/bar/tacas"
+          "url": "/bar/tacas",
+          "name": "Taças"
         },
         {
-          "image": [],
           "children": [
             {
-              "image": [],
               "children": [],
-              "url": "/bar/utensilios-de-bar/amassadores",
-              "name": "Amassadores"
+              "image": [],
+              "name": "Amassadores",
+              "url": "/bar/utensilios-de-bar/amassadores"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/bar/utensilios-de-bar/colher-preparo",
-              "name": "Colher de Preparo"
+              "image": [],
+              "name": "Colher de Preparo",
+              "url": "/bar/utensilios-de-bar/colher-preparo"
             },
             {
               "image": [],
@@ -398,6 +450,7 @@
               "name": "Timers"
             }
           ],
+          "image": [],
           "name": "Utensílios de Bar",
           "url": "/bar/utensilios-de-bar"
         },
@@ -467,17 +520,13 @@
           "url": "/bar/bar-outlet"
         }
       ],
-      "url": "/bar",
-      "@type": "SiteNavigationElement",
-      "name": "Bar",
-      "image": null
+      "image": null,
+      "@type": "SiteNavigationElement"
     },
     {
       "url": "/cozinha",
-      "name": "Cozinha",
       "children": [
         {
-          "image": [],
           "children": [
             {
               "image": null,
@@ -510,8 +559,9 @@
               "name": "Formas e Assadeiras"
             }
           ],
+          "url": "/cozinha/acessorios-para-cozinha",
           "name": "Acessórios para Cozinha",
-          "url": "/cozinha/acessorios-para-cozinha"
+          "image": []
         },
         {
           "image": [],
@@ -536,22 +586,22 @@
           "image": [],
           "children": [
             {
-              "image": [],
               "children": [],
+              "image": [],
               "name": "Dispenser Detergente",
               "url": "/cozinha/organizacao-cozinha/dispenser-detergente"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/organizacao-cozinha/escorredores",
-              "name": "Escorredores"
+              "image": [],
+              "name": "Escorredores",
+              "url": "/cozinha/organizacao-cozinha/escorredores"
             },
             {
-              "image": [],
               "children": [],
-              "url": "/cozinha/organizacao-cozinha/fruteiras",
-              "name": "Fruteiras"
+              "image": [],
+              "name": "Fruteiras",
+              "url": "/cozinha/organizacao-cozinha/fruteiras"
             },
             {
               "image": [],
@@ -621,8 +671,8 @@
               "name": "Panelas e Caçarolas"
             }
           ],
-          "name": "Panelas",
-          "url": "/cozinha/panelas"
+          "url": "/cozinha/panelas",
+          "name": "Panelas"
         },
         {
           "image": [],
@@ -636,26 +686,27 @@
             {
               "children": [],
               "image": [],
-              "name": "Porta Condimentos",
-              "url": "/cozinha/potes-de-armazenamento/porta-condimentos"
+              "url": "/cozinha/potes-de-armazenamento/porta-condimentos",
+              "name": "Porta Condimentos"
             },
             {
-              "children": [],
               "image": [],
-              "name": "Porta Pão",
-              "url": "/cozinha/potes-de-armazenamento/porta-pao"
+              "children": [],
+              "url": "/cozinha/potes-de-armazenamento/porta-pao",
+              "name": "Porta Pão"
             },
             {
-              "children": [],
               "image": [],
-              "name": "Potes",
-              "url": "/cozinha/potes-de-armazenamento/potes"
+              "children": [],
+              "url": "/cozinha/potes-de-armazenamento/potes",
+              "name": "Potes"
             }
           ],
-          "url": "/cozinha/potes-de-armazenamento",
-          "name": "Potes de Armazenamento"
+          "name": "Potes de Armazenamento",
+          "url": "/cozinha/potes-de-armazenamento"
         },
         {
+          "image": [],
           "children": [
             {
               "children": [],
@@ -670,7 +721,6 @@
               "url": "/cozinha/utensilios-de-cozinha/processadores"
             }
           ],
-          "image": [],
           "name": "Utensílios de Cozinha",
           "url": "/cozinha/utensilios-de-cozinha"
         },
@@ -681,19 +731,20 @@
           "url": "/cozinha/cozinha-diversos"
         },
         {
-          "children": [],
           "image": null,
-          "name": "Cozinha Outlet",
-          "url": "/cozinha/cozinha-outlet"
+          "children": [],
+          "url": "/cozinha/cozinha-outlet",
+          "name": "Cozinha Outlet"
         }
       ],
+      "name": "Cozinha",
       "image": null,
       "@type": "SiteNavigationElement"
     },
     {
-      "url": "/decoracao",
       "children": [
         {
+          "image": null,
           "children": [
             {
               "image": [],
@@ -708,9 +759,8 @@
               "name": "Capas de Almofadas"
             }
           ],
-          "url": "/decoracao/almofadas-e-mantas",
           "name": "Almofadas e Mantas",
-          "image": null
+          "url": "/decoracao/almofadas-e-mantas"
         },
         {
           "image": [],
@@ -753,26 +803,26 @@
           "image": [],
           "children": [
             {
-              "children": [],
               "image": [],
-              "name": "Adornos de Parede",
-              "url": "/decoracao/decoracao-de-parede/adornos-de-parede"
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/adornos-de-parede",
+              "name": "Adornos de Parede"
             },
             {
-              "children": [],
               "image": [],
-              "name": "Espelhos de Parede",
-              "url": "/decoracao/decoracao-de-parede/espelhos-de-parede"
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/espelhos-de-parede",
+              "name": "Espelhos de Parede"
             },
             {
-              "children": [],
               "image": [],
-              "name": "Relógios de Parede",
-              "url": "/decoracao/decoracao-de-parede/relogios-de-parede"
+              "children": [],
+              "url": "/decoracao/decoracao-de-parede/relogios-de-parede",
+              "name": "Relógios de Parede"
             }
           ],
-          "name": "Decoração de Parede",
-          "url": "/decoracao/decoracao-de-parede"
+          "url": "/decoracao/decoracao-de-parede",
+          "name": "Decoração de Parede"
         },
         {
           "image": null,
@@ -781,17 +831,16 @@
           "name": "Flores Permanentes"
         },
         {
-          "image": [],
           "children": [
             {
-              "children": [],
               "image": [],
-              "name": "Ampulhetas",
-              "url": "/decoracao/objetos-de-decoracao/ampulhetas"
+              "children": [],
+              "url": "/decoracao/objetos-de-decoracao/ampulhetas",
+              "name": "Ampulhetas"
             },
             {
-              "children": [],
               "image": [],
+              "children": [],
               "url": "/decoracao/objetos-de-decoracao/bandejas-decorativas",
               "name": "Bandejas Decorativas"
             },
@@ -862,11 +911,11 @@
               "name": "Vasos e Cachepots"
             }
           ],
+          "image": [],
           "name": "Objetos de Decoração",
           "url": "/decoracao/objetos-de-decoracao"
         },
         {
-          "image": [],
           "children": [
             {
               "children": [],
@@ -881,6 +930,7 @@
               "url": "/decoracao/quadros-e-porta-retrato/quadros"
             }
           ],
+          "image": [],
           "name": "Quadros e Porta Retratos",
           "url": "/decoracao/quadros-e-porta-retratos"
         },
@@ -970,10 +1020,12 @@
         }
       ],
       "name": "Decoração",
+      "url": "/decoracao",
       "image": null,
       "@type": "SiteNavigationElement"
     },
     {
+      "name": "Mesa Posta",
       "children": [
         {
           "image": [],
@@ -1003,14 +1055,14 @@
               "name": "Petisqueiras e Tábuas"
             },
             {
-              "children": [],
               "image": [],
-              "name": "Tigelas e Travessas",
-              "url": "/mesa-posta/acessórios-para-servir/tigelas-e-travessas"
+              "children": [],
+              "url": "/mesa-posta/acessórios-para-servir/tigelas-e-travessas",
+              "name": "Tigelas e Travessas"
             }
           ],
-          "name": "Acessórios para Servir",
-          "url": "/mesa-posta/acessórios-para-servir"
+          "url": "/mesa-posta/acessórios-para-servir",
+          "name": "Acessórios para Servir"
         },
         {
           "image": [],
@@ -1107,8 +1159,8 @@
               "url": "/mesa-posta/linha-oriental/oriental-diversos"
             }
           ],
-          "url": "/mesa-posta/linha-oriental",
-          "name": "Linha Oriental"
+          "name": "Linha Oriental",
+          "url": "/mesa-posta/linha-oriental"
         },
         {
           "image": [],
@@ -1196,6 +1248,7 @@
           "name": "Louças"
         },
         {
+          "image": [],
           "children": [
             {
               "image": [],
@@ -1234,11 +1287,11 @@
               "name": "Sousplat"
             }
           ],
-          "image": [],
-          "name": "Mesa Textil e Acessórios",
-          "url": "/mesa-posta/mesa-textil-e-acessorios"
+          "url": "/mesa-posta/mesa-textil-e-acessorios",
+          "name": "Mesa Textil e Acessórios"
         },
         {
+          "image": null,
           "children": [
             {
               "children": [],
@@ -1307,9 +1360,8 @@
               "url": "/mesa-posta/mesa-posta-diversos/sopeira"
             }
           ],
-          "image": null,
-          "name": "Mesa Posta Diversos",
-          "url": "/mesa-posta/mesa-posta-diversos"
+          "url": "/mesa-posta/mesa-posta-diversos",
+          "name": "Mesa Posta Diversos"
         },
         {
           "children": [],
@@ -1318,16 +1370,12 @@
           "url": "/mesa-posta/mesa-posta-outlet"
         }
       ],
-      "name": "Mesa Posta",
       "url": "/mesa-posta",
       "image": []
     },
     {
-      "@type": "SiteNavigationElement",
-      "name": "Organização",
       "children": [
         {
-          "image": [],
           "children": [
             {
               "image": [],
@@ -1384,11 +1432,11 @@
               "name": "Saboneteiras"
             }
           ],
+          "name": "Organização Banheiro e Lavabo",
           "url": "/organizacao/organizacao-banheiro-e-lavabo",
-          "name": "Organização Banheiro e Lavabo"
+          "image": []
         },
         {
-          "image": [],
           "children": [
             {
               "image": [],
@@ -1416,10 +1464,10 @@
             }
           ],
           "url": "organizacao/organizacao-closets",
-          "name": "Organização Closets"
+          "name": "Organização Closets",
+          "image": []
         },
         {
-          "image": [],
           "children": [
             {
               "image": [],
@@ -1429,10 +1477,10 @@
             }
           ],
           "name": "Organização Lavanderia",
-          "url": "/organizacao/organizacao-lavanderia"
+          "url": "/organizacao/organizacao-lavanderia",
+          "image": []
         },
         {
-          "image": [],
           "children": [
             {
               "image": [],
@@ -1454,78 +1502,26 @@
             }
           ],
           "url": "/organizacao/utensilios-de-limpeza",
-          "name": "Utensílios de Limpeza"
+          "name": "Utensílios de Limpeza",
+          "image": []
         },
         {
-          "image": null,
           "children": [],
+          "name": "Organização Diversos",
           "url": "/Organização/organizacao-diversos",
-          "name": "Organização Diversos"
-        },
-        {
-          "image": null,
-          "children": [],
-          "url": "/organização/organizacao-outlet",
-          "name": "Organização Outlet"
-        }
-      ],
-      "url": "/organizacao",
-      "image": null
-    },
-    {
-      "children": [
-        {
-          "children": [],
-          "name": "Mesa Posta Natal",
-          "url": "/natal/mesa-posta-natal",
-          "image": null
-        },
-        {
-          "children": [],
-          "url": "/natal/bolas-natalinas",
-          "name": "Bolas Natalinas",
-          "image": null
-        },
-        {
-          "children": [],
-          "name": "Pisca Pisca",
-          "url": "/natal/pisca-pisca",
-          "image": null
-        },
-        {
-          "children": [],
-          "url": "/natal/guirlandas-e-festao",
-          "name": "Guirlandas e Festão",
-          "image": null
-        },
-        {
-          "children": [],
-          "name": "Fitas e Laços Natalinos",
-          "url": "/natal/fitas-e-lacos-natalinos",
           "image": null
         },
         {
           "children": [],
           "image": null,
-          "name": "Bonecos Natalinos",
-          "url": "/natal/bonecos-e-adornos"
-        },
-        {
-          "children": [],
-          "image": null,
-          "name": "Flores Permanentes Natalinas",
-          "url": "/natal/flores-permanentes-natalinas"
-        },
-        {
-          "children": [],
-          "image": null,
-          "name": "Natal Diversos",
-          "url": "/natal/natal-diversos"
+          "name": "Organização Outlet",
+          "url": "/organização/organizacao-outlet"
         }
       ],
       "image": null,
-      "name": "Natal",
-      "url": "/natal"
+      "name": "Organização",
+      "url": "/organizacao",
+      "@type": "SiteNavigationElement"
     }
   ],
   "loading": "eager",
