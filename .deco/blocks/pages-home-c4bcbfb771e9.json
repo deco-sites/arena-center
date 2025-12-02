@@ -26,23 +26,10 @@
             },
             "action": {
               "href": "mesa-posta-natal",
-              "label": "COMPRE AGORA"
+              "label": "GARANTA A SUA"
             },
-            "desktop": "https://assets.decocache.com/arena-center/e9abdc55-9584-4f33-b418-db7e17c3109a/Copia-de-Banner-Desktop-(11).png",
-            "mobile": "https://assets.decocache.com/arena-center/4f2f94f3-2960-4c40-abe8-378cfbda6457/Copia-de-Copia-de-Banner-Mobile-(10).png"
-          },
-          {
-            "alt": "Natal Arena Center",
-            "videoContent": {},
-            "": {
-              "href": "black-2025"
-            },
-            "action": {
-              "href": "decoracao-de-natal",
-              "label": "COMPRE AGORA"
-            },
-            "desktop": "https://assets.decocache.com/arena-center/c687659e-8d3c-4777-8965-8311c0c46843/Copia-de-Banner-Desktop-(10).png",
-            "mobile": "https://assets.decocache.com/arena-center/8653b0b9-01cd-4694-abdd-2ed6c5cfebb5/Copia-de-Copia-de-Banner-Mobile-(9).png"
+            "desktop": "https://assets.decocache.com/arena-center/7164692c-6c7e-40d5-b951-26b21da92ed1/Copia-de-Banner-Desktop-(9).png",
+            "mobile": "https://assets.decocache.com/arena-center/ce15f61c-7e2d-4f84-b759-35ec92e235ca/Copia-de-Copia-de-Banner-Mobile-(5).png"
           }
         ],
         "preload": true,
@@ -83,18 +70,14 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/tacas-mais-desejadas",
-        "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "tacas-mais-desejadas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 20,
-          "sort": "newest"
+        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
+        "expiresAt": "2025-12-26T02:59:00.000Z",
+        "text": "<p></p>",
+        "labels": {
+          "days": "Dias",
+          "hours": "Horas",
+          "minutes": "Minutos",
+          "seconds": "Segundos"
         }
       }
     },
@@ -125,17 +108,17 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/loucas-diversas-natal",
-        "title": "MESA POSTA PERFEITA NESTE NATAL",
+        "cta": "/tacas-mais-desejadas",
+        "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "pratos-natal"
+            "tacas-mais-desejadas"
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
-          "count": 20
+          "count": 20,
+          "sort": "newest"
         }
       }
     },
@@ -143,7 +126,7 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://assets.decocache.com/arena-center/840bf857-0de9-4fdd-9db0-30bafb39a751/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "src": "https://assets.decocache.com/arena-center/a41d5c65-393d-45a0-ac05-041eeae0ad32/1.png",
           "discount": "30%",
           "width": 564,
           "height": 705,
@@ -151,7 +134,7 @@
           "href": "bonecos-natalinos"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/7df14ff4-4559-453a-bdc1-658355c1e501/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(4).png",
+          "src": "https://assets.decocache.com/arena-center/57989476-5c58-4a67-a3e3-74673f544760/4.png",
           "discount": "50%",
           "width": 564,
           "height": 705,
@@ -159,7 +142,7 @@
           "href": "bolas-natalinas"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/20d43fa8-ba29-4067-b1f2-ad0aa96ebc87/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
+          "src": "https://assets.decocache.com/arena-center/f53bec31-7c31-44b5-81f2-60aa027f05cb/3.png",
           "discount": "30%",
           "width": 564,
           "height": 705,
@@ -167,7 +150,7 @@
           "href": "fitas-natalinas"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/d68511d1-4708-4354-b9d4-1e9ac2bf93da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "src": "https://assets.decocache.com/arena-center/7502aa54-e74d-48ed-9588-1a1420210151/2(1).png",
           "discount": "30%",
           "width": 564,
           "height": 705,
@@ -177,19 +160,19 @@
       ],
       "imagesMobile": [
         {
-          "src": "https://assets.decocache.com/arena-center/840bf857-0de9-4fdd-9db0-30bafb39a751/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(1).png",
+          "src": "https://assets.decocache.com/arena-center/a41d5c65-393d-45a0-ac05-041eeae0ad32/1.png",
           "href": "bonecos-natalinos"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/7df14ff4-4559-453a-bdc1-658355c1e501/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(4).png",
+          "src": "https://assets.decocache.com/arena-center/57989476-5c58-4a67-a3e3-74673f544760/4.png",
           "href": "bolas-natalinas"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/20d43fa8-ba29-4067-b1f2-ad0aa96ebc87/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(3).png",
+          "src": "https://assets.decocache.com/arena-center/f53bec31-7c31-44b5-81f2-60aa027f05cb/3.png",
           "href": "fitas-natalinas"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/d68511d1-4708-4354-b9d4-1e9ac2bf93da/Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-Copia-de-mesa-e-cozinha-bambu-(2).png",
+          "src": "https://assets.decocache.com/arena-center/7502aa54-e74d-48ed-9588-1a1420210151/2(1).png",
           "href": "flores-permanentes-natalinas"
         }
       ]
@@ -198,7 +181,7 @@
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
-          "src": "https://assets.decocache.com/arena-center/f98183ef-c33e-4a49-a2e8-be74c7314053/3(1).png",
+          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
           "discount": "30%",
           "width": 564,
           "height": 705,
@@ -206,7 +189,7 @@
           "href": "boleiras"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/72fecd89-974b-45b4-9b65-bae47eaf0174/1(1).png",
+          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
           "discount": "50%",
           "width": 564,
           "height": 705,
@@ -214,7 +197,7 @@
           "href": "petisqueiras-e-tabuas"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/41c713a1-27ed-4c9d-a45e-31693e8f2c8e/2(1).png",
+          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
           "discount": "30%",
           "width": 564,
           "height": 705,
@@ -222,7 +205,7 @@
           "href": "bombonieres-e-potiches"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/dbb90d1e-756e-413f-bbb9-dd8f65b7c5d4/4(1).png",
+          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
           "discount": "30%",
           "width": 564,
           "height": 705,
@@ -232,19 +215,19 @@
       ],
       "imagesMobile": [
         {
-          "src": "https://assets.decocache.com/arena-center/f98183ef-c33e-4a49-a2e8-be74c7314053/3(1).png",
+          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
           "href": "boleiras"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/72fecd89-974b-45b4-9b65-bae47eaf0174/1(1).png",
+          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
           "href": "petisqueiras-e-tabuas"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/41c713a1-27ed-4c9d-a45e-31693e8f2c8e/2(1).png",
+          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
           "href": "bombonieres-e-potiches"
         },
         {
-          "src": "https://assets.decocache.com/arena-center/dbb90d1e-756e-413f-bbb9-dd8f65b7c5d4/4(1).png",
+          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
           "href": "jarras-moringas-e-suqueiras"
         }
       ]
@@ -400,8 +383,8 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "highest_price",
-          "count": 20
+          "count": 20,
+          "sort": "oldest"
         }
       }
     },
