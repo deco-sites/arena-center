@@ -84,6 +84,96 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/loucas-diversas-natal",
+        "title": "APOSTE EM LOUÇAS TEMÁTICAS PARA UM NATAL INESQUECÍVEL",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "loucas-diversas-natal"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "highest_price"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/tacas-mais-desejadas",
+        "title": "COMBINE COM AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "tacas-mais-desejadas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20
+        }
+      }
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "boleiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
+          "discount": "50%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bombonieres-e-potiches"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "jarras-moringas-e-suqueiras"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
+          "href": "boleiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
+          "href": "bombonieres-e-potiches"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
+          "href": "jarras-moringas-e-suqueiras"
+        }
+      ]
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/ThreeImages.tsx",
         "img": [
           {
@@ -105,24 +195,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/tacas-mais-desejadas",
-        "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "tacas-mais-desejadas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 26,
-          "sort": "newest"
-        }
-      }
-    },
-    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
@@ -174,61 +246,6 @@
         {
           "src": "https://assets.decocache.com/arena-center/7502aa54-e74d-48ed-9588-1a1420210151/2(1).png",
           "href": "flores-permanentes-natalinas"
-        }
-      ]
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "boleiras"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "jarras-moringas-e-suqueiras"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
-          "href": "boleiras"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
-          "href": "jarras-moringas-e-suqueiras"
         }
       ]
     },
@@ -270,6 +287,10 @@
       ],
       "categoryItems": [
         {
+          "image": "https://assets.decocache.com/arena-center/7f47dcf2-6713-4296-a3a0-db620ceae247/3.png",
+          "link": "/bio-latte"
+        },
+        {
           "image": "https://assets.decocache.com/arena-center/986363fc-c0ff-4953-a29a-999db7dd5afd/4.png",
           "link": "/bambu-scalla"
         },
@@ -278,19 +299,11 @@
           "link": "/maresia"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/7f47dcf2-6713-4296-a3a0-db620ceae247/3.png",
-          "link": "/bio-latte"
-        },
-        {
           "image": "https://assets.decocache.com/arena-center/0327e519-222a-42ef-9ccc-b249d14067fd/1.png",
           "link": "/bio-mirage"
-        },
-        {
-          "image": "https://assets.decocache.com/arena-center/c949ec5b-8073-402f-8fb4-29e7d1630d5a/5.png",
-          "link": "/huppert"
         }
       ],
-      "itemListName": "MAIS VENDIDOS EM MESA POSTA"
+      "itemListName": "AS LINHAS CLEAN MAIS VENDIDAS PARA COMPÔR SUA MESA POSTA"
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
@@ -356,12 +369,12 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/esculturas",
-        "title": "NOVIDADES EM ESCULTURAS",
+        "cta": "/caixas-decorativas",
+        "title": "UTILIZE CAIXAS PARA ORGANIZAR E DECORAR",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "esculturas"
+            "caixas-decorativas"
           ],
           "typeTags": [],
           "ids": [],
@@ -375,7 +388,6 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/capas-de-almofadas",
-        "title": "RENOVE SUA SALA COM DESCONTO",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -384,8 +396,9 @@
           "typeTags": [],
           "ids": [],
           "count": 20,
-          "sort": "oldest"
-        }
+          "sort": "newest"
+        },
+        "title": "COMPLETE COM ALMOFADAS, RENOVE COM DESCONTO"
       }
     },
     {
