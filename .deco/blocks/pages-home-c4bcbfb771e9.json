@@ -37,6 +37,30 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/WideBanner.tsx",
+        "images": {
+          "mobile": "https://assets.decocache.com/arena-center/5348a0ab-feb2-43bd-b448-686205bb7210/CONTAGEM-REGRESSIVA-(5).png",
+          "desktop": "https://assets.decocache.com/arena-center/8190cd1f-81d8-40b6-a165-24a24223ff4c/CONTAGEM-REGRESSIVA-(1).png"
+        }
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
+        "expiresAt": "2025-12-26T02:59:00.000Z",
+        "text": "<p></p>",
+        "labels": {
+          "days": "Dias",
+          "hours": "Horas",
+          "minutes": "Minutos",
+          "seconds": "Segundos"
+        }
+      }
+    },
+    {
       "__resolveType": "site/sections/TopBar.tsx",
       "content": [
         {
@@ -66,20 +90,6 @@
         }
       ],
       "interval": 5
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
-        "expiresAt": "2025-12-26T02:59:00.000Z",
-        "text": "<p></p>",
-        "labels": {
-          "days": "Dias",
-          "hours": "Horas",
-          "minutes": "Minutos",
-          "seconds": "Segundos"
-        }
-      }
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -115,61 +125,6 @@
           "count": 20
         }
       }
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "boleiras"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "jarras-moringas-e-suqueiras"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
-          "href": "boleiras"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
-          "href": "jarras-moringas-e-suqueiras"
-        }
-      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -246,6 +201,61 @@
         {
           "src": "https://assets.decocache.com/arena-center/7502aa54-e74d-48ed-9588-1a1420210151/2(1).png",
           "href": "flores-permanentes-natalinas"
+        }
+      ]
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "boleiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
+          "discount": "50%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bombonieres-e-potiches"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "jarras-moringas-e-suqueiras"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
+          "href": "boleiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
+          "href": "petisqueiras-e-tabuas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
+          "href": "bombonieres-e-potiches"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
+          "href": "jarras-moringas-e-suqueiras"
         }
       ]
     },
@@ -370,7 +380,6 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/caixas-decorativas",
-        "title": "UTILIZE CAIXAS PARA ORGANIZAR E DECORAR",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -378,9 +387,10 @@
           ],
           "typeTags": [],
           "ids": [],
-          "sort": "newest",
-          "count": 20
-        }
+          "count": 20,
+          "sort": "newest"
+        },
+        "title": "UTILIZE CAIXAS PARA ORGANIZAR E DECORAR"
       }
     },
     {
