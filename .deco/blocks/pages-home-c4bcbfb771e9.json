@@ -150,6 +150,24 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/outlet-natal",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "outlet-natal"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "newest"
+        },
+        "title": "SUA DECORAÇÃO DE NATAL COMPLETA"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
