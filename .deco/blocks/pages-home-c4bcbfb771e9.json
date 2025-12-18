@@ -28,8 +28,8 @@
               "href": "mesa-posta-natal",
               "label": "GARANTA A SUA"
             },
-            "desktop": "https://assets.decocache.com/arena-center/7164692c-6c7e-40d5-b951-26b21da92ed1/Copia-de-Banner-Desktop-(9).png",
-            "mobile": "https://assets.decocache.com/arena-center/ce15f61c-7e2d-4f84-b759-35ec92e235ca/Copia-de-Copia-de-Banner-Mobile-(5).png"
+            "desktop": "https://assets.decocache.com/arena-center/7270a8d3-d83f-446b-9419-d573dac4eb25/Copia-de-Banner-Desktop.png",
+            "mobile": "https://assets.decocache.com/arena-center/eb418135-0a7e-4fba-8d8e-054a2443a12b/Copia-de-Copia-de-Banner-Mobile-(2).png"
           }
         ],
         "preload": true,
@@ -122,7 +122,8 @@
           ],
           "typeTags": [],
           "ids": [],
-          "count": 20
+          "count": 20,
+          "sort": "highest_price"
         }
       }
     },
@@ -164,7 +165,7 @@
           "count": 20,
           "sort": "newest"
         },
-        "title": "SUA DECORAÇÃO DE NATAL COMPLETA"
+        "title": "SUA DECORAÇÃO DE NATAL COMPLETA, COM DESCONTO!"
       }
     },
     {
@@ -397,18 +398,36 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/caixas-decorativas",
+        "cta": "/esculturas",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "caixas-decorativas"
+            "esculturas"
           ],
           "typeTags": [],
           "ids": [],
           "count": 20,
           "sort": "newest"
         },
-        "title": "UTILIZE CAIXAS PARA ORGANIZAR E DECORAR"
+        "title": "DECORE COM PERSONALIDADE, CONHEÇA AS NOVIDADES EM ESCULTURAS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/vasos-e-cachepots",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "vasos-e-cachepots"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "newest"
+        },
+        "title": "CRIE COMBINAÇÕES COM VASOS DECORATIVOS"
       }
     },
     {
@@ -424,7 +443,7 @@
           "typeTags": [],
           "ids": [],
           "count": 20,
-          "sort": "newest"
+          "sort": "oldest"
         },
         "title": "COMPLETE COM ALMOFADAS, RENOVE COM DESCONTO"
       }
