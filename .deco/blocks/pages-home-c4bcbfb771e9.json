@@ -224,6 +224,24 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/melaminas",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "melaminas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "newest"
+        },
+        "title": "LINHA DE MELAMINAS: PRATICIDADE E ORGANIZAÇÃO À MESA"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
