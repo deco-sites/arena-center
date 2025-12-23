@@ -130,6 +130,24 @@
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/linha-acrilico-bar",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "linha-acrilico-bar"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "highest_price"
+        },
+        "title": "LINHA DE ACRÍLICO, BRINDE COM ELEGÂNCIA ATÉ MESMO EM AMBIENTES EXTERNOS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
         "__resolveType": "site/sections/ThreeImages.tsx",
         "img": [
           {
@@ -149,79 +167,6 @@
           }
         ]
       }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/outlet-natal",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "outlet-natal"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 20,
-          "sort": "newest"
-        },
-        "title": "SUA DECORAÇÃO DE NATAL COMPLETA, COM DESCONTO!"
-      }
-    },
-    {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a41d5c65-393d-45a0-ac05-041eeae0ad32/1.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bonecos-natalinos"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/57989476-5c58-4a67-a3e3-74673f544760/4.png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bolas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f53bec31-7c31-44b5-81f2-60aa027f05cb/3.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "fitas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/7502aa54-e74d-48ed-9588-1a1420210151/2(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "flores-permanentes-natalinas"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a41d5c65-393d-45a0-ac05-041eeae0ad32/1.png",
-          "href": "bonecos-natalinos"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/57989476-5c58-4a67-a3e3-74673f544760/4.png",
-          "href": "bolas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f53bec31-7c31-44b5-81f2-60aa027f05cb/3.png",
-          "href": "fitas-natalinas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/7502aa54-e74d-48ed-9588-1a1420210151/2(1).png",
-          "href": "flores-permanentes-natalinas"
-        }
-      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
