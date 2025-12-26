@@ -184,6 +184,24 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/melaminas",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "melaminas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "oldest"
+        },
+        "title": "LINHA DE MELAMINAS: PRATICIDADE E ORGANIZAÇÃO À MESA"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
@@ -237,24 +255,6 @@
           "href": "jarras-moringas-e-suqueiras"
         }
       ]
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/melaminas",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "melaminas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 20,
-          "sort": "oldest"
-        },
-        "title": "LINHA DE MELAMINAS: PRATICIDADE E ORGANIZAÇÃO À MESA"
-      }
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
