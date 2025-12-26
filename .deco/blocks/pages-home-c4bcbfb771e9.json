@@ -28,8 +28,8 @@
               "href": "mesa-posta-ano-novo",
               "label": "GARANTA A SUA!"
             },
-            "desktop": "https://assets.decocache.com/arena-center/b1cdf8ac-4442-459d-977d-7e4b29170e95/Copia-de-Banner-Desktop-(3).png",
-            "mobile": "https://assets.decocache.com/arena-center/f8c195f6-b560-4edc-a4be-22b70a7095d6/Copia-de-Copia-de-Banner-Mobile.png"
+            "desktop": "https://assets.decocache.com/arena-center/5613140d-7f50-4833-8dae-9a84d7c71526/Copia-de-Banner-Desktop.png",
+            "mobile": "https://assets.decocache.com/arena-center/a7842a5d-6d45-4e15-bbf3-efad250efdc1/Copia-de-Copia-de-Banner-Mobile.png"
           }
         ],
         "preload": true,
@@ -41,8 +41,8 @@
       "section": {
         "__resolveType": "site/sections/WideBanner.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/4dc044ce-fe23-4131-9bff-4f2bb1cb5d5e/wide-banner-home-natal.png",
-          "desktop": "https://assets.decocache.com/arena-center/395b41d6-e4c5-460e-936f-807cc1db1d21/wide-banner-home-natal-(2).png"
+          "mobile": "https://assets.decocache.com/arena-center/f8002e8c-4446-431b-bced-3e1dcf855e15/wide-banner-home-natal-(1).png",
+          "desktop": "https://assets.decocache.com/arena-center/7de95e01-0ddd-414a-9a58-1004299982da/wide-banner-home-natal.png"
         }
       }
     },
@@ -161,7 +161,7 @@
           "typeTags": [],
           "ids": [],
           "count": 20,
-          "sort": "highest_price"
+          "sort": "oldest"
         }
       }
     },
@@ -251,7 +251,7 @@
           "typeTags": [],
           "ids": [],
           "count": 20,
-          "sort": "newest"
+          "sort": "oldest"
         },
         "title": "LINHA DE MELAMINAS: PRATICIDADE E ORGANIZAÇÃO À MESA"
       }
