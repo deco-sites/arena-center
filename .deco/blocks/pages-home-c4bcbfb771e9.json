@@ -188,8 +188,12 @@
       "section": {
         "__resolveType": "site/sections/Images/Banner.tsx",
         "images": {
-          "mobile": "https://assets.decocache.com/arena-center/6c50dca3-9a8d-458b-ac13-ed52a48286b9/Copia-de-Inserir-um-titulo-(2).png",
-          "desktop": "https://assets.decocache.com/arena-center/de8df283-966d-4a6e-b5db-7756a996d84c/Com-ate-40-de-desconto!-(5).png"
+          "desktop": "https://assets.decocache.com/arena-center/ab69ace9-8f8a-4061-9119-e61ea86ed590/Com-ate-40-de-desconto!-(10).png",
+          "mobile": "https://assets.decocache.com/arena-center/3fe9c12f-fe9d-417a-8143-9e0988eef6e9/Copia-de-Inserir-um-titulo-(4).png"
+        },
+        "cta": {
+          "href": "bota-fora",
+          "label": "Confira"
         }
       }
     },
