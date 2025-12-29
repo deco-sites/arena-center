@@ -152,7 +152,6 @@
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/tacas-mais-desejadas",
-        "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -162,7 +161,8 @@
           "ids": [],
           "count": 20,
           "sort": "oldest"
-        }
+        },
+        "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO"
       }
     },
     {
@@ -181,6 +181,16 @@
           "sort": "highest_price"
         },
         "title": "LINHA DE ACRÍLICO, ELEGÂNCIA PARA AMBIENTES EXTERNOS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Images/Banner.tsx",
+        "images": {
+          "mobile": "https://assets.decocache.com/arena-center/6c50dca3-9a8d-458b-ac13-ed52a48286b9/Copia-de-Inserir-um-titulo-(2).png",
+          "desktop": "https://assets.decocache.com/arena-center/de8df283-966d-4a6e-b5db-7756a996d84c/Com-ate-40-de-desconto!-(5).png"
+        }
       }
     },
     {
@@ -257,24 +267,6 @@
       ]
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/esculturas",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "esculturas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 20,
-          "sort": "newest"
-        },
-        "title": "NOVIDADES EM ESCULTURAS"
-      }
-    },
-    {
       "__resolveType": "site/sections/CategorySlider.tsx",
       "products": [
         {
@@ -338,6 +330,24 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/esculturas",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "esculturas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "newest"
+        },
+        "title": "NOVIDADES EM ESCULTURAS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/flores-permanentes",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
@@ -368,24 +378,6 @@
           "sort": "newest"
         },
         "title": "COMBINE COM VASOS DECORATIVOS"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/capas-de-almofadas",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "capas-de-almofadas"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 20,
-          "sort": "oldest"
-        },
-        "title": "CAPAS DE ALMOFADAS COM DESCONTO"
       }
     },
     {
