@@ -187,13 +187,13 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Images/Banner.tsx",
-        "images": {
-          "desktop": "https://assets.decocache.com/arena-center/ab69ace9-8f8a-4061-9119-e61ea86ed590/Com-ate-40-de-desconto!-(10).png",
-          "mobile": "https://assets.decocache.com/arena-center/3fe9c12f-fe9d-417a-8143-9e0988eef6e9/Copia-de-Inserir-um-titulo-(4).png"
-        },
         "cta": {
           "href": "bota-fora",
           "label": "Confira"
+        },
+        "images": {
+          "desktop": "https://assets.decocache.com/arena-center/ab69ace9-8f8a-4061-9119-e61ea86ed590/Com-ate-40-de-desconto!-(10).png",
+          "mobile": "https://assets.decocache.com/arena-center/3fe9c12f-fe9d-417a-8143-9e0988eef6e9/Copia-de-Inserir-um-titulo-(4).png"
         }
       }
     },
@@ -382,6 +382,16 @@
           "sort": "newest"
         },
         "title": "COMBINE COM VASOS DECORATIVOS"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/WideBanner.tsx",
+        "images": {
+          "mobile": "https://assets.decocache.com/arena-center/c05e9230-0b65-4dfb-89eb-f9d55b0e9096/wide-banner-home-natal-(2).png",
+          "desktop": "https://assets.decocache.com/arena-center/c05e9230-0b65-4dfb-89eb-f9d55b0e9096/wide-banner-home-natal-(2).png"
+        }
       }
     },
     {
