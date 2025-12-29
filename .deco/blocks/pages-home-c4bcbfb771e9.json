@@ -133,26 +133,26 @@
           "link": "/bio-latte"
         },
         {
-          "image": "https://assets.decocache.com/arena-center/986363fc-c0ff-4953-a29a-999db7dd5afd/4.png",
-          "link": "/bambu-scalla"
-        },
-        {
           "image": "https://assets.decocache.com/arena-center/da88ca6b-bd6a-423d-ac79-1af5b362a15d/2.png",
           "link": "/maresia"
+        },
+        {
+          "image": "https://assets.decocache.com/arena-center/986363fc-c0ff-4953-a29a-999db7dd5afd/4.png",
+          "link": "/bambu-scalla"
         },
         {
           "image": "https://assets.decocache.com/arena-center/0327e519-222a-42ef-9ccc-b249d14067fd/1.png",
           "link": "/bio-mirage"
         }
       ],
-      "itemListName": "AS LINHAS CLEAN MAIS VENDIDAS PARA COMPÔR SUA MESA POSTA"
+      "itemListName": "AS LINHAS MAIS VENDIDAS PARA SUA MESA POSTA"
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/tacas-mais-desejadas",
-        "title": "COMBINE COM AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
+        "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
@@ -257,6 +257,24 @@
       ]
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/esculturas",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "esculturas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 20,
+          "sort": "newest"
+        },
+        "title": "NOVIDADES EM ESCULTURAS"
+      }
+    },
+    {
       "__resolveType": "site/sections/CategorySlider.tsx",
       "products": [
         {
@@ -320,18 +338,18 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/esculturas",
+        "cta": "/flores-permanentes",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
           "tags": [
-            "esculturas"
+            "flores-permanentes"
           ],
           "typeTags": [],
           "ids": [],
           "count": 20,
           "sort": "newest"
         },
-        "title": "NOVIDADES EM ESCULTURAS"
+        "title": "MONTE SEU ARRANJO COM PLANTAS PERMANENTES"
       }
     },
     {
@@ -349,7 +367,7 @@
           "count": 20,
           "sort": "newest"
         },
-        "title": "VASOS DECORATIVOS"
+        "title": "COMBINE COM VASOS DECORATIVOS"
       }
     },
     {
