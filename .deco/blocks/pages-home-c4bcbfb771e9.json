@@ -37,30 +37,6 @@
       }
     },
     {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/WideBanner.tsx",
-        "images": {
-          "mobile": "https://assets.decocache.com/arena-center/f8002e8c-4446-431b-bced-3e1dcf855e15/wide-banner-home-natal-(1).png",
-          "desktop": "https://assets.decocache.com/arena-center/7de95e01-0ddd-414a-9a58-1004299982da/wide-banner-home-natal.png"
-        }
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Miscellaneous/CampaignTimer.tsx",
-        "text": "<p></p>",
-        "labels": {
-          "days": "Dias",
-          "hours": "Horas",
-          "minutes": "Minutos",
-          "seconds": "Segundos"
-        },
-        "expiresAt": "2026-01-01T03:01:00.000Z"
-      }
-    },
-    {
       "__resolveType": "site/sections/TopBar.tsx",
       "content": [
         {
