@@ -19,17 +19,26 @@
         "__resolveType": "site/sections/Images/Carousel.tsx",
         "images": [
           {
-            "alt": "Ano Novo Arena Center",
             "videoContent": {},
             "": {
               "href": "black-2025"
             },
             "action": {
-              "href": "mesa-posta-ano-novo",
-              "label": "GARANTA A SUA!"
+              "href": "mesa-posta-verao",
+              "label": "CONFIRA"
             },
-            "desktop": "https://assets.decocache.com/arena-center/152173e6-cb11-48cb-a8e6-3439664f9b92/Copia-de-Banner-Desktop-(1).png",
-            "mobile": "https://assets.decocache.com/arena-center/e1b3c039-0d77-42bd-a48f-330f9603b304/Copia-de-Copia-de-Banner-Mobile.png"
+            "desktop": "https://assets.decocache.com/arena-center/2d34af27-12c6-4b68-a6f1-74f766ab8ee5/Copia-de-Banner-Desktop.png",
+            "mobile": "https://assets.decocache.com/arena-center/b66a431f-87c1-4852-8a51-d09df025c74c/Copia-de-Copia-de-Banner-Mobile-(1).png",
+            "alt": "Mesa Posta Verão"
+          },
+          {
+            "action": {
+              "href": "bota-fora",
+              "label": "CONFIRA"
+            },
+            "desktop": "https://assets.decocache.com/arena-center/e1a6c9bc-fad8-4977-9cc1-60e0286ead76/Banner-Desktop.png",
+            "alt": "Festival de Mesa Posta",
+            "mobile": "https://assets.decocache.com/arena-center/9fab603f-9194-4eb5-91d7-61bb54a39ba4/Banner-Mobile-(1).png"
           }
         ],
         "preload": true,
@@ -165,20 +174,6 @@
           "sort": "highest_price"
         },
         "title": "LINHA DE ACRÍLICO, ELEGÂNCIA PARA AMBIENTES EXTERNOS"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Images/Banner.tsx",
-        "cta": {
-          "href": "bota-fora",
-          "label": "Confira"
-        },
-        "images": {
-          "desktop": "https://assets.decocache.com/arena-center/ab69ace9-8f8a-4061-9119-e61ea86ed590/Com-ate-40-de-desconto!-(10).png",
-          "mobile": "https://assets.decocache.com/arena-center/3fe9c12f-fe9d-417a-8143-9e0988eef6e9/Copia-de-Inserir-um-titulo-(4).png"
-        }
       }
     },
     {
