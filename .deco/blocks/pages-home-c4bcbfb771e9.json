@@ -152,11 +152,66 @@
           ],
           "typeTags": [],
           "ids": [],
-          "count": 20,
-          "sort": "oldest"
+          "sort": "oldest",
+          "count": 18
         },
         "title": "AS TAÇAS MAIS DESEJADAS PARA UM BRINDE PERFEITO"
       }
+    },
+    {
+      "__resolveType": "site/sections/ImageCards.tsx",
+      "images": [
+        {
+          "src": "https://assets.decocache.com/arena-center/2e350def-5b29-4532-8543-1e45ed169f4d/1.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "copos-e-canecas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/3a6ccc77-c24c-483a-9b0a-85deef9a3d16/2.png",
+          "discount": "50%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "tacas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/0c9267d6-adb4-43dc-8886-87cb4d789bbf/3.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "jarras-moringas-e-suqueiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/564bfc40-8795-4f04-945a-7694e36eaeac/4.png",
+          "discount": "30%",
+          "width": 564,
+          "height": 705,
+          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
+          "href": "bandejas-bar"
+        }
+      ],
+      "imagesMobile": [
+        {
+          "src": "https://assets.decocache.com/arena-center/2e350def-5b29-4532-8543-1e45ed169f4d/1.png",
+          "href": "copos-e-canecas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/3a6ccc77-c24c-483a-9b0a-85deef9a3d16/2.png",
+          "href": "tacas"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/0c9267d6-adb4-43dc-8886-87cb4d789bbf/3.png",
+          "href": "jarras-moringas-e-suqueiras"
+        },
+        {
+          "src": "https://assets.decocache.com/arena-center/564bfc40-8795-4f04-945a-7694e36eaeac/4.png",
+          "href": "bandejas-bar"
+        }
+      ]
     },
     {
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
@@ -170,66 +225,29 @@
           ],
           "typeTags": [],
           "ids": [],
-          "count": 20,
+          "count": 18,
           "sort": "highest_price"
         },
         "title": "LINHA DE ACRÍLICO, ELEGÂNCIA PARA AMBIENTES EXTERNOS"
       }
     },
     {
-      "__resolveType": "site/sections/ImageCards.tsx",
-      "images": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "boleiras"
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/petisqueiras-e-tabuas",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "petisqueiras-e-tabuas"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 18,
+          "sort": "newest"
         },
-        {
-          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
-          "discount": "50%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
-          "discount": "30%",
-          "width": 564,
-          "height": 705,
-          "mobileImage": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/arena-center/d0dd33e7-1c86-4f19-b796-50fa86e8d059/Group-426.png",
-          "href": "jarras-moringas-e-suqueiras"
-        }
-      ],
-      "imagesMobile": [
-        {
-          "src": "https://assets.decocache.com/arena-center/a7c22bb5-71ba-4a36-aec4-cee5e1416ba2/3(1).png",
-          "href": "boleiras"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/3095b190-d8a0-4d29-afc2-680ba95acc7f/1(1).png",
-          "href": "petisqueiras-e-tabuas"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/4944b8f6-e90f-460f-99e6-ad1c39b6d57b/2.png",
-          "href": "bombonieres-e-potiches"
-        },
-        {
-          "src": "https://assets.decocache.com/arena-center/f04b47c6-ca34-4ef0-b727-80a0661544cd/4(1).png",
-          "href": "jarras-moringas-e-suqueiras"
-        }
-      ]
+        "title": "PETISQUEIRAS E TÁBUAS PARA SERVIR COM ESTILO"
+      }
     },
     {
       "__resolveType": "site/sections/CategorySlider.tsx",
