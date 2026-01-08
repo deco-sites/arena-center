@@ -159,6 +159,24 @@
       }
     },
     {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/Product/ProductShelf.tsx",
+        "cta": "/linha-acrilico-bar",
+        "products": {
+          "__resolveType": "vnda/loaders/productList.ts",
+          "tags": [
+            "linha-acrilico-bar"
+          ],
+          "typeTags": [],
+          "ids": [],
+          "count": 18,
+          "sort": "highest_price"
+        },
+        "title": "LINHA DE ACRÍLICO, ELEGÂNCIA PARA AMBIENTES EXTERNOS"
+      }
+    },
+    {
       "__resolveType": "site/sections/ImageCards.tsx",
       "images": [
         {
@@ -217,24 +235,6 @@
       "__resolveType": "website/sections/Rendering/Lazy.tsx",
       "section": {
         "__resolveType": "site/sections/Product/ProductShelf.tsx",
-        "cta": "/linha-acrilico-bar",
-        "products": {
-          "__resolveType": "vnda/loaders/productList.ts",
-          "tags": [
-            "linha-acrilico-bar"
-          ],
-          "typeTags": [],
-          "ids": [],
-          "count": 18,
-          "sort": "highest_price"
-        },
-        "title": "LINHA DE ACRÍLICO, ELEGÂNCIA PARA AMBIENTES EXTERNOS"
-      }
-    },
-    {
-      "__resolveType": "website/sections/Rendering/Lazy.tsx",
-      "section": {
-        "__resolveType": "site/sections/Product/ProductShelf.tsx",
         "cta": "/petisqueiras-e-tabuas",
         "products": {
           "__resolveType": "vnda/loaders/productList.ts",
@@ -247,6 +247,29 @@
           "sort": "newest"
         },
         "title": "PETISQUEIRAS E TÁBUAS PARA SERVIR COM ESTILO"
+      }
+    },
+    {
+      "__resolveType": "website/sections/Rendering/Lazy.tsx",
+      "section": {
+        "__resolveType": "site/sections/ThreeImages.tsx",
+        "img": [
+          {
+            "desktop": "https://assets.decocache.com/arena-center/06112e98-ab3c-4875-9757-22e04fa75282/three-images---banner-mobile-(3).png",
+            "mobile": "https://assets.decocache.com/arena-center/06112e98-ab3c-4875-9757-22e04fa75282/three-images---banner-mobile-(3).png",
+            "link": "cereja"
+          },
+          {
+            "desktop": "https://assets.decocache.com/arena-center/9c55bb96-0f1d-4d09-93b5-2e54cfa14dfc/1.png",
+            "mobile": "https://assets.decocache.com/arena-center/2615da0b-5860-4462-aa60-671c5574b51b/three-images---banner-mobile-(4).png",
+            "link": "cereja"
+          },
+          {
+            "desktop": "https://assets.decocache.com/arena-center/91a9ba6d-0af3-428b-b561-d96d5000aafb/three-images---banner-mobile.png",
+            "mobile": "https://assets.decocache.com/arena-center/65e07978-8a57-4518-977b-e23e64e5d29b/three-images---banner-mobile-(1).png",
+            "link": "cereja"
+          }
+        ]
       }
     },
     {
